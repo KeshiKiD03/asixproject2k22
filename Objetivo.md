@@ -11,4 +11,18 @@ WireGuardVPN + Samba + Wazuh + SSH Criptograph + OpenSSL + --> AWS (Deployment a
 
 # Idea 1
 
-Implementación de VPN
+# Docker
+
+Docker --> docker run -it ubuntu:latest
+
+* Desplegament Ubuntu Server
+
+ubuntu# apt-get update && apt-get install -y ubuntu-server
+
+* Tendrá Wireguard VPN
+
+Implementación de VPN con WireGuard.
+
+* 5 clients, un cliente será debian - fedora - ubuntu - otras 2
+
+* Desplegament Ubuntu Server con DNS.

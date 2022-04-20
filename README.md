@@ -6,7 +6,7 @@
 <br>
 <br>
 
-# Ciberseguretat: "_voy_"
+# Ciberseguretat: "_Careful where you step_" 🕵️ 🔎
 
 
 # Index
@@ -27,3 +27,8 @@
 <div style="align: center">
     <img src="https://grupo-alonso.com/wp-content/uploads/2016/07/asix.jpg" />
 </div>
+
+
+# Esborrany
+
+
