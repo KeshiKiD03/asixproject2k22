@@ -1,13 +1,17 @@
-# Projecte ASIX 2k22
-## Escola Del Treball
-### 2HISX 2021-2022
-### Aaron Andal & Cristian Condolo
+# __Projecte ASIX 2k22__
+## __Escola Del Treball__
+### __2HISX 2021-2022__
+### __Aaron Andal & Cristian Condolo__
 
 <br>
-<br>
 
-# Ciberseguretat: "_Careful where you step_" 🕵️ 🔎
+# __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
 
+En la societat d'avui en dia, l'ús de les tecnologies de la informació, ens faciliten intercanviar informació des de qualsevol part del món.
+
+Millons de dades, viatgen per la "_xarxa_" anomenada "_Internet_", que bàsicament son un conjunt de dispositius interconnectats entre sí.
+
+La facilitat d'accés a Internet és versàtil. 
 
 # Index
 
