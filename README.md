@@ -34,8 +34,39 @@ Un dels principals problemes de l’ús de les tecnologies de la informació, es
 
 Com ja diu el refrà: “__Millor prevenir que lamentar__”, la solució davant d’aquests problemes a usuaris inexperts, és la `ciberseguretat`. 
 
+<div style="align: center">
+    <img src="https://www.lasrozas.es/sites/default/files/inline-images/Ciber.jpg" />
+</div>
 
+Que es la ciberseguretat? Es la pràctica d’establir *“zones de defensa”* a diferents dispositius com ordinadors, servidors, dispositius móbils, xarxes …etc, d’atacs maliciosos (Com virus o exploits) o de denegació de servei (DDoS).
 
+El seu funcionament es basa en implantar tècniques i eines de maquinari / programari perquè elaborin barreres que impedeixin l’accés desconegut a la informació delicada. La protegeix i treu a l’enemic si es tracta d’una **vulneració**.
+
+Un ciberatac no nomes consisteix en la **perdua i destruccio de dades** confidencials, si no que tambe **afecta** el nivell de **productivitat i rentabilitat**, portant com a conseqüencia la perdua del capital, de la confiança per part dels clients y de la competivitat davant del mercat legal.
+
+La ciberseguretat s’ha tornat un assumpte de vital importancia per a tot tipus d’empreses, sense importar el tamany.
+
+Gracies a les diferents eines que disposa aquesta materia, el teu sistema pot esta protegit de **atacs**, d’**hackers** o qualsevol tipos de **delicte informatic**.
+
+La ciberseguretat es dedica a cumplir tres objectius la prevenció, la detecció i la recuperació.
+
+Entre els principals **tipos de ciberseguretat** es troben els següents:
+    
+- seguretat informatica de xarxa
+    
+- seguretat informatica de software
+    
+- seguretat informatica de hardware
+    
+- seguretat operativa
+
+A l’actualitat, hi ha gent amb **coneixement de la ciberseguretat** i l’apliquen correctament als seus processos laborals. Amb aquest contexte, alguns **exemples de ciberseguretat** aplicada en el sector legal son els següents:
+    
+- Data loss prevention o prevencio de pedus de dades
+    
+- Chatbots legals amb encriptacio
+    
+- Blockchain
 
 
 
