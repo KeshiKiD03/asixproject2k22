@@ -1,0 +1,39 @@
+1ºapt-get install SARG
+2ºBind9 shocksarg.shockware-gaming.com
+3ºApache2
+
+----
+NameVirtualHost shocksarg.shockware-gaming.com:80
+<VirtualHost shocksarg.shockware-gaming.com:80>
+        ServerName shocksarg.shockware-gaming.com
+        DocumentRoot /var/www/sarg
+        ErrorLog /var/log/apache2/error.log
+        CustomLog /var/log/apache2/error.log combined
+	RewriteEngine on
+	ReWriteCond %{SERVER_PORT} !^443$
+	RewriteRule ^/(.*) https://%{HTTP_HOST}/$1 [NC,R,L]
+</VirtualHost>
+
+NameVirtualHost shocksarg.shockware-gaming.com:443
+<VirtualHost shocksarg.shockware-gaming.com:443>
+        ServerName shocksarg.shockware-gaming.com
+        DocumentRoot /var/www/sarg
+
+        SSLEngine On
+        SSLCertificateFile /etc/ssl/certs/shock2.pem
+        ErrorLog /var/log/apache2/error.log
+        CustomLog /var/log/apache2/error.log combined
+        <Directory "/var/www/sarg">
+                Options Indexes FollowSymlinks MultiViews
+                AllowOverride None
+                Order allow,deny
+                Allow from all
+                SSLRequireSSL
+        </Directory>
+</VirtualHost>
+----
+4ºGenerar reportes para los diferents usuarios.
+5ºDenegar acceso SARG para los usuarios excepto los GERENTES e INFORMÁTICOS. EN proxy SQUID.
+6º http://tuxjm.net/docs/Manual_de_Instalacion_de_Servidor_Proxy_Web_con_Ubuntu_Server_y_Squid/html-multiples/ch07s07.html
+7ºRematar SARG.
+8ºCrear los scripts de generación automática de REPORTES DIARIOS.

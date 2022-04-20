@@ -1,0 +1,52 @@
+
+# Named.conf.local
+zone "shockware-gaming.com" {
+	type master;
+	file "/etc/bind/shock.db";
+};
+
+zone "1.168.192.in-addr.arpa" {
+	type master;
+	file "/etc/bind/192.db";
+};
+
+#shock.db
+
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	shockware-gaming.com. root.shockware-gaming.com. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+
+@	IN	NS	shockware-gaming.com.
+@	IN	A	192.168.1.233
+www	IN	CNAME	shockware-gaming.com.
+shockgamer	IN	A	192.168.1.233
+shockcloud	IN	A	192.168.1.233
+shockopkm	IN	A	192.168.1.233
+
+#192.db
+
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	shockware-gaming.com. root.shockware-gaming.com. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+
+@	IN	NS	shockware-gaming.com.
+233	IN	PTR	shockware-gaming.com.
+233	IN	PTR	www.shockware-gaming.com.
+233	IN	PTR	shockgamer.shockware-gaming.com.
+233	IN	PTR	shockcloud.shockware-gaming.com.
+233	IN	PTR	shockopkm.shockware-gaming.com.
+

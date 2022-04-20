@@ -1,0 +1,52 @@
+## Comprobar Los LOGS SIEMPRE
+## Perfiles MOVILES
+## Mapeo USUARIOS
+## Comprobación versión.
+
+
+[global]
+    # Nom del domini
+    workgroup = provenprofe
+    netbios name = gregal
+
+    wins support = yes
+    security = user
+    # [0,255]
+    os level = 64
+
+    domain master = yes
+    preferred master = yes
+    domain logons = yes
+    local master = yes
+
+    logon path = \\%L\profiles\%U
+    logon drive = Z:
+    logon home = \\%N\%U
+    logon script = logon.bat
+    add machine script = sudo /usr/sbin/useradd -N -g machines -c Machine -d /var/lib/samba -s /bin/false %u
+
+[%U]
+    comment = Directori personal de %U
+    path = /home/samba/provenprofe/homes/%U
+    browseable = no
+    read only = no
+    writable = yes
+    create mask = 0700
+    directory mask = 0700
+    force user = %U
+    valid users = %S
+
+[netlogon]
+    comment = Servei de NetLogon
+    path = /home/samba/provenprofe/netlogon
+    guest ok = yes
+    read only = yes
+
+[profiles]
+    comment = Perfils usuaris
+    path = /home/samba/provenprofe/profiles
+    guest ok = no
+    browsable = no
+    create mask = 0600
+    directory mask = 0700
+    writable = yes

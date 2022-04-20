@@ -1,0 +1,31 @@
+# /etc/dhcp/dhcpd.conf #¡Atención no es dhcp3 sino dhcp a secas!
+
+server-identifier shockwaregaming;
+ddns-updates on;
+ddns-update-style interim;
+ddns-domainname "shockware-gaming.com";
+ddns-rev-domainname "in-addr.arpa.";
+ignore client-updates;
+
+# option definitions common to all supported networks...
+option domain-name "shockware-gaming.com";
+option domain-name-servers 192.168.1.240;
+
+default-lease-time 60000;
+max-lease-time 72000;
+authoritative;
+
+
+log-facility local7;
+
+subnet 172.16.1.0 netmask 255.255.255.192 {
+	range 172.16.1.2 172.16.1.40;
+	option broadcast-address 172.16.1.63;
+	option routers 172.16.1.1;
+	allow	unknown-clients;
+}
+
+
+----------------
+# Modificar /etc/default/isc-dhcp-server
+INTERFACES="eth*"

@@ -1,0 +1,15 @@
+apt-get install PHPMYADMIN
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 

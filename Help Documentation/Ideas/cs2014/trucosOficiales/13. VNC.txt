@@ -1,0 +1,12 @@
+En el Servidor
+1. apt-get install tightvncserver
+2. tightvncserver :1 -geometry 800x600 -depth 24 
+3. tightvncserver -kill :1 --> para Borrar un servidor gráfico
+
+Si es Windows
+Utilizar uno portable
+
+Si es en Ubuntu 
+apt-get install xtightvncviewer
+IP:DISPLAY
+192.168.19.203:1 --> Password

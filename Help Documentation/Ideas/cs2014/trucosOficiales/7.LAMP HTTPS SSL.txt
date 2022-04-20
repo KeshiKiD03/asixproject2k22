@@ -1,0 +1,5 @@
+# taksel LAMP
+# a2enmod userdir --> directorio usuario
+# a2enmod ssl --> Habilitar SSL
+# a2ensite default-ssl --> Habilitar default https://localhost
+# No se olvide modificar PHP para subir archivos en las páginas web --> php.ini --> 'max' 'upload' 'post'.

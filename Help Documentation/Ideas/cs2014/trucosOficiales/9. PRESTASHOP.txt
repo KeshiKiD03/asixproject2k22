@@ -1,0 +1,68 @@
+# El paquete de PRESTASHOP TEMPLATE hay que descomprimirlo en /var/www
+ chmod -R 777 /var/www/prestashop
+ shockware-gaming.com/prestashop
+ todo NEXT
+ Eliminar la carpeta de instalación.
+
+# APACHE2
+1. En ubuntu bind9
+2. Configurar zona dominio
+3. Configurar resolv.conf
+4. En prestashop/admin
+	Cnfigurar SEO y URL --> Directorio RAIZ --> /
+	Configurar ahí nuestro Dominio
+5. En APACHE2
+----------------
+NameVirtualHost shockware-gaming.com:80
+<VirtualHost shockware-gaming.com:80>
+	ServerName shockware-gaming.com
+	DocumentRoot /var/www/prestashop
+	ErrorLog /var/log/apache2/error.log
+	CustomLog /var/log/apache2/error.log combined
+</VirtualHost>
+
+NameVirtualHost shockware-gaming.com:443
+<VirtualHost shockware-gaming.com:443>
+	ServerName shockware-gaming.com
+	ServerAlias www.shockware-gaming.com
+	DocumentRoot /var/www/prestashop
+	
+	SSLEngine On
+	SSLCertificateFile /etc/ssl/certs/shock2.pem
+	ErrorLog /var/log/apache2/error.log
+	CustomLog /var/log/apache2/error.log combined
+	<Directory "/var/www/prestashop">
+		Options Indexes FollowSymlinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		Allow from all
+		SSLRequireSSL
+	</Directory>
+</VirtualHost>
+------------
+6. Hacer certificado SSL
+make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/ssl/certs/apache2.pem 
+
+7. Reiniciar servicio APACHE2
+
+	Probar conexión.
+
+8. Para que esté siempre en HTTPS hacer... --> En index.php de 'FRONTEND' y BACKEND.
+
+if(!$_SERVER['HTTPS']== 'on'){
+
+$url_https="https://". $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+
+header("Location: $url_https");
+
+exit();
+
+}
+
+# 
+# 
+# 
+
+# 
+# 
+# 
