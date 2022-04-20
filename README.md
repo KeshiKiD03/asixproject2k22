@@ -7,11 +7,38 @@
 
 # __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
 
+<div style="align: center">
+    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
+</div>
+
 En la societat d'avui en dia, l'ús de les tecnologies de la informació, ens faciliten intercanviar informació des de qualsevol part del món.
+
+<div style="align: center">
+    <img src="https://gdempresa.gesdocument.com/sites/default/files/styles/large/public/2021-12/internet-de-las-cosas.jpg?itok=hJpvD2zV" />
+</div>
 
 Millons de dades, viatgen per la "_xarxa_" anomenada "_Internet_", que bàsicament son un conjunt de dispositius interconnectats entre sí.
 
-La facilitat d'accés a Internet és versàtil. 
+
+Internet, abarca una rutina cotidiana d’ús de _xarxes socials_, _entreteniment_, _educació_, _formació_, _medis de comunicació_, _televisió_… etc.
+
+Tota aquesta informació viatja en un xarxa on hi hà “__de tot__”.
+
+<div style="align: center">
+    <img src="https://elordenmundial.com/wp-content/uploads/2019/03/800px-Deepweb_graphical_representation.svg.png" />
+</div>
+
+Molta de la informació que viatja per Internet, pot ser que sigui confidencial i delicada, n’hi hà que viatja _segur_ i d’altre _insegur_, si viatja insegur… és un problema __greu…__.
+
+Un dels principals problemes de l’ús de les tecnologies de la informació, es la _incapacitat_ de prevenir aquests _atacs_ quant ja es produeixen. És a dir, el desconeixement de la seguretat d’avant d’aquestes tecnologies d’ús cotidià. 
+
+Com ja diu el refrà: “__Millor prevenir que lamentar__”, la solució davant d’aquests problemes a usuaris inexperts, és la `ciberseguretat`. 
+
+
+
+
+
+
 
 # Index
 
