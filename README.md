@@ -6,10 +6,10 @@
 <br>
 <br>
 
-# Ciberseguretat: ""
+# Ciberseguretat: "_voy_"
+
 
 # Index
-
 
 
 **Index**: [Manual](https://docs.google.com/document/d/1lyjnPMFODZWkaCpDd12iIVZH5fkIafsXo9fS5PyFPSk/edit?usp=sharing)
@@ -23,9 +23,6 @@
 
 # Objectius
 
-* Lorem ipsum
-
-* Lorem ipsum
 
 <div style="align: center">
     <img src="https://grupo-alonso.com/wp-content/uploads/2016/07/asix.jpg" />
