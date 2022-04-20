@@ -17,7 +17,7 @@ https://www.lpi.org/our-certifications/exam-303-objectives
 
 Docker --> docker run -it ubuntu:latest
 
-# Ubuntu1
+# Ubuntu1 VPN WireGuard + Wazuh o RADIUS + Iptables
 
 * Desplegament Ubuntu Server
 
@@ -29,26 +29,54 @@ Implementación de VPN con WireGuard.
 
 * 5 clients (wireguards client), un cliente será debian - fedora - ubuntu - otras 2
 
-# Ubuntu2
+# Ubuntu2 DNS Cripto + Par claves Priv Pub + OpenSSL
 
 * Desplegament Ubuntu Server con DNS. Uno principal + Uno secundario y tendrá DNS Sec
 
+
+
+
+
+
+
+
+# Ubuntu3 Samba
+
+---------
+
+# AWS (Desplegar 3 servidores)
+
+# Local (Conectarnos a la WireGuardVPN) - 2 host
+
+Desde local abrir un Tunel VPN de WireGuard a AWS para que se pueda conectar a la VPN y tener servicios de DNS - Samba etc.
+
+--------------
+
 * 331.4 DNS and Cryptography
 
-Description: Candidates should have experience and knowledge of cryptography in the context of DNS and its implementation using BIND. The version of BIND covered is 9.7 or higher.
+### Description: Candidates should have experience and knowledge of cryptography in the context of DNS and its implementation using BIND. The version of BIND covered is 9.7 or higher.
 
 Key Knowledge Areas:
 
-    Understand the concepts of DNS, zones and resource records
-    Understand DNSSEC, including key signing keys, zone signing keys and relevant DNS records such as DS, DNSKEY, RRSIG, NSEC, NSEC3 and NSEC3PARAM
-    Configure and troubleshoot BIND as an authoritative name server serving DNSSEC secured zones
-    Manage DNSSEC signed zones, including key generation, key rollover and re-signing of zones
-    Configure BIND as an recursive name server that performs DNSSEC validation on behalf of its clients
-    Understand CAA and DANE, including relevant DNS records such as CAA and TLSA
-    Use CAA and DANE to publish X.509 certificate and certificate authority information in DNS
-    Use TSIG for secure communication with BIND
-    Awareness of DNS over TLS and DNS over HTTPS
-    Awareness of Multicast DNS
+### Understand the concepts of DNS, zones and resource records
+
+### Understand DNSSEC, including key signing keys, zone signing keys and relevant DNS records such as DS, DNSKEY, RRSIG, NSEC, NSEC3 and NSEC3PARAM
+
+### Configure and troubleshoot BIND as an authoritative name server serving DNSSEC secured zones
+
+### Manage DNSSEC signed zones, including key generation, key rollover and re-signing of zones
+
+### Configure BIND as an recursive name server that performs DNSSEC validation on behalf of its clients
+
+### Understand CAA and DANE, including relevant DNS records such as CAA and TLSA
+
+### Use CAA and DANE to publish X.509 certificate and certificate authority information in DNS
+
+### Use TSIG for secure communication with BIND
+
+### Awareness of DNS over TLS and DNS over HTTPS
+
+Awareness of Multicast DNS
 
 Partial list of the used files, terms and utilities:
 
@@ -63,18 +91,24 @@ Partial list of the used files, terms and utilities:
     openssl (including relevant subcommands)​
 
 
-* Host Intrusion Detection
+* Host Intrusion Detection (WAZUH)
 
 Description: Candidates should be familiar with the use and configuration of common host intrusion detection software. This includes managing the Linux Audit system and verifying a system's integrity.
 
 Key Knowledge Areas:
 
-    Use and configure the Linux Audit system
-    Use chkrootkit
-    Use and configure rkhunter, including updates
-    Use Linux Malware Detect
-    Automate host scans using cron
-    Use RPM and DPKG package management tools to verify the integrity of installed files
+###     Use and configure the Linux Audit system
+
+###     Use chkrootkit
+
+###     Use and configure rkhunter, including updates
+
+###     Use Linux Malware Detect
+
+###     Automate host scans using cron
+
+###     Use RPM and DPKG package management tools to verify the integrity of installed files
+
     Configure and use AIDE, including rule management
     Awareness of OpenSCAP
 
@@ -87,8 +121,8 @@ Partial list of the used files, terms and utilities:
     audit.rules
     pam_tty_audit.so
     chkrootkit
-    rkhunter
-    /etc/rkhunter.conf
+###     rkhunter
+###     /etc/rkhunter.conf
     maldet
     conf.maldet
     rpm
@@ -96,7 +130,7 @@ Partial list of the used files, terms and utilities:
     aide
     /etc/aide/aide.conf
 
-# 334.3 Packet Filtering
+# 334.3 Packet Filtering (IPTABLES)
 
 Weight: 5
 
@@ -124,7 +158,7 @@ Partial list of the used files, terms and utilities:
     ipset
 
  
-# 334.4 Virtual Private Networks
+# 334.4 Virtual Private Networks (WIREGUARD)
 
 Weight: 4
 
@@ -133,10 +167,10 @@ Description: Candidates should be familiar with the use of OpenVPN, IPsec and Wi
 Key Knowledge Areas:
 
     Understand the principles of bridged and routed VPNs
-    Understand the principles and major differences of the OpenVPN, IPsec, IKEv2 and WireGuard protocols
+###     Understand the principles and major differences of the OpenVPN, IPsec, IKEv2 and WireGuard protocols
     Configure and operate OpenVPN servers and clients
     Configure and operate IPsec servers and clients using strongSwan
-    Configure and operate WireGuard servers and clients
+###     Configure and operate WireGuard servers and clients
     Awareness of L2TP
 
 Partial list of the used files, terms and utilities:
@@ -148,9 +182,9 @@ Partial list of the used files, terms and utilities:
     /etc/swanctl/swanctl.conf
     /etc/swanctl/
     swanctl
-    /etc/wireguard/
-    wg
-    wg-quick
+###     /etc/wireguard/
+###     wg
+###     wg-quick
     ip
 
 
@@ -164,15 +198,15 @@ Description: Candidates should be familiar with the use and configuration of net
 Key Knowledge Areas:
 
     Implement bandwidth usage monitoring
-    Configure and use Snort, including rule management
-    Configure and use OpenVAS, including NASL
+###     Configure and use Snort, including rule management
+###     Configure and use OpenVAS, including NASL
 
 Partial list of the used files, terms and utilities:
 
     ntop
-    snort
-    snort-stat
-    pulledpork.pl
+###     snort
+###     snort-stat
+###     pulledpork.pl
     /etc/snort/*
     openvas-adduser
     openvas-rmuser
@@ -219,7 +253,7 @@ Partial list of the used files, terms and utilities:
 
  
 
-opic 335: Threats and Vulnerability Assessment
+# Topic 335: Threats and Vulnerability Assessment
 335.1 Common Security Vulnerabilities and Threats
 
 Weight: 2
@@ -256,7 +290,7 @@ Partial list of the used files, terms and utilities:
     Social Engineering
 
  
-335.2 Penetration Testing
+# 335.2 Penetration Testing
 
 Weight: 3
 
