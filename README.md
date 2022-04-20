@@ -1,16 +1,25 @@
-#TLS / SSL
-#@keshi ASIX M11-SAD Curs 2021-2022
+# Projecte ASIX 2k22
+## Escola Del Treball
+### 2HISX 2021-2022
+### Aaron Andal & Cristian Condolo
 
-Podeu trobar les imatges docker al Dockehub de keshikid03
+# Index
 
-Podeu trobar la documentació del mòdul a ASIX-M11
+**Manual LDAPS**: [Manual](https://docs.google.com/document/d/1lyjnPMFODZWkaCpDd12iIVZH5fkIafsXo9fS5PyFPSk/edit?usp=sharing)
 
-ASIX M06-ASO Escola del treball de barcelona
+**Containers y configuración**: [--> readme Configuración LDAPS <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#containers)
 
-Documentació / configuracions per a realitzar exercicis de OpenSSL.
+**Alternative Subject Name**: [--> readme Alternative Subject Name <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
 
-**certs-keys** Directori de claus privades i certificats.
+**Apunts Ruben**: [--> readme Apunts Ruben <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
-**ssl22:ldaps** Fitxers per generar un container docker ldaps, amb una base de dades ldap accessible via ldaps i via starttls. Ampliat el certificat per poder usar noms alternatius de server.
 
-**ssl22:vpn** Fitxers de claus i certificats per crerar túnels virtuals amb OpenVPN. Utilitza l'entitatt de certificació VeritatAbsluta i crea certificats propis per a client i servidor.
+# Objectius
+
+* Lorem ipsum
+
+* Lorem ipsum
+
+<div style="align: center">
+    <img src="https://grupo-alonso.com/wp-content/uploads/2016/07/asix.jpg" />
+</div>
