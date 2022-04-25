@@ -1,4 +1,5 @@
-# Seguimiento
+# Seguimiento Projecte ASIX 2K22
+
 Este archivo se documentara los pasos dentro del proyecto que tenemos en mente.
 ---
 Documento nuestros movimiento a peticion de los profesores que solicitaron que nos documentaramos a nosotros mismos haciendo el proyecto final.
@@ -24,7 +25,7 @@ Seguint ampliant les nostres idees, juntant Wireguard amb Wazuh (o Radius) i ipt
 Pasen omplir la introduccio del nostre projecte, buscant informacio sobre la ciberseguretat. Ficant multiples definicions e imatges.
 
 ---
-## 25/04/2022 Aaron = 8:55-10:45 (2 horas) / Cristian 8:00-
+## 25/04/2022 Aaron = 8:55-10:45 (2 hores) / 15.30-20.30 (5 hores) / Cristian 8:00-
 
 (**Aaron**)
 
