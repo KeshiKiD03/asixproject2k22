@@ -29,13 +29,13 @@ Pasen omplir la introduccio del nostre projecte, buscant informacio sobre la cib
 
 (**Aaron**)
 
-Organiza los documentos/archivos/directorios dentro del git del nuestro proyecto(asixprojecte2k22).
+Organiza los documentos/archivos/directorios dentro del git del nuestro proyect (asixprojecte2k22).
 
-Decido a empezar a indagar sobre el DNS Criptography, entender mejor que es, como funciona, en que ejeml
+Decido a empezar a indagar sobre el Wire Guard VPN, entender mejor que es, como funciona, en que ejemplos nos puede ofrecer el proyecto.
 
-Organizo el git de proyecto con nuevas carpetas
-Busco informacion sobre el dns criptography
-Practico sobre el dns criptograpyc
+Organizo la estructura del GIT para tener claras las ideas y tener la pauta en Trello de las cosas pendientes y lo que queda por hacer.
+
+Termino de documentar los objetivos del proyecto y la hoja de ruta que tomará tanto Cristian como a mí. _Mindset_.
 
 (**Cristian**)
 
