@@ -6,19 +6,13 @@
 <br>
 <br>
 
-# Wazuh
+# WireGuard VPN
 
 # Index
 
 **Wireguard (VPN)**: [Wireguard](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#containers)
 
-**Wazuh**: [Wazuh](https://docs.google.com/document/d/1lyjnPMFODZWkaCpDd12iIVZH5fkIafsXo9fS5PyFPSk/edit?usp=sharing)
 
-
-
-**DNS Cripto**: [Cripto](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
-
-**Apunts Ruben**: [Cripto](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
 
 # Objectius
