@@ -1,0 +1,81 @@
+ 1551  02/12/21 12:26:29 sudo apt-get install rsync
+ 1552  02/12/21 12:26:44 ls
+ 1553  02/12/21 12:28:11 cowsay -l
+ 1554  02/12/21 12:28:22 cowsay -t vader-koala hola
+ 1555  02/12/21 12:28:25 cowsay -d vader-koala hola
+ 1556  02/12/21 12:28:28 cowsay -q vader-koala hola
+ 1557  02/12/21 12:28:30 cowsay -w vader-koala hola
+ 1558  02/12/21 12:28:44 man cowsay
+ 1559  02/12/21 12:29:00 cowsay -e vader-koala hola
+ 1560  02/12/21 12:29:04 man cowsay
+ 1561  02/12/21 12:30:06 cowsay -l vader-koala hola
+ 1562  02/12/21 12:30:09 cowsay -b vader-koala hola
+ 1563  02/12/21 12:30:13 man cowsay
+ 1564  02/12/21 12:30:19 cowsay -f vader-koala hola
+ 1565  02/12/21 12:30:30 ls
+ 1566  02/12/21 12:31:19 cowsay -f stegosaurus Hello, It's me > stegosaurus
+ 1567  02/12/21 12:31:36 echo $(cowsay -f stegosaurus Hello, It's me)  > stegosaurus
+ 1568  02/12/21 12:31:45 echo $(cowsay -f stegosaurus Hello, Its me)  > stegosaurus
+ 1569  02/12/21 12:31:50 cat stegosaurus 
+ 1570  02/12/21 12:32:05 cowsay -f stegosaurus Hello, Its me  > stegosaurus
+ 1571  02/12/21 12:32:07 cat stegosaurus 
+ 1572  02/12/21 12:33:20 rsync stegosaurus guest@slave:/tmp
+ 1573  02/12/21 12:34:06 ls
+ 1574  02/12/21 12:34:16 mkdir dinos
+ 1575  02/12/21 12:34:19 cd dinos
+ 1576  02/12/21 12:34:22 cowsay -f
+ 1577  02/12/21 12:34:26 cowsay -l
+ 1578  02/12/21 12:34:45 cowsay -f dragon 'Hello'
+ 1579  02/12/21 12:34:51 cowsay -f dragon 'Hello' > dragon
+ 1580  02/12/21 12:35:09 cowsay -f fox 'Hello' > fox
+ 1581* 02/12/21 12:35:19 cowsay -f  'Hello' > fox
+ 1582  02/12/21 12:35:31 cowsay -f fox 'Hello' > fox
+ 1583* 02/12/21 12:35:38 cowsay -f turtle 'Hello' > turtlec
+ 1584  02/12/21 12:35:42 cd ..
+ 1585  02/12/21 12:35:43 ls
+ 1586  02/12/21 12:35:48 mv stegosaurus dinos
+ 1587  02/12/21 12:35:50 ls
+ 1588  02/12/21 12:36:26 rsync dinos/ guest@slave
+ 1589  02/12/21 12:36:37 rsync dinos/ guest@slave:/tmp/dir
+ 1590  02/12/21 12:37:25 rsync dinos/* guest@slave:/tmp/dir
+ 1591  02/12/21 12:38:20 rsync dinos/ guest@slave:/tmp/
+ 1592  02/12/21 12:39:42 rsync dinos/* guest@slave:/tmp/dir
+ 1593  02/12/21 12:40:12 rsync dinos/* root@slave:/tmp/dir
+ 1594  02/12/21 12:40:23 rsync dinos/* guest@slave:/tmp/dir
+ 1595  02/12/21 12:41:37 rsync dinos/ guest@slave:/tmp/dir
+ 1596  02/12/21 12:42:16 rsync dinos guest@slave:/tmp/dir
+ 1597  02/12/21 12:43:30 rsync -r  dinos guest@slave:/tmp/dir
+ 1598  02/12/21 12:56:08 host ghandi
+ 1599  02/12/21 12:56:13 host gandhi
+ 1600  02/12/21 12:56:31 vim /etc/hosts
+ 1601  02/12/21 12:56:51 vim /etc/resolv.conf 
+ 1602  02/12/21 13:02:29 dpkg -L useradd
+ 1603  02/12/21 13:02:31 sudo dpkg -L useradd
+ 1604  02/12/21 13:02:36 sudo dpkg -l useradd
+ 1605  02/12/21 13:02:44 sudo dpkg -s useradd
+ 1606  02/12/21 13:14:19 rsync -rtv darwin@slave::/tmp/dinos dinos/
+ 1607  02/12/21 13:14:29 rsync -rtv darwin@slave::tmp/dinos dinos/
+ 1608  02/12/21 13:15:30 rsync -rtv darwin@slave::dinosaurios/origen dinos/*
+ 1609  02/12/21 13:15:32 rsync -rtv darwin@slave::dinosaurios/origen dinos/
+ 1610  02/12/21 13:15:47 rsync -rtv guest@slave::dinosaurios/origen dinos/
+ 1611  02/12/21 13:19:25 rsync -rtv slave::dinosaurios/origen dinos/
+ 1612  02/12/21 13:21:54 rsync -rtv guest@slave::dinosaurios/origen dinos/
+ 1613  02/12/21 13:25:50 rsync -a slave::
+ 1614  02/12/21 13:25:56 rsync -rtv guest@slave::dinosaurios/origen dinos/
+ 1615  02/12/21 13:26:11 cd /tmp/
+ 1616  02/12/21 13:26:12 ls
+ 1617  02/12/21 13:26:34 mkdir dinos
+ 1618  02/12/21 13:26:37 rsync -a slave::
+ 1619  02/12/21 13:26:39 ls -la
+ 1620  02/12/21 13:26:50 ls -ap
+ 1621  02/12/21 13:26:55 rsync -ap slave::
+ 1622  02/12/21 13:28:01 ls dinos/
+ 1623  02/12/21 13:28:15 rsync -rtv guest@slave::dinosaurios/origen dinos/
+ 1624  02/12/21 13:30:37 rm dinos/
+ 1625  02/12/21 13:30:39 rmdir dinos/
+ 1626  02/12/21 13:32:08 rsync -rtv guest@slave::dinosaurios/origen .
+ 1627  02/12/21 13:32:13 ls
+ 1628  02/12/21 13:32:49 rsync -rtv guest@slave::dinosaurios/stegosaurus .
+ 1629  02/12/21 13:33:02 ls
+ 1630  02/12/21 13:36:35 history
+ 1631  02/12/21 13:37:02 history > history_keshi.txt

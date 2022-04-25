@@ -1,0 +1,25 @@
+apt-get update 
+
+apt-get install iproute2 procps
+
+apt-get install nmap tree iputils-ping tree
+
+apt install dnsutils
+
+ldap-utils
+nmap
+procps
+iputils-ping
+host
+dig
+bind9-utils
+iporute2
+netacat
+passwordless
+
+Instalar Docker
+
+admin@ip-172-31-16-103:~$ sudo docker run --rm --name ldap.edt.org -h ldap.edt.org -p 389:389 -d keshikid03/ldap21:base
+4f8d75b80ecdf839f4e818519a0a9f84909ae6160225f0a394e0764387af8dcd
+admin@ip-172-31-16-103:~$ 
+

@@ -1,0 +1,36 @@
+Comandos de Docker Hub
+----------------------
+
+docker run --rm -it debian /bin/bash (-it terminal gnome /bin/bash --> Terminal)
+
+docker ps
+
+apt-get update 
+
+apt-get install iproute2
+
+apt-get install nmap
+
+ip a s docker0 --> Ip address show [container]
+
+docker run --rm --name proval -h proval -it debian /bin/bash
+
+docker create network mynet
+
+docker network ls
+
+La comando siempre va con docker [comando docker] [opciones] [contenedor] [opciones contenedor]
+
+docker network inspect mynet
+
+
+docker network inspect bridge
+
+docker container inspect prova1
+
+docker run --rm -it --network mynet debian /bin/bash --> Abrirlo en la network
+
+docker network create --subnet=172.20.0.0/16 mynet
+
+docker network rm mynet --> Borrar
+

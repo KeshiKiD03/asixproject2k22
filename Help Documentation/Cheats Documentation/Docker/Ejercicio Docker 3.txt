@@ -1,0 +1,5 @@
+docker login / docker logout
+
+docker push edtasixm06/apache21
+
+docker tag nombre/prova

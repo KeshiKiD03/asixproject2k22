@@ -1,0 +1,23 @@
+docker rm
+
+docker run --name [nom] -d [forma daemon ejecutable]
+
+docker run --name web -d webimg
+
+apache2ctl -k stop
+
+root@89cae7a15008:/opt/docker# apache2ctl -D FOREGROUND
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+
+
+isx36579183@i11:/var/tmp/m06$ docker exec -it web ps ax
+    PID TTY      STAT   TIME COMMAND
+      1 pts/0    Ss     0:00 /bin/bash
+     84 pts/0    S+     0:00 /bin/sh /usr/sbin/apache2ctl -D FOREGROUND
+     86 pts/0    S+     0:00 /usr/sbin/apache2 -D FOREGROUND
+     87 pts/0    Sl+    0:00 /usr/sbin/apache2 -D FOREGROUND
+     88 pts/0    Sl+    0:00 /usr/sbin/apache2 -D FOREGROUND
+    143 pts/1    Rs+    0:00 ps ax
+
+
+DEBERES - VER DOCKER / COMANDOS DOCKERFILE Y PONERLE APACHE DESDE ATTACH

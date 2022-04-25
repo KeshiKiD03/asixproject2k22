@@ -1,0 +1,347 @@
+14.10.21 - CREACIÓN DE LDAP DESDE 0
+-----------------------------------
+
+- $ docker run --name keshiLdap -h keshiLdap -it debian /bin/bash
+
+- Abrimos una pestaña nueva de terminal
+
+- $ docker ps
+
+Dentro de la Docker
+
+- # apt-get update
+
+- # apt-get -y install iproute2 vim procps tree nmap
+
+- # apt-get -y install slapd ldap-utils
+
+slapd --> Daemon Servidor
+
+ldap-utils --> Dameon Cliente
+
+- Como password de root ponemos "secret"
+
+- dpkg -L slapd | grep "/bin" o dpkg -L ldap | grep "/bin" --> Vemos las ordenes y o ejecutables. 
+
+- Al instalar slapd, se ha creado /etc/ldap/
+
+Dentro de /etc/ldap/.
+
+	ldap.conf --> Configuración del Cliente
+	
+	slapd.conf --> Configuración del Servidor
+	
+	slapd.d --> Directorio de configuración del servidor
+
+- tree /etc/ldap/slapd.d --> Vemos toda la estructura del servidor
+
+- Copiamos el slapd.conf del GIT de ASIXM06 BASE, nos la descargamos o copiamos su contenido.
+
+- cd /etc/ldap
+
+- vim slapd.conf --> Editamos el fichero y pegamos lo copiado del profe.
+
+---------------------------------------------------------------------------
+
+- LDAP: Es una base de datos organizada por tablas, en formato de arbol. Más eficiente. 
+
+- Se caracteriza por lo siguiente:
+
+[ EDT.ORG ]
+     |
+   - - - - - - - - - - - - - - 
+  |   	|     	|       |     |
+[OU] 	[OU] 	[OU]   [OU]  [OU] --> Entidades
+MAQUINAS USUARIOS CLIENTES
+
+- Dentro del fichero /etc/ldap/slapd.conf:
+
+SUFFX: Nombre de la data Base
+rootdn: usuario administrador
+--> Manager.edt.org
+--> Nombre simbolico 
+
+
+---------------------------------------------------------------------------
+
+- Borrar toda la estructura de directorios de configuración que viene por defecto 
+
+- ls -la slapd.conf 
+
+- rm -rf slapd.d/* ; rm -rf /var/lib/ldap/*
+
+slapd.conf --> Configuración del servidor 
+/var/lib/ldap --> Directorios de datos, donde el sistema pone los datos.
+
+- Para generar un directorio de configuración a partir de un fichero con el comando "slaptest"
+
+- slaptest -f slapd.conf -F slapd.d (Dará error)
+
+- tree slapd.d --> Vemos que ha creado la estructura
+
+- ls -l /var/lib/ldap --> No hay nada
+
+- slaptest -f slapd.conf -F slapd.d -u --> Omite errores y sigue adelante
+
+---------------------------------------------------------------------------
+
+- slapcat --> Muestra el contenido del Servidor LDAP. 
+
+- slapcat o slapadd son ordenes del servidor, uno muestra y otro añade. 
+
+- slapcat -n0 --> Es el motor de LDAP
+
+- slapcat -n1 --> Es la base de datos del usuario
+
+LDAP
+
+ORDENES CLIENTE: SLAPSEARCH O LDAPADD --> [389] --> [LDAP] <-- SLAPCAT O SLAPADD
+
+
+---------------------------------------------------------------------------
+
+INYECCIÓN MASIVA DE DATOS
+
+- Nos bajamos el fichero organitzacio-edt.org.ldif
+
+- Copiamos y pegamos a dentro de organitzacio.ldif. $ vim organitzacio.ldif
+
+- Realizamos
+
+---
+LDAP3.jpg
+OBTENER APUNTES DE LDAP DEL MEDIO
+---
+
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+ 
+-
+ 
+-
+ 
+-
+ 
+-
+
+- 
+
+- 
+
+- 
+
+-
+ 
+-
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+ 
+-
+ 
+-
+ 
+-
+ 
+-
+
+- 
+
+- 
+
+- 
+
+-
+ 
+-
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+ 
+-
+ 
+-
+ 
+-
+ 
+-
+
+- 
+
+- 
+
+- 
+
+-
+ 
+-
+
+- 
+
+- 
+
+- 
