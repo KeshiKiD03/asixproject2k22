@@ -29,7 +29,7 @@ Pasen omplir la introduccio del nostre projecte, buscant informacio sobre la cib
 
 (**Aaron**)
 
-Organiza los documentos/archivos/directorios dentro del git del nuestro proyecto (asixprojecte2k22).
+Organiza los documentos/archivos/directorios dentro del git del nuestro proyecto(asixprojecte2k22).
 
 Decido a empezar a indagar sobre el DNS Criptography, entender mejor que es, como funciona, en que ejeml
 
