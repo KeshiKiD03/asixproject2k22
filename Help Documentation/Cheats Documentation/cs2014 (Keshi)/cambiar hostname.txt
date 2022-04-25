@@ -1,2 +1,0 @@
-hostname "new name"
-gedit /etc/hostname --> hostname
