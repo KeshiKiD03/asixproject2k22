@@ -1,108 +1,109 @@
 # Wazuh
-## Descripcion/Biografia
+## Descripció/Biografia
 
 **Que es?**
-- Wazuh es un sistema de detección de intrusos en host de codigo abierto y libre (HIDS).
+- Wazuh és un sistema de detecció d'intrusos en host de codi obert i lliure (HIDS).
 
-- Wazuh es una solución de monitoreo de seguridad gratuita, de codigo abierto y lista para empresas, monitoreo de integridad, respuesta a incidentes y cumplimientos.
+- Wazuh és una solució de monitorització de seguretat gratuïta, de codi obert i llista per a empreses, monitorització d'integritat, resposta a incidents i compliments.
 
-- Wazuh es una platarforma Open Source utilizada para la prevencion, detección y respuesta a las amenazas.
-
----
-**Que hace?/Que puede hacer?**
-- Realiza análisis de registro, comprobación de integridad, supervisión del registro de Windows, detección de rootkits, alertas basadas en el tiempo y respuesta activa.
-
-- Es capaz de proteger cargas de trabajo en entornos locales, virtualizados, en contenedores y en la nube.
-
-- Wazuh aborda la necesidad de supervisión y respuesta continua a las amenazas avanzadas.
-
-- Wazuh ayuda a detectar procesos de explotación ocultos que son más complejos que un simple patrón de firma y que pueden utilizarse para evadir los sistemas antivirus tradicionales.
-
-- Se puede usar para monitorear puntos finales, servicios en la nube y contenedores, y para agregar y analizar datos de fuentes externas.
-
-- Proporciona detección de intrusiones para la mayoria de sistemas operativos, incluyendo Linux, AIX, HP-UX, macOS, Solaris y Windows
-
-- Wazuh tiene una arquitectura centralizada y multiplataforma que permite que múltiples sistemas sean fácilmente monitoreados y administrados.
-
-- Wazuh puede ser configurado para enviar alertas a syslog. Esos mansajes pueden ser enviados a la interfaz web de ServicePilot en tiempo real por syslog para su análisis centralizado.
-
-- Ademas, el agente de Wazuh porporciona capacidades de respuesta activa que se pueden utilizar para bloquear un ataque de red, detectar un proceso malicioso o poner en cuarentena un archivo infectado con malware.
+- Wazuh és una plataforma Open Source utilitzada per a la prevenció, detecció i resposta a les amenaces.
 
 ---
-**Como lo hace?**
-- La solución Wazuh consta de un agente de seguridad para puntos finales, desplegado en los sistemas supervisados, y un servidor de gestion, que recoge los datos de recopilados por los agentes.
+**Que fa?/Que pot fer?**
+- Realitza anàlisi de registre, comprovació dintegritat, supervisió del registre de Windows, detecció de rootkits, alertes basades en el temps i resposta activa.
 
-- Se centra en proporcionar la visibilidad adecuada, con los conocimientos necesarios para ayudar a los analisis de seguridad a descubrir, investigar y responder a las amenazas y campañas de ataque en varios puntos.
+- És capaç de protegir càrregues de treball en entorns locals, virtualitzats, en contenidors i al núvol.
+
+- Wazuh aborda la necessitat de supervisió i resposta contínua a les amenaces avançades.
+
+- Wazuh ajuda a detectar processos d'explotació ocults que són més complexos que un simple patró de signatura i que es poden utilitzar per evadir els sistemes antivirus tradicionals.
+
+- Es pot utilitzar per monitoritzar punts finals, serveis al núvol i contenidors, i per afegir i analitzar dades de fonts externes.
+
+- Proporciona detecció d'intrusions per a la majoria de sistemes operatius, incloent-hi Linux, AIX, HP-UX, macOS, Solaris i Windows.
+
+- Wazuh té una arquitectura centralitzada i multiplataforma que permet que múltiples sistemes siguin fàcilment monitoritzats i administrats.
+
+- Wazuh pot ser configurat per enviar alertes a syslog. Aquests mansatges poden ser enviats a la interfície web de ServicePilot en temps real per syslog per a la seva anàlisi centralitzada.
+
+- A més, l'agent de Wazuh proporciona capacitats de resposta activa que es poden utilitzar per bloquejar un atac de xarxa, detectar un procés maliciós o posar en quarantena un arxiu infectat amb codi maliciós (malware).
 
 ---
-**Wazuh porporciona las siguentes capacidades:**
-- __Análisis de seguridad__:
-  - Wazuh se utiliza para recolectar, agregar, indexar y analizar datos de seguridad, ayudando a las organizaciones a detectar intrisiones, amenazas y comportamientos anómalos dentro de la red.
+**Com ho fa?**
+- La solució Wazuh consta d'un agent de seguretat per a punts finals, desplegat als sistemes supervisats, i un servidor de gestió, que recull les dades de recopilades pels agents.
 
-  - A medidas que las amenazas ciberneticas se vuelven mas sofisticadas, se requiere de monitoreo en tiempo real y análisis de seguridad para una rápida detección y remediación de las amenazas.
+- Se centra a proporcionar la visibilitat adequada, amb els coneixements necessaris per ajudar les anàlisis de seguretat a descobrir, investigar i respondre a les amenaces i campanyes d'atac a diversos punts.
 
-- __Detección de intrusiones__:
-  - Los agentes de Wazuh analiza los sistemas monitorizados buscando malware, rootkits y anomalías sospechosas. Tambien pueden detectar ficheros y procesos ocultos, puertos de red a la escucha no registrado e inconsistencias en las respuestas a las llamadas del sistema.
+---
+**Wazuh proporciona les capacitats següents:**
+- __Anàlisi de seguretat__:
+  - Wazuh s'utilitza per recol·lectar, agregar, indexar i analitzar dades de seguretat, ajudant les organitzacions a detectar intrisions, amenaces i comportaments anòmals dins de la xarxa.
 
-  - Además de estas capacidades de los agentes, el servidor usa firmas para detectar intrusiones, usando un motor de expresiones regulares para analizar los datos de los logs
-
-
-- __Análisis de los datos de logs__:
-  - En los registros de sistemas, dispositivos y aplicaciones de su infraestructura, hay muchas situaciones en las que hay evidencia de ataque. Wazuh se puede utilizar para recopilar y analizar datos de registro automáticamente.
-
-  - Los agentes de Wazuh leen los logs de las aplicaciones y del sistema operativo y los envían de forma segura al servidor central para almacenarlos y realizar un análisis basado en reglas. Dichas reglas ayudan a tener conocimiento de errores del sistema o de aplicación, fallos de configuración, intentos y/o éxito de actividades maliciosas, violaciones de la politica de seguridad y otra serie de problemas de operación o seguridad.
+  - A mesures que les amenaces cibernetiques es tornen més sofisticades, es requereix de monitoratge en temps real i anàlisi de seguretat per a una ràpida detecció i remediació de les amenaces.
 
 
-- __Monitorización de la integridad de ficheros__:
-  - Wazuh monitorea el sistema de archivos e identifica los cambios realizados en el contenido, los permisos, la propiedad y los atributos de los archivos que deben vigilar. Ademas, identifica de forma nativa a los usuarios y las aplicaciones que se utilizan para crear o modificar archivos.
+- __Detecció d'intrusions__:
+  - Els agents de Wazuh analitza els sistemes monitoritzats buscant codi maliciós, rootkits i anomalies sospitoses. També poden detectar fitxers i processos ocults, ports de xarxa a l'escolta no registrat i inconsistències a les respostes a les trucades del sistema.
+
+  - A més d'aquestes capacitats dels agents, el servidor utilitza signatures per detectar intrusions, usant un motor d'expressions regulars per analitzar les dades dels logs.
 
 
-- __Detección de vulnerabilidades__:
-  - Los agentes de Wazuh extraen datos del inventario de software y envían esta información al servidor, donde se correlaciona con las bases de datos CVE (Common Vulnerabilities and Exposure) continuamente actualizadas, para identificar software vulnerable conocido.
+- __Anàlisi de les dades de logs__:
+  - Als registres de sistemes, dispositius i aplicacions de la seva infraestructura, hi ha moltes situacions en què hi ha evidència d'atac. Wazuh es pot utilitzar per recopilar i analitzar dades de registre automàticament.
 
-  - La evaluación de las vulnerabilidades de forma automática nos ayuda a encontrar los puntos vulnerables en los activos críticos y tomar las acciones correctivas necesarias antes de que sean explotadas por los atacantes.
-
-
-- __Evaluación de la configuración__:
-  - Wazuh nos ayuda a supervisar los ajustes de configuración del sistema y las aplicaciones para asegurarnos de que cumpla con las políticas de seguridad y estándartes.
-
-  - Los agentes llevan a cabo escaneos periódicos para detectar las aplicaciones que se conoce que son vulnerables, no parcheadas o configuradas de forma insegura. Además, los chequeos pueden personalizarse y hacerse a medida para adecuarse a nuestra organización.
+  - Els agents de Wazuh llegeixen els logs de les aplicacions i del sistema operatiu i els envien de forma segura al servidor central per emmagatzemar-los i fer una anàlisi basada en regles. Aquestes regles ajuden a tenir coneixement d'errors del sistema o d'aplicació, errors de configuració, intents i/o èxit d'activitats malicioses, violacions de la política de seguretat i altres problemes d'operació o seguretat.
 
 
-- __Respuestas a incidentes__:
-  - Wazuh proporciona respuestas activa listas para ser utilizadas con el fin de llevar a cabo diversas contramedidas, tales como bloquear acceso a un sistema del origen de la amenaza, para hacer frente a las amenazas.
-
-  - Ademas, Wazuh puede usarse para ejecutar comandos remotamente o consultas al sistema, identificando indicadores de compromiso (IOCs) y ayudando a otras actividades forenses o tareas de respuesta a incidentes.
+- __Monitorització de la integritat de fitxers__:
+  - Wazuh monitoritza el sistema de fitxers i identifica els canvis realitzats en el contingut, els permisos, la propietat i els atributs dels fitxers que han de vigilar. A més, identifica de forma nativa els usuaris i les aplicacions que s'utilitzen per crear o modificar fitxers.
 
 
-- __Cumplimiento normativo__:
-  - Wazuh proporciona algunos de los controles de seguridad necesarios para cumplir con los estándartes y regulaciones de la industria.
+- __Detecció de vulnerabilitats__:
+  - Els agents de Wazuh extreuen dades de l'inventari de programari i envien aquesta informació al servidor, on es correlaciona amb les bases de dades CVE (Common Vulnerabilities and Exposure) contínuament actualitzades, per identificar programari vulnerable conegut.
 
-  - Wazuh puedeutilizarse para cumplir con los requisitosPCI DSS,GPG135oGDPR6, utilizando suinterfaz de usuario web que proporciona informes y paneles de control (dashboards)que pueden ayudarnos a dicho cumplimiento.
+  - L'avaluació de les vulnerabilitats de forma automàtica ens ajuda a trobar els punts vulnerables als actius crítics i prendre les accions correctives necessàries abans que siguin explotades pels atacants.
 
-- __Monitorización de la seguridad__:
-  - Wazuh ayuda a la monitorización de la infraes-tructura en la nube de proveedores como Amazon AWS, Azure o Google Cloud.
 
-  - Además, Wazuh proporciona reglas para evaluar la configuración de su entorno de nube, detectando fácilmente las debilidades.
+- __Avaluació de la configuració__:
+  - Wazuh ens ajuda a supervisar els ajustaments de configuració del sistema i les aplicacions per assegurar-nos que compleixi amb les polítiques de seguretat i estàndards.
 
-- __Seguridad en contenedores__:
-  - Wazuh proporciona visibilidad de seguridad en sus hosts y contenedores Docker, monitoreando su comportamiento y detectando amenazas, vulnerabilidades y anomalías
+  - Els agents duen a terme escanejats periòdics per detectar les aplicacions que es coneix que són vulnerables, no aplicades o configurades de forma insegura. A més, les revisions es poden personalitzar i fer a mida per adequar-se a la nostra organització.
 
-  - El agente de Wazuh tiene una integración nativa con el motor Docker que permite a los usuarios monitorear imágenes, volúmenes, configuraciones de red y contenedores en ejecución.
+
+- __Respostes a incidents__:
+  - Wazuh proporciona respostes activa llistes per ser utilitzades per tal de dur a terme diverses contramesures, com ara bloquejar accés a un sistema de lorigen de lmenaça, per fer front a les amenaces.
+
+  - A més, Wazuh es pot utilitzar per executar ordres remotament o consultes al sistema, identificant indicadors de compromís (IOCs) i ajudant altres activitats forenses o tasques de resposta a incidents.
+
+
+- __Compliment normatiu__:
+  - Wazuh proporciona alguns dels controls de seguretat necessaris per complir amb els estàndards i regulacions de la indústria.
+
+  - Wazuh es pot utilitzar per complir els requisits PCI DSS, GPG135 o GDPR6, utilitzant la seva interfície d'usuari web que proporciona informes i panells de control (dashboards) que ens poden ajudar a aquest compliment.
+
+- __Monitorització de la seguretat__:
+  - Wazuh ajuda a la monitorització de la infraestructura al núvol de proveïdors com Amazon AWS, Azure o Google Cloud.
+
+  - A més, Wazuh proporciona regles per avaluar la configuració del seu entorn de núvol, detectant fàcilment les debilitats.
+
+- __Seguretat en contenidors__:
+  - Wazuh proporciona visibilitat de seguretat als hosts i contenidors Docker, monitoritzant el seu comportament i detectant amenaces, vulnerabilitats i anomalies.
+
+  - L'agent de Wazuh té una integració nativa amb el motor Docker que permet als usuaris monitoritzar imatges, volums, configuracions de xarxa i contenidors en execució.
 
 ## Practica
-### Necesario:
-- [ ] Sistema Operativo de 64 bits
+### Necessari:
+- [ ] Sistema Operatiu de 64 bits
 - [ ] 4 GB de RAM
-- [ ] 2 nícleos de CPU
+- [ ] 2 nuclis de CPU
 
 --------
 
-- Montar una maquina virtual (Oracle VirtualBox) de RedHat
+- Muntar una màquina virtual (Oracle VirtualBox) de RedHat
 
 
 ## Bibliografia
-- http://openaccess.uoc.edu/webapps/o2/bitstream/10609/117787/7/jpcozarTFM0620memoria.pdf <-- GUIA PARA PROYECTO
+- http://openaccess.uoc.edu/webapps/o2/bitstream/10609/117787/7/jpcozarTFM0620memoria.pdf <-- GUIA PER A PROJECTE
 - https://blog.gudixsecurity.com/protege-tu-empresa-con-wazuh-edr-open-source/
 - https://www.servicepilot.com/es/integration/monitoreo-wazuh/
 - https://documentation.wazuh.com/current/index.html
