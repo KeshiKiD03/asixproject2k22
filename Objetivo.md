@@ -8,7 +8,7 @@
 
 # __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
 
-<div style="align: center">
+<div style="align: center; width: 50%">
     <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
 </div>
 
@@ -52,9 +52,7 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
 
 + __Xifratge de dades__: Comunicació xifrada en tot moment a CryptoSEC. Mitjançant el servidor VPN, es crearà un túnel VPN on s'establirà "Claus de Sessió (Híbrids)" en la comunicació.
 
-+ La __investigació davant delicte__: Si es produeix un delicte dins de l'empresa, és molt important que es faci una investigació exhaustiva.
-
-+ ____
++ __Protegirse davant la vulnerabilitat__: Davant d'un atac maliciós, d'una denegació de servei DDOS, d'un metaexploit, d'un phishing... etc. Hem de saber com actuar davant d'aquests escenaris. Millor prevenir que lamentar-nos! 
 
 <br>
 
@@ -65,7 +63,7 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
 + Un cop tinguem tot amb funcionament i l'aprovació de les bateries de proves. Es farà el _deployment_ a AWS EC2 amb els serveis necessaris d'AWS per a la seva total funcionalitat.
 
 <div style="align: center">
-    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
+    <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />
 </div>
 
 
