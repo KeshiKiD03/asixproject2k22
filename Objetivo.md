@@ -4,6 +4,7 @@
 ### __Aaron Andal & Cristian Condolo__
 
 <br>
+<br>
 
 # __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
 
@@ -11,33 +12,79 @@
     <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
 </div>
 
+
+
 # Objectius "Projecte ASIX - Ciberseguretat: _Careful where you step_ 🕵️ 🔎"
 
-L'objectiu principal d'aquest projecte de Ciberseguretat, es el bon funcionament d'una VPN - Virtual Private Network on englobem diferents serveis en funcionament, explicant breument cada cascuna dels diferents serveis que hi componen la nostra organizació: __"CryptoSec"__
+L'objectiu principal d'aquest projecte de Ciberseguretat, és el bon funcionament d'una VPN - Virtual Private Network on englobem diferents serveis en funcionament, explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__
 
 <div style="align: center">
     <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />
 </div>
 
-En la recerca d'informació, independentment de la seva funcionalitat (o no), les bases de proves
+Durant aquest projecte, ens trobarem diferents reptes tant a nivell tècnic com en l'àmbit sistemàtic. Haurem de ser capaços de resoldre aquests reptes amb l'ajuda bé de diferents companys de classe, o de la informació investigada per Internet.
 
+<div style="align: center">
+    <img src="https://www.infinitiaresearch.com/wp-content/uploads/2021/09/design-research.png" />
+</div>
 
-1
+En la recerca d'informació de tota la documentació, independentment de les seves funcionalitats, les bateries de proves, el control de versions fins a arribar a l'últim "_stage_" del projecte. Es farà un seguiment de tot lo que es fa, es farà i lo que s'està fent en hores de projecte.
 
-OpenVPN + Wazuh + OpenLDAP + Radius + SSH Criptografia o OpenSSL --> AWS (Deployment a AWS  + Docker).
+<br>
 
-2 
+Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots els _serveis_ que utilitzarem, _segon_ un petit exemple de funcionament del servei en qüestió i finalment, l'assemblació al cos del projecte després de verificar que compleix tant de l'informàtica o concretament a la ciberseguretat: 
 
-WireGuardVPN + Samba + Wazuh + SSH Criptograph + OpenSSL + --> AWS (Deployment a AWS)
++ __L'atomicitat__ :Verificar que una operació s'ha realitzat o no, per tant no es pot quedar a mitjes.
 
++ El __control d'errors__: És imprescincible detectar on ens hem equivocat per poder corregir l'error o idear altres plans i proseguir amb el projecte.
 
-----------------------------------------------------------------------------
++ L'__aïllament__: Mecanisme de seguretat que permetrà separar els programes en execució, per tal de mitigar errors del sistema o vulnerabilitats de software.
 
-# Idea 1
++ La __durabilitat__: Garantir la integritat de les dades i que no es borrin accidentalment.
+
++ L'__integritat & compatibilitat__: És important que hi hagi una compatibilitat en els serveis que s'instal·laràn a la 
+
+<br>
+
+## Ciberseguretat
+
++ La __VPN__: Xifrar sempre la navegació de l'usuari, aïllar la xarxa habitual per una més segura. Accés mitjançant claus o certificats.
+
++ __Xifratge de dades__:
+
++ La __investigació davant delicte__: Si es produeix un delicte dins de l'empresa, és molt important que es faci una investigació exhaustiva.
+
++ ____
+
+<br>
+
+# __Els objectius dels serveis de CryptoSEC__
+
+### Wireguard VPN
+
++ __Aïllar__ la xarxa de CryptoSEC a una VPN on es permetrà la navegació a l'exterior i l'accés a la VPN sempre i quan siguin clients de CryptoSEC i tinguin accés a la nostra VPN amb Wireguard.
+
+### Wazuh (Host Intrusion Detect)
+
+### OpenSSL
+
+### DNS Criptogràfic
+
+### Samba
+
+### Let's Encrypt ACME - Certbot
+
+### Encrypted File Systems
+
+### SSH
+
+### RADIUS
+
+### Deployment a Docker o Virtualbox
 
 https://www.lpi.org/our-certifications/exam-303-objectives 
 
-# Docker
+#### Docker
 
 Docker --> docker run -it ubuntu:latest
 
@@ -57,12 +104,7 @@ Implementación de VPN con WireGuard.
 
 * Desplegament Ubuntu Server con DNS. Uno principal + Uno secundario y tendrá DNS Sec
 
-
-
-
-
-
-
+### VirtualBox
 
 # Ubuntu3 Samba
 
