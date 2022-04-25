@@ -48,9 +48,9 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
 
 ## Ciberseguretat
 
-+ La __VPN__: Xifrar sempre la navegació de l'usuari, aïllar la xarxa habitual per una més segura. Accés mitjançant claus o certificats.
++ La __VPN__: Xifrar sempre la navegació de l'usuari, aïllar la xarxa habitual per una més segura. Accés mitjançant claus o certificats. Vetllar per la seguretat de la xarxa davant vulneravilitats o atacs maliciosos.
 
-+ __Xifratge de dades__:
++ __Xifratge de dades__: Comunicació xifrada en tot moment a CryptoSEC. Mitjançant el servidor VPN, es crearà un túnel VPN on s'establirà "Claus de Sessió (Híbrids)" en la comunicació.
 
 + La __investigació davant delicte__: Si es produeix un delicte dins de l'empresa, és molt important que es faci una investigació exhaustiva.
 
@@ -58,29 +58,88 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
 
 <br>
 
+# La proposta final
+
++ Un deployment primerament local, verificant que tot funcioni correctament i fent els "_commits_" adherents per tal de conseguir l'assemblatge final.
+
++ Un cop tinguem tot amb funcionament i l'aprovació de les bateries de proves. Es farà el deployment a AWS EC2 amb els serveis necesaris de AWS per a la seva total funcionalitat.
+
+<div style="align: center">
+    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
+</div>
+
+
 # __Els objectius dels serveis de CryptoSEC__
 
 ### Wireguard VPN
 
-+ __Aïllar__ la xarxa de CryptoSEC a una VPN on es permetrà la navegació a l'exterior i l'accés a la VPN sempre i quan siguin clients de CryptoSEC i tinguin accés a la nostra VPN amb Wireguard.
++ __Aïllar__ la xarxa de CryptoSEC a una __VPN__ on es permetrà la navegació a l'exterior i l'accés a la __VPN__ sempre i quan siguin clients de CryptoSEC i tinguin accés a la nostra VPN amb Wireguard.
 
 ### Wazuh (Host Intrusion Detect)
 
++ Detectar i monitoritzar la infraestructura, les amenaçes i l'intent d'intrusió. 
+
++ També detectarà anomalíes del sistema o aplicacions mal configurades o accions d'usuari no autoritzats.
+
 ### OpenSSL
+
++ Asseguració de la conexió mitjançant la __criptografía__. Utilitzant TLS com a protocol de _transport_ i _SSL_
 
 ### DNS Criptogràfic
 
++ Implementació de BIND9.7
+
++ Entendre conceptes de DNS, zones i registre de recursos.
+
++ Entendre DNSSEC:
+
+    + Claus firmades,
+
+    + DNSKEY, RRSIG, NSEC, NSEC3...
+
++ Creació i administració de claus per a la zona "CryptoSEC".
+
++ Resoldre problemes de servidor de noms autoritzats que atén zones segures com DNSSEC de "CryptoSEC".
+
++ 
+
 ### Samba
+
++ Servidor centralitzat operant com a __Domini Principal__, oferirà usuaris _Samba_ i diferents _Shares_.
 
 ### Let's Encrypt ACME - Certbot
 
++ 
+
 ### Encrypted File Systems
+
++ 
 
 ### SSH
 
++ 
+
 ### RADIUS
 
-### Deployment a Docker o Virtualbox
++ 
+
+### Deployment a Docker
+
++ Es farà una versió 1 a local tant de Docker o Virtualbox. 
+
++ La versió final serà la que ens sigui més eficient.
+
++ Potser que si utilitzem Docker - No ens funcioni alguns serveis que requereixen systemctl.
+
+### Deployment a AWS (Final) + Clients Wireguard Client (Classe) i un de Maliciós
+
++ Potser que en aquesta part no ens acabi de funcionar del tot ja que depén de molts factors (Docker no té systemd, ports, conectivitat, aïllament, compatibilitat... etc.)
+
++ Deployment de tot l'assemblatge a AWS.
+
++ Verificació del funcionament.
+
++ Oferiment de tots els serveis als clients de WireGuard.
 
 https://www.lpi.org/our-certifications/exam-303-objectives 
 
