@@ -1,0 +1,71 @@
+CREAR UN RAID1 (3 DISCOS DE 100M)
+
+--level = sabemos en que nivel
+
+1. 100M
+
+2. mdadm --create /dev/md0 --level=1 --raid-devices=3 /dev/loop2 /dev/loop3 /dev/loop4
+
+3. tree /dev/disk
+
+4. cat /proc/mdstat --> Personalidades del RAID - Vemos los discos que tiene
+
+5. dm device mapper = Device Mapper - Funciona para otras cosas
+
+6. md multi-disk = RAID 
+
+7. lsblk
+
+blkid
+
+8. mkds -t ext4 /dev/md0
+
+9. mount /dev/md0 /mnt
+
+10. cp -r /bin/aa* /mnt
+
+11. df -h
+
+12. mdadm --detail --scan
+
+13. mdadm --detail /dev/md0
+
+mdadm --query /dev/loop1
+
+mdadm --examine /dev/loop1
+
+14. hexdump -C /dev/loop0
+
+
+
+
+
+
+
+
+(RELLENAR LUEGO DE APUNTES)
+
+
+-----------
+
+Atura el RAID
+
+mdadm --stop /dev/md0
+
+
+umount /mnt (Hay que hacer primero esto)
+
+
+
+mdadm --stop /dev/md0
+
+
+blkid - Ya no sale
+
+tree /dev/disk
+
+
+wipeout - No es comando
+
+
+mdadm --assemble --scan --> Busca las particiones del DISCO, los examina y que marcas e intenta construir un DISCO.
