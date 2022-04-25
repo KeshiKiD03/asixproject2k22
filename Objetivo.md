@@ -1,3 +1,27 @@
+# __Projecte ASIX 2k22__
+## __Escola Del Treball__
+### __2HISX 2021-2022__
+### __Aaron Andal & Cristian Condolo__
+
+<br>
+
+# __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
+
+<div style="align: center">
+    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
+</div>
+
+# Objectius "Projecte ASIX - Ciberseguretat: _Careful where you step_ 🕵️ 🔎"
+
+L'objectiu principal d'aquest projecte de Ciberseguretat, es el bon funcionament d'una VPN - Virtual Private Network on englobem diferents serveis en funcionament, explicant breument cada cascuna dels diferents serveis que hi componen la nostra organizació: __"CryptoSec"__
+
+<div style="align: center">
+    <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />
+</div>
+
+En la recerca d'informació, independentment de la seva funcionalitat (o no), les bases de proves
+
+
 1
 
 OpenVPN + Wazuh + OpenLDAP + Radius + SSH Criptografia o OpenSSL --> AWS (Deployment a AWS  + Docker).
