@@ -13,7 +13,7 @@
 
 1. Descarregar-nos la ISO de Ubuntu Server 20.04 LTS: [downloadISO](https://releases.ubuntu.com/20.04/)
 
-1. Obrir VirtualBOX --> New --> Name --> Memoria 1024M --> Create virtual Hard Disk Now --> VDI 20GB    --> Dynamic size.
+1. Obrir VirtualBOX --> New --> Name --> Memoria 1024M --> Create virtual Hard Disk Now --> VDI 70GB    --> Dynamic size.
 
 <div style="align: center; width: 100%">
     <img src="./Photos/Ub1.png" />
@@ -35,4 +35,4 @@
 
 4. Seleccionem English com a idioma del sistema i teclat en Català.
 
-5. De moment la configuració de xarxa la deixem tal qual amb NAT, després la canviarem a
+5. De moment la configuració de xarxa la deixem tal qual amb NAT, després la canviarem.
