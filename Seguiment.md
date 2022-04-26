@@ -56,16 +56,22 @@ Continua buscant dades sobre el Wazuh i sobre les seves capacitats que ofereix c
 Busca una pràctica amb què intenta posar en marxa per aprendre més sobre Wazuh.
 
 ---
-( **Cristian & Aaron** = 16:00- (h) )
+( **Cristian & Aaron** = 16:00-19:45 (3h) )
 
 Segueixen omplin els Objetius, el Seguiment i despres segueixen buscant informacion sobre DNS Criptography i començant una practica de Wazuh.
 
 ---
 
 ---
-## 
+## 26/04/2022
 
-()
+( **Cristian & Aaron** = 12:10 - 14:00 )
+
+Monten un tant un Linux Lite i un Ubuntu Server dins de VirtualBox.
+
+Com Aaron i en Cristian tenen Windows a casa han optat per una full virtualization d'un o varies Ubuntu Servers a VirtualBox. Per aquest motiu el format del fitxer vdi (virtualbox disk) és portable i podem avançar a casa. L'accés i configuració es farà per ssh amb un parell de claus pub/priv.
+
+La instal·lació es farà des de zero amb un disk iso de ubuntu server 20.04 i allà instal·larem els serveis quan ens hagi funcionat.
 
 ---
 
