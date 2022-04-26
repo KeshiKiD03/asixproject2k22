@@ -27,12 +27,53 @@
 
 <div style="align: center; width: 100%">
     <img src="./Photos/Ub4.png" />
+</div>
 
 3. Canviar l'ordre d'arrencada.
 
 <div style="align: center; width: 100%">
     <img src="./Photos/Ub5.png" />
+</div>
 
 4. Seleccionem English com a idioma del sistema i teclat en Català.
 
+<div style="align: center; width: 100%">
+    <img src="./Photos/Ub8.png" />
+</div>
+
 5. De moment la configuració de xarxa la deixem tal qual amb NAT, després la canviarem.
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/Ub7.png" />
+</div>
+
+6. Ubuntu Server es farà l'automatització de les particions per a que sigui adequat per a UB Server. Utilitzarà LVM pel que veiem.
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/Ub9.png" />
+</div>
+
+7. Posem les nostres dades de Servidor.
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/Ub10.png" />
+</div>
+
+
+8. Seleccionem alguns repositoris que ens interessen com _docker_ o _aws-cli_.
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/Ub11.png" />
+</div>
+
+9. Esperem a que s'instal·li correctament.
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/Ub12.png" />
+</div>
+
+10. Rebotar i treure la disc ISO. Canviar l'arrencada.
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/Ub13.png" />
+</div>
