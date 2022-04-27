@@ -7,7 +7,7 @@
 
 # __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
 
-<div style="align: center; width: 50%">
+<div style="align: center; width: 100%">
     <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
 </div>
 
