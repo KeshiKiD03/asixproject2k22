@@ -13,13 +13,11 @@
 
 # Index
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+* **Descripció/Biografia**: [README](#descripcióbiografia)
 
+* **Practica**: [README](#practica)
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
-
-
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+* **Bibliografia**: [README](#bibliografia)
 
 # Wazuh
 ## Descripció/Biografia
@@ -126,9 +124,12 @@
 
 
 ## Bibliografia
-- http://openaccess.uoc.edu/webapps/o2/bitstream/10609/117787/7/jpcozarTFM0620memoria.pdf <-- GUIA PER A PROJECTE
+**Deficions:**
+- http://openaccess.uoc.edu/webapps/o2/bitstream/10609/117787/7/jpcozarTFM0620memoria.pdf **<-- GUIA PER A PROJECTE**
 - https://blog.gudixsecurity.com/protege-tu-empresa-con-wazuh-edr-open-source/
 - https://www.servicepilot.com/es/integration/monitoreo-wazuh/
 - https://documentation.wazuh.com/current/index.html
 - https://es.wikipedia.org/wiki/Wazuh
+
+**Practica:**
 - https://www.csirt.gob.cl/media/2021/10/2SCSFP-SIEM-HE.pdf
