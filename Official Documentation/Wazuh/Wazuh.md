@@ -15,9 +15,7 @@
 
 * **Descripció/Biografia**: [README](#descripcióbiografia)
 
-
 * **Practica**: [README](#practica)
-
 
 * **Bibliografia**: [README](#bibliografia)
 
