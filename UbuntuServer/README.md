@@ -77,3 +77,25 @@
 <div style="align: center; width: 100%">
     <img src="./Photos/Ub13.png" />
 </div>
+
+# Quick configuration
+
+1. Update repository: `apt-get update`
+
+2. Canviar el _keyboard-configuration_: 
+
+* `apt install -y keyboard-configuration console-setup netcat`
+
+3. Configurar el _keyboard-configuration_: `dpkg-reconfigure keyboard-configuration`
+
+    + Teclat genèric.
+
+    + Spanish --> Spanish - Catalan (Spain, with middle-dot L)
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/Ub14.png" />
+</div>
+
+https://www.redeszone.net/noticias/seguridad/error-usar-mismo-nombre-credenciales/
+
+4. Instal·lar __Guest Additions i SSH__:

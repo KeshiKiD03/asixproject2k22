@@ -1,32 +1,26 @@
-# Projecte ASIX 2k22
-## Escola Del Treball
-### 2HISX 2021-2022
-### Aaron Andal & Cristian Condolo
+# __Projecte ASIX 2k22__
+## __Escola Del Treball__
+### __2HISX 2021-2022__
+### __Aaron Andal & Cristian Condolo__
 
 <br>
-<br>
 
-# Wazuh
+# __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
+
+<div style="align: center; width: 100%">
+    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
+</div>
 
 # Index
 
-**Wireguard (VPN)**: [Wireguard](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#containers)
-
-**Wazuh**: [Wazuh](https://docs.google.com/document/d/1lyjnPMFODZWkaCpDd12iIVZH5fkIafsXo9fS5PyFPSk/edit?usp=sharing)
+* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
 
 
-
-**DNS Cripto**: [Cripto](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
-
-**Apunts Ruben**: [Cripto](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
 
 
-# Objectius
+* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
 
-* Lorem ipsum
 
-* Lorem ipsum
 
-<div style="align: center">
-    <img src="https://grupo-alonso.com/wp-content/uploads/2016/07/asix.jpg" />
-</div>
+# 
