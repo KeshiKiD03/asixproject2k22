@@ -73,6 +73,8 @@ Com Aaron i en Cristian tenen Windows a casa han optat per una full virtualizati
 
 La instal·lació es farà des de zero amb un disk iso de ubuntu server 20.04 i allà instal·larem els serveis quan ens hagi funcionat.
 
+<p><a href="https://github.com/KeshiKiD03/asixproject2k22/blob/main/UbuntuServer/README.md">Llegir aqui.</a></p>
+
 ---
 
 ---
