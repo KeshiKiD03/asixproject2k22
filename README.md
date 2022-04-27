@@ -7,14 +7,14 @@
 
 # __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
 
-<div style="align: center; width: 50%">
+<div style="align: center; width: 100%">
     <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
 </div>
 
 
 En la societat d'avui en dia, l'ús de les tecnologies de la informació, ens faciliten intercanviar informació des de qualsevol part del món.
 
-<div style="align: center; width: 50%">
+<div style="align: center; width: 100%">
     <img src="https://gdempresa.gesdocument.com/sites/default/files/styles/large/public/2021-12/internet-de-las-cosas.jpg?itok=hJpvD2zV" />
 </div>
 
