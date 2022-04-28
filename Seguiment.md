@@ -81,10 +81,12 @@ Research d'esquemes i tipus d'atacs per al projecte. Ordenació del GIT del proj
 Tenir una idea definitiva i separar diferents pràctiques per a la posterior assemblatge.
 
 ---
-## 
+## 28/04/2022 
 
-()
+( **Aaron** = 18:00 - 20:00)
 ---
+
+Configuració de les màquines virtuals Ubuntu Server i clients Ubuntu i Debian 10 a VirtualBox.
 
 ---
 ## 
