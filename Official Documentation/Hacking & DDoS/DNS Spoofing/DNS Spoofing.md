@@ -157,13 +157,98 @@ ping x.x.3.3
 
 4. El servidor inicia el servei de noms de DNS. El client Debian fa peticions de resolució normal.
 
-```
+```bash
 # DNS "cryptosec.net"
 
+## named.conf.default-zones
+
+zone "cryptosec.net" {
+        type master;
+        file "/etc/bind/db.cryptosec.net";
+};
+
+## db.cryptosec.net
+
+$TTL    604800
+@       IN      SOA     cryptosec.net. mail.cryptosec.net. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+
+@       IN      NS      cryptosec.net.
+@       IN      A       192.168.3.1
+www     IN      CNAME   cryptosec.net.
+
+```
+
+```bash
+# Reiniciem el servidor BIND9
+
+sudo systemctl restart bind9
+
+# Si tinguéssim un error:
+
+sudo journalctl -u named.service -f & # Per fer una auditoria del servei i veure on hem fallat.
+
+sudo named-checkzone cryptosec.net db.cryptosec.net # Per veure la zona "cryptosec.net"
+
+sudo named-checconf db.cryptosec.net # Per veure la configuració de l'arxiu "cryptosec.net"
+```
+
+* Verififiquem en el client Debian Minimal
+```
+host cryptosec.net
+
+cryptosec.net has address 192.168.3.1
+
+```
+
+```
+# Opcional FER NAT a l'EXTERIOR 
+  
+#! /bin/bash
+# @edt ASIX M11-SAD Curs 2018-2019
+# iptables
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Regles flush
+iptables -F
+iptables -X
+iptables -Z
+iptables -t nat -F
+
+# Polítiques per defecte:
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -t nat -P PREROUTING ACCEPT
+iptables -t nat -P POSTROUTING ACCEPT
+
+# obrir el localhost
+iptables -A INPUT  -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+
+# obrir la nostra ip
+iptables -A INPUT -s 192.168.33.44 -j ACCEPT
+iptables -A OUTPUT -d 192.168.33.44 -j ACCEPT
+
+# Fer NAT per les xarxes internes:
+# - 192.168.3.0/24
+
+iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -o enp0s3 -j MASQUERADE
 ```
 
 
 5. Kali Linux, intercepta la conexió (MITMA), suplanta el reenviament de paquets entre el "servidor Ubuntu" i el client "Debian Minimal".
+
+```
+# Host Kali
+
+
+```
 
 6. Canvia la taula ARP del servidor i del client.
 

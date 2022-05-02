@@ -88,6 +88,10 @@ Tenir una idea definitiva i separar diferents pràctiques per a la posterior ass
 
 Configuració de les màquines virtuals Ubuntu Server i clients Ubuntu i Debian 10 a VirtualBox.
 
+Bases de proves de diferents atacs informàtics com ARP Spoofing o DNS Poisoning. També KeyLoggers i atacs d'Enginyeria Social.
+
+Muntatge sobre Kali Linux (Atacant) i un servidor d'Ubuntu Server 20.04 i un client Debian Minimal.
+
 ---
 ## 02/05/2022 
 
