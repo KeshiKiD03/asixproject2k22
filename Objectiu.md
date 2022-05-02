@@ -16,7 +16,13 @@
 
 # Objectius "Projecte ASIX - Ciberseguretat: _Careful where you step_ 🕵️ 🔎"
 
-L'objectiu principal d'aquest projecte de Ciberseguretat, és el bon funcionament d'una VPN - Virtual Private Network on englobem diferents serveis en funcionament, explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__
+L'objectiu principal d'aquest projecte de Ciberseguretat, és la creació d'una empresa de __"Ciberseguretat"__ anomenamada _"CryptoSEC"_. Aquesta empresa implementarà una serie de serveis de seguretat i prevenció davant d'atacs maliciosos que tindràn la finalitat de tumbar l'empresa i obtenir informació delicada. Aaron i Cristian, son els caps d'aquesta empresa i portaràn a terme aquest magnífic repte de protegir-se davant de _hackers_ com les de la Organització __"Anonymous"__, __" The Shadow Brokers"__, __"Elliott Gunton"__... entre altres.
+
+La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar intrusos en la xarxa de "CryptoSEC", entre altres eines de prevenció i detecció. 
+
+S'implementarà serveis com una VPN - Virtual Private Network, on interconectarem mitjançant un túnel VPN diferents clients de CryptoSEC ubicades en diferents parts del món. 
+
+on englobem diferents serveis en funcionament, explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__
 
 <div style="align: center">
     <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />

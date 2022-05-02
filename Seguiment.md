@@ -89,11 +89,12 @@ Tenir una idea definitiva i separar diferents pràctiques per a la posterior ass
 Configuració de les màquines virtuals Ubuntu Server i clients Ubuntu i Debian 10 a VirtualBox.
 
 ---
-## 
+## 02/05/2022 
 
-()
+( **Aaron & Cristian** = 09:00 - 14:00)
 ---
 
+Research d'informació dels diferents atacs informàtics. I bases de proves en les nostres màquines.
 ---
 ## 
 
