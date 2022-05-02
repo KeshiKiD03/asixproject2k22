@@ -91,10 +91,13 @@ Configuració de les màquines virtuals Ubuntu Server i clients Ubuntu i Debian 
 ---
 ## 02/05/2022 
 
-( **Aaron & Cristian** = 09:00 - 14:00)
+( **Aaron & Cristian** = 09:00 - 14:00 // 15:00 - 19:00)
 ---
 
 Research d'informació dels diferents atacs informàtics. I bases de proves en les nostres màquines.
+
+Proves a Kali Linux de les diferents atacs informàtics.
+
 ---
 ## 
 
