@@ -43,9 +43,9 @@
 ## Introducció
 Els __ciberdelinqüents__ es troben alertes de noves formes de atacar-nos al usuaris, agafant ventatge del nostre ```desconeixement o vulnerabilitats``` en les nostres defenses.
 
-Cada vegada son més les empreses que tomen medides de prevenció, protecció y reacció devant d'incidents relacionats amb **la cibersegüertat**. Com la ciberdelinqüència actua en benefici propi els ``metodes y tecniques`` utilizades **van mutan y evolucionan**,donant a lloc a __noves formes de ciberdelinqüència__.
+Cada vegada son més les empreses que tomen medides de prevenció, protecció y reacció devant d'incidents relacionats amb __la cibersegüertat__. Com la ciberdelinqüència actua en benefici propi els ``metodes y tecniques`` utilizades __van mutan y evolucionan__,donant a lloc a __noves formes de ciberdelinqüència__.
 
-Les empreses sempre es troben expostes a atacs informatics constanment, per aixo, es important coneixer els **exemples de atacs informatics** que poden passar.
+Les empreses sempre es troben expostes a atacs informatics constanment, per aixo, es important coneixer els __exemples de atacs informatics__ que poden passar.
 
   - Enginyeria social
   - Keylogger
@@ -55,7 +55,7 @@ Les empreses sempre es troben expostes a atacs informatics constanment, per aixo
   - Cuc informatic
   - Troià
   - Spyware
-  - Adware (Spam)
+  - Adware
   - Ransomware
   - Rootkit
   - LOKI
@@ -70,13 +70,26 @@ Les empreses sempre es troben expostes a atacs informatics constanment, per aixo
 
 ## Exemples
 #### 1. ``Enginyeria social``
-**Que es?/Que consisteix?**
+**Que consisteix?**
 
 Aqui l'atacant aconsegueix peruadir a l'usuari perque li permeti accedir a les seves passwords o equips informatics, i robar informació o instal·lar sofware maliciós.
 
-**Com em protegeixo?/Com prevenir-ho?**
+**Com prevenir-ho?**
 
+Se precavit i lletgir el missatge determinat. A més, altres pautes per evitar ser victima de phishing:
+  - Detectar errors gramaticals en el missatge
+  - Revisa que l'enllaç coincideix amb l'adreça a la que apunta
+  - Comprovar el remitent del missatge
+  - No descarregar cap fitxer adjunt i analitzar-ho previament amb un antivirus.
+  - No contestar mai al missatge
 
+La millor defensa per a atacs Baiting es evitar connectar dispositius desconeguts d'emmagatzematge extern o amb connexió USB al nostre equip. Mantenir el nostre sistema actualitzat y les eines de protecció, com l'antivirus, activades i actualizades.
+
+L'opció mes segura es evitar que tercers tinguin visió de la nostra activitat. També se recomana utilitzar gestor de contrasenyes i la verificació de dos pasos. Hem de cerciorar-nos que de no hi ha tercers persones observant el nostre dispositiu, especiament a l'hora d'ingressar dades personals.
+
+En el cas del Dumpster Diving, l'unica medida de protecció que hem de seguir la eliminació segura d'informació perque no rebusquin en la nostra papelera.
+
+Para el spam
 
 #### 2. ``Keylogger``
 Una eina la qual aconsegueix registrar les pulsacions que produeixen dins del teclat de l'usuari, aconseguint passwords y altres dades delicades.
@@ -99,7 +112,7 @@ Es un codi maliciós conegut com troià o caball de troia, es presenta principal
 #### 8. ``Spyware``
 Es tracta d'un programa dedicat a la recopilació i la transmissió d'informació de l'usuari a un altre lloc, sense el seu consentient.
 
-#### 9. ``Adware (Spam)``
+#### 9. ``Adware``
 Es un tipus de programari maliciós, destinat a l'enviament constant de publicitat a l'usuari, sense la seva autorització, i que pot estar inclòs en llocs web o fitxers que s'instal·len a l'ordinador.
 
 #### 10. ``Ransomware``
