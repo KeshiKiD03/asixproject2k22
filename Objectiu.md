@@ -120,13 +120,6 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
 
 ### SSH
 
-### RADIUS
-
-+ Mecanisme d'autenticació d'accés a la xarxa. 
-
-+ Verificarà les credencials si som "__allowed__" d'accedir a la xarxa.
-
-
 ### Vulnerabilitats
 
 Alguns exemples de:
@@ -146,6 +139,8 @@ Alguns exemples de:
 + Address Spoofing
 
 + Metaexploits
+
+... entre altres
 
 ### Deploymant xarxa CryptoSEC via VirtualBOX + Clients dins de la xarxa CryptoSEC (VBox Clients) + Clients Wireguard (VBox Clients) i un de Maliciós
 
