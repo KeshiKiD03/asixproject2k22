@@ -74,3 +74,44 @@ Els pirates informàtics mai no desapareixeran, però una cosa que podem fer és
 Això vol dir que només els punts finals amb certificats configurats correctament poden accedir als seus sistemes i xarxes. 
 
 Els certificats són fàcils d'usar (no cal maquinari addicional per administrar o es necessita molta capacitació de l'usuari) i les implementacions es poden automatitzar per simplificar les coses i fer que els hackers tinguin més difícil un atac.
+
+## Practica de Atac d'Enginyeria Social
+
+A modo de practica, entrem a una maquina Kali Linux on esta una eina anomenada Social-Engineer Toolkit.
+
+Per utilitzar aquest eina, hem d'obrir una terminal i executar-la com administrador:
+````
+sudo setoolkit
+````
+<center><img src="Photos/Enginyeria Social/E_S01.png"></center><br>
+
+Un cop estem dins, ens mostrar el menu d'opcions com per exemple:
+<center><img src="Photos/Enginyeria Social/E_S02.png"></center><br>
+
+Entrem a l'opcio 1
+````
+set> 1
+````
+
+Dins podem trobar 10 diferents tipus d'atacs:
+<center><img src="Photos/Enginyeria Social/E_S03.png"></center><br>
+
+- Atacs QR
+````
+set> 8
+````
+Escollim la adreça URL que volem que la QR redireccioni a la nostra victima.
+<center><img src="Photos/Enginyeria Social/E_S04.png"></center><br>
+
+Es genera l'imatge QR a dins d'aquest directori.
+<center><img src="Photos/Enginyeria Social/E_S05.png"></center><br>
+
+En una altre terminal, entrem dins del directori on s'ha generat l'imatge QR.
+
+La copiem dins de l'Escriptori.
+<center><img src="Photos/Enginyeria Social/E_S06.png"></center><br>
+
+Comprovem que esta a l'Escriptori.
+<center><img src="Photos/Enginyeria Social/E_S07.png"></center><br>
+
+Nomes queda mostrar la QR a la nostra victima i caigui en la nostra trampa
