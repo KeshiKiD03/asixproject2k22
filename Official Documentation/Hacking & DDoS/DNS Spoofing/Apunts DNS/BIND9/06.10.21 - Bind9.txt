@@ -1,0 +1,8 @@
+06.10.21
+
+EDT
+
+El servidor descargaba durante 4 segundos, intenta descargarla otra vez, se queda con una zona que ya no es válida. Tiempos recomendados son altos.
+
+journalctl -u named -f & rndc querylog
+

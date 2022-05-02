@@ -1,0 +1,6 @@
+options {
+    directory "/var/cache/bind";
+    querylog yes;
+    dnssec-validation yes;  
+    listen-on-v6 { any; };
+};

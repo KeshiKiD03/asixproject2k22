@@ -1,0 +1,20 @@
+# Ubuntu Server MAIN
+# The primary network interface
+auto eth0
+iface eth0 inet static
+address 192.168.19.233
+netmask 255.255.255.0
+network 192.168.1.0
+gateway 192.168.1.1
+broadcast 192.168.1.255
+
+auto eth2
+iface eth2 inet static
+address 172.16.1.1
+netmask 255.255.255.192
+network 172.16.1.0
+gateway 192.168.1.1
+broadcast 172.16.1.63
+
+
+http://recursosformacion.com/wordpress/2015/01/uniendo-ubuntu-un-controlador-de-dominio/

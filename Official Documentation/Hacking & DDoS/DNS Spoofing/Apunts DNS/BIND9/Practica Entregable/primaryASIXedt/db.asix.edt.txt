@@ -1,0 +1,7 @@
+@        SOA    dns0 mail.asix.org. 202110131 1d 3m 3d 3s
+        NS    dns0
+dns0    A    192.168.122.171
+        MX    10    asix.gmail.com
+
+$GENERATE 1-100 alumne$ A    192.168.122.$
+www    CNAME    0

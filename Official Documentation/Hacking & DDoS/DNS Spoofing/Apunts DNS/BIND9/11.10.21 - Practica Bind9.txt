@@ -1,0 +1,44 @@
+1. apt-get update
+2. apt install keyboard-configuration
+
+
+VIRTUAL
+-------
+
+apt update
+
+apt install -y keyboard-configuration console-setup netcat
+
+ssh-keygen -A
+
+systemctl start sshd
+
+mkdir .ssh
+
+nc -l 8000 > .ssh/authorized_keys
+
+echo "serverName" > /etc/hostname // DESPUÉS
+
+apt-get install iputils nmap netcat bind9
+
+mkdir .ssh
+
+nc -l 8000 > .ssh/authorized_keys (Se queda escuchando el puerto 8000)
+
+cat .ssh/authorized_keys
+
+HOST
+-----
+
+ssh-keygen (Se genera una clave)
+
+nc -N 192.168.100.131 8000 < .ssh/id_rsa.pub
+
+# cat .ssh/authorized_keys
+
+
+-----------------
+
+echo "supersede domain-name-servers [IP FORWARD];" >> /etc/dhcp/dhclient.conf # Es para que tengan prioridad el cliente
+
+systemctl restart networking

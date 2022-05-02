@@ -1,0 +1,6 @@
+zone "asix.edt"{
+    type secondary;
+    masters{
+        192.168.122.171;
+    };
+};
