@@ -83,10 +83,10 @@ Per utilitzar aquest eina, hem d'obrir una terminal i executar-la com administra
 ````
 sudo setoolkit
 ````
-<center><img src="Photos/Enginyeria Social/E_S01.png"></center><br>
+<center><img src="Photos/E_S01.png"></center><br>
 
 Un cop estem dins, ens mostrar el menu d'opcions com per exemple:
-<center><img src="Photos/Enginyeria Social/E_S02.png"></center><br>
+<center><img src="Photos/E_S02.png"></center><br>
 
 Entrem a l'opcio 1
 ````
@@ -94,24 +94,24 @@ set> 1
 ````
 
 Dins podem trobar 10 diferents tipus d'atacs:
-<center><img src="Photos/Enginyeria Social/E_S03.png"></center><br>
+<center><img src="Photos/E_S03.png"></center><br>
 
-- Atacs QR
+Per aquest exemple practica escollirem l'Atacs QR
 ````
 set> 8
 ````
 Escollim la adreça URL que volem que la QR redireccioni a la nostra victima.
-<center><img src="Photos/Enginyeria Social/E_S04.png"></center><br>
+<center><img src="Photos/E_S04.png"></center><br>
 
 Es genera l'imatge QR a dins d'aquest directori.
-<center><img src="Photos/Enginyeria Social/E_S05.png"></center><br>
+<center><img src="Photos/E_S05.png"></center><br>
 
 En una altre terminal, entrem dins del directori on s'ha generat l'imatge QR.
 
 La copiem dins de l'Escriptori.
-<center><img src="Photos/Enginyeria Social/E_S06.png"></center><br>
+<center><img src="Photos/E_S06.png"></center><br>
 
 Comprovem que esta a l'Escriptori.
-<center><img src="Photos/Enginyeria Social/E_S07.png"></center><br>
+<center><img src="Photos/E_S07.png"></center><br>
 
 Nomes queda mostrar la QR a la nostra victima i caigui en la nostra trampa
