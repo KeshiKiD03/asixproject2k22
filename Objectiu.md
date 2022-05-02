@@ -68,6 +68,8 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
 
 + Durant l'assemblatge final, es faràn diversos atacs a l'empresa __CryptoSEC__, i l'empresa es protegirà davant d'aquestes amenaçes on es posaràn en perill la integritat de l'empresa.
 
++ L'atacant farà els atacs des d'un Kali Linux.
+
 <div style="align: center">
     <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />
 </div>
