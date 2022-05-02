@@ -89,7 +89,7 @@ L'opció mes segura es evitar que tercers tinguin visió de la nostra activitat.
 
 En el cas del Dumpster Diving, l'unica medida de protecció que hem de seguir la eliminació segura d'informació perque no rebusquin en la nostra papelera.
 
-Para el spam
+Per al spam es recomana mai utilitzar el compte de correo electronic principal per registrar-nos a ofertes o promocions per Internet.
 
 #### 2. ``Keylogger``
 Una eina la qual aconsegueix registrar les pulsacions que produeixen dins del teclat de l'usuari, aconseguint passwords y altres dades delicades.
