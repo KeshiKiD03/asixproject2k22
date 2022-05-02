@@ -52,8 +52,10 @@ Les empreses sempre es troben expostes a atacs informatics constanment, per aixo
   - Enginyeria social
   - Keylogger
   - Seqüencia TCP
-  - Malware o Software maliciós (Virus, Cuc informatic
-  - Trojan
+  - Malware o Software maliciós
+  - Virus
+  - Cuc informatic
+  - Troià
   - Spyware
   - Adware (Spam)
   - Ransomware
@@ -79,9 +81,10 @@ Una eina la qual aconsegueix registrar les pulsacions que produeixen dins del te
 Aquest pot afectar a una empresa al generar duplicats de paquets perque l'intrus pot robar la sesió de una connexió TCP, provocant serios inconvenients al sistema.
 
 #### 4. Malware o Software maliciós
-Consisteix
+Potser un del exemples d'atacs informatics més habituals, que consisteix en un programari maliciós que infecta un equip informatic de manera il·licita, i pot ser de diversos tipus com: virus,troians, spyware, entre d'altres.
 
-#### 5.
+#### 5. Virus
+Són programes inform
 
 #### 6.
 
