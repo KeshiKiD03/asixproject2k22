@@ -18,11 +18,11 @@
 
 L'objectiu principal d'aquest projecte de Ciberseguretat, és la creació d'una empresa de __"Ciberseguretat"__ anomenamada _"CryptoSEC"_. Aquesta empresa implementarà una serie de serveis de seguretat i prevenció davant d'atacs maliciosos que tindràn la finalitat de tumbar l'empresa i obtenir informació delicada. Aaron i Cristian, son els caps d'aquesta empresa i portaràn a terme aquest magnífic repte de protegir-se davant de _hackers_ com les de la Organització __"Anonymous"__, __" The Shadow Brokers"__, __"Elliott Gunton"__... entre altres.
 
-La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar intrusos en la xarxa de "CryptoSEC", entre altres eines de prevenció i detecció. 
+La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar intrusos en la xarxa de __"CryptoSEC"__, entre altres eines de prevenció i detecció. 
 
 S'implementarà serveis com una VPN - Virtual Private Network, on interconectarem mitjançant un túnel VPN diferents clients de CryptoSEC ubicades en diferents parts del món. 
 
-on englobem diferents serveis en funcionament, explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__
+A CryptoSEC hi englobem diferents serveis en funcionament, com detecció d'intrusions o algunes de prevenció d'atacs, tot explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__.
 
 <div style="align: center">
     <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />
@@ -64,9 +64,9 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
 
 # La proposta final
 
-+ Un deployment primerament local, verificant que tot funcioni correctament i fent els "_commits_" adherents per tal d'aconseguir l'assemblatge final.
++ Un deployment a VirtualBox d'un servidor Ubuntu Server 20.04 en bridge i xarxa interna _"cryptosec"_ i els clients estaràn en la xarxa interna _"cryptosec"_ on hi faràn NAT a l'exterior mitjançant IPTABLES per poguer navegar a Internet. Hi hauràn 2 clients també en diferents xarxes simulant connectar-se per VPN (WireGuard).
 
-+ Un cop tinguem tot amb funcionament i l'aprovació de les bateries de proves. Es farà el _deployment_ a AWS EC2 amb els serveis necessaris d'AWS per a la seva total funcionalitat.
++ Durant l'assemblatge final, es faràn diversos atacs a l'empresa __CryptoSEC__, i l'empresa es protegirà davant d'aquestes amenaçes on es posaràn en perill la integritat de l'empresa.
 
 <div style="align: center">
     <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />
@@ -111,9 +111,6 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
 
 + TSIG per a una comunicació segura amb BIND.
 
-### Samba (?)
-
-+ Servidor centralitzat operant com a __Domini Principal__, oferirà usuaris _Samba_ i diferents _Shares_.
 
 ### Let's Encrypt ACME - Certbot
 
@@ -148,19 +145,9 @@ Alguns exemples de:
 
 + Metaexploits
 
-### Deployment a Docker
+### Deploymant xarxa CryptoSEC via VirtualBOX + Clients dins de la xarxa CryptoSEC (VBox Clients) + Clients Wireguard (VBox Clients) i un de Maliciós
 
-+ Es farà una versió 1 a local tant de Docker o Virtualbox. 
-
-+ La versió final serà la que ens sigui més eficient.
-
-+ Potser que si utilitzem Docker - No ens funcioni alguns serveis que requereixen systemctl.
-
-### Deployment a AWS (Final) + Clients Wireguard Client (Classe) i un de Maliciós
-
-+ Potser que en aquesta part no ens acabi de funcionar del tot ja que depén de molts factors (Docker no té systemd, ports, conectivitat, aïllament, compatibilitat... etc.)
-
-+ Deployment de tot l'assemblatge a AWS.
++ Deployment de tot l'assemblatge a Virtual Box.
 
 + Verificació del funcionament.
 
