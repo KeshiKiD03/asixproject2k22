@@ -98,6 +98,8 @@ Research d'informació dels diferents atacs informàtics. I bases de proves en l
 
 Proves a Kali Linux de les diferents atacs informàtics.
 
+Proves de Man in The Middle Attack, DNS Spoofing, atac d'Enginyeria Social, ARP Spoofing.
+
 ---
 ## 
 
