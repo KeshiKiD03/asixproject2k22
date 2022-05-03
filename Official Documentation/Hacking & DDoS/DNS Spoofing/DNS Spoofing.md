@@ -381,6 +381,12 @@ arpspoof -i eth0 -t 192.168.3.2 192.168.3.1
 
 ## Exemple 2: Utilitzant __setoolkit__ a Kali Linux
 
+Demostració ràpida de com DNS pot ser suplantat utilitzant Kali Linux, i com el tràfic pot ser redirigit a una pàgina fraudulenta.
+
+Hem decidit fer phishing la pàgina de Twitter utilitzant una eina anomenada "setoolkit" i fer un clonatge de la pàgina de Twitter.
+
+Posteriorment suplantar el registre DNS en la que apuntava a twitter.com a la nostra màquina, on hi tenim un allotjat una pàgina fraudulenta utilitzant l'eina.
+
 _Website Attack Vectors -> Creditials Harvestor -> Clone website / Use Web Template_
 
 https://www.amirootyet.com/post/how-to-spoof-dns-in-kali-linux/ 
@@ -450,4 +456,33 @@ Ens anem a `Plugins` --> `Manage the Plugins` --> `DNS Spoof plugin` --> L'activ
     <img src="./Photos/DNSSpoof.png" />
 </div>
 
-``
+A continuació, ARP enverinará tots els amfitrions de la xarxa, de manera que tot el trànsit passa per la nostra màquina (atacant) --> començarem a "esnifar".
+
+Quan algú intenti accedir a twitter.com, la finestra d'ettercap dirà "bla_bla.twitter.com" falsificat a la ip de l'atacant `<la_nostra_ip>`.
+
+Al mateix temps, a la finestra SET, veuràs "tenim un èxit!!" juntament amb alguna altra informació. Si la víctima és prou crédula per introduir les seves credencials a la vostra pàgina de pesca, veureu aquests detalls a la finestra SET.
+
+Però heu de jugar al joc d'espera i esperar fins que algú intenti accedir al lloc web de pesca. 
+
+```
+# Kali Linux
+
+arp -a
+
+arpspoof -i eth0 -t 10.200.243.211 10.200.243.1 # Suplantació redirecció de paquets al CLient
+
+arpspoof -i eth0 -t 10.200.243.1 10.200.243.211 # Suplantació redirecció de paquets al Servidor
+
+```
+
+```
+# Host local
+
+Connectar-se a Twitter - Farà la redirecció a 10.200.243.137
+
+
+```
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/DNSSpoof.png" />
+</div>

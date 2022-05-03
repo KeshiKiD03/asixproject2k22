@@ -114,6 +114,8 @@ Research d'informació dels diferents atacs informàtics. I bases de proves en l
 
 Aaron fa proves de DNS Cache Poisoning amb Kali Linux i Cristian fa un esquema del projecte mentres prova un KeyLogger a Windows desde Kali Linux. 
 
+Aaron fa proves de DNS Cache Poisoning.
+
 ---
 ## 
 
