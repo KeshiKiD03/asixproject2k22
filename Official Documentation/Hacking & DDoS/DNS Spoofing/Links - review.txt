@@ -18,3 +18,36 @@ https://ciberseguridad.blog/25-tipos-de-ataques-informaticos-y-como-prevenirlos/
 
 https://www.google.es/search?q=dns+spoofing&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiNpvrSjMH3AhVNQhoKHajMCu8Q_AUoAXoECAIQAw&biw=1536&bih=722&dpr=1.25#imgrc=b-PoMUlaIw_shM
 
+
+-----
+
+3.05.22
+
+https://www.amirootyet.com/post/how-to-spoof-dns-in-kali-linux/
+
+https://www.imperva.com/learn/application-security/dns-spoofing/
+
+https://www.cloudflare.com/learning/dns/dns-cache-poisoning/
+
+https://es.acervolima.com/ataque-mitm-man-in-the-middle-usando-arp-poisoning/
+
+https://www.okta.com/identity-101/dns-poisoning/
+
+https://www.boomernix.com/2018/03/realizando-un-dns-spoofing.html
+
+https://www.systranbox.com/how-to-dns-spoof-kali-linux/
+
+https://www.keyfactor.com/blog/what-is-dns-poisoning-and-dns-spoofing/
+
+https://ciberseguridad.blog/25-tipos-de-ataques-informaticos-y-como-prevenirlos/
+
+https://www.youtube.com/watch?v=0yxI6izcs5g
+
++ los del TO DO
+
+
+
+
+https://www.youtube.com/watch?v=0yxI6izcs5g
+
+https://www.google.es/search?q=dns+spoofing&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiNpvrSjMH3AhVNQhoKHajMCu8Q_AUoAXoECAIQAw&biw=1536&bih=722&dpr=1.25#imgrc=b-PoMUlaIw_shM
