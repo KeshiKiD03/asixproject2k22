@@ -21,33 +21,141 @@
 
 * **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
 
+# DNS Cache Poisoning / DNS Spoofing
 
+Abans d'entrar en escena hi posem un exemple:
 
-# DNS Spoofing
+_Imagineu-vos que, un grup d'estudiants d'últim any d'EDT 2HISX, fan una broma als estudiants de batxillerat._ 
 
-La falsificació del servidor de noms de domini (DNS) (també conegut com a enverinament de la memòria cau DNS) és un atac en què s'utilitzen registres DNS alterats per redirigir el trànsit en línia a un lloc web fraudulent que s'assembla a la destinació prevista.
+_Aquest grup d'estudiants "canvien" tots els números de les habitacions del campus de l'institut EDT, de manera que quan els nous estudiants de batxillerat (que encara no conèixen les instal·lacions del campus), l'endemà es apareguin en aules equivocades._
+
+_Els números d'habitació que no coincideixen, s'enregistren en un directori del campus i els estudiants nous de batxillerat segueixen anant a les aules equivocades fins que algú finalment se'n adona i corregeix l'error._
+
+L'exemple anterior és el __DNS Cache Poisoning__ o __DNS Spoofing__.
+
+_DNS Cache Poisoning_ (enverinament de la memòria cau DNS), també es conegut com _DNS Spoofing_ (suplantació de DNS), és un atac del tipus _spoofing_ (suplantació) que consisteix en _alterar_ els registres DNS amb la finalitat de _redirigir_ el _fluxe de paquets_ entre un host (víctima) i un servidor a la seva _màquina atacant_.
+
+> _"DNS Spoofing és l'acció d'introduïr informació falsa a una memòria cau DNS, modifica la taula ARP, fent creure que el client està parlant amb el servidor, però en realitat parla amb la màquina de l'atacant, lo mateix amb el servidor"_
+
+Amb altres paraules, utilitza registres DNS alterats per redirigir el trànsit de paquets en una connexió, retornen una resposta incorrecta i les víctimes es dirigeixen als llocs _web fraudulents_ on a posteriori son infectats per _l'atacant_.
+
+> _"Amb DNS Spoofing redirigim els paquets ipv4 entre el host i el servidor al host de l'atacant"_
+
+Les _webs fraudulents_ son _"quasi"_ copies originals de pàgines web conegudes allotjades a la màquina de _l'atacant_.
+
+> _"L'atacant implanta una pàgina web maliciosa i infecta la víctima"_
 
 <div style="align: center; width: 100%">
     <img src="https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/DNS-spoofing.jpg" />
 </div>
-
-És una situació creada o no intencionalment que proporciona dades a un servidor de noms emmagatzemat en memoria cau que no es va originar en fonts autoritzades del Sistema de noms de domini (DNS). 
-
-Quan un servidor DNS ha rebut dades no autèntiques i les emmagatzema en memòria cau per augmentar el rendiment en el futur, es considera enverinat, proporcionant les dades no autèntiques als clients del servidor.
 
 Un cop allà, se'ls demana als usuaris que iniciïn sessió al seu compte (el que creuen que és), donant a l'autor l'oportunitat de robar les seves credencials d'accés i altres tipus d'informació sensible. A més, el lloc web maliciós s'utilitza sovint per instal·lar cucs o virus a l'ordinador d'un usuari, donant-li a l'autor accés a llarg termini i a les dades que emmagatzema.
 
-### Métodes d'execució per a realitzar DNS Spoofing:
+Quan un servidor DNS ha rebut dades no autèntiques i les emmagatzema en memòria cau per augmentar el rendiment en el futur, es considera _enverinament_, proporcionant les dades no autèntiques als clients del servidor.
+
+Les adreçes IP son com "números d'habitació" d'Internet, la qual cosa permet que el trànsit web arribi a llocs adequats.
+
+La memòria CAU de les resolucions DNS són el _"directori del campus"_, quan emmagatzemen informació _defectuosa_, el trànsit va als llocs equivocats fins que es corregeix la informació.
+
+Com que normalment els solucionadors de DNS no tenen cap manera de verificar les dades de la memòria cau, la informació de DNS incorrecta romandrà a la memòria cau fins que caduca el temps de vida (TTL) o fins que s'elimina manualment
+
+Una sèrie de vulnerabilitats fan possible l'enverinament del DNS, però el principal problema és que el DNS es va crear per a una Internet molt més petita i es va basar en un principi de confiança (com ara BGP ). 
+ 
+Un protocol DNS més segur anomenat _DNSSEC_ pretén resoldre alguns d'aquests problemes, però encara no s'ha adoptat àmpliament.
+
+
+
+# Què fan els solucionadors de DNS?
+
+Els solucionadors de DNS proporcionen als clients l'adreça IP associada a un nom de domini. 
+
+En altres paraules, prenen adreces de llocs web llegibles per humans com "cloudflare.com" i les tradueixen a adreces IP llegibles per màquina. 
+
+Quan un usuari intenta navegar a un lloc web, el seu sistema operatiu envia una sol·licitud a un solucionador de DNS. 
+
+El solucionador de DNS respon amb l'adreça IP i el navegador web agafa aquesta adreça i inicia la càrrega del lloc web. 
+
+# Com funciona la memòria cau DNS?
+
+Un solucionador de DNS desarà les respostes a les consultes d'adreces IP durant un període de temps determinat. 
+
+D'aquesta manera, el resolutor pot respondre a futures consultes molt més ràpidament, sense necessitat de comunicar-se amb els molts servidors implicats en el procés típic de resolució de DNS. 
+
+Els solucionadors de DNS guarden les respostes a la memòria cau mentre els permeti el temps de vida designat (TTL) associat a aquesta adreça IP. 
+
+Resposta DNS sense memòria cau: 
+
+<div style="align: center; width: 100%">
+    <img src="https://www.cloudflare.com/img/learning/dns/dns-cache-poisoning/dns-uncached-response.svg" />
+</div>
+
+Resposta DNS a la memòria cau: 
+
+<div style="align: center; width: 100%">
+    <img src="https://www.cloudflare.com/img/learning/dns/dns-cache-poisoning/dns-cached-response.svg" />
+</div>
+
+# __Com enverinen els atacants la memòria cau DNS?__
+
+Els atacants poden enverinar la memòria cau DNS suplantant la identitat dels noms DNS , fent una sol·licitud a un resolutor de DNS i, a continuació, forjant la resposta quan el resolutor de DNS consulta un servidor de noms. 
+
+Això és possible perquè els servidors DNS utilitzen UDP en comptes de TCP i perquè actualment no hi ha cap verificació per a la informació DNS.
+
+Procés d'enverinament de la memòria cau DNS: 
+
+<div style="align: center; width: 100%">
+    <img src="https://www.cloudflare.com/img/learning/dns/dns-cache-poisoning/dns-cache-poisoning-attack.svg" />
+</div>
+
+Memòria cau DNS enverinada: 
+
+<div style="align: center; width: 100%">
+    <img src="https://www.cloudflare.com/img/learning/dns/dns-cache-poisoning/dns-cache-poisoned.svg" />
+</div>
+
+En lloc d'utilitzar TCP, en la que ambdues connexions fan un "handshake" per iniciar la comunicació i verificar la identitat dels dispositius.
+
+Les solicituds i respostes DNS utilitzen UDP (User Datagram Protocol) (Port 53). No hi ha cap garantia que hi hagi una connexió oberta, que el destinatari estigui perparat per rebre o que l'emissor siguie qui diuen ser.
+
+L'UDP és vulnerable a la falsificació per aquest motiu: Un atacant pot enviar un missatge mitjançant UDP i fingir que és una resposta d'un servidor autoritari i legítim, falsificant les dades de la _capçalera del paquet_.
+
+Si un _solucionador de DNS_ rep una resposta falsificada, aquesta l'accepta i emmagatzema les dades de manera acrítica perquè no hi ha manera de verificar si la informació és precisa i prové d'una font legítima.
+
+DNS es va crear als primers temps d'Internet, quan les úniques parts connectades amb ella eren les universitats i els centres de recerca. No hi havia cap raó per esperar que algú intentés difondre informació DNS falsa. 
+
+Malgrat aquests principals punts de vulnerabilitat en el procés de memòria cau DNS, els atacs d'enverinament de DNS no són fàcils. 
+
+Com que la resolució de DNS en realitat consulta el servidor de noms autoritzat, els atacants només tenen uns quants mil·lisegons per enviar la resposta falsa abans que arribi la resposta real del servidor de noms autoritzat. 
+
+Els atacants també han de conèixen o endevinar una sèrie de factors per dur a terme atacs de suplantació de DNS:
+
+1. Quines consultes DNS no s'emmagatzemen a la memòria cau pel _DNS Resolver_ de destinació, de manera que el resolutor consultarà el servidor de noms autoritzat.
+
+2. Quin port fa servir el _DNS Resolver_, normalment s'utilitza el port 53 per a cada consulta DNS, pero ara, amb una bona construcció de DNS Segur pot ser que utilitzin un port aleatori cada vegada.
+
+3. El número d'identificació de la solicitud
+
+4. A quin servidor de noms autoritzat anirà la consulta.
+
+Els atacants també podrien accedir a la resolució de DNS d'alguna altra manera. Si una part malintencionada opera, pirateja o obté accés físic a una solució de DNS, poden alterar més fàcilment les dades de la memòria cau. 
+
+*En xarxes, un port és un punt virtual de recepció de comunicació. Els ordinadors tenen diversos ports, cadascun amb el seu propi número, i perquè els ordinadors es parlin entre ells, s'han de designar determinats ports per a determinats tipus de comunicació. Per exemple, HTTP sempre van al port 80 i HTTPS sempre utilitza el port 443. 
+
+<br>
+<br>
+<br>
+
+# __Métodes d'execució per a realitzar DNS Spoofing:__
 
 * __Man in the middle (MITM):__ la intercepció de les comunicacions entre usuaris i un servidor DNS per tal d'encaminar els usuaris a una adreça IP diferent/maliciosa.
 
-* __Compromís del servidor DNS:__ el segrest directe d'un servidor DNS, que està configurat per retornar una adreça IP maliciosa.
+* __Compromís del servidor DNS:__ el segrest directe d'un servidor _DNS Resolver_, que està configurat per retornar una adreça IP maliciosa.
 
 <div style="align: center; width: 100%">
     <img src="https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/DNS-spoofing.jpg" />
 </div>
 
-### Explicació DNS Cache Poisoning Exemple
+### Exemple i explicació pràctic DNS Cache Poisoning
 
 L'exemple anterior il·lustra un atac d'enverinament de memòria cau DNS, en què un __atacant__ (__IP 192.168.3.300__) intercepta un canal de comunicació entre un _client_ (__IP 192.168.1.100__) i un ordinador _servidor_ pertanyent al lloc web _www.estores.com_ (__IP 192.168.168. 2.200__).
 
@@ -82,6 +190,10 @@ Si bé hi ha diverses eines disponibles per trobar i fer front als DNS Spoofing.
 
 DNS és un __protocol sense xifrar__, que facilita la interceptació del trànsit amb falsificació. A més, els servidors DNS no validen les adreces IP a les quals estan redirigint el trànsit.
 
+DNSSEC és l'abreviatura de Domain Name System Security Extensions i és un mitjà per verificar la integritat i l'origen de les dades DNS. El DNS es va dissenyar originalment sense aquesta verificació, per això és possible l'enverinament del DNS. 
+
+Igual que TLS/SSL , DNSSEC utilitza la criptografia de clau pública (una manera de signar digitalment la informació) per verificar i autenticar les dades. Les extensions DNSSEC es van publicar l'any 2005, però DNSSEC encara no s'ha generalitzat, el que deixa el DNS encara vulnerable als atacs. 
+
 __DNSSEC__ és un protocol dissenyat per protegir el vostre DNS afegint mètodes addicionals de verificació. El protocol crea una signatura criptogràfica única emmagatzemada al costat dels altres registres DNS, per exemple, un registre i CNAME. Aquesta signatura l'utilitza el vostre solucionador de DNS per autenticar una resposta de DNS, assegurant-vos que el registre no s'hagi manipulat.
 
 Tot i que DNSSEC pot ajudar a protegir contra la falsificació de DNS, té una sèrie de possibles desavantatges, com ara:
@@ -91,6 +203,8 @@ Desplegament complex: DNSSEC sovint es configura malament, cosa que pot fer que 
 Enumeració de zones: DNSSEC utilitza registres de recursos addicionals per habilitar la validació de la signatura. Un d'aquests registres, NSEC, és capaç de verificar la inexistència d'una zona DNS. També es pot utilitzar per caminar per una zona DNS per reunir tots els registres DNS existents, una vulnerabilitat anomenada enumeració de zones. Les versions més noves de NSEC, anomenades NSEC3 i NSEC5, publiquen registres hash dels noms d'amfitrió, xifrant-los i evitant l'enumeració de zones.
 
 # Exemple DNS Spoofing
+
+## Exemple 1 ARP Spoof i DNS Spoof
 
 En la xarxa de CryptoSEC, s'implementa un DNS (Bind9) a Ubuntu Server 20.04 que hi donarà peticions de resolució de noms a Debian Minimal.
 
@@ -260,4 +374,80 @@ arpspoof -i eth0 -t 192.168.3.2 192.168.3.1
 
 7. Un cop té accés al DNS, pot implantar una pàgina nova falsa.
 
-8. El client cau en la pàgina falsa i es infectat. (AMB __DNSSPOOF__)
+8. El client cau en la pàgina falsa i es infectat. (AMB __DNSSPOOF__).
+
+9. Podem fer el monitoreig amb WIRESHARK o ETTERCAP.
+
+
+## Exemple 2: Utilitzant __setoolkit__ a Kali Linux
+
+_Website Attack Vectors -> Creditials Harvestor -> Clone website / Use Web Template_
+
+https://www.amirootyet.com/post/how-to-spoof-dns-in-kali-linux/ 
+
+Utilitzarem un "toolkit" anomenat "setooklit" que es permetrà fer phishing a una pàgina i fer un clonatge perfecte.
+
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/SeTool.png" />
+</div>
+
+Podem fer un clonatge d'una pàgina web o també té "templates" pre definides. En aquest exemple utilitzarem el template de https://www.twitter.com
+
+Tarda una estona.
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/SeToolkitTwitterClone.png" />
+</div>
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/Suplantació.png" />
+</div>
+
+Com podem observar la pàgina de Twitter està a la nostra IP 10.200.243.137 al port 80.
+
+Ara necessitem que tot el tràfic per a twitter.com sigui redirigit a la meva IP. Utilitzarem DNS Spoof que està disponible a ETTERCAP.
+
+S'ha de canviar el contigut del fitxer etter.dns per a que twitter.com apunto a la nostra IP.
+
+`apt-get install mlocate`
+
+`updatedb`
+
+`locate etter.dns`
+
+┌──(root㉿osboxes)-[/home/anonymous]
+└─# locate etter.dns
+/etc/ettercap/etter.dns
+/usr/share/ettercap/etter.dns.examples
+
+`cp /etc/ettercap/etter.dns /etc/ettercap/etter.dns.original`
+
+`vi /etc/ettercap/etter.dns`
+
+```
+*.twitter.com   A       10.200.243.137
+www.twitter.com PTR     10.200.243.137
+
+www.alor.org    A       127.0.0.1
+www.naga.org    A       127.0.0.1
+```
+
+Obrim Ettercap
+
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/Ettercap.png" />
+</div>
+
+
+`ettercap --gtk` --> Fem el loadup.
+
+
+Ens anem a `Plugins` --> `Manage the Plugins` --> `DNS Spoof plugin` --> L'activem.
+
+<div style="align: center; width: 100%">
+    <img src="./Photos/DNSSpoof.png" />
+</div>
+
+``

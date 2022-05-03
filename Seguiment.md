@@ -105,10 +105,14 @@ Proves a Kali Linux de les diferents atacs informàtics.
 Proves de Man in The Middle Attack, DNS Spoofing, atac d'Enginyeria Social, ARP Spoofing.
 
 ---
-## 
+## 03/05/2022
 
-()
+( **Aaron & Cristian** = 09:00 - 14:00 )
 ---
+
+Research d'informació dels diferents atacs informàtics. I bases de proves en les nostres màquines.
+
+Aaron fa proves de DNS Cache Poisoning amb Kali Linux i Cristian fa un esquema del projecte mentres prova un KeyLogger a Windows desde Kali Linux. 
 
 ---
 ## 
