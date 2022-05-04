@@ -53,4 +53,19 @@ Si sospitem que les pulsacions de tecles estan sent registrades, i cap d'aquests
 Aquests registradors de tecles maquinari generalment vénen en forma de connectors USB. Un dels extrems està connectat al teclat i un altre a l'USB de PC, i encara que tot funciona sense problemes, el maquinari intercepta i transmet les pulsacions de les tecles a l'atacant, és revisar el nostre PC de tant en tant.
 
 # Practica: Muntar un atac Keylogger a Windows
-Dins d'una maquina Kali Linux (preferit entre el hackers); hi ha un mun d'eines que podem utilitzar per munt
+Dins d'una maquina Kali Linux (preferit entre el hackers); hi ha un munt d'eines que podem utilitzar per munstar un keylogger. En aquest exemple practic que hem trobat amb un Windows com Client Victima d'aquest atac.
+
+Malgrat que Kali te moltes eines tant de muntatge o fabricacion de programes virus, no te l'eina sAINT. Llavors també tenim que muntar l'eina sAINT d'un repositori que hi ha GitHub.
+
+Primer instal·len les depencies necessaries per el muntatge del keylogger.
+```
+sudo apt update
+sudo apt install -y 
+```
+
+> En cas de que no et dongui error al fer ``apt update`` o ``apt install``, segur es perque no tens activat el servei DNS. Per solucionar aquest problema nomes tens que reiniciar-ho i ja.
+```
+sudo systemct restart systemd-resolved.service
+
+sudo systemct status systemd-resolved.service
+```
