@@ -31,7 +31,7 @@ Unes de les tante defenses d'Internet es el __sistema de noms de domini__, o bé
 
 Els DNS treballen amb bases de dades en els que s'__emmagatzema els registres__ amb l'informació dels __dominis__ i les seves __IP__. La seva seguretat el fa capaz quan intenten falsificar els registres, pero encara es vulnerable als __redireccionament__ a __lloc maliciosos__ i __suplantació__, o també l'__intercepció de trafic__.
 
-<img src="Photos/dnssec_atac01.jpg" style="width: 45%"><img src="Photos/dnssec_atac02.jpg" style="width: 45%"><br><br>
+<img src="Photos/dnssec_atac01.jpg" style="width: 50%"><img src="Photos/dnssec_atac02.jpg" style="width: 50%"><br><br>
 
 Per donar sol·lució aquells problemes es va dissenyar lo que es coneixe com __extension de seguretat pel sistema de noms de domini__, o bé DNSSEC.
 
