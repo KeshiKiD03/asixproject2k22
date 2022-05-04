@@ -51,3 +51,6 @@ La versió gratuïta de SpyShelter no només proporciona xifrat, sinó que tamb�
 Si no volem utilitzar un registrador de tecles, sempre es recomana utilitzar el teclat en línia disponible als llocs web bancaris, per exemple, que no deixa rastres de registre de tecles.
 Si sospitem que les pulsacions de tecles estan sent registrades, i cap d'aquests programaris no pot identificar-lo o protegir-lo, llavors probablement algú va ingressar un keylogger hardware al PC.
 Aquests registradors de tecles maquinari generalment vénen en forma de connectors USB. Un dels extrems està connectat al teclat i un altre a l'USB de PC, i encara que tot funciona sense problemes, el maquinari intercepta i transmet les pulsacions de les tecles a l'atacant, és revisar el nostre PC de tant en tant.
+
+# Practica: Muntar un atac Keylogger a Windows
+Dins d'una maquina Kali Linux (preferit entre el hackers); hi ha un mun d'eines que podem utilitzar per munt

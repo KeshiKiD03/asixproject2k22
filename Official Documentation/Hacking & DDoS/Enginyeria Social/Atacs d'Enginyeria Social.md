@@ -13,15 +13,16 @@
 
 # Index
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+* **Atac d'Enginyeria Social**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
 
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+* **Com prevenir atacs d'Enginyeria Social?**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
 
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+* **Certificats d'autenticació / OpenSSL**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
 
 
+* **Certificats d'autenticació / OpenSSL**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
 
 # Atac d'Enginyeria Social
 
@@ -77,41 +78,44 @@ Els certificats són fàcils d'usar (no cal maquinari addicional per administrar
 
 ## Practica de Atac d'Enginyeria Social
 
-A modo de practica, entrem a una maquina Kali Linux on esta una eina anomenada Social-Engineer Toolkit.
+Dins d'una maquina Kali Linux on esta hi un munt d'eines per en aquest cas utilitzarem nomes una eina anomenada Social-Engineer Toolkit.
 
+Aquesta eina ja bé instal·lat al Kali aixi que nomes tenim que executar-la.
 Per utilitzar aquest eina, hem d'obrir una terminal i executar-la com administrador:
 ````
 sudo setoolkit
 ````
 <center><img src="Photos/E_S01.png"></center><br>
 
+Ens surt una presentació molt xula (com a la majoria d'eines dins de Kali)
 Un cop estem dins, ens mostrar el menu d'opcions com per exemple:
 <center><img src="Photos/E_S02.png"></center><br>
 
-Entrem a l'opcio 1
+Ara mateix nomes en interesa el ``Social-Engineering Attacks``.
+Sel·leccionem l'opcio 1.
 ````
 set> 1
 ````
-
-Dins podem trobar 10 diferents tipus d'atacs:
+Un cop dins ens trobem amb 10 diferents tipus d'atacs sobre enginyeria social:
 <center><img src="Photos/E_S03.png"></center><br>
 
+Escollirem una sencella i ja mes endavant anirem provant les demes.
 Per aquest exemple practica escollirem l'Atacs QR
+Sel·leccionem l'opció 8.
 ````
 set> 8
 ````
-Escollim la adreça URL que volem que la QR redireccioni a la nostra victima.
+Omplim amb les dades següent:
+- Escollim la adreça URL que volem que la QR redireccioni a la nostra victima.
 <center><img src="Photos/E_S04.png"></center><br>
 
-Es genera l'imatge QR a dins d'aquest directori.
+Es genera l'imatge QR a dins d'aquest directori. I ja el tindriem.
 <center><img src="Photos/E_S05.png"></center><br>
 
-En una altre terminal, entrem dins del directori on s'ha generat l'imatge QR.
-
-La copiem dins de l'Escriptori.
+En una altre terminal, entrem dins del directori on s'ha generat l'imatge QR i la copiem dins de l'Escriptori.
 <center><img src="Photos/E_S06.png"></center><br>
 
 Comprovem que esta a l'Escriptori.
 <center><img src="Photos/E_S07.png"></center><br>
 
-Nomes queda mostrar la QR a la nostra victima i caigui en la nostra trampa
+Nomes queda mostrar la QR a la nostra victima i caigui en la nostra trampa.
