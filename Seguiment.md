@@ -119,23 +119,37 @@ Aaron fa proves de DNS Cache Poisoning.
 Cristian reserca sobre mes prove practica de keyloggers.
 
 ---
-## 
+## 04/05/2022
 
-()
+( **Aaron & Cristian** = 08:00 - 12:00 )
 ---
 
----
-## 
+Cristian estaba fent una última prova de Windows 10 amb el KeyLogger. Pero per raons que desconèixem i per part de Windows no ha funcionat. Pero ho ha documentat tot correctament a la carpeta de KeyLogger.
 
-()
+Aaron, estaba revisant i documentat DNS Cache Poisoning / DNS Spoofing i ARP Spoofing també fent proves amb el Kali Linux. A l'hora del Gerard, va sortir correctament el Toolkit que vam provar per fer l'atac per "robar" les credencials de una víctima host.
+
+La victima host posa www.twitter.com i es redirigeix a una web falsa que hem clonejat anteriorment, igual que twitter. Un cop posa l'usuari i password, tenim un programa anomenat Ettercap que esnifarà el resultat d'aquest atac.
+
+Proves finalitzades: atac d'Enginyeria Social amb imatge QR
+Research d'informació dels diferents atacs informàtics. I bases de proves en les nostres màquines. DNS Spoofing + ARP Spoofing --> Accés a Twitter.
+
+Després Cristian va estar buscant informació de DNSSEC.
+
+Copies de seguretat de les màquines VDI.
 ---
 
----
-## 
+## 05/05/2022
 
-()
+( **Aaron & Cristian** = 09:00 - 12:00 )
 ---
+Proves finalitzades: atac d'Enginyeria Social amb imatge QR
+Research d'informació dels diferents atacs informàtics. I bases de proves en les nostres màquines.
 
+Continuació de les proves de Man in The Middle Attack, ARP Spoofing i Keylogger
+Aaron fa proves de DNS Cache Poisoning amb Kali Linux i Cristian fa un esquema del projecte mentres prova un KeyLogger a Windows desde Kali Linux. 
+
+Aaron fa proves de DNS Cache Poisoning.
+Cristian reserca sobre mes prove practica de keyloggers.
 ---
 ## 
 
