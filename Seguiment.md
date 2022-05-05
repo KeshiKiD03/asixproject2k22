@@ -142,14 +142,9 @@ Copies de seguretat de les màquines VDI.
 
 ( **Aaron & Cristian** = 09:00 - 12:00 )
 ---
-Proves finalitzades: atac d'Enginyeria Social amb imatge QR
-Research d'informació dels diferents atacs informàtics. I bases de proves en les nostres màquines.
+Aaron termina de repetir el procés d'ahir amb captures i entendre el resultat.
 
-Continuació de les proves de Man in The Middle Attack, ARP Spoofing i Keylogger
-Aaron fa proves de DNS Cache Poisoning amb Kali Linux i Cristian fa un esquema del projecte mentres prova un KeyLogger a Windows desde Kali Linux. 
-
-Aaron fa proves de DNS Cache Poisoning.
-Cristian reserca sobre mes prove practica de keyloggers.
+Cristian fa el muntatge de DNSSEC.
 ---
 ## 
 
