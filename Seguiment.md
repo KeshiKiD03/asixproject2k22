@@ -146,11 +146,14 @@ Aaron termina de repetir el procés d'ahir amb captures i entendre el resultat.
 
 Cristian fa el muntatge de DNSSEC.
 ---
-## 
 
-()
+## 06/05/2022
+
+( **Aaron & Cristian** = 10:00 - 12:00 )
 ---
+Aaron fa la exhibició de Kali Linux de DNS Spoofing y ARP Spoofing per suplantar www.twitter.com i la suplantació del reenviament de paquets entre una connexió Client-Servidor a Eduard Canet.
 
+Cristian segueix buscant DNSSEC.
 ---
 ## 
 
