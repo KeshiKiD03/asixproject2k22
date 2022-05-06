@@ -42,7 +42,7 @@ Revisar tot l'historial de registres de tecles pot brindar a qualsevol una idea 
 
 # Com prevenir atacs de KeyLogger?
 
-Si bé hi ha diverses eines disponibles per trobar i fer front als keyloggers de programari, no hi ha un programari de seguretat per identificar un keylogger hardware.
+Si bé hi ha diverses eïnes disponibles per trobar i fer front als keyloggers de programari, no hi ha un programari de seguretat per identificar un keylogger hardware.
 
 Atès que els registradors de tecles són bàsicament malware, n'hi ha prou amb un programa antivirus que protegeixi el PC en temps real, però si desitgem protecció addicional, també es pot utilitzar programes com ara Zemana AntiLogger i SpyShelter Stop-Logger.
 La versió gratuïta de Zemana només proporciona xifratge per a les pulsacions de tecles, la qual cosa significa que, encara que l'atacant podrà registrar les pulsacions de tecles, se li presentaran en un format codificat i il·legible.
@@ -53,14 +53,20 @@ Si sospitem que les pulsacions de tecles estan sent registrades, i cap d'aquests
 Aquests registradors de tecles maquinari generalment vénen en forma de connectors USB. Un dels extrems està connectat al teclat i un altre a l'USB de PC, i encara que tot funciona sense problemes, el maquinari intercepta i transmet les pulsacions de les tecles a l'atacant, és revisar el nostre PC de tant en tant.
 
 # Practica: Muntar un atac Keylogger a Windows
-Dins d'una maquina Kali Linux (preferit entre el hackers); hi ha un munt d'eines que podem utilitzar per munstar un keylogger. En aquest exemple practic que hem trobat amb un Windows com Client Victima d'aquest atac.
+Dins d'una maquina Kali Linux (preferit entre el hackers); hi ha un munt d'eïnes que podem utilitzar per munstar un keylogger. En aquest exemple practic que hem trobat amb un Windows com Client Victima d'aquest atac.
 
-Malgrat que Kali te moltes eines tant de muntatge o fabricacion de programes virus, no te l'eina sAINT. Llavors també tenim que muntar l'eina sAINT d'un repositori que hi ha GitHub.
+Malgrat que Kali te moltes eïnes tant de muntatge o fabricacion de programes virus, no te l'eïna sAINT. Llavors també tenim que muntar l'eïna sAINT d'un repositori que hi ha GitHub.
 
-Primer instal·len les depencies necessaries per el muntatge del keylogger.
+Primer instal·len les depencies necessaries per el muntatge del keylogger:
+- Instal·lar jdk
 ```
 sudo apt update
-sudo apt install -y 
+sudo apt install maven default-jdk default-jre -y
+```
+
+- Instal·lar programes quen ens ajudaran a fabricar el ``.exe``
+```
+sudo apt install zlib1g-dev libncurses5-dev lib32z1 libncurses5 -y
 ```
 
 > En cas de que no et dongui error al fer ``apt update`` o ``apt install``, segur es perque no tens activat el servei DNS. Per solucionar aquest problema nomes tens que reiniciar-ho i ja.
@@ -69,3 +75,33 @@ sudo systemct restart systemd-resolved.service
 
 sudo systemct status systemd-resolved.service
 ```
+
+Muntar el repositori git de l'eïna sAINT
+```
+git clone https://github.com/tiagorlamper/sAINT.git
+```
+
+Modifiquen els permissos per poder executar el bash configure.sh que 
+```
+cd sAINT/
+chmod +x configure.sh
+./configure.sh
+```
+
+Obrim el jar per poder començar a configurar el nostre keylogger:
+- En pregunte a quina adreça mail volem que ens envii el passwords. Nosaltres hem creat una de proba per algun casos de practica.
+  - correodp22@gmail.com
+  - Cprueba2022
+
+- Habil·litem algunes opcions que ens pregunten __com si volem que__ ... :
+    - fagi captures de pantalla
+    - envii un fitxer text
+    - sigui persistent
+    - ...
+
+- Nombre de caracters per enviar al correo: 500
+
+- Si volem generar un fitxer ``.exe``
+
+Un cop acabat en mostrara un link als ajuste de gmail, on hem de habilita l'unica opcio que hi ha. Primer hem de entrar amb la nostra compte.
+
