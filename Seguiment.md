@@ -155,9 +155,13 @@ Aaron fa la exhibició de Kali Linux de DNS Spoofing y ARP Spoofing per suplanta
 
 Cristian segueix buscant DNSSEC.
 ---
-## 
+## 09/05/2022
 
-()
+( **Aaron & Cristian** = 08:00 - 14:00 ; 16:30 - 21:00)
+---
+Cristian fa la implementació de DNSSec a Ubuntu Server mentres que Aaron fa més research de Kali Linux, de les eines que ha utilitzat, tot i fent la documentació adhient. 
+
+Cristian implementa el DNSSec, documentat, falta base de proves.
 ---
 
 ---

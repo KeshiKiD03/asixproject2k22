@@ -123,7 +123,7 @@ Despres creem y editem el fitxer de configuració de la zona que hem indicat aba
     NS cryptosec.net.
     A 192.168.3.1
 
-www IN CNAME cryptose.net.
+www IN CNAME cryptosec.net.
 ```
 <center>
     <img src="Photos/dnssec(07).png">
