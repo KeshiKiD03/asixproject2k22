@@ -228,6 +228,7 @@ https://www.redeszone.net/tutoriales/seguridad/crackear-contrasenas-john-the-rip
 </div>
 
 # Bibliografia
+- https://medium.com/@williamkhepri/las-25-mejores-herramientas-de-kali-linux-b8c2a92f2ab4
 - https://openwebinars.net/blog/kali-linux-que-es-y-caracteristicas-principales/
 - https://openwebinars.net/blog/creacion-de-laboratorio-para-pentesting/
 - https://openwebinars.net/blog/plataformas-para-practicar-y-aprender-hacking-etico/

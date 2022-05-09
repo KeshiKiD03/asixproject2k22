@@ -1,1 +1,52 @@
-Instalar Maltego
+Aaron
+
+Crack Passwords
+
+  117  apt-get install maltego
+  118  sudo apt-get update
+  119  host google.com
+  120  bash services.sh 
+  121  host google.com
+  122  apt-get install maltego
+  123  apt-get remove maltego
+  124  setoolkit 
+  125  cat /usr/share/wordlists/rockyou.txt.gz 
+  126  touch wordlist.txt
+  127  nano wordlist.txt 
+  128  hydra -l "cryptosec" -P wordlist.txt 10.200.243.147 ssh
+  129  nano hashes.txt
+  130  Ls -l
+  131  ls -l
+  132  hashcat -a 0 -m 1800 -o crackedpasswords.txt hashes.txt wordlist.txt 
+  133  cat hashes.txt 
+  134  cat wordlist.txt 
+  135  ls -l
+  136  cat hashes.txt 
+  137  adduser john
+  138  cat /etc/shadow
+  139  nano hashes.txt 
+  140  nano wordlist.txt 
+  141  hashcat -a 0 -m 1800 -o crackedpasswords.txt hashes.txt wordlist.txt 
+  142  init 0
+  143  cat wordlist.txt 
+  144  bash services.sh 
+  145  hashcat -a 0 -m 1800 -o crackedpasswords.txt hashes.txt wordlist.txt 
+  146  cat hashes.txt 
+  147  nano wordlist.txt 
+  148  hashcat -a 0 -m 1800 -o crackedpasswords.txt hashes.txt wordlist.txt 
+  149  ls -l
+  150  cat crackedpasswords.txt 
+  151  historty
+  152  history
+
+
+https://www.youtube.com/watch?v=gKykLr59LW8
+https://www.youtube.com/watch?v=MkEet3Akvyo
+https://medium.com/@williamkhepri/las-25-mejores-herramientas-de-kali-linux-b8c2a92f2ab4
+https://networkchuck.com/passwordhacking/
+https://www.youtube.com/watch?v=z4_oqTZJqCo
+https://www.youtube.com/watch?v=AXzesol2sOA
+https://esgeeks.com/tutorial-ettercap-ejemplos/
+https://openwebinars.net/blog/kali-linux-que-es-y-caracteristicas-principales/
+https://www.cloudflare.com/learning/dns/dns-over-tls/
+https://programmerclick.com/article/2815493326/
