@@ -232,6 +232,7 @@ https://www.redeszone.net/tutoriales/seguridad/crackear-contrasenas-john-the-rip
 - https://openwebinars.net/blog/creacion-de-laboratorio-para-pentesting/
 - https://openwebinars.net/blog/plataformas-para-practicar-y-aprender-hacking-etico/
 - https://computerhoy.com/paso-a-paso/software/que-es-kali-linux-que-puedes-hacer-41671
+- https://www.youtube.com/watch?v=ODvDxwmMkak
 - https://codigofuente.io/hacking-etico-primeros-pasos/
 - https://ciberninjas.com/kali-herramientas-20/
 - https://esgeeks.com/tutorial-ettercap-ejemplos/
