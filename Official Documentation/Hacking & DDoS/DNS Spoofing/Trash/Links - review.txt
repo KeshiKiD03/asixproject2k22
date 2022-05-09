@@ -1,3 +1,8 @@
+09.05.22 - 
+-------------
+https://programmerclick.com/article/2815493326/ # Ettercap bajo Kali + DNS Spoofing attack
+
+
 https://www.imperva.com/learn/application-security/dns-spoofing/
 
 https://www.cloudflare.com/learning/dns/dns-cache-poisoning/
@@ -23,7 +28,7 @@ https://www.google.es/search?q=dns+spoofing&source=lnms&tbm=isch&sa=X&ved=2ahUKE
 
 3.05.22
 
-https://www.amirootyet.com/post/how-to-spoof-dns-in-kali-linux/
+https://www.amirootyet.com/post/how-to-spoof-dns-in-kali-linux/ OK
 
 https://www.imperva.com/learn/application-security/dns-spoofing/
 
@@ -51,3 +56,23 @@ https://www.youtube.com/watch?v=0yxI6izcs5g
 https://www.youtube.com/watch?v=0yxI6izcs5g
 
 https://www.google.es/search?q=dns+spoofing&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiNpvrSjMH3AhVNQhoKHajMCu8Q_AUoAXoECAIQAw&biw=1536&bih=722&dpr=1.25#imgrc=b-PoMUlaIw_shM
+
+
+
+Herramientas:
+- Kali Linux
+- ARPSpoofing
+- DNSSpoofing
+- Nmap --> Puertos abiertos
+- IPcalc --> Resumen IP
+- Route -n --> Gateway
+- Wireshark
+- Ettercap --> Sniffer
+- DNS Systemd-reseolved.service
+- SSH Activado
+- /proc --> ip_forward 1
+
+
+
+
+- Usuario con todos los permisos sin SUDO (sudo visudo)

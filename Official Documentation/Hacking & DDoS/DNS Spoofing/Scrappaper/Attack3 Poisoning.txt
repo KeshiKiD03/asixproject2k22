@@ -42,4 +42,4 @@ ip a
 
 nmap -sP 10.200.243.137
 
-rounte -n --> Per veure la Gateway
+route -n --> Per veure la Gateway

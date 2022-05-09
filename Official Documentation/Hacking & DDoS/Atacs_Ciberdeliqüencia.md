@@ -158,3 +158,4 @@ Realitzar una inversió important en matèria tecnològica i capacitat del perso
 - https://www.osi.es/sites/default/files/docs/guia-ciberataques/osi-guia-ciberataques.pdf
 
 - https://uss.com.ar/corporativo/ejemplos-de-ataques-informaticos-empresa/
+- https://ciberseguridad.blog/25-tipos-de-ataques-informaticos-y-como-prevenirlos/
