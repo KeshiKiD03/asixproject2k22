@@ -172,13 +172,15 @@ Proves en la tarda de DNSSEC OK. Amb la comanda dnssec-signed creem un fitxer fi
 ---
 ## 10/05/2022
 
-(**Aaron & Cristian** = 08:00 - 14:00 )
+(**Aaron & Cristian** = 08:00 - 14:00 ; 17:00 - 20:14 )
 
 Cristian ha continuat amb la practica DNSSEC, ha porvat dues formes de signatura.
 
 L'Aaron ha fet una recerca d'informació de DNS, partint de la base i refrescant conceptes com DNS Recursiu, DNS TLD, Root Servers, DNS Forwarding... Exemples i terminologies i conceptes varis de DNS.
 
 Quan sapiguem la base d'ambdues cosas farem exemples de DNS adaptades a la nostra organització o zona "Cryptosec.net" i farem un intent d'atac de DNS Sense DNSSEC i després implantació de DNS Segur i veurem com procesa l'un i l'altra. 
+
+Seguir amb la documentació de DNS i DNSSEC per la tarda.
 
 ---
 
