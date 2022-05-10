@@ -71,7 +71,7 @@ Entrem dins de la seva carpeta de configuració ``/etc/bind``, on esta les seves
 Lo primer que hem de fer es habil·litar l'extensió DNSSEC dins del servidor DNS, accedim al fitxer ``/etc/bind/named.conf.options`` i l'editem
 ```sh
 dnssec-enable yes;
-dnssec-validation yes;
+dnssec-validation auto;
 ```
 
 Comprovar si el servidor esta validan amb l'ordre ``dig``:
