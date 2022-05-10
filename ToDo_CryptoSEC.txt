@@ -1,4 +1,7 @@
-Aaron
+Aaron TO DO LIST FAST
+
+
+
 
 Crack Passwords
 
@@ -40,9 +43,32 @@ Crack Passwords
   152  history
 
 
+REVISAR
+-------
+
+https://www.youtube.com/watch?v=AXzesol2sOA --> ACCESSIING PHONE WEBCAM
+
+https://medium.com/@williamkhepri/las-25-mejores-herramientas-de-kali-linux-b8c2a92f2ab4 --> HERRAMIENTAS DE KALI LINUX
+
+
+
+https://programmerclick.com/article/2815493326/ --> DNSSPOOF más resumido por CLI
+https://esgeeks.com/tutorial-ettercap-ejemplos/ --> Otro DNSSPOOOF
+https://www.youtube.com/watch?v=MkEet3Akvyo --> Toolkit Ettercap
+https://www.youtube.com/watch?v=gKykLr59LW8 --> SeToolkit 
+
+
+
+
+
+OTHERS
+-------
+
+
+
 https://www.youtube.com/watch?v=gKykLr59LW8
 https://www.youtube.com/watch?v=MkEet3Akvyo
-https://medium.com/@williamkhepri/las-25-mejores-herramientas-de-kali-linux-b8c2a92f2ab4
+
 https://networkchuck.com/passwordhacking/
 https://www.youtube.com/watch?v=z4_oqTZJqCo
 https://www.youtube.com/watch?v=AXzesol2sOA

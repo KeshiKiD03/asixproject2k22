@@ -121,3 +121,7 @@ __Voilà ja la tenim__
 <div style="align: center; width: 100%">
     <img src="./Crack7.png" />
 </div>
+
+# Bibliografia
+- https://networkchuck.com/passwordhacking/
+- https://www.youtube.com/watch?v=z4_oqTZJqCo
