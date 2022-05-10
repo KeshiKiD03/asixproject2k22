@@ -186,7 +186,7 @@ sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k keys/Kcryptosec.net.+00
 
 Això genera un fitxer db.irrashai.net.signed amb les dades signades.
 
-Lo següent és la publicació de la zona. Tornem a configurar BIND per carregar el fitxer de zona signat. Per fer-ho, editeu el fitxer de configuració i apuntem a la zona asignada.
+Lo següent és la publicació de la zona. Tornem a configurar BIND per carregar el fitxer de zona signat ``db.cryptosec.net.signed``. Per fer-ho, editeu el fitxer de configuració i apuntem a la zona asignada.
 ```bash
 zone "cryptosec.net." {
             type master;
