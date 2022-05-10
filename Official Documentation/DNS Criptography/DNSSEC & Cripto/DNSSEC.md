@@ -221,6 +221,7 @@ $INCLUDE "keys/Kcryptosec.net.+008+41846.key" #myksk
 ```
 
 <img src="Photos/dnssec12.png" style="width: 50%"></img><img src="Photos/dnssec15.png" style="width: 50%"></img>
+> **Nota**: *aqui hi ha de dues maneres que funcionen, de forma mes detalla o simple i curt. I tambe fixeu-vos bè on fiqueu les linies. En el cas de la dreta: no la posseu a dalt del ``$TTL`` perque no detecteria quina plantilla de referencia ès.*
 
 Ara ja podem signar la zona amb les claus secretes. Aqui esta la sintaxi:
 
@@ -238,7 +239,7 @@ sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k keys/Kcryptosec.net.+00
 <center>
     <img src="Photos/dnssec13.png"\>
 </center>
-> **Nota**: si veïeu que les claus no son les mateixes dels pasos anteriors es que hem tingut que crear una noves.
+> **Nota**: *si veïeu que les claus no son les mateixes dels pasos anteriors es que hem tingut que crear una noves.*
 
 Això genera un fitxer ``db.irrashai.net.signed`` amb les dades signades.
 
