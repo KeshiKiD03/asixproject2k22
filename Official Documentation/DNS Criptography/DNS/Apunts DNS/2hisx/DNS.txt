@@ -1,0 +1,93 @@
+===== forwarding
+--named.conf.options
+options {
+    directory "/var/cache/bind";
+    querylog yes;
+    forwarders {
+        8.8.8.8;
+        192.168.122.214;
+    };
+    dnssec-validation yes;
+    recursion no;
+
+    listen-on-v6 { any; };
+};
+
+===== recursive
+--named.conf.default-zones
+zone "edt" {
+    type forward;
+    forwarders {
+        192.168.100.56;
+    };
+};
+--named.conf.options
+options {
+    directory "/var/cache/bind";
+    querylog yes;
+    dnssec-validation yes;  
+    listen-on-v6 { any; };
+};
+
+===== edt
+--db.edt
+@        SOA    dns.edt. mail.edt.org. 1 4 4 4 4
+        NS    dns
+dns        A    192.168.122.56
+
+asix        NS    dns0.asix
+dns0.asix    A    192.168.122.171
+
+asix        NS    dns1.asix
+dns1.asix    A    192.168.122.215
+--named.conf.default-zones
+zone "edt"{
+    type primary;
+    file "/etc/bind/db.edt";
+};
+--named.conf.options
+options {
+    directory "/var/cache/bind";
+    querylog yes;
+    dnssec-validation yes;
+    recursion no;
+    listen-on-v6 { any; };
+};
+===== prim_asix
+--db.asix
+@        SOA    dns0 mail.asix.org. 202110131 1d 3m 3d 3s
+        NS    dns0
+dns0    A    192.168.122.171
+        MX    10    asix.gmail.com
+
+$GENERATE 1-100 alumne$ A    192.168.122.$
+www    CNAME    0
+--named.conf.default-zones
+zone "asix.edt"{
+    type primary;
+    file "/etc/bind/db.asix";
+};
+--named.conf.options
+options {
+    directory "/var/cache/bind";
+    querylog yes;
+    dnssec-validation yes;
+    recursion no;
+    listen-on-v6 { any; };
+};
+===== sec_asix
+--named.conf.default-zones
+zone "asix.edt"{
+    type secondary;
+    masters{
+        192.168.122.171;
+    };
+};
+--named.conf.options
+options {
+    directory "/var/cache/bind";
+    querylog yes;
+    dnssec-validation yes;
+    recursion no;
+    listen-on-v6 { any; };
+};

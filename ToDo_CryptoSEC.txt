@@ -43,6 +43,26 @@ Crack Passwords
   152  history
 
 
+REVISAR DNSSEC
+--------------
+https://www.cloudflare.com/learning/dns/dns-over-tls/ --> DNS con TLS
+https://www.youtube.com/watch?v=OUKHblrqOQw --> Tutorial DNSSEC 1Hora
+https://www.youtube.com/watch?v=MrtsKTC3KDM --> Tutorial DNS para la Ciberseguridad
+https://www.dondominio.com/help/es/266/dnssec-que-es-y-como-funciona/
+https://www.incibe.es/protege-tu-empresa/blog/dnssec-asegurando-integridad-y-autenticidad-tu-dominio-web
+https://bytelearning.blogspot.com/2016/12/como-proteger-servidor-DNS-Linux-DNSSEC.html
+https://es.slideshare.net/alejandrotakahashi5/servidores-ubuntu-1804-dnssec-dmz-firewall-servidor-archivos-e-ipv6
+https://blog.apnic.net/2019/05/23/how-to-deploying-dnssec-with-bind-and-ubuntu-server/
+https://blog.inittab.org/administracion-sistemas/dnssec-asegurando-las-respuestas-de-nuestro-dominio-la-practica-i/
+https://es.wikipedia.org/wiki/Domain_Name_System_Security_Extensions
+https://www.icann.org/es/blogs/details/dnssec-rolling-the-root-zone-key-signing-key-22-7-2016-es
+https://www.stackscale.com/es/blog/ceremonia-clave-firma-llave-zona-raiz-dnssec/
+https://www.cloudflare.com/es-es/dns/dnssec/how-dnssec-works/
+https://kb.isc.org/docs/aa-01182
+
+https://www.youtube.com/watch?v=_8M_vuFcdZU --> tutorial DNSSEC Explainer "PERFECTO"
+
+
 REVISAR
 -------
 

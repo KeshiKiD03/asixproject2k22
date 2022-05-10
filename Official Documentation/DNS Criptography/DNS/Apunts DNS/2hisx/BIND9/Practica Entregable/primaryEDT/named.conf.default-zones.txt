@@ -1,0 +1,4 @@
+zone "edt"{
+    type primary;
+    file "/etc/bind/db.edt";
+};
