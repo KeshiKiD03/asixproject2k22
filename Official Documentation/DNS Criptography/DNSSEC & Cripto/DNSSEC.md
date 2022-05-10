@@ -221,7 +221,7 @@ $INCLUDE "keys/Kcryptosec.net.+008+41846.key" #myksk
 ```
 
 <center>
-    <img src="Photos/dnssec12.png"\><img src="Photos/dnssec15.png"\>
+    <img src="Photos/dnssec12.png" style="width: 50%"\><img src="Photos/dnssec15.png" style="width: 50%"\>
 </center>
 
 Ara ja podem signar la zona amb les claus secretes. Aqui esta la sintaxi:
