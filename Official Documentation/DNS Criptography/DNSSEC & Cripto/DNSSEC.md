@@ -37,14 +37,14 @@ Per donar sol·lució aquells problemes es va dissenyar lo que es coneixe com __
 
 ## Descripció
 **Que es?**
-Afegeix una capa de seguretat adicional als servidors DNS d'un domini. Gracies a allo es preveixen un gran quantitat de posibles activitats malicioses. Aquesta extensió comprova l'integritat i autenticació de les dades.
+Afegeix una __capa de seguretat adicional__ als servidors DNS d'un domini. Gracies a allo es __preveixen un gran quantitat de posibles activitats malicioses__. Aquesta extensió __comprova l'integritat i autenticació de les dades__.
 
 **Com funciona?**
 Les noves funcions d'aquest protocol estan basades en la __criptografia asimetrica__, tambe coneguda com __criptografia de claus publiques i privades__. Mitjançant el us de les clau i les firmes generades a partir de les claus, que es pot saber __si l'informacio ha sigut modificat o no__.
 
-Quan un client realitza una recerca de domini que compta amb DNSSEC, en el proces s'envia l'informació necessaria per resolver la recerca (adreça IP del domini que esta buscant). Pero tambe s'envien unes quantes firmes de les claus associades als diferents servidors DNS que esta consultant.
+Quan un client realitza una recerca de domini que compta amb DNSSEC, en __el proces s'envia l'informació necessaria per resolver la recerca__ (adreça IP del domini que esta buscant). Pero tambe __s'envien unes quantes firmes de les claus associades als diferents servidors DNS__ que esta consultant.
 
-Si al comprovar aquestes firmes no coinceixen les uns amb les altres, la consulta no pot se valida como legitimad doncs la cadena de confiança s'ha trencat i por lo tant no es segur accedir aquell lloc web. Pel contrari, si coincideixen les uns amb les altres, l'usuari podrà accedir ja que el proces ha sigut autenticat i la cadena de confiança no s'ha trencat.
+Si al comprovar aquestes __firmes no coinceixen les uns amb les altres__, la consulta __no pot se valida__ como legitimad doncs __la cadena de confiança s'ha trencat__ i por lo tant __no es segur accedir__ aquell lloc web. Pel contrari, __si coincideixen__ les uns amb les altres, l'usuari __podrà accedir__ ja que el proces ha sigut autenticat i __la cadena de confiança no s'ha trencat__.
 
 ## Practica
 Obrim la nostra maquina Ubuntu Server per posar a prova el ``DNSSEC``. L'engeguem, després de fer un __snapshot__ per seguretat.
@@ -71,7 +71,7 @@ Entrem dins de la seva carpeta de configuració ``/etc/bind``, on esta les seves
 Lo primer que hem de fer es habil·litar l'extensió DNSSEC dins del servidor DNS, accedim al fitxer ``/etc/bind/named.conf.options`` i l'editem
 ```sh
 dnssec-enable yes;
-dnssec-validation yes;
+dnssec-validation auto;
 ```
 
 Comprovar si el servidor esta validan amb l'ordre ``dig``:
@@ -173,15 +173,25 @@ $INCLUDE "keys/Kcryptosec.net.+008+41846.key" #myksk
 
 Ara ja podem signar la zona amb les claus secretes. Aqui esta la sintaxi:
 
-``dnssec-signzone -d <directori de treball> -N INCREMENT -S-o <nom de zona> <fitxer de zona>``
+``dnssec-signzone -o <nom de zona> -N INCREMENT -t -k <dir/KSK> <fitxer de zona> <dir/ZSK>``
 - -o: indica "l'origen" de la zone, es a dir __el domini__.
 - -N: indica que hem de pujar el nombre de serie de la zona , a més de firmar-la.
 - -t: mostra estadistiques quan acaba
-- -k: pasa 
+- -k: especifica la clau de signatura de clau
 
 Per el nostre exemple, l'ordre hauria de ser:
+``` 
+sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k keys/Kcryptosec.net.+008+41846.key db.cryptosec.net keys/Kcryptosec.net.+008+16668.key
 ```
-sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k Kcryptosec.net.+008+41846.key db.cryptosec.net Kcryptosec.net.+008+16668.key
+
+Això genera un fitxer db.irrashai.net.signed amb les dades signades.
+
+Lo següent és la publicació de la zona. Tornem a configurar BIND per carregar el fitxer de zona signat ``db.cryptosec.net.signed``. Per fer-ho, editeu el fitxer de configuració i apuntem a la zona asignada.
+```bash
+zone "cryptosec.net." {
+            type master;
+            file "db.cryptonet.net.signed";
+};
 ```
 
 ## Bibliografia
