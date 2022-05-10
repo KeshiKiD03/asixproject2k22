@@ -75,7 +75,6 @@ La instal·lació es farà des de zero amb un disk iso de ubuntu server 20.04 i 
 ## 27/04/2022
 
 ( **Cristian & Aaron** = 9:00 - 12:00)
----
 
 Research d'esquemes i tipus d'atacs per al projecte. Ordenació del GIT del projecte. Instal·lació i pre configuració d'Ubuntu Server a Virtual Box. 
 Tenir una idea definitiva i separar diferents pràctiques per a la posterior assemblatge.
@@ -84,7 +83,6 @@ Tenir una idea definitiva i separar diferents pràctiques per a la posterior ass
 ## 28/04/2022 
 
 ( **Aaron** = 18:00 - 20:00)
----
 
 Configuració de les màquines virtuals Ubuntu Server i clients Ubuntu i Debian 10 a VirtualBox.
 
@@ -96,7 +94,6 @@ Muntatge sobre Kali Linux (Atacant) i un servidor d'Ubuntu Server 20.04 i un cli
 ## 02/05/2022 
 
 ( **Aaron & Cristian** = 09:00 - 14:00 // 15:00 - 19:00)
----
 
 Research d'informació dels diferents atacs informàtics. I bases de proves en les nostres màquines.
 
@@ -122,7 +119,6 @@ Cristian reserca sobre mes prove practica de keyloggers.
 ## 04/05/2022
 
 ( **Aaron & Cristian** = 08:00 - 12:00 )
----
 
 Cristian estaba fent una última prova de Windows 10 amb el KeyLogger. Pero per raons que desconèixem i per part de Windows no ha funcionat. Pero ho ha documentat tot correctament a la carpeta de KeyLogger.
 
@@ -136,38 +132,54 @@ Research d'informació dels diferents atacs informàtics. I bases de proves en l
 Després Cristian va estar buscant informació de DNSSEC.
 
 Copies de seguretat de les màquines VDI.
----
 
+---
+---
 ## 05/05/2022
 
 ( **Aaron & Cristian** = 09:00 - 12:00 )
----
+
 Aaron termina de repetir el procés d'ahir amb captures i entendre el resultat.
 
 Cristian fa el muntatge de DNSSEC.
----
 
+---
+---
 ## 06/05/2022
 
 ( **Aaron & Cristian** = 10:00 - 12:00 )
----
+
 Aaron fa la exhibició de Kali Linux de DNS Spoofing y ARP Spoofing per suplantar www.twitter.com i la suplantació del reenviament de paquets entre una connexió Client-Servidor a Eduard Canet.
 
 Cristian segueix buscant DNSSEC.
+
+---
 ---
 ## 09/05/2022
 
 ( **Aaron & Cristian** = 08:00 - 14:00 ; 16:30 - 21:00)
----
+
 Cristian fa la implementació de DNSSec a Ubuntu Server mentres que Aaron fa més research de Kali Linux, de les eines que ha utilitzat, tot i fent la documentació adhient. 
 
+Aaron ha intentat un altre atac, que es desencriptar contrasenyes SHA-512 Unix amb una eina de Kali.
+
 Cristian implementa el DNSSec, documentat, falta base de proves.
+
+Proves en la tarda de DNSSEC OK. Amb la comanda dnssec-signed creem un fitxer firmat de la nostra zona db.cryptosec.net.signed i en funcionament OK.
+
 ---
 
 ---
-## 
+## 10/05/2022
 
-()
+(**Aaron & Cristian** = 08:00 - 14:00 )
+
+Cristian ha continuat amb la practica DNSSEC, ha porvat dues formes de signatura.
+
+L'Aaron ha fet una recerca d'informació de DNS, partint de la base i refrescant conceptes com DNS Recursiu, DNS TLD, Root Servers, DNS Forwarding... Exemples i terminologies i conceptes varis de DNS.
+
+Quan sapiguem la base d'ambdues cosas farem exemples de DNS adaptades a la nostra organització o zona "Cryptosec.net" i farem un intent d'atac de DNS Sense DNSSEC i després implantació de DNS Segur i veurem com procesa l'un i l'altra. 
+
 ---
 
 ---
