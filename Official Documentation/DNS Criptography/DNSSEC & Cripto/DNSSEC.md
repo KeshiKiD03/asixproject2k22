@@ -49,6 +49,10 @@ Si al comprovar aquestes firmes no coinceixen les uns amb les altres, la consult
 ## Practica
 Obrim la nostra maquina Ubuntu Server per posar a prova el ``DNSSEC``. L'engeguem, després de fer un __snapshot__ per seguretat.
 
+<center>
+    <img src="Photos/dnssec(01).png">
+</center>
+
 > **Warning**: *per aquesta practica no haurem de cambiar la ip desde cap fitxer de configuració. Com es una prova inserta un ip temporal per practica, cada cop que engeguem la maquina haurem d'insertar l'ip una altra vegada.*
 
 La nostra maquina tindra dues interficies: un en al bridge y l'altre a una xarxa interna.
@@ -59,6 +63,9 @@ sudo ip link set enp0s8 up
 sudo ip address add 192.167.3.1/24 dev enp0s8
 ip a show enp0s8
 ```
+<center>
+    <img src="Photos/dnssec(02).png">
+</center>
 
 Dins de la maquina Ubuntu, instal·lem el ``bind9``:
 ```
@@ -68,16 +75,26 @@ sudo apt install bind9
 
 Entrem dins de la seva carpeta de configuració ``/etc/bind``, on esta les seves configuracions i les zones que gestiona.
 
+<center>
+    <img src="Photos/dnssec(03).png">
+</center>
+
 Lo primer que hem de fer es habil·litar l'extensió DNSSEC dins del servidor DNS, accedim al fitxer ``/etc/bind/named.conf.options`` i l'editem
 ```sh
 dnssec-enable yes;
-dnssec-validation yes;
+dnssec-validation auto;
 ```
+<center>
+    <img src="Photos/dnssec(04).png">
+</center>
 
 Comprovar si el servidor esta validan amb l'ordre ``dig``:
 ```
 dig @localhost www.apnic.net
 ```
+<center>
+    <img src="Photos/dnssec(05).png">
+</center>
 
 Tinguem en compte que cada resposta te una signatura corresponent (__registre RRSIG__).
 
@@ -85,7 +102,7 @@ Una __resposta valida__ hauria de tenir el senyalador de bits __AD__ (Authentica
 
 Una __resposta__ que __no estigui validada__ no tindra una senyal de AD establert i l'estat HEADER sera **SERVERFAIL**.
 
-En el nostre cas, no esta del tot valida ya que li falta el __AD__.
+En el nostre cas, esta tot valida ya que té el __AD__ i en l'status es __NOERROR__.
 
 > **Reminder**: *haurem de tenir el nostre domini creat al principi, pero en cas de no haver-le creat. Aqui t'ho mostro.*
 
@@ -96,6 +113,9 @@ zone "cryptosec.net"{
     file "/etc/bind/db.cryptosec.net";
 }
 ```
+<center>
+    <img src="Photos/dnssec(06).png">
+</center>
 
 Despres creem y editem el fitxer de configuració de la zona que hem indicat abans: ``db.cryptosec.net``.
 ```bash
@@ -103,19 +123,28 @@ Despres creem y editem el fitxer de configuració de la zona que hem indicat aba
     NS cryptosec.net.
     A 192.168.3.1
 
-www IN CNAME cryptose.net.
+www IN CNAME cryptosec.net.
 ```
+<center>
+    <img src="Photos/dnssec(07).png">
+</center>
 
 Anem a ``/etc/resolv.conf`` i canviem a que servidor dns preguntara.
 ```
 servername 192.168.3.1
 search cryptosec.net
 ```
+<center>
+    <img src="Photos/dnssec(08).png">
+</center>
 
 Comprovem que el servidor DNS resolv la nostra zona de domini.
 ```
 host cryptosec.net
 ```
+<center>
+    <img src="Photos/dnssec(09).png">
+</center>
 
 Veïem que tant la nostra zona com la anterior (``www.apnic.net``) __no estan validades__ i __no tenen AD__.
 
@@ -125,7 +154,7 @@ Això sol ser per registres i porveïdors d'allotjament, o qualsevol usuari que 
 
 Creem un fitxer per posar les claus
 ```
-sudo mkdir keys
+sudo mkdir -p keys/zks keys/ksk
 ```
 
 **Generar parell de claus per a ZSK (Zone Signing Keys) i KSK (Key Signing Keys)**
@@ -142,13 +171,13 @@ Si no especifiquem, els valors per defecte son RSASHA1 per a l'algorisme i una m
 
 Utilitzem un algorisme més segur i bits més llargs per generar ZSK. La comanda serà la següent:
 ```
-sudo dnssec-keygen -K /etc/bind/keys/ -a RSASHA256 -b 1024 -n ZONE cryptosec.net
+sudo dnssec-keygen -K /etc/bind/keys/zks/ -a RSASHA256 -b 1024 -n ZONE cryptosec.net
 ```
 - -K: *directori on s'han d'escriure els fitxers de claus*
 
 A continuació, generem la __clau de signatura de claus__ (KSK). L'ordre és molt semblant, amb un parell d'ajustaments.
 ```
-sudo dnssec-keygen -K /etc/bind/keys/ -a RSASHA256 -b 2048 -f KSK -n ZONE cryptosec.net 
+sudo dnssec-keygen -K /etc/bind/keys/ksk/ -a RSASHA256 -b 2048 -f KSK -n ZONE cryptosec.net 
 ```
 - -b: __canvia la mida de la clau__
 - -f: *especifica el tipus que es*, o t'ho possar un ZKS.
@@ -173,7 +202,7 @@ $INCLUDE "keys/Kcryptosec.net.+008+41846.key" #myksk
 
 Ara ja podem signar la zona amb les claus secretes. Aqui esta la sintaxi:
 
-``dnssec-signzone -d <directori de treball> -N INCREMENT -S-o <nom de zona> <fitxer de zona>``
+``dnssec-signzone -o <nom de zona> -N INCREMENT -t -k <KSK> <fitxer de zona> <ZSK>``
 - -o: 
 - -N: 
 - -t: 
@@ -181,7 +210,7 @@ Ara ja podem signar la zona amb les claus secretes. Aqui esta la sintaxi:
 
 Per el nostre exemple, l'ordre hauria de ser:
 ```
-sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k Kcryptosec.net.+008+41846.key db.cryptosec.net Kcryptosec.net.+008+16668.key
+sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k keys/ksk/Kcryptosec.net.+008+41846.key db.cryptosec.net keys/zks/Kcryptosec.net.+008+16668.key
 ```
 
 ## Bibliografia
