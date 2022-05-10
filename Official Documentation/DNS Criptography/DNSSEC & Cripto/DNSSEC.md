@@ -49,7 +49,7 @@ Si al comprovar aquestes __firmes no coinceixen les uns amb les altres__, la con
 ## Practica
 Obrim la nostra maquina Ubuntu Server per posar a prova el ``DNSSEC``. L'engeguem, després de fer un __snapshot__ per seguretat.
 
-> **Warning**: *per aquesta practica no haurem de cambiar la ip desde cap fitxer de configuració. Com es una prova inserta un ip temporal per practica, cada cop que engeguem la maquina haurem d'insertar l'ip una altra vegada.*
+> **Nota**: *per aquesta practica no haurem de cambiar la ip desde cap fitxer de configuració. Com es una prova inserta un ip temporal per practica, cada cop que engeguem la maquina haurem d'insertar l'ip una altra vegada.*
 
 La nostra maquina tindra dues interficies: un en al bridge y l'altre a una xarxa interna.
 
@@ -87,10 +87,10 @@ Una __resposta__ que __no estigui validada__ no tindra una senyal de AD establer
 
 En el nostre cas, no esta del tot valida ya que li falta el __AD__.
 
-> **Reminder**: *haurem de tenir el nostre domini creat al principi, pero en cas de no haver-le creat. Aqui t'ho mostro.*
+> **Nota**: *haurem de tenir el nostre domini creat al principi, pero en cas de no haver-le creat. Aqui t'ho mostro.*
 
 Creem la nostra zona de domini ``cryptosec.net``, primer ho afegim dins de fitxer ons les zones es gestionen: ``named.conf.default-zones``.
-```bash
+```sh
 zone "cryptosec.net"{
     type master;
     file "/etc/bind/db.cryptosec.net";
@@ -98,7 +98,7 @@ zone "cryptosec.net"{
 ```
 
 Despres creem y editem el fitxer de configuració de la zona que hem indicat abans: ``db.cryptosec.net``.
-```bash
+```sh
 @ IN SOA cryptosec.net. mail.cryptosec.net. 1 4 4 4 4
     NS cryptosec.net.
     A 192.168.3.1
@@ -130,7 +130,7 @@ sudo mkdir keys
 
 **Generar parell de claus per a ZSK (Zone Signing Keys) i KSK (Key Signing Keys)**
 
-> **Reminder**: *l'ordre de generar la ZSK i la KSK no importa. Nomes importe que les tenim les dues claus per poder signar la zona.*
+> **Nota**: *l'ordre de generar la ZSK i la KSK no importa. Nomes importe que les tenim les dues claus per poder signar la zona.*
 
 Primer, generem la clau de __signatura de zona__ (ZSK). La sintaxi es la següent:
 
@@ -161,12 +161,12 @@ En aquesta fase hi ha dues formes de fer-ho: __la manual__ i __l'automatica__.
 
 Primer provarem amb la manual i despres la deixarem amb automatica.
 
-1. **Signatura manual la signatura**
+**1. Signatura manual la signatura**
 
 Examinem les claus que tenim les clau necesaries. Com hem dit abans, veïem que tenim mes de dos, nomes necesitem les publiques (``.key``).
 
 Fem referencia de les dies claus a dins del fitxer de la zona.
-```bash
+```sh
 $INCLUDE "keys/Kcryptosec.net.+008+16668.key" #myzsk 
 $INCLUDE "keys/Kcryptosec.net.+008+41846.key" #myksk
 ```
@@ -186,13 +186,57 @@ sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k keys/Kcryptosec.net.+00
 
 Això genera un fitxer db.irrashai.net.signed amb les dades signades.
 
-Lo següent és la publicació de la zona. Tornem a configurar BIND per carregar el fitxer de zona signat ``db.cryptosec.net.signed``. Per fer-ho, editeu el fitxer de configuració i apuntem a la zona asignada.
-```bash
+Lo següent és la publicació de la zona. Tornem a configurar BIND per carregar el fitxer de zona signat ``db.cryptosec.net.signed``. Per fer-ho, editeu el fitxer de configuració (``named.conf.local``) i apuntem a la zona asignada.
+```sh
 zone "cryptosec.net." {
             type master;
             file "db.cryptonet.net.signed";
 };
 ```
+
+**2. Signatura automàtica**
+
+L'altre mètode és utilitzar la signatura automàtica. Actualitzeu la configuració de la següent manera per afegir les tres últimes línies dins del fitxer ``named.conf.default-zones``:
+```sh
+zone "cryptosec.net"{
+    type master;
+    file "/etc/bind/db.cryptosec.net";
+    key-directory "/etc/bind/keys";
+    auto-dnssec maintain;
+    inline-signing yes;
+};
+```
+
+> **Nota**: *el directori de claus és la ubicació de les claus KSK/ZSK. L'usuari de BIND ha de tenir accés de "lectura" a això, així que actualitzeu els vostres permisos en conseqüència.*
+
+auto-dnssec té dues opcions: allow o maintain:
+* **auto-dnssec allow**: cerques al directori de claus i signa la zona amb les claus corresponents un cop rep l'ordre rndc sign.
+* **auto-dnssec maintain**: fa el mateix que anteriorment, però també comprova periòdicament el directori de claus.
+
+Amb l'ordre ``rndc`` (Remote Name Daemon Control), podem aplicar la configuració actualizada feta anteriorment i carregar les claus des del directori donat.
+```
+rndc reload 
+rndc reconfig 
+rndc loadkeys cryptosec.net
+```
+
+A continuació, signem la zona amb l'ordre següent:
+```
+rndc signing -list cryptosec.net
+```
+
+**Cadena de confiança**
+
+Per __establir la cadena de confiança__, llavors haurem d'actualizar la zona principal __amb el hash de la nostra clau publica__. Això s'anomena __Signant de la Delegació__ (__DS__).
+
+La forma de generar el registre DS depen de com heu signat en l'anterior part:
+- **Si hem utilitzat la signatura manual** amb la clau publica, ja s'hauria de generar el registrede DS.
+- **Si hem utilitzat la signatura automatica**, haurem de generar el registre de DS amb l'ordre següent:
+    ```
+    dig @localhost dnskey cryptosec.net | dnssec-dsfromkey -f – cryptosec.net
+    ```
+
+A continuació, envieu els registres de DS a la vostra zona principal. La zona principal (normalment el vostre proveïdor d'allotjament) té generalment un portal on es pot carregar.
 
 ## Bibliografia
 - https://www.dondominio.com/help/es/266/dnssec-que-es-y-como-funciona/
