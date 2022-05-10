@@ -172,7 +172,7 @@ Proves en la tarda de DNSSEC OK. Amb la comanda dnssec-signed creem un fitxer fi
 ---
 ## 10/05/2022
 
-(**Aaron & Cristian** = 08:00 - 14:00 ; 17:00 - 20:14 )
+(**Aaron & Cristian** = 08:00 - 14:00 )
 
 Cristian ha continuat amb la practica DNSSEC, ha porvat dues formes de signatura.
 
@@ -180,9 +180,11 @@ L'Aaron ha fet una recerca d'informació de DNS, partint de la base i refrescant
 
 Quan sapiguem la base d'ambdues cosas farem exemples de DNS adaptades a la nostra organització o zona "Cryptosec.net" i farem un intent d'atac de DNS Sense DNSSEC i després implantació de DNS Segur i veurem com procesa l'un i l'altra. 
 
-Seguir amb la documentació de DNS i DNSSEC per la tarda.
-
 ---
+
+(**Aaron & Cristian** = 18:00 - 20:20 )
+
+Han continuat amb les seves recerques, es posible que acabin dema.
 
 ---
 ## 

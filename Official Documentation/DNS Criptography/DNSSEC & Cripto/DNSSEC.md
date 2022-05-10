@@ -312,4 +312,4 @@ A continuació, envieu els registres de DS a la vostra zona principal. La zona p
 - https://www.cloudflare.com/es-es/dns/dnssec/how-dnssec-works/
 - https://kb.isc.org/docs/aa-01182
 - https://linux.die.net/man/8/dnssec-keygen
-- https://techglimpse.com/dns-dnssec-testing-validating-tools/
+- https://techglimpse.com/dnssec-configuration-procedure-testbed/
