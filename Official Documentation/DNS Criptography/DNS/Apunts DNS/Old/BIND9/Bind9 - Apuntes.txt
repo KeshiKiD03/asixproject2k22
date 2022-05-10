@@ -1,0 +1,29 @@
+https://howdns.works/ep1/
+
+Comandos de Linux
+
+apt-get update
+sudo apt install virt-manager
+
+apt install keyboard-configuration console-setup --> Configurarlo en Español
+
+Configurar el /etc/network/interfaces
+
+/etc/network/interfaces
+
+    auto eth0
+    iface eth0 inet static
+        address 12.34.56.78/24
+        dns-nameservers 12.34.56.78
+
+
+ip a --> Ver la IP
+
+apt-get install bind9 bind9-utils --> Instalar el BIND9
+
+service restart bind9 --> Reiniciar el servicio bind9
+service status bind9 --> Ver el estado del servicio Bind9
+
+named-checkzone "zona" "archivo-zona" --> Comprobar que la zona esté correcta en el archivo
+
+named-checkconf "archivo-zona" --> Comprobar el archivo de configuración de la zona

@@ -1,0 +1,14 @@
+options {
+    directory "/var/cache/bind";
+    querylog yes;
+    forwarders {
+        8.8.8.8;
+        192.168.122.214;
+    };
+    dnssec-validation yes;
+    recursion no;
+
+    listen-on-v6 { any; };
+};
+
+#FORWARDING A RECURSIVE

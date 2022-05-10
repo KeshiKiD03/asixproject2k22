@@ -1,0 +1,9 @@
+@        SOA    dns.edt. mail.edt.org. 1 4 4 4 4
+        NS    dns
+dns        A    192.168.122.56
+
+asix        NS    dns0.asix
+dns0.asix    A    192.168.122.171
+
+asix        NS    dns1.asix
+dns1.asix    A    192.168.122.215

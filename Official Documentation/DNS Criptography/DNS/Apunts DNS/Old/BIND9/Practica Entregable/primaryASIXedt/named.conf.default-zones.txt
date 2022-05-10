@@ -1,0 +1,4 @@
+zone "asix.edt"{
+    type primary;
+    file "/etc/bind/db.asix.edt";
+};

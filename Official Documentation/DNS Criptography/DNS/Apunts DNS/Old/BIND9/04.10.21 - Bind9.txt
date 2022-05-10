@@ -1,0 +1,57 @@
+/etc/bind/named.conf 
+	.local
+	.default-zones --> edt ningun forwarders
+	.options --> añadirlo en Forwarders
+	
+forwarders {
+
+	0.0.0.0 ;
+	
+}
+
+CLIENT [HOST] || [0.1]
+
+DNS CACHE SERVER
+
+
+FORWARDERS --> named.conf.options
+
+DELEGACIÓN 
+
+-----------------------
+
+CLIENTE
+
+host.smx.edt
+
+host google.com
+
+
+---
+
+
+rndc querylog --> Activar el registro de logs
+
+rndc stat --> Cuantas peticiones de uso se han hecho
+
+---
+
+$GENERATE 1-150 alu$ A 192.168.0.$
+
+
+----
+
+master / slave
+
+primary / secondary --> en SMX edt PRIMARY
+
+La 2da zona del tipo Secondary
+
+zone "smx.edt" {
+
+	type secondary;
+	file "/var/lib/bind/db.smx.edt";
+	masters {
+		192.168.0.2;
+	};
+};
