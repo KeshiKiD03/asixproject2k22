@@ -1,4 +1,4 @@
-# Seguiment
+# Seguiment ASIX Project 2k22 - Cibersegureatat "CryptoSEC"
 Aquest arxiu es documentarà els passos dins del projecte que tenim al cap.
 ---
 Document els nostres moviments a petició dels professors que van sol·licitar que ens documentéssim a nosaltres mateixos fent el projecte final.
@@ -187,10 +187,13 @@ Quan sapiguem la base d'ambdues cosas farem exemples de DNS adaptades a la nostr
 Han continuat amb les seves recerques, es posible que acabin dema.
 
 ---
-## 
+## 11/05/2022
 
-()
----
+(**Aaron & Cristian** = 08:00 - 12:00 )
+
+Amb l'ajuda d'en Gerard, hem reconfigurat el nostre esquema de Ciberseguretat implantant un altre servidor que serà Forwarder al DNS SOA autoritatiu original, rebrà les peticions. L'atac es farà al forwarder.
+
+Es farà un exemple de DNS sense Sec i un DNSSEC. 
 
 ---
 ## 
