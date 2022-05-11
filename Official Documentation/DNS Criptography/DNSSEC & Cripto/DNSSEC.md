@@ -87,6 +87,10 @@ network:
             - 198.168.3.1/24
 ```
 
+<center>
+    <img src="Photos/dnssec16.png"\>
+</center><br>
+
 Sortim del fitxer i salvem la configuracio amb el comand ``netplan``:
 ```
 sudo netplan try
