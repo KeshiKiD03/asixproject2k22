@@ -195,6 +195,11 @@ Amb l'ajuda d'en Gerard, hem reconfigurat el nostre esquema de Ciberseguretat im
 
 Es farà un exemple de DNS sense Sec i un DNSSEC. 
 
+
+(**Aaron** = 18:00 - 19:30 )
+
+Aaron retoca i passa algunes coses a net en el GIT del Projecte. Canvia l'objectiu entre altres coses.
+
 ---
 ## 
 
