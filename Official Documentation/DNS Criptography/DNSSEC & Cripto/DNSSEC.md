@@ -51,15 +51,20 @@ Obrim la nostra maquina Ubuntu Server per posar a prova el ``DNSSEC``. L'engegue
 
 <center>
     <img src="Photos/dnssec01.png"\>
-</center>
-
-> **Nota**: *per aquesta practica no haurem de cambiar la ip desde cap fitxer de configuració. Com es una prova inserta un ip temporal per practica, cada cop que engeguem la maquina haurem d'insertar l'ip una altra vegada.*
+</center><br>
 
 La nostra maquina tindra dues interficies: un en al bridge y l'altre a una xarxa interna.
 
-En aquesta practica utilitzarem l'inteficie ``enp0s8``, la que esta connectada a la xarxa interna. Per ficar l'IP primer hem de activar l'interficie i ja ficar l'IP.
+En aquesta practica utilitzarem l'inteficie ``enp0s8``, la que esta connectada a la xarxa interna. Tenim que activar-la abans de ficar la seva IP.
 ```
 sudo ip link set enp0s8 up
+```
+
+---
+> **Nota**: *en cas de que estiguem fent un practica, no haurem de cambiar l'IP desde cap fitxer de configuració. Com es una prova insertarem una ip temporal per practica, i cada cop que engeguem la maquina haurem d'insertar l'ip una altra vegada.*
+
+Per ficar l'IP, amb les següents comandes:
+```
 sudo ip address add 192.167.3.1/24 dev enp0s8
 ip a show enp0s8
 ```
@@ -68,6 +73,31 @@ ip a show enp0s8
     <img src="Photos/dnssec02.png"\>
 </center>
 
+---
+
+> **Nota**: *en cas de que estiguem modificant la maquina , haurem de canviar l'IP des dels fitxer de configuració del networking. Aquesta maquina Ubuntu te fitxer de configuracio diferents a les que estic mes familiaritzat. Aixo es lo que trobat.*
+
+Dins de ``/etc/netplan``, editem el fitxer de configuració ``00-installer-config.yaml`` i afegim les següents linies:
+```yaml
+network:
+    ethernets:
+        enp0s8:
+            dhcp4: no
+            addresses: 
+            - 198.168.3.1/24
+```
+
+Sortim del fitxer i salvem la configuracio amb el comand ``netplan``:
+```
+sudo netplan try
+```
+
+Podem comprobar el cambi d'IP amb:
+```
+ip a show enp0s8
+```
+
+---
 ---
 
 Dins de la maquina Ubuntu, instal·lem el ``bind9``:
