@@ -24,7 +24,7 @@
 
 # Que es el DNS?
 
-El sistema de noms de domini (DNS) és l'agenda telefònica d'Internet. 
+El sistema de noms de domini (DNS) és l'agenda telefònica d'Internet. Permet associar noms de domini amb direccions IP per facilitar en gran mesura l'accés als hosts de la xarxa.
 
 Els humans accedeixen a la informació en línia mitjançant noms de domini , com ara nytimes.com o espn.com. 
 
@@ -60,7 +60,7 @@ En una cerca DNS típica (quan no hi ha __memòria cau__ en joc), aquests quatre
 
 ## Resolver de DNS Recursiu
 
-1. __DNS Recursor__ : És com un __bibliotecari__ a la qual se li demana que busqui un llibre determinar a la biblioteca. El __recurs DNS__ és un __servidor__ dissenyat per rebre consultes de les màquines client mitjançant aplicacions com ara navegadors __web__. Normalment, el recurs és responsable de fer __peticions__ addicionals per satisfer la __consulta DNS del client__.
+1. __DNS Recursor (Servidor DNS Recursiu)__ : És com un __bibliotecari__ a la qual se li demana que busqui un llibre determinar a la biblioteca. El __recurs DNS__ és un __servidor__ dissenyat per rebre consultes de les màquines client mitjançant aplicacions com ara navegadors __web__. Normalment, el recurs és responsable de fer __peticions__ addicionals per satisfer la __consulta DNS del client__.
 
 És la primera parada d'una consulta DNS. 
 
@@ -284,16 +284,6 @@ DNSSEC
 
 + RRSIG : el "registre de recursos de signatura" emmagatzema signatures digitals utilitzades per autenticar registres de conformitat amb el DNSSEC.
 
-sEGUIR AQUI: 
-https://elpuig.xeill.net/Members/vcarceler/c1/didactica/apuntes/ud4/na8
-https://aws.amazon.com/es/route53/what-is-dns/
-https://moodle.escoladeltreball.org/mod/quiz/review.php?attempt=82234&cmid=132610
-https://moodle.escoladeltreball.org/mod/assign/view.php?id=128321
-
-https://moodle.escoladeltreball.org/mod/assign/view.php?id=128321
-https://moodle.escoladeltreball.org/mod/quiz/review.php?attempt=82234&cmid=132610
-https://elpuig.xeill.net/Members/vcarceler/c1/didactica/apuntes/ud4/na8
-https://aws.amazon.com/es/route53/what-is-dns/
 
 # Que es un DNS recursiu?
 
@@ -379,6 +369,170 @@ Si es tracta d'un nom de domini i un solucionador de DNS famosos, aquest atac po
 En una consulta de DNS iterativa, el client pide directament la resposta a cada servidor DNS. 
 
 Inclós si un atacant és capaç d'enviar una resposta falsificada a la consulta, només afectarà a un únic client, el que no mereixi el temps de l'atacant.
+
+# Altres conceptes de DNS
+
+## El servidor DNS Autoritatiu
+
+### Instal·lació
+
+S'instal·la amb la comanda `apt-get install bind9`, el fitxer de configuració es troba a `/etc/bind`.
+
+```
+
+```
+
+### Configuració de CryptoSEC
+
+El fitxer `/etc/bind/named.conf.options`.
+
+```
+
+```
+
+Conté:
+
+
+1. La declaració del directori on es guardaran els arxius de zona: /var/cache/bind
+
+2. La declaració, per defecte desactivada, dels servidors de reenviament: secció forwarders {...}
+
+Si no s'utilitzen forwarders, el servidor DNS anirà als servidors arrel per iniciar les resolucions de les consultes que no estiguin en memòria cau ni a cap de les seves zones. Quan s'utilitzen servidors de reenviament es consultarà aquests servidors. 
+
+El fitxer `/etc/bind/named.conf.local`.
+
+```
+
+```
+
+Cada zona (directa o inversa) tindrà:
+
+1. La declaració amb la directiva zoneon s'indica el domini o l'adreça de xarxa a les zones inverses.
+
+2. Una directiva typeindicant si és una zona mestra (escrita per l'administrador) o esclava (descarregada automàticament d'un servidor mestre).
+
+3. Una directiva fileindicant el fitxer de respatller (que es trobarà a /var/cache/bind)
+
+#### Arxiu de dades per a una zona directa
+
+Cada zona necessita un fitxer de dades on desar els registres de la zona. Per a una zona directa com `cryptosec.net` el fitxer de zona pot ser `/etc/bind/db.cryptosec.net`  i contenir: 
+
+```
+$ttl 38400
+ @ PROXY IN SOA mail.cryptosec.net.  (
+                         1;  Serial
+                         10800;  Actualització
+                         3600;  Torna-ho a provar
+                         604800;  Caduca
+                         38400;  TTL mínim 
+)
+
+ @ Proxy IN NS
+ delegació EN A 192.168.10.10 
+```
+
+En aquest arxiu de zona cal notar:
+
+* El caràcter @equival al domini que estigui definint acabat en punt. Aquí `cryptosec.net.`
+    
+* El camp `mail.cryptosec.net.` correspon al correu de contacte per indicar errors a la zona i s'interpreta com `cryptosec.net.`
+    
+* És important incrementar el valor Serial cada cop que es fa una modificació.
+
+
+```
+
+```
+
+https://elpuig.xeill.net/Members/vcarceler/c1/didactica/apuntes/ud4/na8
+
+
+## El client DNS
+
+És el component que delega una consulta o consulta directament a servidors DNS, en la cerca d'un registre DNS a la qual vol accedir.
+
+Utilitza el fitxer /etc/resolv.conf com a configuració del _resolver_.
+
+La seva funció és millorar el rendiment de les resolucions mitjançant memòria cau. Quan una resolució provoca una fallada de memòria cau s'utilitzarà el DNS extern del qual probablement s'haurà obtingut la IP mitjançant una concessió DHCP. 
+
+![](https://603168-1953132-raikfcquaxqncofqfm.stackpathdns.com/wp-content/images/dns_process.jpg)
+
+## Resolució de noms al client
+
+Quan un client vol comunicarśe amb una altra de la que només conéix el FQDN (_Fully Qualified Domain Name_ = www.cryptosec.net), primer seria obtenir l'adreça IP amb el nom de domini. Després fa el request HTTP per poder accedir-hi.
+
+Podem utilitzar el fitxer __/etc/hosts__ com a resolver local o be als servidors DNS establertes en __/etc/resolv.conf__
+
+### Exemple de /etc/hosts
+
+```
+127.0.0.1 localhost 
+82.151.203.129 iespuigcastellar.xeill.net 
+145.97.39.155 es.wikipedia.org 
+192.168.3.1 cryptosec.net
+```
+
+### Exemple de /etc/resolv.conf
+
+Quan s'utilitza el client DNS per obtenir l'adreça IP d'un nom de domini, cal examinar el fitxer de configuració __/etc/resolv.conf__ per obtenir: 
+
+* La llista de servidors DNS a utilitzar (un per línia precedit per la directiva nameserver)
+
+* El domini a utilitzar per a les consultes que no són un FQDN indicat per la directiva search
+
+```
+# Recerca de cryptosec.net 
+nameserver 192.168.3.1
+nameserver 8.8.8.8
+search cryptosec.net
+```
+
+# El servei systemd-resolved i la comanda resolvectl
+
+La majoria de les distribucions actuals de GNU/Linux utilitzen systemdaixí que solen executar el servei systemd-resolvedcom a stub DNS local de la màquina. L'avantatge dutilitzar systemd-resolvedés que les aplicacions trobaran un millor rendiment gràcies a la seva memòria cau. 
+
+El fitxer __/etc/resolv.conf__ pot ser:
+
+```
+usuari@laika:~$ cat /etc/resolv.conf  
+ # Aquest fitxer està gestionat per man:systemd-resolved(8). No editeu. 
+ # 
+ # Aquest és un fitxer resolv.conf dinàmic per connectar clients locals a 
+ # Resolució interna de talons DNS de systemd resolt. Aquest fitxer ho enumera tots 
+ # dominis de cerca configurats. 
+ # 
+ # Executeu "resolvectl status" per veure detalls sobre els servidors DNS d'enllaç ascendent 
+ # en ús actualment. 
+ # 
+ # Els programes de tercers no han d'accedir directament a aquest fitxer, sinó només a través de 
+ # enllaç simbòlic a /etc/resolv.conf. Per gestionar man:resolv.conf(5) d'una manera diferent, 
+ # substituïu aquest enllaç simbòlic per un fitxer estàtic o un enllaç simbòlic diferent. 
+ # 
+ # Vegeu man:systemd-resolved.service(8) per obtenir detalls sobre els modes admesos de 
+ # operació per a /etc/resolv.conf. 
+
+ servidor de noms 127.0.0.53 
+ opcions edns0 
+ usuari@laika:~$ 
+```
+
+Aquí es pot observar:
+
++    El comentari adverteix que és un fitxer generat per systemd-resolved.
+
++    Com a servidor DNS s'ha configurat l'adreça 127.0.0.53que només és accessible des del propi equip.
+
+L'ordre `resolvectl` permet:
+
++    Mostrar informació sobre la configuració: resolvectl status
+
++    Mostra estadístiques sobre els encerts de memòria cau: resolvectl statistics
+
++    Mostra els DNS utilitzats: resolvectl dns
+
++    Fer resolucions DNS: resolvectl query ru.wikipedia.org
+
+
 
 # Com donar suport a consultes de DNS ràpides i segures
 

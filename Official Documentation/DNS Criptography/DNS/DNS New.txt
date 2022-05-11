@@ -1,0 +1,134 @@
+# 11.05.22 
+
+# New DNS
+
+
+
+
+
+
+
+
+
+Cristian Fernando Condolo Jimenez
+M08 ASIX 2021-2022
+DNS Practica
+
+===== cliente: 192.168.122.197/24
+----- /etc/resolv.conf
+nameserver 192.168.122.133
+
+----- /etc/bind/named.conf.options
+options {
+	directory "/var/cache/bind";
+	dnssec-validation auto;
+};
+
+===== forwarding: 192.168.122.133/24
+----- /etc/bind/named.conf.options
+options {	
+	directory "/var/cache/bind";
+	
+	querylog yes;
+		
+	dnssec-validation no;
+	
+	allow-query {
+		any;
+	};
+	
+	forwarders {
+		192.168.122.227;
+	};
+};
+
+===== recursiva: 192.168.122.227/24
+----- /etc/bind/named.conf.options
+options {	
+	directory "/var/cache/bind";
+	
+	querylog yes;	
+	
+	dnssec-validation auto;
+};
+
+----- /etc/bind/named.conf.default-zones
+zone "edt" {
+	type forward {
+		192.168.122.198;
+	};
+};
+
+===== primary edt: 192.168.122.198/24
+----- /etc/bind/named.conf.options
+options {
+	querylog yes;
+	
+	directory "/var/cache/bind";
+		
+	dnssec-validation yes;
+	
+	recursion no;
+};
+
+----- /etc/bind/named.conf.default-zones
+zone "edt" {
+	type master;
+	file "/etc/bind/db.edt"
+};
+
+----- /etc/bind/db.edt
+edt.	SOA dns.edt. yo.gmail.com. 1 4 4 4 4
+edt.	NS dns.edt.
+dns.edt.	A 192.468.122.198
+
+asix.edt.	NS dns1.asix.edt.
+dns1.asix.edt.	A 192.168.122.47
+
+asix.edt.	NS dns2.asix.edt.
+dns2.asix.edt.	A 192.168.122.74
+
+===== primary asix.edt: 192.168.122.47/24
+----- /etc/bind/named.conf.options
+options {
+	directory "/var/cache/bind";
+	
+	querylog yes;
+	
+	dnssec-validation yes;
+	
+	recursion no;
+};
+
+----- /etc/bind/named.conf.default-zones
+zone "edt" {
+	type primary;
+	file "/etc/bind/db.asix.edt";
+};
+
+----- /etc/bind/db.asix.edt
+asix.ed.t	SOA dns.asix.edt. yo.gmail.com. (
+		20211013;
+		10000;
+		7200;
+		60480;
+		86400;
+)
+asix.ed.t	NS dns.asix.edt.
+dns.asix.ed.t 	A 192.168.122.47
+
+$GENERATE 1-100 alu$	A 192.168.155.$
+
+===== secondary asix.edt: 192.168.122.74/24
+----- /etc/bind/named.conf.options
+options {
+	directory "/var/cache/bind";
+	dnssec-validation yes;
+};
+
+----- /etc/bind/named.conf.default-zones
+zone "asix.edt" {
+	type secondary;
+	masters {192.168.122.47}
+	file "/var/lib/bind/db.asix.edt"
+};
