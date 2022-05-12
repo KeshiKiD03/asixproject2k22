@@ -84,7 +84,7 @@ network:
         enp0s8:
             dhcp4: no
             addresses: 
-            - 198.168.3.1/24
+            - 192.168.3.1/24
 ```
 
 Sortim del fitxer i salvem la configuracio amb el comand ``netplan``:
