@@ -43,6 +43,9 @@ network:
       dhcp4: no
       addresses:
       - 192.168.3.1/24
+      nameservers:
+        addresses: [192.168.3.1]
+        search: [cryptosec.net]
 
 COMANDOS:
 
@@ -62,7 +65,11 @@ options edns0 trust-ad
 search informatica.escoladeltreball.org
 
 
+o
 
+nameserver 127.0.0.53
+options edns0 trust-ad
+search cryptosec.net
 
 ##############################################
 IPTABLES
@@ -99,8 +106,8 @@ iptables -A INPUT  -i lo -j ACCEPT
 iptables -A OUTPUT -o lo -j ACCEPT
 
 # obrir la nostra ip
-iptables -A INPUT -s 10.200.243.175 -j ACCEPT
-iptables -A OUTPUT -d 10.200.243.175 -j ACCEPT
+iptables -A INPUT -s [IP NOSTRA] -j ACCEPT
+iptables -A OUTPUT -d [IP NOSTRA] -j ACCEPT
 
 # Fer NAT per les xarxes internes:
 # - 192.168.3.0/24
@@ -144,7 +151,7 @@ www	IN	CNAME	cryptosec.net.
 
 
 ##############################################
-DNS BIND9 (DNSSEC)
+DNS BIND9 (DNSSEC) # INCOMPLETO - REVISAR CRISTIAN
 ##############################################
 
 
@@ -189,10 +196,76 @@ sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k /etc/bind/keys/ksk/Kcry
 Se crea db.cryptosec.net.signed
 
 
+## /etc/bind/named.conf.local
+
+
+zone "cryptosec.net" {
+        type master;
+        file "/etc/bind/db.cryptosec.net.signed";
+};
+
+
+COMANDOS:
+
+systemctl restart bind9
+
+dig cryptosec.net +dnssec
+
+host cryptosec.net
+
+RESOLVECTL STATUS
+
 
 ##############################################
 DHCP
 ##############################################
+
+
+* apt-get update
+
+* apt-get install isc-dhcp-server
+
+* sudo nano /etc/default/isc-dhcp-server
+
+sudo nano /etc/default/isc-dhcp-server
+
+INTERFACESv4="enp0s8"
+INTERFACESv6=""
+
+
+sudo nano /etc/dhcp/dhcpd.conf
+````
+
+option domain-name "cryptosec.net";
+option domain-name-servers 192.168.3.250;
+
+default-lease-time 60000;
+max-lease-time 72000;
+
+# The ddns-updates-style parameter controls whether or not the server will
+# attempt to do a DNS update when a lease is confirmed. We default to the
+# behavior of the version 2 packages ('none', since DHCP v2 didn't
+# have support for DDNS.)
+ddns-update-style none;
+
+# If this DHCP server is the official DHCP server for the local
+# network, the authoritative directive should be uncommented.
+authoritative;
+
+subnet 192.168.3.0 netmask 255.255.255.0 {
+        option routers 192.168.3.1;
+        option subnet-mask 255.255.255.0;
+        range dynamic-bootp 192.168.3.100 192.168.3.200;
+#       option domain-nameservers 192.168.3.250;
+#       option domain-name "cryptosec.net";
+}
+````
+
+REINICIAR sudo systemctl restart isc-dhcp-server
+
+EN EL CLIENTE DEBIAN
+
+dhclient -v
 
 
 
@@ -233,6 +306,11 @@ network:
       dhcp4: no
       addresses:
       - 192.168.3.250/24
+      gateway4: 192.168.3.1
+      nameservers:
+        addresses: [192.168.3.1]
+        search: [cryptosec.net]
+
 
 
 
@@ -240,10 +318,9 @@ network:
 /etc/resolv.conf (manual)
 ##############################################
 
-No hace falta poner o poner 
-
-nameserver 192.168.3.1
-search cryptosec.net 
+nameserver 127.0.0.53
+options edns0 trust-ad
+search cryptosec.net
 
 
 ##############################################
@@ -330,6 +407,39 @@ NSLOOKUP CRYPTOSEC.NET
 DIG CRYPTOSEC.NET
 
 HOST CRYPTOSEC.NET
+
+
+
+
+RESUMEN
+
+Tanto SOA - Recursion tienen que tener resolv.conf nameserver 192.168.3.1 MANUALMENTE, TIENEN LA IP MANUALMENTE EN SU ENP0S8.
+
+DEBIAN lo tendrá automáticamente del DHCP.
+
+MIENTRAS QUE DEBIAN TENDRÁ DHCP EN SU ENP0S3
+
+
+
+
+
+FALTA REVISAR DNSSEC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
