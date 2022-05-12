@@ -201,11 +201,26 @@ Es farà un exemple de DNS sense Sec i un DNSSEC.
 Aaron retoca i passa algunes coses a net en el GIT del Projecte. Canvia l'objectiu entre altres coses.
 
 ---
-## 
+## 12/05/2022
 
-()
----
+(**Aaron & Cristian** = 09:00 - 12:00 )
 
+Aaron i Cristian fan el muntatge de les peçes del projecte configurant DNS amb el altre servidor DNS Forwarder i el Debian Minimal com a client.
+
+
+(**Aaron** = 15:00 - 19:00 ; 20:00 - 00:00 )
+
+Aaron fa l'arquitectura de CryptoSEC implementant el DHCP per a que el client DEBIAN de la nostra Xarxa Interna tigui una IP DINAMICA assignada per el SOA.
+
+Fa proves amb el Kali Linux muntant tot lo que hem recapitulat fins ara, provant amb el SET el SPOOFING i Clonatge de pàgines WEB per poder fer la suplantació.
+
+Automatització mitjançant IPTABLEs per a la gestió de SSH a KALI o al RECURSOR.
+
+Implementació de DHCP amb DNS resolv automàtic per als clients de Cryptosec.
+
+Més proves i passar a net la documentació.
+
+Aaron
 ---
 ## 
 

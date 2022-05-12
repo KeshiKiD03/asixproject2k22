@@ -29,7 +29,6 @@ NETPLAN (manual)
 ##############################################
 
 /etc/netplan/00-installer-config.yaml
-
 # This is the network config written by 'subiquity'
 network:
   ethernets:
@@ -51,7 +50,7 @@ COMANDOS:
 
 netplan try
 
-netplan apply
+netplan apply (try y apply reinicia también)
 
 ##############################################
 /etc/resolv.conf
@@ -80,10 +79,9 @@ vim natCryptosec.sh
 Tenemos que cambiar 10.200.243.211 por nuestra IP
 
 ```
-# Opcional FER NAT a l'EXTERIOR 
-  
+# Opcional FER NAT a l'EXTERIOR
 #! /bin/bash
-# @edt ASIX M11-SAD Curs 2018-2019
+# @aaron & @cristian ASIX PROJECTE2K22
 # iptables
 
 echo 1 > /proc/sys/net/ipv4/ip_forward
@@ -106,13 +104,20 @@ iptables -A INPUT  -i lo -j ACCEPT
 iptables -A OUTPUT -o lo -j ACCEPT
 
 # obrir la nostra ip
-iptables -A INPUT -s [IP NOSTRA] -j ACCEPT
-iptables -A OUTPUT -d [IP NOSTRA] -j ACCEPT
+iptables -A INPUT -s 192.168.0.29 -j ACCEPT
+iptables -A OUTPUT -d 192.168.0.29 -j ACCEPT
+
+# PORT FORWARD A SSH DESDE FORA a RECURSIVE
+iptables -t nat -A PREROUTING -i enp0s3 -p tcp --dport 5000 -j DNAT --to 192.168.3.250:22
+
+# PORT FORWARD A SSH DESDE FORA a KALI LINUX
+iptables -t nat -A PREROUTING -i enp0s3 -p tcp --dport 5002 -j DNAT --to 192.168.3.252:22
 
 # Fer NAT per les xarxes internes:
 # - 192.168.3.0/24
-
 iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -o enp0s3 -j MASQUERADE
+
+iptables -L -t nat
 ```
 
 ----------------
@@ -149,6 +154,21 @@ $INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+008+41846.key"
 www	IN	CNAME	cryptosec.net.
 
 
+COMANDOS:
+
+systemctl restart bind9
+
+journalctl -u named -f &
+
+namedcheckzone cryptosec.net db.cryptosec.net
+
+namedcheckconf db.cryptosec.net
+
+resolvectl query cryptosec.net
+
+host cryptosec.net
+
+nslookup cryptosec.net
 
 ##############################################
 DNS BIND9 (DNSSEC) # INCOMPLETO - REVISAR CRISTIAN
@@ -161,10 +181,24 @@ DNS BIND9 (DNSSEC) # INCOMPLETO - REVISAR CRISTIAN
 	dnssec-validation auto;
 
 
-
+VERIFICA BIEN ESTO CRISTIAN!
 
 
 COMANDOS:
+
+systemctl restart bind9
+
+journalctl -u named -f &
+
+namedcheckzone cryptosec.net db.cryptosec.net
+
+namedcheckconf db.cryptosec.net
+
+resolvectl query cryptosec.net
+
+host cryptosec.net
+
+nslookup cryptosec.net
 
 dig @localhost www.apnic.net --> NOERROR AD
 
@@ -237,7 +271,7 @@ sudo nano /etc/dhcp/dhcpd.conf
 ````
 
 option domain-name "cryptosec.net";
-option domain-name-servers 192.168.3.250;
+option domain-name-servers 192.168.3.250, 8.8.8.8;
 
 default-lease-time 60000;
 max-lease-time 72000;
@@ -266,6 +300,8 @@ REINICIAR sudo systemctl restart isc-dhcp-server
 EN EL CLIENTE DEBIAN
 
 dhclient -v
+
+(-v debug para ver si te da IP)
 
 
 
@@ -308,7 +344,7 @@ network:
       - 192.168.3.250/24
       gateway4: 192.168.3.1
       nameservers:
-        addresses: [192.168.3.1]
+        addresses: [192.168.3.1,8.8.8.8]
         search: [cryptosec.net]
 
 
@@ -393,12 +429,84 @@ dns-nameservers 192.168.3.250 8.8.8.8
 /etc/resolv.conf
 
 nameserver 192.168.3.250
-search cryptosec.net 
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search cryptosec.net
 
 
 COMANDOS:
 
 SYSTEMCTL RESTART NETWORKING
+
+SYSTEMCTL RESTART SYSTEMD-RESOLVED
+
+
+IP A
+
+NSLOOKUP CRYPTOSEC.NET
+
+DIG CRYPTOSEC.NET
+
+HOST CRYPTOSEC.NET
+
+
+
+
+RESUMEN
+
+Tanto SOA - Recursion tienen que tener resolv.conf nameserver 192.168.3.1 MANUALMENTE, TIENEN LA IP MANUALMENTE EN SU ENP0S8.
+
+DEBIAN lo tendrá automáticamente del DHCP.
+
+MIENTRAS QUE DEBIAN TENDRÁ DHCP EN SU ENP0S3
+
+
+
+
+
+FALTA REVISAR DNSSEC
+
+
+
+
+
+
+
+################################################################
+
+
+##############################################
+KALI LINUX
+##############################################
+
+/etc/network/interfaces
+
+auto eth0
+iface eth0 inet static
+address 192.168.3.252
+netmask 255.255.255.0
+network 192.168.3.0
+gateway 192.168.3.1
+dns-search cryptosec.net
+dns-nameservers 192.168.3.250 8.8.8.8
+
+
+
+/etc/resolv.conf
+
+nameserver 192.168.3.250
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search cryptosec.net
+
+COMANDOS:
+
+SYSTEMCTL RESTART NETWORKING
+
+SYSTEMCTL RESTART SYSTEMD-RESOLVED
+
 
 IP A
 
@@ -436,6 +544,14 @@ FALTA REVISAR DNSSEC
 
 
 
+
+
+SSH DESDE FUERA
+
+ssh -p 5000 cryptosec@192.168.0.29 --> Vas a recursiva
+
+
+ssh -p 5002 anonymous@192.168.0.29 --> Vas a KALI
 
 
 
