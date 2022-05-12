@@ -1,8 +1,335 @@
-# 11.05.22 
-
-# New DNS
+# 12.05.22
 
 
+
+
+# New DNS + DHCP
+
+----------------
+
+# Sistema DNS "cryptosec.net"
+## VirtualBox
+
+##############################################
+Ubuntu Server 20.04 SOA Authoritative "cryptosec.net"
+##############################################
+
+
+INTERFACES NETPLAN O NMCLI:
+
+x1 BRIDGE "enp0s3" --> DHCP EDT
+
+x1 XARXA INT "enp0s8" (cryptosec.net = 192.168.3.0/24) --> 192.168.3.1  
+
+----------------
+
+
+##############################################
+NETPLAN (manual)
+##############################################
+
+/etc/netplan/00-installer-config.yaml
+
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0s3:
+      dhcp4: true
+  version: 2
+
+network:
+  ethernets:
+    enp0s8:
+      dhcp4: no
+      addresses:
+      - 192.168.3.1/24
+
+COMANDOS:
+
+netplan try
+
+netplan apply
+
+##############################################
+/etc/resolv.conf
+##############################################
+
+nameserver 192.168.3.1
+search cryptosec.net
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search informatica.escoladeltreball.org
+
+
+
+
+##############################################
+IPTABLES
+##############################################
+
+vim natCryptosec.sh
+
+Tenemos que cambiar 10.200.243.211 por nuestra IP
+
+```
+# Opcional FER NAT a l'EXTERIOR 
+  
+#! /bin/bash
+# @edt ASIX M11-SAD Curs 2018-2019
+# iptables
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Regles flush
+iptables -F
+iptables -X
+iptables -Z
+iptables -t nat -F
+
+# Polítiques per defecte:
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -t nat -P PREROUTING ACCEPT
+iptables -t nat -P POSTROUTING ACCEPT
+
+# obrir el localhost
+iptables -A INPUT  -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+
+# obrir la nostra ip
+iptables -A INPUT -s 10.200.243.175 -j ACCEPT
+iptables -A OUTPUT -d 10.200.243.175 -j ACCEPT
+
+# Fer NAT per les xarxes internes:
+# - 192.168.3.0/24
+
+iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -o enp0s3 -j MASQUERADE
+```
+
+----------------
+
+##############################################
+DNS BIND9 (SIN DNSSEC)
+##############################################
+
+
+/etc/bind/named.conf.default-zones
+
+
+zone "cryptosec.net" {
+	type master;
+	file "/etc/bind/db.cryptosec.net";
+};
+
+
+
+/etc/bind/db.cryptosec.net
+
+$TTL	604800
+$INCLUDE "/etc/bind/keys/zsk/Kcryptosec.net.+008+16668.key"
+$INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+008+41846.key"
+@	IN	SOA	cryptosec.net. mail.cryptosec.net. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+
+@	IN	NS	cryptosec.net.
+@	IN	A	192.168.3.1
+www	IN	CNAME	cryptosec.net.
+
+
+
+##############################################
+DNS BIND9 (DNSSEC)
+##############################################
+
+
+/etc/bind/named.conf.options
+
+	dnssec-enable yes;
+	dnssec-validation auto;
+
+
+
+
+
+COMANDOS:
+
+dig @localhost www.apnic.net --> NOERROR AD
+
+
+sudo mkdir /etc/bind/keys/zsk
+
+sudo dnssec-keygen -K /etc/bind/keys/zsk -a RSASHA256 -b 1024 -n ZONE cryptosec.net
+
+sudo mkdir /etc/bind/keys/ksk
+
+sudo dnssec-keygen -K /etc/bind/keys/ksk -a RSASHA256 -b 2048 -f KSK -n ZONE cryptosec.net 
+
+
+
+
+
+## SIGNATURA MANUAL en db.cryptosec.net
+
+$INCLUDE "/etc/bind/keys/zsk/Kcryptosec.net.+008+16668.key"
+
+$INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+008+41846.key"
+
+
+## SIGNAR LA ZONA
+
+sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k /etc/bind/keys/ksk/Kcryptosec.net.+008+41846.key db.cryptosec.net /etc/bind/keys/Kcryptosec.net.+008+16668.key
+
+
+Se crea db.cryptosec.net.signed
+
+
+
+##############################################
+DHCP
+##############################################
+
+
+
+################################################################
+
+
+
+##############################################
+Ubuntu Server 20.04 Recursive FORWARDER "cryptosec.net"
+##############################################
+
+
+
+INTERFACES NETPLAN O NMCLI:
+
+x1 BRIDGE "enp0s3" --> DHCP EDT (Lo activamos si no funciona SSH , sino abrir IPTABLES para SSH)
+
+x1 XARXA INT "enp0s8" (cryptosec.net = 192.168.3.0/24) --> 192.168.3.250
+
+
+
+##############################################
+NETPLAN (manual)
+##############################################
+
+/etc/netplan/00-installer-config.yaml
+
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0s3:
+      dhcp4: true
+  version: 2
+
+network:
+  ethernets:
+    enp0s8:
+      dhcp4: no
+      addresses:
+      - 192.168.3.250/24
+
+
+
+##############################################
+/etc/resolv.conf (manual)
+##############################################
+
+No hace falta poner o poner 
+
+nameserver 192.168.3.1
+search cryptosec.net 
+
+
+##############################################
+DNS BIND9 (FORWARDER)
+##############################################
+
+
+/etc/bind/named.conf.default-zones
+
+
+zone "cryptosec.net" {
+        type forward;
+        forwarders { 192.168.3.1; };
+};
+
+
+
+
+/etc/bind/named.conf.options
+
+forwarders {
+	192.168.3.1;
+};
+
+        dnssec-validation no;
+        querylog yes;
+        recursion yes;
+
+
+
+
+
+COMANDOS:
+
+SYSTEMCTL RESTART BIND9
+
+JOURNALCTL -U NAMED -F &
+
+
+
+
+
+
+
+
+
+
+
+
+################################################################
+
+
+##############################################
+Debian Minimal 11
+##############################################
+
+/etc/network/interfaces
+
+auto enp0s3
+iface enp0s3 inet static
+address 192.168.3.2
+netmask 255.255.255.0
+network 192.168.3.0
+gateway 192.168.3.1
+dns-search cryptosec.net
+dns-nameservers 192.168.3.250 8.8.8.8
+
+
+
+/etc/resolv.conf
+
+nameserver 192.168.3.250
+search cryptosec.net 
+
+
+COMANDOS:
+
+SYSTEMCTL RESTART NETWORKING
+
+IP A
+
+NSLOOKUP CRYPTOSEC.NET
+
+DIG CRYPTOSEC.NET
+
+HOST CRYPTOSEC.NET
 
 
 
