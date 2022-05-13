@@ -4,6 +4,50 @@ KALI - ESTATICA IP Y DNS
 
 SOA - PORT FORWARDING SSH A KALI
 
+
+APACHE 2 - DOCUMENTAR SPOOFING
+
+WGET .. ETC IMPORT MANUAL O SITE CLONER
+
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es
+
+
+
+KALI
+
+SERVICES.SH
+
+#!/bin/bash
+systemctl start ssh
+systemctl restart systemd-resolved.service
+sudo cp resolv.conf /etc/resolv.conf
+
+
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.3.252
+netmask 255.255.255.0
+network 192.168.3.0
+gateway 192.168.3.1
+dns-nameservers 192.168.3.250 8.8.8.8
+dns-search cryptosec.net
+
+
+
+/etc/ettercap/etter.dns
+
+
+
+HOLA
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es
+
 VNC
 
 
