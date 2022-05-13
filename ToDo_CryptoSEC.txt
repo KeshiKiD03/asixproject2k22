@@ -13,6 +13,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-s
 
 
 
+dhclient -r --> Release
+
 KALI
 
 SERVICES.SH

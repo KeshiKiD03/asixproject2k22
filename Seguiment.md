@@ -222,11 +222,20 @@ Més proves i passar a net la documentació.
 
 Aaron
 ---
-## 
+## 13/05/2022
 
-()
----
+(**Aaron & Cristian** = 11:15 - 12:00 )
 
+Aaron i Cristian fan de nou l'esquema modificant coses de l'arquitectura
+
+
+(**Aaron** = 15:00 - 17:30)
+
+Aaron implanta un Apache2 amb una plantilla d'un formulari amb HTML i CSS per posar-ho a www.cryptosec.net, els habilita amb a2ensite. Tant HTTP 80 com HTTPS amb SSL 443.
+
+Amb KALI prova alguna pàgina de bancs. Funciona Banc Sabadell.
+
+Aaron
 ---
 ## 
 

