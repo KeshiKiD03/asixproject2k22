@@ -63,10 +63,6 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
 
 Tot això després de verificar que compleixen aspectes tant de la informàtica o concretament a la __ciberseguretat__ que un __auditor o defensor de ciberseguretat__ ha de conèixer: 
 
-+ El __control d'errors__: 
-
-    + És imprescincible detectar on ens hem equivocat per poder corregir l'error o idear altres plans i proseguir amb el projecte.
-
 + La __identificació__: 
 
     + És necessari identificar els processos i actius crítics d'alguna. 
@@ -79,7 +75,15 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
     
     + Cal assegurar-se que s'estableixin i administrin processos de gestió de riscos per garantir que s'identifiquin, avaluïn i administrin les amenaces internes i externes, cosa que s'ha de documentar degudament en registres de riscos.
 
-+ La __protecció__: Convé administrar l'accés als actius i la informació. La companyia ha de crear comptes únics per a cada empleat i assegurar-se que els usuaris només tinguin accés a la informació, els ordinadors i les aplicacions que necessiten per als seus treballs. Cal administrar i rastrejar estrictament l'accés físic als dispositius.
++ La __protecció__: 
+
+    + Convé administrar l'accés als actius i la informació. 
+    
+    + La companyia ha de crear comptes únics per a cada empleat i assegurar-se que els usuaris només tinguin accés a la informació, els ordinadors i les aplicacions que necessiten per als seus treballs. 
+    
+    + Cal administrar i rastrejar estrictament l'accés físic als dispositius.
+
+    + Realitzar còpies de seguretat periòdiques és útil. Una bona pràctica és mantenir un conjunt de dades de còpia de seguretat freqüent fora de línia per protegir contra el ransomware.
 
 + Els __backups__: És important assegurar la informació abans i després de que s'hagin provocat _"desastres informàtics"_. Una bona recuperació o _cleaning_ d'avant d'aquest escenari és clau per retomar una activitat d'una empresa.
 
@@ -205,4 +209,8 @@ Alguns exemples de:
 
 + Oferiment de tots els serveis als clients de WireGuard.
 
-https://www.lpi.org/our-certifications/exam-303-objectives 
+# Bibliografia
+
+- https://www.lpi.org/our-certifications/exam-303-objectives 
+- https://www.auditool.org/blog/auditoria-de-ti/8200-5-aspectos-de-ciberseguridad-que-todo-auditor-debe-conocer-para-evaluar-y-recomendar 
+- https://www.rosario3.com/ecos365/noticias/Cuales-son-los-aspectos-clave-en-ciberseguridad-20190722-0011.html 
