@@ -50,7 +50,7 @@ Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcion
 <br>
 <center>
 <div style="align: center; width: 50%">
-    <img src="./EsquemaFinal_Kali-1.PNG" />
+    <img src="./Photos/EsquemaFinal_Kali-1.PNG" />
 </div>
 </center>
 <br>
@@ -67,7 +67,7 @@ En la recerca d'informació de tota la documentació, independentment de les sev
 <br>
 <br>
 
-# Conceptes i aspectes generals __"mindset"__ del projecte
+# __Conceptes i aspectes generals _"mindset"_ del projecte__
 
 Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots els _serveis_ que utilitzarem, _segon_ un petit exemple de funcionament del servei en qüestió i finalment, l'assemblació al cos del projecte.
 
@@ -126,20 +126,37 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
 
     + S'han de reparar i restaurar els equips i les parts de la xarxa que van resultar afectats.
 
+<br>
+<center>
+<div style="align: center; width: 50%">
+    <img src="https://directortic.es/wp-content/uploads/2020/04/desaf%C3%ADos-de-ciberseguridad.jpg" />
+</div>
+</center>
+<br>
+
+
 
 <br>
 <br>
 <br>
 
-## Deployment
+## __Deployment__
 
-Hem decidit utilitzar __VirtualBox__ per al _deployment_ d'aquest projecte simplement amb la facilitat d'utilització, la compatibilitat tant de Linux, Windows o MAC i la versatilitat alhora de clonar, encendre, interactuar amb la virtualització de les màquines virtuals. 
+Hem decidit utilitzar __VirtualBox__ per al _deployment_ d'aquest projecte simplement amb la facilitat d'utilització, la compatibilitat tant de __Linux__, __Windows__ o __MAC__ i la versatilitat alhora de clonar, encendre, interactuar amb la virtualització de les màquines virtuals. 
 
+<br>
+<center>
+<div style="align: center; width: 50%">
+    <img src="./Photos/VirtualBox.PNG" />
+</div>
+</center>
+<br>
 
+A més de que tenim un control avançat alhora de _"toquetejar"_ l'emulador de VirtualBox tant a nivell de __hardware__ com a nivell de __software__.
 
-A més de que tenim un control avançat alhora de _"toquetejar"_ l'emulador de VirtualBox tant a nivell de hardware com a nivell de software.
+El servidor __"ForwardCryptosec"__ farà de router on hi tindrà 2 interfícies (__enp0s3__) i (__enp0s8__), la primera serà un __"bridge"__ i en la segona serà una __xarxa interna__ anomenada __"cryptosec"__ on hi tindràn la IP 192.168.3.0/24.
 
-El servidor __"SOACryptosec"__ farà de router on hi tindrà 2 interfícies (enp0s3) i (enp0s8), la primera serà un __"bridge"__ i en la segona serà una __xarxa interna__ anomenada __"cryptosec"__ on hi tindràn la IP 192.168.3.0/24.
+El servidor __"SOACryptosec"__ serà un servidor autoritari on hi tindrà la zona __"cryptosec.net"__ hi tindrà 2 interfícies (__enp0s3__) i (__enp0s8__), la primera serà un __"bridge"__ i en la segona serà una __xarxa interna__ anomenada __"cryptosec"__ on hi tindràn la IP 192.168.3.0/24.
 
 Tots els clients de la xarxa de __"cryptosec"__ han de passar per el router per poder navegar a l'exterior o fer peticions DNS (En aquest cas han de preguntar al __resolver__ __RecursorCryptosec__).
 
@@ -148,20 +165,18 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 <br>
 <center>
 <div style="align: center; width: 50%">
-    <img src="./EsquemaFinal_Kali-1.PNG" />
+    <img src="./Photos/EsquemaFinal_Kali-1.PNG" />
 </div>
 </center>
 <br>
 
-## Ciberseguretat
+## __Ciberseguretat: CryptoSEC__
 
 + L'__aïllament en la xarxa interna__: Mecanisme de seguretat que permetrà separar els programes en execució, per tal de mitigar errors del sistema o vulnerabilitats de software. Gracies a la nostra xarxa interna __"cryptosec"__.
 
-+ La __VPN__: Xifrar sempre la navegació de l'usuari, aïllar la xarxa habitual per una més segura. Accés mitjançant claus o certificats. Vetllar per la seguretat de la xarxa davant vulneravilitats o atacs maliciosos.
++ __Xifratge de dades__: Comunicació xifrada en tot moment a CryptoSEC. Els clients podràn fer resolucions al seu _resolver_ de forma segura utilitzant "__criptografía asimétrica__". D'aquesta forma l'atacant hacker no podrà dur a terme el seu atac __man in the middle__ amb __spoofing__.
 
-+ __Xifratge de dades__: Comunicació xifrada en tot moment a CryptoSEC. Mitjançant el servidor VPN, es crearà un túnel VPN on s'establirà "Claus de Sessió (Híbrids)" en la comunicació.
-
-+ __Protegirse davant la vulnerabilitat__: Davant d'un atac maliciós, d'una denegació de servei DDOS, d'un metaexploit, d'un phishing... etc. Hem de saber com actuar davant d'aquests escenaris. Millor prevenir que lamentar-nos! 
++ __Protegirse davant la vulnerabilitat__: Davant d'un atac maliciós, d'una denegació de servei DDOS, d'un metaexploit, d'un phishing, d' un spoofing... etc. Hem de saber com actuar davant d'aquests escenaris. Millor prevenir que lamentar-nos! 
 
 <br>
 
@@ -180,25 +195,21 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 
 # __Els objectius dels serveis de CryptoSEC__
 
-### Wireguard VPN
 
-+ __Aïllar__ la xarxa de CryptoSEC a una __VPN__ on es permetrà la navegació a l'exterior i l'accés a la __VPN__ sempre i quan siguin clients de CryptoSEC i tinguin accés a la nostra VPN amb Wireguard.
 
-+ Configurar i operar amb WireGuard server & clients.
-
-### Wazuh (Host Intrusion Detect)
+## __Wazuh (Host Intrusion Detect)__
 
 + Detectar i monitoritzar la infraestructura, les amenaçes i l'intent d'intrusió. 
 
 + També detectarà anomalies del sistema o aplicacions mal configurades o accions d'usuari no autoritzats.
 
-### OpenSSL
+### __OpenSSL__
 
-+ Asseguració de la connexió mitjançant la __criptografía__. Utilitzant TLS com a protocol de _transport_ i _SSL_
++ Asseguració de la connexió mitjançant la __criptografía__. Utilitzant TLS com a protocol de _transport_ i _SSL_.
 
-### DNS Criptogràfic
+### __DNS + DNSSEC (Asymmetric Cryptography)__
 
-+ Implementació de BIND9.7
++ Implementació de BIND9.
 
 + Entendre conceptes de DNS, zones i registre de recursos.
 
@@ -217,13 +228,25 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 + TSIG per a una comunicació segura amb BIND.
 
 
-### Let's Encrypt ACME - Certbot
+### __Let's Encrypt ACME - Certbot HTTPS__
 
-### Encrypted File Systems
+https://letsencrypt.org/es/how-it-works/
+https://datatracker.ietf.org/doc/html/rfc2986
+https://computingforgeeks.com/easiest-way-install-letsencrypt-linux/
 
-### SSH
 
-### Vulnerabilitats
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04-es
+
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04-es
+https://geekflare.com/es/apache-with-lets-encrypt-cert/
+
+¡UNDER CONSTRUCTION!
+
+### __Encrypted File Systems__
+
+¡UNDER CONSTRUCTION!
+
+### __Vulnerabilitats__
 
 Alguns exemples de:
 
@@ -245,13 +268,7 @@ Alguns exemples de:
 
 ... entre altres
 
-### Deploymant xarxa CryptoSEC via VirtualBOX + Clients dins de la xarxa CryptoSEC (VBox Clients) + Clients Wireguard (VBox Clients) i un de Maliciós
 
-+ Deployment de tot l'assemblatge a Virtual Box.
-
-+ Verificació del funcionament.
-
-+ Oferiment de tots els serveis als clients de WireGuard.
 
 # Bibliografia
 

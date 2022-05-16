@@ -1,3 +1,30 @@
+Links interesantes
+
+Wazuh 
+
+https://documentation.wazuh.com/current/user-manual/overview.html
+
+
+https://www.varonis.com/blog/dns-cache-poisoning -- CACHE POISOONING
+
+https://www.dominios.es/es/informacion-de-interes/noticias/protocolo-de-seguridad-dnssec-en-la-gestion-de-los-dominios-es --> DNSSEC
+
+
+### __Let's Encrypt ACME - Certbot HTTPS__
+
+https://letsencrypt.org/es/how-it-works/
+https://datatracker.ietf.org/doc/html/rfc2986
+https://computingforgeeks.com/easiest-way-install-letsencrypt-linux/
+
+
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04-es
+
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04-es
+https://geekflare.com/es/apache-with-lets-encrypt-cert/
+
+
+## OTHER STUFF
+
 CRYPTOSEC
 
 Kali se cuela en el servidor SOA, crackea la contraseña para poder entrar por SSH y entra para poder hacer cosas maliciosas.
