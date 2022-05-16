@@ -235,12 +235,26 @@ Aaron implanta un Apache2 amb una plantilla d'un formulari amb HTML i CSS per po
 
 Amb KALI prova alguna pàgina de bancs. Funciona Banc Sabadell.
 
-Aaron
----
-## 
+(**Aaron** = 19:20 - 00:30)
 
-()
+Aaron segueix fent proves amb el Kali i fent una demo a Cristian, seguim construint DNSSEC.
 ---
+## 16/05/2022
+
+(**Aaron & Cristian** = 08:00 - 13:00 )
+
+Aaron parla amb el Gerard i modifica tot l'arquitectura de CryptoSEC. L'atacant Kali provindrà de la CLASSE.
+
+Tindrem un Forwarder-Recursiu que serà un DNS Forwarder a un SOA. El soa tindrà una zona coneguda com DNS Primary un SOA "cryptosec.net". S'allotjarà un Web Server Apache2 que tindrà una pàgina d'exemple.
+
+Seguint fent l'assemblatge.
+
+
+(**Aaron i Cristian** = 16:00 - 20:00)
+
+Demo i terminar coses pendents. Temes d'atacs, DNSSEC, crackets (brute force), ssltrip ... etc.
+
+S'ha de terminar de documentar i passar a net.
 
 ---
 ## 

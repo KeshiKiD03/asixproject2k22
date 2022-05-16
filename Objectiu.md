@@ -16,15 +16,15 @@
 
 # __Objectius "Projecte ASIX - Ciberseguretat:__ _Careful where you step_ 🕵️ 🔎"
 
-L'objectiu principal d'aquest projecte de Ciberseguretat, és la creació d'una empresa de __"Ciberseguretat"__ anomenamada _"CryptoSEC"_. Aquesta empresa implementarà una serie de serveis de seguretat i prevenció davant d'atacs maliciosos que tindràn la finalitat de tumbar l'empresa i obtenir informació delicada. Aaron i Cristian, son els caps d'aquesta empresa i portaràn a terme aquest magnífic repte de protegir-se davant de _hackers_ com les de la Organització __"Anonymous"__, __" The Shadow Brokers"__, __"Elliott Gunton"__... entre altres.
+L'objectiu principal d'aquest projecte de Ciberseguretat, és la creació d'una empresa de __"Ciberseguretat"__ anomenamada _"CryptoSEC"_. Aquesta empresa implementarà una serie de serveis de __seguretat__ i __prevenció__ davant d'atacs maliciosos que tindràn la finalitat de _comprometre_ la empresa i obtenir informació delicada i confidencial. Aaron i Cristian, son els caps d'aquesta empresa i portaràn a terme aquest magnífic repte de protegir-se davant de _hackers_ com les de la Organització __"Anonymous"__, __" The Shadow Brokers"__, __"Elliott Gunton"__... entre altres.
 
-La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar intrusos en la xarxa de __"CryptoSEC"__, entre altres eines de prevenció i detecció. 
+La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar intrusos (__Wazuh__) en la xarxa de __"CryptoSEC"__, entre altres eines de prevenció i detecció. 
 
 ## __Arquitectura CryptoSEC__
 
-CryptoSEC.NET és una xarxa interna local en algun lloc remot del planeta on hi treballen els millors tècnics en __ciberseguretat__, però hi ha un __"intrús"__ que tindrà un _host maliciós_ que intentarà fer la vida impossible als altres clients.
+__CryptoSEC.NET__ és una xarxa interna local en algun lloc remot del planeta on hi treballen els millors tècnics en __ciberseguretat__, però hi hà un __"intrús"__ que tindrà un _host maliciós_ que intentarà fer la vida impossible als altres clients.
 
-Aquest host maliciós serà un Kali Linux on hi dispondrà d'eines de seguretat, _pentesting_ i accés a la xarxa. Aquest host maliciós farà atacs com "ARP + DNS Spoofing" concretament l'enverinament de la caché del primer servidor de DNS que tenim que serà un __DNS Recursor__.
+Aquest host maliciós serà un Kali Linux on hi dispondrà d'eines de seguretat, de _"hackeig"_ o _"crackeig"_, _pentesting_ i accés a la xarxa. Aquest host maliciós farà atacs com "ARP + DNS Spoofing" concretament l'enverinament de la caché del primer servidor de DNS que tenim que serà un __DNS Recursor__.
 
 S'interferirà en la connexió entra el DNS autoritari SOA i el DNS Recursor que es qui farà de _resolver_ dels clients DNS. Serà un __DNS Forwarder__ més.
 
