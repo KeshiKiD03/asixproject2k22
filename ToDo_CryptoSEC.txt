@@ -1,5 +1,16 @@
 Aaron TO DO LIST FAST
 
+
+DNS SPOOFING
+
+https://www.varonis.com/blog/dns-cache-poisoning
+https://www.keyfactor.com/blog/what-is-dns-poisoning-and-dns-spoofing/#:~:text=DNS%20poisoning%2C%20also%20known%20as,web%20servers%20and%20phishing%20websites.
+https://www.varonis.com/blog/dns-cache-poisoning
+https://www.varonis.com/blog/dns-cache-poisoning
+
+
+WAZUH - https://www.youtube.com/watch?v=ASW5hHaGGGM
+
 KALI - ESTATICA IP Y DNS
 
 SOA - PORT FORWARDING SSH A KALI
