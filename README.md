@@ -19,7 +19,7 @@
 
 # __Índex__
 
-+ **Objectius**: [--> readme Configuración LDAPS <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#containers)
++ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
 
 + **Proposta final**: [--> readme Alternative Subject Name <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
 
