@@ -83,7 +83,7 @@ Com ja diu el refrà: “__Millor prevenir que lamentar__”, la solució davant
     <img src="https://www.lasrozas.es/sites/default/files/inline-images/Ciber.jpg" />
 </div>
 
-## Qué es la ciberseguretat?
+## __Qué es la ciberseguretat?__
 
 La ciberseguretat és la pràctica d’establir *“zones de defensa”* a diferents dispositius com ordinadors, servidors, dispositius mòbils, xarxes …etc, d’atacs maliciosos (Com virus o exploits) o de denegació de servei (DoS).
 
@@ -94,6 +94,12 @@ El terme s'aplica en diferents contextos, des dels negocis fins a la __informàt
 El seu funcionament es basa en implantar tècniques i eines de __maquinari__ / __programari__ perquè elaborin __barreres__ que impedeixin l’accés desconegut a la informació delicada. La protegeix i treu a l’enemic si es tracta d’una **vulneració**.
 
 Un ciberatac no nomes consisteix en la **pèrdua i destruccio de dades** confidencials, si no que tambe **afecta** el nivell de **productivitat i rentabilitat**, portant com a conseqüencia la perdua del capital, de la confiança per part dels clients y de la competivitat davant del mercat legal.
+
+<div style="align: center; width: 50%">
+    <img src="https://static.vecteezy.com/system/resources/previews/001/406/100/non_2x/types-of-cyber-security-to-keep-in-mind-free-vector.jpg" />
+</div>
+
+
 
 La __ciberseguretat__ s’ha tornat un assumpte de vital importancia per a tot tipus d’empreses, sense importar el tamany.
 
@@ -119,12 +125,10 @@ Si s'incompleixen les bones pràctiques de seguretat, qualsevol persona pot intr
 
 Ensenyar-los als usuaris a eliminar els __fitxers adjunts__ de correus __electrònics sospitosos__, a no connectar unitats __USB no identificades__ i altres lliçons importants és fonamental per a la seguretat de qualsevol __organització__.
 
+## __Tipus d'amenaçes davant la "Ciberseguretat"__
 
-# Objectius
-
-
-<div style="align: center">
-    <img src="https://grupo-alonso.com/wp-content/uploads/2016/07/asix.jpg" />
+<div style="align: center; width: 50%">
+    <img src="https://pbs.twimg.com/media/E3nXigSXwAANyGi.jpg:large" />
 </div>
 
 
