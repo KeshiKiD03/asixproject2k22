@@ -35,34 +35,58 @@ A __CryptoSEC__ implementarà, serveis com un DNS autoritari amb una zona anomen
 
 Al __DNS Forwarder__ tindrà serveis com __DHCP__ que brindarà una configuració automàtica de IPs i DNS als seus clients. Serà com un __router__. Tindrà politiques per defecte ACCEPT, i també permetrà que els seus clients tinguin NAT a l'exterior, és a dir, que puguin navegar per Internet. Tot amb __iptables__.
 
-El __servidor principal__ anomenat com a hostname __"SOACryptosec"__ que serà un Ubuntu Server 20.04 tindrà aplicacions per monitoritzar la xarxa i detectar intrusos que intentin sacsejar la nostra xarxa __"cryptosec.net"__.
+El __servidor principal autoritari__ anomenat com a hostname __"SOACryptosec"__ que serà un __Ubuntu Server 20.04__, tindrà només el _BIND9_ amb la zona __"cryptosec.NET"__, estarà ubicada en la xarxa de la classe _10.200.243.164/24_.
 
-Tindrà un servidor secundari anomenat com a hostname __"ForwardCryptosec"__ que serà també un Ubuntu Server 20.04 que tindrà el paper fonamental de fer de _resolver_ als clients DNS ja que ell mateix serà un forwarder i reenviarà les peticions de DNS a __"SOACryptosec"__ per a que resolgui peticions de DNS tant de __"cryptosec.net"__ com d'Internet, si no el sap el preguntarà als __ROOT SERVERS__, _a.k.a._ __Internet__.
+Tindrà un __servidor secundari forwarder__ anomenat com a hostname __"ForwardCryptosec"__ que serà també un __Ubuntu Server 20.04__ que tindrà el paper fonamental de fer de _resolver_ als clients DNS ja que ell mateix serà un forwarder i reenviarà les peticions de DNS a __"SOACryptosec"__ per a que resolgui peticions de DNS tant de __"cryptosec.net"__ com d'Internet, si no el sap el preguntarà als __ROOT SERVERS__, _a.k.a._ __Internet__. També tindrà aplicacions per monitoritzar la xarxa i detectar intrusos que intentin sacsejar la nostra xarxa __"cryptosec.net"__.
 
-Com hi haviem comentat, a CryptoSEC hi englobem diferents serveis en funcionament, com detecció d'intrusions o algunes de prevenció d'atacs, tot explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__.
+Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcionament, com __detecció d'intrusions (Wazuh)__ o algunes de __prevenció d'atacs__, tot explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__.
 
-![](https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png)
+<div style="align: center; width: 50%">
+    <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />
+</div>
 
-Durant aquest projecte, ens trobarem diferents reptes tant en l'àmbit tècnic com en l'àmbit sistemàtic. Haurem de ser capaços de resoldre aquests reptes amb l'ajuda bé de diferents companys de classe, o de la informació investigada per Internet.
-
-![](https://www.infinitiaresearch.com/wp-content/uploads/2021/09/design-research.png)
+Durant aquest projecte, ens trobarem diferents _reptes_ tant en l'àmbit _tècnic_ com en l'àmbit _sistemàtic_. Haurem de ser capaços de resoldre aquests reptes amb l'ajuda bé de diferents companys de classe, o de la informació investigada per Internet.
 
 En la recerca d'informació de tota la documentació, independentment de les seves funcionalitats, les bateries de proves, el control de versions fins a arribar a l'últim "_stage_" del projecte. Es farà un seguiment de tot el que es fa, es farà i el que s'està fent en hores de projecte.
 
+<div style="align: center; width: 50%">
+    <img src="https://www.infinitiaresearch.com/wp-content/uploads/2021/09/design-research.png" />
+</div>
+
+<br>
+<br>
 <br>
 
 # Conceptes i aspectes generals __"mindset"__ del projecte
 
 Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots els _serveis_ que utilitzarem, _segon_ un petit exemple de funcionament del servei en qüestió i finalment, l'assemblació al cos del projecte després de verificar que compleix tant de la informàtica o concretament a la __ciberseguretat__: 
 
-+ __L'atomicitat__: Verificar que una operació s'ha realitzat o no, , no es pot quedar a mitjes.
++ __L'atomicitat__: 
 
-+ El __control d'errors__: És imprescincible detectar on ens hem equivocat per poder corregir l'error o idear altres plans i proseguir amb el projecte.
+    + Verificar que una operació s'ha realitzat o no, no es pot quedar a mitjes.
+
++ El __control d'errors__: 
+
+    + És imprescincible detectar on ens hem equivocat per poder corregir l'error o idear altres plans i proseguir amb el projecte.
+
++ La __identificació__: 
+
+    + És necessari identificar els processos i actius crítics d'alguna. 
+    
+    + S'ha de mantenir actualizat l'inventari tant de hardware o software. 
+    
+    + Conèixer les característiques, ja que amb freqüència son punts d'entrada de programes i aplicatius maliciosos. Cal identificar amenaces, vulnerabilitats i riscos per als actius. Cal assegurar-se que s'estableixin i administrin processos de gestió de riscos per garantir que s'identifiquin, avaluïn i administrin les amenaces internes i externes, cosa que s'ha de documentar degudament en registres de riscos.
+
++ La __protecció__: Convé administrar l'accés als actius i la informació. La companyia ha de crear comptes únics per a cada empleat i assegurar-se que els usuaris només tinguin accés a la informació, els ordinadors i les aplicacions que necessiten per als seus treballs. Cal administrar i rastrejar estrictament l'accés físic als dispositius.
+
++ Els __backups__: És important assegurar la informació abans i després de que s'hagin provocat _"desastres informàtics"_. Una bona recuperació o _cleaning_ d'avant d'aquest escenari és clau per retomar una activitat d'una empresa.
 
 + La __durabilitat__: Garantir la integritat de les dades i que no s'esborrin accidentalment.
 
 + L'__integritat & compatibilitat__: És important que hi hagi una compatibilitat en els serveis que s'instal·laràn al nostre projecte per a que es puguin interactuar correctament entre ells.
 
+<br>
+<br>
 <br>
 
 ## Deployment
