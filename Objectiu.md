@@ -59,11 +59,9 @@ En la recerca d'informació de tota la documentació, independentment de les sev
 
 # Conceptes i aspectes generals __"mindset"__ del projecte
 
-Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots els _serveis_ que utilitzarem, _segon_ un petit exemple de funcionament del servei en qüestió i finalment, l'assemblació al cos del projecte després de verificar que compleix tant de la informàtica o concretament a la __ciberseguretat__: 
+Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots els _serveis_ que utilitzarem, _segon_ un petit exemple de funcionament del servei en qüestió i finalment, l'assemblació al cos del projecte.
 
-+ __L'atomicitat__: 
-
-    + Verificar que una operació s'ha realitzat o no, no es pot quedar a mitjes.
+Tot això després de verificar que compleixen aspectes tant de la informàtica o concretament a la __ciberseguretat__ que un __auditor o defensor de ciberseguretat__ ha de conèixer: 
 
 + El __control d'errors__: 
 
@@ -75,7 +73,11 @@ Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots
     
     + S'ha de mantenir actualizat l'inventari tant de hardware o software. 
     
-    + Conèixer les característiques, ja que amb freqüència son punts d'entrada de programes i aplicatius maliciosos. Cal identificar amenaces, vulnerabilitats i riscos per als actius. Cal assegurar-se que s'estableixin i administrin processos de gestió de riscos per garantir que s'identifiquin, avaluïn i administrin les amenaces internes i externes, cosa que s'ha de documentar degudament en registres de riscos.
+    + Conèixer les característiques, ja que amb freqüència son punts d'entrada de programes i aplicatius maliciosos. 
+    
+    + Cal identificar amenaces, vulnerabilitats i riscos per als actius. 
+    
+    + Cal assegurar-se que s'estableixin i administrin processos de gestió de riscos per garantir que s'identifiquin, avaluïn i administrin les amenaces internes i externes, cosa que s'ha de documentar degudament en registres de riscos.
 
 + La __protecció__: Convé administrar l'accés als actius i la informació. La companyia ha de crear comptes únics per a cada empleat i assegurar-se que els usuaris només tinguin accés a la informació, els ordinadors i les aplicacions que necessiten per als seus treballs. Cal administrar i rastrejar estrictament l'accés físic als dispositius.
 
