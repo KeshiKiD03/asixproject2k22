@@ -27,21 +27,17 @@ La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar 
 
 __CryptoSEC.NET__ és una xarxa interna local en algun lloc remot del planeta on hi treballen els millors tècnics en __ciberseguretat__, però hi hà un __"intrús"__ que tindrà un _host maliciós_ que intentarà fer la vida impossible als altres clients.
 
-Aquest host maliciós serà un Kali Linux on hi dispondrà d'eines de seguretat, de _"hackeig"_ o _"crackeig"_, _pentesting_ i accés a la xarxa. Aquest host maliciós farà atacs com "ARP + DNS Spoofing" concretament l'enverinament de la caché del primer servidor de DNS que tenim que serà un __DNS Recursor__.
+Aquest host maliciós serà un __Kali Linux__ on hi dispondrà d'eines de seguretat, de _"hackeig"_ o _"crackeig"_, de _pentesting_, _accés a la xarxa_... entre altres. Aquest host maliciós farà atacs com el _"DNS Caché Poisoning - DNS Spoofing"_, juntament amb l'"_ARP Spoofing_" (enverinament de la caché dels servidors de _DNS SOA_ i _DNS Forwarder_ de CryptoSEC, amb posteriori suplantació i redirecció a una pàgina web _"fake"_ que serà reenviada com a resposta a la petició dels clients) 
 
-S'interferirà en la connexió entra el DNS autoritari SOA i el DNS Recursor que es qui farà de _resolver_ dels clients DNS. Serà un __DNS Forwarder__ més.
+Aquest host maliciós interferirà en la connexió entra el DNS autoritari SOA i el DNS Recursor que es qui farà de _resolver/forwarder_ dels __clients DNS__ que hi pertenèixen a la xarxa interna __"CryptoSEC"__. Serà un __DNS Forwarder__ més.
 
-A CryptoSEC implementarà, serveis com un DNS amb una zona anomenada __"cryptosec.net"__ que tindrà DNSSEC per assegurar les consultes DNS que hi facin els clients de la seva _"zona"_ o _"domini"_.
+A __CryptoSEC__ implementarà, serveis com un DNS autoritari amb una zona anomenada __"cryptosec.net"__ que tindrà DNSSEC per assegurar les consultes DNS que hi facin els clients de la seva _"zona"_ o _"domini"_.
 
-S'implementarà també un Firewall, concretament __iptables__ per a que els clients de la xarxa interna __"cryptosec"__ puguin fer NAT a l'exterior.
-
-Tindrà també un servei DHCP per a que s'automatitzi l'assignació d'IPS i de DNS als clients de tal forma que no han de posar a mà cada cop la __seva IP__ i el __resolutor DNS__.
-
-Per als usuaris que hi treballen fora, tipus a les Illes Caiman o a Suïssa, podràn accedir per VPN _(Virtual Private Network)_ a través de WireGuardVPN.
+Al __DNS Forwarder__ tindrà serveis com __DHCP__ que brindarà una configuració automàtica de IPs i DNS als seus clients. Serà com un __router__. Tindrà politiques per defecte ACCEPT, i també permetrà que els seus clients tinguin NAT a l'exterior, és a dir, que puguin navegar per Internet. Tot amb __iptables__.
 
 El __servidor principal__ anomenat com a hostname __"SOACryptosec"__ que serà un Ubuntu Server 20.04 tindrà aplicacions per monitoritzar la xarxa i detectar intrusos que intentin sacsejar la nostra xarxa __"cryptosec.net"__.
 
-Tindrà un servidor secundari anomenat com a hostname __"RecursorCryptosec"__ que serà també un Ubuntu Server 20.04 que tindrà el paper fonamental de fer de _resolver_ als clients DNS ja que ell mateix serà un forwarder i reenviarà les peticions de DNS a __"SOACryptosec"__ per a que resolgui peticions de DNS tant de __"cryptosec.net"__ com d'Internet, si no el sap el preguntarà als __ROOT SERVERS__, _a.k.a._ __Internet__.
+Tindrà un servidor secundari anomenat com a hostname __"ForwardCryptosec"__ que serà també un Ubuntu Server 20.04 que tindrà el paper fonamental de fer de _resolver_ als clients DNS ja que ell mateix serà un forwarder i reenviarà les peticions de DNS a __"SOACryptosec"__ per a que resolgui peticions de DNS tant de __"cryptosec.net"__ com d'Internet, si no el sap el preguntarà als __ROOT SERVERS__, _a.k.a._ __Internet__.
 
 Com hi haviem comentat, a CryptoSEC hi englobem diferents serveis en funcionament, com detecció d'intrusions o algunes de prevenció d'atacs, tot explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__.
 

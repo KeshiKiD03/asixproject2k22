@@ -51,6 +51,7 @@
 
 <br>
 <br>
+<br>
 
 ## __La ciberseguretat__
 
@@ -82,6 +83,10 @@ Com ja diu el refrà: “__Millor prevenir que lamentar__”, la solució davant
 <div style="align: center; width: 50%">
     <img src="https://www.lasrozas.es/sites/default/files/inline-images/Ciber.jpg" />
 </div>
+
+<br>
+<br>
+<br>
 
 ## __Qué es la ciberseguretat?__
 
@@ -124,6 +129,10 @@ La capacitació de l'usuari final és fonamental en el factor de més impredicti
 Si s'incompleixen les bones pràctiques de seguretat, qualsevol persona pot introduir accidentalment un virus en un sistema que altament seria segur.
 
 Ensenyar-los als usuaris a eliminar els __fitxers adjunts__ de correus __electrònics sospitosos__, a no connectar unitats __USB no identificades__ i altres lliçons importants és fonamental per a la seguretat de qualsevol __organització__.
+
+<br>
+<br>
+<br>
 
 ## __Tipus d'amenaçes davant la "Ciberseguretat"__
 
