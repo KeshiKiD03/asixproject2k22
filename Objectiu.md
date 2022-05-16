@@ -17,13 +17,19 @@
 
 
 
-# __Objectius "Projecte ASIX - Ciberseguretat:__ _Careful where you step_ 🕵️ 🔎"
+# __Objectius "Projecte ASIX - Ciberseguretat:__ _Careful where you step_"
 
 L'objectiu principal d'aquest projecte de Ciberseguretat, és la creació d'una empresa de __"Ciberseguretat"__ anomenamada _"CryptoSEC"_. Aquesta empresa implementarà una serie de serveis de __seguretat__ i __prevenció__ davant d'atacs maliciosos que tindràn la finalitat de _comprometre_ la empresa i obtenir informació delicada i confidencial. Aaron i Cristian, son els caps d'aquesta empresa i portaràn a terme aquest magnífic repte de protegir-se davant de _hackers_ com les de la Organització __"Anonymous"__, __" The Shadow Brokers"__, __"Elliott Gunton"__... entre altres.
 
 La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar intrusos (__Wazuh__) en la xarxa de __"CryptoSEC"__, entre altres eines de prevenció i detecció. 
 
+<br>
+<br>
+<br>
+
 ## __Arquitectura CryptoSEC__
+
+
 
 __CryptoSEC.NET__ és una xarxa interna local en algun lloc remot del planeta on hi treballen els millors tècnics en __ciberseguretat__, però hi hà un __"intrús"__ que tindrà un _host maliciós_ que intentarà fer la vida impossible als altres clients.
 
@@ -41,9 +47,13 @@ Tindrà un __servidor secundari forwarder__ anomenat com a hostname __"ForwardCr
 
 Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcionament, com __detecció d'intrusions (Wazuh)__ o algunes de __prevenció d'atacs__, tot explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__.
 
+<br>
+<center>
 <div style="align: center; width: 50%">
-    <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />
+    <img src="./EsquemaFinal_Kali-1.PNG" />
 </div>
+</center>
+<br>
 
 Durant aquest projecte, ens trobarem diferents _reptes_ tant en l'àmbit _tècnic_ com en l'àmbit _sistemàtic_. Haurem de ser capaços de resoldre aquests reptes amb l'ajuda bé de diferents companys de classe, o de la informació investigada per Internet.
 
@@ -65,31 +75,57 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
 
 + La __identificació__: 
 
-    + És necessari identificar els processos i actius crítics d'alguna. 
+    + És necessari identificar els __processos__ i __actius__ crítics d'alguna. 
     
-    + S'ha de mantenir actualizat l'inventari tant de hardware o software. 
+    + S'ha de mantenir __actualizat__ l'__inventari__ tant de __hardware__ o __software__. 
     
-    + Conèixer les característiques, ja que amb freqüència son punts d'entrada de programes i aplicatius maliciosos. 
+    + Conèixer les __característiques__, ja que amb freqüència son punts d'entrada de programes i aplicatius __maliciosos__. 
     
-    + Cal identificar amenaces, vulnerabilitats i riscos per als actius. 
+    + Cal identificar __amenaçes__, __vulnerabilitats__ i __riscos__ per als actius. 
     
-    + Cal assegurar-se que s'estableixin i administrin processos de gestió de riscos per garantir que s'identifiquin, avaluïn i administrin les amenaces internes i externes, cosa que s'ha de documentar degudament en registres de riscos.
+    + Cal assegurar-se que s'estableixin i administrin processos de gestió de __riscos__ per garantir que __s'identifiquin__, avaluïn i administrin les amenaces internes i externes, cosa que s'ha de documentar degudament en registres de riscos.
 
 + La __protecció__: 
 
-    + Convé administrar l'accés als actius i la informació. 
+    + Convé __administrar__ l'accés als __actius__ i la __informació__. 
     
     + La companyia ha de crear comptes únics per a cada empleat i assegurar-se que els usuaris només tinguin accés a la informació, els ordinadors i les aplicacions que necessiten per als seus treballs. 
     
-    + Cal administrar i rastrejar estrictament l'accés físic als dispositius.
+    + Cal __administrar__ i __rastrejar__ estrictament l'accés __físic__ als dispositius.
 
-    + Realitzar còpies de seguretat periòdiques és útil. Una bona pràctica és mantenir un conjunt de dades de còpia de seguretat freqüent fora de línia per protegir contra el ransomware.
+    + Realitzar __còpies de seguretat__ periòdiques és útil. Una bona pràctica és mantenir un conjunt de dades de còpia de seguretat freqüent fora de línia per protegir contra el ransomware.
+
+    + S'han d'implementar __polítiques formals__ per a l'eliminació segura de fitxers electrònics i dispositius en desús.
+
 
 + Els __backups__: És important assegurar la informació abans i després de que s'hagin provocat _"desastres informàtics"_. Una bona recuperació o _cleaning_ d'avant d'aquest escenari és clau per retomar una activitat d'una empresa.
 
-+ La __durabilitat__: Garantir la integritat de les dades i que no s'esborrin accidentalment.
++ La __detecció__: 
 
-+ L'__integritat & compatibilitat__: És important que hi hagi una compatibilitat en els serveis que s'instal·laràn al nostre projecte per a que es puguin interactuar correctament entre ells.
+    + És important desenvolupar i provar processos i procediments per detectar accions no autoritzades a les xarxes ia l'entorn físic, inclosa l'activitat del personal.
+
+    + Cal comprendre l'impacte dels esdeveniments de ciberseguretat. Cal treballar ràpidament i exhaustivament per comprendre l'amplitud i la profunditat de l'impacte. Així com comunicar informació sobre l'esdeveniment amb les parts interessades apropiades.
+    
+    + Cal monitoritzar els ordinadors per controlar si es detecta accés de personal no autoritzat als ordinadors, dispositius (suports demmagatzematge de dades de tipus USB) i programari. Heu de revisar la xarxa per controlar si es detecten usuaris o connexions no autoritzats.
+
++ La __resposta__: 
+
+    + Els plans de __resposta__ s'han de provar per assegurar-se que cadascú conegui les seves __responsabilitats__ en la seva execució.
+
+    + Coordinar amb les parts interessades internes i externes és vital davant el desastre. 
+    
+    + Cal assegurar-se que els plans de resposta i les actualitzacions incloguin totes les parts interessades clau i proveïdors de serveis externs. Poden contribuir a millores en la planificació i execució.
+
++ La __recuperació__: 
+
+    + Cal comunicar-se amb usuaris afectats, tant de dins con de fora davant d'aquests desastres, per fer un plà de recuperació.
+
+    + La comunicació és clau per protegir-se.
+
+    + Cal assegurar-se que els plans de recuperació estiguin __actualitzats__.
+
+    + S'han de reparar i restaurar els equips i les parts de la xarxa que van resultar afectats.
+
 
 <br>
 <br>
@@ -97,7 +133,9 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
 
 ## Deployment
 
-Hem decidit utilitzar VirtualBox per al _deployment_ d'aquest projecte simplement amb la facilitat d'utilització, la compatibilitat tant de Linux, Windows o MAC i la versatilitat alhora de clonar, encendre, interactuar amb la virtualització de les màquines virtuals. 
+Hem decidit utilitzar __VirtualBox__ per al _deployment_ d'aquest projecte simplement amb la facilitat d'utilització, la compatibilitat tant de Linux, Windows o MAC i la versatilitat alhora de clonar, encendre, interactuar amb la virtualització de les màquines virtuals. 
+
+
 
 A més de que tenim un control avançat alhora de _"toquetejar"_ l'emulador de VirtualBox tant a nivell de hardware com a nivell de software.
 
@@ -107,7 +145,13 @@ Tots els clients de la xarxa de __"cryptosec"__ han de passar per el router per 
 
 El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràcies a DHCP i donarà els nameservers adequats a les seves xarxes internes per a que puguin navegar a Internet. També s'hi farà NAT a l'exterior on hi navegaràn _enmascarats_.
 
-![](./Esquema_Projecte_base.png)
+<br>
+<center>
+<div style="align: center; width: 50%">
+    <img src="./EsquemaFinal_Kali-1.PNG" />
+</div>
+</center>
+<br>
 
 ## Ciberseguretat
 
