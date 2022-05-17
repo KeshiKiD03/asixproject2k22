@@ -78,7 +78,7 @@ https://www.youtube.com/watch?v=GkexkyUbUd4&list=LL&index=2  --> Ver
 https://www.youtube.com/watch?v=OtO92bL6pYE&list=LL&index=3 --> Ver
 
 
-https://www.tutorialspoint.com/kali_linux/kali_linux_password_cracking_tools.htm --> Ver
+https://www.tutorialspoint.com/kali_linux/kali_linux_password_cracking_tools.htm --> Ver crack
 
 https://www.systranbox.com/how-to-steal-passwd-file-and-shadow-file-kali-linux/ --> Ver
 

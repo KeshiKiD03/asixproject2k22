@@ -3,9 +3,17 @@
 ### __2HISX 2021-2022__
 ### __Aaron Andal & Cristian Condolo__
 
-# Ubuntu Server
+<br>
+<br>
+<br>
+<br>
 
-# Instal·lació Ubuntu Server 20.04
+# __Ubuntu Server__
+
+<br>
+<br>
+
+# __Instal·lació Ubuntu Server 20.04__
 
 <div style="align: center; width: 50%">
     <img src="https://www.gizchina.com/wp-content/uploads/images/2020/04/Canonical-Officially-Released-Final-Ubuntu-20.04-LTS-Focal-Fossa.jpg" />
@@ -78,7 +86,7 @@
     <img src="./Photos/Ub13.png" />
 </div>
 
-# Quick configuration
+# __Quick configuration__
 
 1. Update repository: `apt-get update`
 
@@ -98,4 +106,26 @@
 
 https://www.redeszone.net/noticias/seguridad/error-usar-mismo-nombre-credenciales/
 
-4. Instal·lar __Guest Additions i SSH__:
+4. Instal·lar __Guest Additions i SSH__
+
+5. Instal·lar serveis necessaris:
+
+* __bind9 (_Per forwarder i soa_)__
+
+* __dhcp (_Per forwarder_)__
+
+* __nmap__
+
+* __net-tools__
+
+* __procps__
+
+* __iproute2__
+
+* __bind-utils__
+
+* __apache2 (_Per SOA_)__
+
+* __wazuh (_Per forwarder_)__
+
+....

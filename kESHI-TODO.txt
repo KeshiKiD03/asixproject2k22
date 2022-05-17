@@ -1,0 +1,113 @@
+DRIFTNET
+
+https://www.varonis.com/blog/dns-cache-poisoning - revisar dns spoof
+
+https://programmerclick.com/article/2815493326/ -- tutorial ettercap bajo kali + dns spooofing
+
+https://www.boomernix.com/2018/03/realizando-un-dns-spoofing.html -- dnsspoof ver
+
+
+https://www.youtube.com/watch?v=Jjulz-xHwEo&t=2s clone website 
+
+https://www.youtube.com/watch?v=GC4wtfMr3t8 - clone website
+
+https://www.youtube.com/watch?v=sqaie9YNtpQ - phishing kali
+
+https://www.youtube.com/watch?v=rhd-bqE91bY - driftnet scrach
+
+https://www.youtube.com/watch?v=bEMwES6TQUw - mitm diftnet wireshark sslstrip
+
+https://www.keyfactor.com/blog/what-is-dns-poisoning-and-dns-spoofing/
+
+https://www.youtube.com/watch?v=GkexkyUbUd4
+https://www.varonis.com/blog/dns-cache-poisoning
+
+https://www.youtube.com/watch?v=rhd-bqE91bY - driftnet
+
+https://www.youtube.com/watch?v=LEPEk5pFffw - MITM TUTORIAL ETTERCAP
+
+https://www.youtube.com/watch?v=1TsCybFNrM0&t=315s - CLONE PAG WEB
+
+https://www.youtube.com/watch?v=sP_PDnXTX7A&t=9s - SET TOOLKIT
+
+https://www.youtube.com/watch?v=Jitm4DtT2_8&t=670s - CREATE PHISHING SITES
+
+https://www.youtube.com/watch?v=wsXMicWMlQI - Phishing 4 minutes
+
+
+https://www.youtube.com/watch?v=F5m9cXVJZ18 --< SSLSTRIP
+
+https://www.youtube.com/watch?v=uQrmKhW35mQ&t=765s -- DNSSPOOFING ETTERCAP BACKBOX
+
+
+https://www.youtube.com/watch?v=jXy9ewmDVBE - SITE CLONER
+
+
+https://www.youtube.com/watch?v=u9dBGWVwMMA --< PHISHING ATTACKS SCARY
+
+
+https://www.youtube.com/watch?v=-AMd5mxgpX8&t=443s -- INTERCEPT SSL TRAFFIC USING MTM SSL STRIP
+
+https://www.youtube.com/watch?v=-rSqbgI7oZM -- SNIFF NETWORK TRAFFIC MTIM ATTACK
+
+
+https://www.youtube.com/watch?v=jFWd_nN0DXU - BREAK HTTPS USING KALI
+
+
+
+
+https://www.youtube.com/watch?v=OtO92bL6pYE&list=LL&index=4 -- SSLSTRIP ON KALI LINUX
+
+
+
+https://www.varonis.com/blog/dns-cache-poisoning SPOOF DNS CACHE POISONING
+
+
+https://www.keyfactor.com/blog/what-is-dns-poisoning-and-dns-spoofing/#:~:text=DNS%20poisoning%2C%20also%20known%20as,web%20servers%20and%20phishing%20websites.https://www.varonis.com/blog/dns-cache-poisoning  KACHE POSIONING
+
+
+https://programmerclick.com/article/2815493326/ -- eTTERCAP BAJO KALI
+
+
+https://esgeeks.com/tutorial-ettercap-ejemplos/ -- ETTERCAP EJEMPLOS
+
+
+
+
+https://www.youtube.com/watch?v=MkEet3Akvyo -- SET CURSO OFENSIVO
+
+
+https://www.youtube.com/watch?v=gKykLr59LW8 - BASIC ATTACK WITH METASPLOIT
+
+
+
+https://www.youtube.com/watch?v=MkEet3Akvyo -- SET BASIC HACKING
+
+
+https://esgeeks.com/tutorial-ettercap-ejemplos/ - ETTERCAP EJEMPLOS
+
+
+https://www.imperva.com/learn/application-security/dns-spoofing/ - whatis dnsspoofing
+
+
+https://www.amirootyet.com/post/how-to-spoof-dns-in-kali-linux/ - spoofings
+
+
+https://es.acervolima.com/ataque-mitm-man-in-the-middle-usando-arp-poisoning/ - mitm
+
+
+https://www.cloudflare.com/learning/dns/dns-cache-poisoning/ whatis dns spoof
+
+
+https://www.okta.com/identity-101/dns-poisoning/ -- cache posion
+
+
+
+
+
+https://es.acervolima.com/ataque-mitm-man-in-the-middle-usando-arp-poisoning/ -- revisar 
+
+
+
+
+
