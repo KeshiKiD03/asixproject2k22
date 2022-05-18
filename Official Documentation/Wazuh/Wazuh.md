@@ -112,16 +112,103 @@
 
   - L'agent de Wazuh té una integració nativa amb el motor Docker que permet als usuaris monitoritzar imatges, volums, configuracions de xarxa i contenidors en execució.
 
-## Practica
-### Necessari:
-- [ ] Sistema Operatiu de 64 bits
-- [ ] 4 GB de RAM
-- [ ] 2 nuclis de CPU
+## Practica: Instal·lar Wazuh Server a Ubuntu 20.04
 
---------
+#### Instal·lar dependencies
+```
+sudo apt update
+sudo apt install curl apt-transport-https unzip wget libcap2-bin software-properties-common lsb-release gnupg2
+```
 
-- Muntar una màquina virtual (Oracle VirtualBox) de RedHat
+#### Instal·lar Wazuh Manager
+```
+curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo apt-key add –
+echo “deb https://packages.wazuh.com/4.x/apt/ stable main” | sudo tee /etc/apt/sources.list.d/wazuh.list
+sudo apt update
+sudo apt install wazuh-manager
+sudo systemctl daemon-reload
+sudo systemctl enable –now wazuh-manager
+systemctl status wazuh-manager
+```
 
+#### Instal·lar ELK Stack (Elasticsearch)
+```
+sudo apt install elasticsearch-oss opendistroforelasticsearch
+curl -so /etc/elasticsearch/elasticsearch.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/7.x/elasticsearch_all_in_one.yml
+curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/roles.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/roles.yml
+curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/roles_mapping.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/roles_mapping.yml
+curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/internal_users.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/internal_users.yml
+
+sudo rm -f /etc/elasticsearch/{esnode-key.pem,esnode.pem,kirk-key.pem,kirk.pem,root-ca.pem}
+sudo mkdir /etc/elasticsearch/certs && cd /etc/elasticsearch/certs
+sudo curl -so ~/search-guard-tlstool-1.8.zip https://maven.search-guard.com/search-guard-tlstool/1.8/search-guard-tlstool-1.8.zip
+sudo unzip ~/search-guard-tlstool-1.8.zip -d ~/searchguard
+sudo curl -so ~/searchguard/search-guard.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.0/resources/open-distro/searchguard/search-guard-aio.yml
+sudo ~/searchguard/tools/sgtlstool.sh -c ~/searchguard/search-guard.yml -ca -crt -t /etc/elasticsearch/certs/
+sudo rm /etc/elasticsearch/certs/client-certificates.readme
+sudo systemctl enable –now elasticsearch
+sudo /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh -cd /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/ -nhnv -cacert /etc/elasticsearch/certs/root-ca.pem -cert /etc/elasticsearch/certs/admin.pem -key /etc/elasticsearch/certs/admin.key
+curl -XGET https://localhost:9200 -u admin:admin -k
+sudo /usr/share/elasticsearch/bin/elasticsearch-plugin remove opendistro_performance_analyzer
+```
+
+#### Instal·lar Filebeat
+```
+sudo apt install filebeat
+curl -so /etc/filebeat/filebeat.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/filebeat/7.x/filebeat_all_in_one.yml
+curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/4.1/extensions/elasticsearch/7.x/wazuh-template.json
+chmod go+r /etc/filebeat/wazuh-template.json
+sudo curl -s https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.1.tar.gz | tar -xvz -C /usr/share/filebeat/module
+sudo mkdir /etc/filebeat/certs && cp /etc/elasticsearch/certs/root-ca.pem /etc/filebeat/certs/
+sudo mv /etc/elasticsearch/certs/filebeat* /etc/filebeat/certs/
+sudo systemctl enable –now filebeat
+sudo filebeat test output
+elasticsearch: https://127.0.0.1:9200…
+```
+
+#### Instal·lar Kibana
+```
+sudo apt-get install opendistroforelasticsearch-kibana
+curl -so /etc/kibana/kibana.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/kibana/7.x/kibana_all_in_one.yml
+sudo chown -R kibana:kibana /usr/share/kibana/optimize
+sudo chown -R kibana:kibana /usr/share/kibana/plugins
+cd /usr/share/kibana
+sudo -u kibana /usr/share/kibana/bin/kibana-plugin install https://packages.wazuh.com/4.x/ui/kibana/wazuh_kibana-4.1.5_7.10.0-1.zip
+sudo mkdir /etc/kibana/certs
+sudo cp /etc/elasticsearch/certs/root-ca.pem /etc/kibana/certs/
+sudo mv /etc/elasticsearch/certs/kibana_http.key /etc/kibana/certs/kibana.key
+sudo mv /etc/elasticsearch/certs/kibana_http.pem /etc/kibana/certs/kibana.pem
+sudo setcap ‘cap_net_bind_service=+ep’ /usr/share/kibana/node/bin/node
+sudo systemctl enable –now kibana
+sudo ufw allow 443/tcp
+
+URL: https://<wazuh_server_ip>
+user: admin
+password: admin
+```
+
+#### Common errors
+```
+# curl https://raw.githubusercontent.com/wazuh/wazuh/v4.1.5/extensions/elasticsearch/7.x/wazuh-template.json | curl -X PUT “https://localhost:9200/_template/wazuh” -H ‘Content-Type: application/json’ -d @- -u <elasticsearch_user>:<elasticsearch_password> -k
+# curl ‘https://<kibana_ip>:<kibana_port>/api/saved_objects/index-pattern/wazuh-alerts-3.x-*’ -X DELETE -H ‘Content-Type: application/json’ -H ‘kbn-version: 7.10.0’ -k -u <elasticsearch_user>:<elasticsearch_password>
+# curl https://<ELASTICSEARCH_IP>:9200/_cat/indices/wazuh-alerts-* -u <elasticsearch_user>:<elasticsearch_password> -k
+green open wazuh-alerts-4.x-2021.03.03 xwFPX7nFQxGy-O5aBA3LFQ 3 0 340 0 672.6kb 672.6kb
+filebeat test output
+elasticsearch: https://127.0.0.1:9200…
+parse url… OK
+connection…
+parse host… OK
+dns lookup… OK
+addresses: 127.0.0.1
+dial up… OK
+TLS…
+security: server’s certificate chain verification is enabled
+handshake… OK
+TLS version: TLSv1.3
+dial up… OK
+talk to server… OK
+version: 7.10.0
+```
 
 ## Bibliografia
 **Deficions:**
@@ -133,3 +220,6 @@
 
 **Practica:**
 - https://www.csirt.gob.cl/media/2021/10/2SCSFP-SIEM-HE.pdf
+- https://bobcares.com/blog/install-wazuh-server-on-ubuntu/
+- https://www.youtube.com/watch?v=VLgmbv8a5O8
+- https://gist.github.com/austinsonger/33c127fe4e760788b4ba3641295604fb
