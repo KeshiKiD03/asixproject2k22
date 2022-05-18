@@ -84,15 +84,19 @@ ip a show enp0s8
 Dins de ``/etc/netplan``, editem el fitxer de configuració ``00-installer-config.yaml`` i afegim les següents linies:
 ```yaml
 network:
-    ethernets:
-        enp0s8:
-            dhcp4: no
-            addresses: 
-            - 192.168.3.1/24
+  ethernets:
+    enp0s3:
+      dhcp4: no
+      addresses:
+      - 10.200.243.164/24
+      gateway4: 10.200.243.1
+      nameservers:
+        addresses: [10.200.243.164, 10.200.240.10]
+        search: [cryptosec.net]
 ```
 
 <center>
-    <img src="Photos/dnssec16.png"\>
+    <img src="Photos/"\>
 </center><br>
 
 Sortim del fitxer i salvem la configuracio amb el comand ``netplan``:
@@ -105,47 +109,52 @@ Podem comprobar el cambi d'IP amb:
 ip a show enp0s8
 ```
 
+<center>
+    <img src="Photos/.png"\>
+</center>
+
 ---
 ---
 
+Fem tota la practica com ``root``.
+
 Dins de la maquina Ubuntu, instal·lem el ``bind9``:
 ```
-sudo apt update
-sudo apt install bind9
+apt update
+apt install bind9 bind9utils
 ```
 
 Entrem dins de la seva carpeta de configuració ``/etc/bind``, on esta les seves configuracions i les zones que gestiona.
 
 <center>
-    <img src="Photos/dnssec03.png"\>
+    <img src="Photos/.png"\>
 </center>
 
 Lo primer que hem de fer es habil·litar l'extensió DNSSEC dins del servidor DNS, accedim al fitxer ``/etc/bind/named.conf.options`` i l'editem
 ```sh
 dnssec-enable yes;
-dnssec-validation auto;
+dnssec-validation yes;
+dnssec-lookaside auto;
 ```
 
 <center>
-    <img src="Photos/dnssec04.png"\>
+    <img src="Photos/.png"\>
 </center>
 
-Comprovar si el servidor esta validan amb l'ordre ``dig``:
+Comprovar si el servidor esta validan amb les ordres ``dig``:
 ```
 dig @localhost www.apnic.net
 ```
 
 <center>
-    <img src="Photos/dnssec05.png"\>
+    <img src="Photos/"\>
 </center>
 
 Tinguem en compte que cada resposta te una signatura corresponent (__registre RRSIG__).
 
-Una __resposta valida__ hauria de tenir el senyalador de bits __AD__ (Authenticated Data) establert i la capçalera tindra l'estat: **NOERROR**.
+Una __resposta valida__ hauria de tenir la capçalera tindra l'estat HEADER: **NOERROR** i resolve amb l'IP firmada.
 
-Una __resposta__ que __no estigui validada__ no tindra una senyal de AD establert i l'estat HEADER sera **SERVERFAIL**.
-
-En el nostre cas, no esta del tot valida ya que li falta el __AD__.
+Una __resposta__ que __no estigui validada__ tindra l'estat HEADER: **SERVERFAIL** sense la zona firmada.
 
 > **Nota**: *haurem de tenir el nostre domini creat al principi, pero en cas de no haver-le creat. Aqui t'ho mostro.*
 
@@ -158,42 +167,52 @@ zone "cryptosec.net"{
 ```
 
 <center>
-    <img src="Photos/dnssec06.png"\>
+    <img src="Photos/"\>
 </center>
 
 Despres creem y editem el fitxer de configuració de la zona que hem indicat abans: ``db.cryptosec.net``.
 ```sh
-@ IN SOA cryptosec.net. mail.cryptosec.net. 1 4 4 4 4
-    NS cryptosec.net.
-    A 192.168.3.1
+$TTL    604800
+@       IN      SOA     cryptosec.net. mail.cryptosec.net. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
 
-www IN CNAME cryptose.net.
+@       IN      A       10.200.243.164 # IP maq bridge (enp3s0)
+@       IN      NS      cryptosec.net.
+www     IN      CNAME   cryptosec.net.
 ```
 
 <center>
-    <img src="Photos/dnssec07.png"\>
+    <img src="Photos/"\>
 </center>
 
-Anem a ``/etc/resolv.conf`` i canviem a que servidor dns preguntara.
+Anem a ``/etc/resolv.conf`` i comprovem que servidor resolv pregunti al dns de l'escola EDT i que busqui la zona ``cryptosec.net``.
 ```
-servername 192.168.3.1
+nameserver 127.0.0.53
+options edns0 trust-ad
 search cryptosec.net
 ```
 
 <center>
-    <img src="Photos/dnssec08.png"\>
+    <img src="Photos/"\>
 </center>
 
-Comprovem que el servidor DNS resolv la nostra zona de domini.
+Comprovem que el servidor DNS resolv la nostra zona de domini amb ``host`` i ``rndc``.
 ```
+rndc reload
+rndc reconfig
 host cryptosec.net
+systemctl status bind9
 ```
+
+> **Nota**: *si volem podem veure els errors amb ``journalctl -u named -f &`` i reiniciar el DNS amb ``systemctl restart``.*
 
 <center>
-    <img src="Photos/dnssec09.png"\>
+    <img src="Photos/"\>
 </center>
-
-Veïem que tant la nostra zona com la anterior (``www.apnic.net``) __no estan validades__ i __no tenen AD__.
 
 ---
 ---
@@ -204,7 +223,7 @@ Això sol ser per registres i proveïdors d'allotjament, o qualsevol usuari que 
 
 Creem un fitxer per posar les claus
 ```
-sudo mkdir keys
+mkdir keys
 ```
 
 **Generar parell de claus per a ZSK (Zone Signing Keys) i KSK (Key Signing Keys)**
@@ -221,49 +240,55 @@ Si no especifiquem, els valors per defecte son RSASHA1 per a l'algorisme i una m
 
 Utilitzem un algorisme més segur i bits més llargs per generar ZSK. La comanda serà la següent:
 ```
-sudo dnssec-keygen -K /etc/bind/keys/ -a RSASHA256 -b 1024 -n ZONE cryptosec.net
+dnssec-keygen -K /etc/bind/keys/zsk/ -a NSEC3RSASHA1 -b 2048 -n ZONE cryptosec.net
 ```
 - -K: *directori on s'han d'escriure els fitxers de claus*
 
 <center>
-    <img src="Photos/dnssec10.png"\>
+    <img src="Photos/"\>
 </center>
 
 A continuació, generem la __clau de signatura de claus__ (KSK). L'ordre és molt semblant, amb un parell d'ajustaments.
 ```
-sudo dnssec-keygen -K /etc/bind/keys/ -a RSASHA256 -b 2048 -f KSK -n ZONE cryptosec.net 
+dnssec-keygen -f KSK -K /etc/bind/keys/ksk/ -a NSEC3RSASHA1 -b 4096 -n ZONE cryptosec.net 
 ```
 - -b: __canvia la mida de la clau__
 - -f: *especifica el tipus que es*, o t'ho possar un ZKS.
 
 <center>
-    <img src="Photos/dnssec11.png"\>
+    <img src="Photos/"\>
 </center>
 
-Hem vist que per cada clau, genera un mes. La ``.key`` es la clau publica i la ``.private`` es la privada, tal com diu l'extensio.
+Obtindrem 4 claus en total: parells privats/públics de ZSK i KSK.
 
 **Signatura de les zones**
 
 En aquesta fase hi ha dues formes de fer-ho: __la manual__ i __l'automatica__.
 
-Primer provarem amb la manual i despres la deixarem amb automatica.
-
 **1. Signatura manual la signatura**
 
 Examinem les claus que tenim les clau necesaries. Com hem dit abans, veïem que tenim mes de dos, nomes necesitem les publiques (``.key``).
 
-Fem referencia de les dies claus a dins del fitxer de la zona.
+Fem referencia de les dues claus publiques a dins del fitxer de la zona.
 ```sh
-$INCLUDE "keys/Kcryptosec.net.+008+16668.key" #myzsk 
-$INCLUDE "keys/Kcryptosec.net.+008+41846.key" #myksk
+$INCLUDE "keys/zsk/Kcryptosec.net.+008+16668.key" #myzsk 
+$INCLUDE "keys/ksk/Kcryptosec.net.+008+41846.key" #myksk
 ```
+> Nota: si tinguessim les clau en un sol dir, una manera rapida d'afegir les claus a la zona:
+> ```
+> for key in `ls Kexample.com*.key`
+> do
+> echo "\$INCLUDE $key">> example.com.zone
+> done
+> ```
 
-<img src="Photos/dnssec12.png" style="width: 50%"></img><img src="Photos/dnssec15.png" style="width: 50%"></img>
-> **Nota**: *aqui hi ha de dues maneres que funcionen, de forma mes detalla o simple i curt. I tambe fixeu-vos bè on fiqueu les linies. En el cas de la dreta: no la posseu a dalt del ``$TTL`` perque no detecteria quina plantilla de referencia ès.*
+<center>
+    <img src="Photos/"\>
+</center>
 
 Ara ja podem signar la zona amb les claus secretes. Aqui esta la sintaxi:
 
-``dnssec-signzone -o <nom de zona> -N INCREMENT -t -k <dir/KSK> <fitxer de zona> <dir/ZSK>``
+``dnssec-signzone -N INCREMENT -t -k <dir/KSK> <fitxer de zona> <dir/ZSK> -o <nom de zona>``
 - -o: indica "l'origen" de la zone, es a dir __el domini__.
 - -N: indica que hem de pujar el nombre de serie de la zona , a més de firmar-la.
 - -t: mostra estadistiques quan acaba
@@ -271,18 +296,18 @@ Ara ja podem signar la zona amb les claus secretes. Aqui esta la sintaxi:
 
 Per el nostre exemple, l'ordre hauria de ser:
 ``` 
-sudo dnssec-signzone -o cryptosec.net -N INCREMENT -t -k keys/Kcryptosec.net.+008+41846.key db.cryptosec.net keys/Kcryptosec.net.+008+16668.key
+dnssec-signzone -o cryptosec.net -N INCREMENT -t -k keys/Kcryptosec.net.+008+41846.key db.cryptosec.net keys/Kcryptosec.net.+008+16668.key
 ```
 
 <center>
-    <img src="Photos/dnssec13.png"\>
+    <img src="Photos/"\>
 </center>
 > **Nota**: *si veïeu que les claus no son les mateixes dels pasos anteriors es que hem tingut que crear una noves.*
 
 Això genera un fitxer ``db.irrashai.net.signed`` amb les dades signades.
 
 <center>
-    <img src="Photos/dnssec14.png"\>
+    <img src="Photos/"\>
 </center>
 
 Lo següent és la publicació de la zona. Tornem a configurar BIND per carregar el fitxer de zona signat ``db.cryptosec.net.signed``. Per fer-ho, editeu el fitxer de configuració (``named.conf.local``) i apuntem a la zona asignada.
