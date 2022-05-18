@@ -50,6 +50,13 @@ PC Aaron i11:
 
         - Internal Network (cryptosec enp0s8 192.168.3.0/24) - 192.168.3.1/24
 
+        - IPTABLES
+        
+        - DHCP
+
+        - DNS FORWARDING
+
+
     - Cryptosec Clients:
 
         - Internal Network (cryptosec enp0s3 192.168.3.0/24) - 192.168.3.100/24 - 192.168.3.200/24
@@ -65,11 +72,21 @@ Kali
 
 4. Activar X11 Forwarding SSH a l'ordinador del Professor:
 
-    - 
+X11 FORWARDING (Permetre Obrir Apps mode Gràfic): 
 
-3. Modificar BIND9 (Primer en DNS normal i després DNSSEC).
+    - ssh -X anonymous@ip
 
-4. Verificar APACHE2: 10.200.243.164 i 10.200.243.164/cryptosec/index.html
+    - xauth list $DISPLAY --> COPIAR1
+
+    - echo $DISPLAY --> COPIAR2
+
+    - sudo bash
+
+    - xauth add [PEGAR COPIAR1]
+
+    - export DISPLAY=[PEGAR COPIAR2]
+
+5. Verificar conectivitat desde l'ordinador del PROFE i veure que es pot obrir OK.
 
 SOA
 
@@ -77,13 +94,37 @@ SOA
 
 2. Modificar NETPLAN.
 
+    - netplan try + netplan apply
+
     - IMPORTANT! Verificar PING i RESOLV cryptosec.net amb la IP adequada!
 
 3. Modificar BIND9 (Primer en DNS normal i després DNSSEC).
 
 4. Verificar APACHE2: 10.200.243.164 i 10.200.243.164/cryptosec/index.html
 
+    - Verificar els fitxers de "cryptosec.net" en Apache2
+
+        - Estan en /etc/apache2/sites-available/cryptosec.net.conf
+
+        - Comandes per verificar Apache2:
+
+            - a2ensite cryptosec.net.conf --> Habilitar els virtualHost.
+
+            - apache2ctl configtest --> Verifica apache2
+            
+            - openssl x509 --noout --text -in cacert.pem
+
+            - openssl x509 --noout --text -in cryptosec_cert.pem
+
+            - ufw allow "Apache Full" --> Permet firewall Apache2
+
 5. Verificar que DNSSEC funciona: 
+
+    - dnssec-keygen --> GENERAR
+
+    - $INCLUDE en db.cryptosec.net --> Firma manual
+
+    - dnssec-signzone --> Firmar autom .signed
 
     - dig cryptosec.net +dnssec +multiline
 
@@ -100,6 +141,8 @@ FORWARD
 1. Verificació de les IPS i conectivitat amb Internet.
 
 2. Modificar NETPLAN.
+
+    - netplan try + netplan apply
 
     - IMPORTANT! Verificar PING i RESOLV cryptosec.net amb la IP adequada!
 
@@ -119,7 +162,9 @@ FORWARD
 
 5. Activar DHCP per a 192.168.3.0/24 a la interfície enp0s8.
 
-    - Reiniciar DHCP i Verificar
+    - Reiniciar DHCP i Verificar. 
+    
+    - Fitxers /etc/dhcp/dhcpd.conf i /etc/default/isc-dhc-server
 
     - Verificar amb CLIENTS que rebin la IP i facin resolv a cryptosec.net.
 
@@ -150,3 +195,65 @@ COMANDES PER VERIFICAR:
 
     - dig cryptosec.net +dnssec +multiline --> Resol cryptosec.net segur DNSSEC.
 
+
+
+EXTRES: 
+
+    - Ordinador PROFE fer ROUTING a 192.168.3.0/24
+
+        - Han de tenir NAT a l'exterior (Forwarder ha d'activar Iptables)
+
+        - ip route add 192.168.3.0/24 via 10.200.243.168 dev eno1
+
+        - Provar PING
+
+            - Provar SSH -X usuariClientCryptosec@192.168.3.x
+
+
+
+X11 FORWARDING (Permetre Obrir Apps mode Gràfic): 
+
+    - ssh -X anonymous@ip
+
+    - xauth list $DISPLAY --> COPIAR1
+
+    - echo $DISPLAY --> COPIAR2
+
+    - sudo bash
+
+    - xauth add [PEGAR COPIAR1]
+
+    - export DISPLAY=[PEGAR COPIAR2]
+
+
+
+PROCEDIMENT:
+
+1. Desplegar tot lo d'abans.
+
+2. Verificar conectivitat i resolv entre les màquines.
+
+3. Desplegar enrutament a l'ordinador del PROFE a la 192.168.3.0/24
+
+4. Habilitar X11 Forwarding al Profe.
+
+    - ssh -X anonymous@ip_kali
+
+    - ssh -X osboxes@ip_cryptosecClient
+
+    - ssh -X cryptosec@10.200.243.164
+
+    - ssh -X cryptosec@10.200.243.168
+
+
+5. Lo que s'ha explicat abans en la exposició, fer-ho.
+
+5. Abrir el BETTERCAP.
+
+2. Desde el Kali fer l'atac de ARP SPOOF (Ettercap) i suplantar alguna pàgina de prova (DNS Cache Poison)
+. I enviar-ho a la VÍCTIMA1 (FORWARDER .168) i el SOA (.164).
+
+3. Quan s'activa el ARP Spoof, l'usuari fa PING surt la IP del KALI (Man In The Middle), és a dir.
+Que el packet passa per el Kali abans d'anar a SOA o a on vulgui a l'exterior.
+
+4. 

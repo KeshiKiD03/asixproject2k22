@@ -1,0 +1,76 @@
+# XULETA OFICIAL PRESENTACIÓ
+
+1. Que es la CiberSEGURETAT. Breu
+
+
+
+    * Las tecnologias de la información nos facilitan las vidas.
+
+    * Nos permiten conectar a diferentes puntos del mundo sin tener que estar físicamente.
+
+    * Comunicación a distancia, efectiva y en poco tiempo. Recibir mails, correos, fotos, videos... etc.
+
+    * Todo viaja por un canal llamado Internet. Ordenadores interconectados entre si en varios segmentos.
+
+    * Mucha de la información que viaja por Internet, puede ser confidencial o delicada, puede que viaje seguro o inseguro. 
+    Si viaja inseguro es un problema grave.
+
+    * La ciberseguridad es como poner zonas de defensa a dispositivos como ordenadores, moviles ...
+
+    * Una de las principales problemas el uso de las tecnologías, manejando información delicada, es la incapacidad o el desconocimiento.
+
+    - Ejemplo señor Mayor enviar correo.
+
+    ...
+
+2. Que es Cryptosec?
+    
+    - Hemos creado la empresa para hacerlo más realista en lugar explicar que hemos instalado servicios.
+
+    - Es una empresa de Ciberseguridad inventada por nosotros.
+
+        - CryptoSEC es una red interna. Es una local lan,, donde trabajn los mejores tecnicos de ciberseguridad.
+
+    - Nosotros somos los dueños.
+
+    - Auditoria con Wazuh, entre otros.
+
+    - Pero estos últimos días estamos siendo comprometidos por hackers del exterior.
+    Anonymous, Shadow Brokers...
+
+4. Mapa Conceptual
+
+    - VirtualBOX Deployment. Compatible con Linux y Windows y lo manejamos mejor.
+
+    - Explicar Deployment.
+
+        - SOA es un Servidor Autoritario "cryptosec.net"
+
+        - Forwarder
+
+        - usuariClientCryptosec
+        
+        - 
+
+5. Tipos de ataques
+
+    - ARP Spoof
+
+    - Dns spoofing
+
+    - MITM
+
+    - Dns cache Poison
+
+    - Crack Password (Brute Force)
+
+    - Otro ataque 
+
+7. Objetivos Proyecto CryptoSEC
+
+    - Brecha de seguridad
+
+6. Recuperación
+
+
+
