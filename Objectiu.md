@@ -49,8 +49,8 @@ Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcion
 
 <br>
 <center>
-<div style="align: center; width: 50%">
-    <img src="./Photos/EsquemaFinal_Kali-1.PNG" />
+<div style="align: center; width: 100%">
+    <img src="./Photos/EsquemaFinal_Non-1.png" />
 </div>
 </center>
 <br>

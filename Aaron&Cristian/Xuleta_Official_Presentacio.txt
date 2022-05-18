@@ -2,8 +2,6 @@
 
 1. Que es la CiberSEGURETAT. Breu
 
-
-
     * Las tecnologias de la información nos facilitan las vidas.
 
     * Nos permiten conectar a diferentes puntos del mundo sin tener que estar físicamente.
@@ -46,11 +44,50 @@
 
         - SOA es un Servidor Autoritario "cryptosec.net"
 
+            - Static Conf con Netplan que es el network Manager de Ubuntu ServerAdmin
+
+            - DNS ell mateix
+
+            - Bind9 SOA CryptoSEC
+
+                - DNS
+
+                - DNSSEC
+
+            - Web Apache2
+
+                - www.cryptosec.net
+
+                - https://www.cryptosec.net --> Amb certificats /etc/ssl/
+
+                    - Creació de VirtualHost tant 80 com 443 (Certificat i protegit)
+
+
+            - OpenSSL
+
+                - CA cryptosec --> cert para CryptoSEC page
+
         - Forwarder
 
-        - usuariClientCryptosec
+            - Bridge i internal Network (cryptosec)
+
+            - Static Conf
+            
+            - Iptables
+
+            - DHCP
+
+            - Bind9 Forwarding
+
+            - WAazuh
+
+        - Clients CryptoSEC
         
-        - 
+            - dhclient
+
+            - resolv automatic
+
+            - accés a http://www.cryptosec.net i https://www.cryptosec.net 
 
 5. Tipos de ataques
 
