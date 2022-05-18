@@ -1,0 +1,10 @@
+if(typeof(ct)!='undefined')
+	ct=ct+1;
+else
+	ct=0;
+if(eval(v[ct])!=''){
+	document.write(eval(v[ct]));
+}
+else{
+	document.write('.');
+}

@@ -1,0 +1,788 @@
+* { margin: 0; padding: 0 } img, fieldset, abbr { border: none } ul, li { list-style: none } .ftl { float: left } .ftr { float: right } .clf { clear: left } .hidden { position: absolute; left: -1000px; top: -1000px } .clear:after { content: "."; clear: both; display: block; visibility: hidden; height: 0 } caption, legend { display: none } acronym, abbr { cursor: help; text-decoration: none; } html { font-size: 100% } body { font: 62.5% Arial, Helvetica, sans-serif; text-align: center; padding-bottom: 30px } html>body { #overflow-x: hidden } .liquid { width: 100%; max-width: 995px; margin: 0 auto; text-align: left } .fixed { width: 995px; text-align: left; margin: 20px auto } table { border-collapse: collapse; border-spacing: 0 } .block { display: block } .hacked { overflow: hidden } #content.formRequest .hacked { overflow: visible } #content div.intro P { width: 45em } .wHelp { width: 60em } #content .cuerpoModulo div.h2Entradilla { font-size: 1.5em; padding: 0px 0px 3px; font-weight: bold } #entradillaFamilia img { margin: 0;
+margin-top: -5px; padding: 0 } #content li.anios { background: none; padding-left: 0 } #content ol { margin-top: 0.5em } #cajaBuscador { width: 130px; margin-right: 10px } #miscellaneous { height: 2.72em; font-size: 1.1em } #miscellaneous * { } #groupLink { margin-left: 15px } #textSizes { margin-top: 5px; margin-right: 15px; display: inline; padding-right: 0 } #textSizes p { width: 4em; text-align: right; line-height: 18px; margin-right: 5px } #textSizes span { cursor: pointer; padding: 19px 0 0 0; width: 26px; display: block; float: left; overflow: hidden; height: 0px !important; height: 19px } #reducir { padding-right: 0 } #ampliar { margin-left: 5px; margin-right: 0 } #languages { margin-top: 6px } #languages li { padding-right: 7px; padding-left: 7px; display: inline } #languages li.last { border-right: none } #miscellaneous a { margin-top: 7px } #miscellaneous a#home { padding-right: 35px } h4 { font-size: 1.3em } #header { height: 74px } html>body #header { #height: 66px } .nophone { width: 0;
+margin: 0; padding: 0 } #headerPart1 { margin-left: 15px; width: 38.5em; _margin-left: 9px } html>body #headerPart1 { #width: 38.6em } .logoBSLeft { background-position: right 200px; _height: 0px !important; background-repeat: no-repeat } #headerPart1 .espacio { margin-top: 0px; padding-bottom: 1px; margin-bottom: 1px; } .logo { margin-bottom: 1px; padding-top: 0px; margin-top: 0px; padding-bottom: 10px; *padding-bottom: 0px !important; } #logo img { margin-top: 10px; #position: relative; #top: 3px } #mainMenu { font-size: 1.4em; width: 28.2em; white-space: nowrap } *:first-child+html elemento { padding-top: 5px } @media screen and (-webkit-min-device-pixel-ratio:0) { #mainMenu { border-top-width: 6px; border-top-style: solid } html:first-child #mainMenu { border-top-width: 5px } #content .auxiliarLinks { width: 100% } } #mainMenu li { margin-top: -5px; float: left; padding-left: 10px !important; border-left: none !important; margin-right: 4px; } #mainMenu li a { float: left; display: block;
+padding: 5px 10px 4px 0px; text-decoration: none; font-weight: normal; line-height: 1em } #mainMenu li a:hover { text-decoration: underline } #mainMenu li.actual { } #mainMenu li.actual a { padding-bottom: 5px; font-weight: normal } li#bsonline a { padding-right: 30px } li#bsonline.actual a { padding-right: 30px } #headerPart2 { margin-top: 15px; padding: 0 15px 0 0px; background-repeat: no-repeat; background-color: transparent; background-position: 0 0; display: inline; width: 22em; text-align: right } html>body #headerPart2 { width: 25em } #telefono { font-size: 1.4em; font-weight: bold; float: left; margin: 0 15px 0 0; background-position: 0 50%; background-repeat: no-repeat; padding-left: 30px } #contacto { font-size: 1.1em; float: right; margin-right: 0 } #contacto li { padding-right: 7px; padding-left: 7px } #contacto li.last { padding-right: 0; border-right: none } #buscador { margin-top: 10px; clear: left; width: 22.6em; padding-top: 10px; #padding-top: 0px } #buscador input, #buscador button {
+vertical-align: middle; display: inline } #searchButton { border: 0; font-size: 1.1em; width: 6.4em; height: 2em !important; height: 2.1em; cursor: pointer; float: left; margin-left: 7px; #float: none; #margin-left: 0px } body:nth-of-type(1) #cajaBuscador1 { margin-left: 22px } body:nth-of-type(1) #telefono { margin: 0 0 0 20px } body:nth-of-type(1) #searchButton { margin-left: 181px; margin-top: -20px } body:nth-of-type(1) #contacto { margin-top: -15px } *:first-child+html #cajaBuscador1 { margin-left: 0px } *:first-child+html #telefono { margin: 0px 0px 0px 22px } *:first-child+html #searchButton { margin: -27px 0px 0px 160px } *:first-child+html #contacto { margin-top: 0px } html>body #cajaBuscador1 { margin-left: 22px } html>body #telefono { margin: 0 0 0 20px } html>body #searchButton { margin-left: 181px; margin-top: -20px } html>body #contacto { margin-top: -15px } html>body .ftl logoBSLeft { #background-position: 338px 5px } #caja { height: 1.4em; width: 10em; margin-right: 5px; font-size: 1.4em }
+#footer { margin: 0 auto; text-align: center; width: 89em } #footer ul { margin: 15px 0 } .mainLinks { margin: 20px 0 10px } .otherLinks { margin: 12px 0 7px 0 } #footer li { display: inline; font-size: 1.1em; padding-left: 5px; padding-right: 5px } .mainLinks li { background-image: none; border-left: none; font-size: 1.2em } #footer li.first { border-left: none } #footer img { margin: 0 10px; display: block } #legalNotice { margin: 0 55px 0 80px } #legalNotice.interior { font-size: 1.1em; margin-top: 0 } #legalNotice.interior p { margin: 0 } .copyright { font-size: 11px; margin-top: -5px } .linkIcono { font-size: 1em; margin: 0 } #linksSuperiorPie { margin-bottom: 0px } #linksSuperiorPie .linkIconoSuperior { font-size: 12px } #linksCentralPie { margin-top: -10px; margin-bottom: 10px } #leftZone { width: 171px; margin-left: 0px; margin-right: 20px; display: inline; float: left } #leftZone p { font-size: 1.1em } #loginModule { padding: 15px 15px 0 !important; margin-bottom: 10px; } .cboth { clear: both; }
+
+.btn-continue { background: #006dff; height: 41px !important; border: 0; width: 49%; color: #fff; }
+button#btnsalir { background-color: white; border: 0; width: 49%; height: 40px; border: 1px solid #006dff; color: #006dff; margin-right: 2%; }
+#mbd .container { position: relative; top: 10px; width: 60px; margin: 0 auto; margin-bottom: 25px; }
+
+#countdown { position: relative; margin: auto; margin-top: 10px; height: 60px; width: 60px; text-align: center;}
+#countdown-number { color: black; display: inline-block; line-height: 48px; font-size: 14px;}
+#countdown svg { position: absolute; top: -5px; right: -1px; width: 60px; height: 60px; transform: rotateY(-180deg) rotateZ(-270deg);}
+#countdown svg circle { stroke-dasharray: 310px; stroke-dashoffset: 0px; stroke-linecap: round; stroke-width: 3px; fill: none; }
+@keyframes countdown {
+  from {stroke-dashoffset: 310px;}
+  to {stroke-dashoffset: 0px;}
+}
+circle.bg-circle {
+    stroke: #006dff;
+}
+circle.fill-circle.start {
+    stroke: #e6e6e6; 
+    animation: countdown linear forwards;
+}
+
+/* BANNER CIERRE SESIÓN ESPECIFICO ACTIVO BANK */
+.session-msg-container { background-color: #fff; height: 100px; position: relative; }
+.warning-ico { float: left; width: 80px; height: 100%; position: relative; }
+.warning-ico .warning-solid { position: absolute; right: 16px; top: 10px; }
+.msg-content { height: 100%; width: 80%; float: left; padding: 15px 0 0 0; }
+#close-msg { position: absolute; right: 0; padding: 10px; }
+#closeimg{ cursor: pointer; }
+.session-msg-container hr.separator { width: 60px; float: left; height: 4px; background-color: #F0A21D; border: 0; position: absolute; }
+.msg-info { float: left; width: 100%; margin-top: 7px; font-size: 14px; font-family: IBMPlexSans, Arial, Helvetica; }
+.msg-info-title { font-size: 19px; font-weight: 600; padding-bottom: 10px; }
+#fullelement2{ position: absolute; width: 100%;	z-index: 100; }
+.no-banner{ width:100%;	height:100vh; position:absolute; z-index:2;	background-color: rgba(128, 128, 128, 0.7); }
+/* FIN BANNER CIERRE SESIÓN ESPECIFICO ACTIVO BANK */
+
+#formLoginTbl tr { height: 25px; } #loginModule h2 { margin-bottom: 0.5em; font-weight: normal; padding-right: 18px; font-size: 1.5em } #loginModule form { margin-top: 0px; margin-bottom: 0px } #loginModule fieldset { padding: 0 0px 8px 5px !important; margin: 0 } #loginModule label { display: block; font-size: 1.2em; width: 7.9em; margin-bottom: 3px; margin-top: 2px } #loginModule label.lblSpecial { width: auto } #loginModule select { width: 180px; margin-top: 3px } #loginModule .clear { margin-bottom: 5px } #loginModule label span { display: block; width: 7.9em; margin-top: 5px; margin-bottom: 5px } #loginModule input { font-size: 1.2em; height: 1.4em; margin-left: 0.4em } #loginModule input.login { font-weight: bold !important; font-size: 1.1em; cursor: pointer; border: 0; min-height: 2.5em; width: 6.5em; text-align: center; margin-right: .8em !important } #loginModule p.antetitulo { font-weight: bold; font-size: 1.2em } #loginModule .caja1 {  width: 13.6em !important;
+    height: 2.3em !important;
+    border: 1px solid;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding-left: 7px; }
+
+
+
+#loginModule .caja2 {  width: 13.6em !important;
+    height: 2.3em !important;
+    border: 1px solid;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding-left: 7px; } #loginModule img { margin-top: 0.2em } #tipsLogin { font-size: 1.1em; padding-bottom: 10px } #tipsLogin li { padding-left: 15px; margin-bottom: 2px } #tipsLoginSuperior li { font-size: 1.1em; padding-left: 15px; margin-bottom: 2px } #tipsLoginSuperior { margin-bottom: 0; margin-left: -2px; padding-top: 5px } #tipsLoginSuperior ul { margin-top: 5px } #tipsLogin li.destacado { } #tipsLoginSuperior { width: 100px; margin: 0; padding-bottom: 0; margin-left: -2px; overflow: hidden; margin-top: 12px } #client { margin-top: 13px } .module {  color: #000;
+    } .module.news { padding-bottom: 8px } .module h2 {  background-color: #fff;
+    color: #000;
+    font-size: 14px; } .module.news ul li { margin-bottom: .4em; padding-left: 15px !important } .module.empresas ul { margin-right: 0 } .module.empresas li { background-position: 0 7px; padding-left: 13px; padding-right: 0 } .module.graphic { margin-top: 16px; margin-bottom: 16px; font-size: 1.2em;
+background-repeat: no-repeat; background-position: 0 100% } .home #rightZone .module.graphic { border: none; border-top-width: 1px } .module.graphic.text { padding: 5px 15px 5px 99px; padding: 5px 15px 5px 99px } .module.graphic a { font-weight: bold } .module h2 { font-size: 1.2em; margin-bottom: 0.4em } #rightZone .module .moduleHeader h2 { padding-left: 45px; padding-bottom: 10px } #rightZone .module h2, #rightZone  div.moduleHeader { font-size: 1.5em; font-weight: bold; padding: 9px 15px 10px; } .module.special .moduleHeader h2 { padding: 2px 15px } #rightZone .module.special .moduleHeader h2 { padding-bottom: 10px } #rightZone .module.special div.moduleHeader { font-size: 1.5em; font-weight: bold; color: rgb(255,255,255); padding: 15px 0px 15px 15px; } #leftZone .module h2 a { text-decoration: none } .module ul, .module p, .module h3 { list-style-type: none; font-size: 1.1em; margin: 0 15px } .module h3 { margin-bottom: 3px } .module ul li { padding-left: 15px; margin-bottom: 15px } .module .stocks .ftl {
+width: 60% } .module .stocks .ftr { width: 25%; text-align: right } #rightZone { margin-right: 10px; display: inline; width: 201px } #container { text-align: left; margin: 15px auto } .datosFacilitado { margin-bottom: 1.5em } #container.home { width: 995px; margin-top: 20px } #container.home #leftZone { margin-left: 15px; width: 215px } #content { margin-left: 191px; margin-right: 235px } #container.home #content { width: 530px; float: left; margin: 0 } .class03 #content, .class02 #content, .class01 #content { font-size: 1.2em } .class02 #content { margin-left: 15px; margin-right: 0; display: inline; width: 570px; float: left } .class01 #content { display: block; float: none; margin-left: 30px; margin-right: 15px } #container.home #rightZone { width: 180px } .class03 #rightZone { padding-top: 0; margin-top: 0 } .class02 #rightZone { margin-left: 615px; width: auto; display: block; float: none } .class02 #rightZone.ftr { float: none; font-size: 1.2em } .class02 #rightZone h2 { padding-left: 0;
+padding-bottom: 0; padding-top: 0; font-weight: normal } .class02 #rightZone .module h2 { padding-left: 0; padding-bottom: 0; padding-top: 0; font-weight: normal } .class02 #rightZone ul { margin-left: 14px; margin-bottom: 4em } .class02 #content p { margin-left: 20px } .class02 #content p#breadcrumb { margin-left: 0 } .class02 #content ul { margin-left: 35px } .class02 #content li { background-position: 0 5px } .tabsZone, .listing { position: relative } .listing { padding-bottom: 25px; margin-bottom: 10px } .listing li { font-size: 1.2em } .class03 .tabsZone { border-top: none; background: none } .class03 #content .tabsZone { font-size: 1em } #content .tabsZone ul, #content .listing h2 { padding: 1em 2em; margin: 0 } #content .listing h2 { padding: 1.3em 1.4em 0 } .class03 #content .tabsZone ul { background: none; padding: 1em 0em; margin: 0 } #content .tabsZone ul ul { background: none; padding: 0 0 0 3px; margin: 0 } #content .tabsZone h2 { font-size: 1.4em; margin-bottom: 0.5em }
+.contentTab ul, .contentTab p { font-size: 1.2em } .class03 #content .tabsZone { margin-left: 0 } .class03 #content .tabsZone h2 { font-size: 1em; margin-left: 1.8em } .class03 #content .tabsZone li { background-position: 10px 5px; padding-left: 0 } .class03 #content .tabsZone li li { background-position: 0 5px } .class03 .contentTab ul, .class03 .contentTab p { font-size: 1em; margin-left: 3%; margin-right: 2% } #content .tabsZone h3 { font-size: 1.3em; margin-bottom: 0.75em } #content .action { padding: 9px 1%; margin: 0 } .class03 #content .tabsZone .action ul { border-top: none } #content .action a { text-decoration: underline } .class03 #content .tabsZone .actions .solicitud li { padding: 8px 0 3px 25px } .class03 #content .tabsZone .actions .solicitud li.solicitar { padding-top: 0; padding-bottom: 0 } .class03 #content .tabsZone .actions .solicitud li img { vertical-align: middle; margin-left: 4px } #content .actions.twoItems .ftl { margin-right: 0; margin-top: 0 } #content .actions.twoItems .ftr { width: 18.7em }
+#content .tabsZone .actions h3 { padding-bottom: 0; margin-bottom: 0; padding-left: 8px } #content .actions.twoItems .solicitud { height: 150px; #padding-bottom: 4px; _padding-bottom: 0px } .section { font-size: 1.4em; padding-left: 8px; margin-bottom: 6px; font-weight: bold; } #content .actions.twoItems .help { height: 150px; #padding-bottom: 0px !important } .contentHelp { float: left; width: 47em; padding: 5px; padding-left: 0; margin-bottom: .8em } #content .actions.twoItems .help { height: 150px; #padding-bottom: 0px !important } .titulo { font-size: 1.4em; padding-left: 8px; margin-bottom: 6px; font-weight: bold } #content .help { min-height: 10em } #content .tabsZone .help { margin-right: 5px } #content .help h3 { font-size: 1.4em; font-weight: bold; margin-bottom: 0.2em; padding-left: 8px !important } #content .help ul { margin: 0 !important } #content .help ul li { margin-left: 26px !important; padding-left: 8px !important; font-size: .9em; margin-bottom: 6px !important }
+#content .tabsZone .mrgSepara { margin-right: 35px } #content .actions .solicitud { width: 23em !important; margin: 0 5px; margin-left: 10px; min-height: 10em } #content .actions .solicitud.padding { margin-left: 5px !important; padding-left: 15px } .action.solicitud ul { margin: 0 !important; padding: 0 !important } .action.solicitud ul.wWidth { width: 25.5em } .action.solicitud ul.hHeight { min-height: 8.6em } .action.solicitud ul li { float: left; width: 19em; margin-left: 21px !important; padding-left: 25px !important } .action.solicitud ul li.internet { min-height: 15px; #min-height: 0px } .action.solicitud ul li.internet form { position: relative; margin-left: 6em; margin-top: -20px } .action.solicitud ul li.telefono { } .action.solicitud ul li.home { _padding-bottom: 0px !important; _margin-bottom: 0px !important } .action.solicitud .puntos { width: 21em; margin: 0 !important; padding: .62em 0; margin-left: 7px !important } .solRegalo { padding: 1em .9em; margin-left: 5px } .solRegalo a {
+text-decoration: none !important; font-size: 1.2em; font-weight: bold } .class03 #content .tabsZone .actions ul { margin-top: 0 } .class03 #content .tabsZone .actions .ftl ul { margin-left: 13px } .tabsZone .contentTab { margin-bottom: 1.5em } .tabsZone .moduloLista { width: 164px; display: inline; float: none; padding-bottom: 10px; margin-right: 0 !important } #content .tabsZone .moduloLista li a, #content .listing li { padding-left: 10px; margin-bottom: 3px; width: auto; display: inline-block } #content .listing li ul li { padding-left: 10px; margin-bottom: 2px; width: auto } #content .listing li.ftl { width: 154px } #content .listing a { text-decoration: none } #content .listing ul { margin-left: 3em; margin-top: .5em; margin-bottom: .5em } #content .listing .first ul { margin-bottom: -7px; position: relative } #content .tabsZone .moduloLista li a.destacado { } .tabsZone li a { text-decoration: none } #content .tabs li.sel .contentTab.showed { display: block; _display: inline; }
+#content .tabs li .contentTab ul { } #content .tabs li .contentTab .container { padding: 0 1em } #content .tabs li .contentTab .container ul { margin: .5em 0 } #content .tabs li .contentTab .container ul li { padding-left: .5em; margin-left: 3.5em } .parrafo { padding: 0 10px } .parrafo p { margin: 0 !important; margin-bottom: 16px !important } .parrafo ul, .parrafo ol { margin: 0; margin-bottom: 16px !important; margin-left: 20px } .parrafo ul li { } .parrafo ol li { list-style-type: decimal; margin-left: 40px } #content #accessForms .tabs li.sel .contentTab.showed { display: block; display: inline; } #content .tabsZone hr { border: 0; height: 1px; margin: 0.7em 0 } #content .tabsZone p.moreInformation, #content .listing p.moreInformation { margin: 6px 20px 6px 12px; font-weight: bold; font-size: 1.1em } #content .listing p.moreInformation { text-align: right } #content .tabsZone p.moreInformation a, #content .listing p.moreInformation a { text-decoration: none } #content #accessForms { float: left;
+margin-bottom: 2em; margin-left: 17px } #content #accessForms .tabsZone { margin-right: 20px; background: none } #content #accessForms .tabsZone ul { width: 320px; padding-right: 0; background: none } #content #accessForms label { font-size: 1.1em; margin-bottom: 8px; display: block } #content #accessForms span.title { width: 9.5em; text-align: right; display: block; margin-right: 10px; margin-top: 2px } #content #accessForms span.description { margin: 0; padding: 0; padding: 6px 0; padding-left: 140px; display: block } #content #accessForms span.relexplorer { #width: 50% !important; #margin-top: -1px !important; #margin-bottom: -1px !important; #position: relative !important } #content #accessForms label input { font-size: .9em; padding: 4px 2px; margin-right: 3px } #content #accessForms label input.user { width: 9.5em } #content #accessForms label input.pin { width: 7.5em } #content #accessForms .action { margin-top: 16px; padding-left: 135px } a.ayuda { float: left; padding-top: 2px }
+#content #accessForms .btnAction { margin-left: 132px } #content #accessForms .btnAction input.tipo4 { font-weight: bold; font-size: 1.3em; cursor: pointer; width: 6em; min-height: 1.6em; padding: 0.2em 0em } html>body #content .btnAction input.tipo5 { #position: relative; #top: -10px } h2.titleAccess { font-weight: normal; font-size: 1.6em } .titleAccess span { font-weight: bold } #content #accessForms .titHeaders { width: 58em; margin-bottom: 12px } #content #accessForms div.ftr.AccEmp { width: 26.5em } div.blockParrafo { margin: 12px; margin-right: 0 } div.blockParrafoHelp { margin: 4px; margin-left: 32px; margin-right: 0 } div.blockParrafoHelp ul { margin: 8px 0; margin-left: 16px !important } .mainNavigation li { padding: 1px 0 1px 16px; margin-bottom: 2px } #leftZone .mainNavigation li a, #leftZone p.moreInformation a { text-decoration: none; font-size: 1.2em; font-weight: bold } .mainNavigation li.active, .mainNavigation li.activeOk { position: relative }
+.mainNavigation li.active img, .mainNavigation li.activeOk img { position: absolute; right: 0; top: 0 } #leftZone .moreInformation { margin-left: 14px; margin-top: 5px; padding-top: 5px; padding-left: 18px } .mainNavigation li li { padding-left: 10px; margin-left: 2px } #leftZone .mainNavigation li li a { font-weight: normal } .mainNavigation li ul { margin-top: 3px } .mainNavigation li li li { padding-left: 9px } .mainNavigation li li li li { padding-left: 9px } #leftZone .mainNavigation li li.active a, #leftZone .mainNavigation li li.activeOk a { font-weight: bold } #leftZone .mainNavigation li li li.active a, #leftZone .mainNavigation li li li.activeOk a { font-weight: bold } #leftZone .mainNavigation li li li li a { font-size: 1.1em } #breadcrumb { font-size: 0.9em; margin-bottom: 15px } #breadcrumb .active { font-weight: bold } #content h1 { font-size: 2em } #content p { margin-bottom: 1em } .headers { margin-bottom: 0.75em } .headers h1.Apartado { margin-bottom: 10px } .headers h1 { padding-left: -1px }
+.headers h1.bs { font-size: 2em !important } .headers h2.subtitle { font-size: 1.2em ! important; font-weight: bold; margin-bottom: 1em; } p.subtitle { font-size: 1.2em !important; font-weight: bold } .hacked .imagen.pdd5 { padding: 5px } #product2columns { width: 49%; padding: 0; margin-bottom: 10px; margin-top: 5px } #product2columns img { margin: 10px 10px 0 0 } #product2columns ul { margin-top: 10px } .productList { width: 100%; font-size: 1em } .contentTab .productList { width: 98%; font-size: 1em; margin-bottom: 1em; margin: 0 auto } .productList th { font-size: 0.9em; padding-bottom: 2px; padding-left: 2px; text-align: left } .productList td { vertical-align: top } .productList .name { padding-left: 0px; padding-top: 12px } .productList .indication, table.productList td.features { padding-top: 12px; } #content .productList td.name p.title { margin-left: 5px; margin-bottom: 3px; font-size: 1.2em } #content .contentTab .productList td p { margin-bottom: 3px; padding-left: 0; margin-left: 5px; }
+#content .contentTab .productList td.name p.title { } #content .contentTab .productList td.name p.title a { text-decoration: none;
+    padding-left: 0;
+    margin-left: 0;
+    color: #000; } .productList td.name p.title a { font-weight: bold } .productList td.name p.intro, #content .contentTab table.productList td p.intro {     margin-left: 5px;
+    margin-right: 25px;
+    margin-top: 7px; } .productList tbody tr td { padding-bottom: 4px } .productList tbody tr.marked { } .productList tbody tr.marked td { } .productList tbody tr td.last {  padding-bottom: 20px;
+border-bottom: 1px solid #d9d9d9; padding-left: .4em } .productList tbody tr td.wWidth { width: 250px } .productList tbody td { padding-right: 5px } .productList tbody td.indication { width: 20% } .productList tbody td.features { padding-right: 0px; padding-left: 0 } .productList tbody td.indication img { padding-right: 5px } .productList tbody td.features img { padding-right: 10px } .productList tbody td.features ul { padding-left: 0; margin-left: 0px } .productList tbody td.features li { padding-left: 7px !important; margin-bottom: 4px } .masInfoLista { }
+ table.productList p.moreInformation img { vertical-align: middle; margin-left: 12px; margin-top: 3px } #content .productList p.mark { font-weight: bold; padding-left: 17px; margin-top: 9px; margin-bottom: 0 } #content .contentTab .productList p.mark { padding-left: 17px } ul.tools { margin-top: 5px; font-size: 0.9em } .contentTab p { margin: 0; margin-bottom: 16px } .contentTab .txtDestacado { width: 49.1em } .contentTab .txtDestacado ul { margin-bottom: 16px !important } .contentTab .txtDestacado ul li { margin-left: 10px !important; padding-left: 10px !important } .contentTab .txtDestacado a { font-size: 1.1em; font-weight: bold; text-decoration: underline; padding-right: 10px } #content ul.tools li { padding-left: 16px; background-position: 0 60%; background-repeat: no-repeat; margin-left: 13px }
+#content ul.tools li.save { } #content ul.tools li.send { padding-left: 18px } #content ul.tools li.print { } #content .formBtn form { height: 2.1em; margin: 1em 0; padding: 0; padding-top: .5em } #content table .formBtn { margin-left: 11em } #content table .formBtn form { margin: 0 } .productConditions { margin-left: 3%; font-size: 1em; width: 70%; margin-bottom: 1.5em } .productConditions th { height: 1.6em; text-align: center } .productConditions th.conditionName { text-align: left; padding-left: 2px } .productConditions td { height: 1.6em; padding-left: 10px; text-align: center } .productConditions td.conditionName { text-align: left } .productConditions tfoot td { font-weight: bold; height: 1.85em } .productConditions tfoot td.conditionName { text-align: left; padding-left: 10px } .relatedLinks { margin-bottom: 2em } .relatedLinks h2 { font-size: 1.4em; font-weight: bold; padding: 0 } #content .relatedLinks p { margin: 4px 0; margin-top: 8px; padding: 0; font-size: 1em } #content .relatedLinks ul {
+margin-left: 20px } #content .relatedLinks ul li a { font-size: .9em } #content .relatedLinks .endPageTitle { margin-bottom: 0.5em } #content ul {  
+    margin-bottom: 1em; } #content li, .class02 #rightZone li { padding-left: 10px; margin-bottom: 4px } #content #formintro li { } .class02 #rightZone li.ftl { width: 45% } #content dt.section a { font-size: .9em; margin-left: .2em } #content dl.otroServicios { margin-top: 24px } #content dl.otroServiciosJoven { margin: 10px 0 0 7px } #content dl.otroServicios dd, #content dl.otroServiciosJoven dd { margin: 10px 0pt 26px 0px; padding: 0px 0px 5px 16px } #content .ftr.promoDos { margin: 2px 0 0 10px } #content dl.otroServicios dt, #content dl.otroServiciosJoven dt { margin-top: 6px } #content.formRequest .auxiliarLinks { font-size: 1em; float: left; width: 12em } #content .auxiliarLinks { margin: 0; clear: both; float: left } html>body #content .auxiliarLinks { width: 560px; #width: 600px } #content .auxiliarLinks .goTop, #content .linkUp a {
+padding-left: 11px } #content .frmLink { width: 7em;
+    margin-left: 54px;
+    display: none; } #content .frmLink .goTop { padding-left: 11px } .fntSize { font-size: 1.1em !important } #content h2.section, #content h2.sectionEmp { font-size: 1.25em } #content h2.spacer { margin-bottom: 1em !important } .estilo1 { font-size: 1.09em } #content ul.otros { margin: 0 0 1.5em 1.3em } .section, #ayudaFaqs h3 { font-size: 1.4em; font-weight: bold; margin-bottom: 0.2em } #content #moduleHelp h2.section { font-size: 1.7em; margin-bottom: 6px } #moduleHelp .ayuda { padding: 0 8em .5em 1em; margin: 0 } #moduleHelp p { margin: 0 90px 4px 12px } #ayudaFaqs ul { margin-left: 11px } #ayudaFaqs p.moreInformation { padding-left: 21px } #content dd { margin: 1.4em } #content dl.faqs { margin-top: 1em } #content img.ftr { margin-left: 10px } #content .faqs dd { margin-left: 0; margin-top: 1em; margin-right: 0 } #content .faqs dt { font-weight: bold } #content .faqs dd .linkUp { text-align: right; margin-right: 0 } #content .promo, #content .imagen {
+margin-left: 20px; margin-bottom: 10px; margin-right: 0; display: inline } #content .imagen.ftl { margin-right: 20px; margin-left: 0 } #content .imagen.center { display: block; width: 100%; margin: 0; margin-bottom: 2em; border: 0; text-align: center } #content .imagen.center img { } #content .ftl.promo { margin-left: 0; margin-right: 20px } #content .promo img { padding: 5px; padding-top: 0px } #content div.intro { margin-bottom: 10px; float: left; margin-right: 5px } #content .catalogue { margin-left: 1em; margin-right: 0 } #content .catalogue li { width: 30%; background: none; padding-left: 0; padding-right: 0; display: inline } #content .catalogue li.last { margin-right: 0 } #content .catalogue li.twoColums { width: 46.7% } #content .catalogue li.twoColums ul { margin-top: 0; margin-bottom: 10px } #content .catalogue li.twoColums li { margin-bottom: 2px } #content .companySolutions .catalogue li { width: 46% } #content .catalogue li .sectionEmp, #content .catalogue li .section {
+padding-top: 6px; padding-bottom: 5px; margin-bottom: 0.6em; padding-left: 1em } #content .catalogue li .sectionEmp { padding-left: 0 !important; border-bottom: 0; background: none } #content .catalogue li.twoColums .sectionEmp { margin-bottom: .4em } #content .companySolutions .catalogue li .sectionEmp, #content .companySolutions .catalogue li .section { background: none; border-bottom: none } #content .catalogue li .section span { text-decoration: underline } #content .catalogue li ul { margin: 7px 0 20px 5px; padding: 0 } #content .catalogue li ul li { width: auto; display: block; padding-left: 10px; float: none; margin-left: 1em; font-size: 1.085em } #content .catalogue li.twoColums ul li { margin-left: 0 } #content .catalogue li ul a { margin-left: 0; text-decoration: none } #content .catalogue li ul a:hover { text-decoration: none!important} #content .contentModule { width: 200px; padding: 5px } #content .contentModule h2 { line-height: 1em } #content .contentModule p { font-size: 0.9em } .banner {
+margin-left: 20px; margin-bottom: 1em } .banner img { display: block } .promos { margin-left: 20px } #content .promos .promotion { width: 255px; margin-left: 0; margin-bottom: 0; padding: 0 0px 24px 0px; margin-bottom: 14px } #content .promotion p { margin-right: 8px; margin-left: 15px } #content .promotion img { margin-left: 0px; margin-right: 10px } #content .promotion .section { padding: 12px 15px 0 } #content .promotion a.moreInfo { background-position: 0 50%; padding-left: 16px } #content .subtitle { font-size: 1.5em; margin-top: -10px } #content .bulletHelp { background: transparent url(../img/iconos/ic_goBack.gif) no-repeat scroll 23px 5px } #rightZone .module { padding-bottom: 16px } .home #rightZone .module { } #rightZone .module p { margin: 1em 11px 0.4em } #rightZone .module ul li p { #margin-top: 0em } #rightZone form { margin-left: 19px; margin-right: 4px; font-size: 1.1em } #rightZone form input, #rightZone form select { vertical-align: middle; font-size: 1.2em } #rightZone form select {
+font-size: 1.2em } #rightZone form select.yearSelection { width: 3em } #rightZone form select.amountSelection { font-size: 1em; width: 12em } #rightZone label { display: block; margin-bottom: 0.9em } #rightZone form a { margin-left: 0 } .button .buttonLeft { width: 4px; height: 25px } .button .buttonRight { width: 4px; height: 25px } .button.tipo3 .buttonRight, .button.tipo3 .buttonLeft { width: 5px; height: 33px } .button.secondary .buttonLeft { } .button.secondary .buttonRight { } .button input { border: none; font-weight: bold; font-size: 2em } .button.secondary div.boton { padding: 0 5px 7px 0; font-size: 1.2em } .button.secondary div.boton input, .button.tipo3 div.boton input { background: none; cursor: pointer; padding: 0; margin: 0 } input.secondary { font-weight: bold; font-size: 1em !important; cursor: pointer; border: 0; padding: 10px 4px; width: 60px } #buscarPuntos input.secondary { padding: 1em; padding-left: .4em } .button.primary .buttonLeft { } .button.primary .buttonRight { }
+
+.button.tipo3 .buttonLeft, .button.tipo4 .buttonLeft { } .button.tipo3 .buttonRight, .button.tipo4 .buttonRight { } .button.login .buttonLeft { } .button.login .buttonRight { } .button.primary div.boton { padding: 0px 7px 7px 0px } .button.tipo3 div.boton, .button.tipo4 div.boton { padding: 1px 7px 8px 0px } .button.login div.boton { padding: 0px 7px 7px 0px } .button.primary div.boton input { background: none; cursor: pointer } input.primary { font-weight: normal; font-size: .9em; cursor: pointer; border: 0; padding: 0 .8em; min-height: 2.5em; #min-height: 0em; } input.tipo3 { font-weight: normal; font-size: 1.3em; cursor: pointer } input.tipo4 { font-weight: normal; font-size: 1em; cursor: pointer; border: 0; min-height: 2.5em; width: 6.5em } input.tipo5 { font-weight: bold; font-size: 1.2em; cursor: pointer; border: 0; min-height: 2.5em; margin-left: 5px; width: 5.5em; padding-top: 8px } div.btnSolPro { display: block; margin-bottom: 18px; padding: 0 } div.btnSolPro input.tipo5 { margin-left: 0;
+padding-top: 8px; min-height: 2.5em }
+
+#content .catalogue li.twoColums .sectionEmp a {
+	color:#000;}
+
+ input.login { font-weight: bold; font-size: 1.3em; cursor: pointer; border: transparent } #loginModule div.boton { height: auto; font-size: 1.3em } #loginModule div.button { margin-right: 12px } #rightZone .moduleHeader { padding-top: 5px } #rightZone h2 { background-color: transparent; background-repeat: no-repeat; background-position: 15px 50%; padding-left: 45px; font-size: 1.5em; padding-bottom: 10px } #rightZone .moduleHeader.noBg h2 { padding-left: 11px } #rightZone .special .moduleHeader { padding-top: 7px; padding-bottom: 0px } .home #rightZone .special .moduleHeader { } #rightZone .special h2 { padding-left: 15px; padding-bottom: 5px; padding-top: 0 } #rightZone .special a { font-size: .9em; font-weight: bold; white-space: nowrap; #margin-left: 0.06em } .relatedLinsTxCabecera .module ul a { white-space: nowrap; display: inline-table; #margin-left: 0.06em } #rightZone .special ul { margin-left: 11px; margin-top: 8px } #rightZone .special li {
+background-position: 0 2px; padding-top: 0; padding-left: 30px; min-height: 30px; _height: 30px } #rightZone .telefono { font-weight: bold; display: block; font-size: 1.2em } #rightZone .special form { margin: 0; font-size: 1em; width: 90% } #rightZone .special .boton { font-size: 1.15em } #rightZone .special p { margin-left: 0 } #rightZone .special li.txt { font-size: 1em; margin-bottom: 10px; padding-left: 32px } #rightZone .special li.txt strong { font-size: 1.3em } #rightZone .special li.txt p { font-size: 1em } #rightZone .relatedLinks { padding-bottom: 10px; margin-bottom: 1em } #container.home #rightZone .relatedLinks { } .home #rightZone .relatedLinks h2 { } #rightZone .relatedLinks p, .relatedLinks ul { font-size: 1.1em } #rightZone .relatedLinks h2, .relatedLinsTxCabecera .relatedLinks h2 { font-size: 1.5em; padding: 10px; padding-bottom: 3px } #rightZone .relatedLinks ul { margin: 0 10px } #rightZone .relatedLinks p { margin: 0 11px; padding-top: 5px } #rightZone .relatedLinks p.first {
+padding-top: 10px } #rightZone .relatedLinks li { margin-top: .4em; padding-left: 15px } a.moreInfo { padding-right: 10px } a.pdf { margin-right: 2px; padding-right: 20px; padding-bottom: 2px } .pdfv { height: 15px; position: relative; display: inline-block } a.doc { margin-right: 2px; padding-right: 20px; padding-bottom: 2px } a.ppt { margin-right: 2px; padding-right: 20px; padding-bottom: 2px } a.external { margin-right: 2px; padding-right: 20px; padding-bottom: 2px } #rightZone .special .telefono, #ModuleHelpDown .telefono { display: block; font-size: 1.2em; font-weight: bold } span.horario { font-size: 0.9em } #ayuda { width: 720px } #moduleHelp { margin-left: 10px; width: 315px; padding: 0 0 10px 0; min-height: 140px } #moduleHelp p { margin-left: 12px; margin-right: 90px } #moduleHelp h2 { padding: 12px 0 0 12px } #ModuleHelpDown { width: 59.8em; margin-top: 1em } #ModuleHelpDown ul { margin: 5px; padding-top: .5em; padding-bottom: 0.5em; padding-left: 10px } #ModuleHelpDown li { padding: 0;
+margin: 0 !important; width: 17em; padding-left: 25px; margin-bottom: 10px } #ModuleHelpDown li ul { padding-top: 0 } #ModuleHelpDown li li { float: none; width: auto; padding-left: 8px; margin-bottom: 3px } #ModuleHelpDown li.last { margin-right: 0 } #ModuleHelpDown li h2 { padding-top: 5px } #ModuleHelpDown li ul p { margin-left: 1.5em } .bigPromotion { margin: 0 1.5em; margin-bottom: 2em; padding-left: .8em; padding-top: .8em } .bigPromotion .ftl { margin-left: 10px; margin-right: 5px } .bigPromotion h2 { font-weight: bold; font-size: 1.2em; margin-bottom: 0.3em } .notes { font-size: 0.8em } .fat { font-weight: bold; font-size: 1.3em } .fat strong { font-size: 1.4em } .bigPromoText { #float: left } .bigPromotion a.moreInfo { padding-left: 15px; padding-right: 0 } .promoBody { padding: 0 .5em; padding-top: 1.7em } .promoBody span.antetitulo { font-size: 1.4em; font-weight: bold } .promoBody h2.titulo { font-size: 1.8em; font-weight: normal } .promoBody h3.subtitulo { font-size: 1.2em; padding-bottom: .5em }
+.bigPromotion.catPuntos { width: 46.4em; min-height: 15em; margin: .2em 0 2.8em 0 } .bigPromotion .pTitulo { font-size: 1.2em } .bigPromotion .psubTitulo { font-size: 1.8em; font-weight: normal; margin: .2em 0 } .bigPromotion div.pEntradilla { margin: 1em 0 } .bigPromotion.catPuntos .imgCat { float: left; margin-right: 2em } .bigPromotion.catPuntos a { font-size: .9em; padding: .2em 0; padding-right: 2em } .blockSecciones { width: 100%; padding-bottom: .5em; font-size: 1.4em } .listCatPunt { float: left; width: 95.9%; padding: 1em 1em .5em 1em } .listCatPunt .ftl { width: 25em } .listCatPunt span.titulo { display: block; font-size: 1.2em; font-weight: bold; margin-bottom: 1em } .btnRegalos { padding: 1.3em 0; text-align: right } .btnRegalos a { font-size: .9em; font-weight: bold; text-decoration: none; padding: 1.5em; ) no-repeat 0 75% } #printer { display: none; text-align: right; padding: .5em 0; padding-bottom: 2em } #printer.clear { clear: both } #printer li { background: none !important } #printer a {
+padding-left: 18px; font-size: .9em } .banners { margin-bottom: 2em; padding-left: 5px; width: 700px !important } .banners .ftl { padding-left: 10px } .banners h2 { font-size: 1.3em; padding-bottom: 5px } .promoSolicitud .banners h2 { font-size: 1em; font-weight: normal } .leyenda { width: 25%; margin-top: 1.7em } #content .leyenda img { vertical-align: middle } #content .leyenda li { margin-bottom: 1em } .searchloc { margin-left: 10px; margin-bottom: 10px } .searchloc h2 { font-size: 1.4em; font-weight: normal } #gSearch { width: 720px; padding-bottom: 1.5em; margin-left: 30px } #gSearch fieldset { padding-top: 25px; } #gSearch .frmButton, #formsearch .frmButton { margin-left: 30px; margin-top: 0.8em } #gSearch .tipo3, #formsearch .frmButton { font-size: 1.3em; margin-left: 30px } #gSearch form { margin-bottom: 40px } #search { width: 250px; font-size: 1.3em; margin-left: 5px } #gSearch #box2 { width: 50px } #gSearch .frmButton { clear: both; float: left; margin: 0; margin-top: 3px }
+#gSearch .frmButton .btn { border: 0; margin-left: 0; text-align: center; width: 4.6em; font-size: 1.4em; min-height: 1.5em; cursor: pointer } html>body #gSearch .frmButton .btn { #float: right; #margin-left: 820px } * html #gSearch .frmButton .btn { margin-left: 0; height: 1.6em; font-weight: bold } #gSearch .frmButton .tipo3, #searchResults .frmButton .tipo3 { padding: 0; margin: 0 } #gSearch input { margin-top: 0em } #gSearch input.text { margin: 0; padding: .1em 0; font-size: 1.1em } .hint { display: block; margin-top: 0.8em; color: black; font-size: 0.8em; margin-left: 22.0em } #gSearch label { } #gSearch .primary input { margin-top: 0 } #gSearch legend { display: block; font-size: 1.4em; padding-left: 15px; margin-bottom: 0.7em } #ModuleSearchBox { width: 360px } .confirmation { padding: 25px } #containerMaps { margin-left: 300px; position: relative } .mapaOficinas { height: 34.3em } #side_bar, #directions { margin-left: 15px !important; width: 20.5em; overflow: auto; padding: 8px 4px 8px 15px;
+height: 33em } #directions { display: none } .helpsection { margin-left: 10px } .helpmore { margin-left: 16px } .section { margin-bottom: 5px } .searchHelp { font-size: 1.4em; padding-left: 30px; margin-bottom: 5px } #ModuleHelpDown .telefono { display: block; font-size: 1.2em; font-weight: bold } #content #ModuleHelpDown li { background-repeat: no-repeat } #resultsMaps { height: 418px; width: 250px; overflow: auto; margin-left: 5px } #resultsMaps ul { margin: 5px } #resultsMaps ul li { background: none; margin-bottom: 25px; margin-top: 10px; padding-left: 5px } #resultsMaps ul li img { margin-right: 10px } #googleMaps { margin-left: 275px; margin-right: 10px } #googleMapsIco { margin-top: 32px } #boxDesconexion { border-style: solid; border-width: 1px; font-size: 1.3em; height: 1.2em; margin-top: 3px; margin-right: 5px; width: 15em } #boxname { font-size: 1em; margin-left: 1px; margin-bottom: 15px } #formsearch { margin-left: 12px } #rightZone .sideBanner a { margin-bottom: 20px; display: block }
+#content .listing.odd { width: 300px; float: left; padding-bottom: 17px } #content .listing.even { width: 210px; float: right; padding-bottom: 17px } #content .listing.odd h2 { } #content .listing.even h2 { background-position: 50% 0 } #content .listing.even .first { width: 100%; background-repeat: no-repeat } #content .listing.even .first h2 { background: none } #content .listing li ul, #content .listing li ul li { margin: 0; margin-top: 3px; margin-bottom: 3px } #content .listing.even li { padding: 4px 0 2px 21px } #content .listing li ul li { font-size: .9em; margin: 0 5px; margin-bottom: 2px } #content .listing hr { border: 0; margin: 15px auto -3px auto; #margin: 4px auto -3px auto; width: 73%; height: 1px; text-align: center } #content .listing.odd li { clear: both; border: 0px solid #F6F; display: list-item } #content .listing.odd li ul li { clear: both } #moduleHelp { background: none } #moduleHelp a { } #moduleHelp h2 { margin-bottom: 1em } #ayudaFaqs { width: 31.5em }
+#content .tabsZone p.moreInformation, #content .listing p.moreInformation { margin: 6px 5px 6px 5px; font-weight: bold; font-size: 1.1em } .listBig { position: relative; padding-bottom: 10px } .listBig h2 { padding: 10px 15px; font-size: 1.2em; margin-bottom: 0.4em } .listBig p { text-align: right; margin-right: 10px; font-weight: bold; font-size: 1.1em } #itemsList ul { font-size: 1.1em; padding-bottom: 10px } #itemsList li { width: 161px; font-size: 1.2em; padding-left: 10px; margin-bottom: 2px; float: left } #itemsList li a { text-decoration: none } .listLeft { width: 300px; position: relative; padding-bottom: 10px } .listLeft h2 { padding: 10px 15px; font-size: 1.2em; margin-bottom: 0.4em } #itemsListLeft ul { font-size: 1.1em; margin-bottom: 0px } #itemsListLeft li { font-size: 1.2em; padding-left: 10px; margin-bottom: 2px } #itemsListLeft li a { text-decoration: none } #itemsListSimple li { font-size: 1em; padding-left: 10px } .listRight { width: 210px; position: relative; padding-bottom: 10px }
+.listRight h2 { padding: 10px 15px; font-size: 1.2em; margin-bottom: 0.4em } .listRight h2.header { } p.masServicios { background-position: right; padding-right: 8px } #leftZone .subNavigation { width: 160px; height: 170px; margin-left: 10px } #leftZone .subNavigation h3 { margin-left: 10px; padding-bottom: 10px; padding-top: 5px } #leftZone .subNavigation li { padding: 1px 0 1px 16px; margin-left: 10px; margin-bottom: 2px } #leftZone .subNavigation li a, #leftZone p.moreInformation a { text-decoration: none; font-size: 1.2em } #leftZone .subNavigation li { padding-left: 10px } #rightZone .operations h2 { padding: 10px 10px; font-size: 1.4em; margin-bottom: 0.4em } #ayuda { height: 20px; padding-left: 20px; width: 180px; text-align: right } #formulario { } #formulario label { float: left; width: 10em; margin-right: 1em } #formulario .grupoCampo { overflow: hidden; width: 100%; margin-bottom: 5px } .inputLong { width: 30.5em } .notaForm { font-size: 0.9em } .asistForm { margin-left: 12.1em; display: inline;
+float: none; font-size: 0.9em; font-weight: normal; padding: 0; width: auto } .highlight { font-weight: bold } #formulario .listaForm { margin: 0; padding: 0; list-style: none } a.outerLink { padding-right: 20px; #display: inline-block } .news.titulo { font-weight: bold; font-size: 1.2em; border-width: 0px } #container.clear #content .news { border-width: 0px } .news.date { font-size: .8em; margin-top: 5px; border: 0 } p.news { margin-top: 5px; margin-left: 10px; border: 0 } p.news.noticia { padding: 0; margin-bottom: .5em !important } p.news.viewMore { padding: 0; margin-top: 0 !important; margin-bottom: 20px !important } #container.clear #content .news.archive { padding: 10px; border-style: solid; border-width: 1px 0px } .archiveTitle { font-size: 1.5em; margin-bottom: 10px } a.news.archive { font-size: 1em; border: 0 } p.serviceText { margin-left: 20px; margin-top: 10px } ul.moduleCat { margin: 0; padding: 5px } li.moduleCat { margin: 0; padding: 0 } #content p.titleResult { font-size: 1.08em;
+padding-left: 1.5em; margin-bottom: 0 } .result { font-size: 1.4em; font-weight: bold; margin: 0.5em 0; display: block } #resultSimul { padding: 0.5em 0; height: 166px } #resultList { width: 100%; text-align: center; padding: 10px } #resultList b { text-decoration: underline } #resultList td { padding-bottom: 5px } #resultList .btnAction { padding: 5px 0 0 0 } td.resultListLeft { text-align: right; width: 50%; padding-right: 5px } td.resultListRight { text-align: left; font-weight: bold; padding-left: 5px } td.resultListLeft1 { text-align: right; padding-right: 5px; font-size: 1.3em; padding-top: 10px } td.resultListLeft1 sup { font-size: 0.62em } td.resultListRight1 { text-align: left; font-size: 1.3em; padding-left: 5px; padding-top: 10px; font-weight: normal } #resultList td.resultNote { text-align: left; font-size: 0.9em; padding-left: 0.5em } #usuario { width: 160px; padding: 10px 0px 0px 0px !important; font-size: 1.1em; position: absolute !important; margin-left: 490px; _margin-left: 30px !important;
+white-space: nowrap } html>body #usuario { #position: relative !important; #top: 0px !important; #width: 180px !important } #botonDesconectar { margin-left: -5px; width: 90px; font-size: 1.1em; padding-top: 0 } #segmentoUsuario { font-weight: bold; margin-bottom: 0px } #nombreUsuario { margin-bottom: 0 } input.tipo6 { font-weight: bold; font-size: 1.2em; cursor: pointer; border: 0; min-height: 2.5em; margin-left: 5px; width: 5.5em; padding-top: 8px } input.tipo7 { font-weight: bold; font-size: 1.2em; cursor: pointer; border: 0; min-height: 2.5em; margin-left: 5px; padding-top: 8px } #contenedorPuntosRegalos { width: 47.2em; margin: 1em 0 .8em 0; float: left } .puntosRegalos { height: 161px; width: 263px; margin-bottom: 1.2em; position: relative } .puntosRegalosCabecera { height: 1.5em; width: 21.08em; text-decoration: none; font-weight: bold; font-size: 1em; padding: 10px 0 0 10px; float: left; overflow: hidden; margin-bottom: 1em } .puntosRegalosCabecera a { text-decoration: none; padding-right: 10px; float: left; width: 13em; line-height: 1.39em } .puntosRegalosCabecera .ftr { margin-right: 5px; line-height: 1.39em }
+.puntosRegalosCabecera p { height: 80px; margin-bottom: 0 } .puntosRegalos p.description, .puntosRegalos p.intro { padding-right: 0.5em; float: right; width: 11em; height: 5em; overflow: hidden; margin: 0 } div.hacked div.puntosRegalos img { width: 8.33em; padding-left: 13px; padding-right: 8px; float: left; border-top: 0 } .puntosRegalos p.moreInformation { margin: 20px 0 0 0; font-weight: normal; font-size: 1.1em; text-align: left; text-decoration: underline; padding-right: 0.4em; float: right; width: 10em } .puntosRegalos p.moreInformation.down { position: absolute; bottom: 3px; right: 0 } #content .puntosRegalos p.repo { text-align: left; float: right; width: 11.4em; margin: 0px 0px -20px 0px } #puntosRegaloDetalle { margin-top: 2em } #puntosRegaloDetalle b { font-size: 1.21em } #puntosRegaloDetalle p { font-size: 1.1em; padding-top: 10px } #puntosRegaloDetalle .descripcionRegalo { float: right; width: 25.3em } #puntosRegaloDetalle .imagenRegalo { float: left; width: 22.1em; min-height: 10em;
+text-align: center; margin-top: 0 } #pieRegalo { margin-bottom: 10px } #pieRegalo .puntosRegalo { font-size: 1.5em; font-weight: bold; width: 40%; text-align: center } #pieRegalo .referenciaRegalo { font-size: 1.21em; font-weight: bold; width: 53%; height: 22px; padding-top: .2em } table.tablasGris { font-family: Arial; border: 0em; border-collapse: collapse; margin-left: 15px; margin-bottom: 12px } table.tablasGris caption { display: none } table.tablasGris thead th { font-weight: bold; font-size: .9em } table.tablasGris tbody th { font-size: .9em; font-weight: normal } table.tablasGris td { font-size: .9em } .tablaTextoIzquierda { text-align: left; padding: 0.26em 0.8em 0.26em 0.8em } .tablaTextoDerecha { text-align: right; padding: 0.26em 0.8em 0.26em 0.8em } .tablaTextoCenter { text-align: center } table.tablasGris tfoot th, table.tablasGris tfoot td { font-weight: bold; font-size: 1.2em; padding-right: 0em; margin-right: 0 } table.tablasGris TFOOT TD { padding-right: 0.8em }
+
+table.tablasGris tfoot.fondoAmarillo th, table.tablasGris tfoot.fondoAmarillo td { font-weight: bold; font-size: 1.2em; padding-right: 0em; margin-right: 0 } table.tablasGris tfoot.fondoAmarillo td { padding-right: 0.8em } .celdaCentrada { text-align: center } span.segEnlace { padding-left: 10px } span.segEnlace a { background: none !important } ul li.segmento { margin-bottom: 4px !important; #margin-bottom: 0px !important } ul li.segmento a:hover { text-decoration: underline } #content li.listadoGris { padding-left: 10px; margin-bottom: 4px } .destacadoAzul { margin-left: 1.8em; .padding: 1em 0 1em 0; margin-bottom: 1em } .destacadoGris { margin-left: 1.8em; .padding: 1em 0 1em 0; margin-bottom: 1em } .contenidoDestacadoAzul { width: 100%; margin: 1em 0 1em 0; #width: 99% } html>body .contenidoDestacadoAzul { display: table;#clear: none} 
+
+
+.iconosIzquierda { width: 7%; float: left; text-align: right; padding-right: 1em } .iconosIzquierda img { border: 0 !important } .iconosIzquierdaAlerta {
+height: 3em; background-repeat: no-repeat; background-position: top center; width: 7%; float: left; text-align: right; padding-right: 1em } .textoDerechaDestacadosFormulario { width: 85%; float: left } .textoDerechaDestacadosFormulario ul { margin: 0 !important; padding: 0 } .textoDerechaDestacadosFormulario .destacadoRecuadro { font-size: 1.2em; padding: 0.2em 0 0em 0; font-weight: bold } .textoDerechaDestacadosFormulario p { margin-bottom: .8em !important } .textoDerechaDestacadosFormulario p.destacadoRecuadro { margin: 0; margin-bottom: .4em !important padding: 0 } .capaBoton { width: 28.42em; padding: 0 } .capaBoton input.primary { background: none; font-size: 1.3em; font-weight: bold; text-align: center; width: 11.3em; min-height: 2.3em; padding: 0 } .destacadoAzulFin { padding: 1em 1em 1em 1.4em; margin-bottom: 1.5em; margin-top: .3em } .contenidoDestacadoFinAzul { width: 100%; display: inline } .parrafoConPunto { background-repeat: no-repeat; background-position: 0.2em 0.4em; padding-left: 1em }
+p.parrafoConPunto { background-position: 0 55%; padding: 0 } p.parrafoConPunto a { padding-left: 5px } .titular2Azul { width: 100% !important; width: 100%; font-size: 1.2em; margin: 0 0 1em 1em } DL.definicionFormulario { width: 100%; float: left } DL.definicionFormulario DT, .confirmDatos DT { width: 45%; float: left; text-align: right; clear: left } DL.definicionFormulario DD, .confirmDatos DD { width: 45%; float: left; text-align: left; margin: 0 !important; margin-left: 6px !important; margin-bottom: 8px !important } .confirmDatos dl { width: 100% } .confirmDatos dl dd dl { margin: 8px 0% 0px -47.4%; position: relative } .masPaddingIz { padding-left: 2em } .destacadoRosa { padding: 1em 1em 1em 1.4em; margin: 1em 0 1em 0 } #content li.listadoRojo { padding-left: 10px; margin-bottom: 4px } .formularioSolicitud LEGEND { display: block;font-size: 1.2em; line-height: 1.9em; font-weight: bold; margin: 0 0 1.4em -0.45em; min-width: 40em; background-color: white }
+.formularioSolicitud legend.fbagruplegendMargenExtra { display: block; width: 85%; font-size: 1.2em; line-height: 1.9em; font-weight: normal; font-weight: margin: 0 0 1.4em -0.45em; min-width: 33em } .capaCienPorCien { width: 100% } #menuright { font-size: 0.50em; width: 201px; margin-left: 20px } #menuright li { padding-left: 30px } #menuright .relatedLinks { margin-bottom: 10px } #menuright .moduleHeader { padding-top: 12px } #menuright h2 { background-color: transparent; background-repeat: no-repeat; background-position: 15px 50%; padding-left: 45px; font-size: 1.5em; padding-bottom: 10px } #menuright .moduleHeader.noBg h2 { padding-left: 11px } #menuright .special .moduleHeader { padding-top: 9px } #menuright .module { margin: 0 0 10px 0 } #menuright .module { padding-bottom: 16px; margin-bottom: 30px } #menuright .special .moduleHeader { padding-top: 9px } .home #menuright .special .moduleHeader { font-size: 1.5em; font-weight: bold; color: rgb(255,255,255); padding: 15px 15px 15px }
+#menuright .special h2 { padding-left: 15px; padding-bottom: 5px } #menuright .special a { font-weight: bold } #menuright .special ul { margin-top: 15px } #menuright .special li { background-position: 0 2px; padding-top: 0; padding-left: 30px } #menuright .telefono { font-weight: bold; display: block; font-size: 1.2em } #menuright .special form { margin: 0; font-size: 1em } #menuright .special .boton { font-size: 1.15em } #menuright .special li.txt { font-size: 1em } #menuright .special li.txt p { font-size: 1em } #menuright .relatedLinks h2 { font-size: 1.4em; font-weight: bold; padding: 0 } #menuright .relatedLinks { padding-bottom: 10px; margin-bottom: 1em } #container.home #menuright .relatedLinks { } #menuright .relatedLinks h2 { font-size: 1.5em; padding-bottom: 3px; padding: 10px } .home #menuright .relatedLinks h2 { } #menuright .relatedLinks p, .relatedLinks ul { font-size: 1.1em } #menuright .relatedLinks ul { margin: 0 10px; padding: 10px 0 } #menuright .relatedLinks p { margin: 0 10px 10px }
+#menuright .relatedLinks p.first { padding-top: 10px } #menuright .relatedLinks li { margin-top: 0.75em; padding-left: 15px } #colOptionsLeft { font-size: 1.1em } #colOptionsLeft ul.catalogue { margin: 0 !important; font-size: .9em } #colOptionsLeft h2.section { font-size: 1.1em } #colOptionsCenter { padding: 0; font-size: 1.1em } #colOptionsCenter ul.catalogue { margin: 0 !important; font-size: .9em } #colOptionsCenter h2.section { font-size: 1.1em } #colOptionsRight { padding: 0; font-size: 1.1em } #colOptionsRight ul.catalogue { margin: 0 !important; font-size: .9em } #colOptionsRight h2.section { font-size: 1.1em } .module.special ul.portadaCatalogo { margin: 0 !important; padding: 5px !important } .module.special ul.portadaCatalogo li { margin: 0 !important; padding: 0 !important } .module.special ul.portadaCatalogo a { padding-left: 20px; margin-left: 10px } .module.special ul.portadaCatalogo div.link { float: left; padding-top: 5px; padding-right: 5px } FORM.formularioSolicitud { min-height: 40em;
+width: 100%; float: left; display: table; margin-top: 15px } FORM.formularioSolicitud fieldset.altura40 { min-height: 40em } .formularioSolicitud .lineaFormulario { width: 100%; margin-bottom: 1em } .formularioSolicitud .lineaFormularioDerecha { display: block; margin-bottom: 2.5em; height: 2em; text-align: right } .formularioSolicitud .lineaFormularioDerecha LABEL { padding-right: 4em } .formularioSolicitud .lineaFormularioSinMargen { width: 100%; margin-bottom: 0em; height: 2em } .formularioSolicitud .lineaFormularioSinMargen span.spnInputSinBorde span.text { padding: 0; margin: 0 } .formularioSolicitud .lineaFormularioSinMargen span.spnInputSinBorde span.text a { font-size: 1.1em } .formularioSolicitud .lineaFormularioSinMargen span.spnInputSinBorde label span.text a { font-size: 0.9em } .formularioSolicitud .lineaFormularioSinMargen span.spnInputSinBorde input.text { float: left; width: 2.5em } .formularioSolicitud .lineaFormularioSinMargen span.spnInputSinBorde label input.text { float: none; width: 2.5em
+} .formularioSolicitud .lineaFormularioConPadding { width: 40%; margin-bottom: 1em; margin-top: 0em; height: 2em; padding-left: 20em; display: inline; float: left } .formularioSolicitud .lineaFormularioConPadding.pddLeft { padding-left: 237px } .formularioSolicitud span.spnLabel { clear: both; float: left; width: 230px; padding: 2px 0; padding-top: 5px; margin-bottom: 20px; margin-right: 7px; text-align: right } .formularioSolicitud span.spnInput { float: left; width: 300px } .formularioSolicitud span.spnInputCuenta { float: left; width: 20em } .formularioSolicitud span.spnInputSinBorde { float: left; width: 300px; padding-top: 0.3em; .padding-top: 0 } .formularioSolicitud span.spnInput input { border: 1px solid #000;
+    height: 20px;
+    min-width: 145px;
+    margin-right: 4px; } 
+	.formularioSolicitud span.spnInput input {
+		margin-bottom: 4px;}
+	
+	.formularioSolicitud span.spnInput input.rdTip01 { border: 0; margin-left: 10px; } .formularioSolicitud span.spnInput textarea { margin-top: 0; padding: 2px; width: 20em; height: 5em } .formularioSolicitud span.spnInput input.sinHabilitar { margin-top: 0; padding: 2px }
+.formularioSolicitud span.spnInputSinBorde input { margin-top: 0.3em; padding: 2px } .formularioSolicitud span.spnInputSinBorde label { position: relative; top: -0.25em } .formularioSolicitud span.spnInput select { margin-top: 0;
+    background: none!important;
+    border: none;
+    height: 28px;
+    outline: 1px solid #000; 
+	min-width: 186px;} .formularioSolicitud span.spnCondiciones textarea { margin-top: 0; margin-left: 1em; .margin-left: 3em; padding: 2px; width: 45em; .width: 42em; height: 10em; font-family: Arial, Helvetica, sans-serif; font-size: 1em } .formularioSolicitud .lineaFormularioCondiciones { width: 100%; margin-bottom: 1em } .formularioSolicitud span.spnInput span.textoCompl { margin-top: 1em } .margenArriba { margin-top: 1em } .margenArribaDos { margin-top: .5em; margin-left: .5em; width: 100%; } p.margenArribaDos { clear: both } .margenArribaDosColorExtra { background-color: lightgray; } .margenArribaDosMargenExtra { padding-bottom: 20px; padding-left: 105px } .margenArribaDos.mrgLeft { margin-top: .3em; margin-left: 19.9em } html>body .margenArribaDos.mrgLeft { #margin-top: .7em } .margenArribaDos a {
+font-size: .9em } .margenDerMedio { margin-right: 0.5em } .margenAbajo { margin-bottom: 1em } .destacadoAmarillo { width: 88.25%; margin-left: 1.5em; min-height: 12em; padding: 1em } .textoAmarilloFormulario { width: 80%; float: left; margin-top: 0em; .margin-top: 0.8em } .textoAmarilloFormulario label { position: relative; top: -0.6em } #content .textoAmarilloFormulario ul { padding-left: 0; margin-left: 0 } #content .textoAmarilloFormulario ul li { padding-left: 15px; margin-bottom: 4px } #content li.listadoAmarillo { padding-left: 10px; margin-bottom: 4px } .labelOculto { display: none } .destacadoAmarillo100 { width: 95%; margin-left: 0em; min-height: 7em; padding: 1em; clear: both; #clear: none } .textoAmarilloFormulario100 { width: 100%; float: left } .textoAmarilloFormulario100 P { margin-bottom: 1.2em } .tipoTitular { padding: 0; margin: 0; position: relative; top: -1.2em; font: Arial; font-size: 1.3em; font-weight: bold } .tipoTitular A:LINK { text-decoration: none } .tipoTitular A:VISITED {
+text-decoration: none } .tipoTitular A:HOVER { text-decoration: underline } .capaBoton2 { width: 5em; float: left; padding: 0 0 3em 0; margin: 0; margin-left: 7.9em } .capaBoton2 IMG { position: absolute; width: 14.16em; height: 2.56em; z-index: 1; display: table } .capaBoton2 INPUT { cursor: pointer; position: absolute; z-index: 2; font-size: 1.4em; font-weight: bold; text-decoration: none; padding: 0.1em 0 0.3em; background: transparent; border: 0; margin: 0.2em 0 0 1.2em; .margin: 0.4em 0 0 0.6em } .destacadoRosa2 { padding: 1em 1em 1em 1.4em; margin: 1em 0 1em 0 } p.moreInfoEmp, #content p.moreInfoEmp { text-align: right; font-size: 1.1em; padding-right: 20px; margin-top: -0.5em; margin-bottom: -.2em; _position: relative } p.moreInfoServ, #content p.moreInfoServ { text-align: right; font-size: 1.1em; padding-right: 4em; margin-top: 0em; margin-bottom: 0.3em } p.moreInfoEmp a.moreInfo, p.moreInfoServ a.moreInfo { font-weight: bold; text-decoration: underline !important } .hacked.paginacion { float: left }
+.hacked.paginacion span { float: left; margin-right: .4em } #content ul.paginar { float: left; margin: 0 } #content ul.paginar li { background-image: none; float: left; padding: 0; margin: 0; margin-right: .4em } #content ul.paginar li a { text-decoration: underline } #content ul.paginar li a.activo { font-weight: bold; text-decoration: none } #content ul.paginar li a.noneLeft { padding-left: 10px } #content ul.paginar li a.noneRight { padding-right: 10px } .home #moduloRecalcular .module.graphic { border: none; border-top-width: 1px } #container.home #moduloRecalcular { width: 300px } #moduloRecalcular form { margin-left: 19px; margin-right: 4px; font-size: 1.1em } #moduloRecalcular form input, #moduloRecalcular form select { vertical-align: middle; font-size: 1.2em } #moduloRecalcular form select { font-size: 1.2em } #moduloRecalcular form select.yearSelection { width: 3em } #moduloRecalcular form select.amountSelection { font-size: 1em; width: 12em } #moduloRecalcular label { display: block;
+margin-bottom: 0.9em } #moduloRecalcular form a { margin-left: 6px } #moduloRecalcular h2 { background-color: transparent; background-repeat: no-repeat; background-position: 15px 1px; padding-left: 45px; font-size: 1.5em; padding-bottom: 1em } #moduloRecalcular .module { padding-bottom: 16px; width: 300px; margin-bottom: 30px; margin-left: 10px } #moduloRecalcular .module p { margin: 1em 11px 0.4em } #moduloRecalcular .moduleHeader { padding-top: 12px } #moduloRecalcular .moduleHeader.noBg h2 { padding-left: 11px } #moduloRecalcular .special .moduleHeader { padding-top: 9px } .home #moduloRecalcular .special .moduleHeader { } #content #moduloRecalcular .module { border: none; font-size: 1.1em } #content #moduloRecalcular .module .moduleHeader { padding-top: 8px } #content #moduloRecalcular .module form { margin-top: 1em } #otrosResultados { margin-top: 4em } #otrosResultados .result { font-weight: normal; margin-bottom: 10px } #otherList { width: 100%; padding: 10px; border-collapse: separated }
+#otherList .filaDatos { padding-left: 10px } #otherList a { text-decoration: underline; font-weight: bold; font-size: 1.2em } #otherList .btnSolicitar { width: 67px } #otherList td { padding-bottom: 5px } #otherList .btnAction { padding-top: 5px } #otherList .titleTop { font-weight: bold } td.otherListLeft { text-align: right; width: 50%; padding-right: 5px } td.otherListRight { text-align: left; font-weight: bold; padding-left: 5px } td.otherListLeft1 { text-align: right; padding-right: 5px; font-size: 1.2em; padding-top: 10px } td.otherListRight1 { text-align: left; font-weight: bold; font-size: 1.2em; padding-left: 5px; padding-top: 10px } td.columna1 { width: 160px } td.columna2 { width: 76px } div.btnHipo { width: 76px; text-align: center; padding-top: 5px } td.columna3 { width: 70px; text-align: center } td.cuota { font-weight: bold; text-align: center; width: 70px } td.columna4 { width: 80px; text-align: center } td.intereses { font-weight: bold; text-align: center; width: 80px } td.columna5 {
+width: 197px } #otherList td.resultNote { text-align: left; font-size: 0.9 } .enStock { float: left; width: 100%; margin: .5em 0 } .intContentDetPunts { float: left } .intContentDetPunts #printer { border: 0 } span.solicita { padding: .5em 1em } span.solicita a.secondary { font-size: .9em; font-weight: bold; text-decoration: none !important } h2.litSearch { font-size: 1.4em; font-weight: normal } #buscarPuntos label.mrg, #buscarDes label.mrg { display: block; margin-bottom: 10px; margin-left: 14px } #buscarPuntos select.points { font-size: 1.1em; font-weight: normal; width: 4em; padding: .1em; margin: 0 .6em } #buscarPuntos select.points.max { width: 8em; margin: 0 .6em } #buscarPuntos select.regalo { font-size: 1.1em; font-weight: normal; padding: .1em; margin: 0 .6em } #buscarDes input.plbClave { font-size: 1.1em; width: 18em; margin: 0 .6em; padding: .1em } #buscarDes span.sample { margin-left: 4.8em } div.searchPoints { padding: 0; padding-left: 14px; margin-bottom: 26px } div.searchPoints input {
+padding: 4px 10px } #buscarPuntos input.yearSelection { font-size: .9em; width: 6em; padding: .2em 0 } #buscarPuntos select.section { font-size: .9em; font-weight: normal; width: 14.2em; padding: .2em } #buscarPuntos label.amount { margin: 0; margin-bottom: .2em } #buscarPuntos label.amount a { margin-left: 0 } .BSOnlineDetalle { margin-top: 4em } .longThird { width: 29em; float: left; margin-left: 7px; padding-right: 2em } .longThird p { margin-left: 15px } .longThird h2 { font-size: 1.7em } .longThird ul { margin: 10px 0 } #content .longThird ul { margin-left: 2em } .shortThird { width: 23em; float: left } .shortThird h3 { font-size: 1.4em; padding-left: 2em } .shortThird.ayudaOnline h3 { padding-top: 2px; padding-bottom: 2px } .shortThird.seguridadOnline h3 { padding-top: 2px; padding-bottom: 2px } .shortThird blockquote { margin: 1em 0 0 1em; line-height: 1.3em } .shortThird blockquote strong { font-size: 1.2em } .shortThird span.gris { font-size: 0.9em } .shortThird a { font-size: 1.1em } #formintro {
+margin-top: 1.1em; margin-left: 0.25em; margin-bottom: 1.65em } #formintro p { font-size: 1.1em; margin-bottom: 1.35em } #formintro ul { margin-top: -0.64em } .margenPie { position: relative; top: 1.6em } .margenPie a { font-size: .9em } .separacionPie { margin-top: 1em } div.hacked p { padding-left: 0.2em; margin-top: .2em } div.hacked .descrip { margin-bottom: 1.2em } #content .ftr.promo.entradilla { margin: 0; margin-top: -11px; padding: 0; margin-right: -5px } .formularioSolicitud span.spnInput span.textoCompl.margenAbajo {     line-height: 24px;
+    font-size: 11px; } .condicionesgris { float: left; width: 100% } .blockCondiciones { float: left; padding-left: 238px; margin: 1em 0 } html>body .blockCondiciones { #clear: left; #padding-top: 50px } #content A.condicionesgris { font-family: Arial; font-size: 0.9em; text-decoration: none; float: left } #content A.condicionesgris:hover { text-decoration: underline } #fbErrorMessage.fbMessage { margin: 0 !important; padding: 0 !important } ul#fbErrorList { padding: 0 !important;
+margin: 0 !important } .margenIzqTitularFor { margin-bottom: 0.3em } #content.formRequest { font-family: Arial, Verdana, Helvetica, sans-serif } #content.formRequest h1 { font-size: 2em } #content.formRequest .steps { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em; margin: 0 0 1em 0 } #content.formRequest .steps li { padding: 0; padding-right: 15px; float: left; margin-right: 5px } #content.formRequest .steps li a { text-decoration: none } #content.formRequest .steps .last { background: none; padding-right: 0 } #content.formRequest .steps .last, #content.formRequest .steps .current.last { background: none; padding-right: 0 } #content.formRequest .pasos { font-size: 1.4em; float: left; font-weight: bold; padding-left: 0 } #content.formRequest .obliga { float: right; font-size: .8em; position: relative; top: 1em } #content.formRequest .spnRadio { font-size: .92em; position: relative; top: -3px; left: 0px; margin-right: 1em } #content.formRequest .spnLabel { fofont-size: .92em }
+#content.formRequest p { margin-bottom: 1em } #content.formRequest textarea { margin-bottom: 10px } #content.formRequest .submitRequest { float: right } #content.formRequest .submitRequest.paso3 { } #content.formRequest .submitRequest .continue { border: 0; text-align: center; width: 9.5em; min-height: 1.5em; font-size: 1.6em; cursor: pointer } #content.formRequest .submitRequest.mrgTip02 { margin-left: 0 !important } #content.formRequest .cmpObliga { float: right; font-size: .8em; margin-top: 8px } .formRequest .headers { margin-bottom: 0.75em } .headers h1.Apartado { margin-bottom: 10px } .headers h1 { padding-left: -1px } .headers p.subtitle { font-size: 1.2em !important; font-weight: bold } #accipiterDiv img { margin-right: 16px } .contModulp { padding: 5px; font-size: .907em } .actions.twoItems .contModulp { border-width: 0px } .actions.twoItems .contModulp { padding: 0px } html>body .actions.twoItems .modulos3p { padding: 1px; #padding: 10px 10px 10px 8px } .modulos3p { padding: 8px 6px; height: 100px;
+_width: 100% } .modulos3p .modulo2 { margin-right: 6px; float: left } .modulos3p .modulo2.left { width: 23em; border: none; background: none; padding-top: 15px; border: 1px solid #979797!important; border-left: 4px solid #006dff!important; padding-left: 11px; max-width: 228px; padding-bottom: 20px; } .modulos3p .modulo2.centerp { display: none } .modulos3p .modulo2.right { width: 23em!important; text-align: left; border: none; height: 115px; background: none; padding-top: 15px; border: 1px solid #979797!important; border-left: 4px solid #006dff!important; padding-left: 11px; max-width: 228px; padding-bottom: 20px; } #content .modulos3p .modulo2 h3 { font-size: 1.3em; margin-bottom: 5px } .modulos3p .modulo2 h3 img { border-top: 0 } .modulos3p .modulo2 p.imagen { margin: 0 15px 5px 12px; padding-left: 30px; font-size: .9em } .modulos3p .modulo2 p.content { margin: 0px 10px 5px 29px; font-size: 1em } .modulos3p .modulo2 p.content small { font-size: .915em } .modulos3p .modulo2 p.content strong { font-size: 1.25em } .modulos3p .modulo2 form { margin: 12px 0px 0 32px; font-size: 12px; } .modulos3p .modulo2 form label { display: block; margin-bottom: 3px; font-size: 12px; } .modulos3p .modulo2 form p { font-size: 1em; padding-top: 3px } .modulos3p .modulo2 form input.caja3 { border: solid 1px #000000!important; margin-top: 9px; padding: 3px; width: 160px; } .modulos3p .modulo2 input.boton2p { background: #006dff; font-size: 12px; font-weight: normal; padding: 6px; }
+.modulos3p .modulo2 p a { clear: both; display: block } div.modLeAyudamos form { padding: 0 !important; margin: 0 !important; padding-left: 34px !important } div.modLeAyudamos a { font-size: 1.1em; text-decoration: underline } .action.solicitud li.home p { margin-left: 0 } .showscreen, .hiddenscreen { float: left; width: 47.4em; padding: 0 } .showscreen { display: block } .hiddenscreen { display: none } .class03 #content .tabs .contentTab { position: absolute; border-top: none; padding: 20px 0% 5px; top: 23px } .mainNavigation li.activeAllOptions { padding-left: 15px; background-repeat: no-repeat; background-position: 100% 100%; margin-top: 5px } #leftZone .mainNavigation li.activeAllOptions a { width: 155px; padding-left: 15px; padding-right: 7px; background-repeat: no-repeat; background-position: 0 75% } html>body #sm_welcome_body_container { border: 1px solid white } .lineaFormulario select { min-width: 150px; #width: auto !important } .relatedLinksTx h2 { padding-left: 15px }
+.clear.liquid #rightZone { visibility: hidden } .botonotrosres { height: 24px; width: 130px; cursor: pointer; font: bold 1.1em arial; border-width: 0px } #resultado td.trigh, #resultado th.trigh { text-align: right } #resultado td.tleft, #resultado th.tleft { text-align: left } form .parrafo { #width: 46em } form .parrafo ol li { background: none !important; margin-left: 3px } #resultado { width: 46.96em } #resultado .marked th { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 5px solid white; border-right: 5px solid white } .restoDatos { text-align: center; background-color: #fff9cc; padding: 10px 0px; border-top: 1px solid #F2D500 } .restoDatos input { margin: 0px 8px } #resultado th, #resultado td { padding: 2px 0px; text-align: center } #resultado table.tablasGris tfoot td { text-align: left; font: 0.9em arial; padding: 1em 0em } .googlesig { background: url(../img/powered-by-google.gif) no-repeat left bottom; padding-bottom: 35px; #padding-bottom: 45px } .googlesig .fbazul {
+border: 1px solid #809db9; width: 285px } .googlesig .buscargoogle { background: url(../img/btn_buscar_google.gif) no-repeat; width: 82px; height: 35px; font: bold 15px arial; color: white; border: 0px; position: relative; margin: 0px 15px 0px 5px; padding-bottom: 10px; #top: 13px; cursor: pointer } .paginacion_google .b { font-weight: bold; background: url(../img/iconos/ic_sig.gif) no-repeat right; padding-right: 10px } #accipiterDiv { padding-left: 20px } .promacc .datos .contenidoDestacadoFinAzul, .promacc .datos .datosFacilitado { margin-left: 10px; margin-right: 10px; width: auto } .promacc .datos .hacked { margin-right: 10px; width: auto } .promacc .datos .titular2Azul { width: auto } .promacc .datos dl.definicionFormulario dd { word-wrap: break-word } .promacc .datos #fbErrorMessage.fbMessage { margin-left: 5px !important; margin-right: 5px !important } .promacc { height: auto !important } .piefck { clear: both } #infowindow #infowindow_head { border-bottom: 1px solid #ccc; margin-bottom: 10px;
+padding-bottom: 5px } .textoLegal { overflow-y: scroll; height: 100px; border: 1px solid #ddd; margin: 0em 1em 1em 1em; clear: both; padding: 1em } #gSearch { margin-left: 30px; padding-bottom: 0.4em; width: 720px } .cajaredonda { width: 200px; margin-bottom: 2em } .cajaredonda b { display: block; font-size: 1px; line-height: 1px } .cajaredonda b.b1 { margin: 0px 4px } .cajaredonda b.b2 { margin: 0px 2px } .cajaredonda b.b3 { margin: 0px 1px } #rightZone div.h2Entradilla { font-size: 1.5em; padding: 10px; padding-bottom: 3px; padding-left: 10px; padding-right: 10px; font-weight: bold; } #rightZone .h2Entradilla { background-position: 0 100%; border-bottom: 1px dotted #666; color: #666 } .cajaredonda p { font-size: 1.1em; margin: 0px 11px; padding-top: 5px } #rightZone ul.ulEnlacesRel { margin: 0 10px } #rightZone li.liEnlacesRel { margin-top: .4em; padding-left: 15px } #rightZone li.liEnlacesRel { background-image: url(../img/vin_links_right.gif); background-repeat: no-repeat; background-position: 5px 6px }
+#rightZone li.liEnlacesRel a.linkIcono h2 { font-size: 1em; margin: 0pt; padding: 0pt; font-weight: normal; color: #006dff; text-decoration: underline; } #panelNotificacionesSuperior { margin-bottom: 15px; margin-left: 15px; margin-right: 15px; font: 1.1em arial; color: #737163; padding-left: 5px; padding-top: 7px; height: 38px; background-color: #FFFFCE; } #spanbtn { position: absolute; margin: -15px 0px 0px 937px; padding-right: 0px } #panelTitle { font: bold 1.1em arial; color: #737163 } #imgIE8 { position: absolute; margin: -32px 0px 0px 343px } #imgFF { position: absolute; margin: -32px 0px 0px 522px } #imgChrome { position: absolute; margin: -32px 0px 0px 735px } #footerNeti { margin: 540px 0 auto; *margin: 0px; _margin: -252px 0 auto !important; text-align: center; width: 89em; border-top: #ccc 1px solid; font: Arial, Helvetica, sans-serif } #footerNeti ul { margin: 15px 0 } #footerNeti li { display: inline; font-size: 1.1em; padding-left: 5px; padding-right: 5px } #footerNeti li.first {
+border-left: none } #footerNeti img { margin: 0 10px; display: block } #footerNeti a { color: #999 } #footerConfirmline { margin: 0px 0 auto; *margin: 0px; _margin: 0px 0 auto !important; text-align: center; width: 89em; border-top: #ccc 1px solid; font: Arial, Helvetica, sans-serif } #footerConfirmline ul { margin: 15px 0 } #footerConfirmline li { display: inline; font-size: 1.1em; padding-left: 5px; padding-right: 5px } #footerConfirmline li.first { border-left: none } #footerConfirmline img { margin: 0 10px; display: block } #footerConfirmline a { color: #999 } #legalNotice { margin: 0 55px 0 80px; color: #999 } #pastiBlava { background: transparent url(/StaticFiles/GrupoBS/img/iconos/pasti_blava.gif) repeat scroll 0 0; width: 175px; height: 38px; margin-top: 10px } #pastiBlava ul { padding-top: 7px } #face { margin-left: 9px } #twitter { margin-left: 6px } #t { margin-left: 6px } #yt { margin-left: 6px } #blog { margin-left: 6px } #flickr { margin-left: 6px } #infowindow.logo1 {
+background-image: url(../img/OFICINAS/BancSabadell40.png)!important } #infowindow.logo2 { background-image: url(../img/OFICINAS/SolBank40.png)!important } #infowindow.logo3 { background-image: url(../img/OFICINAS/BancoUrquijo40.png)!important } #infowindow.logo16 { background-image: url(../img/OFICINAS/Servired40.png)!important } #infowindow.logo4 { background-image: url(../img/OFICINAS/BancoHerrero40.png)!important } #infowindow.logo7 { background-image: url(../img/OFICINAS/BG40.png)!important } #infowindow.logo11 { background-image: url(../img/OFICINAS/BancSabadell40.png)!important } #infowindow.logo17 { background-image: url(../img/OFICINAS/BG40.png)!important } .telefonoCabecera { margin-left: 10px; margin-right: 10px; padding-left: 25px; font: bold 1.3em arial } .noVisible { display: none } .oculto { visibility: hidden } .noBackG { background: none } #mbox { background-color: #fff; padding: 15px; border: 0px; } #mbm { font-family: sans-serif; font-weight: bold; float: right; padding-bottom: 5px
+} #ol { background-image: url(/StaticFiles/GrupoBS/img/overlay.png) } .dialog { display: none } .dialink { cursor: pointer; color: #900; text-decoration: underline } .t_div_empty { background-color: #ccc; border: 1px solid #393939; height: 20px; width: 98%; padding: 0 } .t_div_d1 { position: relative; top: 0; left: 0; color: #f0ffff; height: 20px; text-align: center; font: bold; padding: 0; padding-top: 2px } .askDesconx { font-family: Verdana; font-size: 18px; color: black; font-weight: 600; text-align:center; max-width: 100%;margin-left: 7px;margin-right: 7px;margin-bottom: 7px; } .askDesconx span { float: left; margin-bottom: 20px; text-align:left; } .resetSS { padding-top: 5px; text-align: left } .bloque { display: block } .alignRight { text-align: right } .padRight8 { padding-right: 8px } .padRight4 { padding-right: 4px } .width85 { width: 85%!important } .horario_closed { display: none } .horario_open { display: block } .linkHorario { color: #09C; font-size: 11px; left: 800px; margin-left: 750px; padding-left: 10px } .bannerAccipiter { margin-bottom: 14px } .ventaCruzada { float: left; width: 204px } .cajaredondaInf { width: 570px !important;
+_width: 576px !important; margin-bottom: 2em } div.strong, div.boldMark { display: inline } .boldMark { color: red; font-size: 20px; font-weight: bold; margin-right: 5px; } .tecladoN button, .tecladoN input { font-family: arial; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 1px; padding: 4px 8px } .tecladoN { float: right; margin-top: 0px; margin-right: 85px !important } .txtTeclado { margin-left: 5px; margin-top: 30px } .btnSecondKey { margin-left: 115px; margin-top: 80px; margin-bottom: 50px } .icopo { cursor: pointer } #content .cajaredondaInf li.liEnlacesRel a.linkIcono h2 { font-size: 1em; margin: 0pt; padding: 0pt; font-weight: normal; color: #006dff; text-decoration: underline } #subtitSecondKey { font-weight: bold; margin-bottom: 25px; margin-left: 2px; margin-top: -15px; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 16px } #txtSecondKey { color: #000000;
+font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 5px } .btnCliente { background: transparent url(/StaticFiles/SabAtl/img/fondo-boton-gris.gif) no-repeat scroll 80% 40%; border: 0 none; color: #FFFFFF; cursor: pointer; font-size: 1.2em; font-weight: bold; min-height: 2.5em; padding: 10px 30px 17px 20px!important; padding-left: 20px\9!important; *padding-right: 12px!important; margin-left: 115px!important; margin-top: -20px; *margin-top: 5px; *margin-bottom: 10px!important } .cliente input { margin-left: 190px } h2.titleFormAccess span { margin-left: -15px; *margin-left: 0px!important } h2.titleFormAccess { *margin-left: -18px!important } h2.titleAccessRight span { margin-right: 22px!important; *margin-right: -2px!important; color: #006dff!important; font-weight: bold; font-size: 1.1em } h2.titleAccessRight { *font-size: 1.6em } #content.formRequest fieldset { margin-left: 15px; float: left; } #content .ejLit { color: gray; margin-left: -146px; margin-top: 5px;
+margin-bottom: 10px\9!important; *padding-top: 5px } #content .txtIni { margin-left: 15px; margin-bottom: 10px; margin-left: 15px; margin-top: -10px; position: relative } #content div.nifLit { margin-left: 0px; #margin-left: -259px; margin-top: 0; position: absolute; width: 20% } body:nth-of-type(1) #content div.claveLit { /*solo chrome*/ margin-top: 0px; } #content div.claveLit { #margin-left: -270px; position: absolute; margin-top: 0px; width: 30% } #userDNI { margin-bottom: 15px; margin-left: 95px; padding-left: 200; } a.ayuda {  display: none; } #pin { margin-bottom: 30px !important; margin-left: 95px } #divNoCliente .btnNoCliente { background: transparent url(/StaticFiles/SabAtl/img/fondo-boton-gris.gif) no-repeat scroll 80% 40%; border: 0 none; color: #FFFFFF; cursor: pointer; font-size: 1.2em; font-weight: bold; min-height: 2.5em; padding: 10px 15px 17px 13px } #divNoCliente { display: block; height: 200px!important; *height: 193px!important; height: 193px\9!important; margin-right: -110px;
+margin-top: -218px; width: 329px; } #divNoCliente input { margin-left: 220px; *margin-left: 180px!important; *padding-right: 0px!important; margin-top: 80px } #divNoCliente p { margin-left: 15px; margin-top: 15px } .txtAyudaInf { margin-left: -167px; margin-top: 320px; *margin-top: 60px!important; position: relative } .linkSinLogin { margin-left: 15px; margin-top: -45px!important; #margin-top: -55px!important; *margin-top: -15px!important; margin-top: -15px\9!important } .LoginFormPart { margin-left: -128px!important } #content .tabsZone .tab { color: #737373; font-weight: normal; padding-top: 4px; display: block; cursor: pointer; } .class03 #content .tabsZone .tab { background: url(/StaticFiles/SabAtl/img/bgPestH2.gif) no-repeat scroll 0 0 transparent; margin-bottom: 0; margin-left: 0; padding-left: 12px; padding-bottom: 3px; display: block; cursor: pointer; } #content .tabs li .tab { cursor: pointer; display: block; } #content .tabs li.sel .tab { font-weight: bold; margin-bottom: 0 }
+.class03 #content .tabsZone li.sel .tab { color: #000000; display: block } .class03 #content .tabs li.sel .tab { padding-bottom: 4px; display: block; cursor: pointer; } .class03 #content .tabs li.sel .tab { display: block; cursor: pointer; background: url(/StaticFiles/SabAtl/img/iconos/bgPestSelH2Int.gif) no-repeat scroll 0 0 #FFFFFF; } #sm_modules_container .module.special div.moduleHeader, #sm_modules_container2 .module.special div.moduleHeader { font-size: 1.5em; font-weight: bold; color: rgb(255,255,255); padding: 15px 15px 15px } .divOfis { display: none; height: 24.1em; width: 21em; position: absolute; z-indez: 997; margin-top: 245px; z-index: 997; background: #F7F7F7; height: auto; width: auto } .divOfisBorde { padding: 8px 4px 8px 15px; width: 20.5em; height: 300px; overflow: auto } #rightZone .moduleHelpAyuda p { margin-bottom: 0px; margin-left: 19px; #margin-left: 5px; font-weight: bold; font-size: 1.4em } .moduleHelpAyuda li.txt { padding-top: 6px; margin-left: 15px;} #rightZone .moduleHelpAyuda li.helpTextA form { margin-left: 0px;
+#margin-left: 0px; margin-top: 0px } #rightZone .longThirdAyuda ftr { float: right; text-align: right; } #rightZone .moduleHelpAyuda { margin-bottom: 1px; width: 203px; padding-top: 15px; } .box_closed { display: none; } 
+#movilBox { left: 222px!important; *left: 22.1%; left: 22.1%\9!important; position: absolute; top: 11.5%; width: 720px; z-index: 998; } @-moz-document url-prefix() { #movilBox { left: 22.1%; } } 
+#movilBox .text { color: black; font-family: Verdana, Geneva, Arial, Helvetica, Swiss, SunSans-Regular; font-size: 24px; margin-top: 60px; } .btnClose img { margin: 10px; float: right; } #logoBSMovil { float: right; margin-right: 214px; margin-top: 75px; } .btnSinTexto { background: url("/StaticFiles/GrupoBS/img/botones/btnSinTexto.jpg") no-repeat scroll center 0 transparent; height: 28px; } .btnSinTextoGrande { background: url("/StaticFiles/GrupoBS/img/botones/btnSinTextoGrande.gif") no-repeat scroll center 0 transparent; height: 28px; } #masTarde { border: medium none transparent; color: grey;
+cursor: pointer; float: left; font-family: Verdana, Geneva, Arial, Helvetica, Swiss, SunSans-Regular; font-size: 14px; font-weight: bold; left: 40px; margin-left: 0; position: relative; margin-top: 50px; width: 190px; } #noRecordar { border: medium none transparent; color: grey; cursor: pointer; float: right; font-family: Verdana, Geneva, Arial, Helvetica, Swiss, SunSans-Regular; font-size: 14px; font-weight: bold; right: 100px; position: relative; margin-top: 50px; width: 190px; } #noRecordarGrande { border: medium none transparent; color: grey; cursor: pointer; float: left; font-family: Verdana, Geneva, Arial, Helvetica, Swiss, SunSans-Regular; font-size: 14px; font-weight: bold; left: 320px; position: relative; top: 48px; width: 238px; } #masTardeGrande { border: medium none transparent; color: grey; cursor: pointer; float: right; font-family: Verdana, Geneva, Arial, Helvetica, Swiss, SunSans-Regular; font-size: 14px; font-weight: bold; margin-left: 0; position: relative; right: 320px; top: 48px;
+width: 238px; } #linkAppStore { color: #1FA7D1; font-size: 12px; font-weight: bold; position: relative; top: 65px; font-family: Verdana, Geneva, Arial, Helvetica, Swiss, SunSans-Regular; } 
+#movilBox div { border-top: 1px solid white } 
+#movilBox div.b1 { margin: 0px 4px; } 
+#movilBox div.b2 { margin: 0px 2px; } 
+#movilBox div.b3 { margin: 0px 1px; } 
+#movilBox div.b4 { _margin-top: 330px!important; *margin-top: 330px!important; } 
+#movilBox p.text { background-color: white; height: 430px !important; margin: 0 !important; padding: 70px 70px 0; width: 579px; }
+
+#loginModule .secure {   margin-top: 25px;} #loginModule .secure a {
+    color: #006dff;
+    text-decoration: none;
+} .secure { background: transparent url(../img/iconos/padlock-sec.gif) no-repeat 0 50%; padding-left: 12px; font-size: 11px; } #loginModule .separator { padding: 0; margin: 19px 0 15px 0; #margin: 22px 0 15px 0; height: 1px; background-color: #999999; } #formDiv { padding-top: 0px; } #clientModule {
+background-color: #CEEFF7; padding: 15px; font-size: 1.1em; } #clientModule div { text-align: center; } #prodModule h2 { font-size: 1.5em; padding-top: 0; padding-bottom: 10px; font-weight: normal;} #prodModule {
+   padding: 0 10px 0 15px !important;
+    border: none;
+	background:none;
+
+    
+} #tipsProducts { font-size: 1.2em; padding-bottom: 10px;} #tipsProducts lu { padding-bottom: 10px; } li.importantTip { background-image: url(../img/iconos/bullet_azul_nuevo.gif) no-repeat 0 4px; !important; } #tipsProducts a { text-decoration: none; } #tipsProductsM { font-size: 1.2em; padding: 0 15px 10px 15px; margin: 0; height: 146px; } #tipsProductsM li { background: url(../img/iconos/bullet_azul_nuevo.gif) no-repeat 0 4px; padding-left: 15px; line-height: 16px; } #tipsProductsM a { text-decoration: none; } .midModule {  border-left: 1px solid #e6e6e6!important;
+    border-right: 1px solid #e6e6e6!important;
+    padding-left: 10px!important;
+    margin-left: 0px!important;
+    padding-right: 10px!important; } .moduleOfertaDestacada { border: 1px solid #EF6C00; color: #000000; float: left; margin-right: 15px; margin-top: 15px; padding: 0; width: 477px; } .moduleOfertaDestacada h2 { background-color: #EF6C00; color: #FFFFFF; font-size: 1.2em; margin-bottom: 0.4em; padding: 5px 5px 5px 15px; } #accionBS { color: #006dff; text-decoration: underline; } .linkGuia { font: 1em Arial, Helvetica, sans-serif!important; display: inline; float: left; font-size: 1em; margin: 6px 0 0 380px; position: relative; } .demo_closed { z-index: 997; position: absolute; display: none; } #demostration { position: absolute; top: 116px !important; border: 10px solid white !important; padding: 10px!important; left: 20%; background: none repeat scroll 0% 0% rgb(247, 247, 247); } #contFrame { text-align: center; margin-top: 10px; }
+#tipsProductsL { font-size: 1.2em; padding: 0 15px 10px 15px; margin: 0;
+height: 146px; } #tipsProductsL a { text-decoration: none; } #tipsProductsLE { font-size: 1.2em; padding: 0 15px 10px 15px; margin: 0; height: 146px; } #tipsProductsLE a { text-decoration: none; } #socialModule { padding: 8px 0 !important; } .accion { height: 96.5px; } #rightZone li.liEnlacesRel a.linkIcono p { font-size: 1em; margin: 0pt; padding: 0pt; font-weight: normal; color: #006dff; text-decoration: none;} 
+#navlistSocialMedia{position:relative;}
+#navlistSocialMedia li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#navlistSocialMedia li, #navlistSocialMedia a{height:24px;display:block;}
+#facebook{left:15px;width:24px;}
+#googleplus{left:54px;width:24px;}
+#twitter{left:93px;width:24px;}
+#youtube{left:132px;width:24px;}
+#blog{left:171px;width:24px;}
+#lightbox{font-size:12px;color:black;position:absolute;left: 29%;background-color:white;z-index:998;padding: 20px;width:450px}
+#titleBox{font-size:x-large;font-weight:bold;text-align: center;width: 100%;font-family: Georgia;}
+#txtBox{text-align:center;font-size:small;margin-left:16%;margin-right:16%;padding-bottom:8px;padding-top:8px;}
+.RSBox{cursor:pointer;border:1px solid #D2D2D2;text-align:center;margin-top:3px;width:220px;height:81px;}
+.RSImg{padding-left: 15px; float: left; padding-top:9%}
+.RSTxt{text-align: left; padding-left: 20px; float: left; padding-top: 9%}
+.RSTxt .tipo1{font-weight:lighter}
+.boxIzq{padding-right: 6px}s
+.boxDer{padding-right: 10px}
+#botonesRS{margin-bottom:25px;padding-top:3px}
+#botonesRS iframe{margin-right:25px;}
+#botonesRS div{padding-right:25px;}
+#twitterli{margin-left:3px}
+.apartadoRS{margin-top: 10px;margin-right:20px;padding-left:10px;padding-top:46px;}
+.titSeccion{float:left;font-weight:bold;color:grey}
+#content h3.seccionH3{font-size:1.2em}
+.contSeccion_open{padding-bottom:20px;padding-left:30px;padding-top:10px;color:#797979}
+.contSeccion_close{padding-bottom:20px;margin-bottom:15px;padding-bottom:20px;padding-left:30px;padding-top:10px;color:#797979}
+.moduleHeaderInfo {background-image: url("../img/module_special_orange.gif");background-position: 0 0;background-repeat: no-repeat;color: #FFFFFF;font-size: 1.5em;font-weight: bold;padding: 15px 0 15px 15px;}
+.continueInfo{background: url("../img/btnSolicitar_orange.gif") no-repeat scroll 45% 70% transparent;border: 0 none;cursor: pointer;font-size: 1.2em;font-weight: bold;margin-left: 5px;min-height: 2.5em;padding-top: 2px;width: 6.5em;color:#FFFFFF;}
+.spnTxtIntro{font-size:1.0em;padding-top:10px;padding-left:10px;width: 230px;display:block;}
+.enlSeccion a{text-decoration:none;font-size:12px}
+.enlSeccion p {float:left;padding-top:4px}
+.enlSeccion img{float: right;padding-top: 6px}
+.spnInfo{border: 1px solid #7F9DB9;margin-top: 0;font-size:1.0em!important;}
+.definicionFormularioInfo ul{font-size:1.0em!important}
+#hagaseClienteModulo{font-size: 1.1em;padding: 14px; display: none;}
+#hagaseClienteModulo h2{font-size:15px;font-family: Arial;}
+#hagaseClienteTbl{margin-top:10px}
+#hagaseClienteTbl tr{height:25px}
+#hagaseClienteTbl td{font-size: 12px;padding-right:16px;position:relative;}
+#hagaseClienteIcon{background-repeat:no-repeat;background-position: left center}
+#hagaseClienteLink{margin-left:30px;position:relative}
+#hagaseClienteLinkDos{margin-left:20px;position:relative}
+.blogImg {margin-left:4px}
+.blogLink {left:10px !important}
+#homeHagaseC{display: block;margin-left:8px;padding-top:15px !important;font-size:12px;font-family: Arial;}
+.optionli{height:17px;margin-bottom:13px;}
+.optionli a{font-size:12px;font-family: Arial;}
+
+
+/* BANCA A DISTANCIA */
+
+#hagaseClienteTbl td:before{
+        background-image: url("/StaticFiles/SabAtl/img/bca-dist-ico.png");
+    background-repeat: no-repeat;
+    position: absolute;
+        width: 25px;
+        height: 20px;
+        content: "";
+}
+
+#hagaseClienteTbl td.BSOIcon:before {
+    background-position: 0px 0px;
+        /*top:395px*/
+}
+
+#hagaseClienteTbl td.BSMovilIcon:before {
+    background-position: -50px 0px;
+    width: 15px;
+        /*top:393px*/
+}
+
+#hagaseClienteTbl td.BSCajerosIcon:before {
+    background-position: -26px 0px;
+        /*top:420px*/
+}
+
+#hagaseClienteTbl td.BSTelIcon:before {
+    background-position: -67px 0px;
+        margin-left: 5px;
+        /*top:420px*/
+}
+
+/*Estilos para el formulario del Chat CAM*/
+#formChat{text-align:left !important ;color: #565555; background-color: #fff; font: 1em/140% Verdana, Arial, Helvetica, sans-serif;width: 474px; height: 390px; border: solid 1px #000; }
+#formChat h1{color: inherit;  background: #e6e8e7 url(img/header.jpg) no-repeat 3px 3px;  width: 100%;  height: 66px;}
+#formChat h1 strong{height: 0; width: 0; overflow: hidden; position: absolute;}
+#formChat div#c{font-size: 1.2em !important;height: 12px;  padding: 5px 6px;  border-bottom: solid 1px #a0abaf;  margin-bottom: 15px;}
+#formChat div#c a{color: #394d4e;  background: #fff url(img/cerrar.png) no-repeat;  padding-left: 20px;  text-decoration: none;}
+#formChat div#c a:hover{ text-decoration: underline; }
+#formChat h2{height:182px;height:198px \9;float: right;  width: 118px;width: 128px\9; padding: 0 8px 15px;  color: #585455;  background-color: #e0e0e0;  text-align: center;  font-weight: normal;  font-size: 1.1em;  margin-right: 48px;}
+#formChat h2 strong{text-align:center !important;color: #fff;background-color:#006dff;text-transform: uppercase; display: block;  padding: 15px 7px 16px;  margin: 0 -8px 2px;  font-weight: normal;}
+#formChat form{ padding: 0 10px; color: inherit; background: #fff url(img/enviarIco.png) no-repeat 280px 250px; }
+#formChat legend, label{ display:inline; }
+#formChat fieldset{ border: none; }
+#formChat form ol{ list-style: none; float: left; }
+#formChat form li{ padding-bottom: 5px; }
+#formChat textarea, input#fEmail, input#fTelefono{font-size:1.1em!important;width: 250px;  border: solid 1px #8d8d8d; padding: 2px;  color: #444;  background-color: inherit;}
+#formChat textarea{font-size:1.1em;height: 196px;  overflow: auto; font: 100% Helvetica, Arial, sans-serif; }
+input#fEnviar{text-align:center;margin-left: 310px;color: #11325d;  background: #fff url(img/bgSubmit.png) repeat;  border: solid 1px #5e6263;  min-height: 18px; padding: 0 14px;padding-right:0px\9}
+#formChat #thanx{ text-align: center; margin: 5em; }
+#formChat #thanx a{ color: #f6a209; background-color: inherit; text-decoration: none; }
+#formChat #thanx a:hover{ text-decoration: underline; }
+
+/*Estilos para nueva capa iPad*/
+#boxiPad {left:68px;width:855px;border-color:white;border-radius:10px 10px 10px 10px;border-style:solid;border-width:1px;position: absolute;z-index: 998;top:11.5%;background-color: white}
+#boxiPad a {text-decoration: none;float: left; margin-left: 35px;margin-top: 5px;text-decoration: none}
+#boxiPad .text {height:70px!important;padding: 25px 123px 8px;text-align:left;margin-left:256px!important;color:black;font-size:24px}
+#boxiPad .imgiPad{float: left; padding-left: 50px;padding-right:10px;padding-bottom:10px}
+#boxiPad .txtDescarga {font-size:2.2em;color:white;position:absolute;right: 297px;top: 271px}
+#boxiPad .titleBox {color: black;font-size: 48px;margin-top:10px;position: relative;text-align: left; padding-top: 60px;left:15px}
+#boxiPad .closeBoxiPad{color: #00CCFF;cursor: pointer;float: right;font-size: 1.7em;font-weight: bold;margin: 15px 0 0 50px;width:110px}
+#imgBSMovil{margin-top:60px}
+
+/*Estilos para nueva pagina de banca personal */
+#bloqueProdSer li.ftl {float:left;width: 48%;}
+.spanCheck {float: none !important}
+#enlSeg{font-weight:normal}
+#bloqueProdSer ul{margin-left: 1.4em !important;}
+#bloqueProdSer{margin-bottom:10px;margin-top:10px;position:relative;display:block}
+#bloqueProdSer h2.section{font-size: 1.5em;font-weight: normal;margin-left:0px}
+#productosServicios{height:78px;width:105%;padding-left:10px;margin-bottom:0.5em!important}
+#tdImgBP{padding-top:12px;vertical-align:top;padding-right:15px}
+#tdFormBP{display: block;padding-top:12px;}
+#ptituloSegBP{width: 60%;border-top:1px solid black;}
+#tituloSegBP{font-size: 3em; width: 20%;font-weight:bold;margin-bottom:15px;padding-left:7px}
+#separadorBP{width: 60%;border-top:1px solid black}
+#capaFormBP{padding-right:15px;height:195px;margin-left:7px;width:82%;width:84%\9;background-color:#E4E4E4;border-bottom: 2px solid gray;border-left: 0.5px solid #CCCCCC;border-right: 0.5px solid #CCCCCC;margin-bottom:16px;}
+#tituloFomrSeg{font-size:18px;margin-left:5px;font-family:arial;color:#696969}
+#capaFormBP  div.ftl{padding-bottom: 5px;margin-top:6px}
+#capaFormBP  div.ftr{padding-bottom: 5px;}
+.formularioSolicitudSeg .spnInputSinBorde {float: left; width:0px; padding-top: 0.3em; .padding-top: 0 } 
+.formularioSolicitudSeg .lineaFormulario{margin-left:0px!important}
+.inputAceptoLegal {margin-top:4px!important;right:295px}
+.lblC{font-size:10px;margin-left: 28px;margin-top:10px}
+.spnTxtSeg{display:block;font-size:1em;padding-left:7px;width:510px}
+.btnSolReunion{background: url("/StaticFiles/GrupoBS/img/botones/btnsimulador.gif") no-repeat scroll 50% 70% transparent;background: url("/StaticFiles/GrupoBS/img/botones/btnsimulador.gif") no-repeat scroll 50% 62% transparent\9;border: 0 none;color: #FFFFFF;cursor: pointer;font-size: 1.2em;font-weight:bold;min-height: 3.2em;padding-top: 7px;width: 9.3em;float:right;font-family:arial;margin-top:10px;margin-top:8px\9}
+.datosFacilitados{height:116px;margin-top:6px;padding-left:20px;padding-top:40px;padding-bottom:13px;padding-right:15px;margin-left:0px;width:82%;margin-bottom:0.5em;position:relative;background-color:#E4E4E4;border-bottom: 2px solid gray;border-left: 0.5px solid #CCCCCC;border-right: 0.5px solid #CCCCCC;}
+.contenidoDestacadoFinAzulBP{display:inline;width: 100%;top:11px;position:relative}
+#separadorBPConfirm{width: 108%;float:left;margin-top:12px;}
+#separadorBPDos{float:left;margin-top:0px;}
+#linkPinRecovery{text-decoration: underline;margin-left:130px;font-size:0.8em}
+
+/* Formularios - Comprobacion de Solicitud */
+#content.formRequest .comprobacion {color: #181818;font-size: 1.4em;font-weight: bold;adding-left: 0}
+#comprobarSolicitud .submitConfirm {float:right;margin-right:145px;margin-top:20px;margin-bottom:5px}
+#pantallaSolicitud .submitConfirm {float: right;margin-bottom: 5px;margin-top: 20px}
+
+#content.formRequest .submitConfirm .continue { color: #FFFFFF;
+    background: none;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 14px;
+    min-height: 1.5em;
+    text-align: center;
+    min-width: 110px;
+    background-color: #006dff;
+    padding: 10px 20px;
+    float: right;
+}
+
+#content.formRequest .submitConfirm .continue:hover {
+	background-color: #0156c8;
+	
+	}
+.datosFacilitado{margin-bottom: 3.5em}
+#content a.enlaceBtn{background: url("/StaticFiles/GrupoBS/img/botonSolicitud.gif") no-repeat scroll 0 0 transparent}
+
+/* Integracion modulos derecha en BSOnline+ */
+.bso-lateral .module .moduleHeader h2 { padding-left: 45px; padding-bottom: 10px }
+.bso-lateral .module h2, .bso-lateral  div.moduleHeader { font-size: 1.5em; font-weight: bold; padding: 9px 15px 10px; }
+.bso-lateral .module.special .moduleHeader h2 { padding-bottom: 10px }
+.bso-lateral .module.special div.moduleHeader { font-size: 1.5em; font-weight: bold; color: rgb(255,255,255); padding: 15px 0px 15px 15px; }
+.bso-lateral .module { padding-bottom: 16px }
+.bso-lateral .module p { margin: 1em 11px 0.4em }
+.bso-lateral .module ul li p { #margin-top: 0em }
+.bso-lateral form { margin-left: 19px; margin-right: 4px; font-size: 1.1em }
+.bso-lateral form input, .bso-lateral form select { vertical-align: middle; font-size: 1.2em }
+.bso-lateral form select {font-size: 1.2em }
+.bso-lateral form select.yearSelection { width: 3em }
+.bso-lateral form select.amountSelection { font-size: 1em; width: 12em }
+.bso-lateral label { display: block; margin-bottom: 0.9em }
+.bso-lateral form a { margin-left: 0 }
+.bso-lateral .moduleHeader { padding-top: 5px }
+.bso-lateral h2 { background-color: transparent; background-repeat: no-repeat; background-position: 15px 50%; padding-left: 45px; font-size: 1.5em; padding-bottom: 10px }
+.bso-lateral .moduleHeader.noBg h2 { padding-left: 11px }
+.bso-lateral .special .moduleHeader { padding-top: 7px; padding-bottom: 0px }
+.home .bso-lateral .special .moduleHeader { }
+.bso-lateral .special h2 { padding-left: 15px; padding-bottom: 5px; padding-top: 0 }
+.bso-lateral .special a { font-size: .9em; font-weight: bold; white-space: nowrap; #margin-left: 0.06em }
+.bso-lateral .special ul { margin-left: 11px; margin-top: 8px }
+.bso-lateral .special li {background-position: 0 2px; padding-top: 0; padding-left: 30px; min-height: 30px; _height: 30px }
+.bso-lateral .telefono { font-weight: bold; display: block; font-size: 1.2em }
+.bso-lateral .special form { margin: 0; font-size: 1em; width: 90% }
+.bso-lateral .special .boton { font-size: 1.15em }
+.bso-lateral .special p { margin-left: 0 }
+.bso-lateral .special li.txt { font-size: 1em; margin-bottom: 10px; padding-left: 32px }
+.bso-lateral .special li.txt strong { font-size: 1.3em }
+.bso-lateral .special li.txt p { font-size: 1em }
+.bso-lateral .relatedLinks { padding-bottom: 10px; margin-bottom: 1em }
+.bso-lateral .relatedLinks p { font-size: 1.1em }
+.bso-lateral .relatedLinks h2 { font-size: 1.5em; padding: 10px; padding-bottom: 3px }
+.bso-lateral .relatedLinks ul { margin: 0 10px }
+.bso-lateral .relatedLinks p { margin: 0 11px; padding-top: 5px }
+.bso-lateral .relatedLinks p.first {padding-top: 10px }
+.bso-lateral .relatedLinks li { margin-top: .4em; padding-left: 15px }
+.bso-lateral .special .telefono { display: block; font-size: 1.2em; font-weight: bold }
+.bso-lateral .sideBanner a { margin-bottom: 20px; display: block }
+.bso-lateral .operations h2 { padding: 10px 10px; font-size: 1.4em; margin-bottom: 0.4em }
+.bso-lateral div.h2Entradilla { font-size: 1.5em; padding: 10px; padding-bottom: 3px; padding-left: 10px; padding-right: 10px; font-weight: bold; }
+.bso-lateral .h2Entradilla { background-position: 0 100%; border-bottom: 1px dotted #666; color: #666 }
+.bso-lateral ul.ulEnlacesRel { margin: 0 10px }
+.bso-lateral li.liEnlacesRel { margin-top: .4em; padding-left: 15px }
+.bso-lateral li.liEnlacesRel { background-image: url(../img/vin_links_right.gif); background-repeat: no-repeat; background-position: 5px 6px }
+.bso-lateral li.liEnlacesRel a.linkIcono h2 { font-size: 1em; margin: 0pt; padding: 0pt; font-weight: normal; color: #006dff; text-decoration: underline; }
+.bso-lateral .moduleHelpAyuda p { margin-bottom: 0px; margin-left: 19px; #margin-left: 5px; font-weight: bold; font-size: 1.4em }
+.bso-lateral .moduleHelpAyuda li.helpTextA form { margin-left: 0px; #margin-left: 0px; margin-top: 0px }
+.bso-lateral .longThirdAyuda ftr { float: right; text-align: right; }
+.bso-lateral .moduleHelpAyuda { margin-bottom: 1px; width: 203px; padding-top: 15px; }
+.bso-lateral li.liEnlacesRel a.linkIcono p { font-size: 1em; margin: 0pt; padding: 0pt; font-weight: normal; color: #006dff; text-decoration: underline;}
+
+/* Estilos para nueva pagina Notaris */
+#tablaNotaris{border-collapse: separate;border-spacing: 1px; margin-top: 30px;margin-bottom: 30px;}
+.fondoAzulColumnas {background-color: #006dff;color: #FFFFFF;font-family: Arial,Helvetica,sans-serif;font-size: 10px;}
+.fondoAzulFila{background-color: #CCECF4;color: #000000; font-family: Arial,Helvetica,sans-serif;font-size: 10px;font-weight: normal}
+.fondoBlancoFila{background-color: #FFFFFF;color: #000000; font-family: Arial,Helvetica,sans-serif;font-size: 10px;font-weight: normal}
+.txtCopiaColumn{color:red;font-weight:bold;}
+.txtFecha{color:black;margin-bottom: 0em!important;}
+
+/* Simuladores Prestamos - capa inicial*/
+.tituloSimu{font-size: 16px;font-weight: bold;float:left;}
+.btnSimulador {background: url("/StaticFiles/GrupoBS/img/botones/btnsimulador.gif") no-repeat scroll 50% 65% transparent;border: 0 none;color: #FFFFFF;    cursor: pointer;    font-family: arial;    font-size: 1.1em;    font-weight: bold;    margin-top: 10px;    min-height: 3.2em;    padding-top: 7px;    width: 10em;}
+#simuladorPrestamos {display:block;margin-bottom: 20px;background-color:#F2F2F2; padding-bottom: 20px;border-radius: 15px 15px 15px 15px;}
+#moduloSimulador{padding-top:40px;padding-left:20px;margin-top: 10px}
+
+/* Simuladores Prestamos - capa resultado*/
+#simuladorPrestamosRes{display:block;margin-bottom: 20px;background-color:white;border: thin solid lightgray;padding-bottom: 20px;border-radius: 15px 15px 15px 15px;}
+#enlaceOtroImporte{margin-left:20px;margin-top:15px;margin-bottom:5px}
+#capaEstandar .importe{font-size: 1.1em;position:relative}
+#tableSimu .importe{font-size: 1.7em;}
+#enviarPDF{display:block;left:35%;z-index:999;top:40%;position:fixed;width:auto}
+#capaPersonalizada .importe{font-size: 1.1em;}
+#capaPersonalizada .importeAzul{font-size: 1.1em;color:#006dff;font-weight: bold;margin-left: 15px;}
+#moduloSimuladorPrest{display:block;padding-left:20px;}
+#content .botonformSimulador {background: url("/StaticFiles/GrupoBS/img/botones/btnsimulador.gif") no-repeat scroll 0 50% transparent;border: 0 none;color: white;font-size: 12px;font-weight: bold;height: 26px;left:60px;margin-bottom: 20px;padding: 0 5px 5px;position: relative;width: 134px}
+#content .botonSimulador {background:url("/StaticFiles/GrupoBS/img/botones/btnsimulador.gif")no-repeat scroll 0% 50% transparent;font-size: 12px;font-weight: bold;padding: 5px 5px 5px 12px;height:18px;width:167px;}
+#capaPersonalizada .botonPersSimulador {background: url("/StaticFiles/GrupoBS/img/botones/btnsimulador.gif") no-repeat scroll 0 50% transparent;border: medium none;color: white;font-size: 12px;font-family: sans-serif;font-weight: bold;height: 28px;left: 215px;margin-top: 40px;padding:5px 0 5px;position: relative;width: 133px;cursor:pointer}
+#radioCuotaMensual{margin-right:20px;margin-bottom: 40px}
+#carenciaInput{display:block;margin-top:40px;margin-left:4px}
+#sepEnlaces{border: 1px solid lightgray; width:208%;width:185%\9;margin-bottom:15px;margin-top:10px\9}
+#titDatosSimu{font-weight:bold;font-size: 1.2em;}
+#DatosSimu{margin-top: 15px;float:right}
+#btnEnviarPrest{display: inline;font-size: 1.1em;height: 25px;position: relative;width: 66px;padding: 1px 4px 5px 6px;}
+#tdTitulo{width:61%}
+.tituloSimuRes{font-size:2em;font-weight:bold;margin-top:0.5em}
+.importe{display: inline;}
+/*.botonformSimulador p{color:white;} */
+.activeSimuOpt{background: url("/StaticFiles/GrupoBS/img/botones/pestana-on.jpg") no-repeat scroll 100% 100% transparent;height: 87px;padding-top: 10;width: 133px;text-align:center;font-size:1.5em;color:#006dff;}
+.optionSimu{background: url("/StaticFiles/GrupoBS/img/botones/pestana-off.png") no-repeat scroll 100% 100% transparent;height: 87px;padding-top: 10px;width: 138px;text-align:center;color:white;font-size:1.5em;cursor: pointer;}
+.enlacesSimu{padding-left:10px;position:relative}
+.separadorSimu{border-bottom: lightgray 1px solid; border-left: lightgray 1px solid; width: 181%;margin-bottom: 15px; border-top: lightgray 1px solid; border-right: lightgray 1px solid}
+
+/*capa ayuda especialista remoto*/
+#especialistaBox{border:2px solid lightgray;z-index:998;position:fixed;background-color: white; padding-left:0px;width:260px;padding-right:0px;color:black;font-size:12px;right:50px;}
+#titleBox{left: 30px;font-size:1.4em;width:100%;position:relative;}
+#txtEspecialista{position:relative;left:32px;font-size:1em;width:200px}
+#rightZone #especialista #btnEspecialista {position:relative;left:23px;font-size:1em;margin-bottom:15px;margin-top:10px;padding-right:22px;padding-top:0;width:100px}
+#closeBoxEspecialista{z-index: 1110;position:absolute;width:auto;float:left;color:black;font-size: 12px;top: 8%;cursor:pointer;right:5%;text-decoration:none}
+#rightZone .special #especialistaLink {font-size:1em}
+#rightZone .special #chat{font-size:1.1em}
+#rightZone li.txt #chat strong {font-size: 1em}
+#rightZone #especialista{margin-left:5px;font-size:0.8em}
+#iconoChat{position: relative;top:20px}
+#tdTitle{display:inline-block}
+#tdResult{font-size: 1.2em;padding-left: 45px;padding-top: 1.5em;}
+
+/*capa sus especialistas de ayuda personalizada*/
+.especialistasVentana {margin-top:-130px;display:none;height:auto;width:420px;margin-left:494px;opacity: 1;overflow:hidden;position:absolute;text-align:left;z-index:998;padding:0pt;color:rgb(102, 102, 102);font:62.5% Arial,Helvetica,sans-serif;right:152px}
+.datosGestor{left:6%;position:relative;top:10px;}
+.apartadoGestor{position:relative;left:1%;margin-bottom:4%;}
+.cuerpo2E {position: relative;top: 0px;z-index:1;}
+.barra2E {height:17px;color: white;font: bold 13px arial;padding: 5px 8px;text-align: left;background-image: none; background-color: #006dff;}
+.centro2E{height:auto;background-color: white;border-color: #006dff;border-style: solid;border-width: 1px}
+.contenidoE {height:auto;color: #000000;font-family: Arial, Helvetica, sans-serif;font-size: 12px;text-align: left;padding: 15px}
+.bajo2E {height: 10px;color: white;font: bold 13px arial;padding: 5px 8px;text-align: left;background: url('/StaticFiles/SabAtl/img/gp/qgoinferior_corta.gif') no-repeat scroll left top transparent}
+.sombra2E {position: relative;right: 3px;opacity: 0.5;text-align: left;margin: 0;padding: 0;height: 0px;bottom:373px;_margin-top:-46px}
+.a2E {height: 0px;background: url('/StaticFiles/GrupoBS/img/qgo/efcpsup.gif') no-repeat scroll right top transparent}
+.c2E {height: 0px;background: url('/StaticFiles/GrupoBS/img/qgo/efcpcent.gif') repeat-y scroll right center transparent}
+.d2E {position: relative;right: 2px;height: 0px;background: url('/StaticFiles/SabAtl/img/gp/efcdown_corta.gif') no-repeat scroll right bottom transparent}
+.btnOpenChat{background: url("/StaticFiles/GrupoBS/img/chat-icon-small.png") no-repeat scroll 50% 65% transparent;border: 0 none;cursor: pointer;width: 32px;position:relative}
+#lstEmpresas{font-size:0.8em;margin-top:10px;margin-left: 10px;}
+#lstEmpresas a{text-decoration:none;color:black}
+#enviarSel{font-size: 1.1em;left: 150px;margin-top: 5px;position: relative;}
+#textoDuda{font-size:0.9em;left:5px;position:relative;margin-top: 10px;vertical-align: top;border:none;border-bottom:solid 1px; border-color:#CCCCCC}
+#informacionSEF{float:left}
+#informacionSEI{float:left}
+#nombreSEF, #nombreSEI {margin-right:20px;}
+
+/*REDISEÑO PAGINA LOGIN FORMULARIOS*/
+
+.dropbtn {font-size:1.1em;background-color: white;border: 1px solid #D8D8D8;color: gray;cursor: pointer;padding: 0px 0px 0px 10px;margin-left:22px;width:130px;float:left;line-height:32px}                     
+.dropbtnEmp{font-size:1.1em;background-color: white;border: 1px solid #D8D8D8;color: gray;cursor: pointer;padding: 0px 0px 0px 10px;margin-left:22px;width:105px;float:left;line-height:32px}                   
+.contenido{font-size:1.0em !important; background-color: white;border: 1px solid #D8D8D8;position: absolute;width:115px;margin-left:22px !important;top:30px}
+#content .contenido li {color: black;background: none;cursor: pointer;padding:10px;margin-bottom:0px!important;}
+#content .contenido li.opcionGris {background-color: #F4F4F5;}
+#content .contenido li:hover {background-color: #BBBBBB;font-weight:bold;}
+#content .contenido li.opcionBlanca{background-color: #FFFFFFF}
+#content .contenido a {text-decoration:none;color:black;padding: 10px 78px 10px 0;}
+#content .contenido a.inactive:hover {color:black}
+
+#cajaLoginRight #userNIF{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+#cajaLoginRight .userDNI{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+#cajaLoginRight #userTarjeta{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+#cajaLoginRight #userCard{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+#cajaLoginRight #userCardPart{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+
+#content .ejDNI{color:#969696;font-size:12px}
+#content #ejDNI{float:right;margin-right:95px}
+#content #ejNIF{float:right;margin-right:85px;margin-top:10px}
+#content #ejTarjeta{float:right;margin-right:95px;margin-top:10px}
+#content #ejTarjetaEmp{float:right;margin-right:85px;margin-top:10px}
+#content #ejCAL{float:right;margin-right:85px;margin-top:10px}
+#content #accessForms span.ejemplo {display: block}
+.cajaLoginRight .pinDNI{font-size:1.1em;padding: 0 5px 0 10px;margin-top:15px;margin-left:22px;color:gray;border: 1px solid #D8D8D8; height: 32px;line-height: 32px;width: 250px;}
+.cajaLoginRight .pinNIF{font-size:1.1em;padding: 0 5px 0 10px;margin-top:15px;margin-left:22px;color:gray;border: 1px solid #D8D8D8; height: 32px;line-height: 32px;width: 250px;}
+.cajaLoginRight .info{float:right;margin-right:15px;margin-top:19px;margin-left:0px}
+.cajaLoginRight .infoBSO{margin-right:15px;top:4px;margin-left:4px;position:relative}
+#content  #cajaLoginRight .btnLogin {border: 0 none;background-color:#F5F5F5;color:gray;cursor: pointer;font-size: 1.2em;font-weight: bold;margin-left: 22px;margin-top:20px;padding: 8px 25px 8px 20px;}
+#content  #cajaLoginRight .btnLoginBlue {border: 0 none;background-color:#006dff;color:white;cursor: pointer;font-size: 1.2em;font-weight: bold;margin-left: 22px;margin-top:20px;padding: 8px 25px 8px 20px;}
+#cajaLogin  #capaBoton .btnNoCliente {margin-top:50px;border: 0 none;color:#FFFFFF;background-color: #006dff;cursor: pointer;font-size: 1.2em;font-weight: bold;margin-left: 20px !important;padding:8px 25px 8px 20px !important}
+.iconoSeguridad{float:left;margin-top:15px}
+.textoSeguridad{float:right;width:650px;margin-top:15px;text-align:justify}
+#content .textoSeguridadBSO{float:right;width:650px;margin-top:0px;padding-left:37px}
+#content .iconoSeguridadBSO{float:left}
+#content .moduloSeguridadBSO{margin-bottom:2em;float:left;margin-left:65px;margin-top:2em;text-align:justify}
+#content .titModuloAyuda {color: #333333;font-size:1.5em; font-weight: bold;float:left;position:relative;width:900px}
+#ayudaLogin {padding-bottom: 90px;margin-top:30px;width:900px}
+#content #ayudaLogin div{float:left;display:inline-table;margin-right: 15px;margin-left: 15px}
+#content #ayudaLogin li{padding-left:35px;padding-top:8px}
+#content #ayudaLogin p {margin-bottom:5px!important;font-size:14px}
+#content #ayudaLogin .txt{height:28px;font-size: 16px;font-weight: bold}
+#content #ayudaLogin .helpText{font-size: 12px;font-weight: normal;margin-left:0px}
+
+#ayudaLoginBSO {padding-bottom: 90px;margin-top:30px;width:1100px;float:left;position:relative}
+#content #ayudaLoginBSO div{float:left;display:inline-table;margin-right: 15px;margin-left: 15px;}
+#content #ayudaLoginBSO div.moduleHelpCall{width: 175px}
+#content #ayudaLoginBSO li{padding-left:35px;padding-top:8px}
+#content #ayudaLoginBSO p {margin-bottom:5px!important;font-size:14px}
+#content #ayudaLoginBSO .txt{height:28px;font-size: 16px;font-weight: bold}
+#content #ayudaLoginBSO .helpText{font-size: 12px;font-weight: normal;margin-left:0px}
+
+#content #cajaLogin .txtNoCliente {margin-left:20px}
+#content #cajaLogin .blackSubtit {color:#333333;margin-left:20px;margin-top:50px;margin-bottom:20px;font-weight:bold;font-size:16px}
+#cajaLoginRight #capaSinLogin {background-color: #F7F7F7;height: 70px;width: 307px;position:absolute;padding-left:22px;top:527px;top:522px\9}
+#LoginFormPart #capaSinLogin{background-color: #F7F7F7;height: 70px;width: 307px;position:absolute;padding-left:22px;top:527px;top:520px\9}
+#content #cajaLoginRight .linkSinLogin{font-weight: bold;top:65px;top:35px\9;position:absolute;margin-left:0px!important}
+#content #cajaLoginRight .flechaAbajo{float:right;margin-top:10px;margin-right:10px}
+#content #cajaLoginRight .flechaAbajoEmp{float:right;margin-top:10px;margin-right:10px}
+
+
+#cajaLogin #userNIF{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+#cajaLogin #userDNI{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+#cajaLogin #userCardPart{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+#cajaLogin #userCard{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+
+.cajaLogin .userCIF{color:gray;font-size:1.1em;border: 1px solid #D8D8D8;height: 32px;line-height: 32px;padding:0 5px;float:left;display:inline-block;margin-right:22px;margin-left:10px;width:120px}
+.cajaLogin .pinDNI{font-size:1.1em;padding: 0 5px 0 10px;margin-top:15px;margin-left:22px;color:gray;border: 1px solid #D8D8D8; height: 32px;line-height: 32px;width: 250px;}
+.cajaLogin .pinNIF{font-size:1.1em;padding: 0 5px 0 10px;margin-top:15px;margin-left:22px;color:gray;border: 1px solid #D8D8D8; height: 32px;line-height: 32px;width: 250px;}
+.cajaLogin .userCardPart{font-size:1.1em;padding: 0 5px 0 10px;margin-top:15px;margin-left:22px;color:gray;border: 1px solid #D8D8D8; height: 32px;line-height: 32px;width: 250px;}
+.cajaLogin .info{float:right;margin-right:15px;margin-top:19px;margin-left:0px}
+.cajaLogin .infoBSO{margin-right:15px;top:4px;margin-left:4px;position:relative}
+#content #cajaLogin .txtNoCliente {margin-left:20px}
+#content #cajaLogin .blackSubtit {color:#333333;margin-left:20px;margin-top:50px;margin-bottom:20px;font-weight:bold;font-size:16px}
+#capaSinLoginEmp {background-color: #F7F7F7;height: 70px;width: 307px;position:absolute;padding-left:22px;top:527px;top:522px\9;}
+#capaSinLoginEmp  .linkSinLogin{font-weight: bold;top:65px;top:35px\9;position:absolute;margin-left:0px!important}
+#content #cajaLogin .flechaAbajo{float:right;margin-top:10px;margin-right:10px}
+#content #cajaLogin .flechaAbajoEmp{float:right;margin-top:10px;margin-right:10px}
+#content  #cajaLogin .btnLogin {border: 0 none;background-color:#F5F5F5;color:gray;cursor: pointer;font-size: 1.2em;font-weight: bold;margin-left: 22px;margin-top:20px;padding: 7px 25px 8px 20px;}
+#content  #cajaLogin .btnLoginBlue{border: 0 none;background-color:#006dff;color:white;cursor: pointer;font-size: 1.2em;font-weight: bold;margin-left: 22px;margin-top:20px;padding: 7px 25px 8px 20px;}
+
+#content #ayudaLogin div.apartadoMsg {background: url("/StaticFiles/GrupoBS/img/i_mensajes.png") no-repeat scroll 0 0% transparent;margin-top: 5px;padding-left: 35px;}
+#content #ayudaLogin div.apartadoTel {background: url("/StaticFiles/GrupoBS/img/iconos/i_lb_phone.png") no-repeat scroll 0 0% transparent;margin-top: 5px;padding-left: 35px;}
+#content #ayudaLogin div.apartadoTwitter {background: url("/StaticFiles/GrupoBS/img/iconos/i_twitter.png") no-repeat scroll 0 0% transparent;margin-top: 3px;background-size:30px auto;padding-left:35px}
+#content #ayudaLogin .apartadoTwitter p {padding-top:0px}
+#content #ayudaLogin div.moduleHelpOfi{margin-left: 0px}
+#content #ayudaLogin .apartadoTel p{font-weight: bold;font-size:14px;margin-bottom:5px}
+#content #ayudaLogin .apartadoTelSinIcon p{font-weight: bold;font-size:14px;margin-bottom:5px}
+#content #ayudaLogin div.apartadoTelSinIcon {background: url("/StaticFiles/GrupoBS/img/iconos/i_lb_phone.png") no-repeat scroll 0 0% transparent;margin-top: 5px;padding-left: 35px;}
+
+#ayudaLoginBSO{width:900px;margin-left: 32px;}
+#content #ayudaLoginBSO div{float:left;display:inline-table;margin-right: 15px;margin-left: 15px}
+#content #ayudaLoginBSO li{padding-left:35px;padding-top:8px}
+#content #ayudaLoginBSO p {margin-bottom:5px!important;font-size:14px}
+#content #ayudaLoginBSO .txt{height:28px;font-size: 16px;font-weight: bold}
+#content #ayudaLoginBSO .helpText{font-size: 12px;font-weight: normal;margin-left:0px}
+#content #ayudaLoginBSO div.apartadoMsg {font-weight: bold;background: url("/StaticFiles/GrupoBS/img/i_mensajes.png") no-repeat scroll 0 0% transparent;margin-top: 5px;padding-left: 35px;}
+#content #ayudaLoginBSO div.apartadoTel {background: url("/StaticFiles/GrupoBS/img/iconos/i_lb_phone.png") no-repeat scroll 0 0% transparent;margin-top: 5px;padding-left: 35px;}
+#content #ayudaLoginBSO div.apartadoTwitter {background: url("/StaticFiles/GrupoBS/img/iconos/i_twitter.png") no-repeat scroll 0 0% transparent;margin-top: 3px;background-size:30px auto;padding-left:35px}
+#content #ayudaLoginBSO .apartadoTwitter p {padding-top:0px;font-weight: bold}
+#content #ayudaLoginBSO div.moduleHelpOfi{margin-left: 0px;font-weight: bold}
+#content #ayudaLoginBSO .apartadoTel p{font-weight: bold;font-size:14px;margin-bottom:5px}
+#content #ayudaLoginBSO .apartadoTelSinIcon p{font-weight: bold;font-size:14px;margin-bottom:5px}
+#content #ayudaLoginBSO div.apartadoTelSinIcon {background: url("/StaticFiles/GrupoBS/img/iconos/i_lb_phone.png") no-repeat scroll 0 0% transparent;margin-top: 5px;padding-left: 35px;}
+
+
+/*
+ * #content #ayudaLoginBSO div.apartadoMsg {background: url("/StaticFiles/GrupoBS/img/i_mensajes.png") no-repeat scroll 0 0% transparent;margin-top: 5px;padding-left: 35px;}
+ * #content #ayudaLoginBSO div.apartadoTel {background: url("/StaticFiles/SabAtl/img/iconos/telefono-destacado.gif") no-repeat scroll 0 0% transparent;margin-top: 5px;padding-left: 35px;}
+ * #content #ayudaLoginBSO div.apartadoTwitter {background: url("/StaticFiles/SabAtl/img/lock_black.png") no-repeat scroll 0 0% transparent;margin-top: 1px;background-size:25px auto;padding-left:35px}
+ * #content #ayudaLoginBSO .apartadoTwitter p {padding-top:9px;font-weight: bold;font-size:14px;}
+ * #content #ayudaLoginBSO div.moduleHelpOfi{margin-left: 0px;}
+ * #content #ayudaLoginBSO .apartadoTel p{font-weight: bold;font-size:14px;margin-bottom:5px;padding-top:5px}
+ * #content #ayudaLoginBSO .apartadoTelSinIcon p{font-weight: bold;font-size:14px;margin-bottom:5px;padding-top:4px}
+ * #content #ayudaLoginBSO div.apartadoTelSinIcon {background-image:none;margin-top: 5px;padding-left: 35px;}
+ * #content #blackHeadersBSO h1{margin-left:65px;color: #333333}
+ * */
+/*FIN REDISEÑO PAGINA LOGIN FORMULARIOS*/
+
+
+/*Para IE6, 7 y 8*/
+@media \0screen\,screen\9{
+#tdTitulo{width:52%}
+.separadorSimu{border-bottom: lightgray 1px solid; border-left: lightgray 1px solid;width: 185%; margin-bottom: 15px; border-top: lightgray 1px solid; border-right: lightgray 1px solid}
+#content .botonformSimulador {background: url("/StaticFiles/GrupoBS/img/botones/btnsimulador.gif") no-repeat scroll 0 50% transparent;border: 0 none;color: white;font-size: 12px;font-weight: bold;height: 26px;left: 72px;margin-bottom: 20px;padding: 0 5px 5px;position: relative;width: 134px}
+#titleBox{left: 0px;font-size:1.4em;width:90%;position:relative}
+#txtEspecialista{position:relative;left:38px;font-size:1em;width:200px}
+#rightZone #especialista #btnEspecialista {position:relative;left:28px;font-size:1em;margin-bottom:15px;margin-top:10px;padding-right:22px;padding-top:0;width:100px}
+#content #ayudaLoginBSO .moduleHelpTel{width:170px}
+#capaSinLoginEmp {background-color: #F7F7F7;height: 70px;width: 307px;position:absolute;padding-left:22px;top:525px;margin-left: 447px}
+#cajaLoginRight #capaSinLogin {background-color: #F7F7F7;height: 70px;width: 307px;position:absolute;padding-left:22px;top:525px;}
+#LoginFormPart #capaSinLogin{background-color: #F7F7F7;height: 70px;width: 307px;position:absolute;padding-left:22px;top:522px;}
+}
+
+/* Formato IMG en menu fatwire */
+.mainNavigation li.activeOk a img, .mainNavigation li.active a img, .mainNavigation li a img { top: 2px; position: relative; }
+
+input:focus {
+    outline: none;
+}
+
+img#hagaseClienteImg {
+    height: auto;
+}
+img#citaPreviaImg {
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cuerpoModulo p span {
+    color: #000!important;
+}
+
+.cuerpoModulo .h2Entradilla span u {
+    color: #000;
+    text-decoration: none!important;
+}
+
+#pantallaSolicitud .formularioSolicitud span.spnLabel {
+    clear: both;
+    float: left;
+    width: 132px;
+    padding: 2px 0;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 7px;
+}
+
+
+.formularioSolicitud span.spnInput input {
+    border: 1px solid #000;
+    height: 25px;
+    min-width: 186px;
+    margin-right: 4px;
+    vertical-align: middle;
+    max-width: 186px!important;
+    padding-left: 7px;
+}
+
+#leftZone .GBS_Modulo_FA {
+    margin-bottom: 12px;
+    padding-top: 20px;
+    border: solid 1px #e6e6e6;
+}
+
+#leftZone .GBS_Modulo_FA:first-child { 
+    padding-top: 0;
+    border: none;
+}
+
+.GBS_Modulo_FA .module {
+    margin-top: 23px !important;
+}
+
+.accion {
+    margin-bottom: -23px;
+}
+
+#loginModule {
+    border: none;
+}
+#contenIntProducto ul.tools {
+    margin-top: 19px;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+input#phoneEsp {
+    border: 1px solid black;
+    padding: 5px;
+    min-width: auto;
+}
+input#emailPersonalAddress {
+    border: 1px solid black;
+    padding: 5px;
+    min-width: auto;
+}
+input#alternativePhone {
+    border: 1px solid black;
+    padding: 5px;
+    min-width: auto;
+}
+input#phoneNoEsp {
+    border: 1px solid black;
+    padding: 5px;
+    min-width: auto;
+}
+.forgottenpindualEmp{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 22px;
+}
+
+/*DEV-656 - BSO Mejoras - FW - Nuevo diseño de aviso de nuevos productos o contratos*/
+.spanNuevo{
+	color: #A62BB4;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 8px;
+	padding-top: 4px;
+}
+
+.filaSuperior .spanNuevo,
+.filaSuperiorSeleccionada .spanNuevo{
+	margin: -12px 30px 0 28px;
+	display: block;
+	text-align: left;	
+}
+
+
+/*JV-63660 - Rate my operative*/
+#ligthboxBack {
+	display: none;
+	left: 0px; 
+	top: 0px; 
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	z-index: 997; 
+	background-image: url('/StaticFiles/GrupoBS/img/overlay.png');
+}
+
+#ligthboxContent {
+	display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+	font-family: Arial;
+	text-align: left;
+}
+
+#ligthboxContent #container {
+	position:fixed; 
+	top: 50%; 
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -300px;
+    padding: 15px 0;
+	width: 600px;
+	height: 556px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px #666666;
+	border: 1px solid #bbb;
+}
+
+#ligthboxContent #closePopup{
+	float: right;
+	margin: 0 15px 11px 15px;
+	cursor: pointer;
+}
+
+
+#container.class03.liquid.clear {
+	width: 995px;
+}

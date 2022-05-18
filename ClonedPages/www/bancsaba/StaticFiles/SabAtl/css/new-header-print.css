@@ -1,0 +1,354 @@
+body {
+	font-size: 8pt !important;
+	padding-top:0px !important;
+}
+
+body.oper{
+	padding-top:0px !important;
+	font-size: 8pt !important;
+	padding-top:0px !important;
+}
+
+#header {
+	clear:both;
+	width:100% !important;
+	color:#006DFF !important;
+	height:77px !important;
+}
+
+#headerAncho {
+	height:107px !important;
+}
+
+.headers {
+	margin-top: 25px;
+	clear: both;
+	height:77px !important
+}
+#leftZone, #rightZone, #miscellaneous, #breadcrumb, #footer, .tools, .auxiliarLinks, #headerPart2, .btn.tipo5, input.boton2p, #sm_modules_container, #menuright, #sm_modules_container2, .bso-menu, .bso-lateral, .bso-noprint {
+	display: none !important
+}
+
+#printer {
+	display: none;
+	visibility: hidden
+}
+#mainMenu {
+	display: none;
+}
+#content, #content.ftl {
+	float: none;
+	width: auto;
+	margin-left: 0;
+	margin-right: 0
+}
+.puntosRegalos.ftl, .puntosRegalos div, .puntosRegalos.ftr {
+	display: block;
+	float: none;
+	width: 100%;
+	clear: both
+}
+.puntosRegalos p {
+	width: 100% !important;
+	float: none !important;
+	clear: both !important
+}
+.paginacion {
+	width: 100%
+}
+.contentHelp {
+	border-width: 0px !important
+}
+.puntosRegalos {
+	height: auto;
+	width: auto;
+	margin-bottom: 10px;
+	position: static
+}
+#content {
+	width: 100%
+}
+* html #content {
+	width: 65%;
+	border: 1px solid bue
+}
+.contentTab {
+	display: block;
+	position: relative;
+	left: 0;
+	top: 0;
+	border: none
+}
+.action img {
+	display: none
+}
+.logo {
+	margin-left: 10px; 
+	position: absolute; 
+	top: 48px;
+}
+
+#miscellaneous {
+	height: auto
+}
+
+#headerPart1 .espacio {
+	margin-left: 10px;
+	padding:0px;
+	padding-top:0px !important;
+}
+
+#headerPart1 {
+	margin-left: 0;
+	border-top-width: 70px;
+	border-top-style: solid;
+	width: 100% !important;
+	border-bottom-width: 30px;
+	border-bottom-style: solid;
+}
+
+#headerPart1 h1#logo {
+	position: absolute;
+	left: 10px;
+	top: 0px;
+}
+
+.formBtn {
+	clear: both;
+	visibility: hidden;
+}
+.class03 .tabsZone {
+	border: 0;
+	margin-bottom: 13em
+}
+* html .class03 .tabsZone {
+	margin-bottom: 0;
+}
+
+.class03 #content .tabsZone ul {
+	border: none
+}
+.class03 #content .tabsZone h2 {
+	font-size: 1.5em;
+	margin-left: 0;
+	border: none
+}
+.tabsZone {
+	border: none
+}
+a, action a {
+	color: #000;
+	text-decoration: none
+}
+.subtitle {
+	color: green
+}
+.banners {
+	clear: both;
+	float: left;
+	width: 100%
+}
+.bigPromotion {
+	float: left;
+	width: 100%
+}
+#content .actions .solicitud {
+	margin: 0
+}
+#usuario {
+	display: none
+}
+
+#nombreUsuario {
+	display: none
+}
+
+#content .tabs li {
+	display: none
+}
+#content .tabs li.sel {
+	display: block
+}
+#content .tabs li.sel li {
+	display: list-item
+}
+.class03 #content .tabs .contentTab {
+	border-width: 0px !important;
+	background: none !important
+}
+#contenIntProducto .hacked ul, li, ul, #content ul {
+	list-style-type: square !important
+}
+.moreInformation {
+	display: none
+}
+.class03 #content .tabs .contentTab, .class03 #content .tabs ul, .class03 #content .tabs li, #content .tabsZone {
+	border-width: 0px !important
+}
+.blockSecciones {
+	font-size: 1.4em;
+	padding-bottom: 0.5;
+	width: 90%;
+	height: 1.4em;
+	clear: both;
+	float: none
+}
+.listCatPunt {
+	float: none
+}
+#contenedorPuntosRegalos {
+	float: none
+}
+#content .tabsZone {
+	clear: both;
+	display: block
+}
+.relatedLinks {
+	clear: both;
+	display: none;
+	margin-top: 150px
+}
+html>body #sm_full_NETi_container table {
+	font-size:12pt !important;
+	width: auto !important;
+	clear: both;
+	#clear: none;
+}
+
+html>body #sm_full_NETi_container td {
+	font-size:12pt !important;
+	width: auto !important;
+	clear: both;
+	#clear: none;
+}
+
+
+.septd td{
+	padding: 2px 20px 2px 2px;
+}
+
+
+.septd #balance{
+	padding-left: 2px !important;
+	padding-right: 30px !important;
+}
+
+html>body #sm_full_NETi_container .module.special {
+	display: none
+}
+
+html>body #sm_modules_container .module.special, html>body #sm_modules_container2 .module.special {
+	display: none
+}
+
+.a10, .a10b, .e10, .menutitle1, .menutitle2, TD.foot, INPUT.btn2 {
+	#font-size: 10px !important
+}
+.a11b, TR.h11, TR.d11, TD.h11, TD.d11 {
+	font-size: 16px !important;
+	#font-size: 20px !important;
+}
+.a12rb,  .a12r, .a12, .a12g, .a12bsub, .a12dkrb, .aCard, .e12, .title3, .title4, .inp, .inpdisabled, TR.h12, TR.d12, TD.h12, TD.d12, INPUT.btn, INPUT.label, RADIO.general, .textGB, .fondoBlanco, .textoFondoAzulClaro {
+	font-size: 16px !important;
+	#font-size: 20px !important
+}
+.a13, .a13b, .title5, .sectionw, TR.section, TD.section, td.section {
+	#font-size: 13px !important
+}
+.a14, .a14b, .title2, TR.section14, TR.h14, TR.d14, TD.h14, TD.d14, TD.secondary {
+	#font-size: 14px !important
+}
+.a16, .a16b, .a18org, .title1, .title, .textBlackBold {
+	#font-size: 16px !important
+}
+.a18, .a18b, FONT.keyFont {
+	#font-size: 18px !important
+}
+
+.a11, .a11r{
+	font-size: 16px !important;
+	#font-size: 20px !important;
+	width: 100px !important; 
+}
+
+.a12b{
+	font-size: 16px !important;
+	#font-size: 20px !important;
+}
+
+#side_bar, #directions {
+	width: 80% !important;
+	overflow: visible
+}
+#containerMaps {
+	margin-left: 0px !important;
+	page-break-before: always
+}
+/*eliminar css qgo para imprimir bien en ie7...*/
+
+#d0 {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.barra {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.barra .cerrar {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.bajo {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.centro {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.continf {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.continf input {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.cuerpo {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.sombra {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.sombra .a {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.sombra #c {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+.sombra .d {
+	margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+#d3, .continf {
+  margin-left: -1000px;
+  width: 10% !important;
+  position: absolute;
+}
+/*...eliminar css qgo para imprimir bien en ie7*/

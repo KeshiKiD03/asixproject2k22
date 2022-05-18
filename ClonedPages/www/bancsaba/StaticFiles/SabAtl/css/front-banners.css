@@ -1,0 +1,105 @@
+.banner-enroll-fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    z-index: 100;
+    display: none;
+}
+
+.banner-enroll-fixed .banner-enroll-container {
+    width: 100%;
+    max-width: 994px;
+    position: relative;
+    margin: auto;
+}
+
+.banner-enroll-fixed .banner-enroll-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 30px 20px;
+}
+
+.banner-enroll-fixed h4 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.banner-enroll-fixed p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.banner-enroll-fixed .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.banner-enroll-fixed .close img {
+    width: 14px;
+}
+
+.banner-enroll-fixed .countdown {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-right: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.banner-enroll-fixed .countdown .countdown-number {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.banner-enroll-fixed .countdown svg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+    z-index: -1;
+}
+
+.banner-enroll-fixed .countdown svg.bg circle {
+    stroke-dasharray: 113px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: #006dff;
+    stroke-opacity: 0.8;
+    transition: none;
+}
+
+.banner-enroll-fixed .countdown svg circle {
+    stroke-dasharray: 95px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: #fff;
+    fill: none;
+    transition: stroke-dashoffset .1s;
+}
+
+

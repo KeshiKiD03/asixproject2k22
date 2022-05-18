@@ -1,0 +1,1 @@
+var b11358606860 = "<a href=\"https:\/\/emssas.bancsabadell.com\/emssas\/adclick\/FCID=15082\/SITE=SABADELLATLANTICO\/LANG=es\/AREA=BS_Particulares\/FAMILIA=HOME\/POS=5\/DOMINIO=www.bancsabadell.com\" title=\"\" TARGET=\"\" class=\"SASBanner\"><img src=\"https:\/\/content.aimatch.com\/emssas\/3\/CR_BSOP_Home_Servicing_Compras_08_211108_ES.jpg\" border=\"0\" alt=\"\" \/><\/a>";

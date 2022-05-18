@@ -1,0 +1,476 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TTXV57');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="robots" content="noindex, nofollow" /><meta name="description" content="Permite consultar y operar con las cuentas y servicios que tenga contratados en ABANCA, y contratar productos desde cualquier dispositivo con conexión a internet." /><meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="Images/Iconos/NGB-2.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" /><link rel="apple-touch-icon" href="https://bancaelectronica.abanca.com/Images/Iconos/NGB-1.png" /><link id="ctl00_cssIcon" rel="shortcut icon" href="https://bancaelectronica.abanca.com/Images/abanca.ico" /><link rel="stylesheet" href="https://bancaelectronica.abanca.com/Styles/normalize.css" type="text/css" /><link rel="stylesheet" href="https://bancaelectronica.abanca.com/Styles/skeleton.css" type="text/css" /><link rel="stylesheet" href="https://bancaelectronica.abanca.com/Styles/fixedsticky.css" type="text/css" /><link rel="stylesheet" href="https://bancaelectronica.abanca.com/Styles/layout_V2.css" type="text/css" /><link rel="stylesheet" href="https://bancaelectronica.abanca.com/Styles/ed_general_V2.css" type="text/css" /><link rel="Stylesheet" href="https://bancaelectronica.abanca.com/Styles/font-awesome/css/font-awesome.min.css" type="text/css" /><link href="https://bancaelectronica.abanca.com/Styles/Pub_Logon.css" rel="stylesheet" type="text/css" /><link href="https://bancaelectronica.abanca.com/Styles/Sug_Logon.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      function Domain() {
+        var uri = new URL(document.location);
+        var parts = uri.hostname.split('.');
+        var result = '';
+        if (parts.length > 2) {
+          result = parts[parts.length - 2] + '.' + parts[parts.length - 1];
+        } else {
+          result = uri.hostname;
+        }
+        return result;
+      }
+      (function () { document.cookie = "___tk1037151=" + encodeURIComponent(Math.random()) + ";path=/;domain=" + Domain(); })();
+    </script>
+
+  <script type="text/javascript">
+    var tci = "1037151";
+    var tcl = "land.abanca.com";
+    var tcf = "fold.abanca.com";
+    var aPath = "/calcmax/alignInfo.js";
+    var ID = "bfd10083f5b5458afa538866fb96fc8d85e8c698e8479af9cd39a98ee2092f53";
+    var PUID = "";
+  </script>
+  <script src="https://bancaelectronica.abanca.com/Js/common.js" type="text/javascript"></script>
+  <script src="https://bancaelectronica.abanca.com/Js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://bancaelectronica.abanca.com/Js/Ajaxjq.js.cpn" type="text/javascript"></script>
+  <script src="https://bancaelectronica.abanca.com/Js/CheckCookies.js.axd" type="text/javascript"></script>
+  <script src="https://bancaelectronica.abanca.com/Js/funcionesjq.js.cpn" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).scroll(function () {
+      $("body").toggleClass("scrolled", $(document).scrollTop() >= 50);
+    });
+  </script>
+  
+    <script src="https://bancaelectronica.abanca.com/Js/DataValidationjq.js.axd" type="text/javascript"></script>
+    <script src="https://bancaelectronica.abanca.com/Js/lgfuncsjq.js.axd" type="text/javascript"></script>
+    <script type="text/javascript">
+      (function () { var f = document, e = window, i = e.location.protocol, b = [["src", [i == "https:" ? "https:/" : "http:/", "drag.abanca.com/1037151/strUtils.js"].join("/")], ["type", "text/javascript"], ["async", true]], g = "XMLHttpRequest", a = null, j = e[g] && (a = new e[g]()).withCredentials !== undefined, c = f.createElement("script"), h = f.getElementsByTagName("head")[0]; if (j) { a.open("GET", b[0][1], b[2][1]); a.withCredentials = true; a.onreadystatechange = function (d) { if (a.readyState == 4 && a.status == 200) { c.type = "script/meta"; c.src = b[0][1]; h.appendChild(c); new Function(a.responseText)() } }; a.send() } else { setTimeout(function () { for (var d = 0, k = b.length; d < k; d++) { c.setAttribute(b[d][0], b[d][1]) } h.appendChild(c) }, 0) } })();
+        (function (d, f) { var b = { src: (d.location.protocol == "https:" ? "https:" : "http:") + "//land.abanca.com/1037151/pedl.js?r=" + Math.random(), async: true, type: "text/javascript" }, g = "XMLHttpRequest", c = f.createElement("script"), h = f.getElementsByTagName("head")[0], a; if (d[g] && (a = new d[g]()).withCredentials !== undefined) { a.open("GET", b.src, b.async); a.withCredentials = true; a.onreadystatechange = function (e) { if (a.readyState == 4 && a.status == 200) { c.type = "script/meta"; c.src = b.src; h.appendChild(c); new Function(a.responseText)() } }; a.send() } else { setTimeout(function () { for (var e in b) { c.setAttribute(e, b[e]) } h.appendChild(c) }, 0) } })(window, document);
+        entidad = '2080';
+    </script>
+<title>
+	Acceso Banca Electrónica ABANCA
+</title></head>
+<body onload="CheckCookies()" class="">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTXV57"
+      height="0" width="0" style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <div id="header">
+      <div class="page-header-secondary">
+        <div class="container">
+          <div class="sixteen columns alpha">
+            <ul class="left-info">
+              
+              <li class="ayuda"><i class='fa fa-fw fa-bullhorn'></i>
+                <a id="ctl00_hyHelp" href="https://www.abanca.com/es/ayuda/banca-electronica/contrasenas-y-acceso-a-banca-electronica/" target="_blank">Ayuda</a>
+              </li>
+            </ul>
+
+            <ul class="right-info">
+              
+              <li><a href="https://bancaelectronica.abanca.com/?l=1034" tabindex="0">
+                Castellano</a></li>
+              
+                <li><a href="https://bancaelectronica.abanca.com/?l=1110" tabindex="0">
+                  Galego</a></li>
+              
+              
+                <li><a href="https://bancaelectronica.abanca.com/?l=1069" tabindex="0">
+                  Euskera</a></li>
+              
+              <li><a href="https://bancaelectronica.abanca.com/?l=1033" tabindex="0">
+                English</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="header-primary" class="page-header-primary">
+        <div class="container">
+          <div class="sixteen columns alpha">
+            <div class="wrapper">
+              <a id="ctl00_logo" class="logo" href="http://www.abanca.com" target="_blank"><span class="accesible">Banca electr&oacute;nica</span></a>
+              <ul class="right-info">
+                <li class="tlfAyuda"><i class="fa fa-phone"></i>&nbsp;<span>981 910 522</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div class="container">
+        <div class="sixteen columns alpha">
+          <div class="wrapper">
+            <div class="sixteen columns alpha">
+              <h2 class="main_title">
+                Bienvenido a la Banca electr&oacute;nica y Buzón Digital de ABANCA.
+              </h2>
+            </div>
+            <div class="eight columns alpha">
+              <div class="access_left">
+                
+    
+    <form action="https://bancaelectronica.abanca.com/WELE200M_Logon_Conf.aspx" method="post" id="fFirst" accept-charset="utf-8" onsubmit="return Validar1st();" autocomplete="off">
+        <input type="hidden" id="entidad" name="entidad" value="2080" />
+        <div class="section">
+            <h1>
+                Particulares
+                <span class="logo"></span>
+            </h1>
+        </div>
+        
+        
+            <div class="login_options" id="capaAyudaNIF" style="display:none; font-size:12px;color:#666">
+                <br />
+                <p style="color:#313538"><strong>¿Qué código de usuario debo introducir para acceder a mi Banca Electrónica?</strong></p>
+                <p><b>Utiliza tu NIF o NIE para conectarte.</b> Debes teclear también los CEROS que tu documento tenga a la izquierda para completar un total de 9 caracteres, por ejemplo 00123456A.</p>
+                <p><b>Si no dispones de NIF o NIE</b>, utiliza el código de usuario que tengas asignado. Y, si no lo recuerdas, prueba a conectarte con el número de tu contrato de Banca Distancia, en este caso no debes teclear ceros a la izquierda.</p>
+                <p><a href="https://www.abanca.com/es/ayuda/banca-electronica/contrasenas-y-acceso-a-banca-electronica/" target="_blank">Preguntas frecuentes sobre contraseñas y acceso</a></p>
+                <p style="text-align:right;"><a href="index.html#" onclick="$('#capaAyudaNIF').hide();" title="Cerrar" tabindex="0">Cerrar</a></p>
+            </div>
+        
+        
+        <div id="access_box2" class="access_box clearfix">
+            <div class="eight columns alpha login_options">
+                <div class="select_option">
+                    <div class="steps"><strong>
+                        1.</strong></div>
+                    <div class="text">
+                        <p>
+                            <strong>
+                                Introduce tu NIF y el PIN</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="eight columns omega options">
+                    <p>
+                        <label for="card01">
+                            NIF:</label><input name="card01" class="card_number" id="card01" type="text" maxlength="20" size="8" />
+                        &nbsp;<a href="index.html#" onclick="$('#capaAyudaNIF').show()" tabindex="0">No tengo NIF</a>
+                        
+                        
+                    </p>
+                    <p>
+                        <label for="pin_number">
+                            PIN (contraseña):</label><input id="pin_number" name="pin_number" type="password" value="" size="6" maxlength="6" />
+                        &nbsp;&nbsp;<a id="ctl00_MainContent_hLinkPin" href="https://www.abanca.com/es/ayuda/buscar/?id=104&amp;p=3" target="_blank">¿Has olvidado o no funciona tu PIN?</a>
+                    </p>
+                </div>
+            </div>
+            <div class="virtual_keyboard" style="display: none;">
+                <ul>
+                    <li><a href="index.html#">7</a></li>
+                    <li><a href="index.html#">8</a></li>
+                    <li><a href="index.html#">9</a></li>
+                    <li><a href="index.html#">4</a></li>
+                    <li><a href="index.html#">5</a></li>
+                    <li><a href="index.html#">6</a></li>
+                    <li><a href="index.html#">1</a></li>
+                    <li><a href="index.html#">2</a></li>
+                    <li><a href="index.html#">3</a></li>
+                    <li class="correction"><a href="index.html#" id="btCorrect" title="Corregir">
+                        Corregir</a></li>
+                    <li><a href="index.html#">0</a></li>
+                </ul>
+                <button class="closeKey" id="bCloseKeyb" type="button" title="Cerrar">
+                    Cerrar</button>
+            </div>
+        </div>
+        <div class="eight columns alpha">
+            <button type="submit" class="accept form_accept" id="bSendUser" name="bSendUser">
+                Acceder</button>
+            <button type="button" class="accept form_clean" id="bClean" name="bClean">
+                Limpiar</button>
+        </div>
+        
+            <div class="eight columns alpha" style="font-size: 1.2em;">
+                <br />
+                <p>
+                    ¿Aún no tienes tus claves? <a href="https://www.abanca.com/es/seleccion-buzon/">Solicítalas ahora</a>.
+                </p>
+            </div>
+        
+    </form>
+    <script type="text/javascript">
+      KEYBOARD.keyboard("#pin_number", ".virtual_keyboard");
+      KEYBOARD.close("#bCloseKeyb", ".virtual_keyboard");
+      ACCESS.init("#radio1", "#access_box1", "#access_box2", "active_step");
+      ACCESS.init("#radio2", "#access_box2", "#access_box1", "active_step");
+      VIRTUALPAD.init(".virtual_keyboard ul li a");
+      if ($("#entidad").val() == "1693" || $("#entidad").val() == "0170" || $("#entidad").val() == "2080") {
+        $("#access_box2").prop("class", "access_box active_step clearfix");
+        $('#access_box2').show();
+        $('#pin_number').prop('readonly', true);
+      } else {
+        Init_1();
+      }
+      $(document).ready(function () {
+        $("#bClean").on('click', function () {
+          $("#card01").val('');
+          $("#pin_number").val('');
+        });
+      });
+    </script>
+
+              </div>
+            </div>
+            <div class="eight columns omega">
+              <div class="access_right">
+                <div class="section">
+                  <h1>
+                    Empresas
+                    <span class="logo"></span>
+                  </h1>
+                </div>
+                <div class="section_empresas">
+                  <a id="ctl00_litBEEmpresas" href="https://be.abanca.com">Acceso Banca Electrónica de Empresas</a>
+                </div>
+                <br />
+                <h3>
+                  ¿Sabías que … ?</h3>
+                <div class="actions_box">
+                  <script type="text/javascript">//<![CDATA[
+if (!Function.prototype.bind) {
+	Function.prototype.bind = function (oThis) {
+		if (typeof this !== "function") {
+			// closest thing possible to the ECMAScript 5 internal IsCallable function
+			throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+		}
+
+		var aArgs = Array.prototype.slice.call(arguments, 1),
+			fToBind = this,
+			fNOP = function () { },
+			fBound = function () {
+				return fToBind.apply(this instanceof fNOP && oThis
+					? this
+					: oThis,
+					aArgs.concat(Array.prototype.slice.call(arguments)));
+			};
+
+		fNOP.prototype = this.prototype;
+		fBound.prototype = new fNOP();
+
+		return fBound;
+	};
+}
+
+function PublicityManager() {
+	this.pubList = [];
+	this.start = function () {
+		this.pubList.each(function (index, item) {
+			item.load();
+		});
+	};
+	this.attach = function (pub) {
+		this.pubList.push(pub);
+	};
+}
+
+function PublicityContent(id, ap, zo, op, ti, u) {
+	this.HtmlElement = $(id);
+	this.app = ap;
+	this.zona = zo;
+	this.operacion = op;
+	this.tipo = ti;
+	this.data = undefined;
+	this.updater = undefined;
+	this.ind = 0;
+	this.url = u;
+
+	this.refresh = function () {
+		if (this.data === undefined) {
+			this.HtmlElement.html('');
+		} else {
+			var pubActual = this.data.PublicidadCollection[this.ind].Publicidad;
+			var tit = $(id + ' .Pub_LinkTitulo_' + this.zona).first();
+			if (tit.length > 0) {
+				if (pubActual.LinkTitulo !== '') {
+					tit.attr('href', pubActual.LinkTitulo);
+					tit.attr('target', pubActual.LinkTituloInterno == 'False' ? '_blank' : tit.target = '');
+				} else {
+					tit.attr('href', '#');
+					tit.attr('target', '');
+				}
+				tit.html(pubActual.Titulo);
+			}
+
+			var aE = $(id + ' .Pub_LinkImagen_' + this.zona).first();
+			if (aE.length > 0) {
+				if (pubActual.LinkImagen !== '') {
+					aE.attr('href', pubActual.LinkImagen);
+					aE.attr('target', pubActual.LinkImagenInterno == 'False' ? '_blank' : '');
+				} else {
+					aE.attr('href', '#');
+					aE.attr('target', '');
+				}
+			}
+
+			var imgE = $(id + ' .Pub_Imagen_' + this.zona).first();
+			if (imgE.length > 0) {
+				imgE.attr('src', pubActual.Imagen);
+				imgE.attr('alt', pubActual.Titulo);
+			}
+
+			var aCont = $(id + ' .Pub_LinkContratar_' + this.zona).first();
+			if (aCont.length > 0) {
+				if (pubActual.LinkContratar !== '') {
+					aCont.attr('href', pubActual.LinkContratar);
+					aCont.attr('target', pubActual.LinkContratarInterno == 'False' ? '_blank' : '');
+				} else {
+					aCont.attr('href', '#');
+					aCont.attr('target', '');
+				}
+				aCont.html(pubActual.TextoContratar);
+			}
+
+			var aMas = $(id + ' .Pub_LinkMasInfo_' + this.zona).first();
+			if (aMas.length > 0) {
+				if (pubActual.LinkMasInfo !== '') {
+					aMas.attr('href', pubActual.LinkMasInfo);
+					if (pubActual.LinkMasInfoInterno == 'False')
+						aMas.attr('target', '_blank');
+					else
+						aMas.attr('target', '');
+				}
+				else {
+					aMas.attr('href', '#');
+					aMas.attr('target', '');
+				}
+				aMas.html(pubActual.TextoMasInfo);
+			}
+
+			var eDesc = $(id + ' .Pub_Desc_' + this.zona).first();
+			if (eDesc.length > 0) eDesc.html(pubActual.Contenido);
+			this.HtmlElement.show();
+			this.ind++;
+			if (this.ind == this.data.PublicidadCollection.length) { this.ind = 0; }
+		}
+	};
+	this._loadSuccess = function (transport) {
+		this.data = transport;
+		this._setStartIndex();
+		this.refresh();
+		if (this.data !== undefined) {
+			if (this.zona != 'PLOG' && this.zona != 'SLOG' && this.data.PublicidadCollection.length > 1) {
+				this.updater = setInterval(this.refresh.bind(this), 15000);
+			}
+		}
+	};
+	this._setStartIndex = function () {
+		if (this.data !== undefined) {
+			var aleat = Math.random();
+			var indMax = this.data.PublicidadCollection.length - 1;
+			this.ind = Math.round(aleat * indMax);
+		}
+	};
+	this._loadFailure = function (transport) {
+		this.HtmlElement.html('');
+	};
+	this.load = function () {
+		if (this.url !== '') {
+			AjaxParams.Clear();
+			AjaxParams.Add("aplicacion", this.app);
+			AjaxParams.Add("zona", this.zona);
+			AjaxParams.Add("pagina", this.operacion);
+			AjaxParams.Add("tipo", this.tipo);
+			AjaxReq.Send(this.url, this._loadSuccess.bind(this), this._loadFailure.bind(this), AjaxParams);
+		}
+	};
+}
+
+//]]></script><script type="text/javascript">//<![CDATA[
+$(document).ready(function() { var ctl00_Sugerencias_pub = new PublicityContent("#ctl00_Sugerencias", "WELE200","SLOG", "Logon_Ini", 0,"Publicidad/WELE200M_Publicidad.aspx?l=1034"); ctl00_Sugerencias_pub.load(); });
+//]]></script><div id="ctl00_Sugerencias" class="Pub_SLOG" style="display:none;">
+    <p class="Pub_Desc_SLOG"></p>
+    <a href="index.html#" class="Pub_LinkMasInfo_SLOG"></a>
+</div>
+                </div>
+                <h3>
+                  Te puede interesar</h3>
+                <div class="actions_box">
+                  <script type="text/javascript">//<![CDATA[
+$(document).ready(function() { var ctl00_Recomendaciones_pub = new PublicityContent("#ctl00_Recomendaciones", "WELE200","PLOG", "Logon_Ini", 0,"Publicidad/WELE200M_Publicidad.aspx?l=1034"); ctl00_Recomendaciones_pub.load(); });
+//]]></script><div id="ctl00_Recomendaciones" class="Pub_PLOG" style="display: none;">
+	<span class="Pub_Titulo_PLOG"><a href="index.html#" class="Pub_LinkImagen_PLOG">
+		<img class="Pub_Imagen_PLOG"></img>
+	</a><a class="Pub_LinkTitulo_PLOG" href="index.html#"></a></span>
+	<p class="Pub_Desc_PLOG">
+	</p>
+	<a href="index.html#" class="Pub_LinkContratar_PLOG"></a><a href="index.html#" class="Pub_LinkMasInfo_PLOG"></a>
+</div>
+
+                </div>
+                <h3 style="clear: both; padding-top: 0.8em;">
+                  ¡Muy importante!</h3>
+                <div class="actions_box seguridad_logon">
+                  <p>
+                    Recuerda que ABANCA nunca te solicitará por correo electrónico claves de banca electrónica ni enlaces a esta página.
+                  </p>
+                  <p>
+                    <a id="ctl00_litRecomendacionesSeguridad" href="http://www.abanca.com/es/ayuda/guias/consejos-seguridad-banca-electronica/" target="_blank">Recomendaciones de Seguridad</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="sixteen columns alpha">
+          <div class="wrapper">
+            <div class="eight columns alpha">
+              <div class="left_wrap">
+                <p>
+                  <a class="logo_footer" tabindex="0"><span class="accesible">NCG</span></a><span>
+                    &copy; ABANCA Corporación Bancaria S.A. Todos los derechos reservados.</span>
+                </p>
+                <p>
+                  <span>
+                      <a id="ctl00_litPoliticaPrivacidad" href="http://www.abanca.com/es/legal/politica-privacidad/" target="_blank">Política de privacidad</a>
+                      |&nbsp;<a id="ctl00_litUrlCookies" href="https://www.abanca.com/es/legal/cookies/" target="_blank">Política de cookies</a>
+                      
+                          |&nbsp;<a id="ctl00_LinkContrato" href="https://bancaelectronica.abanca.com/Documentacion/spa/2080/Contrato_Banca_Electronica.pdf" target="_blank">Contrato</a>
+                          |&nbsp;<a id="ctl00_litUrlTarifasGeneral" href="http://www.abanca.com/es/documentos/banca-a-distancia/es-tarifas-banca-a-distancia-particulares.pdf" target="_blank">Tarifas</a>
+                      |&nbsp;<a id="ctl00_litSeguridadBep" href="https://www.abanca.com/es/perfil/seguridad/" target="_blank">Seguridad</a>
+                      
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="eight columns omega">
+              <div class="right_wrap">
+                
+                  <p style="float: left;">
+                    <a href="https://bancaelectronica.abanca.com/Documentacion/spa/Certificado_AENOR_ISO9001.pdf" target="_blank" tabindex="0">
+                      <img alt="AENOR" src="https://bancaelectronica.abanca.com/images/Aenor.gif" /></a>
+                  </p>
+                
+                <p>
+                  Si tienes dudas puedes consultar la <a href="https://www.abanca.com/es/ayuda/banca-electronica/contrasenas-y-acceso-a-banca-electronica/" target="_blank">Sección de ayuda</a>.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
