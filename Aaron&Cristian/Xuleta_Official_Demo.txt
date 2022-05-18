@@ -248,12 +248,28 @@ PROCEDIMENT:
 
 5. Lo que s'ha explicat abans en la exposició, fer-ho.
 
-5. Abrir el BETTERCAP.
+6. Abrir el BETTERCAP i veure la xarxa de la classe i les victimes.
 
-2. Desde el Kali fer l'atac de ARP SPOOF (Ettercap) i suplantar alguna pàgina de prova (DNS Cache Poison)
+DEMO PASSWORD CRACK
+
+7. Seleccionar el servidor de CryptoSEC Forward (Router) i crackejar la contraseña d'accés SSH i clients. Brute Force
+
+DEMO ARP - DNS - CACHE DEMO
+
+8. Desde el Kali fer l'atac de ARP SPOOF (Ettercap) i suplantar alguna pàgina de prova (DNS Cache Poison)
 . I enviar-ho a la VÍCTIMA1 (FORWARDER .168) i el SOA (.164).
 
-3. Quan s'activa el ARP Spoof, l'usuari fa PING surt la IP del KALI (Man In The Middle), és a dir.
+9. Quan s'activa el ARP Spoof, l'usuari fa PING surt la IP del KALI (Man In The Middle), és a dir.
 Que el packet passa per el Kali abans d'anar a SOA o a on vulgui a l'exterior.
 
-4. 
+DEMO ATAQUE SSLSTRIP
+
+10
+
+DEMO ATAQUE X
+
+DEMO RECUPERACIÓ DAVANT ATACS
+
+DEMO X
+
+DEMO COM PREVENIR ATACS
