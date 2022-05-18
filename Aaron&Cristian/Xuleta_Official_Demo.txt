@@ -1,0 +1,152 @@
+# XULETA OFICIAL DEMO
+
+Plantejament en VIRTUALBOX:
+
+Portàtil d'en Keshi:
+
+    - Kali Linux: BRIDGE (DHCP eth0)
+
+        - X11 Forwarding SSH
+
+        - Static Routing to 192.168.3.0/24: ip route add 192.168.3.0/24 via 10.200.243.168 dev eno1
+
+        - Setoolkit
+
+        - Ettercap
+
+        - Bettercap
+
+        - SSLStrip
+
+        - John (Brute Force Crack)
+
+        - Wireshark
+
+        - Nmap
+
+        - Traceroute
+
+Portàtil d'en Cristian:
+
+    - Ub 20.04 SOA "SOACryptosec": BRIDGE (DHCP enp0s3) - 10.200.243.164/24
+
+        - APACHE2: Pàg www.cryptosec.net o 10.200.243.164/cryptosec/index.html
+
+            - /var/www/html/cryptosec/index.html
+
+            - Per a que funcioni el HTTPS s'ha d'importar el CACERT.PEM al FIREFOX.
+
+        - DNS AUTORITARI (cryptosec.net)
+
+            - DNS
+
+            - DNSSEC
+
+PC Aaron i11:
+
+    - Ub 20.04 Forwarder "ForwarderCryptosec": 
+    
+        - BRIDGE (DHCP enp0s3) - 10.200.243.168/24
+
+        - Internal Network (cryptosec enp0s8 192.168.3.0/24) - 192.168.3.1/24
+
+    - Cryptosec Clients:
+
+        - Internal Network (cryptosec enp0s3 192.168.3.0/24) - 192.168.3.100/24 - 192.168.3.200/24
+
+
+Kali
+
+1. Verificació de les IPS i conectivitat amb Internet.
+
+2. Rebrà la IP per DHCP de la classe.
+
+3. Activar services.sh - SSH i FORWARDING.
+
+4. Activar X11 Forwarding SSH a l'ordinador del Professor:
+
+    - 
+
+3. Modificar BIND9 (Primer en DNS normal i després DNSSEC).
+
+4. Verificar APACHE2: 10.200.243.164 i 10.200.243.164/cryptosec/index.html
+
+SOA
+
+1. Verificació de les IPS i conectivitat amb Internet.
+
+2. Modificar NETPLAN.
+
+    - IMPORTANT! Verificar PING i RESOLV cryptosec.net amb la IP adequada!
+
+3. Modificar BIND9 (Primer en DNS normal i després DNSSEC).
+
+4. Verificar APACHE2: 10.200.243.164 i 10.200.243.164/cryptosec/index.html
+
+5. Verificar que DNSSEC funciona: 
+
+    - dig cryptosec.net +dnssec +multiline
+
+    - dnssec-verify -o cryptosec.net db.cryptosec.net [-v level]
+ 
+    - host cryptosec.net
+
+    - nslookup cryptosec.net
+
+6. Verificar claus de DNSSEC i posada en marcha davant spoofing de la zona.
+
+FORWARD
+
+1. Verificació de les IPS i conectivitat amb Internet.
+
+2. Modificar NETPLAN.
+
+    - IMPORTANT! Verificar PING i RESOLV cryptosec.net amb la IP adequada!
+
+    - Verificar que DNS nameserver sigui FORWARDER a 10.200.243.164.
+
+3. Activar IPTABLES: cryptonat.sh
+
+    - Modificar la IP de la CLASSE 10.200.243.168.
+
+4. Activar FORWARDING de DNS.
+
+    - Cambiar named.conf.default-zones
+
+    - Cambiar named.conf.options
+
+    - Reiniciar i verificar que facin PING I RESOLV. Sino Journal.
+
+5. Activar DHCP per a 192.168.3.0/24 a la interfície enp0s8.
+
+    - Reiniciar DHCP i Verificar
+
+    - Verificar amb CLIENTS que rebin la IP i facin resolv a cryptosec.net.
+
+
+
+CLIENTS
+
+1. Obrir i verificar que rebin IP i DNS
+
+    - Sino reiniciar networking o dhclient -r i dhclient -v.
+
+    - En el FIREFOX introduïr el cacert.pem --> Importar en el navegador i probara https://cryptosec.net
+
+    - LINUX: systemd-resolve --flush-cache --> Neteja la cahcé DNS
+
+    - Windows: ipconfig /flushdns
+
+
+COMANDES PER VERIFICAR:
+
+    - systemd-resolved --status --> Verificar DNS Actual
+
+    - nmap -sP 10.200.243.0/24 --> Escaneig de la Xarxa
+
+    - resolvectl query cryptosec.net --> Resol cryptosec.net
+
+    - host cryptosec.net --> Resol cryptosec.net
+
+    - dig cryptosec.net +dnssec +multiline --> Resol cryptosec.net segur DNSSEC.
+
