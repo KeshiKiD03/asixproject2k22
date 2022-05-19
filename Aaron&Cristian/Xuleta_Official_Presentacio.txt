@@ -89,19 +89,16 @@
 
             - accés a http://www.cryptosec.net i https://www.cryptosec.net 
 
-5. Tipos de ataques
+5. Tipos de ataques de NOSOTROS
 
-    - ARP Spoof
+    - BRUTE FORCE CRACK PASSWORD  (Cristian)
 
-    - Dns spoofing
+    - ARP Poisoning / Spoof - MITM (Cristian)
 
-    - MITM
+    - Dns Poisoning / Spoof - MITM
 
-    - Dns cache Poison
+    - DNS SNIFFER - MITM
 
-    - Crack Password (Brute Force)
-
-    - Otro ataque 
 
 7. Objetivos Proyecto CryptoSEC
 

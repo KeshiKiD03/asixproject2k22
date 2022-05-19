@@ -26,8 +26,10 @@ Portàtil d'en Keshi:
 
         - Traceroute
 
-Portàtil d'en Cristian:
+Portàtil o PC d'en Cristian:
 
+    - KALI bueno
+    
     - Ub 20.04 SOA "SOACryptosec": BRIDGE (DHCP enp0s3) - 10.200.243.164/24
 
         - APACHE2: Pàg www.cryptosec.net o 10.200.243.164/cryptosec/index.html
@@ -89,6 +91,10 @@ X11 FORWARDING (Permetre Obrir Apps mode Gràfic):
 5. Verificar conectivitat desde l'ordinador del PROFE i veure que es pot obrir OK.
 
 SOA
+
+0. INSTALAR EL TEAM VIEWER.
+
+0.1 CONECTAR EL TEAM VIEWER.
 
 1. Verificació de les IPS i conectivitat amb Internet.
 
@@ -250,11 +256,35 @@ PROCEDIMENT:
 
 6. Abrir el BETTERCAP i veure la xarxa de la classe i les victimes.
 
-DEMO PASSWORD CRACK
 
-7. Seleccionar el servidor de CryptoSEC Forward (Router) i crackejar la contraseña d'accés SSH i clients. Brute Force
 
-DEMO ARP - DNS - CACHE DEMO
+
+# 1er DEMO PASSWORD CRACK - BRUTE FORCE ATTACK
+
+1. Explicar durante la DEMO una mini historia que el Hacker ha conseguido conseguir /etc/shadow y /etc/passwd de FORWARD y va a entrar por SSH.
+
+2. Con esos ficheros usa un diccionario de ejemplo "rocky_you.txt" y conseguirá descifrar el contenido de ambas fusionandola y usando un programa llamado John.
+
+3. Con el diccionario comparará el HASH de cada palabra con el contenido del resumen del JOHN y por OUTPUT podremos ver en texto plano el resultado.
+
+4. Seleccionar el servidor de CryptoSEC Forward (Router) i crackejar la contraseña d'accés SSH i clients. Brute Force
+
+
+# 2do DEMO ARP SPOOF / POISONING - MITM ATTACK
+
+1. Explicar un poco que es y como funciona el ARP.
+
+2. ARP traduce una IP a una MAC. Nos permite obtener DHCP y conectarnos con otros dispositivos en la red.
+
+3. Si un equipo quiere conectarse a otro y solo sabe la IP, hace un ARP Request, mira en su tabla ARP Cache Table y si no lo tiene pregunta en el ROUTER.
+
+4. El router hace un broadcast a todos los dispositivos en la red y contestará el DESTINO y le responderá.
+
+5. El ARP Posioning es el envenenamiento de la tabla ARP Cache de uno o más dispositivos. Inyectando falsos registros de MAC (Suplantadas) por el ATACANTE.
+
+6. Explicar ARP Poisoning.
+
+# 3ero DEMO ARP - DNS - CACHE DEMO
 
 8. Desde el Kali fer l'atac de ARP SPOOF (Ettercap) i suplantar alguna pàgina de prova (DNS Cache Poison)
 . I enviar-ho a la VÍCTIMA1 (FORWARDER .168) i el SOA (.164).
@@ -262,14 +292,17 @@ DEMO ARP - DNS - CACHE DEMO
 9. Quan s'activa el ARP Spoof, l'usuari fa PING surt la IP del KALI (Man In The Middle), és a dir.
 Que el packet passa per el Kali abans d'anar a SOA o a on vulgui a l'exterior.
 
-DEMO ATAQUE SSLSTRIP
 
-10
+# 4t0 DEMO SNIFF - MITM BETTERCAP
+
+# 5TO DEMO ATAQUE SSLSTRIP
+
+ENSEÑAR DNSSEC
+
+ENSEÑAR WAZUH
 
 DEMO ATAQUE X
 
 DEMO RECUPERACIÓ DAVANT ATACS
-
-DEMO X
 
 DEMO COM PREVENIR ATACS

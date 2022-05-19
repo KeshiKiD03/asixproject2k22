@@ -7,9 +7,11 @@
 
 # __Ciberseguretat__: "_Careful where you step_"
 
-<div style="align: center; width: 50%">
-    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
-</div>
+
+
+
+![](https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t)
+
 
 <br>
 <br>
@@ -48,20 +50,17 @@ Tindrà un __servidor secundari forwarder__ anomenat com a hostname __"ForwardCr
 Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcionament, com __detecció d'intrusions (Wazuh)__ o algunes de __prevenció d'atacs__, tot explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__.
 
 <br>
-<center>
-<div style="align: center; width: 100%">
-    <img src="./Photos/EsquemaFinal_Non-1.png" />
-</div>
-</center>
+
+![](./Photos/EsquemaFinal_Non-1.png)
+
 <br>
 
 Durant aquest projecte, ens trobarem diferents _reptes_ tant en l'àmbit _tècnic_ com en l'àmbit _sistemàtic_. Haurem de ser capaços de resoldre aquests reptes amb l'ajuda bé de diferents companys de classe, o de la informació investigada per Internet.
 
 En la recerca d'informació de tota la documentació, independentment de les seves funcionalitats, les bateries de proves, el control de versions fins a arribar a l'últim "_stage_" del projecte. Es farà un seguiment de tot el que es fa, es farà i el que s'està fent en hores de projecte.
 
-<div style="align: center; width: 50%">
-    <img src="https://www.infinitiaresearch.com/wp-content/uploads/2021/09/design-research.png" />
-</div>
+![](https://www.infinitiaresearch.com/wp-content/uploads/2021/09/design-research.png)
+
 
 <br>
 <br>
@@ -127,11 +126,9 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
     + S'han de reparar i restaurar els equips i les parts de la xarxa que van resultar afectats.
 
 <br>
-<center>
-<div style="align: center; width: 50%">
-    <img src="https://directortic.es/wp-content/uploads/2020/04/desaf%C3%ADos-de-ciberseguridad.jpg" />
-</div>
-</center>
+
+![](https://directortic.es/wp-content/uploads/2020/04/desaf%C3%ADos-de-ciberseguridad.jpg)
+
 <br>
 
 
@@ -145,11 +142,9 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
 Hem decidit utilitzar __VirtualBox__ per al _deployment_ d'aquest projecte simplement amb la facilitat d'utilització, la compatibilitat tant de __Linux__, __Windows__ o __MAC__ i la versatilitat alhora de clonar, encendre, interactuar amb la virtualització de les màquines virtuals. 
 
 <br>
-<center>
-<div style="align: center; width: 50%">
-    <img src="./Photos/VirtualBox.PNG" />
-</div>
-</center>
+
+![]()./Photos/VirtualBox.PNG)
+
 <br>
 
 A més de que tenim un control avançat alhora de _"toquetejar"_ l'emulador de VirtualBox tant a nivell de __hardware__ com a nivell de __software__.
@@ -163,11 +158,8 @@ Tots els clients de la xarxa de __"cryptosec"__ han de passar per el router per 
 El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràcies a DHCP i donarà els nameservers adequats a les seves xarxes internes per a que puguin navegar a Internet. També s'hi farà NAT a l'exterior on hi navegaràn _enmascarats_.
 
 <br>
-<center>
-<div style="align: center; width: 50%">
-    <img src="./Photos/EsquemaFinal_Kali-1.PNG" />
-</div>
-</center>
+
+![](./Photos/EsquemaFinal_Non-1.png)
 <br>
 
 ## __Ciberseguretat: CryptoSEC__
@@ -188,26 +180,35 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 
 + L'atacant farà els atacs des d'un Kali Linux.
 
-<div style="align: center">
-    <img src="https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png" />
-</div>
+![](https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png)
 
 
 # __Els objectius dels serveis de CryptoSEC__
 
+## __DHCP__
 
++ S'hi brindarà una configuració automàtica al seus clients de la xarxa interna __CryptoSEC.net__
+
+## __Iptables__
+
++ Els usuaris podràn fer NAT a l'exterior, enmascarats.
 
 ## __Wazuh (Host Intrusion Detect)__
 
-+ Detectar i monitoritzar la infraestructura, les amenaçes i l'intent d'intrusió. 
++ __Detectar__ i __monitoritzar__ la infraestructura, les amenaçes i l'intent d'intrusió. 
 
 + També detectarà anomalies del sistema o aplicacions mal configurades o accions d'usuari no autoritzats.
+ 
 
-### __OpenSSL__
+## __OpenSSL__
 
 + Asseguració de la connexió mitjançant la __criptografía__. Utilitzant TLS com a protocol de _transport_ i _SSL_.
 
-### __DNS + DNSSEC (Asymmetric Cryptography)__
++ Ens servirà per un certificat a la nostra zona "cryptosec.net", on hi tindrem un Apache2.
+
++ Amb el parell de claus privades - publiques, la nostra conexió estarà xifrada. Ja que Apache2 utilitzarà la _keys_ i el _cert_ de __CryptoSEC__, aquest certificat ha sigut firmat per __Veritat Absoluta__.
+
+## __DNS + DNSSEC (Asymmetric Cryptography)__
 
 + Implementació de BIND9.
 
@@ -228,50 +229,145 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 + TSIG per a una comunicació segura amb BIND.
 
 
-### __Let's Encrypt ACME - Certbot HTTPS__
-
-https://letsencrypt.org/es/how-it-works/
-https://datatracker.ietf.org/doc/html/rfc2986
-https://computingforgeeks.com/easiest-way-install-letsencrypt-linux/
-
-
-https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04-es
-
-https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04-es
-https://geekflare.com/es/apache-with-lets-encrypt-cert/
-
-¡UNDER CONSTRUCTION!
-
-### __Encrypted File Systems__
-
-¡UNDER CONSTRUCTION!
-
 ### __Vulnerabilitats__
 
 Alguns exemples de:
 
-+ DDOS
+_Les que veurem:_
+
++ __Brute Force - Password Cracker__: 
+
++ __MITM - ARP Cache Poisoning / Spoofing__: Injecta registres o enverina a la taula ARP dels dispositius implicats i fa una redirecció a l'atacant, suplantant la MAC dels dispositius implicats.
+
++ __MITM - DNS Cache Poisoning / Spoofing + Phishing__: Injecta registres o enverina el registre DNS d'un servidor DNS o varis implicats. L'atacant fa una redirecció a la víctima a una web falsa, suplanta un registre DNS fent-lo creure que està anant al lloc adequat.
+
++ __DDOS - Death Ping / Flooder__
+
++ __SSL STRIP__
+
++ __MITM - SNIFFER__: Permet veure l'activitat de la victima. Com veure a quines pàgines està entrant.
+
+_Altres:_
 
 + Keylogger
 
-+ Rootkit
-
-+ Man in the Middle
++ Rootkits
 
 + Rogue Access Points
 
 + Phishing
 
-+ Address Spoofing
-
 + Metaexploits
 
 ... entre altres
 
+## __COM PROTEGIR-SE?__
+
++ __VPN__:
+
++ __IPSEC__:
+
++ __HTTPS__:
+
++ __ENCRYPTED FILES (CCRYPT)__: https://esgeeks.com/ccrypt-cifrar-y-descifrar-archivos-linux/ 
+
+....
 
 
 # Bibliografia
 
+### CIBERSECURITY
+
 - https://www.lpi.org/our-certifications/exam-303-objectives 
+- https://nordvpn.com/es/blog/protocolo-ipsec/ - IPSEC
 - https://www.auditool.org/blog/auditoria-de-ti/8200-5-aspectos-de-ciberseguridad-que-todo-auditor-debe-conocer-para-evaluar-y-recomendar 
 - https://www.rosario3.com/ecos365/noticias/Cuales-son-los-aspectos-clave-en-ciberseguridad-20190722-0011.html 
+
+### BETTERCAP
+
+- https://www.bettercap.org/installation/ - BETTERCAP
+- https://www.youtube.com/watch?v=7Bvdprvzvko - BETTERCAP
+- https://www.youtube.com/watch?v=AoUB2MAnMJA - BETTERCAP
+- https://hackpuntes.com/obtener-credenciales-https-con-bettercap-y-sslstrip/ - BETTERCAP SSLSTRIP
+- https://jaymonsecurity.com/mitm-credenciales-sslstrip-mitmf-delorean/ - BETTERCAP SSLSTRIP
+
+
+### WAZUH
+
+- https://documentation.wazuh.com/current/user-manual/overview.html - WAZUH
+
+### SSLSTRIP
+
+- https://www.youtube.com/watch?v=F5m9cXVJZ18 - SSLSTRIP
+- https://www.youtube.com/watch?v=jFWd_nN0DXU - BREAK HTTPS USING KALI
+- https://www.youtube.com/watch?v=OtO92bL6pYE&list=LL&index=4 - SSLSTRIP ON KALI LINUX
+
+### ETTERCAP
+
+- https://programmerclick.com/article/2815493326/ - ETTERCAP 
+- https://esgeeks.com/tutorial-ettercap-ejemplos/ - ETTERCAP EXEMPLES
+- https://esgeeks.com/tutorial-ettercap-ejemplos/ - ETTERCAP EXEMPLES
+
+
+### ARP CACHE POISONING / ARP SPOOF
+
+- https://www.redeszone.net/tutoriales/seguridad/que-es-ataque-arp-poisoning/ - ARP POISONING
+- https://es.acervolima.com/ataque-mitm-man-in-the-middle-usando-arp-poisoning/ - ARP POISONING 
+
+
+
+
+### DNS CACHE POISONING / DNS SPOOF
+
+- https://www.varonis.com/blog/dns-cache-poisoning - DNSSPOOF
+- https://programmerclick.com/article/2815493326/ - DNSSPOOF
+- https://www.boomernix.com/2018/03/realizando-un-dns-spoofing.html - DNSSPOOF
+- https://www.keyfactor.com/blog/what-is-dns-poisoning-and-dns-spoofing/ - DNSSPOOFING
+- https://www.varonis.com/blog/dns-cache-poisoning - CACHE POISON
+- https://www.cloudflare.com/learning/dns/dns-cache-poisoning/ - DNSSPOOF
+- https://www.okta.com/identity-101/dns-poisoning/ - DNSCACHE POISON
+- https://www.youtube.com/watch?v=uQrmKhW35mQ&t=765s - DNSSPOOFING ETTERCAP BACKBOX
+- https://www.varonis.com/blog/dns-cache-poisoning - SPOOF DNS CACHE POISONING
+- https://www.keyfactor.com/blog/what-is-dns-poisoning-and-dns-spoofing/#:~:text=DNS%20poisoning%2C%20also%20known%20as,web%20servers%20and%20phishing%20websites.https://www.varonis.com/blog/dns-cache-poisoning - CACHE POISONING
+- https://www.imperva.com/learn/application-security/dns-spoofing/ - DNSSPOOFING
+- https://www.amirootyet.com/post/how-to-spoof-dns-in-kali-linux/ - DNSSPOOFING
+- https://www.keyfactor.com/blog/what-is-dns-poisoning-and-dns-spoofing/#:~:text=DNS%20poisoning%2C%20also%20known%20as,web%20servers%20and%20phishing%20websites. - DNSSPOOFING
+
+
+### SOCIAL ENGINEERING TOOL
+
+- https://www.youtube.com/watch?v=Jjulz-xHwEo&t=2s - SITE CLONER
+- https://www.youtube.com/watch?v=GC4wtfMr3t8 - SITE CLONER
+- https://www.youtube.com/watch?v=sP_PDnXTX7A&t=9s - SET TOOLKIT
+- https://www.youtube.com/watch?v=1TsCybFNrM0&t=315s - SITE CLONER
+- https://www.youtube.com/watch?v=jXy9ewmDVBE - SITE CLONER
+- https://www.youtube.com/watch?v=u9dBGWVwMMA - PHISHING ATTACKS SCARY
+
+
+### MITM
+
+- https://www.youtube.com/watch?v=LEPEk5pFffw - MITM ETTERCAP
+- https://www.youtube.com/watch?v=bEMwES6TQUw - MITM SSLSTRIP
+- https://www.youtube.com/watch?v=GkexkyUbUd4 - MITM
+- https://www.youtube.com/watch?v=-AMd5mxgpX8&t=443s - INTERCEPT SSL TRAFFIC USING MTM SSL STRIP
+- https://www.youtube.com/watch?v=-rSqbgI7oZM - SNIFF NETWORK TRAFFIC MITM ATTACK
+- https://es.acervolima.com/ataque-mitm-man-in-the-middle-usando-arp-poisoning/ - MITM
+
+
+### OTHER
+
+- https://www.youtube.com/watch?v=sqaie9YNtpQ - PHISHING
+- https://www.youtube.com/watch?v=rhd-bqE91bY - DRIFTNET
+- https://www.youtube.com/watch?v=rhd-bqE91bY - DRIFTNET
+- https://www.youtube.com/watch?v=Jitm4DtT2_8&t=670s - PHISHING
+- https://www.youtube.com/watch?v=wsXMicWMlQI - PHISHING
+- https://www.youtube.com/watch?v=MkEet3Akvyo -- SET CURS OFENSIU
+- https://www.youtube.com/watch?v=gKykLr59LW8 - BASIC ATTACK WITH METASPLOIT
+- https://www.youtube.com/watch?v=MkEet3Akvyo - SET BASIC HACKING
+
+
+
+
+
+
+

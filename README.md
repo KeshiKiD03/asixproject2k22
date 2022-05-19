@@ -68,9 +68,8 @@ En la societat d'avui en dia, l'ús de les tecnologies de la informació, ens fa
 
 <br>
 
-<div style="align: center; width: 100%">
-    <img src="https://gdempresa.gesdocument.com/sites/default/files/styles/large/public/2021-12/internet-de-las-cosas.jpg?itok=hJpvD2zV" />
-</div>
+![](https://www.infodefensa.com/images/showid2/5311974?w=900&mh=700)
+
 
 Millons de dades, viatgen per la "_xarxa_" anomenada "_Internet_", que bàsicament son un conjunt de dispositius interconnectats entre sí.
 
@@ -79,9 +78,8 @@ Internet, abarca una rutina cotidiana d’ús de _xarxes socials_, _entretenimen
 
 Tota aquesta informació viatja en un xarxa on hi hà “__de tot__”.
 
-<div style="align: center; width: 100%">
-    <img src="https://elordenmundial.com/wp-content/uploads/2019/03/800px-Deepweb_graphical_representation.svg.png" />
-</div>
+![](https://elordenmundial.com/wp-content/uploads/2019/03/800px-Deepweb_graphical_representation.svg.png)
+
 
 Molta de la informació que viatja per Internet, pot ser que sigui confidencial i delicada, n’hi hà que viatja _segur_ i d’altre _insegur_, si viatja insegur… és un problema __greu…__.
 
@@ -90,9 +88,9 @@ Un dels principals problemes de l’ús de les tecnologies de la informació, es
 Com ja diu el refrà: “__Millor prevenir que lamentar__”, la solució davant d’aquests problemes a usuaris inexperts, és la `ciberseguretat`. 
 
 <br>
-<div style="align: center; width: 100%">
-    <img src="https://www.lasrozas.es/sites/default/files/inline-images/Ciber.jpg" />
-</div>
+
+![](https://www.lasrozas.es/sites/default/files/inline-images/Ciber.jpg)
+
 
 <br>
 <br>
@@ -110,9 +108,8 @@ El seu funcionament es basa en implantar tècniques i eines de __maquinari__ / _
 
 Un ciberatac no nomes consisteix en la **pèrdua i destruccio de dades** confidencials, si no que tambe **afecta** el nivell de **productivitat i rentabilitat**, portant com a conseqüencia la perdua del capital, de la confiança per part dels clients y de la competivitat davant del mercat legal.
 
-<div style="align: center; width: 100%">
-    <img src="https://static.vecteezy.com/system/resources/previews/001/406/100/non_2x/types-of-cyber-security-to-keep-in-mind-free-vector.jpg" />
-</div>
+![](https://static.vecteezy.com/system/resources/previews/001/406/100/non_2x/types-of-cyber-security-to-keep-in-mind-free-vector.jpg)
+
 
 
 
@@ -146,9 +143,9 @@ Ensenyar-los als usuaris a eliminar els __fitxers adjunts__ de correus __electr�
 
 ## __Tipus d'amenaçes davant la "Ciberseguretat"__
 
-<div style="align: center; width: 100%">
-    <img src="https://pbs.twimg.com/media/E3nXigSXwAANyGi.jpg:large" />
-</div>
+
+![](https://pbs.twimg.com/media/E3nXigSXwAANyGi.jpg:large)
+
 
 
 # Bibliografia
