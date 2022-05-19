@@ -219,6 +219,8 @@ version: 7.10.0
 - https://es.wikipedia.org/wiki/Wazuh
 
 **Practica:**
+- https://documentation.wazuh.com/current/installation-guide/wazuh-server/step-by-step.html
+
 - https://www.csirt.gob.cl/media/2021/10/2SCSFP-SIEM-HE.pdf
 - https://bobcares.com/blog/install-wazuh-server-on-ubuntu/
 - https://www.youtube.com/watch?v=VLgmbv8a5O8
