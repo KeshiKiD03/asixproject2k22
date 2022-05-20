@@ -41,15 +41,27 @@ Dins del panl de monitoritzacio del OpenVAS podem veure les xarxes, hosts o un g
 
 1. Actulitzar el sistema (pot trigar una estona!).
 
+``sudo apt update -y && sudo apt -disupgrade -y``
+
 2. Aque ja si, instal·lar el paquet OpenVAS.
+
+``sudo apt install openvas -y``
 
 3. Ara passem a lo mes aburrit, esperar. Instal·lem l'aplicacio, per aixo necessitar descarregar totes les firmes per poder detectar vulnerabilitats que qualsevol sistema per exemple apache2, windows, ... En resum que trigarar un mun de hores. En el nostre cas va tarda 1 hora i mig . En un altre exemple va trigar 3 hores.
 
+``sudo gmv setup``
+
 4. Un cop acabat l'instal·lacio ens donara un nom d'usuari i un password per poder entrar al panel del OpenVAS. Es important guardar-ho en un lloc segur.
 
-5. Primer inicem el server i ens donara un error. Aixo es resol amb un ``restart`` o en aquest cas es un ``stop`` i un ``star`` de nou.
+````
 
-6. Quant el servidor s'engega, ja ens obre un navegador. Nomes queda aceptar el certificats i iniciar sessio al OpenVAS. I ja podem 
+````
+
+5. Primer inicem el openvas. En cas de que surti ``Failed`` el podem resoldre amb un ``restart`` o en aquest cas es un ``stop`` i un ``star`` de nou.
+
+``sudo gmv star``
+
+6. Quant el servidor s'engega, ja ens obre un navegador. Nomes queda aceptar el certificats i iniciar sessio al OpenVAS. Ja podem observer i escanejar els dispositus/hosts/IPs de la nostra xarxa i d'altres xarxes.
 
 ## __Bibliografia__
 - https://www.youtube.com/watch?v=Sf9LKyCpgPc
