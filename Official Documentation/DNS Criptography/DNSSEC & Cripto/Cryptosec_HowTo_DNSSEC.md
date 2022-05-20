@@ -7,9 +7,7 @@
 
 # __Ciberseguretat__: "_Careful where you step_"
 
-<div style="align: center; width: 50%">
-    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
-</div>
+![](https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t)
 
 <br>
 <br>
@@ -35,7 +33,8 @@ Unes de les tante defenses d'Internet es el __sistema de noms de domini__, o bé
 
 Els DNS treballen amb bases de dades en els que s'__emmagatzema els registres__ amb l'informació dels __dominis__ i les seves __IP__. La seva seguretat el fa capaz quan intenten falsificar els registres, pero encara es vulnerable als __redireccionament__ a __lloc maliciosos__ i __suplantació__, o també l'__intercepció de trafic__.
 
-<img src="Photos/dnssec_atac01.jpg" style="width: 45%"> <img src="Photos/dnssec_atac02.jpg" style="width: 45%"><br><br>
+![](./Photos/dnssec_atac01.jpg) ![](./Photos/dnssec_atac02.jpg)
+<br><br>
 
 Per donar sol·lució aquells problemes es va dissenyar lo que es coneixe com __extension de seguretat pel sistema de noms de domini__, o bé DNSSEC.
 
@@ -53,9 +52,8 @@ Si al comprovar aquestes __firmes no coinceixen les uns amb les altres__, la con
 ## Practica
 Obrim la nostra maquina Ubuntu Server per posar a prova el ``DNSSEC``. L'engeguem, després de fer un __snapshot__ per seguretat.
 
-<center>
-    <img src="Photos/dnssec01.png"\>
-</center><br>
+![](./Photos/dnssec01.png)
+<br>
 
 La nostra maquina tindra dues interficies: un en al bridge y l'altre a una xarxa interna.
 
@@ -73,9 +71,7 @@ sudo ip address add 192.167.3.1/24 dev enp0s8
 ip a show enp0s8
 ```
 
-<center>
-    <img src="Photos/dnssec02.png"\>
-</center>
+![](./Photos/dnssec02.png)
 
 ---
 
@@ -95,9 +91,8 @@ network:
         search: [cryptosec.net]
 ```
 
-<center>
-    <img src="Photos/dnssec03.png"\>
-</center><br>
+![](./Photos/dnssec03.png)
+<br>
 
 Sortim del fitxer i salvem la configuracio amb el comand ``netplan``:
 ```
@@ -108,10 +103,7 @@ Podem comprobar el cambi d'IP amb:
 ```
 ip a show enp0s8
 ```
-
-<center>
-    <img src="Photos/dnssec04.png"\>
-</center>
+![](./Photos/dnssec04.png)
 
 ---
 ---
@@ -132,19 +124,13 @@ dnssec-enable yes;
 dnssec-validation yes;
 dnssec-lookaside auto;
 ```
-
-<center>
-    <img src="Photos/dnssec05.png"\>
-</center>
+![](./Photos/dnssec05.png)
 
 Comprovar si el servidor esta validan amb les ordres ``dig``:
 ```
 dig @localhost www.apnic.net
 ```
-
-<center>
-    <img src="Photos/dnssec06.png"\>
-</center>
+![](./Photos/dnssec06.png)
 
 Tinguem en compte que cada resposta te una signatura corresponent (__registre RRSIG__).
 
@@ -161,10 +147,7 @@ zone "cryptosec.net"{
     file "/etc/bind/db.cryptosec.net";
 }
 ```
-
-<center>
-    <img src="Photos/dnssec07.png"\>
-</center>
+![](./Photos/dnssec07.png)
 
 Despres creem y editem el fitxer de configuració de la zona que hem indicat abans: ``db.cryptosec.net``.
 ```sh
@@ -180,10 +163,7 @@ $TTL    604800
 @       IN      NS      cryptosec.net.
 www     IN      CNAME   cryptosec.net.
 ```
-
-<center>
-    <img src="Photos/dnssec08.png"\>
-</center>
+![](./Photos/dnssec08.png)
 
 Anem a ``/etc/resolv.conf`` i comprovem que servidor resolv pregunti al dns de l'escola EDT i que busqui la zona ``cryptosec.net``.
 ```
@@ -191,10 +171,7 @@ nameserver 127.0.0.53
 options edns0 trust-ad
 search cryptosec.net
 ```
-
-<center>
-    <img src="Photos/dnssec09.png"\>
-</center>
+![](./Photos/dnssec09.png)
 
 Comprovem que el servidor DNS resolv la nostra zona de domini amb ``host`` i ``rndc``.
 ```
@@ -205,10 +182,7 @@ systemctl status bind9
 ```
 
 > **Nota**: *si volem podem veure els errors amb ``journalctl -u named -f &`` i reiniciar el DNS amb ``systemctl restart``.*
-
-<center>
-    <img src="Photos/dnssec10.png"\>
-</center>
+![](./Photos/dnssec10.png)
 
 ---
 ---
@@ -240,9 +214,7 @@ dnssec-keygen -K /etc/bind/keys/zsk/ -a NSEC3RSASHA1 -b 2048 -n ZONE cryptosec.n
 ```
 - -K: *directori on s'han d'escriure els fitxers de claus*
 
-<center>
-    <img src="Photos/dnssec11.png"\>
-</center>
+![](./Photos/dnssec11.png)
 
 A continuació, generem la __clau de signatura de claus__ (KSK). L'ordre és molt semblant, amb un parell d'ajustaments.
 ```
@@ -251,9 +223,7 @@ dnssec-keygen -f KSK -K /etc/bind/keys/ksk/ -a NSEC3RSASHA1 -b 4096 -n ZONE cryp
 - -b: __canvia la mida de la clau__
 - -f: *especifica el tipus que es*, o t'ho possar un ZKS.
 
-<center>
-    <img src="Photos/dnssec11.png"\>
-</center>
+![](./Photos/dnssec11.png)
 
 Obtindrem 4 claus en total: parells privats/públics de ZSK i KSK.
 
@@ -278,9 +248,7 @@ $INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key"
 > done
 > ```
 
-<center>
-    <img src="Photos/dnssec13.png"\>
-</center>
+![](./Photos/dnssec13.png)
 
 Ara ja podem signar la zona amb les claus secretes. Aqui esta la sintaxi:
 
@@ -295,9 +263,7 @@ Per el nostre exemple, l'ordre hauria de ser:
 dnssec-signzone -o cryptosec.net -N INCREMENT -t -k keys/ksk/Kcryptosec.net.+007+07353.key db.cryptosec.net keys/zsk/Kcryptosec.net.+007+53495.key
 ```
 
-<center>
-    <img src="Photos/dnssec14.png"\>
-</center>
+![](./Photos/dnssec14.png)
 
 Això crea un fitxer nou anomenat ``db.cryptosec.net.signed`` que conté registres RRSIG per a cada registre DNS.
 
@@ -309,9 +275,7 @@ zone "cryptosec.net." IN {
 };
 ```
 
-<center>
-    <img src="Photos/dnssec15.png"\>
-</center>
+![](./Photos/dnssec15.png)
 
 I reinciem el bind9.
 ```
@@ -319,17 +283,9 @@ systemctl restart bind9
 journalctl -e
 ```
 
-<center>
-    <img src="Photos/dnssec16.png"\>
-</center>
-
-<center>
-    <img src="Photos/dnssec17.png"\>
-</center>
-
-<center>
-    <img src="Photos/dnssec18.png"\>
-</center>
+![](./Photos/dnssec16.png)
+![](./Photos/dnssec17.png)
+![](./Photos/dnssec18.png)
 
 **2. Signatura automàtica**
 
