@@ -35,19 +35,19 @@ La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar 
 
 __CryptoSEC.NET__ és una xarxa interna local en algun lloc remot del planeta on hi treballen els millors tècnics en __ciberseguretat__, però hi hà un __"intrús"__ que tindrà un _host maliciós_ que intentarà fer la vida impossible als altres clients.
 
-Aquest host maliciós serà un __Kali Linux__ on hi dispondrà d'eines de seguretat, de _"hackeig"_ o _"crackeig"_, de _pentesting_, _accés a la xarxa_... entre altres. Aquest host maliciós farà atacs com el _"DNS Caché Poisoning - DNS Spoofing"_, juntament amb l'"_ARP Spoofing_" (enverinament de la caché dels servidors de _DNS SOA_ i _DNS Forwarder_ de CryptoSEC, amb posteriori suplantació i redirecció a una pàgina web _"fake"_ que serà reenviada com a resposta a la petició dels clients) 
+Aquest host maliciós serà un __Kali Linux__ on hi dispondrà d'eines de seguretat, de _"hackeig"_ o _"crackeig"_, de _pentesting_, _accés a la xarxa_... entre altres. Aquest host maliciós farà atacs com el _"DNS Caché Poisoning - DNS Spoofing"_, juntament amb l'"_ARP Cache Poisoning - Spoofing _" (enverinament de la caché dels servidors de _DNS SOA_ i _DNS Forwarder_ de CryptoSEC, amb posteriori suplantació i redirecció a una pàgina web _"fake"_ que serà reenviada com a resposta a la petició dels clients). També farà un atac de __Brute Force__ on _crackejarà_ contrasenyes amb encriptació SHA512 (UNIX) per poder entrar al servidor _router_: __ForwardSEC__.
 
-Aquest host maliciós interferirà en la connexió entra el DNS autoritari SOA i el DNS Recursor que es qui farà de _resolver/forwarder_ dels __clients DNS__ que hi pertenèixen a la xarxa interna __"CryptoSEC"__. Serà un __DNS Forwarder__ més.
+Aquest host maliciós interferirà en la connexió entra el DNS autoritari SOA i el DNS Recursor que es qui farà de _resolver/forwarder_ dels __clients DNS__ que hi pertenèixen a la xarxa interna __"CryptoSEC"__. Serà un __DNS Forwarder (ForwardSEC)__ més.
 
 A __CryptoSEC__ implementarà, serveis com un DNS autoritari amb una zona anomenada __"cryptosec.net"__ que tindrà DNSSEC per assegurar les consultes DNS que hi facin els clients de la seva _"zona"_ o _"domini"_.
 
-Al __DNS Forwarder__ tindrà serveis com __DHCP__ que brindarà una configuració automàtica de IPs i DNS als seus clients. Serà com un __router__. Tindrà politiques per defecte ACCEPT, i també permetrà que els seus clients tinguin NAT a l'exterior, és a dir, que puguin navegar per Internet. Tot amb __iptables__.
+Al __DNS Forwarder (ForwardSEC)__ tindrà serveis com __DHCP__ que brindarà una configuració automàtica de IPs i DNS als seus clients. Serà com un __router__. Tindrà politiques per defecte ACCEPT, i també permetrà que els seus clients tinguin NAT a l'exterior, és a dir, que puguin navegar per Internet. Tot amb __iptables__.
 
 El __servidor principal autoritari__ anomenat com a hostname __"SOACryptosec"__ que serà un __Ubuntu Server 20.04__, tindrà només el _BIND9_ amb la zona __"cryptosec.NET"__, estarà ubicada en la xarxa de la classe _10.200.243.164/24_.
 
-Tindrà un __servidor secundari forwarder__ anomenat com a hostname __"ForwardCryptosec"__ que serà també un __Ubuntu Server 20.04__ que tindrà el paper fonamental de fer de _resolver_ als clients DNS ja que ell mateix serà un forwarder i reenviarà les peticions de DNS a __"SOACryptosec"__ per a que resolgui peticions de DNS tant de __"cryptosec.net"__ com d'Internet, si no el sap el preguntarà als __ROOT SERVERS__, _a.k.a._ __Internet__. També tindrà aplicacions per monitoritzar la xarxa i detectar intrusos que intentin sacsejar la nostra xarxa __"cryptosec.net"__.
+Tindrà un __servidor secundari forwarder__ anomenat com a hostname __"ForwardSEC"__ que serà també un __Ubuntu Server 20.04__ que tindrà el paper fonamental de fer de _resolver_ als clients DNS ja que ell mateix serà un forwarder i reenviarà les peticions de DNS a __"SOACryptosec"__ per a que resolgui peticions de DNS tant de __"cryptosec.net"__ com d'Internet, si no el sap el preguntarà als __ROOT SERVERS__, _a.k.a._ __Internet__. També tindrà aplicacions per monitoritzar la xarxa i detectar intrusos que intentin sacsejar la nostra xarxa __"cryptosec.net"__.
 
-Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcionament, com __detecció d'intrusions (Wazuh)__ o algunes de __prevenció d'atacs__, tot explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__.
+Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcionament, com __detecció d'intrusions (OpenVAS)__ o algunes de __prevenció d'atacs__, tot explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__.
 
 <br>
 
@@ -137,23 +137,25 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
 <br>
 <br>
 
-## __Deployment__
+# __La proposta final__
+
+## __El deployment__
 
 Hem decidit utilitzar __VirtualBox__ per al _deployment_ d'aquest projecte simplement amb la facilitat d'utilització, la compatibilitat tant de __Linux__, __Windows__ o __MAC__ i la versatilitat alhora de clonar, encendre, interactuar amb la virtualització de les màquines virtuals. 
 
 <br>
 
-![]()./Photos/VirtualBox.PNG)
+![](./Photos/VirtualBox.PNG)
 
 <br>
 
 A més de que tenim un control avançat alhora de _"toquetejar"_ l'emulador de VirtualBox tant a nivell de __hardware__ com a nivell de __software__.
 
-El servidor __"ForwardCryptosec"__ farà de router on hi tindrà 2 interfícies (__enp0s3__) i (__enp0s8__), la primera serà un __"bridge"__ i en la segona serà una __xarxa interna__ anomenada __"cryptosec"__ on hi tindràn la IP 192.168.3.0/24.
+El servidor __"ForwardSEC"__ farà de router on hi tindrà 2 interfícies (__enp0s3__) i (__enp0s8__), la primera serà un __"bridge"__ amb configuració _netplan_ estàtica __10.200.243.168/24__ i en la segona serà una __xarxa interna__ que tindrà la ip __192.168.3.1/24__. Aquesta tindrà la xarxa interna __"cryptosec.net"__ _192.168.3.0/24_.
 
-El servidor __"SOACryptosec"__ serà un servidor autoritari on hi tindrà la zona __"cryptosec.net"__ hi tindrà 2 interfícies (__enp0s3__) i (__enp0s8__), la primera serà un __"bridge"__ i en la segona serà una __xarxa interna__ anomenada __"cryptosec"__ on hi tindràn la IP 192.168.3.0/24.
+El servidor __"SOACryptosec"__ serà un servidor autoritari on hi tindrà la zona __"cryptosec.net"__ hi tindrà 1 interfícies (__enp0s3__) i (__enp0s8__), serà un només un __"bridge"__ que tindrà una configuració _netplan_ estàtica __10.200.243.164/24__. 
 
-Tots els clients de la xarxa de __"cryptosec"__ han de passar per el router per poder navegar a l'exterior o fer peticions DNS (En aquest cas han de preguntar al __resolver__ __RecursorCryptosec__).
+Tots els clients de la xarxa de __"cryptosec"__ han de passar per el router per poder navegar a l'exterior o fer peticions _DNS_ (En aquest cas han de preguntar al __resolver__ __ForwardSEC__).
 
 El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràcies a DHCP i donarà els nameservers adequats a les seves xarxes internes per a que puguin navegar a Internet. També s'hi farà NAT a l'exterior on hi navegaràn _enmascarats_.
 
@@ -162,25 +164,22 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 ![](./Photos/EsquemaFinal_Non-1.png)
 <br>
 
-## __Ciberseguretat: CryptoSEC__
+## __Ciberseguretat a CryptoSEC__
 
 + L'__aïllament en la xarxa interna__: Mecanisme de seguretat que permetrà separar els programes en execució, per tal de mitigar errors del sistema o vulnerabilitats de software. Gracies a la nostra xarxa interna __"cryptosec"__.
 
-+ __Xifratge de dades__: Comunicació xifrada en tot moment a CryptoSEC. Els clients podràn fer resolucions al seu _resolver_ de forma segura utilitzant "__criptografía asimétrica__". D'aquesta forma l'atacant hacker no podrà dur a terme el seu atac __man in the middle__ amb __spoofing__.
++ __Xifratge de dades__: Comunicació xifrada en tot moment a CryptoSEC. Els clients podràn fer resolucions al seu _resolver_ de forma segura utilitzant "__criptografía asimétrica__". D'aquesta forma l'atacant hacker no podrà dur a terme el seu atac __man in the middle__ amb __spoofing__. L'accés a la pàgina de __cryptosec.net__ estarà xifrada en tot moment gràcies als certificats generats i signats per __Veritat Absoluta__. Permeten que actui el SSL, així no podràn interceptar-nos.
 
-+ __Protegirse davant la vulnerabilitat__: Davant d'un atac maliciós, d'una denegació de servei DDOS, d'un metaexploit, d'un phishing, d' un spoofing... etc. Hem de saber com actuar davant d'aquests escenaris. Millor prevenir que lamentar-nos! 
++ __Protegirse davant la vulnerabilitat__: Davant d'un atac maliciós, d'una denegació de servei DOS, d'un metaexploit, d'un phishing, d' un spoofing... etc. Hem de saber com actuar davant d'aquests escenaris. Millor prevenir que lamentar-nos! 
 
-<br>
-
-# La proposta final
-
-+ Un deployment a VirtualBox de dos servidors Ubuntu Server 20.04, un en bridge i xarxa interna _"cryptosec"_ i l'altre servidor i els clients estaràn en la xarxa interna _"cryptosec"_ on hi faràn NAT a l'exterior mitjançant IPTABLES per poguer navegar a Internet. Hi hauràn 2 clients també en diferents xarxes simulant connectar-se per VPN (WireGuard).
++ __Detecció i actuació davant el desastre__: Verificació amb eines com __Nmap__, __Arp__, __Wireshark__... 
 
 + Durant l'assemblatge final, es faràn diversos atacs a l'empresa __CryptoSEC__, i l'empresa es protegirà davant d'aquestes amenaçes on es posaràn en perill la integritat de l'empresa.
 
 + L'atacant farà els atacs des d'un Kali Linux.
 
-![](https://serversideup.net/wp-content/uploads/2020/05/Wireguard-Ubuntu20.04-ServerConfiguration-1024x911.png)
+> Exemple d'atac Credential Harvester
+![](./Photos/arps3.PNG)
 
 
 # __Els objectius dels serveis de CryptoSEC__
@@ -193,12 +192,11 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 
 + Els usuaris podràn fer NAT a l'exterior, enmascarats.
 
-## __Wazuh (Host Intrusion Detect)__
+## __OpenVAS (Host Intrusion Detect)__
 
 + __Detectar__ i __monitoritzar__ la infraestructura, les amenaçes i l'intent d'intrusió. 
 
 + També detectarà anomalies del sistema o aplicacions mal configurades o accions d'usuari no autoritzats.
- 
 
 ## __OpenSSL__
 
@@ -235,17 +233,15 @@ Alguns exemples de:
 
 _Les que veurem:_
 
-+ __Brute Force - Password Cracker__: 
++ __Brute Force - Password Cracker__: Els atacs de força bruta desxifren dades en provar totes les combinacions possibles, com quan un lladre intenta obrir una caixa forta en intentar tots els números al pany.
 
 + __MITM - ARP Cache Poisoning / Spoofing__: Injecta registres o enverina a la taula ARP dels dispositius implicats i fa una redirecció a l'atacant, suplantant la MAC dels dispositius implicats.
 
 + __MITM - DNS Cache Poisoning / Spoofing + Phishing__: Injecta registres o enverina el registre DNS d'un servidor DNS o varis implicats. L'atacant fa una redirecció a la víctima a una web falsa, suplanta un registre DNS fent-lo creure que està anant al lloc adequat.
 
-+ __DDOS - Death Ping / Flooder__
-
-+ __SSL STRIP__
-
 + __MITM - SNIFFER__: Permet veure l'activitat de la victima. Com veure a quines pàgines està entrant.
+
++ __MAIL PHISHING__: Enviament de correu amb una suplantació de DNS, aquest correu s'enviarà desde una eina de Kali a una víctima perque accedeixi al enllaç.
 
 _Altres:_
 
@@ -263,16 +259,11 @@ _Altres:_
 
 ## __COM PROTEGIR-SE?__
 
-+ __VPN__:
++ __VPN__
 
-+ __IPSEC__:
++ __IPSEC__
 
-+ __HTTPS__:
-
-+ __ENCRYPTED FILES (CCRYPT)__: https://esgeeks.com/ccrypt-cifrar-y-descifrar-archivos-linux/ 
-
-....
-
++ __HTTPS__
 
 # Bibliografia
 

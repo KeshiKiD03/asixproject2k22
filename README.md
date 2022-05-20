@@ -3,6 +3,26 @@
 ### __2HISX 2021-2022__
 ### __Aaron Andal & Cristian Condolo__
 
+<p align="left">
+<a href="#"><img title="Made in CAT" src="./Photos/logo.png"></a>
+</p>
+<p align="center">
+<a href="#"><img title="blackeye-im" src="https://i.imgur.com/5N5Kdjw.png"></a>
+</p>
+<p align="center">
+<a href="https://github.com/KeshiKiD03/asixproject2k22"><img title="Author" src="https://img.shields.io/badge/AUTHOR-AARON%20%26%20CRISTIAN-orange"></a>
+<a href="#"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-green?style=for-the-badge"></a>
+<a href="#"><img title="License" src="https://img.shields.io/github/license/KeshiKiD03/asixproject2k22"></a>
+</p>
+<p align="center">
+<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-2.5-green.svg?style=flat-square"></a>
+<a href="https://github.com/KeshiKiD03/asixproject2k22/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/KeshiKiD03/asixproject2k22"></a>
+<a href="https://github.com/KeshiKiD03/asixproject2k22/network/members"><img title="Forks" src="https://img.shields.io/github/forks/KeshiKiD03/asixproject2k22"></a>
+<a href="https://github.com/KeshiKiD03/asixproject2k22/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/thewickedkarma/blackeye-im?label=Watchers&color=blue&style=flat-square"></a>
+</p>
+
+
+
 <br>
 
 # __Ciberseguretat__: "_Careful where you step_"
@@ -24,7 +44,7 @@
 
 + **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
 
-+ **Proposta final**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
++ **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
 
 + **DNS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
@@ -34,15 +54,23 @@
 
 + **FIREWALL (IPTABLES)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
-+ **HACKING & DOS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **APACHE2**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
-    + **DNS SPOOF**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **OPENSSL (CA Veritat Absoluta) - (CryptoSEC Cert)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
-    + **ARP SPOOF**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **OPENVAS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
-    + **BRUTE FORCE - PASSWORD CRACKING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **HACKING & PENTESTING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
-    + **SSLSTRIP**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
+    + **MITM - ARP POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
+    + **MITM - DNS POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
+    + **MITM - ARP SPOOFING + SNIFFING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
+    + **EMAIL PHISHING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
 + **KALI LINUX**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
@@ -50,13 +78,11 @@
 
     + **SETOOLKIT**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
-    + **PROVA**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **BETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
-+ **WAZUH**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **WIRESHARK**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
-+ **Let's Encrypt ACME - Certbot HTTPS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
-
-+ **Encrypted File Systems**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **PREVENCIÓ I PROTECCIÓ**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
 <br>
 <br>
@@ -155,3 +181,6 @@ Ensenyar-los als usuaris a eliminar els __fitxers adjunts__ de correus __electr�
 + https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security
 + https://www.santaluciaimpulsa.es/ciberseguridad-en-la-actualidad/ 
 + https://madridpress.com/art/297262/la-ciberseguridad-en-la-actualidad 
++ https://www.cisco.com/c/es_mx/products/security/what-is-cybersecurity.html
++ https://www.infosecuritymexico.com/es/ciberseguridad.html
++ https://www.hiberus.com/crecemos-contigo/que-es-la-ciberseguridad/
