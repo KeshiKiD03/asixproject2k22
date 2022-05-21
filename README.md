@@ -86,6 +86,8 @@
 
 + **PREVENCIÓ I PROTECCIÓ**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
++ **CONCLUSIÓ**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
 <br>
 <br>
 <br>

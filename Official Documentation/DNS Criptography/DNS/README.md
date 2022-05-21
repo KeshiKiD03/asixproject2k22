@@ -50,9 +50,7 @@ Cada dispositiu connectat a Internet té una adreça IP única que altres màqui
 
 Els servidors DNS eliminen la necessitat que els humans memoritzin adreces IP com ara 192.168.1.1 (en IPv4) o adreces IP alfanumèriques més complexes, com ara 2400:cb00:2048:1::c629:d7a2 (en IPv6). 
 
-<div style="align: center; width: 100%">
-    <img src="https://www.cloudflare.com/img/learning/dns/what-is-dns/theinternet-dns.svg" />
-</div>
+![](https://www.cloudflare.com/img/learning/dns/what-is-dns/theinternet-dns.svg)
 
 # Com funciona el DNS
 
@@ -61,8 +59,6 @@ El procés de resolució de DNS implica convertir un nom d'amfitrió (com ara ww
 Quan un usuari vol carregar una pàgina web, s'ha de produir una traducció entre el que un usuari escriu al seu navegador web (example.com) i l'adreça adaptada a la màquina necessària per localitzar la pàgina web example.com.
 
 Per entendre el procés darrere de la resolució DNS, és important conèixer els diferents components de maquinari entre els quals ha de passar una consulta DNS. Per al navegador web, la cerca de DNS es produeix "darrere de l'escenari" i no requereix cap interacció de l'ordinador de l'usuari a part de la sol·licitud inicial. 
-
-https://www.cloudflare.com/learning/dns/what-is-dns/
 
 ![](https://d1.awsstatic.com/Route53/how-route-53-routes-traffic.8d313c7da075c3c7303aaef32e89b5d0b7885e7c.png)
 
@@ -700,3 +696,4 @@ Quina adreça IP es resoldrà inversament al nom host.tld? `43.5.202.78`
 - https://www.cloudflare.com/learning/dns/dns-over-tls/
 - https://www.cloudflare.com/es-es/learning/dns/what-is-dns/
 - https://elpuig.xeill.net/Members/vcarceler/c1/didactica/apuntes/ud4/na8
+- https://www.cloudflare.com/learning/dns/what-is-dns/
