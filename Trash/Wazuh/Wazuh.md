@@ -3,21 +3,36 @@
 ### __2HISX 2021-2022__
 ### __Aaron Andal & Cristian Condolo__
 
+
+<br>
+<br>
+<br>
 <br>
 
-# __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
+# __CryptoSEC__: "_Careful where you step in_"
 
-<div style="align: center; width: 100%">
-    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
-</div>
 
-# Index
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
 
-* **Descripció/Biografia**: [README](#descripcióbiografia)
 
-* **Practica**: [README](#practica)
 
-* **Bibliografia**: [README](#bibliografia)
+
+<br>
+<br>
+<br>
+
+
+
+
+# __Index__
+
++ **DNS**: [--> readME <--]()
+
++ **DNSSEC**: [--> readME <--]()
+
++ **DNS**: [--> readME <--]()
+
++ **DNSSEC**: [--> readME <--]()
 
 # Wazuh
 ## Descripció/Biografia
