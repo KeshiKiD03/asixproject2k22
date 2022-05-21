@@ -3,24 +3,6 @@
 ### __2HISX 2021-2022__
 ### __Aaron Andal & Cristian Condolo__
 
-<p align="left">
-<a href="#"><img title="Made in CAT" src="./Photos/logo.png"></a>
-</p>
-<p align="center">
-<a href="#"><img title="blackeye-im" src="https://i.imgur.com/5N5Kdjw.png"></a>
-</p>
-<p align="center">
-<a href="https://github.com/KeshiKiD03/asixproject2k22"><img title="Author" src="https://img.shields.io/badge/AUTHOR-AARON%20%26%20CRISTIAN-orange"></a>
-<a href="#"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-green?style=for-the-badge"></a>
-<a href="#"><img title="License" src="https://img.shields.io/github/license/KeshiKiD03/asixproject2k22"></a>
-</p>
-<p align="center">
-<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-2.5-green.svg?style=flat-square"></a>
-<a href="https://github.com/KeshiKiD03/asixproject2k22/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/KeshiKiD03/asixproject2k22"></a>
-<a href="https://github.com/KeshiKiD03/asixproject2k22/network/members"><img title="Forks" src="https://img.shields.io/github/forks/KeshiKiD03/asixproject2k22"></a>
-<a href="https://github.com/KeshiKiD03/asixproject2k22/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/thewickedkarma/blackeye-im?label=Watchers&color=blue&style=flat-square"></a>
-</p>
-
 
 <br>
 <br>

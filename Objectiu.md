@@ -12,7 +12,7 @@
 # __CryptoSEC__: "_Careful where you step in_"
 
 
-![](./Photos/CryptoSECLogo.png)
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
 
 
 
@@ -26,16 +26,37 @@
 
 # __Index__
 
-+ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
++ **Objectius "Projecte ASIX - Ciberseguretat: _Careful where you step in_**: [--> readME <--](#objectius-"projecte-asix---ciberseguretat-careful-where-you-step-in")
 
-+ **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
++ **Arquitectura CryptoSEC**: [--> readME <--](#arquitectura-cryptosec)
 
-+ **DNS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **Conceptes i aspectes generals _"mindset"_ del projecte**: [--> readME <--](#conceptes-i-aspectes-generals-"mindset"-del-projecte)
 
-    + **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **La proposta final**: [--> readME <--](#la-proposta-final)
+
+    + **El deployment**: [--> readME <--](#el-deployment)
+
++ **Ciberseguretat a CryptoSEC**: [--> readME <--](#ciberseguretat-a-cryptosec)
+
++ **Els objectius dels serveis de CryptoSEC**: [--> readME <--](#els-objectius-dels-serveis-de-cryptosec)
+
+    + **DHCP**: [--> readME <--](#dhcp)
+
+    + **Iptables**: [--> readME <--](#iptables)
+
+    + **OpenVAS (Host Intrusion Detect)**: [--> readME <--](#openvas-host-intrusion-detect)
+
+    + **OpenSSL**: [--> readME <--](#openssl)
+
+    + **DNS + DNSSEC (Asymmetric Cryptography)**: [--> readME <--](#dns--dnssec-asymmetric-cryptography)
+
+    + **Vulnerabilitats**: [--> readME <--](#vulnerabilitats)
+
+    + **COM PROTEGIR-SE?**: [--> readME <--](#com-protegir-se)
+    
 
 
-# __Objectius "Projecte ASIX - Ciberseguretat:__ _Careful where you step_"
+# __Objectius "Projecte ASIX - Ciberseguretat:__ _Careful where you step in_"
 
 L'objectiu principal d'aquest projecte de Ciberseguretat, és la creació d'una empresa de __"Ciberseguretat"__ anomenamada _"CryptoSEC"_. Aquesta empresa implementarà una serie de serveis de __seguretat__ i __prevenció__ davant d'atacs maliciosos que tindràn la finalitat de _comprometre_ la empresa i obtenir informació delicada i confidencial. Aaron i Cristian, son els caps d'aquesta empresa i portaràn a terme aquest magnífic repte de protegir-se davant de _hackers_ com les de la Organització __"Anonymous"__, __" The Shadow Brokers"__, __"Elliott Gunton"__... entre altres.
 
@@ -243,7 +264,7 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 + TSIG per a una comunicació segura amb BIND.
 
 
-### __Vulnerabilitats__
+## __Vulnerabilitats__
 
 Alguns exemples de:
 
@@ -253,9 +274,11 @@ _Les que veurem:_
 
 + __MITM - ARP Cache Poisoning / Spoofing__: Injecta registres o enverina a la taula ARP dels dispositius implicats i fa una redirecció a l'atacant, suplantant la MAC dels dispositius implicats.
 
+![](./Diagrams/DIAGRAM3.PNG)
+
 + __MITM - DNS Cache Poisoning / Spoofing + Phishing__: Injecta registres o enverina el registre DNS d'un servidor DNS o varis implicats. L'atacant fa una redirecció a la víctima a una web falsa, suplanta un registre DNS fent-lo creure que està anant al lloc adequat.
 
-+ __MITM - SNIFFER__: Permet veure l'activitat de la victima. Com veure a quines pàgines està entrant.
++ __MITM - Eavesdropping (SNIFFER)__: Permet veure l'activitat de la victima d'incògnits. Com veure a quines pàgines està entrant. O agafar-li les credencials (HTTP).
 
 + __MAIL PHISHING__: Enviament de correu amb una suplantació de DNS, aquest correu s'enviarà desde una eina de Kali a una víctima perque accedeixi al enllaç.
 
@@ -274,6 +297,8 @@ _Altres:_
 ... entre altres
 
 ## __COM PROTEGIR-SE?__
+
+<UNDER CONSTRUCTION>
 
 + __VPN__
 
