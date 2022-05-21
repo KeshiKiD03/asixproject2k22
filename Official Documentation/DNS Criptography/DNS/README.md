@@ -55,6 +55,9 @@
 + **DNSSEC**: [--> readME <--]()
 
 
+<br>
+<br>
+<br>
 
 # __Que es el DNS?__
 
@@ -82,11 +85,19 @@ Per entendre el procés darrere de la _resolució DNS_, és important conèixer 
 
 ![](https://d1.awsstatic.com/Route53/how-route-53-routes-traffic.8d313c7da075c3c7303aaef32e89b5d0b7885e7c.png)
 
+<br>
+<br>
+<br>
+
 # __Tipus de DNS "4 servidors DNS implicats en la càrrega d'una pàgina web":__
 
 Tots els __servidors DNS__ es divideixen en una d'aquestes quatre categories: __Resolvers recursius__, __Root Servers__ , __Servidor de noms TLD__ i __State Of Authority__. 
 
 En una cerca DNS típica (quan no hi ha __memòria cau__ en joc), aquests quatre servidors DNS treballen junts en harmonia per completar la tasca de lliurar l' adreça IP d'un domini especificat al client (el client sol ser un solucionador de talons, un senzill resolutor integrat en un sistema operatiu).
+
+<br>
+<br>
+<br>
 
 ## __Resolver de DNS Recursiu__
 
@@ -108,7 +119,11 @@ La majoria dels usuaris d'Internet utilitzen un solucionador recursiu proporcion
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/root-nameserver.png)
 
-## Root Servers
+<br>
+<br>
+<br>
+
+## __Root Servers__
 
 * __Root Servers__ : El __servidor arrel__ és el primer pas per traduir (resolució) noms d'amfitrió llegibles per humans a __adreces IP__. Es pot pensar com un __índex__ en una __biblioteca__ que apunta a __diferents bastidors__ de llibres; normalment serveix com a referència a altres ubicacions més específiques.
 
@@ -118,7 +133,11 @@ Un servidor arrel accepta la consulta d'un resolutor recursiu que inclou un nom 
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/root-nameserver.png)
 
-## Servidor DNS - TLD
+<br>
+<br>
+<br>
+
+## __Servidor DNS - TLD__
 
 * __Servidor DNS - TLD__ : El servidor de domini de __primer nivell__ ( TLD = Top Layer Domain ) es pot considerar com un _lloc específic_ de llibres d'una biblioteca. Aquest servidor de noms és el següent pas en la cerca d'una adreça IP específica i allotja l'última part d'un nom d'amfitrió (a example.com, el servidor TLD és "com").
 
@@ -134,6 +153,10 @@ Si un usuari estava cercant __google.com__, després de rebre una resposta d'un 
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/tld-nameserver.png)
 
+<br>
+<br>
+<br>
+
 ## __Servidor DNS Authoritative__
 
 * __Servidor de noms autoritzat (Authoritative DNS Server)__ : Es pot interpretar com un diccionari en una __prestatgeria de llibres__, on es pot consultar la __definició__ d'un __nom específic__. Aquest servidor de noms autoritzat és __l'última parada__ de la consulta del servidor de noms. Si el servidor de noms autoritzat té accés al registre sol·licitat, retornarà l'adreça IP del nom d'amfitrió sol·licitat al recurs DNS __(el bibliotecari)__ que va fer la sol·licitud inicial.
@@ -146,9 +169,17 @@ Pot proporcionar una __solució recursiva__ amb l'adreça IP d'aquest servidor q
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/authoritative-nameserver.png)
 
+<br>
+<br>
+<br>
+
 # __Diferencia entre "Authoritative DNS Server" i "Recursive DNS Resolver"__
 
 Els dos conceptes es refereixen a servidors (O grups de servidors) que estàn _"integrals"_ a la infraestructura DNS, però cadascun realitza un paper diferent. Es troba en diferents ubicacions dins del trajecte d'una consulta de DNS. Una manera d'entendre la diferència és que el _"Recursive Resolver"_ és a l'inici de la consulta DNS i el _"Athoritative Nameserver"_ (servidor de noms autoritatiu) al final. 
+
+<br>
+<br>
+<br>
 
 ## __Recursive DNS Resolver__
 
@@ -164,6 +195,9 @@ L' emmagatzematge en __memòria cau__ és un procés d'agilització de procés e
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-record-request-sequence-1.png)
 
+<br>
+<br>
+<br>
 
 ## __Authoritative DNS Server__
 
@@ -183,6 +217,10 @@ Hi ha una diferencia fundamental entre molts serveis de DNS i el que ofereix Clo
 
 Aquests _"Resolvers"_ permeten consultes rapides i senzilles mitjaçant clusters optimitzats de sistemes informàtics optimitzats per a DNS. Però son bàsicament diferents servidors de noms allotjats en servidors com per exemple Cloudflare.
 
+<br>
+<br>
+<br>
+
 # __Procediment per fer un "lookup" de DNS__
 
 En la majoria de situacions, DNS fa referència a un __nom de domini__ que s'està traduint a l'adreça IP. 
@@ -192,6 +230,10 @@ Sovint, la informació de cerca de DNS s'emmagatzemarà a la memòria __cau loca
 Generalment, hi ha 8 passos en una cerca DNS. 
 
 Quan la informació de DNS s'emmagatzema en memòria cau, s'ometen els passos del procés de cerca DNS, cosa que ho fa més ràpid. L'exemple descriu els 8 passos necessaris quan no s'ha emmagatzemat res a la memòria cau. 
+
+<br>
+<br>
+<br>
 
 ## __Els 8 passos d'un "lookup" de DNS__
 
@@ -219,7 +261,11 @@ Un cop els 8 passos de la cerca del DNS han tornat l'adreça IP per exemple.com,
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-lookup-diagram.png)
 
-# Què és un _"resolver"_ de DNS
+<br>
+<br>
+<br>
+
+# __Què és un _"resolver"_ de DNS__
 
 El __resolver de DNS__ és la __primera parada__ de la recerca de DNS i s'encarrega de tractar amb el __client__ que va fer la __sol·licitud inicial__.
 
@@ -235,11 +281,19 @@ Un __resolver__ de DNS recursiu és el servidor que accepta una __solució recur
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-recursive-query.png)
 
+<br>
+<br>
+<br>
+
 # __Tipus de consultes DNS__
 
 En una busca DNS habitual es produeixen 3 tipus de consultes.
 
 En utilitzar una combinació d'aquestes consultes, un procés optimitzat per la resolució de DNS es pot comportar una reducció de "salts". En una situació ideal, les dades de registra emmagatzemades a la memòria CAU estaran disponibles, la qual cosa permetrà que un servidor de noms DNS torni a una consulta no _recursiva_.
+
+<br>
+<br>
+<br>
 
 ## __3 tipus de consultes DNS:__ 
 
@@ -249,6 +303,10 @@ En utilitzar una combinació d'aquestes consultes, un procés optimitzat per la 
 
 3. __Consulta no recursiva__: Generalment es produeix quan un __client solucionador de DNS__ consulta un __servidor DNS__ per un registre al qual té __accés__ perquè o bé __és autoritatiu__ per al __registre__ o el registre __existeix__ dins de la seva memòria cau. Generalment, el servidor DNS emmagatzemarà a la memòria cau registres DNS per prevenir el consum d'amplada de banda addicional i la càrrega als servidors que precedeixen a la cadena.
 
+<br>
+<br>
+<br>
+
 # __Que es el emmagatzematge en caché de DNS?__
 
 L'objectiu de l'emmagatzematge a la memòria cau és guardar dades en una ubicació temporalment per aconseguir millores en el rendiment i fiabilitat en les sol·licituds de dades.
@@ -257,7 +315,9 @@ L'emmagatzematge en memòria cau de DNS guarda dades més a prop del client sol�
 
 Les dades de DNS es poden emmagatzemar en memòria cau en diverses ubicacions. Cadascuna guardarà els registres DNS durant una quantitat de temps establerta, determinada pel temps de vida (TTL) .
 
-
+<br>
+<br>
+<br>
 
 # __Que es un registre DNS?__
 
@@ -268,6 +328,10 @@ Aquests registres consisteixen en una sèrie de fitxers de text escrits en el qu
 Exemple: __db.cryptosec.net__ que es troba a __/etc/bind/__
 
 Tots els registres DNS tenen també un " TTL ", que vol dir "time-to-live" i indica amb quina freqüència el servidor DNS actualitzarà aquest registre.
+
+<br>
+<br>
+<br>
 
 # __Tipus de registres DNS__
 
@@ -314,10 +378,17 @@ __DNSSEC__
 
 + RRSIG : el "registre de recursos de signatura" emmagatzema signatures digitals utilitzades per autenticar registres de conformitat amb el DNSSEC.
 
+<br>
+<br>
+<br>
 
 # __Que es un DNS recursiu?__
 
 Una cerca de DNS recursiu és quan un servidor DNS es comunica amb altres servidors DNS per "trobar" una direcció IP i retornarla al client. Això es diferencia d'una consulta de DNS iterativa, en la que el client es comunica directament amb cada servidor DNS implicat en la cerca.
+
+<br>
+<br>
+<br> 
 
 # __Exemple resumit de DNS__
 
@@ -355,6 +426,10 @@ En un servidor DNS que faci la __recursió__ segurià consultant a altres servid
 
 En un servidor DNS que faci una consulta __iterativa__, cada consulta DNS respon __directament al client__ amb una direcció per a que un altre servidor DNS pregunti, i el client __seguirà preguntant__ a altres servidors DNS fins que algú d'ells responda amb la IP i el domini correcte.
 
+<br>
+<br>
+<br>
+
 ### __Iteració - Recursió / Resum:__
 
 El client delega una consulta a un DNS recursiu:
@@ -365,15 +440,28 @@ El client li diu al solucionador o _"resolver"_ de DNS:
 
 __Iterativa__: "Necessito la direcció IP d'aquest domini. Per favor, dona'm la direcció següent del servidor DNS en el procés de la recerca per a que jo mateix la pugui trobar".
 
+<br>
+<br>
+<br>
+
 ## __Advantatges del DNS recursiu__
 
 Les consultes DNS recursives solen resoldre's més ràpid que les consultes iteratives. Això es degut al emmagatzematge __cache__. Un servidor DNs recursiu almacena en __caché__ la resposta a cada consulta que realitza i guarda aquesta resposta final durant un temps determinar (TTL = Time to Live).
 
 Quan un solucionador o _resolver_ recursiu rep una consulta per a una adreça IP que tingui al seu caché, pot proporcionar ràpidament la resposta al caché al client sense comunicar-se amb cap altre servidor DNS. Servir ràpidament respostes des del caché és molt probable si a) el servidor DNS serveix a molts clients ob) el lloc web sol·licitat és molt popular.
 
+<br>
+<br>
+<br>
+
 ## __Desaventatges del DNS recursiu__
 
 Desafortunadament, permetrà consultes de DNS recursives en servidors DNS oberts creant una vulnerabilitat de seguretat, ja que aquesta configuració pot permetre que els atacants portin a terme atacs d'amplificació de DNS i d'envergament de caché de DNS .
+
+<br>
+<br>
+<br>
+
 
 ## __Servidors DNS recursius i atacs d'amplificació de DNS__
 
@@ -399,20 +487,47 @@ En una consulta de DNS iterativa, el client pide directament la resposta a cada 
 
 Inclós si un atacant és capaç d'enviar una resposta falsificada a la consulta, només afectarà a un únic client, el que no mereixi el temps de l'atacant.
 
-# __Altres conceptes de DNS__
+<br>
+<br>
+<br>
+<br>
 
-## __El servidor DNS Autoritatiu__
+# __Configuració DNS CryptoSEC__
+<br>
+<br>
 
-### __Instal·lació__
+
+<br>
+
+## __Instal·lació__
 
 S'instal·la amb la comanda `apt-get install bind9`, el fitxer de configuració es troba a `/etc/bind`.
 
-### __Configuració de CryptoSEC__
+
+## __El servidor DNS Autoritatiu__
+
+Tindrà els registres de la zona __"cryptosec.net"__. És un servidor autoritari que rebrà les peticions DNS d'un forwarder.
+
+### __Arxiu de d'opcions de les zones__
 
 El fitxer `/etc/bind/named.conf.options`.
 
 ```
+        // forwarders {
+        //      0.0.0.0;
+        // };
 
+        //========================================================================
+        // If BIND logs error messages about the root key being expired,
+        // you will need to update your keys.  See https://www.isc.org/bind-keys
+        //========================================================================
+
+        dnssec-enable yes;
+        dnssec-validation yes;
+        dnssec-lookaside auto;
+
+        listen-on-v6 { any; };
+};
 ```
 
 Conté:
@@ -423,10 +538,17 @@ Conté:
 
 Si no s'utilitzen forwarders, el servidor DNS anirà als servidors arrel per iniciar les resolucions de les consultes que no estiguin en memòria cau ni a cap de les seves zones. Quan s'utilitzen servidors de reenviament es consultarà aquests servidors. 
 
-El fitxer `/etc/bind/named.conf.local`.
+### __Arxiu de dades per especificar la zona__
+
+__És un servidor SOA, State of Authority__
+
+El fitxer `/etc/bind/named.conf.default-zones`:
 
 ```
-
+zone "cryptosec.net" {
+        type master;
+        file "/etc/bind/db.cryptosec.net";
+};
 ```
 
 Cada zona (directa o inversa) tindrà:
@@ -437,23 +559,29 @@ Cada zona (directa o inversa) tindrà:
 
 3. Una directiva fileindicant el fitxer de respatller (que es trobarà a /var/cache/bind)
 
-#### __Arxiu de dades per a una zona directa__
+### __Arxiu de dades per a una zona directa "_cryptosec.net_"__
 
 Cada zona necessita un fitxer de dades on desar els registres de la zona. Per a una zona directa com `cryptosec.net` el fitxer de zona pot ser `/etc/bind/db.cryptosec.net`  i contenir: 
 
 ```
-$ttl 38400
- @ PROXY IN SOA mail.cryptosec.net.  (
-                         1;  Serial
-                         10800;  Actualització
-                         3600;  Torna-ho a provar
-                         604800;  Caduca
-                         38400;  TTL mínim 
-)
+$TTL    604800
+@       IN      SOA     cryptosec.net. mail.cryptosec.net. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
 
- @ Proxy IN NS
- delegació EN A 192.168.10.10 
+@       IN      NS      cryptosec.net.
+@       IN      A       192.168.0.164
+www     IN      CNAME   cryptosec.net.
+;@      IN      A       10.200.243.164
+;@      IN      A       192.168.31.164
+$INCLUDE "/etc/bind/keys/zsk/Kcryptosec.net.+007+53495.key"
+$INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key"
 ```
+
+> NOTE: $INCLUDE "/etc/bind/keys/zsk/Kcryptosec.net.+007+53495.key" / $INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key" son lés claus de __DNSSEC__. Vegeu la documentació de __DNSSEC__.
 
 En aquest arxiu de zona cal notar:
 
@@ -463,10 +591,109 @@ En aquest arxiu de zona cal notar:
     
 * És important incrementar el valor Serial cada cop que es fa una modificació.
 
+## __El servidor DNS Forwarder__
+
+És un servidor DNS que s'encarregarà d'encaminar les peticions DNS dels seus clients al SOA.
+
+
+### __Arxiu de d'opcions de les zones__
+
+El fitxer `/etc/bind/named.conf.options`.
 
 ```
+        // forwarders {
+        //      0.0.0.0;
+        // };
+
+        //========================================================================
+        // If BIND logs error messages about the root key being expired,
+        // you will need to update your keys.  See https://www.isc.org/bind-keys
+        //========================================================================
+
+        dnssec-enable yes;
+        dnssec-validation yes;
+        dnssec-lookaside auto;
+
+        listen-on-v6 { any; };
+};
+```
+
+Conté:
+
+1. La declaració del directori on es guardaran els arxius de zona: __/etc/bind__
+
+2. La declaració, per defecte desactivada, dels servidors de reenviament: secció forwarders {...}
+
+Si no s'utilitzen forwarders, el servidor DNS anirà als servidors arrel per iniciar les resolucions de les consultes que no estiguin en memòria cau ni a cap de les seves zones. Quan s'utilitzen servidors de reenviament es consultarà aquests servidors. 
+
+### __Arxiu de dades per especificar la zona__
+
+__És un servidor SOA, State of Authority__
+
+El fitxer `/etc/bind/named.conf.default-zones`:
 
 ```
+zone "cryptosec.net" {
+        type master;
+        file "/etc/bind/db.cryptosec.net";
+};
+```
+
+Cada zona (directa o inversa) tindrà:
+
+1. La declaració amb la directiva zoneon s'indica el domini o l'adreça de xarxa a les zones inverses.
+
+2. Una directiva typeindicant si és una zona mestra (escrita per l'administrador) o esclava (descarregada automàticament d'un servidor mestre).
+
+3. Una directiva fileindicant el fitxer de respatller (que es trobarà a /var/cache/bind)
+
+### __Arxiu de dades per a una zona directa "_cryptosec.net_"__
+
+Cada zona necessita un fitxer de dades on desar els registres de la zona. Per a una zona directa com `cryptosec.net` el fitxer de zona pot ser `/etc/bind/db.cryptosec.net`  i contenir: 
+
+```
+$TTL    604800
+@       IN      SOA     cryptosec.net. mail.cryptosec.net. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+
+@       IN      NS      cryptosec.net.
+@       IN      A       192.168.0.164
+www     IN      CNAME   cryptosec.net.
+;@      IN      A       10.200.243.164
+;@      IN      A       192.168.31.164
+$INCLUDE "/etc/bind/keys/zsk/Kcryptosec.net.+007+53495.key"
+$INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key"
+```
+
+> NOTE: $INCLUDE "/etc/bind/keys/zsk/Kcryptosec.net.+007+53495.key" / $INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key" son lés claus de __DNSSEC__. Vegeu la documentació de __DNSSEC__.
+
+En aquest arxiu de zona cal notar:
+
+* El caràcter @equival al domini que estigui definint acabat en punt. Aquí `cryptosec.net.`
+    
+* El camp `mail.cryptosec.net.` correspon al correu de contacte per indicar errors a la zona i s'interpreta com `cryptosec.net.`
+    
+* És important incrementar el valor Serial cada cop que es fa una modificació.
+
+## __Comandes de verificació__
+
++ ``journalctl -u named -f &``: Mostra els logs del servei Bind9 en temps real
+
++ ``systemctl restart bind9``: Reinicia el Bind9.
+
++ ``host cryptosec.net``: Petició per resoldre la zona, __cryptosec.net__, obtindrem la IP.
+
++ ``nslookup cryptosec.net``: Petició per resoldre la zona, __cryptosec.net__, obtindrem la IP
+
++ ``dig cryptosec.net``: Petició per resoldre la zona, __cryptosec.net__, obtindrem la IP
+
++ ``systemd-resolve --status``: Verificació del status actual del DNS.
+
++ ``resolvectl query cryptosec.net``: Petició per resoldre la zona, __cryptosec.net__, obtindrem la IP
 
 ## __El client DNS__
 
@@ -504,13 +731,13 @@ Quan s'utilitza el client DNS per obtenir l'adreça IP d'un nom de domini, cal e
 ```
 # Recerca de cryptosec.net 
 nameserver 192.168.3.1
-nameserver 8.8.8.8
+nameserver 10.200.244.10
 search cryptosec.net
 ```
 
 # __El servei systemd-resolved i la comanda resolvectl__
 
-La majoria de les distribucions actuals de GNU/Linux utilitzen systemdaixí que solen executar el servei systemd-resolvedcom a stub DNS local de la màquina. L'avantatge dutilitzar systemd-resolvedés que les aplicacions trobaran un millor rendiment gràcies a la seva memòria cau. 
+La majoria de les distribucions actuals de GNU/Linux utilitzen systemdaixí que solen executar el servei systemd-resolvedcom a stub DNS local de la màquina. L'avantatge dutilitzar __systemd-resolved__ és que les aplicacions trobaran un millor rendiment gràcies a la seva memòria cau. 
 
 El fitxer __/etc/resolv.conf__ pot ser:
 
