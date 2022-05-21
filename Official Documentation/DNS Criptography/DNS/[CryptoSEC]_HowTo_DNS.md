@@ -142,7 +142,7 @@ Cada dispositiu connectat a __Internet__ té una __adreça IP única__ que altre
 
 Els servidors DNS eliminen la necessitat que els h__umans memoritzin__ adreces IP com ara __192.168.1.1__ (en IPv4) o adreces IP alfanumèriques més complexes, com ara 2400:cb00:2048:1::c629:d7a2 (en IPv6). 
 
-![](https://www.cloudflare.com/img/learning/dns/what-is-dns/theinternet-dns.svg)
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/theinternet-dns.png?raw=true)
 
 # __Com funciona el DNS__
 
