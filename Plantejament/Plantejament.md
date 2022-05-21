@@ -342,14 +342,18 @@ X11 FORWARDING (Permetre Obrir Apps mode Gràfic):
 
 # __Atacs del hacker__
 
-+ __Brute Force Attack - Cracking Password with John__: El hacker ha aconseguit una copia dels fitxers /etc/passwd i /etc/shadow i les ha anomenat mini-passwd.txt i mini-shadow.txt. John és un __tool__ de Kali que permetrà desxifrar els _hashes_ de les contrasenyes. Quant més difícil més temps trigarà. Posarem contrasenyes sencilletes. Podrem veure com les desxifra. Utilitzarà. 
++ __Brute Force Attack - Cracking Password with John__: El hacker ha aconseguit una copia dels fitxers /etc/passwd i /etc/shadow i les ha anomenat mini-passwd.txt i mini-shadow.txt. John és un __tool__ de Kali que permetrà desxifrar els _hashes_ de les contrasenyes. Quant més difícil més temps trigarà. Posarem contrasenyes sencilletes. Podrem veure com les desxifra. Utilitzarà un diccionari __rockyou.txt__. Aprofitant també que l'usuari ha  
 
 + __ARP Poisoning / Spoofing (2 parts) (BETTERCAP)__: Envenenament de les taules ARP de les víctimes implicades i reenviament de paquets al hacker. Amb el Wireshark - ARP - Nmap, veurem com fa el duplicat de MAC.
 
     * __MITM - Eavesdropping (Sniffing) (BETTERCAP)__: Amb l'ARP Spoof d'abans activarem un _sniffer_ i estarem escoltant la màquina afectada i veient les pàgines on visita. Podem captar credencials de pàgines HTTP.
     
-    * __DNS Poisoning / Spoofing) (BETTERCAP)__: Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS fals on ens redirigirà a la nostra màquina on hi tindrem una _fake page_ (__Moodle EDT__) i l'enviarem per correu
+    * __DNS Poisoning / Spoofing) (BETTERCAP)__: Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS fals on ens redirigirà a la nostra màquina on hi tindrem una _fake page: m0odle.escoladeltreball.org_ (__Moodle EDT__) i l'enviarem per correu utilitzant __SET__ dient que "_URGENT! L'Eduard ha posat les notes de M06, entra urgentment i mira la nota que tens!!!_" llavors l'usuari entrarà i no se n'adonarà i li robarem les credencials mostrades al __SET__.
 
-+ __Spoofing CryptoSEC.NET (BETTERCAP)__: 
++ __Spoofing CryptoSEC.NET (BETTERCAP)__: Ídem que l'anterior però els targets son el __SOA__ i el __Forwarding__, els clients interns de CryptoSEC quan hagin d'anar a la pàgina web __cryptosec.net__, entraràn a __cryptos3c.net__ ja que el hacker ha avisat que hi hà una urgència a la pàgina principal i 
 
 + __ZPHISHING: Phishing with a real "fake" HTTPS website__: Exemple real de __Phishing__ automatitzat i desplegat a __Cloudflare__ per un programa anomenat __Zphishing__. Genera servidor temporal a Internet amb una plantilla a escollir de l'usuari. Enmascarar el enllaç amb un _url shortner_ i enviar-ho a alguna víctima mitjançant __SET__ que enviarà el correu automàticament amb un compte de __Gmail__. L'usuari entrarà però no veurà l'enllaç perquè és una emergència i posarà les seves credencials. D'aquesta manera recollirem l'usuari i la contrasenya de l'usuari (_Credential Harvester_).
+
+# __Credentials__
+
+aaroncryptosec@gmail.com:acryptosec22

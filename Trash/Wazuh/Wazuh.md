@@ -26,16 +26,18 @@
 
 # __Index__
 
++ **DNS**: [--> readME <--](#waz)
+
+   + **DNSSEC**: [--> readME <--]()
+
 + **DNS**: [--> readME <--]()
 
 + **DNSSEC**: [--> readME <--]()
 
-+ **DNS**: [--> readME <--]()
 
-+ **DNSSEC**: [--> readME <--]()
+# __Wazuh__
 
-# Wazuh
-## Descripció/Biografia
+## __Descripció/Biografia__
 
 **Que es?**
 - Wazuh és un sistema de detecció d'intrusos en host de codi obert i lliure (HIDS).
