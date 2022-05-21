@@ -12,7 +12,7 @@
 # __CryptoSEC__: "_Careful where you step in_"
 
 
-![](./Photos/CryptoSECLogo.png)
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
 
 
 
@@ -26,53 +26,73 @@
 
 # __Index__
 
-+ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
++ **DNS**: [--> readME <--]()
 
-+ **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
++ **DNSSEC**: [--> readME <--]()
 
-+ **DNS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **DNS**: [--> readME <--]()
 
-    + **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **DNSSEC**: [--> readME <--]()
+
++ **DNS**: [--> readME <--]()
+
++ **DNSSEC**: [--> readME <--]()
+
++ **DNS**: [--> readME <--]()
+
++ **DNSSEC**: [--> readME <--]()
+
++ **DNS**: [--> readME <--]()
+
++ **DNSSEC**: [--> readME <--]()
+
++ **DNS**: [--> readME <--]()
+
++ **DNSSEC**: [--> readME <--]()
+
++ **DNS**: [--> readME <--]()
+
++ **DNSSEC**: [--> readME <--]()
 
 
 
-# Que es el DNS?
+# __Que es el DNS?__
 
-El sistema de noms de domini (DNS) és l'agenda telefònica d'Internet. Permet associar noms de domini amb direccions IP per facilitar en gran mesura l'accés als hosts de la xarxa.
+El sistema de noms de __domini (DNS)__ és l'agenda telefònica d'Internet. Permet associar noms de domini amb direccions IP per facilitar en gran mesura l'accés als hosts de la xarxa.
 
-Els humans accedeixen a la informació en línia mitjançant noms de domini , com ara nytimes.com o espn.com. 
+Els humans accedeixen a la informació en línia mitjançant __noms de domini__, com ara __nytimes.com__ o __espn.com__. 
 
-Els navegadors web interactuen mitjançant adreces de protocol d'Internet (IP). 
+Els navegadors web interactuen mitjançant adreces de __Protocol d'Internet (IP)__. 
 
-DNS tradueix els noms de domini a adreces IP perquè els navegadors puguin carregar recursos d'Internet. 
+DNS _tradueix_ els __noms de domini__ a __adreces IP__ perquè els navegadors puguin _carregar recursos d'Internet_. 
 
-Cada dispositiu connectat a Internet té una adreça IP única que altres màquines utilitzen per trobar el dispositiu. 
+Cada dispositiu connectat a __Internet__ té una __adreça IP única__ que altres màquines utilitzen per trobar el dispositiu. 
 
-Els servidors DNS eliminen la necessitat que els humans memoritzin adreces IP com ara 192.168.1.1 (en IPv4) o adreces IP alfanumèriques més complexes, com ara 2400:cb00:2048:1::c629:d7a2 (en IPv6). 
+Els servidors DNS eliminen la necessitat que els h__umans memoritzin__ adreces IP com ara __192.168.1.1__ (en IPv4) o adreces IP alfanumèriques més complexes, com ara 2400:cb00:2048:1::c629:d7a2 (en IPv6). 
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/theinternet-dns.svg)
 
-# Com funciona el DNS
+# __Com funciona el DNS__
 
-El procés de resolució de DNS implica convertir un nom d'amfitrió (com ara www.example.com) en una adreça IP compatible amb l'ordinador (com ara 192.168.1.1). Es dóna una adreça IP a cada dispositiu a Internet, i aquesta adreça és necessària per trobar el dispositiu d'Internet adequat, com si s'utilitza una adreça de carrer per trobar una casa determinada. 
+El procés de resolució de DNS implica convertir un nom d'__amfitrió__ (com ara www.example.com) en una adreça IP compatible amb l'ordinador (com ara 192.168.1.1). Es dóna una adreça IP a cada dispositiu a __Internet__, i aquesta adreça és necessària per trobar el dispositiu d'Internet adequat, com si s'utilitza una __adreça__ de carrer per trobar una casa determinada. 
 
-Quan un usuari vol carregar una pàgina web, s'ha de produir una traducció entre el que un usuari escriu al seu navegador web (example.com) i l'adreça adaptada a la màquina necessària per localitzar la pàgina web example.com.
+Quan un usuari vol __carregar__ una __pàgina web__, s'ha de produir una traducció entre el que un usuari escriu al seu navegador web (__example.com__) i l'adreça adaptada a la màquina necessària per localitzar la pàgina web __example.com__.
 
-Per entendre el procés darrere de la resolució DNS, és important conèixer els diferents components de maquinari entre els quals ha de passar una consulta DNS. Per al navegador web, la cerca de DNS es produeix "darrere de l'escenari" i no requereix cap interacció de l'ordinador de l'usuari a part de la sol·licitud inicial. 
+Per entendre el procés darrere de la _resolució DNS_, és important conèixer els diferents components de maquinari entre els quals ha de passar una consulta DNS. Per al navegador web, la cerca de DNS es produeix "darrere de l'escenari" i no requereix cap interacció de l'ordinador de l'usuari a part de la sol·licitud inicial. 
 
 ![](https://d1.awsstatic.com/Route53/how-route-53-routes-traffic.8d313c7da075c3c7303aaef32e89b5d0b7885e7c.png)
 
-# Tipus de DNS "4 servidors DNS implicats en la càrrega d'una pàgina web":
+# __Tipus de DNS "4 servidors DNS implicats en la càrrega d'una pàgina web":__
 
-Tots els servidors DNS es divideixen en una d'aquestes quatre categories: solucionadors recursius, servidors de noms arrel , servidors de noms TLD i servidors de noms autoritzats. 
+Tots els __servidors DNS__ es divideixen en una d'aquestes quatre categories: __Resolvers recursius__, __Root Servers__ , __Servidor de noms TLD__ i __State Of Authority__. 
 
 En una cerca DNS típica (quan no hi ha __memòria cau__ en joc), aquests quatre servidors DNS treballen junts en harmonia per completar la tasca de lliurar l' adreça IP d'un domini especificat al client (el client sol ser un solucionador de talons, un senzill resolutor integrat en un sistema operatiu).
 
-## Resolver de DNS Recursiu
+## __Resolver de DNS Recursiu__
 
 1. __DNS Recursor (Servidor DNS Recursiu)__ : És com un __bibliotecari__ a la qual se li demana que busqui un llibre determinar a la biblioteca. El __recurs DNS__ és un __servidor__ dissenyat per rebre consultes de les màquines client mitjançant aplicacions com ara navegadors __web__. Normalment, el recurs és responsable de fer __peticions__ addicionals per satisfer la __consulta DNS del client__.
 
-És la primera parada d'una consulta DNS. 
+És la _primera parada_ d'una __consulta DNS__. 
 
 El _resolver_ recursiu actua com a intermediari entre un client i un servidor de noms DNS. 
 
@@ -80,7 +100,7 @@ Després de rebre una consulta DNS d'un client web, un _resolver_ recursiu respo
 
 Després de rebre una resposta del servidor de noms autoritzat que conté l'adreça IP sol·licitada, el resolutor recursiu envia una resposta al client.
 
-Durant aquest procés, el solucionador recursiu guardarà a la memòria cau la informació rebuda dels servidors de noms autoritzats.
+Durant aquest procés, el solucionador recursiu guardarà a la __memòria cau__ la informació rebuda dels servidors de noms autoritzats.
 
 Quan un client nou sol·liciti l'adreça IP d'un nom de domini que ha estat sol·licitat recentment per un altre client, el _resolver_ pot eludir el procés de comunicació amb els servidors de noms i només lliurar al client el registre sol·licitat de la seva memòria cau.
 
@@ -94,7 +114,7 @@ La majoria dels usuaris d'Internet utilitzen un solucionador recursiu proporcion
 
 Hi han 13 servidors de noms d'arrel DNS, són coneguts per tots els _resolvers recursius_ i són la primera parada en la recera de registres DNS d'un _resolver recursiu_.
 
-Un servidor arrel accepta la consulta d'un resolutor recursiu que inclou un nom de domini, i el servidor de noms arrel respon dirigint el resolutor recursiu a un servidor de noms TLD, en funció de l'extensió d'aquest domini (.com, .net, .org, etc.).
+Un servidor arrel accepta la consulta d'un resolutor recursiu que inclou un nom de domini, i el servidor de noms arrel respon dirigint el resolutor recursiu a un __servidor de noms TLD__, en funció de l'extensió d'aquest domini __(.com, .net, .org, etc.)__.
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/root-nameserver.png)
 
@@ -102,19 +122,19 @@ Un servidor arrel accepta la consulta d'un resolutor recursiu que inclou un nom 
 
 * __Servidor DNS - TLD__ : El servidor de domini de __primer nivell__ ( TLD = Top Layer Domain ) es pot considerar com un _lloc específic_ de llibres d'una biblioteca. Aquest servidor de noms és el següent pas en la cerca d'una adreça IP específica i allotja l'última part d'un nom d'amfitrió (a example.com, el servidor TLD és "com").
 
-Un servidor de noms TLD manté la informació de tots els noms de domini que comparteixen una extensió de domini comuna, com ara .com, .net o qualsevol que vingui després de l'últim punt d'una URL.
+Un __servidor de noms TLD__ manté la informació de tots els noms de domini que comparteixen una extensió de domini comuna, com ara .com, .net o qualsevol que vingui després de l'últim punt d'una URL.
 
-Per exemple, un servidor de noms TLD .com conté informació per a cada lloc web que acabi en ".com".
+Per exemple, un servidor de noms TLD __.com__ conté informació per a cada lloc web que acabi en __".com"__.
 
-Si un usuari estava cercant google.com, després de rebre una resposta d'un servidor de noms arrel, el solucionador recursiu enviaria una consulta a un servidor de noms TLD .com, que respondria apuntant al servidor de noms autoritzat (vegeu més avall) per a aquest domini.
+Si un usuari estava cercant __google.com__, després de rebre una resposta d'un servidor de noms arrel, el solucionador recursiu enviaria una consulta a un servidor de noms TLD .com, que respondria apuntant al servidor de noms autoritzat (vegeu més avall) per a aquest domini.
 
-+ Dominis genèrics de primer nivell: són dominis que no són específics d'un país, alguns dels TLD genèrics més coneguts inclouen .com, .org, .net, .edu i .gov.
++ Dominis genèrics de __primer nivell__: són dominis que no són específics d'un país, alguns dels TLD genèrics més coneguts inclouen __.com, .org, .net, .edu i .gov.__
 
-+ Dominis de nivell superior de codi de país: inclouen tots els dominis específics d'un país o estat. Alguns exemples inclouen .uk, .us, .ru i .jp.
++ Dominis de __nivell superior__ de codi de país: inclouen tots els dominis específics d'un país o estat. Alguns exemples inclouen __.uk, .us, .ru i .jp__.
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/tld-nameserver.png)
 
-## Servidor DNS Authoritative
+## __Servidor DNS Authoritative__
 
 * __Servidor de noms autoritzat (Authoritative DNS Server)__ : Es pot interpretar com un diccionari en una __prestatgeria de llibres__, on es pot consultar la __definició__ d'un __nom específic__. Aquest servidor de noms autoritzat és __l'última parada__ de la consulta del servidor de noms. Si el servidor de noms autoritzat té accés al registre sol·licitat, retornarà l'adreça IP del nom d'amfitrió sol·licitat al recurs DNS __(el bibliotecari)__ que va fer la sol·licitud inicial.
 
@@ -126,11 +146,11 @@ Pot proporcionar una __solució recursiva__ amb l'adreça IP d'aquest servidor q
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/authoritative-nameserver.png)
 
-# Diferencia entre "Authoritative DNS Server" i "Recursive DNS Resolver"
+# __Diferencia entre "Authoritative DNS Server" i "Recursive DNS Resolver"__
 
 Els dos conceptes es refereixen a servidors (O grups de servidors) que estàn _"integrals"_ a la infraestructura DNS, però cadascun realitza un paper diferent. Es troba en diferents ubicacions dins del trajecte d'una consulta de DNS. Una manera d'entendre la diferència és que el _"Recursive Resolver"_ és a l'inici de la consulta DNS i el _"Athoritative Nameserver"_ (servidor de noms autoritatiu) al final. 
 
-## Recursive DNS Resolver
+## __Recursive DNS Resolver__
 
 El _"Recursive DNS Resolver"_ és el servidor que respon a una solicitud recursiva del client i dedica temps a detectar el __registre DNS__.
 
@@ -145,7 +165,7 @@ L' emmagatzematge en __memòria cau__ és un procés d'agilització de procés e
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-record-request-sequence-1.png)
 
 
-## Authoritative DNS Server
+## __Authoritative DNS Server__
 
 Un servidor DNS autoritatiu _(Authoritative DNS Server)_ és un servidor que allotja realment registres de recursos DNS i n'és responsable.
 
@@ -163,7 +183,7 @@ Hi ha una diferencia fundamental entre molts serveis de DNS i el que ofereix Clo
 
 Aquests _"Resolvers"_ permeten consultes rapides i senzilles mitjaçant clusters optimitzats de sistemes informàtics optimitzats per a DNS. Però son bàsicament diferents servidors de noms allotjats en servidors com per exemple Cloudflare.
 
-# Procediment per fer un "lookup" de DNS
+# __Procediment per fer un "lookup" de DNS__
 
 En la majoria de situacions, DNS fa referència a un __nom de domini__ que s'està traduint a l'adreça IP. 
 
@@ -173,7 +193,7 @@ Generalment, hi ha 8 passos en una cerca DNS.
 
 Quan la informació de DNS s'emmagatzema en memòria cau, s'ometen els passos del procés de cerca DNS, cosa que ho fa més ràpid. L'exemple descriu els 8 passos necessaris quan no s'ha emmagatzemat res a la memòria cau. 
 
-## Els 8 passos d'un "lookup" de DNS
+## __Els 8 passos d'un "lookup" de DNS__
 
 1. Un usuari escriu "exemple.com" en un navegador web i la consulta recorre Internet i és rebuda per un _"resolutor recursiu de DNS (Recursive DNS Resolver)"_.
 
@@ -215,13 +235,13 @@ Un __resolver__ de DNS recursiu és el servidor que accepta una __solució recur
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-recursive-query.png)
 
-# Tipus de consultes DNS
+# __Tipus de consultes DNS__
 
 En una busca DNS habitual es produeixen 3 tipus de consultes.
 
 En utilitzar una combinació d'aquestes consultes, un procés optimitzat per la resolució de DNS es pot comportar una reducció de "salts". En una situació ideal, les dades de registra emmagatzemades a la memòria CAU estaran disponibles, la qual cosa permetrà que un servidor de noms DNS torni a una consulta no _recursiva_.
 
-## 3 tipus de consultes DNS: 
+## __3 tipus de consultes DNS:__ 
 
 1. __Consulta recursiva__: En una consulta recursiva, un client DNS requereix que un servidor DNS (generalment un _resolver_ de __DNS recursiu__) respongui al __client__ amb el registre del recurs sol·licitat o un missatge d'error si el solucionador no pot trobar el registre.
 
@@ -229,7 +249,7 @@ En utilitzar una combinació d'aquestes consultes, un procés optimitzat per la 
 
 3. __Consulta no recursiva__: Generalment es produeix quan un __client solucionador de DNS__ consulta un __servidor DNS__ per un registre al qual té __accés__ perquè o bé __és autoritatiu__ per al __registre__ o el registre __existeix__ dins de la seva memòria cau. Generalment, el servidor DNS emmagatzemarà a la memòria cau registres DNS per prevenir el consum d'amplada de banda addicional i la càrrega als servidors que precedeixen a la cadena.
 
-# Que es el emmagatzematge en caché de DNS?
+# __Que es el emmagatzematge en caché de DNS?__
 
 L'objectiu de l'emmagatzematge a la memòria cau és guardar dades en una ubicació temporalment per aconseguir millores en el rendiment i fiabilitat en les sol·licituds de dades.
 
@@ -239,7 +259,7 @@ Les dades de DNS es poden emmagatzemar en memòria cau en diverses ubicacions. C
 
 
 
-# Que es un registre DNS?
+# __Que es un registre DNS?__
 
 Els registres DNS o també conegut con _arxius de zona_ son instruccions radicades en servidors DNS autoritatius que proporcionen informacó sobre un domini, com l'adreça IP associada amb aquest i com gestionar sol·licituds dirigides a aquest domini.
 
@@ -249,7 +269,7 @@ Exemple: __db.cryptosec.net__ que es troba a __/etc/bind/__
 
 Tots els registres DNS tenen també un " TTL ", que vol dir "time-to-live" i indica amb quina freqüència el servidor DNS actualitzarà aquest registre.
 
-# Tipus de registres DNS
+# __Tipus de registres DNS__
 
 _MÉS COMUNS_
 
@@ -280,7 +300,7 @@ _MÉNYS COMUNS_
 + DCHID : el "identificador DHCP" emmagatzema informació per al protocol de configuració dinàmica de host (DHCP), un protocol de xarxa estandarditzat utilitzat a les xarxes IP.
 
 
-DNSSEC
+__DNSSEC__
 
 + CAA: És el registre d'"autorització d'autoritat de certificació"; permet que els propietaris d'un domini especifiquin quines autoritats de certificació poden emetre certificats per a aquest domini. Si no existeix cap registre CAA, aleshores qualsevol podrà emetre un certificat per a aquest domini. Aquests registres també els hereten els subdominis.
 
@@ -295,35 +315,35 @@ DNSSEC
 + RRSIG : el "registre de recursos de signatura" emmagatzema signatures digitals utilitzades per autenticar registres de conformitat amb el DNSSEC.
 
 
-# Que es un DNS recursiu?
+# __Que es un DNS recursiu?__
 
 Una cerca de DNS recursiu és quan un servidor DNS es comunica amb altres servidors DNS per "trobar" una direcció IP i retornarla al client. Això es diferencia d'una consulta de DNS iterativa, en la que el client es comunica directament amb cada servidor DNS implicat en la cerca.
 
-# Exemple resumit de DNS
+# __Exemple resumit de DNS__
 
-1. Un usuari escriu un nom de domini: "cryptosec.net" en el seu navegador, s'activa una cerca de DNS. 
+1. Un usuari escriu un nom de domini: __"cryptosec.net"__ en el seu navegador, s'activa una __cerca de DNS__. 
 
-2. Una serie d'ordinadors en remot coneguts com servidors DNS troben la direcció IP d'aquell domini i la retornen a l'ordinador de l'usuari per a que pugui accedir al lloc web correcte.
+2. Una serie d'ordinadors en __remot coneguts__ com __servidors DNS__ troben la __direcció IP__ d'aquell __domini__ i la retornen a l'ordinador de l'usuari per a que pugui accedir al lloc __web correcte__.
 
-3. Diferents tipus de servidors DNS han de treballar conjuntament per poder completar aquesta cerca de DNS. 
+3. Diferents tipus de __servidors DNS__ han de treballar conjuntament per poder completar aquesta cerca de DNS. 
 
 4. Actuén: 
 
-    * Un solucionador o resolver DNS.
+    * Un solucionador o __resolver DNS__.
 
-    * Un servidor Root Server (1.1.1.1 o 8.8.8.8 per exemple).
+    * Un servidor __Root Server__ (1.1.1.1 o 8.8.8.8 per exemple).
 
-    * Un servidor TLD de DNS (de primer nivell, exemple: .net, .com...). 
+    * Un __servidor TLD__ de DNS (de primer nivell, exemple: .net, .com...). 
 
-    * Un servidor de noms autoritatiu de DNS. Conté el __registre DNS__.
+    * Un servidor de noms __autoritatiu__ de DNS. Conté el __registre DNS__.
 
 5. Pot haber un cas de __"caching"__ que algun d'aquests servidors pot haber emmagatzemat la respostas de la consulta durant una cerca anterior, llavors el client, en lloc de recorrer i esperar molt, tindrà un temps de resposta menor.
 
-## Diferencia entre recursió i iteració
+## __Diferencia entre recursió i iteració__
 
-La recursió i la iteració son termes informàtics que descriuen dos mètodes diferents per resoldre un problema.
+La __recursió__ i la __iteració__ son termes informàtics que descriuen dos mètodes diferents per resoldre un problema.
 
-En la __recursió__, un programa es truca a si mateix fins a que cumpleixi una condició. Mentes que la iteració es repeteix un conjunt d'instruccions fins que es cumpleixi la condició.
+En la __recursió__, un programa es truca a __si mateix__ fins a que __cumpleixi__ una __condició__. Mentes que la iteració es repeteix un conjunt d'instruccions fins que es cumpleixi la condició.
 
 Exemple: Jim ha perdut les seves claus de casa i les està buscant-la d'una forma sistemàtica. 
 
@@ -335,28 +355,27 @@ En un servidor DNS que faci la __recursió__ segurià consultant a altres servid
 
 En un servidor DNS que faci una consulta __iterativa__, cada consulta DNS respon __directament al client__ amb una direcció per a que un altre servidor DNS pregunti, i el client __seguirà preguntant__ a altres servidors DNS fins que algú d'ells responda amb la IP i el domini correcte.
 
-Resum:
+### __Iteració - Recursió / Resum:__
 
 El client delega una consulta a un DNS recursiu:
 
-Recursiva: "Necessito la direcció IP d'aquest domini, per favor, trobala i no tornis a trucar-me fins que la trobis".
+__Recursiva__: "Necessito la direcció IP d'aquest domini, per favor, trobala i no tornis a trucar-me fins que la trobis".
 
 El client li diu al solucionador o _"resolver"_ de DNS:
 
+__Iterativa__: "Necessito la direcció IP d'aquest domini. Per favor, dona'm la direcció següent del servidor DNS en el procés de la recerca per a que jo mateix la pugui trobar".
 
-Iterativa: "Necessito la direcció IP d'aquest domini. Per favor, dona'm la direcció següent del servidor DNS en el procés de la recerca per a que jo mateix la pugui trobar".
-
-## Advantatges del DNS recursiu
+## __Advantatges del DNS recursiu__
 
 Les consultes DNS recursives solen resoldre's més ràpid que les consultes iteratives. Això es degut al emmagatzematge __cache__. Un servidor DNs recursiu almacena en __caché__ la resposta a cada consulta que realitza i guarda aquesta resposta final durant un temps determinar (TTL = Time to Live).
 
 Quan un solucionador o _resolver_ recursiu rep una consulta per a una adreça IP que tingui al seu caché, pot proporcionar ràpidament la resposta al caché al client sense comunicar-se amb cap altre servidor DNS. Servir ràpidament respostes des del caché és molt probable si a) el servidor DNS serveix a molts clients ob) el lloc web sol·licitat és molt popular.
 
-## Desaventatges del DNS recursiu
+## __Desaventatges del DNS recursiu__
 
 Desafortunadament, permetrà consultes de DNS recursives en servidors DNS oberts creant una vulnerabilitat de seguretat, ja que aquesta configuració pot permetre que els atacants portin a terme atacs d'amplificació de DNS i d'envergament de caché de DNS .
 
-## Servidors DNS recursius i atacs d'amplificació de DNS
+## __Servidors DNS recursius i atacs d'amplificació de DNS__
 
 En un atac d'amplificació de DNS, un atacant sol utilitzar un grup de màquines (que coneix com a botnet ) per enviar un gran volum de consultes DNS mitjançant l'ús d'una adreça IP falsificada . Una direcció IP falsificada és com una direcció de retorn falsa; l'atacant envia sol·licituds des de la seva pròpia IP, però pide que les respostes van a la víctima. 
 
@@ -366,7 +385,7 @@ Per agravar l'atac, l'atacant també utilitza una tècnica trucada amplificació
 
 Necessiteu un servidor DNS que accepteu consultes recursives per dur a terme un tipus d'atac, ja que els paquets de DNS amplificats són respostes a consultes de DNS recursius.
 
-## Servidors DNS recursius i atacs d'envergament de caché de DNS
+## __Servidors DNS recursius i atacs d'envergament de caché de DNS__
 
 En un atac d'enverinament de caché de DNS, quan un servidor DNS recursiu sol·licita una adreça IP a un altre servidor DNS, un atacant intercepta la sol·licitud i una resposta falsa, que sol·liciteu la direcció IP d'un lloc web maliciós. 
 
@@ -380,19 +399,15 @@ En una consulta de DNS iterativa, el client pide directament la resposta a cada 
 
 Inclós si un atacant és capaç d'enviar una resposta falsificada a la consulta, només afectarà a un únic client, el que no mereixi el temps de l'atacant.
 
-# Altres conceptes de DNS
+# __Altres conceptes de DNS__
 
-## El servidor DNS Autoritatiu
+## __El servidor DNS Autoritatiu__
 
-### Instal·lació
+### __Instal·lació__
 
 S'instal·la amb la comanda `apt-get install bind9`, el fitxer de configuració es troba a `/etc/bind`.
 
-```
-
-```
-
-### Configuració de CryptoSEC
+### __Configuració de CryptoSEC__
 
 El fitxer `/etc/bind/named.conf.options`.
 
@@ -402,8 +417,7 @@ El fitxer `/etc/bind/named.conf.options`.
 
 Conté:
 
-
-1. La declaració del directori on es guardaran els arxius de zona: /var/cache/bind
+1. La declaració del directori on es guardaran els arxius de zona: __/etc/bind__
 
 2. La declaració, per defecte desactivada, dels servidors de reenviament: secció forwarders {...}
 
@@ -423,7 +437,7 @@ Cada zona (directa o inversa) tindrà:
 
 3. Una directiva fileindicant el fitxer de respatller (que es trobarà a /var/cache/bind)
 
-#### Arxiu de dades per a una zona directa
+#### __Arxiu de dades per a una zona directa__
 
 Cada zona necessita un fitxer de dades on desar els registres de la zona. Per a una zona directa com `cryptosec.net` el fitxer de zona pot ser `/etc/bind/db.cryptosec.net`  i contenir: 
 
@@ -454,10 +468,7 @@ En aquest arxiu de zona cal notar:
 
 ```
 
-https://elpuig.xeill.net/Members/vcarceler/c1/didactica/apuntes/ud4/na8
-
-
-## El client DNS
+## __El client DNS__
 
 És el component que delega una consulta o consulta directament a servidors DNS, en la cerca d'un registre DNS a la qual vol accedir.
 
@@ -467,13 +478,13 @@ La seva funció és millorar el rendiment de les resolucions mitjançant memòri
 
 ![](https://603168-1953132-raikfcquaxqncofqfm.stackpathdns.com/wp-content/images/dns_process.jpg)
 
-## Resolució de noms al client
+## __Resolució de noms al client__
 
 Quan un client vol comunicarśe amb una altra de la que només conéix el FQDN (_Fully Qualified Domain Name_ = www.cryptosec.net), primer seria obtenir l'adreça IP amb el nom de domini. Després fa el request HTTP per poder accedir-hi.
 
 Podem utilitzar el fitxer __/etc/hosts__ com a resolver local o be als servidors DNS establertes en __/etc/resolv.conf__
 
-### Exemple de /etc/hosts
+### __Exemple de /etc/hosts__
 
 ```
 127.0.0.1 localhost 
@@ -482,7 +493,7 @@ Podem utilitzar el fitxer __/etc/hosts__ com a resolver local o be als servidors
 192.168.3.1 cryptosec.net
 ```
 
-### Exemple de /etc/resolv.conf
+### __Exemple de /etc/resolv.conf__
 
 Quan s'utilitza el client DNS per obtenir l'adreça IP d'un nom de domini, cal examinar el fitxer de configuració __/etc/resolv.conf__ per obtenir: 
 
@@ -497,7 +508,7 @@ nameserver 8.8.8.8
 search cryptosec.net
 ```
 
-# El servei systemd-resolved i la comanda resolvectl
+# __El servei systemd-resolved i la comanda resolvectl__
 
 La majoria de les distribucions actuals de GNU/Linux utilitzen systemdaixí que solen executar el servei systemd-resolvedcom a stub DNS local de la màquina. L'avantatge dutilitzar systemd-resolvedés que les aplicacions trobaran un millor rendiment gràcies a la seva memòria cau. 
 
@@ -544,13 +555,13 @@ L'ordre `resolvectl` permet:
 
 
 
-# Com donar suport a consultes de DNS ràpides i segures
+# __Com donar suport a consultes de DNS ràpides i segures__
 
 La solució es DNSSEC.
 
 Consulteu la documentació adherida de DNSSEC.
 
-# DNS per TLS vs DNS per HTTPS --> DNS Sergur
+# __DNS per TLS vs DNS per HTTPS --> DNS Sergur__
 
 Link: https://www.cloudflare.com/learning/dns/dns-over-tls/
 

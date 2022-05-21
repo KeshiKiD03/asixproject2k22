@@ -88,7 +88,7 @@ Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcion
 
 <br>
 
-![](./Photos/EsquemaFinal_Non-1.png)
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/EsquemaFinal_Non-1.png?raw=true)
 
 <br>
 
@@ -182,7 +182,7 @@ Hem decidit utilitzar __VirtualBox__ per al _deployment_ d'aquest projecte simpl
 
 <br>
 
-![](./Photos/VirtualBox.PNG)
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/VirtualBox.PNG?raw=true)
 
 <br>
 
@@ -198,7 +198,8 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 
 <br>
 
-![](./Photos/EsquemaFinal_Non-1.png)
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/EsquemaFinal_Non-1.png?raw=true)
+
 <br>
 
 ## __Ciberseguretat a CryptoSEC__
@@ -215,9 +216,9 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 
 + L'atacant farà els atacs des d'un Kali Linux.
 
-> Exemple d'atac Credential Harvester
-![](./Photos/arps3.PNG)
+> Exemple d'atac d'Enginyeria Social: "_Phishing + Credential Harvester_"
 
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/ZPISHER2.PNG?raw=true)
 
 # __Els objectius dels serveis de CryptoSEC__
 
@@ -274,13 +275,19 @@ _Les que veurem:_
 
 + __MITM - ARP Cache Poisoning / Spoofing__: Injecta registres o enverina a la taula ARP dels dispositius implicats i fa una redirecció a l'atacant, suplantant la MAC dels dispositius implicats.
 
-![](./Diagrams/DIAGRAM3.PNG)
-
 + __MITM - DNS Cache Poisoning / Spoofing + Phishing__: Injecta registres o enverina el registre DNS d'un servidor DNS o varis implicats. L'atacant fa una redirecció a la víctima a una web falsa, suplanta un registre DNS fent-lo creure que està anant al lloc adequat.
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Diagrams/DIAGRAM2.PNG?raw=true)
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Diagrams/DIAGRAM4.PNG?raw=true)
 
 + __MITM - Eavesdropping (SNIFFER)__: Permet veure l'activitat de la victima d'incògnits. Com veure a quines pàgines està entrant. O agafar-li les credencials (HTTP).
 
-+ __MAIL PHISHING__: Enviament de correu amb una suplantació de DNS, aquest correu s'enviarà desde una eina de Kali a una víctima perque accedeixi al enllaç.
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Diagrams/DIAGRAM3.PNG?raw=true)
+
++ __Social Engineering: Fake Page + Mail Phishing__: Enviament de correu amb una suplantació de DNS, aquest correu s'enviarà desde una eina de Kali a una víctima perque accedeixi al enllaç.
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Diagrams/DIAGRAM5.png?raw=true)
 
 _Altres:_
 
