@@ -1,0 +1,1672 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\hypertarget{projecte-asix-2k22}{%
+\section{\texorpdfstring{\textbf{Projecte ASIX
+2k22}}{Projecte ASIX 2k22}}\label{projecte-asix-2k22}}
+
+\hypertarget{escola-del-treball}{%
+\subsection{\texorpdfstring{\textbf{Escola Del
+Treball}}{Escola Del Treball}}\label{escola-del-treball}}
+
+\hypertarget{hisx-2021-2022}{%
+\subsubsection{\texorpdfstring{\textbf{2HISX
+2021-2022}}{2HISX 2021-2022}}\label{hisx-2021-2022}}
+
+\hypertarget{aaron-andal-cristian-condolo}{%
+\subsubsection{\texorpdfstring{\textbf{Aaron Andal \& Cristian
+Condolo}}{Aaron Andal \& Cristian Condolo}}\label{aaron-andal-cristian-condolo}}
+
+\hypertarget{cryptosec-careful-where-you-step-in}{%
+\section{\texorpdfstring{\textbf{CryptoSEC}: ``\emph{Careful where you
+step
+in}''}{CryptoSEC: ``Careful where you step in''}}\label{cryptosec-careful-where-you-step-in}}
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/785b57206d80bd3d5ef15f036481e103db8435a1.png}
+
+\hypertarget{index}{%
+\section{\texorpdfstring{\textbf{Index}}{Index}}\label{index}}
+
+\begin{itemize}
+\item
+  \textbf{Que es el DNS?}:
+  \protect\hyperlink{que-es-el-dns}{--\textgreater{} readME
+  \textless{}--}
+\item
+  \textbf{Com funciona el DNS}:
+  \protect\hyperlink{com-funciona-el-dns}{--\textgreater{} readME
+  \textless{}--}
+\item
+  \textbf{Tipus de DNS ``4 servidors DNS implicats en la càrrega d'una
+  pàgina web''}:
+  \protect\hyperlink{tipus-de-dns-ux5cux25224-servidors-dns-implicats-en-la-cuxe0rrega-duna-puxe0gina-webux5cux2522}{--\textgreater{}
+  readME \textless{}--}
+
+  \begin{itemize}
+  \item
+    \textbf{Resolver de DNS Recursiu}:
+    \protect\hyperlink{resolver-de-dns-recursiu}{--\textgreater{} readME
+    \textless{}--}
+  \item
+    \textbf{Root Servers}:
+    \protect\hyperlink{root-servers}{--\textgreater{} readME
+    \textless{}--}
+  \item
+    \textbf{Servidor DNS - TLD}:
+    \protect\hyperlink{servidor-dns---tld}{--\textgreater{} readME
+    \textless{}--}
+  \item
+    \textbf{Servidor DNS Authoritative}:
+    \protect\hyperlink{servidor-dns-authoritative}{--\textgreater{}
+    readME \textless{}--}
+  \item
+    \textbf{Diferencia entre ``Authoritative DNS Server'' i ``Recursive
+    DNS Resolver''}:
+    \protect\hyperlink{diferencia-entre-ux5cux2522authoritative-dns-serverux5cux2522-i-ux5cux2522recursive-dns-resolverux5cux2522}{--\textgreater{}
+    readME \textless{}--}
+  \item
+    \textbf{Recursive DNS Resolver}:
+    \protect\hyperlink{recursive-dns-resolver}{--\textgreater{} readME
+    \textless{}--}
+  \item
+    \textbf{Authoritative DNS Server}:
+    \protect\hyperlink{authoritative-dns-server}{--\textgreater{} readME
+    \textless{}--}
+  \end{itemize}
+\item
+  \textbf{Procediment per fer un ``lookup'' de DNS}:
+  \protect\hyperlink{procediment-per-fer-un-ux5cux2522lookupux5cux2522-de-dns}{--\textgreater{}
+  readME \textless{}--}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Els 8 passos d'un ``lookup'' de DNS}:
+    \protect\hyperlink{els-8-passos-dun-ux5cux2522lookupux5cux2522-de-dns}{--\textgreater{}
+    readME \textless{}--}
+  \end{itemize}
+\item
+  \textbf{Què és un \emph{``resolver''} de DNS}:
+  \protect\hyperlink{quuxe8-uxe9s-un-ux5cux2522resolverux5cux2522-de-dns}{--\textgreater{}
+  readME \textless{}--}
+\item
+  \textbf{Tipus de consultes DNS}:
+  \protect\hyperlink{tipus-de-consultes-dns}{--\textgreater{} readME
+  \textless{}--}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{3 tipus de consultes DNS}:
+    \protect\hyperlink{3-tipus-de-consultes-dns}{--\textgreater{} readME
+    \textless{}--}
+  \end{itemize}
+\item
+  \textbf{Que es el emmagatzematge en caché de DNS?}:
+  \protect\hyperlink{que-es-el-emmagatzematge-en-cachuxe9-de-dns}{--\textgreater{}
+  readME \textless{}--}
+\item
+  \textbf{Que es un registre DNS?}:
+  \protect\hyperlink{que-es-un-registre-dns}{--\textgreater{} readME
+  \textless{}--}
+\item
+  \textbf{Tipus de registres DNS}:
+  \protect\hyperlink{tipus-de-registres-dns}{--\textgreater{} readME
+  \textless{}--}
+\item
+  \textbf{Que es un DNS recursiu?}:
+  \protect\hyperlink{que-es-un-dns-recursiu}{--\textgreater{} readME
+  \textless{}--}
+\item
+  \textbf{Exemple resumit de DNS}:
+  \protect\hyperlink{exemple-resumit-de-dns}{--\textgreater{} readME
+  \textless{}--}
+
+  \begin{itemize}
+  \item
+    \textbf{Diferencia entre recursió i iteració}:
+    \protect\hyperlink{diferencia-entre-recursiuxf3-i-iteraciuxf3}{--\textgreater{}
+    readME \textless{}--}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Iteració - Recursió / Resum}:
+      \protect\hyperlink{iteraciuxf3---recursiuxf3--resum}{--\textgreater{}
+      readME \textless{}--}
+    \end{itemize}
+  \item
+    \textbf{Advantatges del DNS recursiu}:
+    \protect\hyperlink{advantatges-del-dns-recursiu}{--\textgreater{}
+    readME \textless{}--}
+  \item
+    \textbf{Desaventatges del DNS recursiu}:
+    \protect\hyperlink{desaventatges-del-dns-recursiu}{--\textgreater{}
+    readME \textless{}--}
+  \item
+    \textbf{Servidors DNS recursius i atacs d'amplificació de DNS}:
+    \protect\hyperlink{servidors-dns-recursius-i-atacs-damplificaciuxf3-de-dns}{--\textgreater{}
+    readME \textless{}--}
+  \item
+    \textbf{Servidors DNS recursius i atacs d'enverinament de caché de
+    DNS}:
+    \protect\hyperlink{servidors-dns-recursius-i-atacs-denvergament-de-cachuxe9-de-dns}{--\textgreater{}
+    readME \textless{}--}
+  \end{itemize}
+\item
+  \textbf{Configuració DNS CryptoSEC}:
+  \protect\hyperlink{configuraciuxf3-dns-cryptosec}{--\textgreater{}
+  readME \textless{}--}
+
+  \begin{itemize}
+  \item
+    \textbf{Instal·lació}:
+    \protect\hyperlink{installaciuxf3}{--\textgreater{} readME
+    \textless{}--}
+  \item
+    \textbf{El servidor DNS Autoritatiu}:
+    \protect\hyperlink{el-servidor-dns-autoritatiu}{--\textgreater{}
+    readME \textless{}--}
+
+    \begin{itemize}
+    \item
+      \textbf{Arxiu de d'opcions de les zones}:
+      \protect\hyperlink{arxiu-de-dopcions-de-les-zones}{--\textgreater{}
+      readME \textless{}--}
+    \item
+      \textbf{Arxiu de dades per a una zona directa
+      "\emph{cryptosec.net}}:
+      \protect\hyperlink{arxiu-de-dades-per-a-una-zona-directa-ux5cux2522cryptosecnetux5cux2522}{--\textgreater{}
+      readME \textless{}--}
+    \end{itemize}
+  \item
+    \textbf{El servidor DNS Forwarder}:
+    \protect\hyperlink{el-servidor-dns-forwarder}{--\textgreater{}
+    readME \textless{}--}
+
+    \begin{itemize}
+    \item
+      \textbf{Arxiu de d'opcions de les zones}:
+      \protect\hyperlink{arxiu-de-dopcions-de-les-zones-1}{--\textgreater{}
+      readME \textless{}--}
+    \item
+      \textbf{Arxiu de dades per especificar el forwarding a la zona
+      "\emph{cryptosec.net}}:
+      \protect\hyperlink{arxiu-de-dades-per-especificar-el-forwarding-a-la-zona-ux5cux2522cryptosecnetux5cux2522}{--\textgreater{}
+      readME \textless{}--}
+    \end{itemize}
+  \item
+    \textbf{Comandes de verificació}:
+    \protect\hyperlink{comandes-de-verificaciuxf3}{--\textgreater{}
+    readME \textless{}--}
+  \item
+    \textbf{El client DNS}:
+    \protect\hyperlink{el-client-dns}{--\textgreater{} readME
+    \textless{}--}
+  \item
+    \textbf{Resolució de noms al client}:
+    \protect\hyperlink{resoluciuxf3-de-noms-al-client}{--\textgreater{}
+    readME \textless{}--}
+
+    \begin{itemize}
+    \item
+      \textbf{Exemple de /etc/hosts}:
+      \protect\hyperlink{exemple-de-etchosts}{--\textgreater{} readME
+      \textless{}--}
+    \item
+      \textbf{Exemple de /etc/resolv.conf}:
+      \protect\hyperlink{exemple-de-etcresolvconf}{--\textgreater{}
+      readME \textless{}--}
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{El servei systemd-resolved i la comanda resolvectl}:
+  \protect\hyperlink{el-servei-systemd-resolved-i-la-comanda-resolvectl}{--\textgreater{}
+  readME \textless{}--}
+\item
+  \textbf{Com donar suport a consultes de DNS ràpides i segures}:
+  \protect\hyperlink{com-donar-suport-a-consultes-de-dns-ruxe0pides-i-segures}{--\textgreater{}
+  readME \textless{}--}
+\item
+  \textbf{Glossari de termes de les configuracions de BIND9}:
+  \protect\hyperlink{glossari-de-termes-de-les-configuracions-de-bind9}{--\textgreater{}
+  readME \textless{}--}
+\item
+  \textbf{Glossari de termes de tipus de servidors de BIND9}:
+  \protect\hyperlink{glossari-de-termes-de-tipus-de-servidors-de-bind9}{--\textgreater{}
+  readME \textless{}--}
+\item
+  \textbf{Glossari de termes seongs cada camp del SOA amb la seva funció
+  (Bind9)}:
+  \protect\hyperlink{glossari-de-termes-seongs-cada-camp-del-soa-amb-la-seva-funciuxf3-bind9}{--\textgreater{}
+  readME \textless{}--}
+\item
+  \textbf{Exemples BIND9 (Configuracions)}:
+  \protect\hyperlink{exemples-bind9-configuracions}{--\textgreater{}
+  readME \textless{}--}
+
+  \begin{itemize}
+  \item
+    \textbf{GLUE RECORD}:
+    \protect\hyperlink{glue-record}{--\textgreater{} readME
+    \textless{}--}
+  \item
+    \textbf{\$GENERATE}: \protect\hyperlink{generate}{--\textgreater{}
+    readME \textless{}--}
+  \item
+    \textbf{Resolució inversa}:
+    \protect\hyperlink{resoluciuxf3-inversa}{--\textgreater{} readME
+    \textless{}--}
+  \end{itemize}
+\item
+  \textbf{Bibliografia}:
+  \protect\hyperlink{bibliografia}{--\textgreater{} readME
+  \textless{}--}
+\end{itemize}
+
+\hypertarget{que-es-el-dns}{%
+\section{\texorpdfstring{\textbf{Que es el
+DNS?}}{Que es el DNS?}}\label{que-es-el-dns}}
+
+El sistema de noms de \textbf{domini (DNS)} és l'agenda telefònica
+d'Internet. Permet associar noms de domini amb direccions IP per
+facilitar en gran mesura l'accés als hosts de la xarxa.
+
+Els humans accedeixen a la informació en línia mitjançant \textbf{noms
+de domini}, com ara \textbf{nytimes.com} o \textbf{espn.com}.
+
+Els navegadors web interactuen mitjançant adreces de \textbf{Protocol
+d'Internet (IP)}.
+
+DNS \emph{tradueix} els \textbf{noms de domini} a \textbf{adreces IP}
+perquè els navegadors puguin \emph{carregar recursos d'Internet}.
+
+Cada dispositiu connectat a \textbf{Internet} té una \textbf{adreça IP
+única} que altres màquines utilitzen per trobar el dispositiu.
+
+Els servidors DNS eliminen la necessitat que els h\_\_umans
+memoritzin\_\_ adreces IP com ara \textbf{192.168.1.1} (en IPv4) o
+adreces IP alfanumèriques més complexes, com ara
+2400:cb00:2048:1::c629:d7a2 (en IPv6).
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/778e9507c2aa821fec43aad3592f3c228e52a60e.svg}
+
+\hypertarget{com-funciona-el-dns}{%
+\section{\texorpdfstring{\textbf{Com funciona el
+DNS}}{Com funciona el DNS}}\label{com-funciona-el-dns}}
+
+El procés de resolució de DNS implica convertir un nom
+d'\textbf{amfitrió} (com ara www.example.com) en una adreça IP
+compatible amb l'ordinador (com ara 192.168.1.1). Es dóna una adreça IP
+a cada dispositiu a \textbf{Internet}, i aquesta adreça és necessària
+per trobar el dispositiu d'Internet adequat, com si s'utilitza una
+\textbf{adreça} de carrer per trobar una casa determinada.
+
+Quan un usuari vol \textbf{carregar} una \textbf{pàgina web}, s'ha de
+produir una traducció entre el que un usuari escriu al seu navegador web
+(\textbf{example.com}) i l'adreça adaptada a la màquina necessària per
+localitzar la pàgina web \textbf{example.com}.
+
+Per entendre el procés darrere de la \emph{resolució DNS}, és important
+conèixer els diferents components de maquinari entre els quals ha de
+passar una consulta DNS. Per al navegador web, la cerca de DNS es
+produeix ``darrere de l'escenari'' i no requereix cap interacció de
+l'ordinador de l'usuari a part de la sol·licitud inicial.
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/8d313c7da075c3c7303aaef32e89b5d0b7885e7c.png}
+
+\hypertarget{tipus-de-dns-4-servidors-dns-implicats-en-la-cuxe0rrega-duna-puxe0gina-web}{%
+\section{\texorpdfstring{\textbf{Tipus de DNS ``4 servidors DNS
+implicats en la càrrega d'una pàgina
+web'':}}{Tipus de DNS ``4 servidors DNS implicats en la càrrega d'una pàgina web'':}}\label{tipus-de-dns-4-servidors-dns-implicats-en-la-cuxe0rrega-duna-puxe0gina-web}}
+
+Tots els \textbf{servidors DNS} es divideixen en una d'aquestes quatre
+categories: \textbf{Resolvers recursius}, \textbf{Root Servers} ,
+\textbf{Servidor de noms TLD} i \textbf{State Of Authority}.
+
+En una cerca DNS típica (quan no hi ha \textbf{memòria cau} en joc),
+aquests quatre servidors DNS treballen junts en harmonia per completar
+la tasca de lliurar l' adreça IP d'un domini especificat al client (el
+client sol ser un solucionador de talons, un senzill resolutor integrat
+en un sistema operatiu).
+
+\hypertarget{resolver-de-dns-recursiu}{%
+\subsection{\texorpdfstring{\textbf{Resolver de DNS
+Recursiu}}{Resolver de DNS Recursiu}}\label{resolver-de-dns-recursiu}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{DNS Recursor (Servidor DNS Recursiu)} : És com un
+  \textbf{bibliotecari} a la qual se li demana que busqui un llibre
+  determinar a la biblioteca. El \textbf{recurs DNS} és un
+  \textbf{servidor} dissenyat per rebre consultes de les màquines client
+  mitjançant aplicacions com ara navegadors \textbf{web}. Normalment, el
+  recurs és responsable de fer \textbf{peticions} addicionals per
+  satisfer la \textbf{consulta DNS del client}.
+\end{enumerate}
+
+És la \emph{primera parada} d'una \textbf{consulta DNS}.
+
+El \emph{resolver} recursiu actua com a intermediari entre un client i
+un servidor de noms DNS.
+
+Després de rebre una consulta DNS d'un client web, un \emph{resolver}
+recursiu respondrà amb dades emmagatzemades a la \textbf{memoria CAU} o
+enviarà una sol·licitud a un servidor de \textbf{noms arrel}
+\textbf{(Root Servers)}, seguida d'una altra sol·licitud a un servidor
+de noms TLD i després d'una úlima sol·licitud a un servidor de noms
+autoritzat.
+
+Després de rebre una resposta del servidor de noms autoritzat que conté
+l'adreça IP sol·licitada, el resolutor recursiu envia una resposta al
+client.
+
+Durant aquest procés, el solucionador recursiu guardarà a la
+\textbf{memòria cau} la informació rebuda dels servidors de noms
+autoritzats.
+
+Quan un client nou sol·liciti l'adreça IP d'un nom de domini que ha
+estat sol·licitat recentment per un altre client, el \emph{resolver} pot
+eludir el procés de comunicació amb els servidors de noms i només
+lliurar al client el registre sol·licitat de la seva memòria cau.
+
+La majoria dels usuaris d'Internet utilitzen un solucionador recursiu
+proporcionat pel seu ISP, però hi ha altres opcions disponibles; per
+exemple , l'1.1.1.1 de Cloudflare .
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/6e363b041c396b38ad59df1bce0c347ebadbfcfc.png}
+
+\hypertarget{root-servers}{%
+\subsection{\texorpdfstring{\textbf{Root
+Servers}}{Root Servers}}\label{root-servers}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Root Servers} : El \textbf{servidor arrel} és el primer pas
+  per traduir (resolució) noms d'amfitrió llegibles per humans a
+  \textbf{adreces IP}. Es pot pensar com un \textbf{índex} en una
+  \textbf{biblioteca} que apunta a \textbf{diferents bastidors} de
+  llibres; normalment serveix com a referència a altres ubicacions més
+  específiques.
+\end{itemize}
+
+Hi han 13 servidors de noms d'arrel DNS, són coneguts per tots els
+\emph{resolvers recursius} i són la primera parada en la recera de
+registres DNS d'un \emph{resolver recursiu}.
+
+Un servidor arrel accepta la consulta d'un resolutor recursiu que inclou
+un nom de domini, i el servidor de noms arrel respon dirigint el
+resolutor recursiu a un \textbf{servidor de noms TLD}, en funció de
+l'extensió d'aquest domini \textbf{(.com, .net, .org, etc.)}.
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/6e363b041c396b38ad59df1bce0c347ebadbfcfc.png}
+
+\hypertarget{servidor-dns---tld}{%
+\subsection{\texorpdfstring{\textbf{Servidor DNS -
+TLD}}{Servidor DNS - TLD}}\label{servidor-dns---tld}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Servidor DNS - TLD} : El servidor de domini de \textbf{primer
+  nivell} ( TLD = Top Layer Domain ) es pot considerar com un \emph{lloc
+  específic} de llibres d'una biblioteca. Aquest servidor de noms és el
+  següent pas en la cerca d'una adreça IP específica i allotja l'última
+  part d'un nom d'amfitrió (a example.com, el servidor TLD és ``com'').
+\end{itemize}
+
+Un \textbf{servidor de noms TLD} manté la informació de tots els noms de
+domini que comparteixen una extensió de domini comuna, com ara .com,
+.net o qualsevol que vingui després de l'últim punt d'una URL.
+
+Per exemple, un servidor de noms TLD \textbf{.com} conté informació per
+a cada lloc web que acabi en \textbf{``.com''}.
+
+Si un usuari estava cercant \textbf{google.com}, després de rebre una
+resposta d'un servidor de noms arrel, el solucionador recursiu enviaria
+una consulta a un servidor de noms TLD .com, que respondria apuntant al
+servidor de noms autoritzat (vegeu més avall) per a aquest domini.
+
+\begin{itemize}
+\item
+  Dominis genèrics de \textbf{primer nivell}: són dominis que no són
+  específics d'un país, alguns dels TLD genèrics més coneguts inclouen
+  \textbf{.com, .org, .net, .edu i .gov.}
+\item
+  Dominis de \textbf{nivell superior} de codi de país: inclouen tots els
+  dominis específics d'un país o estat. Alguns exemples inclouen
+  \textbf{.uk, .us, .ru i .jp}.
+\end{itemize}
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/d849fbdf3da4f18477429f29a2025aa53c06a8b8.png}
+
+\hypertarget{servidor-dns-authoritative}{%
+\subsection{\texorpdfstring{\textbf{Servidor DNS
+Authoritative}}{Servidor DNS Authoritative}}\label{servidor-dns-authoritative}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Servidor de noms autoritzat (Authoritative DNS Server)} : Es
+  pot interpretar com un diccionari en una \textbf{prestatgeria de
+  llibres}, on es pot consultar la \textbf{definició} d'un \textbf{nom
+  específic}. Aquest servidor de noms autoritzat és \textbf{l'última
+  parada} de la consulta del servidor de noms. Si el servidor de noms
+  autoritzat té accés al registre sol·licitat, retornarà l'adreça IP del
+  nom d'amfitrió sol·licitat al recurs DNS \textbf{(el bibliotecari)}
+  que va fer la sol·licitud inicial.
+\end{itemize}
+
+Quan un \emph{resolver recursiu} rep una resposta d'un servidor de noms
+TLD, aquesta resposta es dirigirà directament a un servidor DNS
+autoritatiu \emph{(Authoritative DNS Server)}.
+
+El servidor de noms autoritatiu conté la informació específica del nom
+de domini a la qual serveix.
+
+Pot proporcionar una \textbf{solució recursiva} amb l'adreça IP d'aquest
+servidor que es troba al registra \textbf{DNS A} o si té un alias
+registre \textbf{CNAME}, que proporcionarà al \emph{resolver recursiu}
+un domini d'àlies.
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/a1ae1dd37c864176bc3c8c5ad7eca3b50da996bc.png}
+
+\hypertarget{diferencia-entre-authoritative-dns-server-i-recursive-dns-resolver}{%
+\section{\texorpdfstring{\textbf{Diferencia entre ``Authoritative DNS
+Server'' i ``Recursive DNS
+Resolver''}}{Diferencia entre ``Authoritative DNS Server'' i ``Recursive DNS Resolver''}}\label{diferencia-entre-authoritative-dns-server-i-recursive-dns-resolver}}
+
+Els dos conceptes es refereixen a servidors (O grups de servidors) que
+estàn \emph{``integrals''} a la infraestructura DNS, però cadascun
+realitza un paper diferent. Es troba en diferents ubicacions dins del
+trajecte d'una consulta de DNS. Una manera d'entendre la diferència és
+que el \emph{``Recursive Resolver''} és a l'inici de la consulta DNS i
+el \emph{``Athoritative Nameserver''} (servidor de noms autoritatiu) al
+final.
+
+\hypertarget{recursive-dns-resolver}{%
+\subsection{\texorpdfstring{\textbf{Recursive DNS
+Resolver}}{Recursive DNS Resolver}}\label{recursive-dns-resolver}}
+
+El \emph{``Recursive DNS Resolver''} és el servidor que respon a una
+solicitud recursiva del client i dedica temps a detectar el
+\textbf{registre DNS}.
+
+Ho fa mitjançant una \textbf{sèrie de sol·licituds} fins que arriba al
+servidor de noms DNS autoritatiu \emph{(Authoritative DNS Server)} per
+al registre DNS sol·licitat (o es torna inactiu o torna un error si no
+es troba cap registre).
+
+Amb altres paraules, el client que fa una petició per anar a
+\emph{www.exemple.com}, el \emph{``Recursive DNS Resolver''} respon la
+petició i va preguntant a altres \emph{servidors} quina IP es la
+\emph{www.exemple.com} fins que arriba al servidor DNS autoriratiu
+\emph{(Authoritative DNS Server)} que conté la zona
+\emph{www.exemple.com} en els seus registres.
+
+Afortunadament, els \emph{``Recursive DNS Resolver''} \textbf{no} sempre
+han de fer diverses sol·licituds per inspeccionar els registres
+necessaris per respondre a un client.
+
+L' emmagatzematge en \textbf{memòria cau} és un procés d'agilització de
+procés en la \emph{busca} del registre DNS que ajuda a
+\textbf{saltar-se} les sol·licituds \emph{necessàries} servint abans el
+registre del recurs sol·licitat a la cerca DNS.
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/7f70b1b7a782c350c2be9bdab25878acd4b57603.png}
+
+\hypertarget{authoritative-dns-server}{%
+\subsection{\texorpdfstring{\textbf{Authoritative DNS
+Server}}{Authoritative DNS Server}}\label{authoritative-dns-server}}
+
+Un servidor DNS autoritatiu \emph{(Authoritative DNS Server)} és un
+servidor que allotja realment registres de recursos DNS i n'és
+responsable.
+
+Aquest és el \textbf{servidor al final} de la cadena de cerca de DNS que
+respondrà amb el registre DNS del recurs consultat, permetent finalment
+que el \textbf{navegador web} faci la sol·licitud per arribar a
+\textbf{l'adreça IP} necessària per accedir a un \textbf{lloc web} o
+altres \textbf{recursos web}.
+
+Un servidor DNS autoritatiu \emph{(Authoritative DNS Server)} pot oferir
+sol·licituds a partir de les seves pròpies dades sense necessitat de
+consultar altres recursos \emph{(recursive)}, ja que és la font final de
+veritat per a \textbf{certs registres DNS}.
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/5b3e45c83580b88d534d409b39c8d05bca47027a.png}
+
+Convé indicar que en els casos de \emph{consultes relatives} a
+\textbf{subdominis}, com ara \emph{foo.exemple.com} o
+\emph{blog.cloudflare.com} , s'afegirà un servidor de noms addicional a
+la seqüència després del servidor de noms autoritatiu, que és el
+responsable d'emmagatzemar el registre \textbf{CNAME} del subdomini.
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/5c5bfcbebb966de717b62f6fbf3d7fd7a1b0bb20.png}
+
+Hi ha una diferencia fundamental entre molts serveis de DNS i el que
+ofereix Cloudfare per exemple. Hi han diferents \emph{``Recursive DNS
+Resolver''} com Google DNS, OpenDNS o proveïdors com Comcast mantenen
+instal·lacions de centre de dades de \emph{``Recursive DNS Resolver''}.
+
+Aquests \emph{``Resolvers''} permeten consultes rapides i senzilles
+mitjaçant clusters optimitzats de sistemes informàtics optimitzats per a
+DNS. Però son bàsicament diferents servidors de noms allotjats en
+servidors com per exemple Cloudflare.
+
+\hypertarget{procediment-per-fer-un-lookup-de-dns}{%
+\section{\texorpdfstring{\textbf{Procediment per fer un ``lookup'' de
+DNS}}{Procediment per fer un ``lookup'' de DNS}}\label{procediment-per-fer-un-lookup-de-dns}}
+
+En la majoria de situacions, DNS fa referència a un \textbf{nom de
+domini} que s'està traduint a l'adreça IP.
+
+Sovint, la informació de cerca de DNS s'emmagatzemarà a la memòria
+\textbf{cau local} dins del servidor que realitzi la \textbf{consulta} o
+en \textbf{remot} a la \emph{infraestructura} de DNS.
+
+Generalment, hi ha 8 passos en una cerca DNS.
+
+Quan la informació de DNS s'emmagatzema en memòria cau, s'ometen els
+passos del procés de cerca DNS, cosa que ho fa més ràpid. L'exemple
+descriu els 8 passos necessaris quan no s'ha emmagatzemat res a la
+memòria cau.
+
+\hypertarget{els-8-passos-dun-lookup-de-dns}{%
+\subsection{\texorpdfstring{\textbf{Els 8 passos d'un ``lookup'' de
+DNS}}{Els 8 passos d'un ``lookup'' de DNS}}\label{els-8-passos-dun-lookup-de-dns}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Un usuari escriu ``exemple.com'' en un navegador web i la consulta
+  recorre Internet i és rebuda per un \emph{``resolutor recursiu de DNS
+  (Recursive DNS Resolver)''}.
+\item
+  El \emph{resolver} consulta a continuació un servidor de \emph{noms
+  d'arrel de DNS} \emph{(Root Servers) (.)} = Internet.
+\item
+  El servidor arrel \emph{(Root Servers)} respon a continuació al
+  \emph{resolver} amb l'adreça d'un servidor de \emph{DNS de domini} de
+  \textbf{primer nivell} (TLD = Top Level Domain) (p.ex. .com o .net),
+  que emmagatzema la informació per als vostres dominis. En cercar
+  ``\emph{exemple.com}'', la nostra sol·licitud es dirigeix al TLD
+  \textbf{.com}.
+\item
+  El \emph{resolver} farà a continuació una sol·licitud al domini de
+  \textbf{primer nivell} .\_\_com\_\_.
+\item
+  El \textbf{servidor TLD} respondrà a continuació amb l'adreça IP del
+  servidor de noms del domini autoriratiu \emph{(Authoritative DNS
+  Server)}: \textbf{exemple.com}.
+\item
+  Finalment, el \emph{resolver recursiu} envia una consulta al
+  \emph{servidor de noms del domini autoritatiu} \textbf{(Authoritative
+  DNS Server)}.
+\item
+  Per exemple, l'adreça IP es retornarà al \emph{resolver} desde del
+  \emph{servidor de noms}.
+\item
+  El \emph{resolver de DNS} respondrà a continuació al \emph{navegador
+  web} amb \textbf{l'adreça IP del domini} sol·licitat inicialment.
+\end{enumerate}
+
+Un cop els 8 passos de la cerca del DNS han tornat l'adreça IP per
+exemple.com, el navegador podrà fer la sol·licitud per a la \emph{pàgina
+web}:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\item
+  El navegador farà una sol·licitud \textbf{d'HTTP} a l'adreça IP.
+\item
+  El servidor en aquesta adreça IP torna la \textbf{pàgina web} perquè
+  es processi al navegador (pas 10).
+\end{enumerate}
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/da9d0e1fe919108601650ca8681f91fabbe42363.png}
+
+\hypertarget{quuxe8-uxe9s-un-resolver-de-dns}{%
+\section{\texorpdfstring{\textbf{Què és un \emph{``resolver''} de
+DNS}}{Què és un ``resolver'' de DNS}}\label{quuxe8-uxe9s-un-resolver-de-dns}}
+
+El \textbf{resolver de DNS} és la \textbf{primera parada} de la recerca
+de DNS i s'encarrega de tractar amb el \textbf{client} que va fer la
+\textbf{sol·licitud inicial}.
+
+El solucionador inicia la seqüència de consultes que porten en última
+instància que l'URL es tradueixi a l'adreça IP necessària.
+
+Nota: una cerca de DNS no emmagatzemada a la memòria cau inclourà
+consultes recursives i iteratives.
+
+És important diferencia entre una \emph{consulta} de \emph{DNS recursiu}
+i un \emph{resolver} de \emph{DNS recursiu}.
+
+La \textbf{consulta} fa referència a la sol·licitud feta a un
+solucionador de DNS que requereix la resolució de la consulta.
+
+Un \textbf{resolver} de DNS recursiu és el servidor que accepta una
+\textbf{solució recursiva} i procesa la resposta fent les
+\textbf{sol·licituds necessàries}.
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/861a2b93b8a76d0cd7d5659cbaca80ca9711d655.png}
+
+\hypertarget{tipus-de-consultes-dns}{%
+\section{\texorpdfstring{\textbf{Tipus de consultes
+DNS}}{Tipus de consultes DNS}}\label{tipus-de-consultes-dns}}
+
+En una busca DNS habitual es produeixen 3 tipus de consultes.
+
+En utilitzar una combinació d'aquestes consultes, un procés optimitzat
+per la resolució de DNS es pot comportar una reducció de ``salts''. En
+una situació ideal, les dades de registra emmagatzemades a la memòria
+CAU estaran disponibles, la qual cosa permetrà que un servidor de noms
+DNS torni a una consulta no \emph{recursiva}.
+
+\hypertarget{tipus-de-consultes-dns-1}{%
+\subsection{\texorpdfstring{\textbf{3 tipus de consultes
+DNS:}}{3 tipus de consultes DNS:}}\label{tipus-de-consultes-dns-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Consulta recursiva}: En una consulta recursiva, un client DNS
+  requereix que un servidor DNS (generalment un \emph{resolver} de
+  \textbf{DNS recursiu}) respongui al \textbf{client} amb el registre
+  del recurs sol·licitat o un missatge d'error si el solucionador no pot
+  trobar el registre.
+\item
+  \textbf{Consulta iterativa}: En aquesta situació, el \emph{client DNS}
+  permetrà que un \textbf{servidor DNS} retorni la \textbf{millor
+  resposta} possible. Si el servidor DNS consultat no té el \textbf{nom}
+  que ha demanat el client en la s eva consulta, el servidor DNS
+  retornarà una referencia a un servidor DNS autoritatiu. El
+  \textbf{client DNS} farà a continuació una consulta a \textbf{l'adreça
+  de referència}. Aquest procés continua amb servidors DNS addicionals
+  que segueixen a la cadena de consulta fins que es produeixi un error o
+  se superi el temps despera.
+\item
+  \textbf{Consulta no recursiva}: Generalment es produeix quan un
+  \textbf{client solucionador de DNS} consulta un \textbf{servidor DNS}
+  per un registre al qual té \textbf{accés} perquè o bé \textbf{és
+  autoritatiu} per al \textbf{registre} o el registre \textbf{existeix}
+  dins de la seva memòria cau. Generalment, el servidor DNS
+  emmagatzemarà a la memòria cau registres DNS per prevenir el consum
+  d'amplada de banda addicional i la càrrega als servidors que
+  precedeixen a la cadena.
+\end{enumerate}
+
+\hypertarget{que-es-el-emmagatzematge-en-cachuxe9-de-dns}{%
+\section{\texorpdfstring{\textbf{Que es el emmagatzematge en caché de
+DNS?}}{Que es el emmagatzematge en caché de DNS?}}\label{que-es-el-emmagatzematge-en-cachuxe9-de-dns}}
+
+L'objectiu de l'emmagatzematge a la memòria cau és guardar dades en una
+ubicació temporalment per aconseguir millores en el rendiment i
+fiabilitat en les sol·licituds de dades.
+
+L'emmagatzematge en memòria cau de DNS guarda dades més a prop del
+client sol·licitant perquè la consulta DNS es pugui resoldre abans i les
+consultes addicionals que segueixen a la cadena de cerca DNS es puguin
+evitar, millorant així els temps de càrrega i reduint el consum
+d'amplada de banda/CPU.
+
+Les dades de DNS es poden emmagatzemar en memòria cau en diverses
+ubicacions. Cadascuna guardarà els registres DNS durant una quantitat de
+temps establerta, determinada pel temps de vida (TTL) .
+
+\hypertarget{que-es-un-registre-dns}{%
+\section{\texorpdfstring{\textbf{Que es un registre
+DNS?}}{Que es un registre DNS?}}\label{que-es-un-registre-dns}}
+
+Els registres DNS o també conegut con \emph{arxius de zona} son
+instruccions radicades en servidors DNS autoritatius que proporcionen
+informacó sobre un domini, com l'adreça IP associada amb aquest i com
+gestionar sol·licituds dirigides a aquest domini.
+
+Aquests registres consisteixen en una sèrie de fitxers de text escrits
+en el que es coneix com a sintaxi DNS. La sintaxi DNS és simplement una
+cadena de caràcters utilitzats com a ordres que diuen al servidor DNS
+què fer.
+
+Exemple: \textbf{db.cryptosec.net} que es troba a \textbf{/etc/bind/}
+
+Tots els registres DNS tenen també un " TTL ``, que vol
+dir''time-to-live" i indica amb quina freqüència el servidor DNS
+actualitzarà aquest registre.
+
+\hypertarget{tipus-de-registres-dns}{%
+\section{\texorpdfstring{\textbf{Tipus de registres
+DNS}}{Tipus de registres DNS}}\label{tipus-de-registres-dns}}
+
+\emph{MÉS COMUNS}
+
+\begin{itemize}
+\item
+  A: Conté l'adreça IP d'un domini.
+\item
+  AAAA: Lo mateix que l'anterior pero per a Ipv6
+\item
+  CNAME: Reenvia un domini o subdominis, es un alias, no proporciona una
+  adreça IP.
+\item
+  MX: Es dirigeix a un servidor de correu electrònic.
+\item
+  TXT: Permet que un administrador pugui emmagatzemar notes de text al
+  registre. Aquests registres se solen utilitzar per a la seguretat del
+  correu electrònic.
+\item
+  NS: Emmagatzema el servidor de noms per a una entrada DNS.
+  \href{https://www.cloudflare.com/es-es/learning/dns/dns-records/dns-soa-record/}{Més
+  info}
+\item
+  SOA: State of Authority. Emmagatzema la informació de l'administrador
+  sobre un domini o zona.
+  \href{https://www.cloudflare.com/es-es/learning/dns/dns-records/dns-ns-record/}{Més
+  info}
+\item
+  SRV: Especifica un port per a serveis específics
+\item
+  PTR: Proporciona un nom de domini a cerques inverses. Resolució
+  inversa.
+\end{itemize}
+
+\emph{MÉNYS COMUNS}
+
+\begin{itemize}
+\item
+  SSHFP: Aquest registre emmagatzema les ``empremtes digitals de la clau
+  pública SSH''; SSH fa referència a ``Secure Shell'' i és un protocol
+  de xarxa xifrat que permet la comunicació segura a una xarxa insegura.
+\item
+  RP: Aquest és el registre de la ``persona responsable'' i emmagatzema
+  l'adreça de correu electrònic de la persona responsable del domini.
+\item
+  DCHID : el ``identificador DHCP'' emmagatzema informació per al
+  protocol de configuració dinàmica de host (DHCP), un protocol de xarxa
+  estandarditzat utilitzat a les xarxes IP.
+\end{itemize}
+
+\textbf{DNSSEC}
+
+\begin{itemize}
+\item
+  CAA: És el registre d'``autorització d'autoritat de certificació'';
+  permet que els propietaris d'un domini especifiquin quines autoritats
+  de certificació poden emetre certificats per a aquest domini. Si no
+  existeix cap registre CAA, aleshores qualsevol podrà emetre un
+  certificat per a aquest domini. Aquests registres també els hereten
+  els subdominis.
+\item
+  DNSKEY: El ' Registre de Clau DNS ' conté una clau pública que es fa
+  servir per verificar les signatures de l' Extensió de seguretat del
+  sistema de noms de domini (DNSSEC) .
+\item
+  CDNSKEY: És una còpia fill del registre DNSKEY destinada a
+  transferir-se a un pare.
+\item
+  CERT: El ``registre de certificats'' emmagatzema certificats de claus
+  públiques.
+\item
+  NSEC: El ``següent registre segur'' és part del DNSSEC i s'usa per
+  demostrar que un registre de recursos DNS sol·licitat no existeix.
+\item
+  RRSIG : el ``registre de recursos de signatura'' emmagatzema
+  signatures digitals utilitzades per autenticar registres de
+  conformitat amb el DNSSEC.
+\end{itemize}
+
+\hypertarget{que-es-un-dns-recursiu}{%
+\section{\texorpdfstring{\textbf{Que es un DNS
+recursiu?}}{Que es un DNS recursiu?}}\label{que-es-un-dns-recursiu}}
+
+Una cerca de DNS recursiu és quan un servidor DNS es comunica amb altres
+servidors DNS per ``trobar'' una direcció IP i retornarla al client.
+Això es diferencia d'una consulta de DNS iterativa, en la que el client
+es comunica directament amb cada servidor DNS implicat en la cerca.
+
+\hypertarget{exemple-resumit-de-dns}{%
+\section{\texorpdfstring{\textbf{Exemple resumit de
+DNS}}{Exemple resumit de DNS}}\label{exemple-resumit-de-dns}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Un usuari escriu un nom de domini: \textbf{``cryptosec.net''} en el
+  seu navegador, s'activa una \textbf{cerca de DNS}.
+\item
+  Una serie d'ordinadors en \textbf{remot coneguts} com
+  \textbf{servidors DNS} troben la \textbf{direcció IP} d'aquell
+  \textbf{domini} i la retornen a l'ordinador de l'usuari per a que
+  pugui accedir al lloc \textbf{web correcte}.
+\item
+  Diferents tipus de \textbf{servidors DNS} han de treballar
+  conjuntament per poder completar aquesta cerca de DNS.
+\item
+  Actuén:
+
+  \begin{itemize}
+  \item
+    Un solucionador o \textbf{resolver DNS}.
+  \item
+    Un servidor \textbf{Root Server} (1.1.1.1 o 8.8.8.8 per exemple).
+  \item
+    Un \textbf{servidor TLD} de DNS (de primer nivell, exemple: .net,
+    .com\ldots{}).
+  \item
+    Un servidor de noms \textbf{autoritatiu} de DNS. Conté el
+    \textbf{registre DNS}.
+  \end{itemize}
+\item
+  Pot haber un cas de \textbf{``caching''} que algun d'aquests servidors
+  pot haber emmagatzemat la respostas de la consulta durant una cerca
+  anterior, llavors el client, en lloc de recorrer i esperar molt,
+  tindrà un temps de resposta menor.
+\end{enumerate}
+
+\hypertarget{diferencia-entre-recursiuxf3-i-iteraciuxf3}{%
+\subsection{\texorpdfstring{\textbf{Diferencia entre recursió i
+iteració}}{Diferencia entre recursió i iteració}}\label{diferencia-entre-recursiuxf3-i-iteraciuxf3}}
+
+La \textbf{recursió} i la \textbf{iteració} son termes informàtics que
+descriuen dos mètodes diferents per resoldre un problema.
+
+En la \textbf{recursió}, un programa es truca a \textbf{si mateix} fins
+a que \textbf{cumpleixi} una \textbf{condició}. Mentes que la iteració
+es repeteix un conjunt d'instruccions fins que es cumpleixi la condició.
+
+Exemple: Jim ha perdut les seves claus de casa i les està buscant-la
+d'una forma sistemàtica.
+
+\begin{verbatim}
+Una solució recursiva seria que Jim no pararia de buscar les claus. Jim començarà a buscar, i si no el troba, tornarà al punt de partida per tornar a buscar-les.
+
+Una solució iterativa seria que Jim faci una cerca en una habitació durant 5 minuts i després tornaria a l'origen de les instruccions i buscaria en una altra habitació durant 5 minuts, repetiria aquest procés fins a ttrobar les claus o fins que hagi acabat la llista d'habiacions.
+\end{verbatim}
+
+En un servidor DNS que faci la \textbf{recursió} segurià consultant a
+altres servidors DNS fins que obtingui la direcció IP a la qual pugui
+retornar al client.
+
+En un servidor DNS que faci una consulta \textbf{iterativa}, cada
+consulta DNS respon \textbf{directament al client} amb una direcció per
+a que un altre servidor DNS pregunti, i el client \textbf{seguirà
+preguntant} a altres servidors DNS fins que algú d'ells responda amb la
+IP i el domini correcte.
+
+\hypertarget{iteraciuxf3---recursiuxf3-resum}{%
+\subsubsection{\texorpdfstring{\textbf{Iteració - Recursió /
+Resum:}}{Iteració - Recursió / Resum:}}\label{iteraciuxf3---recursiuxf3-resum}}
+
+El client delega una consulta a un DNS recursiu:
+
+\textbf{Recursiva}: ``Necessito la direcció IP d'aquest domini, per
+favor, trobala i no tornis a trucar-me fins que la trobis''.
+
+El client li diu al solucionador o \emph{``resolver''} de DNS:
+
+\textbf{Iterativa}: ``Necessito la direcció IP d'aquest domini. Per
+favor, dona'm la direcció següent del servidor DNS en el procés de la
+recerca per a que jo mateix la pugui trobar''.
+
+\hypertarget{advantatges-del-dns-recursiu}{%
+\subsection{\texorpdfstring{\textbf{Advantatges del DNS
+recursiu}}{Advantatges del DNS recursiu}}\label{advantatges-del-dns-recursiu}}
+
+Les consultes DNS recursives solen resoldre's més ràpid que les
+consultes iteratives. Això es degut al emmagatzematge \textbf{cache}. Un
+servidor DNs recursiu almacena en \textbf{caché} la resposta a cada
+consulta que realitza i guarda aquesta resposta final durant un temps
+determinar (TTL = Time to Live).
+
+Quan un solucionador o \emph{resolver} recursiu rep una consulta per a
+una adreça IP que tingui al seu caché, pot proporcionar ràpidament la
+resposta al caché al client sense comunicar-se amb cap altre servidor
+DNS. Servir ràpidament respostes des del caché és molt probable si a) el
+servidor DNS serveix a molts clients ob) el lloc web sol·licitat és molt
+popular.
+
+\hypertarget{desaventatges-del-dns-recursiu}{%
+\subsection{\texorpdfstring{\textbf{Desaventatges del DNS
+recursiu}}{Desaventatges del DNS recursiu}}\label{desaventatges-del-dns-recursiu}}
+
+Desafortunadament, permetrà consultes de DNS recursives en servidors DNS
+oberts creant una vulnerabilitat de seguretat, ja que aquesta
+configuració pot permetre que els atacants portin a terme atacs
+d'amplificació de DNS i d'envergament de caché de DNS .
+
+\hypertarget{servidors-dns-recursius-i-atacs-damplificaciuxf3-de-dns}{%
+\subsection{\texorpdfstring{\textbf{Servidors DNS recursius i atacs
+d'amplificació de
+DNS}}{Servidors DNS recursius i atacs d'amplificació de DNS}}\label{servidors-dns-recursius-i-atacs-damplificaciuxf3-de-dns}}
+
+En un atac d'amplificació de DNS, un atacant sol utilitzar un grup de
+màquines (que coneix com a botnet ) per enviar un gran volum de
+consultes DNS mitjançant l'ús d'una adreça IP falsificada . Una direcció
+IP falsificada és com una direcció de retorn falsa; l'atacant envia
+sol·licituds des de la seva pròpia IP, però pide que les respostes van a
+la víctima.
+
+Per agravar l'atac, l'atacant també utilitza una tècnica trucada
+amplificació, en la que la sol·licitud falsificada pide una resposta
+molt llarga. El servei víctima rebrà una allau de respostes de DNS
+llargues i no desitjades que poden interrompre o fins i tot fer els seus
+servidors. Aquest és un tipus d' atac DDoS.
+
+És com si un grup d'adolescents bromistas llamara a una pizzeria i
+pidiera cada un una docena de pizzes. Al lloc de la seva pròpia direcció
+per a la entrega, a la direcció d'un veí despres. A la víctima, que rep
+una enorme quantitat de pizzes familiars que no ha fet cap comanda,
+probablement li pertorbirà el dia.
+
+Necessiteu un servidor DNS que accepteu consultes recursives per dur a
+terme un tipus d'atac, ja que els paquets de DNS amplificats són
+respostes a consultes de DNS recursius.
+
+\hypertarget{servidors-dns-recursius-i-atacs-denvergament-de-cachuxe9-de-dns}{%
+\subsection{\texorpdfstring{\textbf{Servidors DNS recursius i atacs
+d'envergament de caché de
+DNS}}{Servidors DNS recursius i atacs d'envergament de caché de DNS}}\label{servidors-dns-recursius-i-atacs-denvergament-de-cachuxe9-de-dns}}
+
+En un atac d'enverinament de caché de DNS, quan un servidor DNS recursiu
+sol·licita una adreça IP a un altre servidor DNS, un atacant intercepta
+la sol·licitud i una resposta falsa, que sol·liciteu la direcció IP d'un
+lloc web maliciós.
+
+El servidor DNS recursiu no només enviava al client original aquesta
+adreça IP, sinó que el servidor també guarda la resposta al seu caché.
+
+Cal demanar usuari que sol·liciti una IP per al mateix nom de domini
+serà enviat al lloc web maliciós.
+
+Si es tracta d'un nom de domini i un solucionador de DNS famosos, aquest
+atac podria arribar a afectar a milles d'usuaris.
+
+En una consulta de DNS iterativa, el client pide directament la resposta
+a cada servidor DNS.
+
+Inclós si un atacant és capaç d'enviar una resposta falsificada a la
+consulta, només afectarà a un únic client, el que no mereixi el temps de
+l'atacant.
+
+\hypertarget{configuraciuxf3-dns-cryptosec}{%
+\section{\texorpdfstring{\textbf{Configuració DNS
+CryptoSEC}}{Configuració DNS CryptoSEC}}\label{configuraciuxf3-dns-cryptosec}}
+
+\hypertarget{installaciuxf3}{%
+\subsection{\texorpdfstring{\textbf{Instal·lació}}{Instal·lació}}\label{installaciuxf3}}
+
+S'instal·la amb la comanda \texttt{apt-get\ install\ bind9}, el fitxer
+de configuració es troba a \texttt{/etc/bind}.
+
+\hypertarget{el-servidor-dns-autoritatiu}{%
+\subsection{\texorpdfstring{\textbf{El servidor DNS
+Autoritatiu}}{El servidor DNS Autoritatiu}}\label{el-servidor-dns-autoritatiu}}
+
+Tindrà els registres de la zona \textbf{``cryptosec.net''}. És un
+servidor autoritari que rebrà les peticions DNS d'un forwarder.
+
+\hypertarget{arxiu-de-dopcions-de-les-zones}{%
+\subsubsection{\texorpdfstring{\textbf{Arxiu de d'opcions de les
+zones}}{Arxiu de d'opcions de les zones}}\label{arxiu-de-dopcions-de-les-zones}}
+
+El fitxer \texttt{/etc/bind/named.conf.options}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+        \ExtensionTok{//}\NormalTok{ forwarders \{}
+        \ExtensionTok{//}\NormalTok{      0.0.0.0}\KeywordTok{;}
+        \ExtensionTok{//}\NormalTok{ \};}
+
+        \ExtensionTok{/}\NormalTok{/========================================================================}
+        \ExtensionTok{//}\NormalTok{ If BIND logs error messages about the root key being expired,}
+        \ExtensionTok{//}\NormalTok{ you will need to update your keys.  See https://www.isc.org/bind-keys}
+        \ExtensionTok{/}\NormalTok{/========================================================================}
+
+        \ExtensionTok{dnssec-enable}\NormalTok{ yes}\KeywordTok{;}
+        \ExtensionTok{dnssec-validation}\NormalTok{ yes}\KeywordTok{;}
+        \ExtensionTok{dnssec-lookaside}\NormalTok{ auto}\KeywordTok{;}
+
+        \ExtensionTok{listen-on-v6}\NormalTok{ \{ any}\KeywordTok{;}\NormalTok{ \};}
+\NormalTok{\};}
+\end{Highlighting}
+\end{Shaded}
+
+Conté:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  La declaració del directori on es guardaran els arxius de zona:
+  \textbf{/etc/bind}
+\item
+  La declaració, per defecte desactivada, dels servidors de reenviament:
+  secció forwarders \{\ldots{}\}
+\end{enumerate}
+
+Si no s'utilitzen forwarders, el servidor DNS anirà als servidors arrel
+per iniciar les resolucions de les consultes que no estiguin en memòria
+cau ni a cap de les seves zones. Quan s'utilitzen servidors de
+reenviament es consultarà aquests servidors.
+
+\hypertarget{arxiu-de-dades-per-especificar-la-zona}{%
+\subsubsection{\texorpdfstring{\textbf{Arxiu de dades per especificar la
+zona}}{Arxiu de dades per especificar la zona}}\label{arxiu-de-dades-per-especificar-la-zona}}
+
+\textbf{És un servidor SOA, State of Authority}
+
+El fitxer \texttt{/etc/bind/named.conf.default-zones}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{zone} \StringTok{"cryptosec.net"}\NormalTok{ \{}
+        \BuiltInTok{type}\NormalTok{ master}\KeywordTok{;}
+        \FunctionTok{file} \StringTok{"/etc/bind/db.cryptosec.net"}\KeywordTok{;}
+\NormalTok{\};}
+\end{Highlighting}
+\end{Shaded}
+
+Cada zona (directa o inversa) tindrà:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  La declaració amb la directiva zoneon s'indica el domini o l'adreça de
+  xarxa a les zones inverses.
+\item
+  Una directiva typeindicant si és una zona mestra (escrita per
+  l'administrador) o esclava (descarregada automàticament d'un servidor
+  mestre).
+\item
+  Una directiva fileindicant el fitxer de respatller (que es trobarà a
+  /var/cache/bind)
+\end{enumerate}
+
+\hypertarget{arxiu-de-dades-per-a-una-zona-directa-cryptosec.net}{%
+\subsubsection{\texorpdfstring{\textbf{Arxiu de dades per a una zona
+directa
+``\emph{cryptosec.net}''}}{Arxiu de dades per a una zona directa ``cryptosec.net''}}\label{arxiu-de-dades-per-a-una-zona-directa-cryptosec.net}}
+
+Cada zona necessita un fitxer de dades on desar els registres de la
+zona. Per a una zona directa com \texttt{cryptosec.net} el fitxer de
+zona pot ser \texttt{/etc/bind/db.cryptosec.net} i contenir:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\VariableTok{$TTL}    \ExtensionTok{604800}
+\ExtensionTok{@}\NormalTok{       IN      SOA     cryptosec.net. mail.cryptosec.net. (}
+                              \ExtensionTok{2}         \KeywordTok{;} \ExtensionTok{Serial}
+                         \ExtensionTok{604800}         \KeywordTok{;} \ExtensionTok{Refresh}
+                          \ExtensionTok{86400}         \KeywordTok{;} \ExtensionTok{Retry}
+                        \ExtensionTok{2419200}         \KeywordTok{;} \ExtensionTok{Expire}
+                         \ExtensionTok{604800}\NormalTok{ )       ; }\ExtensionTok{Negative}\NormalTok{ Cache TTL}
+
+\ExtensionTok{@}\NormalTok{       IN      NS      cryptosec.net.}
+\ExtensionTok{@}\NormalTok{       IN      A       192.168.0.164}
+\ExtensionTok{www}\NormalTok{     IN      CNAME   cryptosec.net.}
+\NormalTok{;}\ExtensionTok{@}\NormalTok{      IN      A       10.200.243.164}
+\NormalTok{;}\ExtensionTok{@}\NormalTok{      IN      A       192.168.31.164}
+\VariableTok{$INCLUDE} \StringTok{"/etc/bind/keys/zsk/Kcryptosec.net.+007+53495.key"}
+\VariableTok{$INCLUDE} \StringTok{"/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key"}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{quote}
+NOTE: \$INCLUDE ``/etc/bind/keys/zsk/Kcryptosec.net.+007+53495.key'' /
+\$INCLUDE ``/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key'' son lés
+claus de \textbf{DNSSEC}. Vegeu la documentació de \textbf{DNSSEC}.
+\end{quote}
+
+En aquest arxiu de zona cal notar:
+
+\begin{itemize}
+\item
+  El caràcter @equival al domini que estigui definint acabat en punt.
+  Aquí \texttt{cryptosec.net.}
+\item
+  El camp \texttt{mail.cryptosec.net.} correspon al correu de contacte
+  per indicar errors a la zona i s'interpreta com
+  \texttt{cryptosec.net.}
+\item
+  És important incrementar el valor Serial cada cop que es fa una
+  modificació.
+\end{itemize}
+
+\hypertarget{el-servidor-dns-forwarder}{%
+\subsection{\texorpdfstring{\textbf{El servidor DNS
+Forwarder}}{El servidor DNS Forwarder}}\label{el-servidor-dns-forwarder}}
+
+És un servidor DNS que s'encarregarà d'encaminar les peticions DNS dels
+seus clients al SOA.
+
+\hypertarget{arxiu-de-dopcions-de-les-zones-1}{%
+\subsubsection{\texorpdfstring{\textbf{Arxiu de d'opcions de les
+zones}}{Arxiu de d'opcions de les zones}}\label{arxiu-de-dopcions-de-les-zones-1}}
+
+El fitxer \texttt{/etc/bind/named.conf.options}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+        \ExtensionTok{forwarders}\NormalTok{ \{}
+        \ExtensionTok{//}\NormalTok{ CLASE}
+                \ExtensionTok{10.200.243.164}\KeywordTok{;}
+\NormalTok{        \};}
+        \ExtensionTok{dnssec-validation}\NormalTok{ no}\KeywordTok{;}
+        \ExtensionTok{querylog}\NormalTok{ yes}\KeywordTok{;}
+        \ExtensionTok{recursion}\NormalTok{ yes}\KeywordTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+Conté:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  La declaració del directori on es guardaran els arxius de zona:
+  \textbf{/etc/bind}
+\item
+  La declaració, està activada, reenviarà els paquets al \textbf{SOA}:
+  secció forwarders \{\ldots{}\}
+\end{enumerate}
+
+\hypertarget{arxiu-de-dades-per-especificar-el-forwarding-a-la-zona-cryptosec.net}{%
+\subsubsection{\texorpdfstring{\textbf{Arxiu de dades per especificar el
+forwarding a la zona
+``\emph{cryptosec.net}''}}{Arxiu de dades per especificar el forwarding a la zona ``cryptosec.net''}}\label{arxiu-de-dades-per-especificar-el-forwarding-a-la-zona-cryptosec.net}}
+
+\textbf{És un servidor SOA, State of Authority}
+
+El fitxer \texttt{/etc/bind/named.conf.default-zones}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{zone} \StringTok{"cryptosec.net"}\NormalTok{ \{}
+        \BuiltInTok{type}\NormalTok{ forward}\KeywordTok{;}
+\ExtensionTok{//}\NormalTok{ CLASSE}
+        \ExtensionTok{forwarders}\NormalTok{ \{ 10.200.243.164}\KeywordTok{;}\NormalTok{ \};}
+\NormalTok{\};}
+\end{Highlighting}
+\end{Shaded}
+
+Cada zona (directa o inversa) tindrà:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  La declaració amb la directiva zoneon s'indica el domini o l'adreça de
+  xarxa a les zones inverses.
+\item
+  Una directiva typeindicant si és una zona mestra (escrita per
+  l'administrador) o esclava (descarregada automàticament d'un servidor
+  mestre).
+\item
+  Una directiva fileindicant el fitxer de respatller (que es trobarà a
+  /var/cache/bind)
+\end{enumerate}
+
+\hypertarget{comandes-de-verificaciuxf3}{%
+\subsection{\texorpdfstring{\textbf{Comandes de
+verificació}}{Comandes de verificació}}\label{comandes-de-verificaciuxf3}}
+
+\begin{itemize}
+\item
+  \texttt{journalctl\ -u\ named\ -f\ \&}: Mostra els logs del servei
+  Bind9 en temps real
+\item
+  \texttt{systemctl\ restart\ bind9}: Reinicia el Bind9.
+\item
+  \texttt{host\ cryptosec.net}: Petició per resoldre la zona,
+  \textbf{cryptosec.net}, obtindrem la IP.
+\item
+  \texttt{nslookup\ cryptosec.net}: Petició per resoldre la zona,
+  \textbf{cryptosec.net}, obtindrem la IP
+\item
+  \texttt{dig\ cryptosec.net}: Petició per resoldre la zona,
+  \textbf{cryptosec.net}, obtindrem la IP
+\item
+  \texttt{systemd-resolve\ -\/-status}: Verificació del status actual
+  del DNS.
+\item
+  \texttt{resolvectl\ query\ cryptosec.net}: Petició per resoldre la
+  zona, \textbf{cryptosec.net}, obtindrem la IP
+\end{itemize}
+
+\hypertarget{el-client-dns}{%
+\subsection{\texorpdfstring{\textbf{El client
+DNS}}{El client DNS}}\label{el-client-dns}}
+
+És el component que delega una consulta o consulta directament a
+servidors DNS, en la cerca d'un registre DNS a la qual vol accedir.
+
+Utilitza el fitxer /etc/resolv.conf com a configuració del
+\emph{resolver}.
+
+La seva funció és millorar el rendiment de les resolucions mitjançant
+memòria cau. Quan una resolució provoca una fallada de memòria cau
+s'utilitzarà el DNS extern del qual probablement s'haurà obtingut la IP
+mitjançant una concessió DHCP.
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/380d1bbd9e6b8545103cf8a27a7508fdf59365eb.jpg}
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/38cd9b267193da1c285e6fee5b20196a24b86ed4.jpg}
+
+\hypertarget{resoluciuxf3-de-noms-al-client}{%
+\subsection{\texorpdfstring{\textbf{Resolució de noms al
+client}}{Resolució de noms al client}}\label{resoluciuxf3-de-noms-al-client}}
+
+Quan un client vol comunicarśe amb una altra de la que només conéix el
+FQDN (\emph{Fully Qualified Domain Name} = www.cryptosec.net), primer
+seria obtenir l'adreça IP amb el nom de domini. Després fa el request
+HTTP per poder accedir-hi.
+
+Podem utilitzar el fitxer \textbf{/etc/hosts} com a resolver local o be
+als servidors DNS establertes en \textbf{/etc/resolv.conf}
+
+\hypertarget{exemple-de-etchosts}{%
+\subsubsection{\texorpdfstring{\textbf{Exemple de
+/etc/hosts}}{Exemple de /etc/hosts}}\label{exemple-de-etchosts}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{127.0.0.1}\NormalTok{ localhost }
+\ExtensionTok{82.151.203.129}\NormalTok{ iespuigcastellar.xeill.net }
+\ExtensionTok{145.97.39.155}\NormalTok{ es.wikipedia.org }
+\ExtensionTok{192.168.3.1}\NormalTok{ cryptosec.net}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exemple-de-etcresolv.conf}{%
+\subsubsection{\texorpdfstring{\textbf{Exemple de
+/etc/resolv.conf}}{Exemple de /etc/resolv.conf}}\label{exemple-de-etcresolv.conf}}
+
+Quan s'utilitza el client DNS per obtenir l'adreça IP d'un nom de
+domini, cal examinar el fitxer de configuració \textbf{/etc/resolv.conf}
+per obtenir:
+
+\begin{itemize}
+\item
+  La llista de servidors DNS a utilitzar (un per línia precedit per la
+  directiva nameserver)
+\item
+  El domini a utilitzar per a les consultes que no són un FQDN indicat
+  per la directiva search
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Recerca de cryptosec.net }
+\ExtensionTok{nameserver}\NormalTok{ 192.168.3.1}
+\ExtensionTok{nameserver}\NormalTok{ 10.200.244.10}
+\ExtensionTok{search}\NormalTok{ cryptosec.net}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{el-servei-systemd-resolved-i-la-comanda-resolvectl}{%
+\section{\texorpdfstring{\textbf{El servei systemd-resolved i la comanda
+resolvectl}}{El servei systemd-resolved i la comanda resolvectl}}\label{el-servei-systemd-resolved-i-la-comanda-resolvectl}}
+
+La majoria de les distribucions actuals de GNU/Linux utilitzen
+systemdaixí que solen executar el servei systemd-resolvedcom a stub DNS
+local de la màquina. L'avantatge dutilitzar \textbf{systemd-resolved} és
+que les aplicacions trobaran un millor rendiment gràcies a la seva
+memòria cau.
+
+El fitxer \textbf{/etc/resolv.conf} pot ser:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# See man:systemd-resolved.service(8) for details about the supported modes of}
+\CommentTok{# operation for /etc/resolv.conf.}
+
+\ExtensionTok{nameserver}\NormalTok{ 127.0.0.53}
+\ExtensionTok{options}\NormalTok{ edns0 trust-ad}
+\ExtensionTok{search}\NormalTok{ cryptosec.net}
+\end{Highlighting}
+\end{Shaded}
+
+Aquí es pot observar:
+
+\begin{itemize}
+\item
+  El comentari adverteix que és un fitxer generat per
+  \textbf{systemd-resolved}.
+\item
+  Com a servidor DNS s'ha configurat l'adreça 127.0.0.53 que només és
+  accessible des del propi equip.
+\end{itemize}
+
+L'ordre \texttt{resolvectl} permet:
+
+\begin{itemize}
+\item
+  Mostrar informació sobre la configuració: \textbf{resolvectl status}
+\item
+  Mostra estadístiques sobre els encerts de memòria cau:
+  \textbf{resolvectl statistics}
+\item
+  Mostra els DNS utilitzats: \textbf{resolvectl dns}
+\item
+  Fer resolucions DNS: resolvectl query \textbf{cryptosec.net}
+\end{itemize}
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/62e1cdb7fb8dcb3748a3c5c96634168cf1d3f73a.jpg}
+
+\hypertarget{com-donar-suport-a-consultes-de-dns-ruxe0pides-i-segures}{%
+\section{\texorpdfstring{\textbf{Com donar suport a consultes de DNS
+ràpides i
+segures}}{Com donar suport a consultes de DNS ràpides i segures}}\label{com-donar-suport-a-consultes-de-dns-ruxe0pides-i-segures}}
+
+La solució es DNSSEC.
+
+Consulteu la documentació més extensa i adherida de \textbf{DNSSEC}.
+
+\includegraphics{./tex2pdf.-0a4f409d8d6fb9b0/229116373a21fc0addbdb8caacb00b44ce90d3f2.jpg}
+
+\hypertarget{glossari-de-termes-de-les-configuracions-de-bind9}{%
+\section{\texorpdfstring{\textbf{Glossari de termes de les
+configuracions de
+BIND9}}{Glossari de termes de les configuracions de BIND9}}\label{glossari-de-termes-de-les-configuracions-de-bind9}}
+
+\texttt{A} = stableix la correspondència d'un nom a una adreça IP.
+
+\texttt{CNAME} = Estableix un àlies per a un nom.
+
+\texttt{MX} = Especifica un servidor d'intercanvi de correu.
+
+\texttt{NS} = Especifica un servidor de noms per al domini.
+
+\texttt{PTR} = Estableix la correspondència d'una adreça IP a un nom.
+
+\texttt{SOA} = Declara el servidor de noms que té més autoritat per a la
+zona.
+
+\hypertarget{glossari-de-termes-de-tipus-de-servidors-de-bind9}{%
+\section{\texorpdfstring{\textbf{Glossari de termes de tipus de
+servidors de
+BIND9}}{Glossari de termes de tipus de servidors de BIND9}}\label{glossari-de-termes-de-tipus-de-servidors-de-bind9}}
+
+\texttt{Recursive} = El servidor que realitza diverses consultes fins a
+obtenir una resposta completa.
+
+\texttt{Secondary} = El servidor DNS que rep la base de dades de zona
+d'un altre servidor.
+
+\texttt{Forward} = El servidor que reenvia les consultes a altres
+servidors.
+
+\texttt{Authoritative} = El servidor que proporciona respostes sobre les
+zones que té configurades.
+
+\texttt{Primary} = El servidor DNS que conté els fitxers de zona (la
+base de dades original).
+
+\hypertarget{glossari-de-termes-seongs-cada-camp-del-soa-amb-la-seva-funciuxf3-bind9}{%
+\section{\texorpdfstring{\textbf{Glossari de termes seongs cada camp del
+SOA amb la seva funció
+(Bind9)}}{Glossari de termes seongs cada camp del SOA amb la seva funció (Bind9)}}\label{glossari-de-termes-seongs-cada-camp-del-soa-amb-la-seva-funciuxf3-bind9}}
+
+\texttt{time-to-retry} = Temps que un servidor secundari deixa passar
+abans de tornar a intentar una transferència de zona.
+
+\texttt{serial-number} = Utilitzat pels servidors secundaris per a
+detectar els canvis a la base de dades.
+
+\texttt{nxdomain-ttl} = El temps que els solucionadors han de guardar a
+la memòria cau una resposta de domini o host inexistent..
+
+\texttt{time-to-expire} = Si passat aquest temps, un servidor secundari
+no aconsegueix realitzar la transferència de zona, ha de deixar de
+considerar-la vàlida.
+
+\hypertarget{exemples-bind9-configuracions}{%
+\section{\texorpdfstring{\textbf{Exemples BIND9
+(Configuracions)}}{Exemples BIND9 (Configuracions)}}\label{exemples-bind9-configuracions}}
+
+\hypertarget{glue-record}{%
+\subsection{\texorpdfstring{\textbf{GLUE
+RECORD}}{GLUE RECORD}}\label{glue-record}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# /etc/bind/named.conf.default-zones}
+
+\ExtensionTok{zone} \StringTok{"zone1.com"}\NormalTok{ \{}
+    \BuiltInTok{type}\NormalTok{ primary}\KeywordTok{;}
+    \FunctionTok{file} \StringTok{"/etc/bind/db.zone1.com"}\KeywordTok{;}
+\NormalTok{\};}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# /etc/bind/db.zone1.com}
+
+\ExtensionTok{@}\NormalTok{   SOA ns  admin   1700010100 20m 3m 2w 1h}
+    \ExtensionTok{NS}\NormalTok{  ns}
+    \ExtensionTok{A}\NormalTok{   1.1.1.1}
+\end{Highlighting}
+\end{Shaded}
+
+Què respondra el servidor a la següent consulta?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{user@debian}\NormalTok{:~$ host zone1.com}
+\end{Highlighting}
+\end{Shaded}
+
+No es pot carregar la Zona ja que falta el GLUE RECORD:
+
+ns A 2.2.2.2
+
+La resposta correcta és: \texttt{SERVFAIL}
+
+\hypertarget{generate}{%
+\subsection{\texorpdfstring{\textbf{\$GENERATE}}{\$GENERATE}}\label{generate}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# /etc/bind/named.conf.default-zones}
+
+\ExtensionTok{zone} \StringTok{"server.tld"}\NormalTok{ \{}
+    \BuiltInTok{type}\NormalTok{ primary}\KeywordTok{;}
+    \FunctionTok{file} \StringTok{"/etc/bind/db.server.tld"}\KeywordTok{;}
+\NormalTok{\};}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# /etc/bind/db.server.tld}
+
+\ExtensionTok{@}\NormalTok{        SOA    ns    admin    1700010100 20m 3m 2w 1h}
+         \ExtensionTok{NS}\NormalTok{     ns}
+\ExtensionTok{ns}\NormalTok{       A      192.168.122.1}
+\VariableTok{$GENERATE} \ExtensionTok{1-4}\NormalTok{ database$ A 1.1.$.1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{user@debian}\NormalTok{:~$ host database1.server.tld}
+\ExtensionTok{database1.server.tld}\NormalTok{ has address 1.1.1.1}
+\ExtensionTok{user@debian}\NormalTok{:~$ host database2.server.tld}
+\ExtensionTok{database2.server.tld}\NormalTok{ has address 1.1.2.1}
+\ExtensionTok{user@debian}\NormalTok{:~$ host database3.server.tld}
+\ExtensionTok{database3.server.tld}\NormalTok{ has address 1.1.3.1}
+\ExtensionTok{user@debian}\NormalTok{:~$ host database4.server.tld}
+\ExtensionTok{database4.server.tld}\NormalTok{ has address 1.1.4.1}
+\ExtensionTok{user@debian}\NormalTok{:~$ host database5.server.tld}
+\ExtensionTok{Host}\NormalTok{ database5.server.tld not found: 3(NXDOMAIN)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{resoluciuxf3-inversa}{%
+\subsection{\texorpdfstring{\textbf{Resolució
+inversa}}{Resolució inversa}}\label{resoluciuxf3-inversa}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# /etc/bind/named.conf.default-zones}
+
+\ExtensionTok{zone} \StringTok{"5.43.IN-ADDR.ARPA"}\NormalTok{ \{}
+    \BuiltInTok{type}\NormalTok{ primary}\KeywordTok{;}
+    \FunctionTok{file} \StringTok{"/etc/bind/db.5.43.IN-ADDR.ARPA"}\KeywordTok{;}
+\NormalTok{\};}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# /etc/bind/db.5.43.IN-ADDR.ARPA}
+
+\ExtensionTok{@}\NormalTok{       SOA ns  admin   1700010100 20m 3m 2w 1h}
+        \ExtensionTok{NS}\NormalTok{  ns}
+\ExtensionTok{ns}\NormalTok{      A   192.168.122.1}
+\ExtensionTok{78.202}\NormalTok{      PTR host.tld.}
+\end{Highlighting}
+\end{Shaded}
+
+Quina adreça IP es resoldrà inversament al nom host.tld?
+\texttt{43.5.202.78}
+
+\hypertarget{bibliografia}{%
+\section{\texorpdfstring{\textbf{Bibliografia}}{Bibliografia}}\label{bibliografia}}
+
+\begin{itemize}
+\tightlist
+\item
+  https://www.cloudflare.com/learning/dns/dns-over-tls/
+\item
+  https://www.cloudflare.com/es-es/learning/dns/what-is-dns/
+\item
+  https://elpuig.xeill.net/Members/vcarceler/c1/didactica/apuntes/ud4/na8
+\item
+  https://www.cloudflare.com/learning/dns/what-is-dns/
+\item
+  https://www.digival.es/blog/que-son-las-dns-y-para-que-sirven/
+\item
+  https://www.hostinger.es/tutoriales/que-es-dns
+\item
+  https://www.webempresa.com/hosting/que-son-dns.html
+\item
+  https://dinahosting.com/ayuda/que-es-un-servidor-dns/
+\item
+  https://es.wikipedia.org/wiki/Sistema\_de\_nombres\_de\_dominio
+\item
+  https://www.csuc.cat/ca/serveis/secundaris-i-repliques-de-dns
+\item
+  https://ca.eyewated.com/que-es-dns-domain-name-system/
+\item
+  https://ca.theastrologypage.com/dns-record
+\item
+  http://acacha.org/mediawiki/Servidor\_DNS\#.Yoj9sKjP1PY
+\end{itemize}
+
+\end{document}

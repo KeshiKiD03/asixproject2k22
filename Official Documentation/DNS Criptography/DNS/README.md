@@ -26,34 +26,103 @@
 
 # __Index__
 
-+ **DNS**: [--> readME <--]()
++ **Que es el DNS?**: [--> readME <--](#que-es-el-dns)
 
-+ **DNSSEC**: [--> readME <--]()
++ **Com funciona el DNS**: [--> readME <--](#com-funciona-el-dns)
 
-+ **DNS**: [--> readME <--]()
++ **Tipus de DNS "4 servidors DNS implicats en la càrrega d'una pàgina web"**: [--> readME <--](#tipus-de-dns-"4-servidors-dns-implicats-en-la-càrrega-duna-pàgina-web")
 
-+ **DNSSEC**: [--> readME <--]()
+    + **Resolver de DNS Recursiu**: [--> readME <--](#resolver-de-dns-recursiu)
 
-+ **DNS**: [--> readME <--]()
+    + **Root Servers**: [--> readME <--](#root-servers)
 
-+ **DNSSEC**: [--> readME <--]()
+    + **Servidor DNS - TLD**: [--> readME <--](#servidor-dns---tld)
 
-+ **DNS**: [--> readME <--]()
+    + **Servidor DNS Authoritative**: [--> readME <--](#servidor-dns-authoritative)
 
-+ **DNSSEC**: [--> readME <--]()
+    + **Diferencia entre "Authoritative DNS Server" i "Recursive DNS Resolver"**: [--> readME <--](#diferencia-entre-"authoritative-dns-server"-i-"recursive-dns-resolver")
 
-+ **DNS**: [--> readME <--]()
+    + **Recursive DNS Resolver**: [--> readME <--](#recursive-dns-resolver)
 
-+ **DNSSEC**: [--> readME <--]()
+    + **Authoritative DNS Server**: [--> readME <--](#authoritative-dns-server)
 
-+ **DNS**: [--> readME <--]()
++ **Procediment per fer un "lookup" de DNS**: [--> readME <--](#procediment-per-fer-un-"lookup"-de-dns)
 
-+ **DNSSEC**: [--> readME <--]()
+   + **Els 8 passos d'un "lookup" de DNS**: [--> readME <--](#els-8-passos-dun-"lookup"-de-dns)
 
-+ **DNS**: [--> readME <--]()
++ **Què és un _"resolver"_ de DNS**: [--> readME <--](#què-és-un-"resolver"-de-dns)
 
-+ **DNSSEC**: [--> readME <--]()
++ **Tipus de consultes DNS**: [--> readME <--](#tipus-de-consultes-dns)
 
+   + **3 tipus de consultes DNS**: [--> readME <--](#3-tipus-de-consultes-dns)
+
++ **Que es el emmagatzematge en caché de DNS?**: [--> readME <--](#que-es-el-emmagatzematge-en-caché-de-dns)
+
++ **Que es un registre DNS?**: [--> readME <--](#que-es-un-registre-dns)
+
++ **Tipus de registres DNS**: [--> readME <--](#tipus-de-registres-dns)
+
++ **Que es un DNS recursiu?**: [--> readME <--](#que-es-un-dns-recursiu)
+
++ **Exemple resumit de DNS**: [--> readME <--](#exemple-resumit-de-dns)
+
+   + **Diferencia entre recursió i iteració**: [--> readME <--](#diferencia-entre-recursió-i-iteració)     
+   
+       + **Iteració - Recursió / Resum**: [--> readME <--](#iteració---recursió--resum)
+
+   + **Advantatges del DNS recursiu**: [--> readME <--](#advantatges-del-dns-recursiu) 
+
+   + **Desaventatges del DNS recursiu**: [--> readME <--](#desaventatges-del-dns-recursiu)      
+
+   + **Servidors DNS recursius i atacs d'amplificació de DNS**: [--> readME <--](#servidors-dns-recursius-i-atacs-damplificació-de-dns)   
+
+   + **Servidors DNS recursius i atacs d'enverinament de caché de DNS**: [--> readME <--](#servidors-dns-recursius-i-atacs-denvergament-de-caché-de-dns)   
+
++ **Configuració DNS CryptoSEC**: [--> readME <--](#configuració-dns-cryptosec)   
+
+   + **Instal·lació**: [--> readME <--](#installació)  
+
+   + **El servidor DNS Autoritatiu**: [--> readME <--](#el-servidor-dns-autoritatiu)  
+
+      + **Arxiu de d'opcions de les zones**: [--> readME <--](#arxiu-de-dopcions-de-les-zones)  
+
+      + **Arxiu de dades per a una zona directa "_cryptosec.net_**: [--> readME <--](#arxiu-de-dades-per-a-una-zona-directa-"cryptosecnet")  
+
+   + **El servidor DNS Forwarder**: [--> readME <--](#el-servidor-dns-forwarder)  
+
+      + **Arxiu de d'opcions de les zones**: [--> readME <--](#arxiu-de-dopcions-de-les-zones-1)  
+
+      + **Arxiu de dades per especificar el forwarding a la zona "_cryptosec.net_**: [--> readME <--](#arxiu-de-dades-per-especificar-el-forwarding-a-la-zona-"cryptosecnet")  
+
+   + **Comandes de verificació**: [--> readME <--](#comandes-de-verificació)  
+
+   + **El client DNS**: [--> readME <--](#el-client-dns)  
+
+   + **Resolució de noms al client**: [--> readME <--](#resolució-de-noms-al-client)  
+
+      + **Exemple de /etc/hosts**: [--> readME <--](#exemple-de-etchosts)  
+
+      + **Exemple de /etc/resolv.conf**: [--> readME <--](#exemple-de-etcresolvconf) 
+
++ **El servei systemd-resolved i la comanda resolvectl**: [--> readME <--](#el-servei-systemd-resolved-i-la-comanda-resolvectl) 
+
++ **Com donar suport a consultes de DNS ràpides i segures**: [--> readME <--](#com-donar-suport-a-consultes-de-dns-ràpides-i-segures) 
+
++ **Glossari de termes de les configuracions de BIND9**: [--> readME <--](#glossari-de-termes-de-les-configuracions-de-bind9) 
+
++ **Glossari de termes de tipus de servidors de BIND9**: [--> readME <--](#glossari-de-termes-de-tipus-de-servidors-de-bind9) 
+
++ **Glossari de termes seongs cada camp del SOA amb la seva funció (Bind9)**: [--> readME <--](#glossari-de-termes-seongs-cada-camp-del-soa-amb-la-seva-funció-bind9) 
+
++ **Exemples BIND9 (Configuracions)**: [--> readME <--](#exemples-bind9-configuracions) 
+
+   + **GLUE RECORD**: [--> readME <--](#glue-record)  
+
+   + **$GENERATE**: [--> readME <--](#generate)  
+
+   + **Resolució inversa**: [--> readME <--](#resolució-inversa)  
+
++ **Bibliografia**: [--> readME <--](#bibliografia) 
 
 <br>
 <br>
@@ -490,7 +559,6 @@ Inclós si un atacant és capaç d'enviar una resposta falsificada a la consulta
 <br>
 <br>
 <br>
-<br>
 
 # __Configuració DNS CryptoSEC__
 <br>
@@ -503,16 +571,23 @@ Inclós si un atacant és capaç d'enviar una resposta falsificada a la consulta
 
 S'instal·la amb la comanda `apt-get install bind9`, el fitxer de configuració es troba a `/etc/bind`.
 
+<br>
+<br>
+<br>
 
 ## __El servidor DNS Autoritatiu__
 
 Tindrà els registres de la zona __"cryptosec.net"__. És un servidor autoritari que rebrà les peticions DNS d'un forwarder.
 
+<br>
+<br>
+<br>
+
 ### __Arxiu de d'opcions de les zones__
 
 El fitxer `/etc/bind/named.conf.options`.
 
-```
+```bash
         // forwarders {
         //      0.0.0.0;
         // };
@@ -538,13 +613,17 @@ Conté:
 
 Si no s'utilitzen forwarders, el servidor DNS anirà als servidors arrel per iniciar les resolucions de les consultes que no estiguin en memòria cau ni a cap de les seves zones. Quan s'utilitzen servidors de reenviament es consultarà aquests servidors. 
 
+<br>
+<br>
+<br>
+
 ### __Arxiu de dades per especificar la zona__
 
 __És un servidor SOA, State of Authority__
 
 El fitxer `/etc/bind/named.conf.default-zones`:
 
-```
+```bash
 zone "cryptosec.net" {
         type master;
         file "/etc/bind/db.cryptosec.net";
@@ -559,11 +638,15 @@ Cada zona (directa o inversa) tindrà:
 
 3. Una directiva fileindicant el fitxer de respatller (que es trobarà a /var/cache/bind)
 
+<br>
+<br>
+<br>
+
 ### __Arxiu de dades per a una zona directa "_cryptosec.net_"__
 
 Cada zona necessita un fitxer de dades on desar els registres de la zona. Per a una zona directa com `cryptosec.net` el fitxer de zona pot ser `/etc/bind/db.cryptosec.net`  i contenir: 
 
-```
+```bash
 $TTL    604800
 @       IN      SOA     cryptosec.net. mail.cryptosec.net. (
                               2         ; Serial
@@ -590,52 +673,54 @@ En aquest arxiu de zona cal notar:
 * El camp `mail.cryptosec.net.` correspon al correu de contacte per indicar errors a la zona i s'interpreta com `cryptosec.net.`
     
 * És important incrementar el valor Serial cada cop que es fa una modificació.
+
+<br>
+<br>
+<br>
 
 ## __El servidor DNS Forwarder__
 
 És un servidor DNS que s'encarregarà d'encaminar les peticions DNS dels seus clients al SOA.
 
+<br>
+<br>
+<br>
 
 ### __Arxiu de d'opcions de les zones__
 
 El fitxer `/etc/bind/named.conf.options`.
 
-```
-        // forwarders {
-        //      0.0.0.0;
-        // };
-
-        //========================================================================
-        // If BIND logs error messages about the root key being expired,
-        // you will need to update your keys.  See https://www.isc.org/bind-keys
-        //========================================================================
-
-        dnssec-enable yes;
-        dnssec-validation yes;
-        dnssec-lookaside auto;
-
-        listen-on-v6 { any; };
-};
+```bash
+        forwarders {
+        // CLASE
+                10.200.243.164;
+        };
+        dnssec-validation no;
+        querylog yes;
+        recursion yes;
 ```
 
 Conté:
 
 1. La declaració del directori on es guardaran els arxius de zona: __/etc/bind__
 
-2. La declaració, per defecte desactivada, dels servidors de reenviament: secció forwarders {...}
+2. La declaració, està activada, reenviarà els paquets al __SOA__: secció forwarders {...}
 
-Si no s'utilitzen forwarders, el servidor DNS anirà als servidors arrel per iniciar les resolucions de les consultes que no estiguin en memòria cau ni a cap de les seves zones. Quan s'utilitzen servidors de reenviament es consultarà aquests servidors. 
+<br>
+<br>
+<br>
 
-### __Arxiu de dades per especificar la zona__
+### __Arxiu de dades per especificar el forwarding a la zona "_cryptosec.net_"__
 
 __És un servidor SOA, State of Authority__
 
 El fitxer `/etc/bind/named.conf.default-zones`:
 
-```
+```bash
 zone "cryptosec.net" {
-        type master;
-        file "/etc/bind/db.cryptosec.net";
+        type forward;
+// CLASSE
+        forwarders { 10.200.243.164; };
 };
 ```
 
@@ -647,37 +732,9 @@ Cada zona (directa o inversa) tindrà:
 
 3. Una directiva fileindicant el fitxer de respatller (que es trobarà a /var/cache/bind)
 
-### __Arxiu de dades per a una zona directa "_cryptosec.net_"__
-
-Cada zona necessita un fitxer de dades on desar els registres de la zona. Per a una zona directa com `cryptosec.net` el fitxer de zona pot ser `/etc/bind/db.cryptosec.net`  i contenir: 
-
-```
-$TTL    604800
-@       IN      SOA     cryptosec.net. mail.cryptosec.net. (
-                              2         ; Serial
-                         604800         ; Refresh
-                          86400         ; Retry
-                        2419200         ; Expire
-                         604800 )       ; Negative Cache TTL
-
-@       IN      NS      cryptosec.net.
-@       IN      A       192.168.0.164
-www     IN      CNAME   cryptosec.net.
-;@      IN      A       10.200.243.164
-;@      IN      A       192.168.31.164
-$INCLUDE "/etc/bind/keys/zsk/Kcryptosec.net.+007+53495.key"
-$INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key"
-```
-
-> NOTE: $INCLUDE "/etc/bind/keys/zsk/Kcryptosec.net.+007+53495.key" / $INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key" son lés claus de __DNSSEC__. Vegeu la documentació de __DNSSEC__.
-
-En aquest arxiu de zona cal notar:
-
-* El caràcter @equival al domini que estigui definint acabat en punt. Aquí `cryptosec.net.`
-    
-* El camp `mail.cryptosec.net.` correspon al correu de contacte per indicar errors a la zona i s'interpreta com `cryptosec.net.`
-    
-* És important incrementar el valor Serial cada cop que es fa una modificació.
+<br>
+<br>
+<br>
 
 ## __Comandes de verificació__
 
@@ -695,6 +752,10 @@ En aquest arxiu de zona cal notar:
 
 + ``resolvectl query cryptosec.net``: Petició per resoldre la zona, __cryptosec.net__, obtindrem la IP
 
+<br>
+<br>
+<br>
+
 ## __El client DNS__
 
 És el component que delega una consulta o consulta directament a servidors DNS, en la cerca d'un registre DNS a la qual vol accedir.
@@ -705,20 +766,34 @@ La seva funció és millorar el rendiment de les resolucions mitjançant memòri
 
 ![](https://603168-1953132-raikfcquaxqncofqfm.stackpathdns.com/wp-content/images/dns_process.jpg)
 
+<br>
+<br>
+<br>
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%208.45.44%20PM.jpeg?raw=true)
+
 ## __Resolució de noms al client__
 
 Quan un client vol comunicarśe amb una altra de la que només conéix el FQDN (_Fully Qualified Domain Name_ = www.cryptosec.net), primer seria obtenir l'adreça IP amb el nom de domini. Després fa el request HTTP per poder accedir-hi.
 
 Podem utilitzar el fitxer __/etc/hosts__ com a resolver local o be als servidors DNS establertes en __/etc/resolv.conf__
 
+<br>
+<br>
+<br>
+
 ### __Exemple de /etc/hosts__
 
-```
+```bash
 127.0.0.1 localhost 
 82.151.203.129 iespuigcastellar.xeill.net 
 145.97.39.155 es.wikipedia.org 
 192.168.3.1 cryptosec.net
 ```
+
+<br>
+<br>
+<br>
 
 ### __Exemple de /etc/resolv.conf__
 
@@ -728,12 +803,16 @@ Quan s'utilitza el client DNS per obtenir l'adreça IP d'un nom de domini, cal e
 
 * El domini a utilitzar per a les consultes que no són un FQDN indicat per la directiva search
 
-```
+```bash
 # Recerca de cryptosec.net 
 nameserver 192.168.3.1
 nameserver 10.200.244.10
 search cryptosec.net
 ```
+
+<br>
+<br>
+<br>
 
 # __El servei systemd-resolved i la comanda resolvectl__
 
@@ -741,61 +820,42 @@ La majoria de les distribucions actuals de GNU/Linux utilitzen systemdaixí que 
 
 El fitxer __/etc/resolv.conf__ pot ser:
 
-```
-usuari@laika:~$ cat /etc/resolv.conf  
- # Aquest fitxer està gestionat per man:systemd-resolved(8). No editeu. 
- # 
- # Aquest és un fitxer resolv.conf dinàmic per connectar clients locals a 
- # Resolució interna de talons DNS de systemd resolt. Aquest fitxer ho enumera tots 
- # dominis de cerca configurats. 
- # 
- # Executeu "resolvectl status" per veure detalls sobre els servidors DNS d'enllaç ascendent 
- # en ús actualment. 
- # 
- # Els programes de tercers no han d'accedir directament a aquest fitxer, sinó només a través de 
- # enllaç simbòlic a /etc/resolv.conf. Per gestionar man:resolv.conf(5) d'una manera diferent, 
- # substituïu aquest enllaç simbòlic per un fitxer estàtic o un enllaç simbòlic diferent. 
- # 
- # Vegeu man:systemd-resolved.service(8) per obtenir detalls sobre els modes admesos de 
- # operació per a /etc/resolv.conf. 
+```bash
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
 
- servidor de noms 127.0.0.53 
- opcions edns0 
- usuari@laika:~$ 
+nameserver 127.0.0.53
+options edns0 trust-ad
+search cryptosec.net
 ```
 
 Aquí es pot observar:
 
-+    El comentari adverteix que és un fitxer generat per systemd-resolved.
++    El comentari adverteix que és un fitxer generat per __systemd-resolved__.
 
-+    Com a servidor DNS s'ha configurat l'adreça 127.0.0.53que només és accessible des del propi equip.
++    Com a servidor DNS s'ha configurat l'adreça 127.0.0.53 que només és accessible des del propi equip.
 
 L'ordre `resolvectl` permet:
 
-+    Mostrar informació sobre la configuració: resolvectl status
++    Mostrar informació sobre la configuració: __resolvectl status__
 
-+    Mostra estadístiques sobre els encerts de memòria cau: resolvectl statistics
++    Mostra estadístiques sobre els encerts de memòria cau: __resolvectl statistics__
 
-+    Mostra els DNS utilitzats: resolvectl dns
++    Mostra els DNS utilitzats: __resolvectl dns__
 
-+    Fer resolucions DNS: resolvectl query ru.wikipedia.org
++    Fer resolucions DNS: resolvectl query __cryptosec.net__
 
-
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%205.19.09%20PM.jpeg?raw=true)
 
 # __Com donar suport a consultes de DNS ràpides i segures__
 
 La solució es DNSSEC.
 
-Consulteu la documentació adherida de DNSSEC.
+Consulteu la documentació més extensa i adherida de __DNSSEC__.
 
-# __DNS per TLS vs DNS per HTTPS --> DNS Sergur__
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%205.10.43%20PM.jpeg?raw=true)
 
-Link: https://www.cloudflare.com/learning/dns/dns-over-tls/
-
-https://www.cloudflare.com/learning/dns/dns-over-tls/
-
-
-# Glossari de termes de les configuracions de BIND9
+# __Glossari de termes de les configuracions de BIND9__
 
 `A` = stableix la correspondència d'un nom a una adreça IP.
 
@@ -809,7 +869,7 @@ https://www.cloudflare.com/learning/dns/dns-over-tls/
 
 `SOA` = Declara el servidor de noms que té més autoritat per a la zona.
 
-# Glossari de termes de tipus de servidors de BIND9
+# __Glossari de termes de tipus de servidors de BIND9__
 
 `Recursive` = El servidor que realitza diverses consultes fins a obtenir una resposta completa.
 
@@ -821,7 +881,7 @@ https://www.cloudflare.com/learning/dns/dns-over-tls/
 
 `Primary` = El servidor DNS que conté els fitxers de zona (la base de dades original).
 
-# Glossari de termes seongs cada camp del SOA amb la seva funció (Bind9)
+# __Glossari de termes seongs cada camp del SOA amb la seva funció (Bind9)__
 
 `time-to-retry` = Temps que un servidor secundari deixa passar abans de tornar a intentar una transferència de zona.
 
@@ -833,11 +893,11 @@ https://www.cloudflare.com/learning/dns/dns-over-tls/
 
 
 
-# Exemples BIND9 (Configuracions)
+# __Exemples BIND9 (Configuracions)__
 
-## GLUE RECORD
+## __GLUE RECORD__
 
-```
+```bash
 # /etc/bind/named.conf.default-zones
 
 zone "zone1.com" {
@@ -845,7 +905,7 @@ zone "zone1.com" {
     file "/etc/bind/db.zone1.com";
 };
 ```
-```
+```bash
 # /etc/bind/db.zone1.com
 
 @	SOA	ns	admin	1700010100 20m 3m 2w 1h
@@ -866,9 +926,9 @@ ns    A    2.2.2.2
 
 La resposta correcta és: `SERVFAIL`
 
-## $GENERATE
+## __$GENERATE__
 
-```
+```bash
 # /etc/bind/named.conf.default-zones
 
 zone "server.tld" {
@@ -878,7 +938,7 @@ zone "server.tld" {
 
 ```
 
-```
+```bash
 # /etc/bind/db.server.tld
 
 @        SOA    ns    admin    1700010100 20m 3m 2w 1h
@@ -889,7 +949,7 @@ $GENERATE 1-4 database$ A 1.1.$.1
 ```
 
 
-```
+```bash
 user@debian:~$ host database1.server.tld
 database1.server.tld has address 1.1.1.1
 user@debian:~$ host database2.server.tld
@@ -902,9 +962,9 @@ user@debian:~$ host database5.server.tld
 Host database5.server.tld not found: 3(NXDOMAIN)
 ```
 
-## Resolució inversa
+## __Resolució inversa__
 
-```
+```bash
 # /etc/bind/named.conf.default-zones
 
 zone "5.43.IN-ADDR.ARPA" {
@@ -913,7 +973,7 @@ zone "5.43.IN-ADDR.ARPA" {
 };
 ```
 
-```
+```bash
 # /etc/bind/db.5.43.IN-ADDR.ARPA
 
 @		SOA	ns	admin	1700010100 20m 3m 2w 1h
@@ -926,12 +986,17 @@ ns		A	192.168.122.1
 Quina adreça IP es resoldrà inversament al nom host.tld? `43.5.202.78`
 
 
-# Pràctica DNS, exemple feta a classe:
-
-
-
-# Bibliografia
+# __Bibliografia__
 - https://www.cloudflare.com/learning/dns/dns-over-tls/
 - https://www.cloudflare.com/es-es/learning/dns/what-is-dns/
 - https://elpuig.xeill.net/Members/vcarceler/c1/didactica/apuntes/ud4/na8
 - https://www.cloudflare.com/learning/dns/what-is-dns/
+- https://www.digival.es/blog/que-son-las-dns-y-para-que-sirven/
+- https://www.hostinger.es/tutoriales/que-es-dns
+- https://www.webempresa.com/hosting/que-son-dns.html
+- https://dinahosting.com/ayuda/que-es-un-servidor-dns/
+- https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio
+- https://www.csuc.cat/ca/serveis/secundaris-i-repliques-de-dns
+- https://ca.eyewated.com/que-es-dns-domain-name-system/
+- https://ca.theastrologypage.com/dns-record
+- http://acacha.org/mediawiki/Servidor_DNS#.Yoj9sKjP1PY
