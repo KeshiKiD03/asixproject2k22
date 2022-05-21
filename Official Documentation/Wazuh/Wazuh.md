@@ -26,26 +26,17 @@
 
 # __Index__
 
-<<<<<<< HEAD
-+ **DNS**: [--> readME <--](#waz)
-
-   + **DNSSEC**: [--> readME <--]()
-=======
 + **Descripció/Biografia**: [--> readME <--](#descripcióbiografia)
 
 + **Practica**: [--> readME <--](#practica-installar-wazuh-server-a-ubuntu-2004)
->>>>>>> e801849cdcc66fd3f60f01bd5e120fc95428a678
 
 + **Bibliografia**: [--> readME <--](#bibliografia)
 
-<<<<<<< HEAD
-+ **DNSSEC**: [--> readME <--]()
 
+# __Wazuh_
 
-# __Wazuh__
+> __NOTA: S'ha intentat la instal·lació i configuarció de Wazuh però ha donat molts problemes (_tried_)__
 
-=======
->>>>>>> e801849cdcc66fd3f60f01bd5e120fc95428a678
 ## __Descripció/Biografia__
 
 **Que es?**
@@ -158,7 +149,7 @@ systemctl status wazuh-manager
 ```
 
 #### Instal·lar ELK Stack (Elasticsearch)
-```
+```bash
 sudo apt install elasticsearch-oss opendistroforelasticsearch
 curl -so /etc/elasticsearch/elasticsearch.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/7.x/elasticsearch_all_in_one.yml
 curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/roles.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/roles.yml
@@ -178,8 +169,8 @@ curl -XGET https://localhost:9200 -u admin:admin -k
 sudo /usr/share/elasticsearch/bin/elasticsearch-plugin remove opendistro_performance_analyzer
 ```
 
-#### Instal·lar Filebeat
-```
+#### __Instal·lar Filebeat__
+```bash
 sudo apt install filebeat
 curl -so /etc/filebeat/filebeat.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/filebeat/7.x/filebeat_all_in_one.yml
 curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/4.1/extensions/elasticsearch/7.x/wazuh-template.json
@@ -192,7 +183,7 @@ sudo filebeat test output
 elasticsearch: https://127.0.0.1:9200…
 ```
 
-#### Instal·lar Kibana
+#### __Instal·lar Kibana__
 ```
 sudo apt-get install opendistroforelasticsearch-kibana
 curl -so /etc/kibana/kibana.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/kibana/7.x/kibana_all_in_one.yml
@@ -213,7 +204,7 @@ user: admin
 password: admin
 ```
 
-#### Common errors
+#### __Common errors__
 ```
 # curl https://raw.githubusercontent.com/wazuh/wazuh/v4.1.5/extensions/elasticsearch/7.x/wazuh-template.json | curl -X PUT “https://localhost:9200/_template/wazuh” -H ‘Content-Type: application/json’ -d @- -u <elasticsearch_user>:<elasticsearch_password> -k
 # curl ‘https://<kibana_ip>:<kibana_port>/api/saved_objects/index-pattern/wazuh-alerts-3.x-*’ -X DELETE -H ‘Content-Type: application/json’ -H ‘kbn-version: 7.10.0’ -k -u <elasticsearch_user>:<elasticsearch_password>
@@ -236,7 +227,7 @@ talk to server… OK
 version: 7.10.0
 ```
 
-## Bibliografia
+## __Bibliografia__
 **Deficions:**
 - http://openaccess.uoc.edu/webapps/o2/bitstream/10609/117787/7/jpcozarTFM0620memoria.pdf **<-- GUIA PER A PROJECTE**
 - https://blog.gudixsecurity.com/protege-tu-empresa-con-wazuh-edr-open-source/
