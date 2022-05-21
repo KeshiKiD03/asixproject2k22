@@ -26,16 +26,13 @@
 
 # __Index__
 
-+ **DNS**: [--> readME <--]()
++ **Descripció/Biografia**: [--> readME <--](#descripcióbiografia)
 
-+ **DNSSEC**: [--> readME <--]()
++ **Practica**: [--> readME <--](#practica-installar-wazuh-server-a-ubuntu-2004)
 
-+ **DNS**: [--> readME <--]()
++ **Bibliografia**: [--> readME <--](#bibliografia)
 
-+ **DNSSEC**: [--> readME <--]()
-
-# Wazuh
-## Descripció/Biografia
+## __Descripció/Biografia__
 
 **Que es?**
 - Wazuh és un sistema de detecció d'intrusos en host de codi obert i lliure (HIDS).
@@ -127,7 +124,7 @@
 
   - L'agent de Wazuh té una integració nativa amb el motor Docker que permet als usuaris monitoritzar imatges, volums, configuracions de xarxa i contenidors en execució.
 
-## Practica: Instal·lar Wazuh Server a Ubuntu 20.04
+## __Practica__: Instal·lar Wazuh Server a Ubuntu 20.04
 
 #### Instal·lar dependencies
 ```
