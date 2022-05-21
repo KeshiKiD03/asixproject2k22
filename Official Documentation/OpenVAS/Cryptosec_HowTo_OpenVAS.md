@@ -54,7 +54,8 @@ Dins del panl de monitoritzacio del OpenVAS podem veure les xarxes, hosts o un g
 4. Un cop acabat l'instal·lacio ens donara un nom d'usuari i un password per poder entrar al panel del OpenVAS. Es important guardar-ho en un lloc segur.
 
 ````
-
+admin
+aa6f95ca-9641-47f4-bd7d-7a5c5a56b934
 ````
 
 5. Primer inicem el openvas. En cas de que surti ``Failed`` el podem resoldre amb un ``restart`` o en aquest cas es un ``stop`` i un ``star`` de nou.

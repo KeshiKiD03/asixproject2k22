@@ -3,17 +3,28 @@
 ### __2HISX 2021-2022__
 ### __Aaron Andal & Cristian Condolo__
 
-<br>
-
-# __Ciberseguretat__: "_Careful where you step_"
-
-![](https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t)
 
 <br>
 <br>
 <br>
+<br>
 
-# Index
+# __CryptoSEC__: "_Careful where you step in_"
+
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+# __Index__
 
 * **Introducció**: [Plantilla](#introducció)
 

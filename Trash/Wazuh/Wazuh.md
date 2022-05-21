@@ -26,17 +26,26 @@
 
 # __Index__
 
+<<<<<<< HEAD
 + **DNS**: [--> readME <--](#waz)
 
    + **DNSSEC**: [--> readME <--]()
+=======
++ **Descripció/Biografia**: [--> readME <--](#descripcióbiografia)
 
-+ **DNS**: [--> readME <--]()
++ **Practica**: [--> readME <--](#practica-installar-wazuh-server-a-ubuntu-2004)
+>>>>>>> e801849cdcc66fd3f60f01bd5e120fc95428a678
 
++ **Bibliografia**: [--> readME <--](#bibliografia)
+
+<<<<<<< HEAD
 + **DNSSEC**: [--> readME <--]()
 
 
 # __Wazuh__
 
+=======
+>>>>>>> e801849cdcc66fd3f60f01bd5e120fc95428a678
 ## __Descripció/Biografia__
 
 **Que es?**
@@ -129,7 +138,7 @@
 
   - L'agent de Wazuh té una integració nativa amb el motor Docker que permet als usuaris monitoritzar imatges, volums, configuracions de xarxa i contenidors en execució.
 
-## Practica: Instal·lar Wazuh Server a Ubuntu 20.04
+## __Practica__: Instal·lar Wazuh Server a Ubuntu 20.04
 
 #### Instal·lar dependencies
 ```
