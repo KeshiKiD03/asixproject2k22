@@ -3,28 +3,51 @@
 ### __2HISX 2021-2022__
 ### __Aaron Andal & Cristian Condolo__
 
+
+<br>
+<br>
+<br>
 <br>
 
-# __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
-
-<div style="align: center; width: 100%">
-    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
-</div>
-
-# Index
-
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+# __CryptoSEC__: "_Careful where you step in_"
 
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
-
-
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+![](./Photos/CryptoSECLogo.png)
 
 
 
-# DHCP
 
+<br>
+<br>
+<br>
+
+
+
+
+# __Index__
+
++ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
+
++ **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
+
++ **DNS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
+    + **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
+# __DHCP__
+
+El protocol DHCP és un dels més utilitzats pels routers, tant domèstics com també professionals, a més, per defecte qualsevol client cablejat o WiFi està configurat per obtenir una adreça IP per DHCP.
+Encara que contínuament estem utilitzant el DHCP, segurament no conegueu per a què serveix exactament, les seves funcionalitats i també com funciona i quins missatges s'intercanvien entre el servidor i els clients. Avui a RedesZone us explicarem tot el que has de saber sobre el protocol DHCP.
+
+## __DHCP__
+
+### __Què és i per a què serveix aquest protocol__
+
+El protocol DHCP (Protocol de configuració dinàmica de host) o també conegut com a __Dynamic Host Configuration Protocol__, és un protocol de xarxa que utilitza una arquitectura client-servidor. Per tant, tindrem un o més servidors DHCP i també un o més clients, que s'hauran de comunicar entre ells correctament perquè el servidor DHCP brindi informació als diferents clients connectats. 
+
+Aquest protocol s'encarrega d'assignar de manera dinàmica i automàtica una adreça IP, ja sigui una adreça IP privada des del router cap als equips de la xarxa local, o també una IP pública per part d'un operador que utilitzi aquest tipus de protocol per al establiment de la connexió.
+
+### __Instal·lació i configuració__
 
 * apt-get update
 
@@ -71,3 +94,8 @@ REINICIAR sudo systemctl restart isc-dhcp-server
 EN EL CLIENTE DEBIAN
 
 dhclient -v
+
+# __Bibliografia__
+
+- https://www.redeszone.net/tutoriales/internet/que-es-protocolo-dhcp/
+- 

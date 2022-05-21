@@ -22,13 +22,15 @@
 </p>
 
 
-
+<br>
+<br>
+<br>
 <br>
 
-# __Ciberseguretat__: "_Careful where you step_"
+# __CryptoSEC__: "_Careful where you step in_"
 
 
-![](https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t)
+![](./Photos/CryptoSECLogo.png)
 
 
 

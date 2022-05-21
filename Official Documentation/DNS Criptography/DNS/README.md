@@ -3,21 +3,37 @@
 ### __2HISX 2021-2022__
 ### __Aaron Andal & Cristian Condolo__
 
+
+<br>
+<br>
+<br>
 <br>
 
-# __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
-
-![](https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t)
-
-# Index
-
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+# __CryptoSEC__: "_Careful where you step in_"
 
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+![](./Photos/CryptoSECLogo.png)
 
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
+
+<br>
+<br>
+<br>
+
+
+
+
+# __Index__
+
++ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
+
++ **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
+
++ **DNS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
+    + **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
 
 
 # Que es el DNS?

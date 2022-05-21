@@ -3,20 +3,36 @@
 ### __2HISX 2021-2022__
 ### __Aaron Andal & Cristian Condolo__
 
-<br>
-
-# __Ciberseguretat__: "_Careful where you step_"
-
-
-
-
-![](https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t)
-
 
 <br>
 <br>
 <br>
+<br>
 
+# __CryptoSEC__: "_Careful where you step in_"
+
+
+![](./Photos/CryptoSECLogo.png)
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+# __Index__
+
++ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
+
++ **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
+
++ **DNS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+
+    + **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
 
 
 # __Objectius "Projecte ASIX - Ciberseguretat:__ _Careful where you step_"
