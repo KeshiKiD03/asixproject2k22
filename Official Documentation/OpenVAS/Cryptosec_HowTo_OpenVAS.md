@@ -18,7 +18,7 @@
 
 * **Bibliografia**: [README](#bibliografia)
 
-> **NOTA: per desgràcia, no hem pogut implementar a dins. La nostra idea era que un dels Kalis pogués monitoritzar els Clients i les dues xarxes, per mostrar l'abans i després d'algun atacs.** 
+> **NOTA: per desgràcia, no hem pogut implementar a dins. Degut a quant estava tot instal·lat no trovaba les xarxes i els hosts.** 
 
 ## __OpenVAS__: Open Vulnerability Assessment System 
 
