@@ -276,7 +276,7 @@ ________________________________________________________________________________
 
     - Reiniciar i verificar que facin PING I RESOLV. Sinó Journal.
 
-5. Activar __DHCP__ per a 192.168.3.0/24 a la interfície __enp0s8__.
+5. Activar __DHCP__ per a ``192.168.3.0/24`` a la interfície __enp0s8__.
 
     - Reiniciar DHCP i verificar.
     
@@ -358,3 +358,5 @@ X11 FORWARDING (Permetre Obrir Apps mode Gràfic):
 # __Credentials__
 
 aaroncryptosec@gmail.com:acryptosec22
+
+cristiancryptosec@gmail.com
