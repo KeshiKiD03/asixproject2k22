@@ -26,35 +26,22 @@
 
 # __Index__
 
-+ **Ettercap**: [--> readME <--](#ettercap)
++ **Objectius "Projecte ASIX - Ciberseguretat: _Careful where you step in_**: [--> readME <--](#objectius-"projecte-asix---ciberseguretat-careful-where-you-step-in")
 
-+ **Els atacs que es poden fer a Ettercap**: [--> readME <--](#els-atacs-que-es-poden-fer-a-ettercap)
++ **Arquitectura CryptoSEC**: [--> readME <--](#arquitectura-cryptosec)
 
-    + **Eavesdropping (Escoltar atentament)**: [--> readME <--](#eavesdropping-escoltar-atentament)
++ **Conceptes i aspectes generals _"mindset"_ del projecte**: [--> readME <--](#conceptes-i-aspectes-generals-"mindset"-del-projecte)
 
-    + **Falsificació de direccions IP (Address Spoofing o DNS Cache Poisoning + ARP Spoof)**: [--> readME <--](#falsificació-de-direccions-ip-address-spoofing-o-dns-cache-poisoning--arp-spoof)
++ **La proposta final**: [--> readME <--](#la-proposta-final)
 
-    + **Atac de denegació de servei (DoS)**: [--> readME <--](#atac-de-denegació-de-servei-dos)
-
-    + **Atac Man in the Middle**: [--> readME <--](#atac-man-in-the-middle)
-
-+ **Exemple pràctic d'Ettercap**: [--> readME <--](#exemple-pràctic-dettercap)
-
-    + **Exemple utilitzant __setoolkit__ a Kali Linux i ETTERCAP**: [--> readME <--](#exemple-1-utilitzant-setoolkit-a-kali-linux-i-ettercap)
-
-    + **Explicació resumida**: [--> readME <--](#explicació-resumida)
-
-+ **Bibliografia**: [--> readME <--](#bibliografia)
-
-    
+    + **El deployment**: [--> readME <--](#el-deployment)
 
 <br>
 <br>
 <br>
 
-# __Kali Linux__
 
-## __Ettercap__
+# __Ettercap__
 
 Ettercap és una eina de rastreig de xarxa basada en la suplantació d'adreces ARP.  
 
@@ -115,7 +102,7 @@ Sé que saps què és una adreça IP (Protocol d'Internet).  Com saps, per comun
 
 ![](https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg?webp=true&v=1.0.1)
 
-## Atac de denegació de servei (DoS)
+## __Atac de denegació de servei (DoS)__
 
 En aquest tipus d'atac, un atacant intenta fer que una màquina o un recurs de xarxa no estigui disponible per als usuaris.  
 
@@ -170,7 +157,7 @@ Un hacker pot utilitzar el següent programari per implementar aquest atac:
 
 # __Exemple pràctic d'Ettercap__
 
-## __Exemple 1: Utilitzant __setoolkit__ a Kali Linux i ETTERCAP__
+## __Exemple utilitzant __setoolkit__ a Kali Linux i ETTERCAP__
 
 Demostració ràpida de com DNS pot ser suplantat utilitzant Kali Linux, i com el tràfic pot ser redirigit a una pàgina fraudulenta.
 
@@ -273,8 +260,6 @@ Connectar-se a Twitter - Farà la redirecció a 10.200.243.137
 
 ## __Ettercap per CLI__
 
-- https://esgeeks.com/tutorial-ettercap-ejemplos/
-
 Utilitza la següent ordre per llançar una suplantació de DNS:
 
 sudo ettercap -T -q -P dns_spoof -i wlan0 -M arp /// ///
@@ -285,7 +270,7 @@ sudo ettercap -T -q -M arp -i wlan0 -P dns_spoof -p //192.168.1.1/
 #Per a un rang de xarxa
 sudo ettercap -T -q -M arp -i wlan0 -P dns_spoof //192.168.1.1/ 192.168.1.51/
 
-# __Explicació resumida:__
+## __Explicació resumida:__
 
 ARP Spoof - DNS Cache Poisoning
 

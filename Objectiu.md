@@ -54,9 +54,10 @@
 
     + **COM PROTEGIR-SE?**: [--> readME <--](#com-protegir-se)
     
++ **Bibliografia**: [--> readME <--](#bibliografia)
 
 
-# __Objectius "Projecte ASIX - Ciberseguretat:__ _Careful where you step in_"
+# __Objectius "Projecte ASIX - Ciberseguretat:__ _"Careful where you step in"_
 
 L'objectiu principal d'aquest projecte de Ciberseguretat, és la creació d'una empresa de __"Ciberseguretat"__ anomenamada _"CryptoSEC"_. Aquesta empresa implementarà una serie de serveis de __seguretat__ i __prevenció__ davant d'atacs maliciosos que tindràn la finalitat de _comprometre_ la empresa i obtenir informació delicada i confidencial. Aaron i Cristian, son els caps d'aquesta empresa i portaràn a terme aquest magnífic repte de protegir-se davant de _hackers_ com les de la Organització __"Anonymous"__, __" The Shadow Brokers"__, __"Elliott Gunton"__... entre altres.
 
@@ -305,15 +306,23 @@ _Altres:_
 
 ## __COM PROTEGIR-SE?__
 
-<UNDER CONSTRUCTION>
++ __DNSSEC__: Firma i assegura una zona. Afegeix una capa de seguretat addicional al protocol DNS que permet comprovar la integritat i autenticitat de les dades
 
-+ __VPN__
++ __VPN__: Mitjançant una connexió xifrada a través d'ún túnel amb criptografía asimètrica (Claus híbrids).
 
-+ __IPSEC__
++ __IPSEC__: Establir comunicacions segures, amb autenticació i xifratge de dades.
 
-+ __HTTPS__
++ __HTTPS__: HTTP utilitza criptografía TLS/SSL per poder establir i protegir la integritat i la confidencialitat de les dades dels usuaris entre els vostres ordinadors i el lloc. 
 
-# Bibliografia
++ __S/MIME__: Activar l'encriptació d'extrem a extrem del correu electrònic corporatiu signant digitalment amb un certificat de correu electrònic.
+
++ __OPENSSL__: Secure Socket Layer (SSL) i Transport Layer Security (TLS) per a l'autenticació web.
+
++ __Vigilància correus Phishing__: No obrir correus de remitents desconeguts.
+
++ __Mantenir sistemes actualitzats, antivirus... etc__: Actualitzar el programari i el maquinari per a no tenir vulnerabilitats quan hi hàgin amenaçes.
+
+# __Bibliografia__
 
 ### CIBERSECURITY
 
