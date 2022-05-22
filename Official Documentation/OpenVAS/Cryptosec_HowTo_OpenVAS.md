@@ -18,6 +18,8 @@
 
 * **Bibliografia**: [README](#bibliografia)
 
+> **NOTA: per desgràcia, no hem pogut implementar a dins. Degut a quant estava tot instal·lat no trovaba les xarxes i els hosts.** 
+
 ## __OpenVAS__: Open Vulnerability Assessment System 
 
 Es un escàner de vulnerabilitats amb totes les funcions. Les seves capacitats inclouen proves no autenticades i autenticades, diversos protocols industrials i d'Internet d'alt i baix nivell, ajust de rendiment per a exploracions a gran escala i un potent llenguatge de programació intern per implementar qualsevol tipus de prova de vulnerabilitat.
