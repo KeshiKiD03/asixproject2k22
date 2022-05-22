@@ -53,6 +53,8 @@ Dins del panl de monitoritzacio del OpenVAS podem veure les xarxes, hosts o un g
 
 ``sudo gmv setup``
 
+![](./Photos/openvas-ins01(1).png)
+
 4. Un cop acabat l'instal·lacio ens donara un nom d'usuari i un password per poder entrar al panel del OpenVAS. Es important guardar-ho en un lloc segur.
 
 ````
@@ -62,9 +64,16 @@ aa6f95ca-9641-47f4-bd7d-7a5c5a56b934
 
 5. Primer inicem el openvas. En cas de que surti ``Failed`` el podem resoldre amb un ``restart`` o en aquest cas es un ``stop`` i un ``star`` de nou.
 
-``sudo gmv star``
+``sudo gvm-start``
+
+![](./Photos/openvas-ins01(2).png)
+![](./Photos/openvas-ins02.png)
 
 6. Quant el servidor s'engega, ja ens obre un navegador. Nomes queda aceptar el certificats i iniciar sessio al OpenVAS. Ja podem observer i escanejar els dispositus/hosts/IPs de la nostra xarxa i d'altres xarxes.
+
+![](./Photos/openvas-dashboard01.png)
+![](./Photos/openvas-dashboard02.png)
+![](./Photos/openvas-dashboard03.png)
 
 ## __Bibliografia__
 - https://www.youtube.com/watch?v=Sf9LKyCpgPc
