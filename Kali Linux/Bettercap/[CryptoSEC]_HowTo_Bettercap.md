@@ -26,9 +26,9 @@
 
 # __Index__
 
-+ **Bettercap**: [--> readME <--](#ettercap)
++ **Bettercap**: [--> readME <--](#bettercap)
 
-+ **Els atacs que es poden fer a Ettercap**: [--> readME <--](#els-atacs-que-es-poden-fer-a-ettercap)
++ **Carecterístiques de Bettercap**: [--> readME <--](#carecterístiques-de-bettercap)
 
     + **Eavesdropping (Escoltar atentament)**: [--> readME <--](#eavesdropping-escoltar-atentament)
 
