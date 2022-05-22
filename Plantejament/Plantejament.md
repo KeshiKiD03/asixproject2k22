@@ -77,6 +77,7 @@
 - [ ] ETTERCAP --> Framework/Sniffer per poder fer atacs de man in the Middle.
 - [ ] JOHN --> Brute Force Attack tool --> Cracker password
 - [ ] SSLSTRIP --> Strips HTTPS to HTTP (_Tried_)
+- [ ] SLOWHTTP --> A type of DOS to take down __cryptosec.net__ (_Tried_)
 
 <br>
 <br>
@@ -350,7 +351,7 @@ X11 FORWARDING (Permetre Obrir Apps mode Gràfic):
     
     * __DNS Poisoning / Spoofing) (BETTERCAP)__: Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS fals on ens redirigirà a la nostra màquina on hi tindrem una _fake page: m0odle.escoladeltreball.org_ (__Moodle EDT__) i l'enviarem per correu utilitzant __SET__ dient que "_URGENT! L'Eduard ha posat les notes de M06, entra urgentment i mira la nota que tens!!!_" llavors l'usuari entrarà i no se n'adonarà i li robarem les credencials mostrades al __SET__.
 
-+ __Spoofing CryptoSEC.NET (BETTERCAP)__: Ídem que l'anterior però els targets son el __SOA__ i el __Forwarding__, els clients interns de CryptoSEC quan hagin d'anar a la pàgina web __cryptosec.net__, entraràn a __cryptos3c.net__ ja que el hacker ha avisat que hi hà una urgència a la pàgina principal i han d'entrar a la pàgina web dada pel hacker i les seves credencials seràn __robades sense que se'n adoni__!
++ __Spoofing CryptoSEC.NET + DOS SlowHTTP (take down cryptosec.net) (BETTERCAP)__: Ídem que l'anterior però els targets son el __SOA__ i el __Forwarding__, els clients interns de CryptoSEC quan hagin d'anar a la pàgina web __cryptosec.net__, entraràn a __cryptos3c.net__ ja que el hacker ha avisat que hi hà una urgència a la pàgina principal i han d'entrar a la pàgina web dada pel hacker i les seves credencials seràn __robades sense que se'n adoni__! Abans de tot, el hacker utilitzarà una eina per que la pàgina de __cryptosec.net__ vagi més lent durant uns minuts. Durant aquest minuts aprofitarà per donar un comunicat oficial a l'empresa CryptoSEC dient que la pàgina ha sigut tumbada i han d'anar a un altra anomenada `cryptos3c.net`.
 
 + __ZPHISHING: Phishing with a real "fake" HTTPS website__: Exemple real de __Phishing__ automatitzat i desplegat a __Cloudflare__ per un programa anomenat __Zphishing__. Genera servidor temporal a Internet amb una plantilla a escollir de l'usuari. Enmascarar el enllaç amb un _url shortner_ i enviar-ho a alguna víctima mitjançant __SET__ que enviarà el correu automàticament amb un compte de __Gmail__. L'usuari entrarà però no veurà l'enllaç perquè és una emergència i posarà les seves credencials. D'aquesta manera recollirem l'usuari i la contrasenya de l'usuari (_Credential Harvester_).
 
