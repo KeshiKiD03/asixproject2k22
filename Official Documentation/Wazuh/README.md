@@ -46,8 +46,9 @@
 
 - Wazuh és una plataforma Open Source utilitzada per a la prevenció, detecció i resposta a les amenaces.
 
----
-**Que fa?/Que pot fer?**
+**Que fa?** 
+
+**Que pot fer?**
 - Realitza anàlisi de registre, comprovació dintegritat, supervisió del registre de Windows, detecció de rootkits, alertes basades en el temps i resposta activa.
 
 - És capaç de protegir càrregues de treball en entorns locals, virtualitzats, en contenidors i al núvol.
@@ -66,13 +67,13 @@
 
 - A més, l'agent de Wazuh proporciona capacitats de resposta activa que es poden utilitzar per bloquejar un atac de xarxa, detectar un procés maliciós o posar en quarantena un arxiu infectat amb codi maliciós (malware).
 
----
+
 **Com ho fa?**
 - La solució Wazuh consta d'un agent de seguretat per a punts finals, desplegat als sistemes supervisats, i un servidor de gestió, que recull les dades de recopilades pels agents.
 
 - Se centra a proporcionar la visibilitat adequada, amb els coneixements necessaris per ajudar les anàlisis de seguretat a descobrir, investigar i respondre a les amenaces i campanyes d'atac a diversos punts.
 
----
+
 **Wazuh proporciona les capacitats següents:**
 - __Anàlisi de seguretat__:
   - Wazuh s'utilitza per recol·lectar, agregar, indexar i analitzar dades de seguretat, ajudant les organitzacions a detectar intrisions, amenaces i comportaments anòmals dins de la xarxa.
