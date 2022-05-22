@@ -46,9 +46,13 @@
 
 + **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
 
-+ **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#subject-alternative-name)
++ **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md#la-proposta-final)
 
-+ **CONCLUSIÓ**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **Seguiment**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Seguiment.md)
+
++ **Trello**: [--> Go to Trello <--](https://trello.com/b/kQt8ZIrK/progreso)
+
++ **Conclusió projecte**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Conclusió.md)
 
 <br>
 <br>
