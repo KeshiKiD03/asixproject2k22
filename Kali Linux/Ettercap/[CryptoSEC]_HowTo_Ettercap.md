@@ -40,7 +40,7 @@
 
 + **Exemple pràctic d'Ettercap**: [--> readME <--](#exemple-pràctic-dettercap)
 
-    + **Exemple utilitzant __setoolkit__ a Kali Linux i ETTERCAP**: [--> readME <--](#exemple-1-utilitzant-setoolkit-a-kali-linux-i-ettercap)
+    + **Exemple 1: Utilitzant __setoolkit__ a Kali Linux i ETTERCAP**: [--> readME <--](#exemple-1-utilitzant-setoolkit-a-kali-linux-i-ettercap)
 
     + **Explicació resumida**: [--> readME <--](#explicació-resumida)
 
@@ -115,7 +115,7 @@ Sé que saps què és una adreça IP (Protocol d'Internet).  Com saps, per comun
 
 ![](https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg?webp=true&v=1.0.1)
 
-## Atac de denegació de servei (DoS)
+## __Atac de denegació de servei (DoS)__
 
 En aquest tipus d'atac, un atacant intenta fer que una màquina o un recurs de xarxa no estigui disponible per als usuaris.  
 
@@ -156,17 +156,17 @@ Afortunadament, alguns protocols poden impedir-ho, com el SSL.
 
 Un hacker pot utilitzar el següent programari per implementar aquest atac:
 
-* Caín i Abel
++ Caín i Abel
 
-* Subterfugi
++ Subterfugi
 
-* __Ettercap__: És el que utilitzarem
++ __Ettercap__: És el que utilitzarem
  
-* AirJack
++ AirJack
 
-* __SSLStrip__: L'utilitzarem per trencar el SSL.
++ __SSLStrip__: L'utilitzarem per trencar el SSL.
 
-* __SSLSniff__
++ __SSLSniff__
 
 # __Exemple pràctic d'Ettercap__
 
