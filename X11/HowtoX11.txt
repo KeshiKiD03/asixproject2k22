@@ -1,0 +1,5 @@
+1. Ejecutar x11xa.sh
+
+2. Ejecutar dis.sh
+
+3. 
