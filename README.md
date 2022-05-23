@@ -82,15 +82,11 @@
 
     + **BETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Bettercap/%5BCryptoSEC%5D_HowTo_Bettercap.md)
 
-    + **WIRESHARK**: [--> readME <--]()
-
-+ **PREVENCIÓ I PROTECCIÓ**: [--> readME <--]()
-
-+ **CONCLUSIÓ**: [--> readME <--]()
++ **CONCLUSIÓ**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Conclusi%C3%B3.md)
 
 # **MULTIMEDIA**:
 
-En el repositori podeu trobar tota l'informació en PDF en el repositori [``PDFOfficialDoc``](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/DNS%20Spoofing/%5BCryptosec%5D_HowTo_DNSSpoof.md)
+En el repositori podeu trobar tota l'informació en PDF en el repositori [``PDFOfficialDoc``](https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc)
 
 <br>
 <br>
