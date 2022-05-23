@@ -44,9 +44,21 @@
 
 # __Index__
 
-+ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
++ **INTRODUCCIÓ**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md)
 
-    + **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md#la-proposta-final)
+    + **CIBERSEGURETAT**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md#la-ciberseguretat)
+
++ **PLANTEJAMENT**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Plantejament/README.md)
+
++ **OBJECTIUS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
+
+    + **PROPOSTA FINAL (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md#la-proposta-final)
+
++ **POSTER**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Poster%20Projecte.pptx)
+
++ **SEGUIMENT**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Seguiment.md)
+
++ **UBUNTU SERVER**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/UbuntuServer/README.md)
 
 + **DNS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DNS%20Criptography/DNS/README.md)
 
@@ -62,7 +74,11 @@
 
 + **OPENVAS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/OpenVAS/README.md)
 
++ **WAZUH**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Wazuh/README.md)
+
 + **HACKING & PENTESTING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/README.md)
+
+    + **ENGINYERIA SOCIAL**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/Enginyeria%20Social/README.md)
 
     + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/Brute%20Force%20Attack%20-%20Crack%20Password/README.md)
 
@@ -74,6 +90,8 @@
 
     + **MAIL PHISING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/DNS%20Spoofing/README.md#part1-arp-spoof--dns-spoof-amb-setoolkit-mail-phishing--site-cloner--credential-harvester)
 
+    + **ZPHISHER**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/Hacking%20%26%20Pentesting/Zphisher)
+
 + **KALI LINUX**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/README.md)
 
     + **ETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Ettercap/README.md)
@@ -84,7 +102,7 @@
 
 + **CONCLUSIÓ**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Conclusi%C3%B3.md)
 
-# **MULTIMEDIA**:
+# **MULTIMEDIA**
 
 En el repositori podeu trobar tota l'informació en PDF en el repositori [``PDFOfficialDoc``](https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc)
 
