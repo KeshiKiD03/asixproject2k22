@@ -46,7 +46,7 @@
 
 + **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
 
-    + **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md#la-proposta-final)
+    + **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md#la-proposta-final)
 
 + **DNS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/DNS%20Criptography/DNS/README.md)
 
