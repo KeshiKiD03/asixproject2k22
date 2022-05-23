@@ -13,7 +13,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 
 
 
@@ -143,6 +143,7 @@ Cada dispositiu connectat a __Internet__ té una __adreça IP única__ que altre
 Els servidors DNS eliminen la necessitat que els h__umans memoritzin__ adreces IP com ara __192.168.1.1__ (en IPv4) o adreces IP alfanumèriques més complexes, com ara 2400:cb00:2048:1::c629:d7a2 (en IPv6). 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/theinternet-dns.png?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 <br>
 
 # __Com funciona el DNS__
@@ -785,7 +786,8 @@ La seva funció és millorar el rendiment de les resolucions mitjançant memòri
 <br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%208.45.44%20PM.jpeg?raw=true)
-> __Img Source__: *https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%208.45.44%20PM.jpeg?raw=true*
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 ## __Resolució de noms al client__
 
@@ -861,6 +863,8 @@ L'ordre `resolvectl` permet:
 +    Fer resolucions DNS: resolvectl query __cryptosec.net__
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%205.19.09%20PM.jpeg?raw=true)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 # __Com donar suport a consultes de DNS ràpides i segures__
 
@@ -869,6 +873,8 @@ La solució es DNSSEC.
 Consulteu la documentació més extensa i adherida de __DNSSEC__.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%205.10.43%20PM.jpeg?raw=true)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 # __Glossari de termes de les configuracions de BIND9__
 

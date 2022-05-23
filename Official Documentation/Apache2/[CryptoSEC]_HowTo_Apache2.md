@@ -14,7 +14,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-
+> __Img Source__: *@Aaron i @Cristian GitHub*
 
 
 
@@ -52,12 +52,16 @@
 Apache és un servidor web de codi obert, multiplataforma i gratuït. Aquest web server és un dels més utilitzats al món, actualment el 43% dels llocs web funcionen amb ell.
 
 ![](https://www.unfantasmaenelsistema.com/wp-content/uploads/2019/12/hd221.jpg)
+> __Img Source__: *https://www.unfantasmaenelsistema.com/wp-content/uploads/2019/12/hd221.jpg*
+<br>
 
 Apache té una estructura basada en mòduls, que permet activar i desactivar funcionalitats addicionals, per exemple, mòduls de seguretat com mod_security, mòduls de memòria cau com Varnish , o de personalització de capçaleres com mod_headers. 
 
 També permet ajustar els paràmetres de PHP del teu hosting de forma personalitzada mitjançant el fitxer .htaccess .
 
 ![](https://www.webempresa.com/wp-content/uploads/2021/10/servidor-rueda-dentada-400.png)
+> __Img Source__: *https://www.webempresa.com/wp-content/uploads/2021/10/servidor-rueda-dentada-400.png*
+<br>
 
 ## __Avantatges__
 
@@ -76,6 +80,8 @@ Els principals avantatges d'usar aquest servei web són els següents:
 * Compatible amb els principals __CMS__ i __botigues online__ i plataformes __e-learning__
 
 ![](https://www.webempresa.com/wp-content/uploads/2021/10/servidor-flecha-up-arriba-400.png)
+> __Img Source__: *https://www.webempresa.com/wp-content/uploads/2021/10/servidor-flecha-up-arriba-400.png*
+<br>
 
 ## __Desavantatges__
 
@@ -84,6 +90,8 @@ Els principals avantatges d'usar aquest servei web són els següents:
 * Un ús abusiu de mòduls poden generar bretxes de seguretat.
 
 ![](https://www.webempresa.com/wp-content/uploads/2021/10/servidor-flecha-down-abajo-400.png)
+> __Img Source__: *https://www.webempresa.com/wp-content/uploads/2021/10/servidor-flecha-down-abajo-400.png*
+<br>
 
 # __Instal·lació Apache2 per a SOA CryptoSEC__
 
@@ -168,6 +176,8 @@ Output
 4. Obrir un navegador i posar la IP del SOA 10.200.243.164. Per HTTP. Més tard configurarem HTTPS.
 
 ![](https://assets.digitalocean.com/articles/how-to-install-lamp-ubuntu-16/small_apache_default.png)
+> __Img Source__: *https://assets.digitalocean.com/articles/how-to-install-lamp-ubuntu-16/small_apache_default.png*
+<br>
 
 5. Administrar Apache2:
 
@@ -295,7 +305,8 @@ Syntax OK
 
 
 ![](./Photos/WhatsApp%20Image%202022-05-13%20at%202.25.22%20PM.jpeg)
-
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 # __OPENSSL__
 
@@ -460,10 +471,14 @@ sudo systemctl restart apache2
 4. Finalment provar-ho en un navegador, posant __https://cryptosec.net__, ens sortirà un missatge d'excepció, perquè el navegador no conèix o no té el certificat de la CA en el navegador, per tema de trust.
 
 ![](https://assets.digitalocean.com/articles/apache_ssl_1604/warning_override.png)
+> __Img Source__: *https://assets.digitalocean.com/articles/apache_ssl_1604/warning_override.png*
+<br>
 
 5. Per solucionar aquest problema, importem manualment el ``cacert.pem`` als navegadors.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSEC.net.png?raw=true)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 6. Veure el contingut dels certificats:
 
@@ -478,6 +493,10 @@ openssl x509 --noout --text -in cacert.pem
 O des d'un navegador web Firefox: 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/Captura.PNG?raw=true)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
+
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 # __Bibliografia__
 

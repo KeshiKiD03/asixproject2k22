@@ -13,6 +13,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
+> __Img Source__: *@Aaron i @Cristian GitHub*
 
 
 
@@ -92,14 +93,24 @@ subnet 192.168.3.0 netmask 255.255.255.0 {
 * reiniciar el servidor __DHCP__ ``sudo systemctl restart isc-dhcp-server``
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%208.46.12%20PM.jpeg?raw=true)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 * Obrir el client _Linux Lite_ o el _Debian Minimal 10_ i probar-ho: ``dhclient -v``. Probar també la conectivitat amb un host a la nostra zona __"cryptosec.net"__
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%208.35.19%20PM.jpeg?raw=true)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%209.01.16%20PM.jpeg?raw=true)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%208.45.44%20PM.jpeg?raw=true)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
+
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 # __Bibliografia__
 

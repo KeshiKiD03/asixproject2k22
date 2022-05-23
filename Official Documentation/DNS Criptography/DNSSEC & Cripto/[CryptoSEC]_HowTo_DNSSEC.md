@@ -13,8 +13,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-
-
+> __Img Source__: *@Aaron i @Cristian GitHub*
 
 
 <br>
@@ -45,6 +44,7 @@ Unes de les tante defenses d'Internet es el __sistema de noms de domini__, o bé
 Els DNS treballen amb bases de dades en els que s'__emmagatzema els registres__ amb l'informació dels __dominis__ i les seves __IP__. La seva seguretat el fa capaz quan intenten falsificar els registres, pero encara es vulnerable als __redireccionament__ a __lloc maliciosos__ i __suplantació__, o també l'__intercepció de trafic__.
 
 ![](./Photos/dnssec_atac01.jpg) ![](./Photos/dnssec_atac02.jpg)
+> __Img Source__: *@Aaron i @Cristian GitHub*
 <br><br>
 
 Per donar sol·lució aquells problemes es va dissenyar lo que es coneixe com __extension de seguretat pel sistema de noms de domini__, o bé DNSSEC.
@@ -64,6 +64,7 @@ Si al comprovar aquestes __firmes no coinceixen les uns amb les altres__, la con
 Obrim la nostra maquina Ubuntu Server per posar a prova el ``DNSSEC``. L'engeguem, després de fer un __snapshot__ per seguretat.
 
 ![](./Photos/dnssec01.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
 <br>
 
 La nostra maquina tindra dues interficies: un en al bridge y l'altre a una xarxa interna.
@@ -83,6 +84,8 @@ ip a show enp0s8
 ```
 
 ![](./Photos/dnssec02.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 ---
 
@@ -103,6 +106,7 @@ network:
 ```
 
 ![](./Photos/dnssec03.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
 <br>
 
 Sortim del fitxer i salvem la configuracio amb el comand ``netplan``:
@@ -115,6 +119,8 @@ Podem comprobar el cambi d'IP amb:
 ip a show enp0s8
 ```
 ![](./Photos/dnssec04.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 ---
 ---
@@ -136,6 +142,8 @@ dnssec-validation yes;
 dnssec-lookaside auto;
 ```
 ![](./Photos/dnssec05.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 Comprovar si el servidor esta validan amb les ordres ``dig``:
 ```
@@ -159,6 +167,8 @@ zone "cryptosec.net"{
 }
 ```
 ![](./Photos/dnssec07.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 Despres creem y editem el fitxer de configuració de la zona que hem indicat abans: ``db.cryptosec.net``.
 ```sh
@@ -175,6 +185,8 @@ $TTL    604800
 www     IN      CNAME   cryptosec.net.
 ```
 ![](./Photos/dnssec08.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 Anem a ``/etc/resolv.conf`` i comprovem que servidor resolv pregunti al dns de l'escola EDT i que busqui la zona ``cryptosec.net``.
 ```
@@ -183,6 +195,8 @@ options edns0 trust-ad
 search cryptosec.net
 ```
 ![](./Photos/dnssec09.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 Comprovem que el servidor DNS resolv la nostra zona de domini amb ``host`` i ``rndc``.
 ```
@@ -194,6 +208,8 @@ systemctl status bind9
 
 > **Nota**: *si volem podem veure els errors amb ``journalctl -u named -f &`` i reiniciar el DNS amb ``systemctl restart``.*
 ![](./Photos/dnssec10.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 ---
 ---
@@ -226,6 +242,8 @@ dnssec-keygen -K /etc/bind/keys/zsk/ -a NSEC3RSASHA1 -b 2048 -n ZONE cryptosec.n
 - -K: *directori on s'han d'escriure els fitxers de claus*
 
 ![](./Photos/dnssec11.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 A continuació, generem la __clau de signatura de claus__ (KSK). L'ordre és molt semblant, amb un parell d'ajustaments.
 ```
@@ -235,6 +253,8 @@ dnssec-keygen -f KSK -K /etc/bind/keys/ksk/ -a NSEC3RSASHA1 -b 4096 -n ZONE cryp
 - -f: *especifica el tipus que es*, o t'ho possar un ZKS.
 
 ![](./Photos/dnssec11.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 Obtindrem 4 claus en total: parells privats/públics de ZSK i KSK.
 
@@ -260,6 +280,8 @@ $INCLUDE "/etc/bind/keys/ksk/Kcryptosec.net.+007+07353.key"
 > ```
 
 ![](./Photos/dnssec13.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 Ara ja podem signar la zona amb les claus secretes. Aqui esta la sintaxi:
 
@@ -275,6 +297,8 @@ dnssec-signzone -o cryptosec.net -N INCREMENT -t -k keys/ksk/Kcryptosec.net.+007
 ```
 
 ![](./Photos/dnssec14.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 Això crea un fitxer nou anomenat ``db.cryptosec.net.signed`` que conté registres RRSIG per a cada registre DNS.
 
@@ -287,6 +311,8 @@ zone "cryptosec.net." IN {
 ```
 
 ![](./Photos/dnssec15.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 I reinciem el bind9.
 ```
@@ -295,8 +321,16 @@ journalctl -e
 ```
 
 ![](./Photos/dnssec16.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
+
 ![](./Photos/dnssec17.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
+
 ![](./Photos/dnssec18.png)
+> __Img Source__: *@Aaron i @Cristian GitHub*
+<br>
 
 **2. Signatura automàtica**
 

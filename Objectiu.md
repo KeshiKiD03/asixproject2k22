@@ -13,7 +13,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 
 
 
@@ -69,8 +69,6 @@ La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar 
 
 ## __Arquitectura CryptoSEC__
 
-
-
 __CryptoSEC.NET__ és una xarxa interna local en algun lloc remot del planeta on hi treballen els millors tècnics en __ciberseguretat__, però hi hà un __"intrús"__ que tindrà un _host maliciós_ que intentarà fer la vida impossible als altres clients.
 
 Aquest host maliciós serà un __Kali Linux__ on hi dispondrà d'eines de seguretat, de _"hackeig"_ o _"crackeig"_, de _pentesting_, _accés a la xarxa_... entre altres. Aquest host maliciós farà atacs com el _"DNS Caché Poisoning - DNS Spoofing"_, juntament amb l'"_ARP Cache Poisoning - Spoofing _" (enverinament de la caché dels servidors de _DNS SOA_ i _DNS Forwarder_ de CryptoSEC, amb posteriori suplantació i redirecció a una pàgina web _"fake"_ que serà reenviada com a resposta a la petició dels clients). També farà un atac de __Brute Force__ on _crackejarà_ contrasenyes amb encriptació SHA512 (UNIX) per poder entrar al servidor _router_: __ForwardSEC__.
@@ -90,6 +88,8 @@ Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcion
 <br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/EsquemaFinal_Non-1.png?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 <br>
 
@@ -168,7 +168,6 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
 
 ![](https://directortic.es/wp-content/uploads/2020/04/desaf%C3%ADos-de-ciberseguridad.jpg)
 > __Img Source__: *https://directortic.es/wp-content/uploads/2020/04/desaf%C3%ADos-de-ciberseguridad.jpg*
-
 <br>
 
 
@@ -186,7 +185,7 @@ Hem decidit utilitzar __VirtualBox__ per al _deployment_ d'aquest projecte simpl
 <br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/VirtualBox.PNG?raw=true)
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 <br>
 
 A més de que tenim un control avançat alhora de _"toquetejar"_ l'emulador de VirtualBox tant a nivell de __hardware__ com a nivell de __software__.
@@ -202,7 +201,7 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 <br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/EsquemaFinal_Non-1.png?raw=true)
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 <br>
 
 ## __Ciberseguretat a CryptoSEC__
@@ -222,6 +221,8 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 > Exemple d'atac d'Enginyeria Social: "_Phishing + Credential Harvester_"
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/ZPISHER2.PNG?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 # __Els objectius dels serveis de CryptoSEC__
 
@@ -281,16 +282,24 @@ _Les que veurem:_
 + __MITM - DNS Cache Poisoning / Spoofing + Phishing__: Injecta registres o enverina el registre DNS d'un servidor DNS o varis implicats. L'atacant fa una redirecció a la víctima a una web falsa, suplanta un registre DNS fent-lo creure que està anant al lloc adequat.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Diagrams/DIAGRAM2.PNG?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Diagrams/DIAGRAM4.PNG?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 + __MITM - Eavesdropping (SNIFFER)__: Permet veure l'activitat de la victima d'incògnits. Com veure a quines pàgines està entrant. O agafar-li les credencials (HTTP).
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Diagrams/DIAGRAM3.PNG?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 + __Social Engineering: Fake Page + Mail Phishing__: Enviament de correu amb una suplantació de DNS, aquest correu s'enviarà desde una eina de Kali a una víctima perque accedeixi al enllaç.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Diagrams/DIAGRAM5.png?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 _Altres:_
 
