@@ -13,7 +13,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-
+> **Img Source**: *@Aaron & @Cristian 's GitHub*
 
 
 
@@ -153,19 +153,27 @@ systemctl status wazuh-manager
 ```bash
 sudo apt install elasticsearch-oss opendistroforelasticsearch
 curl -so /etc/elasticsearch/elasticsearch.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/7.x/elasticsearch_all_in_one.yml
-curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/roles.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/roles.yml
-curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/roles_mapping.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/roles_mapping.yml
-curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/internal_users.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/internal_users.yml
+curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/roles.yml \
+https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/roles.yml
+curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/roles_mapping.yml \
+https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/roles_mapping.yml
+curl -so /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/internal_users.yml \
+https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/elasticsearch/roles/internal_users.yml
 
 sudo rm -f /etc/elasticsearch/{esnode-key.pem,esnode.pem,kirk-key.pem,kirk.pem,root-ca.pem}
 sudo mkdir /etc/elasticsearch/certs && cd /etc/elasticsearch/certs
 sudo curl -so ~/search-guard-tlstool-1.8.zip https://maven.search-guard.com/search-guard-tlstool/1.8/search-guard-tlstool-1.8.zip
 sudo unzip ~/search-guard-tlstool-1.8.zip -d ~/searchguard
-sudo curl -so ~/searchguard/search-guard.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.0/resources/open-distro/searchguard/search-guard-aio.yml
-sudo ~/searchguard/tools/sgtlstool.sh -c ~/searchguard/search-guard.yml -ca -crt -t /etc/elasticsearch/certs/
+sudo curl -so ~/searchguard/search-guard.yml \
+https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.0/resources/open-distro/searchguard/search-guard-aio.yml
+sudo ~/searchguard/tools/sgtlstool.sh -c ~/searchguard/search-guard.yml -ca -crt \
+-t /etc/elasticsearch/certs/
 sudo rm /etc/elasticsearch/certs/client-certificates.readme
 sudo systemctl enable –now elasticsearch
-sudo /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh -cd /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/ -nhnv -cacert /etc/elasticsearch/certs/root-ca.pem -cert /etc/elasticsearch/certs/admin.pem -key /etc/elasticsearch/certs/admin.key
+sudo /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh \
+-cd /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/ -nhnv \
+-cacert /etc/elasticsearch/certs/root-ca.pem -cert /etc/elasticsearch/certs/admin.pem \
+-key /etc/elasticsearch/certs/admin.key
 curl -XGET https://localhost:9200 -u admin:admin -k
 sudo /usr/share/elasticsearch/bin/elasticsearch-plugin remove opendistro_performance_analyzer
 ```
@@ -173,10 +181,13 @@ sudo /usr/share/elasticsearch/bin/elasticsearch-plugin remove opendistro_perform
 #### __Instal·lar Filebeat__
 ```bash
 sudo apt install filebeat
-curl -so /etc/filebeat/filebeat.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/filebeat/7.x/filebeat_all_in_one.yml
-curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/4.1/extensions/elasticsearch/7.x/wazuh-template.json
+curl -so /etc/filebeat/filebeat.yml \
+https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/filebeat/7.x/filebeat_all_in_one.yml
+curl -so /etc/filebeat/wazuh-template.json \
+https://raw.githubusercontent.com/wazuh/wazuh/4.1/extensions/elasticsearch/7.x/wazuh-template.json
 chmod go+r /etc/filebeat/wazuh-template.json
-sudo curl -s https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.1.tar.gz | tar -xvz -C /usr/share/filebeat/module
+sudo curl -s https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.1.tar.gz | tar -xvz \
+-C /usr/share/filebeat/module
 sudo mkdir /etc/filebeat/certs && cp /etc/elasticsearch/certs/root-ca.pem /etc/filebeat/certs/
 sudo mv /etc/elasticsearch/certs/filebeat* /etc/filebeat/certs/
 sudo systemctl enable –now filebeat
@@ -187,11 +198,13 @@ elasticsearch: https://127.0.0.1:9200…
 #### __Instal·lar Kibana__
 ```
 sudo apt-get install opendistroforelasticsearch-kibana
-curl -so /etc/kibana/kibana.yml https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/kibana/7.x/kibana_all_in_one.yml
+curl -so /etc/kibana/kibana.yml \
+https://raw.githubusercontent.com/wazuh/wazuh-documentation/4.1/resources/open-distro/kibana/7.x/kibana_all_in_one.yml
 sudo chown -R kibana:kibana /usr/share/kibana/optimize
 sudo chown -R kibana:kibana /usr/share/kibana/plugins
 cd /usr/share/kibana
-sudo -u kibana /usr/share/kibana/bin/kibana-plugin install https://packages.wazuh.com/4.x/ui/kibana/wazuh_kibana-4.1.5_7.10.0-1.zip
+sudo -u kibana /usr/share/kibana/bin/kibana-plugin \
+install https://packages.wazuh.com/4.x/ui/kibana/wazuh_kibana-4.1.5_7.10.0-1.zip
 sudo mkdir /etc/kibana/certs
 sudo cp /etc/elasticsearch/certs/root-ca.pem /etc/kibana/certs/
 sudo mv /etc/elasticsearch/certs/kibana_http.key /etc/kibana/certs/kibana.key
@@ -207,8 +220,11 @@ password: admin
 
 #### __Common errors__
 ```
-# curl https://raw.githubusercontent.com/wazuh/wazuh/v4.1.5/extensions/elasticsearch/7.x/wazuh-template.json | curl -X PUT “https://localhost:9200/_template/wazuh” -H ‘Content-Type: application/json’ -d @- -u <elasticsearch_user>:<elasticsearch_password> -k
-# curl ‘https://<kibana_ip>:<kibana_port>/api/saved_objects/index-pattern/wazuh-alerts-3.x-*’ -X DELETE -H ‘Content-Type: application/json’ -H ‘kbn-version: 7.10.0’ -k -u <elasticsearch_user>:<elasticsearch_password>
+# curl \
+https://raw.githubusercontent.com/wazuh/wazuh/v4.1.5/extensions/elasticsearch/7.x/wazuh-template.json | curl \
+-X PUT “https://localhost:9200/_template/wazuh” -H ‘Content-Type: application/json’ -d @- -u <elasticsearch_user>:<elasticsearch_password> -k
+# curl ‘https://<kibana_ip>:<kibana_port>/api/saved_objects/index-pattern/wazuh-alerts-3.x-*’ \
+-X DELETE -H ‘Content-Type: application/json’ -H ‘kbn-version: 7.10.0’ -k -u <elasticsearch_user>:<elasticsearch_password>
 # curl https://<ELASTICSEARCH_IP>:9200/_cat/indices/wazuh-alerts-* -u <elasticsearch_user>:<elasticsearch_password> -k
 green open wazuh-alerts-4.x-2021.03.03 xwFPX7nFQxGy-O5aBA3LFQ 3 0 340 0 672.6kb 672.6kb
 filebeat test output
@@ -227,6 +243,8 @@ dial up… OK
 talk to server… OK
 version: 7.10.0
 ```
+
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 ## __Bibliografia__
 **Deficions:**

