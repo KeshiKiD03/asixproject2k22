@@ -23,9 +23,35 @@
 
 
 
+# __Conclusió__
 
-# __Index__
 
-+ **Conclusió**: [--> readME <--](#conclusio)
+Durant la realització d'aquest projecte hem arribat a la conclusió que en la societat on hi vivim avui en dia, som una presa fàcil a ulls de hackers que intentaràn fer-nos la vida impossible.
 
-Durant la realització d'aquest projecte hem arribat a la conclusió que en la societat on hi vivim avui en dia...
+Em de ser capaços de detectar, prevenir i protegir-nos davant de posibles atacs informàtics.
+
+Establir una bona política de defensa en els nostres dispositius d'ús cotidià permetrà mantenir la integritat de la nostra informació, poder fer copies i restauracions del sistema i prevenir possibles suplantacions.
+
+Per finalitzar, per establir tot aquest aprenentatge a la vida real, hem de:
+
++ Identificar els correus sospitosos.
+
++ Verificar les fonts d'informació dels correus entrants.
+
++ Mai entrar a llocs web del teu banc clicant enllaços inclosos als correus _phishing_.
+
++ Reforçar la seguretat de l'ordinador.
+
++ Introduir dades confidencials únicament en webs segures.
+
++ Revisar periòdicament els comptes d'usuari.
+
++ Prudent a l'hora de detectar un possible malware i avisar a les autoritats d'un possible delicte.
+
++ Ser un mateix amb coneixements bàsics d'ètica moral, perquè no et robin informació.
+
+L'ús de les tecnologies de la informació serà molt més agradable si ens ajudem l'un amb l'altre establint un camp de __ciberseguretat__.
+
+![](https://image.shutterstock.com/image-vector/conclusion-stamp-sticker-seal-round-600w-595970663.jpg)
+
+> Img src: image.shutterstock.com
