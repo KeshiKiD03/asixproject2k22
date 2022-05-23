@@ -349,6 +349,14 @@ víctima mitjançant SET que enviarà el correu automàticament amb un compte de
 entrarà, però no veurà l'enllaç perquè és una emergència i posarà les seves credencials. D'aquesta
 manera recollirem l'usuari i la contrasenya de l'usuari (Credential Harvester).
 
+## 21/05/2022
+
+Aaron & Cristian = 09:00 - 21:00 )
+
+Revisió de la documentació i practicar els diferents tipus d'atacs que hem estat desplegant al llarg d'aquest temps.
+
+Recerca d'informació, es descarten algunes opcions ja que no han acabat de funcionar o bé estaven incompletes.
+
 
 ## 20/05/2022
 
@@ -401,5 +409,4 @@ Passar a net i corregir erros de la documentació.
 
 Penjat el video... etc.
 
-Tot correcte.
-
+Tot correcte. Documentació _done_.
