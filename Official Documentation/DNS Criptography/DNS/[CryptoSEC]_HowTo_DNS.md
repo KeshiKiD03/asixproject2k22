@@ -936,7 +936,7 @@ zone "zone1.com" {
 
 ```
 
-Què respondra el servidor a la següent consulta?
+Què respondrà el servidor a la següent consulta?
 
 ```bash
 user@debian:~$ host zone1.com
