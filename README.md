@@ -72,17 +72,17 @@
 
     + **MITM - DNS POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/ARP%20Spoofing/README.md#dns-poisoning--spoofing-bettercap)[--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/DNS%20Spoofing/README.md)
 
-    + **MAIL PHISING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/Hacking%20%26%20Pentesting/DNS%20Spoofing#part1-arp-spoof--dns-spoof-amb-setoolkit-mail-phishing--site-cloner--credential-harvester)
+    + **MAIL PHISING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/DNS%20Spoofing/README.md#part1-arp-spoof--dns-spoof-amb-setoolkit-mail-phishing--site-cloner--credential-harvester)
 
-+ **KALI LINUX**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/.md)
++ **KALI LINUX**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/README.md)
 
-    + **ETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Ettercap/%5BCryptoSEC%.md)
+    + **ETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Ettercap/README.md)
 
-    + **SETOOLKIT**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Setoolkit/%5BCryptoSEC%.md)
+    + **SETOOLKIT**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Setoolkit/README.md)
 
-    + **BETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Bettercap/%5BCryptoSEC%.md)
+    + **BETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Bettercap/README.md)
 
-+ **CONCLUSIÓ**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Conclusi%C3%.md)
++ **CONCLUSIÓ**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Conclusi%C3%B3.md)
 
 # **MULTIMEDIA**:
 
