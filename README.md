@@ -64,11 +64,11 @@
 
 + **HACKING & PENTESTING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/README.md)
 
-    + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/Brute%20Force%20Attack%20-%20Crack%20Password/%5BCryptosec%.md)
+    + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/Brute%20Force%20Attack%20-%20Crack%20Password/README.md)
 
-    + **MITM - ARP POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/ARP%20Spoofing/%5BCryptosec%.md#arp-poisoning--spoofing-2-parts-bettercap)
+    + **MITM - ARP POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/ARP%20Spoofing/README.md#arp-poisoning--spoofing-2-parts-bettercap)
 
-    + **MITM - ARP SPOOFING + SNIFFING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/ARP%20Spoofing/%5BCryptosec%.md#mitm---eavesdropping-sniffing-bettercap)[--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/Hacking%20%26%20Pentesting/Man%20in%20The%20Middle#mitm---eavesdropping-sniffing-bettercap)
+    + **MITM - ARP SPOOFING + SNIFFING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/ARP%20Spoofing/README.md#mitm---eavesdropping-sniffing-bettercap)[--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/Hacking%20%26%20Pentesting/Man%20in%20The#mitm---eavesdropping-sniffing-bettercap)
 
     + **MITM - DNS POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/ARP%20Spoofing/%5BCryptosec%.md#dns-poisoning--spoofing-bettercap)[--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/DNS%20Spoofing/%5BCryptosec%.md)
 
