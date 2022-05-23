@@ -98,6 +98,7 @@ Durant aquest projecte, ens trobarem diferents _reptes_ tant en l'àmbit _tècni
 En la recerca d'informació de tota la documentació, independentment de les seves funcionalitats, les bateries de proves, el control de versions fins a arribar a l'últim "_stage_" del projecte. Es farà un seguiment de tot el que es fa, es farà i el que s'està fent en hores de projecte.
 
 ![](https://www.infinitiaresearch.com/wp-content/uploads/2021/09/design-research.png)
+> __Img Source__: *https://www.infinitiaresearch.com/wp-content/uploads/2021/09/design-research.png*
 
 
 <br>
@@ -166,6 +167,7 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
 <br>
 
 ![](https://directortic.es/wp-content/uploads/2020/04/desaf%C3%ADos-de-ciberseguridad.jpg)
+> __Img Source__: *https://directortic.es/wp-content/uploads/2020/04/desaf%C3%ADos-de-ciberseguridad.jpg*
 
 <br>
 
@@ -322,6 +324,8 @@ _Altres:_
 
 + __Mantenir sistemes actualitzats, antivirus... etc__: Actualitzar el programari i el maquinari per a no tenir vulnerabilitats quan hi hàgin amenaçes.
 
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README-TOFINISH.md) ] <--
+
 # __Bibliografia__
 
 ### CIBERSECURITY
@@ -361,9 +365,6 @@ _Altres:_
 
 - https://www.redeszone.net/tutoriales/seguridad/que-es-ataque-arp-poisoning/ - ARP POISONING
 - https://es.acervolima.com/ataque-mitm-man-in-the-middle-usando-arp-poisoning/ - ARP POISONING 
-
-
-
 
 ### DNS CACHE POISONING / DNS SPOOF
 
