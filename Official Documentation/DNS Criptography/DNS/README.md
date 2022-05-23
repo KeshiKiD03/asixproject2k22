@@ -143,6 +143,7 @@ Cada dispositiu connectat a __Internet__ té una __adreça IP única__ que altre
 Els servidors DNS eliminen la necessitat que els h__umans memoritzin__ adreces IP com ara __192.168.1.1__ (en IPv4) o adreces IP alfanumèriques més complexes, com ara 2400:cb00:2048:1::c629:d7a2 (en IPv6). 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/theinternet-dns.png?raw=true)
+<br>
 
 # __Com funciona el DNS__
 
@@ -153,6 +154,7 @@ Quan un usuari vol __carregar__ una __pàgina web__, s'ha de produir una traducc
 Per entendre el procés darrere de la _resolució DNS_, és important conèixer els diferents components de maquinari entre els quals ha de passar una consulta DNS. Per al navegador web, la cerca de DNS es produeix "darrere de l'escenari" i no requereix cap interacció de l'ordinador de l'usuari a part de la sol·licitud inicial. 
 
 ![](https://d1.awsstatic.com/Route53/how-route-53-routes-traffic.8d313c7da075c3c7303aaef32e89b5d0b7885e7c.png)
+> __Img Source__: *https://d1.awsstatic.com/Route53/how-route-53-routes-traffic.8d313c7da075c3c7303aaef32e89b5d0b7885e7c.png*
 
 <br>
 <br>
@@ -187,6 +189,7 @@ Quan un client nou sol·liciti l'adreça IP d'un nom de domini que ha estat sol�
 La majoria dels usuaris d'Internet utilitzen un solucionador recursiu proporcionat pel seu ISP, però hi ha altres opcions disponibles; per exemple , l'1.1.1.1 de Cloudflare .
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/root-nameserver.png)
+> __Img Source__: *https://www.cloudflare.com/img/learning/dns/dns-server-types/root-nameserver.png*
 
 <br>
 <br>
@@ -201,6 +204,7 @@ Hi han 13 servidors de noms d'arrel DNS, són coneguts per tots els _resolvers r
 Un servidor arrel accepta la consulta d'un resolutor recursiu que inclou un nom de domini, i el servidor de noms arrel respon dirigint el resolutor recursiu a un __servidor de noms TLD__, en funció de l'extensió d'aquest domini __(.com, .net, .org, etc.)__.
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/root-nameserver.png)
+> __Img Source__: *https://www.cloudflare.com/img/learning/dns/dns-server-types/root-nameserver.png*
 
 <br>
 <br>
@@ -221,6 +225,7 @@ Si un usuari estava cercant __google.com__, després de rebre una resposta d'un 
 + Dominis de __nivell superior__ de codi de país: inclouen tots els dominis específics d'un país o estat. Alguns exemples inclouen __.uk, .us, .ru i .jp__.
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/tld-nameserver.png)
+> __Img Source__: *https://www.cloudflare.com/img/learning/dns/dns-server-types/tld-nameserver.png*
 
 <br>
 <br>
@@ -237,6 +242,7 @@ El servidor de noms autoritatiu conté la informació específica del nom de dom
 Pot proporcionar una __solució recursiva__ amb l'adreça IP d'aquest servidor que es troba al registra __DNS A__ o si té un alias registre __CNAME__, que proporcionarà al _resolver recursiu_ un domini d'àlies. 
 
 ![](https://www.cloudflare.com/img/learning/dns/dns-server-types/authoritative-nameserver.png)
+> __Img Source__: *https://www.cloudflare.com/img/learning/dns/dns-server-types/authoritative-nameserver.png*
 
 <br>
 <br>
@@ -263,6 +269,7 @@ Afortunadament, els _"Recursive DNS Resolver"_  __no__ sempre han de fer diverse
 L' emmagatzematge en __memòria cau__ és un procés d'agilització de procés en la _busca_ del registre DNS que ajuda a __saltar-se__ les sol·licituds _necessàries_ servint abans el registre del recurs sol·licitat a la cerca DNS. 
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-record-request-sequence-1.png)
+> __Img Source__: *https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-record-request-sequence-1.png*
 
 <br>
 <br>
@@ -277,10 +284,14 @@ Aquest és el __servidor al final__ de la cadena de cerca de DNS que respondrà 
 Un servidor DNS autoritatiu  _(Authoritative DNS Server)_ pot oferir sol·licituds a partir de les seves pròpies dades sense necessitat de consultar altres recursos _(recursive)_, ja que és la font final de veritat per a __certs registres DNS__.
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-record-request-sequence-2.png)
+> __Img Source__: *https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-record-request-sequence-2.png*
+<br>
 
 Convé indicar que en els casos de _consultes relatives_ a __subdominis__, com ara _foo.exemple.com_ o _blog.cloudflare.com_ , s'afegirà un servidor de noms addicional a la seqüència després del servidor de noms autoritatiu, que és el responsable d'emmagatzemar el registre __CNAME__ del subdomini. 
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-record-request-sequence-3.png)
+> __Img Source__: *https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-record-request-sequence-3.png*
+<br>
 
 Hi ha una diferencia fundamental entre molts serveis de DNS i el que ofereix Cloudfare per exemple. Hi han diferents _"Recursive DNS Resolver"_ com Google DNS, OpenDNS o proveïdors com Comcast mantenen instal·lacions de centre de dades de _"Recursive DNS Resolver"_.
 
@@ -329,6 +340,7 @@ Un cop els 8 passos de la cerca del DNS han tornat l'adreça IP per exemple.com,
 10. El servidor en aquesta adreça IP torna la __pàgina web__ perquè es processi al navegador (pas 10). 
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-lookup-diagram.png)
+> __Img Source__: *https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-lookup-diagram.png*
 
 <br>
 <br>
@@ -349,6 +361,7 @@ La __consulta__ fa referència a la sol·licitud feta a un solucionador de DNS q
 Un __resolver__ de DNS recursiu és el servidor que accepta una __solució recursiva__ i procesa la resposta fent les __sol·licituds necessàries__.
 
 ![](https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-recursive-query.png)
+> __Img Source__: *https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-recursive-query.png*
 
 <br>
 <br>
@@ -765,12 +778,14 @@ Utilitza el fitxer /etc/resolv.conf com a configuració del _resolver_.
 La seva funció és millorar el rendiment de les resolucions mitjançant memòria cau. Quan una resolució provoca una fallada de memòria cau s'utilitzarà el DNS extern del qual probablement s'haurà obtingut la IP mitjançant una concessió DHCP. 
 
 ![](https://603168-1953132-raikfcquaxqncofqfm.stackpathdns.com/wp-content/images/dns_process.jpg)
-
+> __Img Source__: *https://603168-1953132-raikfcquaxqncofqfm.stackpathdns.com/wp-content/images/dns_process.jpg*
+ 
 <br>
 <br>
 <br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%208.45.44%20PM.jpeg?raw=true)
+> __Img Source__: *https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%208.45.44%20PM.jpeg?raw=true*
 
 ## __Resolució de noms al client__
 
@@ -986,6 +1001,7 @@ ns		A	192.168.122.1
 
 Quina adreça IP es resoldrà inversament al nom host.tld? `43.5.202.78`
 
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 # __Bibliografia__
 - https://www.cloudflare.com/learning/dns/dns-over-tls/
