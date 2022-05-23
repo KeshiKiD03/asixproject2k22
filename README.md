@@ -50,19 +50,19 @@
 
 + **DNS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/DNS%20Criptography/DNS/README.md)
 
-+ **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DNS%20Criptography/DNSSEC%20%26%20Cripto/%5BCryptoSEC%.md)
++ **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DNS%20Criptography/README.md)
 
-+ **DHCP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DHCP/%5BCryptoSEC%.md)
++ **DHCP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DHCP/README.md)
 
-+ **FIREWALL (IPTABLES)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/IPTABLES-FORWARD.PNG) [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/IPTABLES-FORWARD.PNG)
++ **FIREWALL (IPTABLES)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/IPTABLES-FORWARD.PNG) [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/IPTABLES-FORWARD2.PNG)
 
-+ **APACHE2**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Apache2/%5BCryptoSEC%.md)
++ **APACHE2**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Apache2/README.md)
 
-    + **OPENSSL**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Apache2/%5BCryptoSEC%.md#openssl)
+    + **OPENSSL**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Apache2/README.md#openssl)
 
-+ **OPENVAS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/OpenVAS/%5BCryptoSEC%.md)
++ **OPENVAS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/OpenVAS/README.md)
 
-+ **HACKING & PENTESTING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/Atacs_Ciberdeliq%C3%.md)
++ **HACKING & PENTESTING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/README.md)
 
     + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/Brute%20Force%20Attack%20-%20Crack%20Password/%5BCryptosec%.md)
 
