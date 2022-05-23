@@ -44,7 +44,7 @@
 
 # __Index__
 
-+ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_Objectiu.pdf)
++ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DNS%20Criptography/DNS/%5BCryptoSEC%5D_HowTo_DNS.md)
 
 + **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md#la-proposta-final)
 
@@ -99,7 +99,8 @@ En la societat d'avui en dia, l'ús de les tecnologies de la informació, ens fa
 <br>
 
 ![](https://www.infodefensa.com/images/showid2/5311974?w=900&mh=700)
-
+> __Img Source__: *https://www.infodefensa.com/images/showid2/5311974?w=900&mh=700*
+<br>
 
 Millons de dades, viatgen per la "_xarxa_" anomenada "_Internet_", que bàsicament son un conjunt de dispositius interconnectats entre sí.
 
@@ -109,7 +110,8 @@ Internet, abarca una rutina cotidiana d’ús de _xarxes socials_, _entretenimen
 Tota aquesta informació viatja en un xarxa on hi hà “__de tot__”.
 
 ![](https://elordenmundial.com/wp-content/uploads/2019/03/800px-Deepweb_graphical_representation.svg.png)
-
+> __Img Source__: *https://elordenmundial.com/wp-content/uploads/2019/03/800px-Deepweb_graphical_representation.svg.png*
+<br>
 
 Molta de la informació que viatja per Internet, pot ser que sigui confidencial i delicada, n’hi hà que viatja _segur_ i d’altre _insegur_, si viatja insegur… és un problema __greu…__.
 
@@ -120,6 +122,7 @@ Com ja diu el refrà: “__Millor prevenir que lamentar__”, la solució davant
 <br>
 
 ![](https://www.lasrozas.es/sites/default/files/inline-images/Ciber.jpg)
+> __Img Source__: *https://www.lasrozas.es/sites/default/files/inline-images/Ciber.jpg*
 
 
 <br>
@@ -139,9 +142,8 @@ El seu funcionament es basa en implantar tècniques i eines de __maquinari__ / _
 Un ciberatac no nomes consisteix en la **pèrdua i destruccio de dades** confidencials, si no que tambe **afecta** el nivell de **productivitat i rentabilitat**, portant com a conseqüencia la perdua del capital, de la confiança per part dels clients y de la competivitat davant del mercat legal.
 
 ![](https://static.vecteezy.com/system/resources/previews/001/406/100/non_2x/types-of-cyber-security-to-keep-in-mind-free-vector.jpg)
-
-
-
+> __Img Source__: *https://static.vecteezy.com/system/resources/previews/001/406/100/non_2x/types-of-cyber-security-to-keep-in-mind-free-vector.jpg*
+<br>
 
 La __ciberseguretat__ s’ha tornat un assumpte de vital importancia per a tot tipus d’empreses, sense importar el tamany.
 
@@ -173,10 +175,9 @@ Ensenyar-los als usuaris a eliminar els __fitxers adjunts__ de correus __electr�
 
 ## __Tipus d'amenaçes davant la "Ciberseguretat"__
 
-
 ![](https://pbs.twimg.com/media/E3nXigSXwAANyGi.jpg:large)
-
-
+> __Img Source__: *https://pbs.twimg.com/media/E3nXigSXwAANyGi.jpg:large*
+<br>
 
 # __Bibliografia__
 
