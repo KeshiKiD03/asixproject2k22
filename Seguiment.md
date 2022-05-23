@@ -29,17 +29,11 @@ Aquest arxiu es documentarà els passos dins del projecte que tenim al cap.
 Document els nostres moviments a petició dels professors que van sol·licitar que ens documentéssim a nosaltres mateixos fent el projecte final.
 
 
-
-
-
-
 ## 19/04/2022
 
 Cristian= 08:45-13:55 (2h) 
 
 Busca informació sobre el sistema de detecció d'intrusió, Wazuh i les seves característiques a diversos llocs per Internet. Mirant diversos exemples de presentacions de projectes relacionats amb el nostre, per agafar idees dels nostres objectius.
-
-
 
 
 ## 20/04/2022
@@ -53,8 +47,6 @@ Comencen per muntar Docker: un implementat amb WireGuard VPN i l'altre amb DNS. 
 Continuant ampliant les nostres idees, ajuntant WireGuard amb Wazuh (o Radius) i iptables. Al DNS criptogràfic l'hi afegirem Open SSL amb un parell de claus privades. Hem decidit afegir un Docker més: aquest tindrà dins ...
 
 Passen omplir la introducció del nostre projecte, buscant informació sobre la ciberseguretat. Ficant múltiples definicions i imatges.
-
-
 
 
 ## 25/04/2022
@@ -80,8 +72,6 @@ Cristian & Aaron = 16:00-19:45 (3h)
 Segueixen omplin els Objetius, el Seguiment i despres segueixen buscant informacion sobre DNS Criptography i començant una practica de Wazuh.
 
 
-
-
 ## 26/04/2022
 
 Cristian & Aaron = 12:10 - 14:00 
@@ -93,8 +83,6 @@ Com Aaron i en Cristian tenen Windows a casa han optat per una full virtualizati
 La instal·lació es farà des de zero amb un disk iso de ubuntu server 20.04 i allà instal·larem els serveis quan ens hagi funcionat.
 
 ![Llegir](https://github.com/KeshiKiD03/asixproject2k22/blob/main/UbuntuServer/README.md)
-
-
 
 
 ## 27/04/2022
@@ -125,7 +113,6 @@ Research d'informació dels diferents atacs informàtics. I bases de proves en l
 Proves a Kali Linux de les diferents atacs informàtics.
 
 Proves de Man in The Middle Attack, DNS Spoofing, atac d'Enginyeria Social, ARP Spoofing.
-
 
 ## 03/05/2022
 
@@ -159,7 +146,6 @@ Després Cristian va estar buscant informació de DNSSEC.
 Copies de seguretat de les màquines VDI.
 
 
-
 ## 05/05/2022
 
 Aaron & Cristian = 09:00 - 12:00 
@@ -169,7 +155,6 @@ Aaron termina de repetir el procés d'ahir amb captures i entendre el resultat.
 Cristian fa el muntatge de DNSSEC.
 
 
-
 ## 06/05/2022
 
 Aaron & Cristian = 10:00 - 12:00 
@@ -177,7 +162,6 @@ Aaron & Cristian = 10:00 - 12:00
 Aaron fa la exhibició de Kali Linux de DNS Spoofing y ARP Spoofing per suplantar www.twitter.com i la suplantació del reenviament de paquets entre una connexió Client-Servidor a Eduard Canet.
 
 Cristian segueix buscant DNSSEC.
-
 
 
 ## 09/05/2022
@@ -194,7 +178,6 @@ Proves en la tarda de DNSSEC OK. Amb la comanda dnssec-signed creem un fitxer fi
 
 
 
-
 ## 10/05/2022
 
 Aaron & Cristian = 08:00 - 14:00 
@@ -204,7 +187,6 @@ Cristian ha continuat amb la practica DNSSEC, ha porvat dues formes de signatura
 L'Aaron ha fet una recerca d'informació de DNS, partint de la base i refrescant conceptes com DNS Recursiu, DNS TLD, Root Servers, DNS Forwarding... Exemples i terminologies i conceptes varis de DNS.
 
 Quan sapiguem la base d'ambdues cosas farem exemples de DNS adaptades a la nostra organització o zona "Cryptosec.net" i farem un intent d'atac de DNS Sense DNSSEC i després implantació de DNS Segur i veurem com procesa l'un i l'altra.
-
 
 
 Aaron & Cristian = 18:00 - 20:20 
