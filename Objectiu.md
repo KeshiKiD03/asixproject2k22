@@ -324,7 +324,7 @@ _Altres:_
 
 + __Mantenir sistemes actualitzats, antivirus... etc__: Actualitzar el programari i el maquinari per a no tenir vulnerabilitats quan hi hàgin amenaçes.
 
-## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_Objectiu.pdf) ] <--
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 # __Bibliografia__
 
