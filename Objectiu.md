@@ -324,7 +324,7 @@ _Altres:_
 
 + __Mantenir sistemes actualitzats, antivirus... etc__: Actualitzar el programari i el maquinari per a no tenir vulnerabilitats quan hi hàgin amenaçes.
 
-## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README-TOFINISH.md) ] <--
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 # __Bibliografia__
 
@@ -413,10 +413,3 @@ _Altres:_
 - https://www.youtube.com/watch?v=MkEet3Akvyo -- SET CURS OFENSIU
 - https://www.youtube.com/watch?v=gKykLr59LW8 - BASIC ATTACK WITH METASPLOIT
 - https://www.youtube.com/watch?v=MkEet3Akvyo - SET BASIC HACKING
-
-
-
-
-
-
-
