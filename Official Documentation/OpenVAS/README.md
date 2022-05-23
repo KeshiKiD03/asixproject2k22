@@ -13,8 +13,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 
 
 <br>
@@ -43,16 +42,22 @@ L'escàner obté les proves per detectar vulnerabilitats a partir d'un canal que
 OpenVAS ha estat desenvolupat i impulsat per l'empresa Greenbone Networks des de l'any 2006. Com a part de la família de productes de gestió de vulnerabilitats comercials Greenbone Enterprise Appliance, l'escàner forma Greenbone Vulnerability Management juntament amb altres mòduls de codi obert.
 
 ![](./Photos/OpenVAS.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 Ens va permetre escanejar objectius tan dispositius mòbils, dispositius de xarxa, PC, etc. allò que sigui que estigui connectada a la nostra xarxa. Amb el fi d'aconseguir possibles vulnerabilitats que tinguin aquestes hosts i per poder fer dues coses:
 - Per una banda, si som l'atacant o l'auditor, intentar explotar-les.
 - I si estem a l'equip de defensa, intentar defensar-los i tancar-los correctament.
 
 ![](./Photos/openvas-exemple_structure.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 Dins del panl de monitoritzacio del OpenVAS podem veure les xarxes, hosts o un grup d'IPs per poder escanjer a dispositius de xarxa, a dispositius mobils, a servidors, a PC, a aplicacion, un munt de coses.
 
 ![](./Photos/openvas-exemple_dashboard.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 ## __Practica__
 
@@ -69,6 +74,8 @@ Dins del panl de monitoritzacio del OpenVAS podem veure les xarxes, hosts o un g
 ``sudo gmv setup``
 
 ![](./Photos/openvas-ins01(1).png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 4. Un cop acabat l'instal·lacio ens donara un nom d'usuari i un password per poder entrar al panel del OpenVAS. Es important guardar-ho en un lloc segur.
 
@@ -82,13 +89,28 @@ aa6f95ca-9641-47f4-bd7d-7a5c5a56b934
 ``sudo gvm-start``
 
 ![](./Photos/openvas-ins01(2).png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
+
 ![](./Photos/openvas-ins02.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 6. Quant el servidor s'engega, ja ens obre un navegador. Nomes queda aceptar el certificats i iniciar sessio al OpenVAS. Ja podem observer i escanejar els dispositus/hosts/IPs de la nostra xarxa i d'altres xarxes.
 
 ![](./Photos/openvas-dashboard01.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
+
 ![](./Photos/openvas-dashboard02.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
+
 ![](./Photos/openvas-dashboard03.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
+
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 ## __Bibliografia__
 - https://www.youtube.com/watch?v=Sf9LKyCpgPc
