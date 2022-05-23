@@ -44,49 +44,49 @@
 
 # __Index__
 
-+ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DNS%20Criptography/DNS/%5BCryptoSEC%5D_HowTo_DNS.md)
++ **Objectius**: --> https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_Objectiu.pdf <--
 
-+ **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md#la-proposta-final)
+    + **Proposta final (LAN CryptoSEC)** --> https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_Objectiu.pdf <--
 
-+ **DNS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/DNS%20Criptography/DNS)
++ **DNS**: --> https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/HowTo/Services/%5BCryptoSEC%5D_HowTo_DNS.pdf <--
 
-    + **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **DNSSEC**: [--> https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/HowTo/Services/%5BCryptosec%5D_HowTo_DNSSEC.pdf <--]
 
-+ **DHCP**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **DHCP**: [--> https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/HowTo/Services/%5BCryptoSEC%5D_HowTo_DHCP.pdf <--]
 
-+ **FIREWALL (IPTABLES)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **FIREWALL (IPTABLES)**: [--> https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/IPTABLES-FORWARD.PNG | https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/IPTABLES-FORWARD2.PNG<--]
 
-+ **APACHE2**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **APACHE2**: [--> https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/HowTo/Services/%5BCryptoSEC%5D_HowTo_Apache2.pdf <--]
 
-    + **OPENSSL (CA Veritat Absoluta) - (CryptoSEC Cert)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **OPENSSL (CA Veritat Absoluta) - (CryptoSEC Cert)**
 
-+ **OPENVAS**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **OPENVAS**: [-->  <--]
 
-+ **HACKING & PENTESTING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **HACKING & PENTESTING**: [-->  <--]
 
-    + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [-->  <--]
 
-    + **MITM - ARP POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **MITM - ARP POISONING / SPOOFING**: [-->  <--]
 
-    + **MITM - DNS POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **MITM - DNS POISONING / SPOOFING**: [-->  <--]
 
-    + **MITM - ARP SPOOFING + SNIFFING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **MITM - ARP SPOOFING + SNIFFING**: [-->  <--]
 
-    + **EMAIL PHISHING**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **EMAIL PHISHING**: [-->  <--]
 
-+ **KALI LINUX**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **KALI LINUX**: [-->  <--]
 
-    + **ETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **ETTERCAP**: [-->  <--]
 
-    + **SETOOLKIT**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **SETOOLKIT**: [-->  <--]
 
-    + **BETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **BETTERCAP**: [-->  <--]
 
-    + **WIRESHARK**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
+    + **WIRESHARK**: [-->  <--]
 
-+ **PREVENCIÓ I PROTECCIÓ**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **PREVENCIÓ I PROTECCIÓ**: [-->  <--]
 
-+ **CONCLUSIÓ**: [--> readME <--](https://github.com/KeshiKiD03/ssl_cert/tree/main/ssl22_ldaps-Keshi#ldap-server--tls-ssl)
++ **CONCLUSIÓ**: [-->  <--]
 
 <br>
 <br>
