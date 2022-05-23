@@ -26,9 +26,9 @@
 
 # __Index__
 
-+ **Bettercap**: [--> readME <--](#ettercap)
++ **Bettercap**: [--> readME <--](#bettercap)
 
-+ **Els atacs que es poden fer a Ettercap**: [--> readME <--](#els-atacs-que-es-poden-fer-a-ettercap)
++ **Carecterístiques de Bettercap**: [--> readME <--](#carecterístiques-de-bettercap)
 
     + **Eavesdropping (Escoltar atentament)**: [--> readME <--](#eavesdropping-escoltar-atentament)
 
@@ -97,6 +97,7 @@ Segur que et resulta familiar;  és una cosa molt normal a la vida.  Imagina't q
 
 ![](https://www.consultantsreview.com/newstransfer/upload/r8so8rsz_data_sniffing.jpg)
 
+> Img src: www.consultantsreview.com
 
 Quan xateges amb el teu amic en mode “text clar”, és possible olorar el teu trànsit.  Pot semblar antic, però pots estar segur que és un dels problemes de seguretat més grans en una xarxa que els administradors de xarxa no tenen en compte. 
 
@@ -104,7 +105,9 @@ Quan xateges amb el teu amic en mode “text clar”, és possible olorar el teu
 
 Sé que saps què és una adreça IP (Protocol d'Internet).  Com saps, per comunicar-se amb altres ordinadors, cada ordinador necessita una IP.  En aquest atac, un atacant vol fer una adreça de destinació falsa i enganyar-te sobre això.  Per exemple, el teu objectiu és mibanco.com i un atacant reenvia la teva petició a un fals mibanco.com.  L'objectiu és suplantar el host víctima.
 
-![](https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg?webp=true&v=1.0.1)
+![](http://blockbit.com/wp-content/uploads/2019/11/2-1-1024x576.png)
+
+> Img src: blockbit.com
 
 ## __Atac de denegació de servei (DoS)__
 
@@ -129,6 +132,7 @@ Al DDoS, un atacant pot utilitzar la tècnica del Zombie per capturar molts ordi
 
 ![](https://nextvision.com/wp-content/uploads/2018/05/Captura-de-pantalla-2018-05-29-a-las-3.52.42-p.m.-2.png)
 
+> Img src: nextvision.com
 
 ## __Atac Man in the Middle__
 
@@ -169,7 +173,11 @@ Envenenament de les taules ARP de les víctimes implicades i reenviament de paqu
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/ARPSPOOF.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/ARP-SPOOF.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 <br>
 <br>
@@ -185,6 +193,8 @@ Amb l'ARP Poisoning d'abans activarem un _sniffer_ i estarem escoltant la màqui
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/HELP-BETTERCAP.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 <br>
 <br>
 <br>
@@ -193,12 +203,19 @@ Amb l'ARP Poisoning d'abans activarem un _sniffer_ i estarem escoltant la màqui
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BET0.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCAP-arspoofing.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/Bettercaps.png?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCAP-TICKER.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 <br>
 <br>
@@ -208,11 +225,15 @@ Amb l'ARP Poisoning d'abans activarem un _sniffer_ i estarem escoltant la màqui
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BET3.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BET1.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BET2.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/MAN-IN-THE-MIDDLE-ATTACK.PNG?raw=true)
@@ -229,14 +250,23 @@ Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps0.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps1.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps2.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps3.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 <br>
 <br>
@@ -247,22 +277,37 @@ Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING0.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 2. Seleccionem la opció 5: __Mass Mailer Attack__. Omplim les opcions: `1`, `email destination`, `1`, `our email address`, `our email password`, `priority`, `attach file`, `fake email subject`, `body of messeage with END`
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish0.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish1.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish2.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish3.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING4.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING2.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING3.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 
 
@@ -323,17 +368,29 @@ Specifies the URL._
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/DOS-CRYPTOSEC.NET.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PAGE-DOWN.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 2. El hacker activa la pàgina del __cryptos3c.net__ (fake) amb el SET (__Social Engineering Tool__).
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC0.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC1.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC2.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC3.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 3. El hacker emet un comunicat general a l'empresa dient que s'ha caigut temporalment la pàgina principal i que han d'entrar per la pàgina següent `cryptos3c.net`
 
@@ -342,7 +399,9 @@ Specifies the URL._
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC4.PNG?raw=true)
 
-5. Les credencials del client han sigut robades!
+> Img src: @Aaron & Cristian's Github
+
+5. Les credencials del client han __sigut robades__!
 
 <br>
 <br>

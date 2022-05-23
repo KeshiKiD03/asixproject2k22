@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.21)  22 MAY 2022 17:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.21)  23 MAY 2022 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./tex2pdf.-194614dcd23689f8/input.tex
-(./tex2pdf.-194614dcd23689f8/input.tex
+**./tex2pdf.-daaaa42b20fc4097/input.tex
+(./tex2pdf.-daaaa42b20fc4097/input.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -360,7 +360,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count267
 \l__pdf_internal_box=\box47
 )
-(./tex2pdf.-194614dcd23689f8/input.aux)
+(./tex2pdf.-daaaa42b20fc4097/input.aux)
 \openout1 = `input.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
@@ -415,7 +415,7 @@ LaTeX Info: Redefining \ref on input line 66.
 LaTeX Info: Redefining \pageref on input line 66.
 LaTeX Info: Redefining \nameref on input line 66.
 
-(./tex2pdf.-194614dcd23689f8/input.out) (./tex2pdf.-194614dcd23689f8/input.out)
+(./tex2pdf.-daaaa42b20fc4097/input.out) (./tex2pdf.-daaaa42b20fc4097/input.out)
 \@outlinefile=\write3
 \openout3 = `input.out'.
 
@@ -441,12 +441,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<./tex2pdf.-194614dcd23689f8/785b57206d80bd3d5ef15f036481e103db8435a1.png, id=6
-8, 899.7615pt x 506.49225pt>
-File: ./tex2pdf.-194614dcd23689f8/785b57206d80bd3d5ef15f036481e103db8435a1.png 
+<./tex2pdf.-daaaa42b20fc4097/785b57206d80bd3d5ef15f036481e103db8435a1.png, id=4
+4, 899.7615pt x 506.49225pt>
+File: ./tex2pdf.-daaaa42b20fc4097/785b57206d80bd3d5ef15f036481e103db8435a1.png 
 Graphic file (type png)
-<use ./tex2pdf.-194614dcd23689f8/785b57206d80bd3d5ef15f036481e103db8435a1.png>
-Package pdftex.def Info: ./tex2pdf.-194614dcd23689f8/785b57206d80bd3d5ef15f0364
+<use ./tex2pdf.-daaaa42b20fc4097/785b57206d80bd3d5ef15f036481e103db8435a1.png>
+Package pdftex.def Info: ./tex2pdf.-daaaa42b20fc4097/785b57206d80bd3d5ef15f0364
 81e103db8435a1.png  used on input line 89.
 (pdftex.def)             Requested size: 345.002pt x 194.20795pt.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9
@@ -454,81 +454,44 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+) [1
 
-Package hyperref Warning: Suppressing link with empty target on input line 96.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./tex2pdf.-daaaa42b20fc409
+7/785b57206d80bd3d5ef15f036481e103db8435a1.png>]
+<./tex2pdf.-daaaa42b20fc4097/36eb054d18ec1a19cb60c01aeef47ee0d9c67d6d.jpg, id=8
+2, 642.4pt x 455.7025pt>
+File: ./tex2pdf.-daaaa42b20fc4097/36eb054d18ec1a19cb60c01aeef47ee0d9c67d6d.jpg 
+Graphic file (type jpg)
+<use ./tex2pdf.-daaaa42b20fc4097/36eb054d18ec1a19cb60c01aeef47ee0d9c67d6d.jpg>
+Package pdftex.def Info: ./tex2pdf.-daaaa42b20fc4097/36eb054d18ec1a19cb60c01aee
+f47ee0d9c67d6d.jpg  used on input line 153.
+(pdftex.def)             Requested size: 345.0088pt x 244.74062pt.
+ [2 <./tex2pdf.-daaaa42b20fc4097/36eb054d18ec1a19cb60c01aeef47ee0d9c67d6d.jpg>]
+<./tex2pdf.-daaaa42b20fc4097/193c2dd9e32f432bea47a8c10364a792fbb446d8.jpg, id=8
+7, 451.6875pt x 309.155pt>
+File: ./tex2pdf.-daaaa42b20fc4097/193c2dd9e32f432bea47a8c10364a792fbb446d8.jpg 
+Graphic file (type jpg)
+<use ./tex2pdf.-daaaa42b20fc4097/193c2dd9e32f432bea47a8c10364a792fbb446d8.jpg>
+Package pdftex.def Info: ./tex2pdf.-daaaa42b20fc4097/193c2dd9e32f432bea47a8c103
+64a792fbb446d8.jpg  used on input line 221.
+(pdftex.def)             Requested size: 345.02289pt x 236.149pt.
+ [3]
 
+! LaTeX Error: Unknown graphics extension: .1.
 
-Package hyperref Warning: Suppressing link with empty target on input line 98.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 100.
-
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 102.
-
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./tex2pdf.-194614dcd23689f
-8/785b57206d80bd3d5ef15f036481e103db8435a1.png>]
-<./tex2pdf.-194614dcd23689f8/435c2dc624a5342e23e6fe2aae43e04e8c80f8a6.png, id=8
-9, 805.0878pt x 1154.51324pt>
-File: ./tex2pdf.-194614dcd23689f8/435c2dc624a5342e23e6fe2aae43e04e8c80f8a6.png 
-Graphic file (type png)
-<use ./tex2pdf.-194614dcd23689f8/435c2dc624a5342e23e6fe2aae43e04e8c80f8a6.png>
-Package pdftex.def Info: ./tex2pdf.-194614dcd23689f8/435c2dc624a5342e23e6fe2aae
-43e04e8c80f8a6.png  used on input line 217.
-(pdftex.def)             Requested size: 345.00168pt x 494.73985pt.
- [2] [3 <./tex2pdf.-194614dcd23689f8/435c2dc624a5342e23e6fe2aae43e04e8c80f8a6.p
-ng>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-70.
-
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \hbox (27.74892pt too wide) in paragraph at lines 284--284
-[]\T1/lmtt/m/n/10 - Ub 20.04 SOA "SOACryptosec": BRIDGE (DHCP enp0s3) - 10.200.
-243.164/24[] 
- []
-
-
-Overfull \hbox (43.49887pt too wide) in paragraph at lines 284--284
-[]    \T1/lmtt/m/n/10 - APACHE2: Pàg www.cryptosec.net o 10.200.243.164/cryptos
-ec/index.html[] 
- []
-
-
-Overfull \hbox (38.24889pt too wide) in paragraph at lines 284--284
-[]        \T1/lmtt/m/n/10 - Perquè funcioni el HTTPS cal importar el CACERT.PEM
- al FIREFOX.[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--303
-[]\T1/lmr/m/n/10 (+20) Internal Net-work (cryp-tosec enp0s8 192.168.3.0/24) -
- []
-
-[4]
-
-! Package inputenc Error: Unicode character â€‹ (U+200B)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.316       192.168.3.100/24 â€‹
-                                â€‹- 192.168.3.200/24 
+l.240 ...2192effcf29c7836c29ece4a04b8ab2875d519.1}
+                                                   
 Here is how much of TeX's memory you used:
- 11655 strings out of 483183
- 171592 string characters out of 5966292
- 442444 words of memory out of 5000000
- 26465 multiletter control sequences out of 15000+600000
- 560392 words of font info for 43 fonts, out of 8000000 for 9000
+ 11613 strings out of 483183
+ 171478 string characters out of 5966292
+ 440183 words of memory out of 5000000
+ 26415 multiletter control sequences out of 15000+600000
+ 556380 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,4n,42p,841b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,5n,42p,841b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 !  ==> Fatal error occurred, no output PDF file produced!
