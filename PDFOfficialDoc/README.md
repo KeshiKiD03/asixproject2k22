@@ -44,7 +44,7 @@
 
 # __Index__
 
-+ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md)
++ **Objectius**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_Objectiu.pdf)
 
 + **Proposta final (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md#la-proposta-final)
 
