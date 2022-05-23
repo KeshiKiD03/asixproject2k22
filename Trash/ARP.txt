@@ -1,0 +1,23 @@
+Diapo 1: 1 minut aprox
+
+Diapo 2: 1 min
+
+Diapo 3: 45 sec
+
+Diapo 3: 40 sec
+
+Diapo 3: 45
+
+
+
+Verificar DNS normal - Host - Dig
+
+APACHE2: Reload y restart y verificar IP - Acceso Firefox.
+
+
+ARP ve de Address Resolution Protocol. En espanyol ho podem traduir com a protocol de resolució d'adreces. Es tracta d'un protocol molt important a la xarxa que té com a missió trobar l'adreça MAC que correspon a una adreça IP. Per aconseguir això s'envia un paquet, que és la sol·licitud ARP.
+ARP Spoofing és com es coneix aquest tipus d'atacs. Bàsicament és l'enverinament de taules ARP.
+És una tècnica que utilitzen els pirates informàtics per aconseguir entrar a una xarxa per robar els paquets de dades que passen per la xarxa local. D'aquesta manera podria controlar el trànsit i també fins i tot aturar-lo.
+Els ciberdelinqüents poden enviar missatges falsificats ARP a una LAN.
+Per tant, podem dir que una suplantació d'ARP consisteix a enviar missatges ARP falsos a l'Ethernet.
+Resum, l'adreça MAC de l'atacant amb l'adreça IP i aconsegueix que la informació arribi a l'atacant.
