@@ -13,7 +13,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 
 
 
@@ -77,6 +77,8 @@ Un atac pot ser actiu o passiu:
 + __Atac passiu__: En aquest tipus d'atac, l'atacant intenta obtenir informació del sistema sense destruir la informació. Aquest atac és més aviat vigilància i reconeixement de l'objectiu.
 
 ![](./Photos/Etter1.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 Diferents tipus d'atacs actius i pasius:
 
@@ -105,7 +107,8 @@ Atac pasiu:
 Segur que et resulta familiar;  és una cosa molt normal a la vida.  Imagina't que vols trobar alguna informació sobre dos amics i la seva relació.  Una manera molt senzilla és escoltar en secret les vostres paraules.  Aquest tipus d'atac també es produeix a les comunicacions informàtiques, però es coneix com a __sniffing__.
 
 ![](https://www.consultantsreview.com/newstransfer/upload/r8so8rsz_data_sniffing.jpg)
-
+> __Img Source__: *https://www.consultantsreview.com/newstransfer/upload/r8so8rsz_data_sniffing.jpg*
+<br>
 
 Quan xateges amb el teu amic en mode “text clar”, és possible olorar el teu trànsit.  Pot semblar antic, però pots estar segur que és un dels problemes de seguretat més grans en una xarxa que els administradors de xarxa no tenen en compte. 
 
@@ -114,6 +117,8 @@ Quan xateges amb el teu amic en mode “text clar”, és possible olorar el teu
 Sé que saps què és una adreça IP (Protocol d'Internet).  Com saps, per comunicar-se amb altres ordinadors, cada ordinador necessita una IP.  En aquest atac, un atacant vol fer una adreça de destinació falsa i enganyar-te sobre això.  Per exemple, el teu objectiu és mibanco.com i un atacant reenvia la teva petició a un fals mibanco.com.  L'objectiu és suplantar el host víctima.
 
 ![](https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg?webp=true&v=1.0.1)
+> __Img Source__: *https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg?webp=true&v=1.0.1*
+<br>
 
 ## __Atac de denegació de servei (DoS)__
 
@@ -137,7 +142,8 @@ Al DDoS, un atacant pot utilitzar la tècnica del Zombie per capturar molts ordi
 
 
 ![](https://nextvision.com/wp-content/uploads/2018/05/Captura-de-pantalla-2018-05-29-a-las-3.52.42-p.m.-2.png)
-
+> __Img Source__: *https://nextvision.com/wp-content/uploads/2018/05/Captura-de-pantalla-2018-05-29-a-las-3.52.42-p.m.-2.png*
+<br>
 
 ## __Atac Man in the Middle__
 
@@ -151,6 +157,8 @@ D'altra banda, hi ha una tercera persona entre tu i la persona amb qui et comuni
 
 
 ![](https://cisomag.eccouncil.org/wp-content/uploads/2021/09/MicrosoftTeams-image-28.png)
+> __Img Source__: *https://cisomag.eccouncil.org/wp-content/uploads/2021/09/MicrosoftTeams-image-28.png*
+<br>
 
 Afortunadament, alguns protocols poden impedir-ho, com el SSL.  
 
@@ -184,16 +192,20 @@ _Website Attack Vectors -> Creditials Harvestor -> Clone website / Use Web Templ
 Utilitzarem un "toolkit" anomenat "setooklit" que es permetrà fer phishing a una pàgina i fer un clonatge perfecte.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/SeTool.png?raw=true)
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 Podem fer un clonatge d'una pàgina web o també té "templates" pre definides. En aquest exemple utilitzarem el template de https://www.twitter.com
 
 Tarda una estona.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/SeToolkitTwitterClone.png?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/Suplantació.png?raw=true)
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 Com podem observar la pàgina de Twitter està a la nostra IP 10.200.243.137 al port 80.
 
@@ -228,17 +240,16 @@ __Obrim Ettercap.__
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/Ettercap.png?raw=true)
-
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 `ettercap --gtk` --> Fem el loadup.
 
 
 Ens anem a `Plugins` --> `Manage the Plugins` --> `DNS Spoof plugin` --> L'activem.
 
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/DNSSpoof.png?raw=true)
-
-
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/DNSSpoof.png?raw=true)> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 A continuació, ARP enverinará tots els amfitrions de la xarxa, de manera que tot el trànsit passa per la nostra màquina (atacant) --> començarem a "esnifar".
 
@@ -267,9 +278,8 @@ Connectar-se a Twitter - Farà la redirecció a 10.200.243.137
 
 ```
 
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/DNSSpoof.png?raw=true)
-
-
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/DNSSpoof.png?raw=true)> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 ## __Ettercap per CLI__
 
@@ -326,13 +336,17 @@ EN REALITAT QUI CONECTA AMB EL SERVIDOR, SOC JO NO LA VÍCTIMA. FEM LA TORNADA.
 _RESUM: TOT EL TRÀFIC DE PAQUETS QUE SURT DE LA VÍCTIMA AL SERVIDOR, SERÀN "FORWARD" AL MEU CLIENT ATACANT. JA QUE EL LA VÍCTIMA CREU QUE QUI CONTACTA ES AL ROUTER, PERO NO. SUPLANTO LA MAC DESTÍ DEL ROUTER PER LA MEVA._
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/New22.png?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/New23.png?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 
+<br>
+<br>
+<br>
 
-<br>
-<br>
-<br>
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 # __Bibliografia__: 
 https://esgeeks.com/tutorial-ettercap-ejemplos/

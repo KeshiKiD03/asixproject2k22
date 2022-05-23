@@ -3,23 +3,47 @@
 ### __2HISX 2021-2022__
 ### __Aaron Andal & Cristian Condolo__
 
+
+<br>
+<br>
+<br>
 <br>
 
-# __Ciberseguretat__: "_Careful where you step_" 🕵️ 🔎
-
-<div style="align: center; width: 100%">
-    <img src="https://tec.mx/sites/default/files/styles/header_full/public/2021-08/ciberseguridad-tec-de-monterrey.jpg?itok=H3ibmb8t" />
-</div>
-
-# Index
-
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+# __CryptoSEC__: "_Careful where you step in_"
 
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 
 
-* **Lorem Ipsum**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
+<br>
+<br>
+<br>
+
+
+
+
+# __Index__
+
++ **Kali Linux**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
++ **Per a què serveis Kali Linux**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
++ **Principals característiques de Kali Linux**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
++ **Com s'instal·la Kali Linux?**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
++ **Laboratori pentesting (Kali Linux)**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
+    + **Que es un laboratori per a pen testing de Kali Linux?**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
++ **Qui utilitza Kali Linux?**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
++ **Algunes eines de Kali Linux**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
++ **Kali Linux**: [Plantilla](https://github.com/KeshiKiD03/asixproject2k22/)
+
 
 # Kali Linux
 
@@ -30,6 +54,8 @@ Kali Linux es troba entre les distribucions de seguretat de Linux més usades, j
 Algunes d'aquestes eines segur que et sonen força, sobretot Wireshark, de la qual tenim un interessant article el nostre bloc, parlant sobre la mateixa.
 
 ![](https://elmonodelcodigo.com/wp-content/uploads/2018/04/kali-compressor.jpg)
+> __Img Source__: *https://elmonodelcodigo.com/wp-content/uploads/2018/04/kali-compressor.jpg*
+<br>
 
 # Per a què serveis Kali Linux?
 
@@ -81,9 +107,9 @@ Destaquem algunes de les seves característiques principals:
 
 - Fes servir l'estàndard de jerarquia de sistema de fitxers (FHS) que permet biblioteques, fitxers de suport, etc.
 
-<div style="align: center; width: 100%">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/VirtualBox_Kali_Linux_21.01_x64_Desktop_GER_26_02_2021_16_59_25.png" />
-</div>
+![](https://upload.wikimedia.org/wikipedia/commons/b/b3/VirtualBox_Kali_Linux_21.01_x64_Desktop_GER_26_02_2021_16_59_25.png)
+> __Img Source__: *https://upload.wikimedia.org/wikipedia/commons/b/b3/VirtualBox_Kali_Linux_21.01_x64_Desktop_GER_26_02_2021_16_59_25.png*
+<br>
 
 # Com s'instal·la Kali Linux?
 
@@ -103,9 +129,9 @@ A continuació farem de forma detallada cóm s'utilitza Kali Linux implementant 
 
 Un laboratori per a _pentesting_, és un entorn que muntem a local que estarà totalment controlat per nosaltres mateixos, per a fer tot tipus i experiments de serveis que tinguin una finalitat una prova a priori abans de ser implementades en __ordinadors reals__.
 
-<div style="align: center; width: 100%">
-    <img src="https://dc722jrlp2zu8.cloudfront.net/media/cache/7b/c1/7bc153bfb08a081fc0ed7bdf1f8a6c5e.webp" />
-</div>
+![](https://dc722jrlp2zu8.cloudfront.net/media/cache/7b/c1/7bc153bfb08a081fc0ed7bdf1f8a6c5e.webp)
+> __Img Source__: *https://dc722jrlp2zu8.cloudfront.net/media/cache/7b/c1/7bc153bfb08a081fc0ed7bdf1f8a6c5e.webp*
+<br>
 
 Primer necesitarem un software de virtualització per a fer les proves. La que utilitzarem es VirtualBox.
 
@@ -113,25 +139,25 @@ Virtualbox es una eina de virtualització gratuita, potent i multiplataforma. Pe
 
 L'utilitzarem per virtualitzar Kali Linux.
 
-<div style="align: center; width: 100%">
-    <img src="https://dc722jrlp2zu8.cloudfront.net/media/cache/39/e4/39e464179b96261481b33348d257a0eb.webp" />
-</div>
+![](https://dc722jrlp2zu8.cloudfront.net/media/cache/39/e4/39e464179b96261481b33348d257a0eb.webp)
+> __Img Source__: *https://dc722jrlp2zu8.cloudfront.net/media/cache/39/e4/39e464179b96261481b33348d257a0eb.webp*
+<br>
 
 Ens descarregem Virtualbox i l'instal·lem, tindrem aquesta interfície.
 
-<div style="align: center; width: 100%">
-    <img src="./Photos/Kali1.png" />
-</div>
+![](./Photos/Kali1.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
 Un cop tinguem el VirtualBOX. Podem instal·lar Kali Linux desde 0 o bé importar una màquina virtual amb Kali Linux ja instal·lat. Nosaltres hem utilitzat un Kali Linux ja instal·lat i l'hem importat amb el VirtualBox.
 
 Un cop ens hem baixat la VDI de Kali Linux en aquest [enllaç](https://www.google.com/search?client=firefox-b-e&q=osboxes+kali+linux) i l'hem importat a VirtualBox, tindrem aquesta interfície.
 
-<div style="align: center; width: 100%">
-    <img src="./Photos/Kali2.png" />
-</div>
+![](./Photos/Kali2.png)
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
+<br>
 
-# Qui utilitza Kali Linux
+# Qui utilitza Kali Linux?
 
 Molts perfils del sector d'IT utilitzen distribucions Linux per a les seves feines i tasques diàries.  
 
@@ -157,15 +183,15 @@ Alguns dels llocs de treball que usen Kali són els següents:
 
 * __Black Hat Hackers__: Aquests _“hackers de barret negre”_ usen Kali Linux per _descobrir_ i _explotar_ vulnerabilitats.  Kali Linux també té nombroses aplicacions d'enginyeria social, que poden ser utilitzades per un _Black Hat Hacker_ per comprometre una organització o individu.  Aquests sí que utilitzen Kali Linux amb _fins malèvols_, ja sigui particularment o professionalment, i són els coneguts com _Crackers_.
 
-<div style="align: center; width: 100%">
-    <img src="https://cultura-informatica.com/wp-content/uploads/2021/12/Diferencias-Hacker-y-Cracker.jpg" />
-</div>
+![](https://cultura-informatica.com/wp-content/uploads/2021/12/Diferencias-Hacker-y-Cracker.jpg)
+> __Img Source__: *https://cultura-informatica.com/wp-content/uploads/2021/12/Diferencias-Hacker-y-Cracker.jpg*
+<br>
 
 * __Grey Hat Hackers__: Aquests “hackers de barret gris” es troben entre els White Hat i els Black Hat Hackers. Utilitzaran Kali Linux en els mateixos mètodes que els dos enumerats anteriorment, ja que es dediquen a trencar sistemes de seguretat de les empreses per posteriorment oferir els seus serveis a les mateixes.
 
-<div style="align: center; width: 100%">
-    <img src="https://linube.com/blog/wp-content/uploads/hacker.jpg" />
-</div>
+![](https://linube.com/blog/wp-content/uploads/hacker.jpg)
+> __Img Source__: *https://linube.com/blog/wp-content/uploads/hacker.jpg*
+<br>
 
 * __Entusiasta de la informàtica__: Els popularment coneguts com a “frikis”, terme que es fa servir avui dia per als entusiastes de qualsevol tipus d'àmbit. És un terme força genèric, però qualsevol persona interessada a aprendre més sobre xarxes o ordinadors, en general, pot utilitzar Kali Linux per aprendre més sobre tecnologia de la informació, xarxes i vulnerabilitats comunes. __Post data__: Aquest som nosaltres :)
 
@@ -223,9 +249,11 @@ Hashcat és conegut entre la comunitat d'experts en seguretat, com ara l'eina de
 
 https://www.redeszone.net/tutoriales/seguridad/crackear-contrasenas-john-the-ripper/ 
 
-<div style="align: center; width: 100%">
-    <img src="https://linube.com/blog/wp-content/uploads/Kali3.png" />
-</div>
+![](https://linube.com/blog/wp-content/uploads/Kali3.png)
+> __Img Source__: *https://linube.com/blog/wp-content/uploads/Kali3.png*
+<br>
+
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 # Bibliografia
 - https://medium.com/@williamkhepri/las-25-mejores-herramientas-de-kali-linux-b8c2a92f2ab4

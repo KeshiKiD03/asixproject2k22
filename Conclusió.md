@@ -13,7 +13,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 
 
 
@@ -53,5 +53,6 @@ Per finalitzar, per establir tot aquest aprenentatge a la vida real, hem de:
 L'ús de les tecnologies de la informació serà molt més agradable si ens ajudem l'un amb l'altre establint un camp de __ciberseguretat__.
 
 ![](https://image.shutterstock.com/image-vector/conclusion-stamp-sticker-seal-round-600w-595970663.jpg)
-
 > Img src: image.shutterstock.com
+
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
