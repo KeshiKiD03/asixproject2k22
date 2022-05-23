@@ -159,7 +159,7 @@ sudo systemctl status apache2
 
 ```bash
 Output
-● apache2.service - The Apache HTTP Server
+apache2.service - The Apache HTTP Server
      Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
      Active: active (running) since Thu 2020-04-23 22:36:30 UTC; 20h ago
        Docs: https://httpd.apache.org/docs/2.4/
@@ -167,9 +167,9 @@ Output
       Tasks: 55 (limit: 1137)
      Memory: 8.0M
      CGroup: /system.slice/apache2.service
-             ├─29435 /usr/sbin/apache2 -k start
-             ├─29437 /usr/sbin/apache2 -k start
-             └─29438 /usr/sbin/apache2 -k start
+             29435 /usr/sbin/apache2 -k start
+             29437 /usr/sbin/apache2 -k start
+             29438 /usr/sbin/apache2 -k start
 ```
 
 4. Obrir un navegador i posar la IP del SOA 10.200.243.164. Per HTTP. Més tard configurarem HTTPS.

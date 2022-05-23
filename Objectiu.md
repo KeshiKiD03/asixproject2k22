@@ -59,9 +59,9 @@
 
 # __Objectius "Projecte ASIX - Ciberseguretat:__ _"Careful where you step in"_
 
-L'objectiu principal d'aquest projecte de Ciberseguretat, és la creació d'una empresa de __"Ciberseguretat"__ anomenamada _"CryptoSEC"_. Aquesta empresa implementarà una serie de serveis de __seguretat__ i __prevenció__ davant d'atacs maliciosos que tindràn la finalitat de _comprometre_ la empresa i obtenir informació delicada i confidencial. Aaron i Cristian, son els caps d'aquesta empresa i portaràn a terme aquest magnífic repte de protegir-se davant de _hackers_ com les de la Organització __"Anonymous"__, __" The Shadow Brokers"__, __"Elliott Gunton"__... entre altres.
+L'objectiu principal d'aquest projecte de Ciberseguretat, és la creació d'una empresa de __"Ciberseguretat"__ anomenada _"CryptoSEC"_. Aquesta empresa implementarà una serie de serveis de __seguretat__ i __prevenció__ davant d'atacs maliciosos que tindran la finalitat de _comprometre_ la empresa i obtenir informació delicada i confidencial. Aaron i Cristian, son els caps d'aquesta empresa i portaran a terme aquest magnífic repte de protegir-se davant de _hackers_ com les de la Organització __"Anonymous"__, __" The Shadow Brokers"__, __"Elliott Gunton"__... entre altres.
 
-La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar intrusos (__Wazuh__) en la xarxa de __"CryptoSEC"__, entre altres eines de prevenció i detecció. 
+La empresa de ciberseguretat en tot moment s'hi faran auditories per detectar intrusos (__Wazuh__) en la xarxa de __"CryptoSEC"__, entre altres eines de prevenció i detecció. 
 
 <br>
 <br>
@@ -71,9 +71,9 @@ La empresa de ciberseguretat en tot moment s'hi faràn auditoríes per detectar 
 
 __CryptoSEC.NET__ és una xarxa interna local en algun lloc remot del planeta on hi treballen els millors tècnics en __ciberseguretat__, però hi hà un __"intrús"__ que tindrà un _host maliciós_ que intentarà fer la vida impossible als altres clients.
 
-Aquest host maliciós serà un __Kali Linux__ on hi dispondrà d'eines de seguretat, de _"hackeig"_ o _"crackeig"_, de _pentesting_, _accés a la xarxa_... entre altres. Aquest host maliciós farà atacs com el _"DNS Caché Poisoning - DNS Spoofing"_, juntament amb l'"_ARP Cache Poisoning - Spoofing _" (enverinament de la caché dels servidors de _DNS SOA_ i _DNS Forwarder_ de CryptoSEC, amb posteriori suplantació i redirecció a una pàgina web _"fake"_ que serà reenviada com a resposta a la petició dels clients). També farà un atac de __Brute Force__ on _crackejarà_ contrasenyes amb encriptació SHA512 (UNIX) per poder entrar al servidor _router_: __ForwardSEC__.
+Aquest host maliciós serà un __Kali Linux__ on hi tindra d'eines de seguretat, de _"hackeig"_ o _"crackeig"_, de _pentesting_, _accés a la xarxa_... entre altres. Aquest host maliciós farà atacs com el _"DNS Caché Poisoning - DNS Spoofing"_, juntament amb l'"_ARP Cache Poisoning - Spoofing _" (enverinament de la caché dels servidors de _DNS SOA_ i _DNS Forwarder_ de CryptoSEC, amb posteriori suplantació i redirecció a una pàgina web _"fake"_ que serà reenviada com a resposta a la petició dels clients). També farà un atac de __Brute Force__ on _crackejarà_ contrasenyes amb encriptació SHA512 (UNIX) per poder entrar al servidor _router_: __ForwardSEC__.
 
-Aquest host maliciós interferirà en la connexió entra el DNS autoritari SOA i el DNS Recursor que es qui farà de _resolver/forwarder_ dels __clients DNS__ que hi pertenèixen a la xarxa interna __"CryptoSEC"__. Serà un __DNS Forwarder (ForwardSEC)__ més.
+Aquest host maliciós interferirà en la connexió entra el DNS autoritari SOA i el DNS Recursor que es qui farà de _resolver/forwarder_ dels __clients DNS__ que hi prové a la xarxa interna __"CryptoSEC"__. Serà un __DNS Forwarder (ForwardSEC)__ més.
 
 A __CryptoSEC__ implementarà, serveis com un DNS autoritari amb una zona anomenada __"cryptosec.net"__ que tindrà DNSSEC per assegurar les consultes DNS que hi facin els clients de la seva _"zona"_ o _"domini"_.
 
@@ -81,7 +81,7 @@ Al __DNS Forwarder (ForwardSEC)__ tindrà serveis com __DHCP__ que brindarà una
 
 El __servidor principal autoritari__ anomenat com a hostname __"SOACryptosec"__ que serà un __Ubuntu Server 20.04__, tindrà només el _BIND9_ amb la zona __"cryptosec.NET"__, estarà ubicada en la xarxa de la classe _10.200.243.164/24_.
 
-Tindrà un __servidor secundari forwarder__ anomenat com a hostname __"ForwardSEC"__ que serà també un __Ubuntu Server 20.04__ que tindrà el paper fonamental de fer de _resolver_ als clients DNS ja que ell mateix serà un forwarder i reenviarà les peticions de DNS a __"SOACryptosec"__ per a que resolgui peticions de DNS tant de __"cryptosec.net"__ com d'Internet, si no el sap el preguntarà als __ROOT SERVERS__, _a.k.a._ __Internet__. També tindrà aplicacions per monitoritzar la xarxa i detectar intrusos que intentin sacsejar la nostra xarxa __"cryptosec.net"__.
+Tindrà un __servidor secundari forwarder__ anomenat com a hostname __"ForwardSEC"__ que serà també un __Ubuntu Server 20.04__ que tindrà el paper fonamental de fer de _resolver_ als clients DNS ja que ell mateix serà un forwarder i reenviarà les peticions de DNS a __"SOACryptosec"__ per a que resolgui peticions de DNS tant de __"cryptosec.net"__ com d'Internet, si no el sap el preguntarà als __ROOT SERVERS__, _a.k.a._ __Internet__. També tindrà aplicacions per observar la xarxa i detectar intrusos que intentin sacsejar la nostra xarxa __"cryptosec.net"__.
 
 Com hi haviem comentat, a __CryptoSEC__ hi englobem diferents serveis en funcionament, com __detecció d'intrusions (OpenVAS)__ o algunes de __prevenció d'atacs__, tot explicant breument cada cascuna dels diferents serveis que hi componen la nostra organització: __"CryptoSEC"__.
 
@@ -107,7 +107,7 @@ En la recerca d'informació de tota la documentació, independentment de les sev
 
 # __Conceptes i aspectes generals _"mindset"_ del projecte__
 
-Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots els _serveis_ que utilitzarem, _segon_ un petit exemple de funcionament del servei en qüestió i finalment, l'assemblació al cos del projecte.
+Tenim una idea clara, _primer_ la recerca d'informació i recapitulació de tots els _serveis_ que utilitzarem, _segon_ un petit exemple de funcionament del servei en qüestió i finalment, la creació al cos del projecte.
 
 Tot això després de verificar que compleixen aspectes tant de la informàtica o concretament a la __ciberseguretat__ que un __auditor o defensor de ciberseguretat__ ha de conèixer: 
 
@@ -117,7 +117,7 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
     
     + S'ha de mantenir __actualizat__ l'__inventari__ tant de __hardware__ o __software__. 
     
-    + Conèixer les __característiques__, ja que amb freqüència son punts d'entrada de programes i aplicatius __maliciosos__. 
+    + Conèixer les __característiques__, ja que amb freqüència son punts d'entrada de programes i aplicacions __maliciosos__. 
     
     + Cal identificar __amenaçes__, __vulnerabilitats__ i __riscos__ per als actius. 
     
@@ -136,7 +136,7 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
     + S'han d'implementar __polítiques formals__ per a l'eliminació segura de fitxers electrònics i dispositius en desús.
 
 
-+ Els __backups__: És important assegurar la informació abans i després de que s'hagin provocat _"desastres informàtics"_. Una bona recuperació o _cleaning_ d'avant d'aquest escenari és clau per retomar una activitat d'una empresa.
++ Els __backups__: És important assegurar la informació abans i després de que s'hagin provocat _"desastres informàtics"_. Una bona recuperació o _cleaning_ d'avant d'aquest escenari és clau per tornar una activitat d'una empresa.
 
 + La __detecció__: 
 
@@ -144,7 +144,7 @@ Tot això després de verificar que compleixen aspectes tant de la informàtica 
 
     + Cal comprendre l'impacte dels esdeveniments de ciberseguretat. Cal treballar ràpidament i exhaustivament per comprendre l'amplitud i la profunditat de l'impacte. Així com comunicar informació sobre l'esdeveniment amb les parts interessades apropiades.
     
-    + Cal monitoritzar els ordinadors per controlar si es detecta accés de personal no autoritzat als ordinadors, dispositius (suports demmagatzematge de dades de tipus USB) i programari. Heu de revisar la xarxa per controlar si es detecten usuaris o connexions no autoritzats.
+    + Cal observar els ordinadors per controlar si es detecta accés de personal no autoritzat als ordinadors, dispositius (suports d'emmagatzematge de dades de tipus USB) i programari. Heu de revisar la xarxa per controlar si es detecten usuaris o connexions no autoritzats.
 
 + La __resposta__: 
 
@@ -196,7 +196,7 @@ El servidor __"SOACryptosec"__ serà un servidor autoritari on hi tindrà la zon
 
 Tots els clients de la xarxa de __"cryptosec"__ han de passar per el router per poder navegar a l'exterior o fer peticions _DNS_ (En aquest cas han de preguntar al __resolver__ __ForwardSEC__).
 
-El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràcies a DHCP i donarà els nameservers adequats a les seves xarxes internes per a que puguin navegar a Internet. També s'hi farà NAT a l'exterior on hi navegaràn _enmascarats_.
+El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràcies a DHCP i donarà els nameservers adequats a les seves xarxes internes per a que puguin navegar a Internet. També s'hi farà NAT a l'exterior on hi navegaran _enmascarats_.
 
 <br>
 
@@ -208,13 +208,13 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 
 + L'__aïllament en la xarxa interna__: Mecanisme de seguretat que permetrà separar els programes en execució, per tal de mitigar errors del sistema o vulnerabilitats de software. Gracies a la nostra xarxa interna __"cryptosec"__.
 
-+ __Xifratge de dades__: Comunicació xifrada en tot moment a CryptoSEC. Els clients podràn fer resolucions al seu _resolver_ de forma segura utilitzant "__criptografía asimétrica__". D'aquesta forma l'atacant hacker no podrà dur a terme el seu atac __man in the middle__ amb __spoofing__. L'accés a la pàgina de __cryptosec.net__ estarà xifrada en tot moment gràcies als certificats generats i signats per __Veritat Absoluta__. Permeten que actui el SSL, així no podràn interceptar-nos.
++ __Xifratge de dades__: Comunicació xifrada en tot moment a CryptoSEC. Els clients podran fer resolucions al seu _resolver_ de forma segura utilitzant "__criptografia asimètrica__". D'aquesta forma l'atacant hacker no podrà dur a terme el seu atac __man in the middle__ amb __spoofing__. L'accés a la pàgina de __cryptosec.net__ estarà xifrada en tot moment gràcies als certificats generats i signats per __Veritat Absoluta__. Permeten que actuï el SSL, així no podran interceptar-nos.
 
-+ __Protegirse davant la vulnerabilitat__: Davant d'un atac maliciós, d'una denegació de servei DOS, d'un metaexploit, d'un phishing, d' un spoofing... etc. Hem de saber com actuar davant d'aquests escenaris. Millor prevenir que lamentar-nos! 
++ __Protegir-se davant la vulnerabilitat__: Davant d'un atac maliciós, d'una denegació de servei DOS, d'un metasploit, d'un phishing, d' un spoofing... etc. Hem de saber com actuar davant d'aquests escenaris. Millor prevenir que lamentar-nos! 
 
 + __Detecció i actuació davant el desastre__: Verificació amb eines com __Nmap__, __Arp__, __Wireshark__... 
 
-+ Durant l'assemblatge final, es faràn diversos atacs a l'empresa __CryptoSEC__, i l'empresa es protegirà davant d'aquestes amenaçes on es posaràn en perill la integritat de l'empresa.
++ Durant l'assemblatge final, es faran diversos atacs a l'empresa __CryptoSEC__, i l'empresa es protegirà davant d'aquestes amenaçes on es posaran en perill la integritat de l'empresa.
 
 + L'atacant farà els atacs des d'un Kali Linux.
 
@@ -232,7 +232,7 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 
 ## __Iptables__
 
-+ Els usuaris podràn fer NAT a l'exterior, enmascarats.
++ Els usuaris podran fer NAT a l'exterior, _enmascarats_.
 
 ## __OpenVAS (Host Intrusion Detect)__
 
@@ -246,7 +246,7 @@ El servidor __"SOACryptosec"__ farà de router emetrà IPs automàticament gràc
 
 + Ens servirà per un certificat a la nostra zona "cryptosec.net", on hi tindrem un Apache2.
 
-+ Amb el parell de claus privades - publiques, la nostra conexió estarà xifrada. Ja que Apache2 utilitzarà la _keys_ i el _cert_ de __CryptoSEC__, aquest certificat ha sigut firmat per __Veritat Absoluta__.
++ Amb el parell de claus privades - publiques, la nostra connexió estarà xifrada. Ja que Apache2 utilitzarà la _keys_ i el _cert_ de __CryptoSEC__, aquest certificat ha sigut firmat per __Veritat Absoluta__.
 
 ## __DNS + DNSSEC (Asymmetric Cryptography)__
 
