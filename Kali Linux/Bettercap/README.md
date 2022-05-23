@@ -30,23 +30,23 @@
 
 + **Carecterístiques de Bettercap**: [--> readME <--](#carecterístiques-de-bettercap)
 
-    + **Eavesdropping (Escoltar atentament)**: [--> readME <--](#eavesdropping-escoltar-atentament)
+  + **Eavesdropping (Escoltar atentament)**: [--> readME <--](#eavesdropping-escoltar-atentament)
 
-    + **Falsificació de direccions IP (Address Spoofing o DNS Cache Poisoning + ARP Spoof)**: [--> readME <--](#falsificació-de-direccions-ip-address-spoofing-o-dns-cache-poisoning--arp-spoof)
+  + **Falsificació de direccions IP (Address Spoofing o DNS Cache Poisoning + ARP Spoof)**: [--> readME <--](#falsificació-de-direccions-ip-address-spoofing-o-dns-cache-poisoning--arp-spoof)
 
-    + **Atac de denegació de servei (DoS)**: [--> readME <--](#atac-de-denegació-de-servei-dos)
+  + **Atac de denegació de servei (DoS)**: [--> readME <--](#atac-de-denegació-de-servei-dos)
 
-    + **Atac Man in the Middle**: [--> readME <--](#atac-man-in-the-middle)
+  + **Atac Man in the Middle**: [--> readME <--](#atac-man-in-the-middle)
 
 + **Exemple pràctic d'Ettercap**: [--> readME <--](#exemple-pràctic-dettercap)
 
-    + **Exemple utilitzant __setoolkit__ a Kali Linux i ETTERCAP**: [--> readME <--](#exemple-1-utilitzant-setoolkit-a-kali-linux-i-ettercap)
+  + **Exemple utilitzant __setoolkit__ a Kali Linux i ETTERCAP**: [--> readME <--](#exemple-1-utilitzant-setoolkit-a-kali-linux-i-ettercap)
 
-    + **Explicació resumida**: [--> readME <--](#explicació-resumida)
+  + **Explicació resumida**: [--> readME <--](#explicació-resumida)
 
 + **Bibliografia**: [--> readME <--](#bibliografia)
 
-    
+  
 
 <br>
 <br>
@@ -58,6 +58,9 @@
 __BetterCAP__ és una eina potent, flexible i portàtil creada per realitzar diversos tipus datacs MITM contra una xarxa, manipular HTTP, HTTPS i trànsit TCP en temps real, buscar credencials i molt més. Analitzador de xarxa via web; inclou BlueTooth, Wifi , Detecta atacs MITM , Spoof, network protocol fuzzer
 
 ![](https://2.bp.blogspot.com/-s4xzTlSLDmQ/V1fltOXR63I/AAAAAAAAh7I/0zGSCtkq_iopM3DTxSI4zN-vfFj-H50WACLcB/s640/better0.jpg)
+
+> Img src: 2.bp.blogspot.com
+
 
 Bettercap està escrit en codi Ruby i s'aprofita de la flexibilitat i el potencial d'aquest llenguatge. 
 
@@ -93,57 +96,61 @@ Bettercap és una eina molt potent que és compatible amb les principals distrib
 
 ## __Eavesdropping (Escoltar atentament)__
 
-Segur que et resulta familiar;  és una cosa molt normal a la vida.  Imagina't que vols trobar alguna informació sobre dos amics i la seva relació.  Una manera molt senzilla és escoltar en secret les vostres paraules.  Aquest tipus d'atac també es produeix a les comunicacions informàtiques, però es coneix com a __sniffing__.
+Segur que et resulta familiar; és una cosa molt normal a la vida. Imagina't que vols trobar alguna informació sobre dos amics i la seva relació. Una manera molt senzilla és escoltar en secret les vostres paraules. Aquest tipus d'atac també es produeix a les comunicacions informàtiques, però es coneix com a __sniffing__.
 
 ![](https://www.consultantsreview.com/newstransfer/upload/r8so8rsz_data_sniffing.jpg)
 
+> Img src: www.consultantsreview.com
 
-Quan xateges amb el teu amic en mode “text clar”, és possible olorar el teu trànsit.  Pot semblar antic, però pots estar segur que és un dels problemes de seguretat més grans en una xarxa que els administradors de xarxa no tenen en compte. 
+Quan xateges amb el teu amic en mode “text clar”, és possible olorar el teu trànsit. Pot semblar antic, però pots estar segur que és un dels problemes de seguretat més grans en una xarxa que els administradors de xarxa no tenen en compte. 
 
 ## __Falsificació de direccions IP (Address Spoofing o DNS Cache Poisoning + ARP Spoof)__
 
-Sé que saps què és una adreça IP (Protocol d'Internet).  Com saps, per comunicar-se amb altres ordinadors, cada ordinador necessita una IP.  En aquest atac, un atacant vol fer una adreça de destinació falsa i enganyar-te sobre això.  Per exemple, el teu objectiu és mibanco.com i un atacant reenvia la teva petició a un fals mibanco.com.  L'objectiu és suplantar el host víctima.
+Sé que saps què és una adreça IP (Protocol d'Internet). Com saps, per comunicar-se amb altres ordinadors, cada ordinador necessita una IP. En aquest atac, un atacant vol fer una adreça de destinació falsa i enganyar-te sobre això. Per exemple, el teu objectiu és mibanco.com i un atacant reenvia la teva petició a un fals mibanco.com. L'objectiu és suplantar el host víctima.
 
-![](https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg?webp=true&v=1.0.1)
+![](http://blockbit.com/wp-content/uploads/2019/11/2-1-1024x576.png)
+
+> Img src: blockbit.com
 
 ## __Atac de denegació de servei (DoS)__
 
-En aquest tipus d'atac, un atacant intenta fer que una màquina o un recurs de xarxa no estigui disponible per als usuaris.  
+En aquest tipus d'atac, un atacant intenta fer que una màquina o un recurs de xarxa no estigui disponible per als usuaris. 
 
-L'objectiu és interrompre o suspendre els serveis que es connecten a Internet.  Aquest atac es dirigeix ​​a gateways i servidors web, com els dels bancs, i realitza alguns dels sabotatges següents.
+L'objectiu és interrompre o suspendre els serveis que es connecten a Internet. Aquest atac es dirigeix ​​a gateways i servidors web, com els dels bancs, i realitza alguns dels sabotatges següents.
 
-+ Ús de recursos computacionals, com lample de banda, la memòria, lespai en disc o fins i tot la CPU.  Com suposo, la teva ment podria divagar cap al codi maliciós.  
++ Ús de recursos computacionals, com lample de banda, la memòria, lespai en disc o fins i tot la CPU. Com suposo, la teva ment podria divagar cap al codi maliciós. 
 
 + Destrueix la informació i les taules d'encaminament.
 
 + Interrompre els components físics de la xarxa, com els routers, els switches i els firewalls.
 
-+ Envia dades no vàlides a aplicacions o serveis de xarxa.  Podeu acabar anormalment els serveis.
++ Envia dades no vàlides a aplicacions o serveis de xarxa. Podeu acabar anormalment els serveis.
 
 + Enviar molts paquets a les destinacions per inundar-los i finalment col·lapsar i apagar.
 
 + Bloquejar les destinacions i que els usuaris autoritzats no hi puguin accedir.
 
-Al DDoS, un atacant pot utilitzar la tècnica del Zombie per capturar molts ordinadors i enviar moltes peticions a la víctima a través d'ells o de bots.  Zombie vol dir que un ordinador connectat a Internet ha estat compromès per un hacker.
+Al DDoS, un atacant pot utilitzar la tècnica del Zombie per capturar molts ordinadors i enviar moltes peticions a la víctima a través d'ells o de bots. Zombie vol dir que un ordinador connectat a Internet ha estat compromès per un hacker.
 
 
 ![](https://nextvision.com/wp-content/uploads/2018/05/Captura-de-pantalla-2018-05-29-a-las-3.52.42-p.m.-2.png)
 
+> Img src: nextvision.com
 
 ## __Atac Man in the Middle__
 
-L'atac man-in-the-middle (abreujat MITM, MitM, MIM, MiM, MITMA) és una forma d'atac actiu en què un atacant estableix una connexió entre les víctimes i envia missatges entre elles.  
+L'atac man-in-the-middle (abreujat MITM, MitM, MIM, MiM, MITMA) és una forma d'atac actiu en què un atacant estableix una connexió entre les víctimes i envia missatges entre elles. 
 
-Així, les víctimes creuen que estan parlant directament entre elles, però en realitat un atacant ho controla.  
+Així, les víctimes creuen que estan parlant directament entre elles, però en realitat un atacant ho controla. 
 
-En aquest escenari, un atacant ha tingut èxit quan es pot fer passar per un usuari.  
+En aquest escenari, un atacant ha tingut èxit quan es pot fer passar per un usuari. 
 
-D'altra banda, hi ha una tercera persona entre tu i la persona amb qui et comuniques i pot controlar i vigilar el teu trànsit.  
+D'altra banda, hi ha una tercera persona entre tu i la persona amb qui et comuniques i pot controlar i vigilar el teu trànsit. 
 
 
 ![](https://cisomag.eccouncil.org/wp-content/uploads/2021/09/MicrosoftTeams-image-28.png)
 
-Afortunadament, alguns protocols poden impedir-ho, com el SSL.  
+Afortunadament, alguns protocols poden impedir-ho, com el SSL. 
 
 Un hacker pot utilitzar el següent programari per implementar aquest atac:
 
@@ -169,7 +176,11 @@ Envenenament de les taules ARP de les víctimes implicades i reenviament de paqu
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/ARPSPOOF.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/ARP-SPOOF.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 <br>
 <br>
@@ -185,6 +196,8 @@ Amb l'ARP Poisoning d'abans activarem un _sniffer_ i estarem escoltant la màqui
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/HELP-BETTERCAP.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 <br>
 <br>
 <br>
@@ -193,12 +206,19 @@ Amb l'ARP Poisoning d'abans activarem un _sniffer_ i estarem escoltant la màqui
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BET0.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCAP-arspoofing.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/Bettercaps.png?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCAP-TICKER.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 <br>
 <br>
@@ -208,11 +228,15 @@ Amb l'ARP Poisoning d'abans activarem un _sniffer_ i estarem escoltant la màqui
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BET3.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BET1.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BET2.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/MAN-IN-THE-MIDDLE-ATTACK.PNG?raw=true)
@@ -222,21 +246,30 @@ Amb l'ARP Poisoning d'abans activarem un _sniffer_ i estarem escoltant la màqui
 <br>
 <br>
 <br>
-    
+  
 ### __DNS Poisoning / Spoofing) (BETTERCAP)__ 
 
 Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS fals on ens redirigirà a la nostra màquina on hi tindrem una _fake page: m0odle.escoladeltreball.org_ (__Moodle EDT__) i l'enviarem per correu utilitzant __SET__ dient que "_URGENT! L'Eduard ha posat les notes de M06, entra urgentment i mira la nota que tens!!!_" llavors l'usuari entrarà i no se n'adonarà i li robarem les credencials mostrades al __SET__.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps0.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps1.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps2.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps3.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 <br>
 <br>
@@ -247,22 +280,37 @@ Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING0.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 2. Seleccionem la opció 5: __Mass Mailer Attack__. Omplim les opcions: `1`, `email destination`, `1`, `our email address`, `our email password`, `priority`, `attach file`, `fake email subject`, `body of messeage with END`
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish0.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish1.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish2.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish3.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING4.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING2.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING3.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 
 
@@ -323,17 +371,29 @@ Specifies the URL._
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/DOS-CRYPTOSEC.NET.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PAGE-DOWN.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 2. El hacker activa la pàgina del __cryptos3c.net__ (fake) amb el SET (__Social Engineering Tool__).
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC0.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC1.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC2.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC3.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
 
 3. El hacker emet un comunicat general a l'empresa dient que s'ha caigut temporalment la pàgina principal i que han d'entrar per la pàgina següent `cryptos3c.net`
 
@@ -342,7 +402,9 @@ Specifies the URL._
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC4.PNG?raw=true)
 
-5. Les credencials del client han sigut robades!
+> Img src: @Aaron & Cristian's Github
+
+5. Les credencials del client han __sigut robades__!
 
 <br>
 <br>
@@ -351,3 +413,7 @@ Specifies the URL._
 # __Bibliografia__: 
 
 - https://www.redeszone.net/tutoriales/seguridad/descifrar-trafico-https-bettercap-linux/
+- https://www.elladodelmal.com/2018/10/bettercap-2-la-evolucion-de-la-navaja.html
+- https://repositorioinstitucional.ceu.es/bitstream/10637/10460/1/Descubre_VictorLopez%26TeodoroRojo_UnivSPCEU_2019.pdf
+- https://www.redeszone.net/2015/08/08/analiza-todo-el-trafico-de-red-con-bettercap/
+- https://ebuah.uah.es/dspace/bitstream/handle/10017/44807/TFM_Guillen_Santana_2020.pdf?sequence=1&isAllowed=y

