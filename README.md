@@ -66,27 +66,31 @@
 
     + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/Brute%20Force%20Attack%20-%20Crack%20Password/%5BCryptosec%5D_HowTo_BruteForce.md)
 
-    + **MITM - ARP POISONING / SPOOFING**: [--> readME <--]()
+    + **MITM - ARP POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/ARP%20Spoofing/%5BCryptosec%5D_HowTo_ARPSpoofing.md#arp-poisoning--spoofing-2-parts-bettercap)
 
-    + **MITM - DNS POISONING / SPOOFING**: [--> readME <--]()
+    + **MITM - ARP SPOOFING + SNIFFING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/ARP%20Spoofing/%5BCryptosec%5D_HowTo_ARPSpoofing.md#mitm---eavesdropping-sniffing-bettercap)[--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/Hacking%20%26%20Pentesting/Man%20in%20The%20Middle#mitm---eavesdropping-sniffing-bettercap)
 
-    + **MITM - ARP SPOOFING + SNIFFING**: [--> readME <--]()
+    + **MITM - DNS POISONING / SPOOFING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/ARP%20Spoofing/%5BCryptosec%5D_HowTo_ARPSpoofing.md#dns-poisoning--spoofing-bettercap)[--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/DNS%20Spoofing/%5BCryptosec%5D_HowTo_DNSSpoof.md)
 
-    + **EMAIL PHISHING**: [--> readME <--]()
+    + **MAIL PHISING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/Hacking%20%26%20Pentesting/DNS%20Spoofing#part1-arp-spoof--dns-spoof-amb-setoolkit-mail-phishing--site-cloner--credential-harvester)
 
-+ **KALI LINUX**: [--> readME <--]()
++ **KALI LINUX**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/README.md)
 
-    + **ETTERCAP**: [--> readME <--]()
+    + **ETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Ettercap/%5BCryptoSEC%5D_HowTo_Ettercap.md)
 
-    + **SETOOLKIT**: [--> readME <--]()
+    + **SETOOLKIT**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Setoolkit/%5BCryptoSEC%5D_HowTo_Setoolkit.md)
 
-    + **BETTERCAP**: [--> readME <--]()
+    + **BETTERCAP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Kali%20Linux/Bettercap/%5BCryptoSEC%5D_HowTo_Bettercap.md)
 
     + **WIRESHARK**: [--> readME <--]()
 
 + **PREVENCIÓ I PROTECCIÓ**: [--> readME <--]()
 
 + **CONCLUSIÓ**: [--> readME <--]()
+
+# **MULTIMEDIA**:
+
+En el repositori podeu trobar tota l'informació en PDF en el repositori [``PDFOfficialDoc``](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/DNS%20Spoofing/%5BCryptosec%5D_HowTo_DNSSpoof.md)
 
 <br>
 <br>
