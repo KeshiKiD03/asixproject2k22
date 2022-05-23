@@ -13,6 +13,8 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
+> Img src: @Aaron & Cristian's Github
+
 
 # __Index__
 
@@ -30,44 +32,44 @@
 
 ### __Virtualització__
 
-- [ ] 1 SOA
-- [ ] 1 Forwarder
-- [ ] 2 Kali
-- [ ] 3 Clients en Xarxa Interna
+- [X] 1 SOA
+- [X] 1 Forwarder
+- [X] 2 Kali
+- [X] 3 Clients en Xarxa Interna
 
 ### __Programari CryptoSEC__
 
-- [ ] NETPLAN --> Configuración Network Manager dels Servidors Ubuntu Server.
-- [ ] NMAP --> Verificació d'arp, ports... etc.
-- [ ] BIND9 --> Forwarder i SOA han de poder resoldre peticions DNS als clients.
-- [ ] DHCP --> Xarxa Interna --> Configuració automàtica IP i DNS.
-- [ ] IPTABLES --> Xarxa Interna --> NAT a l'exterior.
-- [ ] APACHE2 --> https://cryptosec.net
-- [ ] TEAMVIEWER --> GUI remot
-- [ ] SSH --> Accés remot
-- [ ] OPENVAS --> Verificació de vulnerabilitats
-- [ ] WIRESHARK --> Analitzador de paquets del sistema
-- [ ] ARP -A --> Veure taula CACHE
-- [ ] HOST --> Resolver 
-- [ ] NSLOOKUP --> Resolver 
-- [ ] DIG --> Resolver 
-- [ ] JOURNALCTL --> Veure possibles errors
-- [ ] SYSTEMCTL --> Reiniciar o reload dels serveis
-- [ ] SSL --> Certificats per Apache2
-- [ ] ROUTING --> Per poder entrar a 192.168.3.0/24 desde la classe.
-- [ ] TRACEROUTE --> Observar el traçat del paquet.
-- [ ] PING --> Observar la conectivitat entre dispositius.
-- [ ] CERTBOT - LET'S ENCRYPT --> Generar certificats per dominis reals (_Tried_).
-- [ ] WAZUH --> Detectar vulnerabilitats del sistema i de la xarxa (_Tried_).
+- [X] NETPLAN --> Configuració Network Manager dels Servidors Ubuntu Server.
+- [X] NMAP --> Verificació d'arp, ports... etc.
+- [X] BIND9 --> Forwarder i SOA han de poder resoldre peticions DNS als clients.
+- [X] DHCP --> Xarxa Interna --> Configuració automàtica IP i DNS.
+- [X] IPTABLES --> Xarxa Interna --> NAT a l'exterior.
+- [X] APACHE2 --> https://cryptosec.net
+- [X] TEAMVIEWER --> GUI remot
+- [X] SSH --> Accés remot
+- [X] OPENVAS --> Verificació de vulnerabilitats
+- [X] WIRESHARK --> Analitzador de paquets del sistema
+- [X] ARP -A --> Veure taula CACHE
+- [X] HOST --> Resolver 
+- [X] NSLOOKUP --> Resolver 
+- [X] DIG --> Resolver 
+- [X] JOURNALCTL --> Veure possibles errors
+- [X] SYSTEMCTL --> Reiniciar o reload dels serveis
+- [X] SSL --> Certificats per Apache2
+- [X] ROUTING --> Per poder entrar a 192.168.3.0/24 des de la classe.
+- [X] TRACEROUTE --> Observar el traçat del paquet.
+- [X] PING --> Observar la connectivitat entre dispositius.
+- [X] CERTBOT - LET'S ENCRYPT --> Generar certificats per dominis reals (_Tried_).
+- [X] WAZUH --> Detectar vulnerabilitats del sistema i de la xarxa (_Tried_).
 
 ### __HACKING Kali__
-- [ ] SET --> Setoolkit --> Software d'atacs d'Enginyeria Social
-- [ ] BETTERCAP --> Framework/Sniffer per poder fer atacs de Man in the Middle.
-- [ ] ZPHISHING --> Framework per simular _Phishing_ real.
-- [ ] ETTERCAP --> Framework/Sniffer per poder fer atacs de man in the Middle.
-- [ ] JOHN --> Brute Force Attack tool --> Cracker password
-- [ ] SSLSTRIP --> Strips HTTPS to HTTP (_Tried_)
-- [ ] SLOWHTTP --> A type of DOS to take down __cryptosec.net__ (_Tried_)
+- [X] SET --> Setoolkit --> Software d'atacs d'Enginyeria Social
+- [X] BETTERCAP --> Framework/Sniffer per poder fer atacs de Man in the Middle.
+- [X] ZPHISHING --> Framework per simular _Phishing_ real.
+- [X] ETTERCAP --> Framework/Sniffer per poder fer atacs de man in the Middle.
+- [X] JOHN --> Brute Force Attack tool --> Cracker password
+- [X] SSLSTRIP --> Strips HTTPS to HTTP (_Tried_)
+- [X] SLOWHTTP --> A type of DOS to take down __cryptosec.net__ (_Tried_)
 
 # __Practica:__
 
@@ -144,7 +146,7 @@
 
     - Cryptosec Clients:
 
-        - Internal Network (cryptosec enp0s3 192.168.3.0/24) - 192.168.3.100/24 ​​- 192.168.3.200/24
+        - Internal Network (cryptosec enp0s3 192.168.3.0/24) - 192.168.3.100/24 - 192.168.3.200/24
 
 <br>
 <br>
@@ -177,7 +179,7 @@ X11 FORWARDING (Permetre Obrir Apps mode Gràfic):
 
     - export DISPLAY=[ENGANXAR COPIAR2]
 
-5. Verificar conectivitat des de l'ordinador del PROFE i veure què es pot obrir OK.
+5. Verificar conmectivitat des de l'ordinador del professor i veure què es pot obrir OK.
 
 __________________________________________________________________________________________________________________________________________
 
@@ -188,7 +190,7 @@ ________________________________________________________________________________
 
 ### __SOA__
 
-1. Verificació de les IPS i conectivitat amb Internet.
+1. Verificació de les IPS i connectivitat amb Internet.
 
 2. Modificar __NETPLAN__.
 
@@ -222,7 +224,7 @@ ________________________________________________________________________________
 
     - __$INCLUDE a db.cryptosec.net__ --> Signatura manual
 
-    - __dnssec-signzone__ --> Signar autom .signed
+    - __dnssec-signzone__ --> Signar automàtic .signed
 
     - __dig cryptosec.net +dnssec +multiline__
 
@@ -241,7 +243,7 @@ ________________________________________________________________________________
 
 ### __FORWARD__
 
-1. Verificació de les __IPS__ i conectivitat amb Internet.
+1. Verificació de les __IPS__ i connectivitat amb Internet.
 
 2. Modificar NETPLAN.
 
@@ -286,7 +288,7 @@ ________________________________________________________________________________
     - __Windows__: ipconfig __/flushdns__
 
 
-### __Comander per verificar la conectivitat__:
+### __Comandes per verificar la connectivitat__:
 
     - systemd-resolved --status --> Verifica DNS actual
 
@@ -332,13 +334,13 @@ X11 FORWARDING (Permetre Obrir Apps mode Gràfic):
 
 + __Brute Force Attack - Cracking Password with John__: El hacker ha aconseguit una copia dels fitxers /etc/passwd i /etc/shadow i les ha anomenat mini-passwd.txt i mini-shadow.txt. John és un __tool__ de Kali que permetrà desxifrar els _hashes_ de les contrasenyes. Quant més difícil més temps trigarà. Posarem contrasenyes sencilletes. Podrem veure com les desxifra. Utilitzarà un diccionari __rockyou.txt__. Aprofitant també que l'usuari ha  
 
-+ __ARP Poisoning / Spoofing (2 parts) (BETTERCAP)__: Envenenament de les taules ARP de les víctimes implicades i reenviament de paquets al hacker. Amb el Wireshark - ARP - Nmap, veurem com fa el duplicat de MAC.
++ __ARP Poisoning / Spoofing (2 parts) (BETTERCAP)__: Enverinament de les taules ARP de les víctimes implicades i reenviament de paquets al hacker. Amb el Wireshark - ARP - Nmap, veurem com fa el duplicat de MAC.
 
     * __MITM - Eavesdropping (Sniffing) (BETTERCAP)__: Amb l'ARP Spoof d'abans activarem un _sniffer_ i estarem escoltant la màquina afectada i veient les pàgines on visita. Podem captar credencials de pàgines HTTP.
     
     * __DNS Poisoning / Spoofing) (BETTERCAP)__: Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS fals on ens redirigirà a la nostra màquina on hi tindrem una _fake page: m0odle.escoladeltreball.org_ (__Moodle EDT__) i l'enviarem per correu utilitzant __SET__ dient que "_URGENT! L'Eduard ha posat les notes de M06, entra urgentment i mira la nota que tens!!!_" llavors l'usuari entrarà i no se n'adonarà i li robarem les credencials mostrades al __SET__.
 
-+ __Spoofing CryptoSEC.NET + DOS SlowHTTP (take down cryptosec.net) (BETTERCAP)__: Ídem que l'anterior però els targets son el __SOA__ i el __Forwarding__, els clients interns de CryptoSEC quan hagin d'anar a la pàgina web __cryptosec.net__, entraràn a __cryptos3c.net__ ja que el hacker ha avisat que hi hà una urgència a la pàgina principal i han d'entrar a la pàgina web dada pel hacker i les seves credencials seràn __robades sense que se'n adoni__! Abans de tot, el hacker utilitzarà una eina per que la pàgina de __cryptosec.net__ vagi més lent durant uns minuts. Durant aquest minuts aprofitarà per donar un comunicat oficial a l'empresa CryptoSEC dient que la pàgina ha sigut tumbada i han d'anar a un altra anomenada `cryptos3c.net`.
++ __Spoofing CryptoSEC.NET + DOS SlowHTTP (take down cryptosec.net) (BETTERCAP)__: Ídem que l'anterior però els targets son el __SOA__ i el __Forwarding__, els clients interns de CryptoSEC quan hagin d'anar a la pàgina web __cryptosec.net__, entraran a __cryptos3c.net__ ja que el hacker ha avisat que hi hà una urgència a la pàgina principal i han d'entrar a la pàgina web dada pel hacker i les seves credencials seràn __robades sense que se'n adoni__! Abans de tot, el hacker utilitzarà una eina per que la pàgina de __cryptosec.net__ vagi més lent durant uns minuts. Durant aquest minuts aprofitarà per donar un comunicat oficial a l'empresa CryptoSEC dient que la pàgina ha sigut tumbada i han d'anar a un altra anomenada `cryptos3c.net`.
 
 + __ZPHISHING: Phishing with a real "fake" HTTPS website__: Exemple real de __Phishing__ automatitzat i desplegat a __Cloudflare__ per un programa anomenat __Zphishing__. Genera servidor temporal a Internet amb una plantilla a escollir de l'usuari. Enmascarar el enllaç amb un _url shortner_ i enviar-ho a alguna víctima mitjançant __SET__ que enviarà el correu automàticament amb un compte de __Gmail__. L'usuari entrarà però no veurà l'enllaç perquè és una emergència i posarà les seves credencials. D'aquesta manera recollirem l'usuari i la contrasenya de l'usuari (_Credential Harvester_).
 

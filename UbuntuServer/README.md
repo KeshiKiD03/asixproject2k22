@@ -14,6 +14,7 @@
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
 
+> Img src: @Aaron & Cristian's Github
 
 
 
@@ -35,29 +36,39 @@
 
 ![](https://www.gizchina.com/wp-content/uploads/images/2020/04/Canonical-Officially-Released-Final-Ubuntu-20.04-LTS-Focal-Fossa.jpg)
 
+> Img src: www.gizchina.com
+
 1. Descarregar-nos la ISO de Ubuntu Server 20.04 LTS: [downloadISO](https://releases.ubuntu.com/20.04/)
 
 1. Obrir VirtualBOX --> New --> Name --> Memoria 1024M --> Create virtual Hard Disk Now --> VDI 70GB    --> Dynamic size.
 
 ![](./Photos/Ub1.png)
 
+> Img src: @Aaron & Cristian's Github
+
 ![](./Photos/Ub2.png)
 
+> Img src: @Aaron & Cristian's Github
 
 2. Afegim el disk ISO manualment.
 
 ![](./Photos/Ub4.png)
 
 
+> Img src: @Aaron & Cristian's Github
+
 3. Canviar l'ordre d'arrencada.
 
 ![](./Photos/Ub5.png)
+
+> Img src: @Aaron & Cristian's Github
 
 
 4. Seleccionem English com a idioma del sistema i teclat en Català.
 
 ![](./Photos/Ub8.png)
 
+> Img src: @Aaron & Cristian's Github
 
 
 5. De moment la configuració de xarxa la deixem tal qual amb NAT, després la canviarem.
@@ -65,10 +76,14 @@
 ![](./Photos/Ub7.png)
 
 
+> Img src: @Aaron & Cristian's Github
+
 
 6. Ubuntu Server es farà l'automatització de les particions per a que sigui adequat per a UB Server. Utilitzarà LVM pel que veiem.
 
 ![](./Photos/Ub9.png)
+
+> Img src: @Aaron & Cristian's Github
 
 
 
@@ -76,20 +91,28 @@
 
 ![](./Photos/Ub10.png)
 
+> Img src: @Aaron & Cristian's Github
+
 
 8. Seleccionem alguns repositoris que ens interessen com _docker_ o _aws-cli_.
 
 ![](./Photos/Ub11.png)
+
+> Img src: @Aaron & Cristian's Github
 
 
 9. Esperem a que s'instal·li correctament.
 
 ![](./Photos/Ub12.png)
 
+> Img src: @Aaron & Cristian's Github
+
 
 10. Rebotar i treure la disc ISO. Canviar l'arrencada.
 
 ![](./Photos/Ub13.png)
+
+> Img src: @Aaron & Cristian's Github
 
 
 # __Quick configuration__
@@ -107,6 +130,8 @@
     + Spanish --> Spanish - Catalan (Spain, with middle-dot L)
 
 ![](./Photos/Ub14.png)
+
+> Img src: @Aaron & Cristian's Github
 
 
 4. Instal·lar __Guest Additions i SSH__
