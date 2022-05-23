@@ -13,7 +13,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 
 
 
@@ -53,7 +53,6 @@ __L'enginyeria social__ és una de les portes d'accés més utilitzades pels __d
 Per aquest motiu cada pentest que fem a una organització, sempre s'han d'incloure tècniques __d'enginyeria social__, per veure que l'empresa és tan vulnerable a aquest tipus d'atacs i prendre les mesures corresponents.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC0.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github (Exemple de Setoolkit)
 
 ## __Com funciona SET?__
@@ -82,23 +81,18 @@ Amb SET podem efectuar atacs com:
 Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS fals on ens redirigirà a la nostra màquina on hi tindrem una _fake page: m0odle.escoladeltreball.org_ (__Moodle EDT__) i l'enviarem per correu utilitzant __SET__ dient que "_URGENT! L'Eduard ha posat les notes de M06, entra urgentment i mira la nota que tens!!!_" llavors l'usuari entrarà i no se n'adonarà i li robarem les credencials mostrades al __SET__.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps0.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps1.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps2.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/arps3.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 <br>
@@ -109,37 +103,29 @@ Amb l'ARP Spoof d'abans activarem un _dnsspoof_ i injectarem un registre de DNS 
 1. Seleccionem la opció 5: __Mass Mailer Attack__.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING0.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 2. Seleccionem la opció 5: __Mass Mailer Attack__. Omplim les opcions: `1`, `email destination`, `1`, `our email address`, `our email password`, `priority`, `attach file`, `fake email subject`, `body of messeage with END`
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish0.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish1.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish2.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/phish3.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING4.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING2.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PHISHING3.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 
@@ -199,29 +185,23 @@ Specifies test duration in seconds._
 Specifies the URL._
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/DOS-CRYPTOSEC.NET.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/PAGE-DOWN.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 2. El hacker activa la pàgina del __cryptos3c.net__ (fake) amb el SET (__Social Engineering Tool__).
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC0.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC1.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC2.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC3.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 3. El hacker emet un comunicat general a l'empresa dient que s'ha caigut temporalment la pàgina principal i que han d'entrar per la pàgina següent `cryptos3c.net`
@@ -230,11 +210,11 @@ Specifies the URL._
 4. Des d'un client de la xarxa interna de CryptoSEC 192.168.3.100 (_Linux Lite Client_) es vol conectar a la pàgina web de cryptosec.net, però han emès un comunicat que els redirecciona a __cryptos3c.net__ ja que la pàgina principal ha sigut hackejada amb DOS (denegació de servei).
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/BETTERCA-CRYPTOSEC4.PNG?raw=true)
-
 > Img src: @Aaron & Cristian's Github
 
 5. Les credencials del client han __sigut robades__!
 
+## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
 
 # __Bibliografia__: 
 
