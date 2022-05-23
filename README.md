@@ -50,7 +50,7 @@
 
 + **DNS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/tree/main/Official%20Documentation/DNS%20Criptography/DNS)
 
-    + **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DNS%20Criptography/DNSSEC%20%26%20Cripto/%5BCryptoSEC%5D_HowTo_DNSSEC.md)
++ **DNSSEC**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DNS%20Criptography/DNSSEC%20%26%20Cripto/%5BCryptoSEC%5D_HowTo_DNSSEC.md)
 
 + **DHCP**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/DHCP/%5BCryptoSEC%5D_HowTo_DHCP.md)
 
@@ -62,9 +62,9 @@
 
 + **OPENVAS**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/OpenVAS/%5BCryptoSEC%5D_HowTo_OpenVAS.md)
 
-+ **HACKING & PENTESTING**: [--> readME <--]()
++ **HACKING & PENTESTING**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/Atacs_Ciberdeliq%C3%BCencia.md)
 
-    + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [--> readME <--]()
+    + **BRUTE FORCE ATTACK - PASSWORD CRACKING (JOHN)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Official%20Documentation/Hacking%20%26%20Pentesting/Brute%20Force%20Attack%20-%20Crack%20Password/%5BCryptosec%5D_HowTo_BruteForce.md)
 
     + **MITM - ARP POISONING / SPOOFING**: [--> readME <--]()
 

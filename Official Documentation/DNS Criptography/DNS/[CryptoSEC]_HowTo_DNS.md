@@ -786,7 +786,7 @@ La seva funció és millorar el rendiment de les resolucions mitjançant memòri
 <br>
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%208.45.44%20PM.jpeg?raw=true)
-> __Img Source__: *@Aaron i @Cristian GitHub*
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 <br>
 
 ## __Resolució de noms al client__
@@ -863,7 +863,7 @@ L'ordre `resolvectl` permet:
 +    Fer resolucions DNS: resolvectl query __cryptosec.net__
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%205.19.09%20PM.jpeg?raw=true)
-> __Img Source__: *@Aaron i @Cristian GitHub*
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 <br>
 
 # __Com donar suport a consultes de DNS ràpides i segures__
@@ -873,7 +873,7 @@ La solució es DNSSEC.
 Consulteu la documentació més extensa i adherida de __DNSSEC__.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/WhatsApp%20Image%202022-05-12%20at%205.10.43%20PM.jpeg?raw=true)
-> __Img Source__: *@Aaron i @Cristian GitHub*
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 <br>
 
 # __Glossari de termes de les configuracions de BIND9__

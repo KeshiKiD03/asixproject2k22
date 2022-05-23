@@ -14,8 +14,7 @@
 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSECLogo.png?raw=true)
-> __Img Source__: *@Aaron i @Cristian GitHub*
-
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 
 
 <br>
@@ -305,7 +304,7 @@ Syntax OK
 
 
 ![](./Photos/WhatsApp%20Image%202022-05-13%20at%202.25.22%20PM.jpeg)
-> __Img Source__: *@Aaron i @Cristian GitHub*
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 <br>
 
 # __OPENSSL__
@@ -477,7 +476,7 @@ sudo systemctl restart apache2
 5. Per solucionar aquest problema, importem manualment el ``cacert.pem`` als navegadors.
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/CryptoSEC.net.png?raw=true)
-> __Img Source__: *@Aaron i @Cristian GitHub*
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 <br>
 
 6. Veure el contingut dels certificats:
@@ -493,7 +492,7 @@ openssl x509 --noout --text -in cacert.pem
 O des d'un navegador web Firefox: 
 
 ![](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Photos/Captura.PNG?raw=true)
-> __Img Source__: *@Aaron i @Cristian GitHub*
+> __Img Source__: *@Aaron & @Cristian 's GitHub*
 <br>
 
 ## --> [ [Tornar a Ciberseguretat](https://github.com/KeshiKiD03/asixproject2k22/blob/main/README.md) ] <--
