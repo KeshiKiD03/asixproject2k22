@@ -54,7 +54,7 @@
 
     + **PROPOSTA FINAL (LAN CryptoSEC)**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Objectiu.md#la-proposta-final)
 
-+ **POSTER**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Poster%20Projecte.pptx)
++ **POSTER**: [--> readME <--]([https://github.com/KeshiKiD03/asixproject2k22/blob/main/Poster%20Projecte.pptx](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_PosterCampalans.pdf))
 
 + **SEGUIMENT**: [--> readME <--](https://github.com/KeshiKiD03/asixproject2k22/blob/main/Seguiment.md)
 
@@ -106,9 +106,17 @@
 
 En el repositori podeu trobar tota l'informació en PDF en el repositori [``PDFOfficialDoc``](https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc)
 
+També podreu observar el seguiment en tot moment del projecte [``PDFOfficialDoc``](https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc), els objectius del projecte [``PDFObjectius``]([https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_Objectiu.pdf)), el poster per a premis campalans [``PDFCampalans``]([https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_PosterCampalans.pdf) i el video resum del nostre projecte.
+
+Esperem que us sigui d'agradi!
+
+Aaron & Cristian
+
 <br>
 <br>
 <br>
+
+# CryptoSEC: _"Careful where you step in"_
 
 ## __La ciberseguretat__
 
