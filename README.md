@@ -106,7 +106,7 @@
 
 En el repositori podeu trobar tota l'informació en PDF en el repositori [``PDFOfficialDoc``](https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc)
 
-També podreu observar el seguiment en tot moment del projecte [``PDFOfficialDoc``](https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc), els objectius del projecte [``PDFObjectius``]([https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_Objectiu.pdf)), el poster per a premis campalans [``PDFCampalans``]([https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_PosterCampalans.pdf) i el video resum del nostre projecte.
+També podreu observar el seguiment en tot moment del projecte [``PDFOfficialDoc``](https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc), els objectius del projecte [``PDFObjectius``]([https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_Objectiu.pdf)), el poster per a premis campalans [``PDFCampalans``]([https://github.com/KeshiKiD03/asixproject2k22/tree/main/PDFOfficialDoc](https://github.com/KeshiKiD03/asixproject2k22/blob/main/PDFOfficialDoc/%5BCryptoSEC%5D_PosterCampalans.pdf)) i el video resum del nostre projecte.
 
 Esperem que us sigui d'agradi!
 
